@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* Tokens de marca AI PlayGrounds.
+   Se emiten como CSS Variables --color-aipg-* y, a la vez, como utilidades
+   de Tailwind: bg-aipg-bg, text-aipg-muted, border-aipg-border, etc. */
+@theme {
+  --color-aipg-bg: #0a0a0a;
+  --color-aipg-surface: #141414;
+  --color-aipg-border: #262626;
+  --color-aipg-text: #fafafa;
+  --color-aipg-muted: #a3a3a3;
+  --color-aipg-accent: #8e8efe;
+}
+
+/* Las fuentes llegan como variables desde next/font (ver layout.tsx).
+   `inline` hace que Tailwind use su valor directo en vez de otra indirección. */
+@theme inline {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+/* El sitio es de base oscura siempre. No sigue el tema del sistema.
+   color-scheme oscurece también scrollbars y controles nativos. */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-aipg-bg);
+  color: var(--color-aipg-text);
+  font-family: var(--font-sans);
+}
+
+/* Detalle de marca: la selección de texto usa el acento. */
+::selection {
+  background-color: var(--color-aipg-accent);
+  color: var(--color-aipg-bg);
+}
