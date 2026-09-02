@@ -17,10 +17,13 @@ export const es = {
     // en inglés el corte puede caer en otro sitio.
     titleLine1: "Construye con IA.",
     titleLine2: "Sé parte de cada decisión.",
-    subtitle:
-      "Una comunidad de IA en español para quienes quieren ir más allá de usar herramientas: entender cómo funcionan, evaluarlas con criterio y llevar sistemas reales a producción.",
     ctaCommunity: "Unirme a la comunidad",
     ctaEvents: "Ver eventos",
+    // Nota al margen del encabezado. El marcador [1] lo pinta el componente,
+    // no va dentro del texto: al traducir, la llamada puede caer en otra
+    // palabra del titular.
+    note:
+      "Una comunidad de IA en español para quienes quieren entender lo que construyen.",
   },
   thesis: {
     eyebrow: "Nuestra tesis",

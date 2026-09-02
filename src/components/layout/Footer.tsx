@@ -31,7 +31,7 @@ export async function Footer() {
                   href={link.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-sm text-aipg-muted transition-colors hover:text-aipg-text focus-visible:text-aipg-text focus-visible:outline focus-visible:outline-1 focus-visible:outline-aipg-accent"
+                  className="text-sm text-aipg-muted transition-colors hover:text-aipg-text focus-visible:text-aipg-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-aipg-focus"
                 >
                   {dict.footer[link.labelKey]}
                 </Link>

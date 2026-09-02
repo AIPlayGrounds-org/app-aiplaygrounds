@@ -41,7 +41,7 @@ export function LocaleSwitcher({ current, label }: Props) {
             lang={locale}
             aria-label={localeNames[locale]}
             aria-current={isCurrent ? "true" : undefined}
-            className={`flex min-w-11 items-center justify-center uppercase transition-colors focus-visible:outline focus-visible:-outline-offset-1 focus-visible:outline-aipg-accent ${
+            className={`flex min-w-11 items-center justify-center uppercase transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-aipg-focus ${
               isCurrent
                 ? "text-aipg-text"
                 : "text-aipg-muted hover:text-aipg-text"

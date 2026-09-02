@@ -2,14 +2,79 @@
 
 /* Tokens de marca AI PlayGrounds.
    Se emiten como CSS Variables --color-aipg-* y, a la vez, como utilidades
-   de Tailwind: bg-aipg-bg, text-aipg-muted, border-aipg-border, etc. */
+   de Tailwind: bg-aipg-bg, text-aipg-muted, border-aipg-border, etc.
+
+   La base es clara y CÁLIDA: el fondo no es blanco puro a propósito. El
+   blanco puro a pantalla completa cansa la vista y quita el aire editorial
+   que da el crema.
+
+   Estos valores son el único sitio donde vive la paleta. Cambiarlos da la
+   vuelta al sitio entero, porque ningún componente lleva un color suelto.
+
+   Los ratios anotados son contraste WCAG sobre --color-aipg-bg. Están medidos,
+   no estimados: si se toca un valor, hay que volver a medirlo. */
 @theme {
-  --color-aipg-bg: #0a0a0a;
-  --color-aipg-surface: #141414;
-  --color-aipg-border: #262626;
-  --color-aipg-text: #fafafa;
-  --color-aipg-muted: #a3a3a3;
-  --color-aipg-accent: #8e8efe;
+  --color-aipg-bg: #f5f3ee;
+  --color-aipg-surface: #fbfaf6;
+  --color-aipg-text: #14140f; /* 16.66:1 */
+  --color-aipg-muted: #6b6b66; /* 4.83:1 — mínimo de texto, poco margen */
+
+  /* DOS tokens de borde, no uno.
+
+     Antes había uno solo (#dcd8cf, 1.28:1) haciendo dos trabajos con
+     exigencias distintas. Una divisoria decorativa puede ser sutil; el borde
+     de un control es lo ÚNICO que dice dónde empieza y acaba, y WCAG 1.4.11
+     le pide 3:1. El botón "Ver eventos" no tiene más límite que su borde.
+
+     Regla: si al quitar la línea desaparece un control, es -strong. */
+  --color-aipg-border: #c6c2b9; /* 1.60:1 — divisorias, retículas */
+  --color-aipg-border-strong: #908c83; /* 3.02:1 — bordes de control */
+
+  /* El periwinkle del logo, en tres luminosidades del mismo tono (240°).
+
+     El de marca es demasiado claro para llevar texto sobre el crema: 2.54:1
+     cuando el mínimo es 4.5:1. Sirve como SUPERFICIE (fondo de botón, donde
+     el texto negro encima da 7:1), no como tinta. Por eso hay una variante
+     oscurecida para cuando el acento tenga que ser legible por sí mismo. */
+  --color-aipg-accent: #8e8efe; /* superficies: fondo del botón principal */
+  --color-aipg-accent-hover: #7676fe; /* estado hover del botón principal */
+  --color-aipg-accent-text: #5757fc; /* 4.54:1 — enlaces y texto en acento */
+
+  /* El anillo de foco va aparte del acento.
+
+     Usar --color-aipg-accent daba 2.54:1 y WCAG 2.2 pide 3:1 para un
+     indicador de foco: quien navega con teclado no podía ver dónde estaba.
+     Este es el mismo tono, lo justo más saturado para cruzar el umbral. */
+  --color-aipg-focus: #7c7cfd; /* 3.08:1 sobre bg, 3.26:1 sobre surface */
+
+  /* Texto sobre el acento (botones rellenos).
+     Existe como token propio porque antes se usaba --color-aipg-bg para esto:
+     con la base oscura los dos eran casi negro y coincidían por casualidad. Al
+     pasar a base clara, el texto del botón se habría vuelto crema sobre
+     periwinkle, ilegible. */
+  --color-aipg-on-accent: #0a0a0a; /* 7.02:1 sobre accent, 5.46:1 sobre hover */
+
+  /* Radio de esquina. Un solo valor para todo el sitio: antes era `rounded-md`
+     repetido en cuatro componentes, que es la misma decisión escrita cuatro
+     veces. Se usa como `rounded-aipg`. */
+  --radius-aipg: 0.375rem;
+
+  /* Escala de titulares FLUIDA.
+
+     Antes el encabezado saltaba por escalones (text-4xl → 5xl → 6xl →
+     text-[5.5rem]): entre dos breakpoints el titular no cambiaba de tamaño y
+     al cruzar uno pegaba un brinco. Con clamp() crece de forma continua con el
+     ancho de la ventana, y de paso desaparece el valor suelto `[5.5rem]`.
+
+     Los extremos son los mismos de antes: 36px en móvil, 88px en escritorio
+     grande para `display`; 36px a 60px para `title`. */
+  --text-display: clamp(2.25rem, 0.9rem + 5.75vw, 5.5rem);
+  --text-display--line-height: 1.08;
+  --text-display--letter-spacing: -0.015em;
+
+  --text-title: clamp(2.25rem, 1.63rem + 2.65vw, 3.75rem);
+  --text-title--line-height: 1.1;
+  --text-title--letter-spacing: -0.025em;
 }
 
 /* Las fuentes llegan como variables desde next/font (ver layout.tsx).
@@ -17,12 +82,13 @@
 @theme inline {
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-serif: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
 }
 
-/* El sitio es de base oscura siempre. No sigue el tema del sistema.
-   color-scheme oscurece también scrollbars y controles nativos. */
+/* El sitio es de base clara siempre. No sigue el tema del sistema.
+   color-scheme aclara también scrollbars y controles nativos. */
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
@@ -34,5 +100,24 @@ body {
 /* Detalle de marca: la selección de texto usa el acento. */
 ::selection {
   background-color: var(--color-aipg-accent);
-  color: var(--color-aipg-bg);
+  color: var(--color-aipg-on-accent);
+}
+
+/* Preferencia de sistema "reducir movimiento".
+
+   La activa quien sufre mareo o migraña con el movimiento en pantalla. Va aquí
+   y no componente por componente a propósito: así cubre también las
+   transiciones que se escriban mañana, sin que nadie tenga que acordarse.
+
+   No se pone a 0s sino a 0.01ms: algunas transiciones tienen un `transitionend`
+   escuchando, y a cero no siempre se dispara. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

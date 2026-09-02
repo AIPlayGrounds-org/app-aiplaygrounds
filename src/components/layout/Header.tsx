@@ -44,7 +44,7 @@ export async function Header() {
         <Link
           href={href("/")}
           aria-label={dict.nav.home}
-          className="flex items-center border-r border-aipg-border pr-5 focus-visible:outline focus-visible:outline-1 focus-visible:outline-aipg-accent"
+          className="flex items-center border-r border-aipg-border pr-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-aipg-focus"
         >
           <Logo className="text-base" />
         </Link>
@@ -57,7 +57,7 @@ export async function Header() {
             >
               <Link
                 href={href(block.href)}
-                className="flex items-center gap-1.5 px-5 text-sm text-aipg-muted transition-colors hover:text-aipg-text group-hover:text-aipg-text focus-visible:text-aipg-text focus-visible:outline focus-visible:outline-1 focus-visible:outline-aipg-accent"
+                className="flex items-center gap-1.5 px-5 text-sm text-aipg-muted transition-colors hover:text-aipg-text group-hover:text-aipg-text focus-visible:text-aipg-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-aipg-focus"
               >
                 {dict.nav[block.labelKey]}
                 {block.items && (
@@ -68,7 +68,7 @@ export async function Header() {
               </Link>
 
               {block.items && (
-                <div className="invisible pointer-events-none absolute left-0 top-full min-w-56 translate-y-1 border border-aipg-border bg-aipg-surface opacity-0 transition-[opacity,transform] duration-150 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100 group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                <div className="invisible pointer-events-none absolute left-0 top-full min-w-56 translate-y-1 border border-aipg-border-strong bg-aipg-surface opacity-0 transition-[opacity,transform] duration-150 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100 group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
                   <ul className="flex flex-col py-1">
                     {block.items.map((item) => (
                       <li key={item.href + item.labelKey}>
@@ -77,7 +77,7 @@ export async function Header() {
                           {...(item.external
                             ? { target: "_blank", rel: "noreferrer" }
                             : {})}
-                          className="block px-5 py-2.5 text-sm text-aipg-muted transition-colors hover:bg-aipg-bg hover:text-aipg-text focus-visible:bg-aipg-bg focus-visible:text-aipg-text focus-visible:outline-none"
+                          className="block px-5 py-2.5 text-sm text-aipg-muted transition-colors hover:bg-aipg-bg hover:text-aipg-text focus-visible:bg-aipg-bg focus-visible:text-aipg-text focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-aipg-focus"
                         >
                           {dict.nav[item.labelKey]}
                         </Link>
@@ -98,7 +98,7 @@ export async function Header() {
           <div className="hidden items-center border-l border-aipg-border pl-5 md:flex">
             <Link
               href={href(companiesLink.href)}
-              className="rounded-md bg-aipg-accent px-4 py-2 text-sm font-medium text-aipg-bg transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aipg-accent"
+              className="rounded-aipg bg-aipg-accent px-4 py-2 text-sm font-medium text-aipg-on-accent transition-colors hover:bg-aipg-accent-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aipg-focus"
             >
               {dict.nav[companiesLink.labelKey]}
             </Link>

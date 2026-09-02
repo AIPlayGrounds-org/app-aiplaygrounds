@@ -30,7 +30,7 @@ export async function Thesis() {
 
         {/* Dos claves, no un salto de línea dentro del texto: el corte del
             titular puede caer en otro sitio al traducirlo. */}
-        <h2 className="mt-6 text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
+        <h2 className="mt-6 text-title font-semibold">
           <span className="block">{t.titleLine1}</span>
           <span className="block">{t.titleLine2}</span>
         </h2>

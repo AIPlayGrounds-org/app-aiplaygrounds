@@ -57,7 +57,7 @@ export function MobileMenu({
         aria-expanded={open}
         aria-controls="mobile-menu"
         aria-label={open ? closeLabel : openLabel}
-        className="flex h-full items-center pl-6 pr-0 text-aipg-text focus-visible:outline focus-visible:outline-1 focus-visible:outline-aipg-accent md:hidden"
+        className="flex h-full items-center pl-6 pr-0 text-aipg-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-aipg-focus md:hidden"
       >
         <span aria-hidden="true" className="relative block h-4 w-5">
           <span
@@ -117,7 +117,7 @@ export function MobileMenu({
               <Link
                 href={companies.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-md bg-aipg-accent px-5 py-3 text-center text-sm font-medium text-aipg-bg"
+                className="block rounded-aipg bg-aipg-accent px-5 py-3 text-center text-sm font-medium text-aipg-on-accent"
               >
                 {companies.label}
               </Link>
