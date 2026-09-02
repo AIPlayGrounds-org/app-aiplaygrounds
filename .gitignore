@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# skills de Claude Code instaladas en local: son herramientas de trabajo,
+# no código del sitio. La configuración del proyecto (.claude/CLAUDE.md) sí va.
+.claude/skills/
