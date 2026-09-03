@@ -4,9 +4,13 @@
    Se emiten como CSS Variables --color-aipg-* y, a la vez, como utilidades
    de Tailwind: bg-aipg-bg, text-aipg-muted, border-aipg-border, etc.
 
-   La base es clara y CÁLIDA: el fondo no es blanco puro a propósito. El
-   blanco puro a pantalla completa cansa la vista y quita el aire editorial
-   que da el crema.
+   DIRECCIÓN VISUAL: "injerto periwinkle".
+
+   La base marfil, la tinta y el hueso están MEDIDOS en anthropic.com, no
+   estimados. Lo que NO se toma de ahí es el acento: su coral se sustituye
+   por el periwinkle del logo, uno a uno. Se importa la manera de componer,
+   no la identidad — una comunidad que se declara independiente no puede
+   vestirse con los colores de un laboratorio de IA.
 
    Estos valores son el único sitio donde vive la paleta. Cambiarlos da la
    vuelta al sitio entero, porque ningún componente lleva un color suelto.
@@ -14,67 +18,92 @@
    Los ratios anotados son contraste WCAG sobre --color-aipg-bg. Están medidos,
    no estimados: si se toca un valor, hay que volver a medirlo. */
 @theme {
-  --color-aipg-bg: #f5f3ee;
-  --color-aipg-surface: #fbfaf6;
-  --color-aipg-text: #14140f; /* 16.66:1 */
-  --color-aipg-muted: #6b6b66; /* 4.83:1 — mínimo de texto, poco margen */
+  --color-aipg-bg: #faf9f5; /* marfil */
+  --color-aipg-surface: #f0eee6; /* hueso: desplegables, superficies elevadas */
+  --color-aipg-text: #141413; /* 17.78:1 */
+
+  /* El gris secundario NO es el de Anthropic.
+
+     El suyo (#87867F) da 3.47:1 sobre su propio marfil, por debajo del 4.5:1
+     que WCAG pide para texto. Este es el mismo gris cálido, oscurecido hasta
+     cruzar el umbral con margen. El segundo ratio importa porque el texto
+     secundario también se pinta sobre --color-aipg-surface, que es más oscuro
+     que el fondo y por tanto el caso peor. */
+  --color-aipg-muted: #6a6960; /* 5.24:1 sobre bg · 4.75:1 sobre surface */
 
   /* DOS tokens de borde, no uno.
 
-     Antes había uno solo (#dcd8cf, 1.28:1) haciendo dos trabajos con
-     exigencias distintas. Una divisoria decorativa puede ser sutil; el borde
-     de un control es lo ÚNICO que dice dónde empieza y acaba, y WCAG 1.4.11
-     le pide 3:1. El botón "Ver eventos" no tiene más límite que su borde.
+     Una divisoria decorativa puede ser sutil; el borde de un control es lo
+     ÚNICO que dice dónde empieza y acaba, y WCAG 1.4.11 le pide 3:1. El botón
+     "Ver eventos" no tiene más límite que su borde.
 
-     Regla: si al quitar la línea desaparece un control, es -strong. */
-  --color-aipg-border: #c6c2b9; /* 1.60:1 — divisorias, retículas */
-  --color-aipg-border-strong: #908c83; /* 3.02:1 — bordes de control */
+     Regla: si al quitar la línea desaparece un control, es -strong.
+
+     La divisoria se afinó al pasar al marfil: sobre un fondo más claro, la
+     línea anterior (#c6c2b9) pesaba más de la cuenta y rompía la calma. */
+  --color-aipg-border: #d3cfc2; /* 1.48:1 — divisorias, retículas */
+  --color-aipg-border-strong: #908c83; /* 3.18:1 — bordes de control */
 
   /* El periwinkle del logo, en tres luminosidades del mismo tono (240°).
 
-     El de marca es demasiado claro para llevar texto sobre el crema: 2.54:1
-     cuando el mínimo es 4.5:1. Sirve como SUPERFICIE (fondo de botón, donde
-     el texto negro encima da 7:1), no como tinta. Por eso hay una variante
-     oscurecida para cuando el acento tenga que ser legible por sí mismo. */
-  --color-aipg-accent: #8e8efe; /* superficies: fondo del botón principal */
-  --color-aipg-accent-hover: #7676fe; /* estado hover del botón principal */
-  --color-aipg-accent-text: #5757fc; /* 4.54:1 — enlaces y texto en acento */
+     CAMBIO DE PAPEL: el acento ya no rellena el botón principal. Ese trabajo
+     pasa a la tinta, como en la referencia. El periwinkle queda como MARCA
+     GRÁFICA — la regla sobre el titular, el punto del logo, el borde superior
+     de cada principio, el anillo de foco. Aparece en muchos sitios y ocupa
+     muy poco en cada uno, que es justo lo que pedía el CLAUDE.md cuando dijo
+     "el acento aparece poco" y sin embargo llenaba el botón más grande de la
+     página. */
+  --color-aipg-accent: #8e8efe; /* superficies pequeñas: reglas, marcas, puntos */
+  --color-aipg-accent-hover: #7676fe;
+  --color-aipg-accent-text: #5757fc; /* 4.77:1 — enlaces y texto en acento */
 
   /* El anillo de foco va aparte del acento.
 
      Usar --color-aipg-accent daba 2.54:1 y WCAG 2.2 pide 3:1 para un
      indicador de foco: quien navega con teclado no podía ver dónde estaba.
      Este es el mismo tono, lo justo más saturado para cruzar el umbral. */
-  --color-aipg-focus: #7c7cfd; /* 3.08:1 sobre bg, 3.26:1 sobre surface */
+  --color-aipg-focus: #7c7cfd; /* 3.24:1 */
 
-  /* Texto sobre el acento (botones rellenos).
-     Existe como token propio porque antes se usaba --color-aipg-bg para esto:
-     con la base oscura los dos eran casi negro y coincidían por casualidad. Al
-     pasar a base clara, el texto del botón se habría vuelto crema sobre
-     periwinkle, ilegible. */
-  --color-aipg-on-accent: #0a0a0a; /* 7.02:1 sobre accent, 5.46:1 sobre hover */
+  /* Portadas de las tarjetas de cursos y talleres.
 
-  /* Radio de esquina. Un solo valor para todo el sitio: antes era `rounded-md`
-     repetido en cuatro componentes, que es la misma decisión escrita cuatro
-     veces. Se usa como `rounded-aipg`. */
-  --radius-aipg: 0.375rem;
+     Van como tokens y no como hex en el contenido por la misma razón que el
+     resto de la paleta: el día que cambie la gama, se cambia aquí y no en
+     quince fichas. Son tres y no una escala completa — con más tonos, el
+     listado se convierte en un mosaico de colores y deja de leerse como un
+     conjunto.
 
-  /* Escala de titulares FLUIDA.
+     Arena es el hueso medido en la referencia; periwinkle es el acento de
+     marca rebajado hasta poder ocupar un bloque grande sin gritar; tinta es
+     la misma casi-negra del texto. Las tres llevan encima el texto principal
+     salvo tinta, que lleva el marfil. */
+  --color-aipg-cover-sand: #e3dacc;
+  --color-aipg-cover-peri: #dcdcfd;
+  --color-aipg-cover-ink: #141413;
 
-     Antes el encabezado saltaba por escalones (text-4xl → 5xl → 6xl →
-     text-[5.5rem]): entre dos breakpoints el titular no cambiaba de tamaño y
-     al cruzar uno pegaba un brinco. Con clamp() crece de forma continua con el
-     ancho de la ventana, y de paso desaparece el valor suelto `[5.5rem]`.
+  /* Texto sobre el botón de tinta.
+     Sustituye al antiguo --color-aipg-on-accent, que existía para el botón
+     periwinkle. Ese botón ya no existe. */
+  --color-aipg-on-ink: #faf9f5; /* 17.78:1 sobre --color-aipg-text */
 
-     Los extremos son los mismos de antes: 36px en móvil, 88px en escritorio
-     grande para `display`; 36px a 60px para `title`. */
-  --text-display: clamp(2.25rem, 0.9rem + 5.75vw, 5.5rem);
-  --text-display--line-height: 1.08;
-  --text-display--letter-spacing: -0.015em;
+  /* Radio de esquina. Un solo valor para todo el sitio; se usa como
+     `rounded-aipg`. Subió de 6px a 8px al adoptar la referencia: sus
+     controles son perceptiblemente más redondeados que los de antes. */
+  --radius-aipg: 0.5rem;
 
-  --text-title: clamp(2.25rem, 1.63rem + 2.65vw, 3.75rem);
-  --text-title--line-height: 1.1;
-  --text-title--letter-spacing: -0.025em;
+  /* Escala de titulares FLUIDA, con clamp() para que crezca de forma continua
+     con el ancho de la ventana en vez de saltar por escalones.
+
+     Los dos extremos BAJARON al adoptar la referencia. Anthropic titula a
+     64px donde el sitio titulaba a 88px: la presencia no la da el tamaño sino
+     el peso alto y el aire alrededor. Un titular más pequeño y mejor rodeado
+     se lee antes. */
+  --text-display: clamp(2.25rem, 1.55rem + 2.95vw, 3.5rem); /* 36px → 56px */
+  --text-display--line-height: 1.06;
+  --text-display--letter-spacing: -0.022em;
+
+  --text-title: clamp(1.875rem, 1.35rem + 2.2vw, 2.75rem); /* 30px → 44px */
+  --text-title--line-height: 1.12;
+  --text-title--letter-spacing: -0.018em;
 }
 
 /* Las fuentes llegan como variables desde next/font (ver layout.tsx).
@@ -82,7 +111,7 @@
 @theme inline {
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
-  --font-serif: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
+  --font-serif: var(--font-newsreader), Georgia, "Times New Roman", serif;
 }
 
 /* El sitio es de base clara siempre. No sigue el tema del sistema.
@@ -91,16 +120,32 @@
   color-scheme: light;
 }
 
+/* El cuerpo de texto va en SERIF y los titulares en sans de peso alto.
+
+   Es la inversión de lo que hacía el sitio y el préstamo más valioso de la
+   referencia: la serif da al texto seguido un color de página más cálido y
+   más lento de leer, que es lo que quiere un sitio que pide criterio; la sans
+   de peso 700 da a los titulares la presencia que antes se buscaba con el
+   tamaño. */
 body {
   background-color: var(--color-aipg-bg);
   color: var(--color-aipg-text);
+  font-family: var(--font-serif);
+}
+
+/* Los titulares se salen de la serif del cuerpo sin que cada componente tenga
+   que acordarse de pedirlo. */
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-sans);
 }
 
 /* Detalle de marca: la selección de texto usa el acento. */
 ::selection {
   background-color: var(--color-aipg-accent);
-  color: var(--color-aipg-on-accent);
+  color: #0a0a0a;
 }
 
 /* Preferencia de sistema "reducir movimiento".

@@ -1,5 +1,5 @@
 /**
- * Sección de tesis de la home — paso 5.
+ * Sección de tesis de la home — paso 4.
  *
  * Server Component, sin interactividad ni animaciones. Todo el texto viene de
  * los diccionarios. Las líneas divisorias separan la sección del encabezado y
@@ -14,7 +14,7 @@ export async function Thesis() {
   const t = dict.thesis;
 
   return (
-    <section className="border-t border-aipg-border py-20 md:py-28 lg:py-32">
+    <section className="py-24 md:py-32 lg:py-36">
       <Container>
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-aipg-muted">
           {t.eyebrow}
@@ -22,7 +22,7 @@ export async function Thesis() {
 
         <p className="mt-2 font-mono text-xs uppercase tracking-[0.2em] text-aipg-muted">
           {t.taglineLeft}{" "}
-          <span aria-hidden="true" className="text-aipg-accent">
+          <span aria-hidden="true" className="text-aipg-accent-text">
             ·
           </span>{" "}
           {t.taglineRight}
@@ -30,7 +30,7 @@ export async function Thesis() {
 
         {/* Dos claves, no un salto de línea dentro del texto: el corte del
             titular puede caer en otro sitio al traducirlo. */}
-        <h2 className="mt-6 text-title font-semibold">
+        <h2 className="mt-6 text-title font-bold">
           <span className="block">{t.titleLine1}</span>
           <span className="block">{t.titleLine2}</span>
         </h2>

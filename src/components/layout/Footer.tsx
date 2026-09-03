@@ -1,5 +1,5 @@
 /**
- * Cierre del sitio — sección 12 del CLAUDE.md.
+ * Cierre del sitio — sección 11 del CLAUDE.md.
  * Server Component: no tiene interactividad.
  */
 
@@ -13,9 +13,9 @@ export async function Footer() {
   const [dict, locale] = await Promise.all([getDictionary(), getLocale()]);
 
   return (
-    <footer className="border-t border-aipg-border">
+    <footer>
       <Container>
-        <div className="flex flex-col gap-10 py-12 md:flex-row md:items-end md:justify-between">
+        <div className="flex flex-col gap-10 pb-16 pt-8 md:flex-row md:items-end md:justify-between">
         <div>
           <Link href={localizedHref(locale, "/")} aria-label={dict.nav.home}>
             <Logo className="text-base" />

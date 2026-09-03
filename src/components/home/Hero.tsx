@@ -1,84 +1,81 @@
 /**
- * Encabezado de la home — dirección "editorial claro".
+ * Encabezado de la home — dirección "injerto periwinkle".
  *
- * Composición centrada: etiqueta, titular y nota caen sobre el mismo eje. El
- * equilibrio sale de la simetría, no de rellenar la derecha con un elemento
- * decorativo.
+ * Cambia respecto a la versión anterior en tres cosas, y las tres son la
+ * dirección, no gusto:
  *
- * La segunda línea va en cursiva porque marca el giro de la frase — primero la
- * afirmación, luego el matiz. No es énfasis decorativo.
+ * 1. DEJA DE ESTAR CENTRADO. Ocupa la mitad derecha de la retícula a partir
+ *    de lg, con la izquierda vacía. El vacío es el elemento: la referencia
+ *    consigue presencia con aire, no con tamaño.
+ *
+ * 2. EL TITULAR VA EN SANS DE PESO ALTO, no en serif de display. La serif se
+ *    mueve al párrafo de abajo, que es texto seguido y es donde una serif
+ *    trabaja mejor.
+ *
+ * 3. EL BOTÓN PRINCIPAL ES DE TINTA. El periwinkle se retira a la regla de
+ *    tres píxeles sobre la etiqueta y al punto separador. Aparece dos veces y
+ *    ocupa muy poco, que es lo que el CLAUDE.md pedía del acento.
+ *
+ * Se cayó por el camino la llamada al pie "[1]" que unía el titular con la
+ * nota: era un recurso de la composición centrada, y en una columna alineada
+ * a la izquierda el párrafo ya está donde tiene que estar sin necesidad de
+ * que nadie lo señale.
  *
  * Server Component: no hay interactividad ni animaciones. Todo el texto sale
  * de los diccionarios, nunca escrito directo aquí.
  */
 
-import Link from "next/link";
 import { getDictionary, getLocale } from "@/dictionaries";
 import { localizedHref } from "@/config/navigation";
 import { Container } from "@/components/layout/Container";
+import { ButtonLink } from "@/components/ui/ButtonLink";
 
 export async function Hero() {
   const [dict, locale] = await Promise.all([getDictionary(), getLocale()]);
   const t = dict.home;
 
   return (
-    <section className="py-24 md:py-28 lg:py-32">
+    <section className="py-20 md:py-28 lg:py-36">
       <Container>
-        <div className="flex flex-col items-center text-center">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-aipg-muted">
-            {t.eyebrowBrand}{" "}
-            <span aria-hidden="true" className="text-aipg-accent">
-              ·
-            </span>{" "}
-            {t.eyebrowRegion}
-          </p>
+        {/* Móvil primero: una columna a ancho completo. La retícula de doce y
+            el desplazamiento a la derecha solo entran desde lg, donde hay
+            ancho que sobra para permitirse el vacío. */}
+        <div className="lg:grid lg:grid-cols-12">
+          <div className="lg:col-span-8 lg:col-start-5">
+            {/* La marca gráfica del acento. Tres píxeles de periwinkle: es
+                todo el color que necesita el encabezado. */}
+            <div aria-hidden="true" className="h-[3px] w-12 bg-aipg-accent" />
 
-          {/* Cada línea es un bloque: el corte es intencional, no fruto del
-              ancho. El serif va en peso normal — es una tipografía de display
-              y engordarla le quita la elegancia. */}
-          <h1 className="mt-8 max-w-4xl font-serif text-display font-normal text-aipg-text">
-            <span className="block">{t.titleLine1}</span>
-            <span className="block italic">
-              {t.titleLine2}
-              {/* La llamada de la nota. aria-hidden porque para un lector de
-                  pantalla "[1]" es ruido: la nota se lee justo debajo. */}
-              <sup
-                aria-hidden="true"
-                className="ml-1 align-super font-sans text-xs not-italic text-aipg-accent md:text-base"
-              >
-                [1]
-              </sup>
-            </span>
-          </h1>
+            <p className="mt-7 font-mono text-xs uppercase tracking-[0.2em] text-aipg-muted">
+              {t.eyebrowBrand}{" "}
+              <span aria-hidden="true" className="text-aipg-accent-text">
+                ·
+              </span>{" "}
+              {t.eyebrowRegion}
+            </p>
 
-          {/* La nota se alinea a la izquierda dentro de un bloque centrado:
-              centrar dos líneas de texto seguido las vuelve incómodas de leer. */}
-          <div className="mt-10 flex max-w-md gap-2.5 text-left md:mt-12">
-            <span
-              aria-hidden="true"
-              className="font-serif text-sm leading-relaxed text-aipg-accent md:text-base"
-            >
-              [1]
-            </span>
-            <p className="text-pretty font-serif text-lg italic leading-relaxed text-aipg-muted md:text-xl">
+            {/* Cada línea es un bloque: el corte es intencional, no fruto del
+                ancho disponible. */}
+            <h1 className="mt-6 text-display font-bold text-aipg-text">
+              <span className="block">{t.titleLine1}</span>
+              <span className="block">{t.titleLine2}</span>
+            </h1>
+
+            {/* ~55 caracteres por línea. La serif hereda del body, no hace
+                falta pedirla. */}
+            <p className="mt-8 max-w-[46ch] text-pretty text-lg leading-relaxed text-aipg-muted md:text-xl">
               {t.note}
             </p>
-          </div>
 
-          <div className="mt-12 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:gap-4 md:mt-14">
-            <Link
-              href={localizedHref(locale, "/comunidad")}
-              className="rounded-aipg bg-aipg-accent px-6 py-3.5 text-center text-sm font-medium text-aipg-on-accent transition-colors hover:bg-aipg-accent-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aipg-focus"
-            >
-              {t.ctaCommunity}
-            </Link>
+            <div className="mt-10 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:gap-3">
+              <ButtonLink href={localizedHref(locale, "/comunidad")}>
+                {t.ctaCommunity}
+              </ButtonLink>
 
-            <Link
-              href={localizedHref(locale, "/eventos")}
-              className="rounded-aipg border border-aipg-border-strong px-6 py-3.5 text-center text-sm font-medium text-aipg-text transition-colors hover:border-aipg-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aipg-focus"
-            >
-              {t.ctaEvents}
-            </Link>
+              <ButtonLink href={localizedHref(locale, "/eventos")} variant="line">
+                {t.ctaEvents}
+              </ButtonLink>
+            </div>
           </div>
         </div>
       </Container>

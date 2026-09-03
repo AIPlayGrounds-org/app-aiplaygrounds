@@ -57,7 +57,7 @@ export function MobileMenu({
         aria-expanded={open}
         aria-controls="mobile-menu"
         aria-label={open ? closeLabel : openLabel}
-        className="flex h-full items-center pl-6 pr-0 text-aipg-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-aipg-focus md:hidden"
+        className="-mr-2 flex h-11 w-11 items-center justify-center rounded-aipg text-aipg-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aipg-focus md:hidden"
       >
         <span aria-hidden="true" className="relative block h-4 w-5">
           <span
@@ -80,10 +80,7 @@ export function MobileMenu({
         >
           <nav className="flex flex-col">
             {blocks.map((block) => (
-              <div
-                key={block.href}
-                className="border-b border-aipg-border px-6 py-5"
-              >
+              <div key={block.href} className="px-6 pb-7 pt-6">
                 <Link
                   href={block.href}
                   onClick={() => setOpen(false)}
@@ -113,11 +110,11 @@ export function MobileMenu({
               </div>
             ))}
 
-            <div className="px-6 py-6">
+            <div className="px-6 pb-8 pt-2">
               <Link
                 href={companies.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-aipg bg-aipg-accent px-5 py-3 text-center text-sm font-medium text-aipg-on-accent"
+                className="block rounded-aipg bg-aipg-text px-5 py-3.5 text-center font-sans text-sm font-medium text-aipg-on-ink"
               >
                 {companies.label}
               </Link>

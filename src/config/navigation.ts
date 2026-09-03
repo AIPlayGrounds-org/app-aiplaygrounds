@@ -9,6 +9,7 @@
  * les antepone /es o /en al construir el enlace.
  */
 
+import { categoryAnchors } from "@/content/learnings";
 import type { Dictionary } from "@/dictionaries/es";
 
 type NavKey = keyof Dictionary["nav"];
@@ -27,9 +28,6 @@ export type NavBlock = {
   items?: NavItem[];
 };
 
-// TODO: URL real del servidor de Discord.
-const DISCORD_URL = "#";
-
 export const navBlocks: NavBlock[] = [
   {
     labelKey: "community",
@@ -37,16 +35,28 @@ export const navBlocks: NavBlock[] = [
     items: [
       { labelKey: "communityHome", href: "/comunidad" },
       { labelKey: "events", href: "/eventos" },
-      { labelKey: "discord", href: DISCORD_URL, external: true },
     ],
   },
   {
-    labelKey: "programs",
-    href: "/programas",
+    // Antes era "Programas". Pasó a "Aprendizajes" porque la página ya no
+    // lista un solo formato: agrupa programas largos y sesiones cortas, que
+    // resuelven necesidades distintas y no se comparan entre sí.
+    //
+    // El desplegable enlaza a las DOS SECCIONES de la página, no a programas
+    // concretos. Con contenido servido por Payload, una lista de programas en
+    // el menú se quedaría desactualizada sola; un ancla a una sección no.
+    labelKey: "learnings",
+    href: "/aprendizajes",
     items: [
-      { labelKey: "allPrograms", href: "/programas" },
-      { labelKey: "aiFundamentals", href: "/programas/ai-fundamentals" },
-      { labelKey: "theRealAi", href: "/programas/the-real-ai" },
+      { labelKey: "allLearnings", href: "/aprendizajes" },
+      {
+        labelKey: "programsSection",
+        href: `/aprendizajes#${categoryAnchors.programa}`,
+      },
+      {
+        labelKey: "coursesSection",
+        href: `/aprendizajes#${categoryAnchors["curso-taller-workshop"]}`,
+      },
     ],
   },
   {
@@ -69,12 +79,29 @@ export const companiesLink = {
   href: "/empresas",
 };
 
-// TODO: URLs reales de las redes.
-export const socialLinks = [
-  { labelKey: "linkedin" as const, href: "#" },
-  { labelKey: "discord" as const, href: DISCORD_URL },
-  { labelKey: "whatsapp" as const, href: "#" },
-  { labelKey: "github" as const, href: "#" },
+/**
+ * Redes del footer. Las tres que existen: no hay Discord ni GitHub.
+ *
+ * Las URL se guardan LIMPIAS, sin los parámetros de seguimiento con que
+ * llegan al copiarlas desde la app (`utm_source=qr`, `igsi=`, `mode=`). Esos
+ * parámetros describen de dónde salió ESE enlace concreto, no la cuenta, y
+ * repartirlos por el sitio ensucia las estadísticas de la propia red.
+ */
+type SocialKey = "linkedin" | "instagram" | "whatsapp";
+
+export const socialLinks: { labelKey: SocialKey; href: string }[] = [
+  {
+    labelKey: "linkedin",
+    href: "https://www.linkedin.com/company/ai-playgrounds-tech/",
+  },
+  {
+    labelKey: "instagram",
+    href: "https://www.instagram.com/aiplaygroundstech",
+  },
+  {
+    labelKey: "whatsapp",
+    href: "https://chat.whatsapp.com/ET8AwrRVyg712LIrs6pz59",
+  },
 ];
 
 /** Antepone el idioma a una ruta interna. */

@@ -6,7 +6,7 @@
  */
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
+import { Geist, Geist_Mono, Newsreader } from "next/font/google";
 import { notFound } from "next/navigation";
 import { lang } from "next/root-params";
 import { locales, isLocale } from "@/config/i18n";
@@ -25,19 +25,31 @@ const geistMono = Geist_Mono({
 });
 
 /**
- * Serif de titulares. Solo existe en peso 400: es una tipografía de display y
- * engordarla le quita la elegancia, así que no se piden más pesos. La cursiva
- * sí se carga, porque el encabezado la usa para el giro de la frase.
+ * Serif del CUERPO DE TEXTO. Sustituye a Instrument Serif.
+ *
+ * El cambio no es de gusto: Instrument Serif es una tipografía de DISPLAY,
+ * dibujada para titulares grandes. A 16px en un párrafo de cinco líneas sus
+ * remates finos se cierran y el texto se vuelve incómodo. Newsreader está
+ * dibujada para lo contrario — texto seguido a tamaño de lectura — que es el
+ * trabajo que la serif hace ahora en este sitio.
+ *
+ * Es variable, así que los pesos 400 a 500 salen de un solo archivo. La
+ * cursiva se carga porque el encabezado la usa para el giro de la frase.
  */
-const instrumentSerif = Instrument_Serif({
-  variable: "--font-instrument-serif",
-  weight: "400",
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
+  weight: ["400", "500"],
   style: ["normal", "italic"],
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "AI PlayGrounds",
+  // `template` vive aquí para que cada página interior solo declare su propio
+  // nombre ("Eventos") y no repita la marca siete veces.
+  title: {
+    default: "AI PlayGrounds",
+    template: "%s — AI PlayGrounds",
+  },
   description:
     "Una comunidad de IA en español para quienes quieren ir más allá de usar herramientas: entender cómo funcionan, evaluarlas con criterio y llevar sistemas reales a producción.",
 };
@@ -54,7 +66,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
   return (
     <html
       lang={locale}
-      className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${newsreader.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-aipg-bg text-aipg-text">
         <Header />

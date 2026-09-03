@@ -25,7 +25,7 @@ export function Logo({ className = "" }: LogoProps) {
     >
       <span className="font-normal">[</span>
       <span className="font-bold">ai</span>
-      <span className="font-normal text-aipg-accent">·</span>
+      <span className="font-normal text-aipg-accent-text">·</span>
       <span className="font-normal">playgrounds</span>
       <span className="font-normal">]</span>
     </span>
