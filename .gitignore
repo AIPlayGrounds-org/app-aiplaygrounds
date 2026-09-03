@@ -40,6 +40,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# skills de Claude Code instaladas en local: son herramientas de trabajo,
-# no código del sitio. La configuración del proyecto (.claude/CLAUDE.md) sí va.
-.claude/skills/
+# Todo lo de Claude Code queda fuera del repo: las skills instaladas en local
+# y también CLAUDE.md. Es configuración de la máquina de cada quien, no código
+# del sitio.
+#
+# El .gitignore ya lo decía, pero .claude/claude.md se había commiteado antes
+# de que existiera esta regla, y un archivo ya rastreado no lo ignora nadie:
+# hubo que sacarlo del índice con `git rm --cached`.
+.claude/
