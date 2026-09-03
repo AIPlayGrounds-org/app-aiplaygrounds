@@ -9,7 +9,6 @@
  * les antepone /es o /en al construir el enlace.
  */
 
-import { categoryAnchors } from "@/content/learnings";
 import type { Dictionary } from "@/dictionaries/es";
 
 type NavKey = keyof Dictionary["nav"];
@@ -42,22 +41,13 @@ export const navBlocks: NavBlock[] = [
     // lista un solo formato: agrupa programas largos y sesiones cortas, que
     // resuelven necesidades distintas y no se comparan entre sí.
     //
-    // El desplegable enlaza a las DOS SECCIONES de la página, no a programas
-    // concretos. Con contenido servido por Payload, una lista de programas en
-    // el menú se quedaría desactualizada sola; un ancla a una sección no.
+    // El desplegable NO repite las secciones de la página. Programas y cursos
+    // ya son dos apartados dentro de /aprendizajes; volver a nombrarlos en el
+    // menú duplica la misma navegación en dos sitios que hay que mantener
+    // sincronizados.
     labelKey: "learnings",
     href: "/aprendizajes",
-    items: [
-      { labelKey: "allLearnings", href: "/aprendizajes" },
-      {
-        labelKey: "programsSection",
-        href: `/aprendizajes#${categoryAnchors.programa}`,
-      },
-      {
-        labelKey: "coursesSection",
-        href: `/aprendizajes#${categoryAnchors["curso-taller-workshop"]}`,
-      },
-    ],
+    items: [{ labelKey: "allLearnings", href: "/aprendizajes" }],
   },
   {
     labelKey: "aiLabs",

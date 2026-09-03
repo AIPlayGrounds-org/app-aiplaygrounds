@@ -253,8 +253,6 @@ export const en: Dictionary = {
     events: "Eventos",
     learnings: "Aprendizajes",
     allLearnings: "Todos los aprendizajes",
-    programsSection: "Programas",
-    coursesSection: "Cursos y talleres",
     aiLabs: "AI Labs",
     about: "Nosotros",
     team: "Equipo",
