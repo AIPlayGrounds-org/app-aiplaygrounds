@@ -19,6 +19,11 @@
  * referencia. El vacío pasa a estar entre los dos grupos, que es donde hace
  * trabajo en vez de estorbar.
  *
+ * SIN LÍNEA INFERIOR. La barra no se separa del contenido con un borde sino
+ * con el fondo al 92% y el desenfoque: al hacer scroll, el texto pasa por
+ * detrás difuminado y eso ya dice dónde acaba la navegación. Es lo que hace la
+ * referencia en la parte alta de su home.
+ *
  * Los desplegables siguen funcionando solo con CSS (group-hover +
  * group-focus-within): se abren con el ratón y también tabulando con el
  * teclado, sin JavaScript. El único JS de la barra es el menú móvil y el
@@ -78,7 +83,7 @@ export async function Header() {
   }));
 
   return (
-    <header className="sticky top-0 z-40 border-b border-aipg-border bg-aipg-bg/92 backdrop-blur">
+    <header className="sticky top-0 z-40 bg-aipg-bg/92 backdrop-blur">
       <Container>
         <div className="flex h-16 items-center">
           <Link
