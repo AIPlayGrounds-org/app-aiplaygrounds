@@ -90,6 +90,30 @@
      controles son perceptiblemente más redondeados que los de antes. */
   --radius-aipg: 0.5rem;
 
+  /* ESCALA DE TEXTO. Sube un paso respecto a la de Tailwind.
+
+     Se redefine AQUÍ y no clase por clase: `@theme` es la fuente de la escala
+     en Tailwind v4 —no hay tailwind.config— así que tocar estos valores cambia
+     todos los `text-*` del sitio a la vez. Ningún componente lleva un tamaño
+     suelto entre corchetes, de modo que no hay excepciones que se queden
+     atrás.
+
+     El motivo del aumento: el cuerpo de texto va en SERIF, y una serif se
+     percibe más pequeña que una sans al mismo tamaño en píxeles —tiene la
+     altura de x más baja y los trazos más finos—. Los 16px que servían con
+     Geist se quedan cortos con Newsreader.
+
+     Se toca el tamaño y no el `font-size` del root a propósito: en Tailwind v4
+     los espaciados también están en rem, así que subir el root habría inflado
+     los márgenes en la misma proporción y el texto se vería igual de pequeño
+     dentro de una página más grande. */
+  --text-xs: 0.8125rem; /* 12 → 13 */
+  --text-sm: 0.9375rem; /* 14 → 15 */
+  --text-base: 1.0625rem; /* 16 → 17 */
+  --text-lg: 1.1875rem; /* 18 → 19 */
+  --text-xl: 1.375rem; /* 20 → 22 */
+  --text-2xl: 1.625rem; /* 24 → 26 */
+
   /* Escala de titulares FLUIDA, con clamp() para que crezca de forma continua
      con el ancho de la ventana en vez de saltar por escalones.
 
@@ -97,11 +121,11 @@
      64px donde el sitio titulaba a 88px: la presencia no la da el tamaño sino
      el peso alto y el aire alrededor. Un titular más pequeño y mejor rodeado
      se lee antes. */
-  --text-display: clamp(2.25rem, 1.55rem + 2.95vw, 3.5rem); /* 36px → 56px */
+  --text-display: clamp(2.375rem, 1.6rem + 3.2vw, 3.75rem); /* 38px → 60px */
   --text-display--line-height: 1.06;
   --text-display--letter-spacing: -0.022em;
 
-  --text-title: clamp(1.875rem, 1.35rem + 2.2vw, 2.75rem); /* 30px → 44px */
+  --text-title: clamp(2rem, 1.45rem + 2.3vw, 3rem); /* 32px → 48px */
   --text-title--line-height: 1.12;
   --text-title--letter-spacing: -0.018em;
 }
