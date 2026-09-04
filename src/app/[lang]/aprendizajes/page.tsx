@@ -71,6 +71,7 @@ export default async function LearningsPage() {
           return (
             <LearningCard
               key={item.slug}
+              seed={item.slug}
               titulo={copy.titulo}
               descripcion={copy.descripcionCorta}
               meta={meta}
@@ -111,6 +112,7 @@ export default async function LearningsPage() {
           return (
             <LearningCard
               key={item.slug}
+              seed={item.slug}
               titulo={copy.titulo}
               descripcion={copy.descripcionCorta}
               meta={meta}

@@ -40,7 +40,22 @@ export function LearningSection({
         </p>
 
         {count > 0 ? (
-          <ul className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          /* El número de columnas sale del número de items, no al revés.
+
+             Con tres columnas fijas y dos programas, la fila quedaba con un
+             hueco a la derecha que se lee como contenido que falta o como una
+             retícula rota. Con dos columnas, esos mismos dos programas llenan
+             la fila y encima salen más anchos, así que la portada y el texto
+             respiran.
+
+             El corte está en tres: a partir de ahí compensa la tercera
+             columna, porque cuatro items en dos columnas ya son dos filas
+             completas. */
+          <ul
+            className={`mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 ${
+              count >= 3 ? "lg:grid-cols-3" : ""
+            }`}
+          >
             {children}
           </ul>
         ) : (

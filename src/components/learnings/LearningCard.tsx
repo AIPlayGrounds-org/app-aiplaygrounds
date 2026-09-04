@@ -12,9 +12,13 @@
  * color delante.
  *
  * El bloque superior admite ilustración cuando exista (`imagen`). Mientras no
- * la haya, es un tono plano de la paleta. Plano y no una ilustración inventada:
- * un dibujo genérico de archivo diría menos que un color, y además mentiría
- * sobre el contenido.
+ * la haya, se genera: un tono de la paleta, una retícula de puntos y un disco
+ * de acento que cambia de sitio con el slug.
+ *
+ * Generada y no ilustrada a propósito. Un dibujo genérico de archivo diría
+ * menos que esto y encima mentiría sobre el contenido; en cambio la retícula
+ * es el punto separador del logo llevado a sistema, que es un elemento gráfico
+ * que la marca YA tiene.
  *
  * La línea de metadatos al pie sale ya montada del servidor, con sus puntos
  * medios de separación.
@@ -33,6 +37,8 @@ type LearningCardProps = {
   estado?: { key: LearningState; label: string };
   cta: { label: string; href: string };
   cover: { tone: CoverTone; image?: string };
+  /** Semilla de la marca de la portada. Se usa el slug del aprendizaje. */
+  seed: string;
 };
 
 /**
@@ -53,6 +59,62 @@ const coverClass: Record<CoverTone, string> = {
   ink: "bg-aipg-cover-ink",
 };
 
+/**
+ * Color de la retícula de puntos sobre cada tono. `currentColor` lo hereda el
+ * degradado, así que basta con fijar el color de texto del contenedor.
+ */
+const latticeClass: Record<CoverTone, string> = {
+  sand: "text-aipg-text opacity-25",
+  peri: "text-aipg-text opacity-25",
+  // Sobre tinta el mismo porcentaje se percibe casi el doble de fuerte: un
+  // punto claro sobre negro tiene mucho más contraste que uno oscuro sobre
+  // marfil. Se compensa a la baja.
+  ink: "text-aipg-bg opacity-15",
+};
+
+/**
+ * Paso de la retícula, en píxeles. Lo comparten el degradado que la dibuja y
+ * la posición de la marca, así que la marca cae SIEMPRE sobre un punto de la
+ * trama y no entre dos.
+ *
+ * Ese detalle es la diferencia entre un elemento gráfico y una bola suelta:
+ * flotando por libre se lee como un descuido; encajada en la retícula se lee
+ * como un nodo señalado.
+ */
+const LATTICE = 14;
+
+/**
+ * Nodos donde puede caer la marca, en coordenadas de retícula (columna, fila).
+ *
+ * El rango está acotado para que quepan en la portada más estrecha que puede
+ * darse —una tarjeta a un tercio de ancho en pantalla pequeña— sin salirse ni
+ * pegarse al borde. Tampoco hay ninguno en el centro exacto: centrado se lee
+ * como una diana.
+ */
+const markNodes = [
+  { col: 5, row: 3 },
+  { col: 13, row: 6 },
+  { col: 8, row: 8 },
+  { col: 15, row: 3 },
+  { col: 6, row: 7 },
+  { col: 11, row: 4 },
+] as const;
+
+/**
+ * Elige la posición a partir del slug. DETERMINISTA a propósito: con
+ * Math.random(), servidor y navegador pintarían posiciones distintas y React
+ * avisaría de que el HTML no coincide. Además, así una tarjeta se ve siempre
+ * igual y el visitante puede reconocerla.
+ */
+function spotFor(seed: string) {
+  let hash = 0;
+  for (let i = 0; i < seed.length; i += 1) {
+    hash = (hash * 31 + seed.charCodeAt(i)) >>> 0;
+  }
+  const node = markNodes[hash % markNodes.length];
+  return { top: node.row * LATTICE, left: node.col * LATTICE };
+}
+
 export function LearningCard({
   titulo,
   descripcion,
@@ -60,7 +122,9 @@ export function LearningCard({
   estado,
   cta,
   cover,
+  seed,
 }: LearningCardProps) {
+  const spot = spotFor(seed);
   return (
     <li>
       {/* La tarjeta entera es el enlace: en un bloque de este tamaño, obligar
@@ -73,9 +137,11 @@ export function LearningCard({
         {/* Proporción fija para que todas las portadas midan igual aunque los
             títulos de debajo tengan distinto número de líneas. */}
         <div
-          className={`relative aspect-[16/9] w-full ${cover.image ? "" : coverClass[cover.tone]}`}
+          className={`relative aspect-[16/9] w-full overflow-hidden ${
+            cover.image ? "" : coverClass[cover.tone]
+          }`}
         >
-          {cover.image && (
+          {cover.image ? (
             <Image
               src={cover.image}
               alt=""
@@ -83,6 +149,39 @@ export function LearningCard({
               sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
               className="object-cover"
             />
+          ) : (
+            <>
+              {/* Retícula de puntos. Es el punto separador del logo llevado a
+                  sistema: la marca ya tiene un elemento gráfico propio, así
+                  que la portada no necesita inventarse uno. */}
+              <div
+                aria-hidden="true"
+                className={`absolute inset-0 ${latticeClass[cover.tone]}`}
+                style={{
+                  backgroundImage:
+                    "radial-gradient(circle, currentColor 1px, transparent 1.2px)",
+                  backgroundSize: `${LATTICE}px ${LATTICE}px`,
+                }}
+              />
+
+              {/* La marca de acento: un nodo de la retícula señalado con un
+                  anillo. Cambia de sitio con el slug, así que cada aprendizaje
+                  tiene su portada sin que nadie la diseñe una a una — y sin
+                  fingir una ilustración que no existe.
+
+                  El anillo crece al pasar el ratón. Es la única animación de
+                  la tarjeta, y `globals.css` ya la desactiva para quien tiene
+                  activado "reducir movimiento". */}
+              <div
+                aria-hidden="true"
+                className="absolute -translate-x-1/2 -translate-y-1/2"
+                style={{ top: spot.top, left: spot.left }}
+              >
+                <div className="h-2.5 w-2.5 rounded-full bg-aipg-accent" />
+                <div className="absolute left-1/2 top-1/2 h-14 w-14 -translate-x-1/2 -translate-y-1/2 rounded-full border border-aipg-accent opacity-60 transition-transform duration-500 group-hover:scale-125" />
+                <div className="absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full border border-aipg-accent opacity-25 transition-transform duration-700 group-hover:scale-110" />
+              </div>
+            </>
           )}
         </div>
 
