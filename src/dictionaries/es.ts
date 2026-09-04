@@ -256,6 +256,7 @@ export const es = {
 
   nav: {
     home: "Ir al inicio",
+    skipToContent: "Saltar al contenido",
     community: "Comunidad",
     communityHome: "Comunidad",
     events: "Eventos",

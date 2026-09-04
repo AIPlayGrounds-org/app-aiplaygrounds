@@ -2,12 +2,16 @@
 
 /**
  * Selector de idioma. Cliente porque necesita la ruta actual para poder
- * intercambiar /es/programas por /en/programas conservando la página.
+ * intercambiar /es/aprendizajes por /en/aprendizajes conservando la página.
  *
- * El área clicable ocupa TODO el alto de la barra, no solo el alto del texto.
- * Antes el enlace medía 26x24 px dentro de un bloque de 90x64: el resto era
- * zona muerta que parecía parte del control y se tragaba los clics sin hacer
- * nada. El relleno vive en el <a>, nunca en el contenedor.
+ * El área clicable mide 44x44 px y vive en el <a>, nunca en el contenedor.
+ * Dos correcciones distintas acabaron aquí:
+ *
+ * - El ancho (`min-w-11`) se puso cuando el enlace medía 26px dentro de un
+ *   bloque de 90: el resto era zona muerta que parecía parte del control y se
+ *   tragaba los clics sin hacer nada.
+ * - El alto (`h-11`) faltaba: lo daba el texto, unos 18px, por debajo de los
+ *   24px que WCAG 2.2 pide como mínimo para un objetivo.
  */
 
 import Link from "next/link";
@@ -41,7 +45,7 @@ export function LocaleSwitcher({ current, label }: Props) {
             lang={locale}
             aria-label={localeNames[locale]}
             aria-current={isCurrent ? "true" : undefined}
-            className={`flex min-w-11 items-center justify-center uppercase transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-aipg-focus ${
+            className={`flex h-11 min-w-11 items-center justify-center uppercase transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-aipg-focus ${
               isCurrent
                 ? "text-aipg-text"
                 : "text-aipg-muted hover:text-aipg-text"

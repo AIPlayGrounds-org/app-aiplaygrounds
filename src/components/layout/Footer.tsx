@@ -24,14 +24,14 @@ export async function Footer() {
         </div>
 
         <nav aria-label={dict.footer.social}>
-          <ul className="flex flex-wrap gap-x-6 gap-y-3">
+          <ul className="-my-1.5 flex flex-wrap gap-x-6">
             {socialLinks.map((link) => (
               <li key={link.labelKey}>
                 <Link
                   href={link.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-sm text-aipg-muted transition-colors hover:text-aipg-text focus-visible:text-aipg-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-aipg-focus"
+                  className="inline-block py-1.5 text-sm text-aipg-muted transition-colors hover:text-aipg-text focus-visible:text-aipg-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-aipg-focus"
                 >
                   {dict.footer[link.labelKey]}
                 </Link>

@@ -10,6 +10,7 @@ import { Geist, Geist_Mono, Newsreader } from "next/font/google";
 import { notFound } from "next/navigation";
 import { lang } from "next/root-params";
 import { locales, isLocale } from "@/config/i18n";
+import { getDictionary } from "@/dictionaries";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import "../globals.css";
@@ -63,14 +64,33 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
   const locale = await lang();
   if (!isLocale(locale)) notFound();
 
+  const dict = await getDictionary();
+
   return (
     <html
       lang={locale}
       className={`${geistSans.variable} ${geistMono.variable} ${newsreader.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-aipg-bg text-aipg-text">
+        {/* Enlace de salto. Invisible hasta que recibe el foco.
+
+            La barra tiene cuatro bloques, dos idiomas y un botón: quien
+            navega con teclado tiene que pasar por diez controles en CADA
+            página antes de llegar al texto. Este enlace es el atajo, y
+            aparece justo al pulsar Tab por primera vez. */}
+        <a
+          href="#contenido"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-aipg focus:bg-aipg-text focus:px-4 focus:py-3 focus:text-sm focus:font-medium focus:text-aipg-on-ink focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-aipg-focus"
+        >
+          {dict.nav.skipToContent}
+        </a>
+
         <Header />
-        <main className="flex-1">{children}</main>
+        {/* scroll-mt compensa la barra fija: sin él, el salto deja el primer
+            titular escondido debajo de la navegación. */}
+        <main id="contenido" className="flex-1 scroll-mt-16">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

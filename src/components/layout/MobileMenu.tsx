@@ -57,7 +57,7 @@ export function MobileMenu({
         aria-expanded={open}
         aria-controls="mobile-menu"
         aria-label={open ? closeLabel : openLabel}
-        className="-mr-2 flex h-11 w-11 items-center justify-center rounded-aipg text-aipg-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aipg-focus md:hidden"
+        className="-mr-2 flex h-11 w-11 items-center justify-center rounded-aipg text-aipg-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aipg-focus lg:hidden"
       >
         <span aria-hidden="true" className="relative block h-4 w-5">
           <span
@@ -76,7 +76,7 @@ export function MobileMenu({
       {open && (
         <div
           id="mobile-menu"
-          className="fixed inset-x-0 bottom-0 top-16 z-50 overflow-y-auto border-t border-aipg-border bg-aipg-bg md:hidden"
+          className="fixed inset-x-0 bottom-0 top-16 z-50 overflow-y-auto border-t border-aipg-border bg-aipg-bg lg:hidden"
         >
           <nav className="flex flex-col">
             {blocks.map((block) => (

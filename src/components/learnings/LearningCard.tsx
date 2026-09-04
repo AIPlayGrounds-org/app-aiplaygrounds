@@ -108,7 +108,21 @@ export function LearningCard({
             {descripcion}
           </p>
 
-          <p className="mt-5 font-mono text-xs text-aipg-muted">
+          {/* La llamada a la acción NO es un enlace: la tarjeta entera ya lo
+              es, y un enlace dentro de otro no es HTML válido. Es la señal
+              visible de que esto se pulsa, con la flecha desplazándose al
+              pasar por encima de cualquier parte de la tarjeta. */}
+          <p className="mt-5 flex items-center gap-1.5 font-sans text-sm font-medium text-aipg-text">
+            {cta.label}
+            <span
+              aria-hidden="true"
+              className="transition-transform duration-150 group-hover:translate-x-0.5"
+            >
+              &rarr;
+            </span>
+          </p>
+
+          <p className="mt-3 font-mono text-xs text-aipg-muted">
             {meta.map((part, index) => (
               <span key={part}>
                 {index > 0 && (

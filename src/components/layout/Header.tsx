@@ -1,6 +1,12 @@
 /**
  * Navegación principal. Server Component.
  *
+ * EL CORTE ESTÁ EN `lg` (1024px) Y NO EN `md`. Los desplegables se abren al
+ * pasar el ratón, y en una pantalla táctil no hay ratón que pase: un iPad en
+ * vertical mide 768px, entraba en `md` y recibía la barra de escritorio, donde
+ * "Eventos" era sencillamente inalcanzable. Desde 1024px hacia abajo manda el
+ * menú desplegable, que se abre pulsando.
+ *
  * ESTÉTICA: anthropic.com. Se fueron las líneas verticales que partían la
  * barra en bloques — venían de la referencia anterior (Crafter Station) y son
  * lo contrario de lo que hace esta: allí la estructura la dibujan los bordes,
@@ -86,7 +92,7 @@ export async function Header() {
           {/* Todo lo demás vive a la derecha. El `ml-auto` empuja el grupo
               entero, así que el hueco queda entre el logo y los enlaces. */}
           <div className="ml-auto flex items-center gap-5 md:gap-7">
-            <nav className="hidden items-center gap-7 md:flex">
+            <nav className="hidden items-center gap-7 lg:flex">
               {navBlocks.map((block) => (
                 <div key={block.href} className="group relative">
                   <Link
@@ -128,7 +134,7 @@ export async function Header() {
 
             <ButtonLink
               href={href(companiesLink.href)}
-              className="hidden !px-4 !py-2 md:inline-flex"
+              className="hidden !px-4 !py-2 lg:inline-flex"
             >
               {dict.nav[companiesLink.labelKey]}
             </ButtonLink>
