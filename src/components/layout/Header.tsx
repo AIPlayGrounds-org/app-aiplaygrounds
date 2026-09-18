@@ -39,31 +39,10 @@ import {
   localizedHref,
 } from "@/config/navigation";
 import { ButtonLink } from "@/components/ui/ButtonLink";
+import { Icon } from "@/components/ui/Icon";
 import { Container } from "./Container";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 import { MobileMenu, type MobileNavBlock } from "./MobileMenu";
-
-/**
- * Galón del desplegable. Sustituye al carácter "▾", que cada sistema dibuja a
- * su manera y en algunos sale como un triángulo macizo demasiado pesado para
- * el peso de la tipografía que acompaña.
- */
-function Chevron() {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 10 6"
-      className="h-[5px] w-[9px] transition-transform duration-150 group-hover:translate-y-px"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.6"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M1 1l4 4 4-4" />
-    </svg>
-  );
-}
 
 export async function Header() {
   const [dict, locale] = await Promise.all([getDictionary(), getLocale()]);
@@ -102,10 +81,31 @@ export async function Header() {
                 <div key={block.href} className="group relative">
                   <Link
                     href={href(block.href)}
-                    className="flex items-center gap-1.5 rounded-aipg py-2 text-sm text-aipg-text transition-colors hover:text-aipg-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-aipg-focus"
+                    className="flex items-center gap-0.5 rounded-aipg py-2 text-sm text-aipg-text transition-colors hover:text-aipg-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-aipg-focus"
                   >
                     {dict.nav[block.labelKey]}
-                    {block.items && <Chevron />}
+                    {block.items && (
+                      /* Galón del desplegable. Sustituye al carácter "▾", que
+                         cada sistema dibuja a su manera y en algunos sale como
+                         un triángulo macizo, demasiado pesado para el peso de
+                         la tipografía que acompaña.
+
+                         Los números reproducen el chevron a medida que vivía
+                         aquí antes de mudarse al set, no son gusto: sobre la
+                         rejilla de 24, el trazo por defecto (1.75) mediría
+                         0.9px a este tamaño y se desvanecería. Con 2.5 mide
+                         1.46px, contra los 1.44px de antes, y el galón sale de
+                         7 × 3.5px contra los 7.2 × 3.3px de antes.
+
+                         El hueco baja a 0.5 porque el recuadro del icono trae
+                         3.5px de aire propio a cada lado: sumados a los 2px
+                         del hueco dan los ~6px de separación que había. */
+                      <Icon
+                        name="chevronDown"
+                        strokeWidth={2.5}
+                        className="h-[14px] w-[14px] transition-transform duration-150 group-hover:translate-y-px"
+                      />
+                    )}
                   </Link>
 
                   {block.items && (
