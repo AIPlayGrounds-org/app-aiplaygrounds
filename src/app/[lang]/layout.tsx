@@ -44,15 +44,51 @@ const newsreader = Newsreader({
   subsets: ["latin"],
 });
 
+const siteName = "AI PlayGrounds";
+const siteDescription =
+  "Una comunidad de IA en español para quienes quieren ir más allá de usar herramientas: entender cómo funcionan, evaluarlas con criterio y llevar sistemas reales a producción.";
+
+/**
+ * Dirección pública del sitio. Hace falta para que la imagen de compartir se
+ * anuncie con URL absoluta: LinkedIn y WhatsApp no resuelven rutas relativas,
+ * porque leen la etiqueta desde sus propios servidores y no desde el sitio.
+ *
+ * Sale de una variable de entorno porque todavía NO HAY DOMINIO decidido —
+ * el despliegue es el paso 5 del CLAUDE.md. Mientras tanto apunta a local,
+ * que sirve para verlo en desarrollo. Al desplegar hay que definir
+ * NEXT_PUBLIC_SITE_URL o las tarjetas apuntarán a localhost.
+ */
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   // `template` vive aquí para que cada página interior solo declare su propio
   // nombre ("Eventos") y no repita la marca siete veces.
   title: {
-    default: "AI PlayGrounds",
-    template: "%s — AI PlayGrounds",
+    default: siteName,
+    template: `%s — ${siteName}`,
   },
-  description:
-    "Una comunidad de IA en español para quienes quieren ir más allá de usar herramientas: entender cómo funcionan, evaluarlas con criterio y llevar sistemas reales a producción.",
+  description: siteDescription,
+
+  /* Lo que ven LinkedIn, WhatsApp e Instagram al desplegar un enlace.
+     La IMAGEN no se nombra aquí: la genera `opengraph-image.tsx` y Next la
+     enlaza sola, con su tamaño y su tipo, para cada idioma.
+
+     El texto va en español en los dos idiomas a propósito, no por descuido:
+     `en.ts` está entero sin traducir todavía (lleva su TODO). Traducir esto
+     antes que el diccionario haría que la tarjeta prometiera un inglés que
+     la página no cumple. */
+  openGraph: {
+    type: "website",
+    siteName,
+    title: siteName,
+    description: siteDescription,
+  },
+  twitter: {
+    // Tarjeta grande: la imagen ocupa el ancho en vez de salir como una
+    // miniatura cuadrada al lado del texto.
+    card: "summary_large_image",
+  },
 };
 
 /** Prerenderiza /es y /en en el build. */

@@ -27,7 +27,17 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  // Excluye rutas internas de Next y cualquier archivo con extensión
-  // (imágenes, fuentes, favicon). Sin esto el proxy bloquearía los estáticos.
-  matcher: ["/((?!_next|.*\\..*).*)"],
+  /* Excluye rutas internas de Next y cualquier archivo con extensión
+     (imágenes, fuentes, favicon). Sin esto el proxy bloquearía los estáticos.
+
+     `apple-icon` va nombrado aparte porque NO TIENE EXTENSIÓN: Next lo sirve
+     en /apple-icon a secas, así que la regla del punto no lo salva y el proxy
+     lo tomaba por una página, redirigiendo a /es/apple-icon, que no existe.
+     Resultado: iOS no encontraba el icono al guardar el sitio en la pantalla
+     de inicio. `icon.svg` sí lleva punto y por eso nunca dio problema.
+
+     Se nombra este y no un patrón más amplio a propósito: la exclusión es por
+     prefijo, así que poner `icon` a secas dejaría fuera también una futura
+     página /iconos. */
+  matcher: ["/((?!_next|apple-icon|.*\\..*).*)"],
 };

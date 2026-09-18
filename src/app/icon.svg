@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="AI PlayGrounds">
+  <!--
+    Marca reducida de AI PlayGrounds.
+
+    Es el logo tipográfico (`[ ai · playgrounds ]`) llevado al tamaño mínimo:
+    a 16px no cabe una palabra, así que se conserva lo que sí identifica —los
+    corchetes y el punto de acento— y se deja caer el texto.
+
+    DIBUJADA COMO TRAZOS, NO COMO TEXTO. Un <text> dentro de un SVG se pinta
+    con la tipografía que tenga el navegador, no con Geist: el mismo archivo
+    se vería distinto en cada máquina. Con paths, el dibujo es el mismo en
+    todas partes y no depende de ninguna fuente.
+
+    FONDO DE TINTA, no marfil. El marfil del sitio (#faf9f5) desaparece contra
+    la barra blanca de pestañas en modo claro. La tinta se ve sobre fondo claro
+    y sobre fondo oscuro, que es lo único que se le pide a un favicon. La
+    combinación tinta + marfil ya existe en el sistema: es el tono `cover-ink`
+    de las portadas.
+
+    El punto va en --color-aipg-accent (#8e8efe) y no en accent-text (#5757fc):
+    sobre tinta, el periwinkle oscuro se apaga. Este da 7.1:1 contra el fondo.
+
+    Los valores van en hexadecimal y no como var(--color-aipg-*) porque este
+    archivo lo sirve Next.js por su cuenta, fuera del CSS del sitio: aquí no
+    hay tokens que resolver. Si cambia la paleta en globals.css, hay que
+    cambiarlos aquí a mano. Son tres.
+  -->
+  <rect width="32" height="32" rx="7" fill="#141413"/>
+  <g stroke="#faf9f5" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M10.5 6.8H8.8v18.4h1.7"/>
+    <path d="M21.5 6.8h1.7v18.4h-1.7"/>
+  </g>
+  <circle cx="16" cy="16" r="2.4" fill="#8e8efe"/>
+</svg>
