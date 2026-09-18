@@ -77,7 +77,7 @@ export const companiesLink = {
  * parámetros describen de dónde salió ESE enlace concreto, no la cuenta, y
  * repartirlos por el sitio ensucia las estadísticas de la propia red.
  */
-type SocialKey = "linkedin" | "instagram" | "whatsapp";
+export type SocialKey = "linkedin" | "instagram" | "whatsapp";
 
 export const socialLinks: { labelKey: SocialKey; href: string }[] = [
   {
@@ -93,6 +93,24 @@ export const socialLinks: { labelKey: SocialKey; href: string }[] = [
     href: "https://chat.whatsapp.com/ET8AwrRVyg712LIrs6pz59",
   },
 ];
+
+/**
+ * La URL de una red, buscada por su clave.
+ *
+ * Existe porque el grupo de WhatsApp no es solo un enlace del pie: es la
+ * puerta de entrada a la comunidad, y /comunidad también lo necesita.
+ * Escribirlo otra vez allí serían dos sitios que un día apuntarán a grupos
+ * distintos.
+ *
+ * Si la clave no existe, revienta en vez de devolver un enlace vacío: un
+ * botón que no lleva a ninguna parte es un fallo silencioso, y este se ve en
+ * el primer render.
+ */
+export function socialHref(key: SocialKey) {
+  const link = socialLinks.find((item) => item.labelKey === key);
+  if (!link) throw new Error(`Red social desconocida: ${key}`);
+  return link.href;
+}
 
 /** Antepone el idioma a una ruta interna. */
 export function localizedHref(locale: string, href: string) {

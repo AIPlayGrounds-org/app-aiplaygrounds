@@ -89,17 +89,135 @@ export const en: Dictionary = {
     underConstructionNote:
       "Esta página todavía no tiene su contenido definitivo. Esto es lo que va a vivir aquí.",
 
+    /**
+     * Comunidad.
+     *
+     * La página abre nombrando al lector, no a la comunidad: "usas IA todos
+     * los días y te manejas, pero sientes que hay un nivel que no tocas". Una
+     * descripción de beneficios no consigue que nadie se reconozca; esa frase
+     * sí. El resto de la página responde a ese punto de partida.
+     *
+     * El relato original estaba escrito en primera persona ("tengo un
+     * problema"). Aquí va en segunda: en una página sin autor visible, ese
+     * "yo" no se sabe de quién es. La versión firmada encaja en /nosotros,
+     * donde sí hay una persona detrás.
+     *
+     * El número de encuentros NO vive aquí: es un dato, no un texto, no se
+     * traduce y cambia solo. Está en `src/content/community.ts`.
+     */
     community: {
       eyebrow: "Comunidad",
-      title: "Aprender con otros que están construyendo.",
+      title: "Más allá de usarla bien.",
       intro:
-        "No es un canal de anuncios. Es donde se comparten decisiones técnicas, resultados medidos y lo que no funcionó.",
-      upcoming: [
-        "Cómo unirse y qué esperar al entrar.",
-        "Los canales de la comunidad y para qué sirve cada uno.",
-        "Las reglas de la casa.",
-        "El calendario de encuentros.",
-      ],
+        "Usas IA todos los días y te manejas. Pero ves lo que otros están construyendo y sientes que hay un nivel que todavía no tocas.",
+      /** El componente antepone el número. Aquí solo va lo que se traduce. */
+      meta: "encuentros en Lima",
+
+      problem: {
+        eyebrow: "El problema",
+        body: [
+          "Haces prompts. Automatizas cosas. Te manejas bien.",
+          "Pero cuando ves lo que otra gente construye con esto, aparece la sensación de que hay todo un nivel que no tocas todavía. Y no queda claro por dónde seguir.",
+          "No eres el único. Hay mucha gente que ya perdió el miedo a la IA, que la usa a diario, y que se quedó justo ahí.",
+        ],
+        closing: "Por eso existe AI PlayGrounds.",
+      },
+
+      what: {
+        eyebrow: "Qué es",
+        body: [
+          "No es gente repitiendo lo que ya viste en todos lados.",
+          "Es gente construyendo cosas reales con IA y contando cómo las hizo: qué decidió, qué midió y qué se le rompió por el camino.",
+        ],
+      },
+
+      meetups: {
+        eyebrow: "Qué pasa cuando nos juntamos",
+        items: [
+          {
+            title: "Charlas técnicas",
+            description:
+              "De quien construyó lo que está contando. Con las decisiones y los errores incluidos.",
+          },
+          {
+            title: "Talleres",
+            description: "Se sale con algo hecho, no con apuntes.",
+          },
+          {
+            title: "Conversación entre pares",
+            description:
+              "Lo que no cabe en un video: preguntar lo específico de tu caso a quien ya pasó por ahí.",
+          },
+          {
+            title: "Lo que sigue después",
+            description:
+              "El encuentro termina; el grupo no. Ahí se contesta lo que quedó abierto.",
+          },
+        ],
+      },
+
+      /**
+       * Decir en voz alta para quién NO es filtra mejor que cualquier
+       * descripción. También es "sin hype" aplicado a la propia comunidad:
+       * mandar a alguien a otro sitio cuando este no le sirve.
+       */
+      audience: {
+        eyebrow: "Para quién es",
+        forTitle: "Es para ti si",
+        forItems: [
+          "Ya usas IA a diario y empiezas a chocar con sus límites.",
+          "Quieres entender por qué algo funciona, no solo que funcione.",
+          "Tienes algo en producción, o vas camino de ello.",
+          "Prefieres evaluar una herramienta antes de adoptarla.",
+        ],
+        againstTitle: "No es para ti si",
+        againstItems: [
+          "Empiezas de cero con IA. Hay sitios mejores para eso, y este no lo es.",
+          "Buscas prompts para copiar y pegar.",
+          "Vienes a buscar clientes.",
+        ],
+      },
+
+      join: {
+        eyebrow: "Cómo entrar",
+        note: "Entrar es gratis. No hay solicitud que aprobar.",
+        steps: [
+          "Únete al grupo de WhatsApp.",
+          "Preséntate: en qué trabajas y qué estás construyendo.",
+          "Ven al próximo encuentro.",
+        ],
+        ctaWhatsapp: "Unirme por WhatsApp",
+        ctaEvents: "Ver próximos encuentros",
+      },
+
+      rules: {
+        eyebrow: "Reglas de la casa",
+        items: [
+          {
+            title: "Sin promoción suelta",
+            description:
+              "Comparte lo que construyes cuando aporte a la conversación, no como anuncio.",
+          },
+          {
+            title: "Sin hype",
+            description:
+              "Si una afirmación no está probada, se dice que no está probada.",
+          },
+          {
+            title: "Enlaza la fuente",
+            description: "Un enlace vale más que una opinión repetida.",
+          },
+          {
+            title: "Preguntar no es debilidad",
+            description: "Nadie llega sabiendo.",
+          },
+          {
+            title: "En español",
+            description:
+              "Los términos técnicos en inglés están bien; la conversación es en español.",
+          },
+        ],
+      },
     },
 
     /**

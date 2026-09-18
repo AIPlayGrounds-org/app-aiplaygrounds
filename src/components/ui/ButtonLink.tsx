@@ -12,6 +12,11 @@
  * `line` es el secundario: solo borde. Usa --color-aipg-border-strong y no la
  * divisoria normal, porque aquí la línea ES el control: si no se ve, el botón
  * no existe.
+ *
+ * `external` existe porque no todos los destinos del sitio son del sitio: el
+ * grupo de WhatsApp y el calendario de Luma viven fuera. Un enlace que se
+ * lleva al visitante a otro dominio se abre en pestaña nueva, y `noreferrer`
+ * evita contarle al destino desde dónde llegó.
  */
 
 import Link from "next/link";
@@ -19,6 +24,8 @@ import Link from "next/link";
 type ButtonLinkProps = {
   href: string;
   variant?: "ink" | "line";
+  /** Destino fuera del sitio: se abre en pestaña nueva. */
+  external?: boolean;
   className?: string;
   children: React.ReactNode;
 };
@@ -34,11 +41,16 @@ const variants = {
 export function ButtonLink({
   href,
   variant = "ink",
+  external = false,
   className = "",
   children,
 }: ButtonLinkProps) {
   return (
-    <Link href={href} className={`${base} ${variants[variant]} ${className}`}>
+    <Link
+      href={href}
+      {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
+      className={`${base} ${variants[variant]} ${className}`}
+    >
       {children}
     </Link>
   );

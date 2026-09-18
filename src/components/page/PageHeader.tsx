@@ -6,6 +6,11 @@
  * permitirse la simetría; una página interior es lectura, y el texto se lee
  * mejor sobre un eje izquierdo estable.
  *
+ * `meta` es un dato corto que se apoya bajo la entrada: "24 encuentros en
+ * Lima". Va en monoespaciada porque es un dato, no una frase, y va aquí
+ * arriba porque una cifra comprobable convence más que un párrafo — pero solo
+ * si se ve antes de que el visitante decida seguir leyendo.
+ *
  * Server Component. No recibe textos propios: se los pasa cada página desde
  * su diccionario.
  */
@@ -16,9 +21,11 @@ type PageHeaderProps = {
   eyebrow: string;
   title: string;
   intro?: string;
+  /** Dato corto de apoyo. Opcional: la mayoría de páginas no tiene ninguno. */
+  meta?: string;
 };
 
-export function PageHeader({ eyebrow, title, intro }: PageHeaderProps) {
+export function PageHeader({ eyebrow, title, intro, meta }: PageHeaderProps) {
   return (
     <section className="py-16 md:py-20 lg:py-24">
       <Container>
@@ -35,6 +42,12 @@ export function PageHeader({ eyebrow, title, intro }: PageHeaderProps) {
         {intro && (
           <p className="mt-8 max-w-xl text-pretty text-lg leading-relaxed text-aipg-muted md:text-xl">
             {intro}
+          </p>
+        )}
+
+        {meta && (
+          <p className="mt-8 font-mono text-xs uppercase tracking-[0.2em] text-aipg-muted">
+            {meta}
           </p>
         )}
       </Container>
