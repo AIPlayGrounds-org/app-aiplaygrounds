@@ -100,104 +100,134 @@ export const es = {
     /**
      * Comunidad.
      *
-     * La página abre nombrando al lector, no a la comunidad: "usas IA todos
-     * los días y te manejas, pero sientes que hay un nivel que no tocas". Una
-     * descripción de beneficios no consigue que nadie se reconozca; esa frase
-     * sí. El resto de la página responde a ese punto de partida.
+     * El copy sale del documento de contenido cerrado en las sesiones de
+     * septiembre de 2026, que es la fuente de verdad de lo que dicen las
+     * páginas.
      *
-     * El relato original estaba escrito en primera persona ("tengo un
-     * problema"). Aquí va en segunda: en una página sin autor visible, ese
-     * "yo" no se sabe de quién es. La versión firmada encaja en /nosotros,
-     * donde sí hay una persona detrás.
+     * La entrada cambió de raíz. Antes abría nombrando al lector ("usas IA
+     * todos los días y te manejas, pero sientes que hay un nivel que no
+     * tocas"); ahora abre por el porqué —entender vale más que generar— y
+     * deja que el "para quién" lo resuelva la enumeración de verticales. Es
+     * una página que argumenta antes de filtrar.
+     *
+     * DOS SECCIONES DESAPARECIERON Y NO POR RECORTE: "quiénes vienen" quedó
+     * absorbido dentro del encabezado, y "cómo entrar" se repartió entre los
+     * botones. Las dos decisiones son del documento, no de la maqueta.
      *
      * El número de encuentros NO vive aquí: es un dato, no un texto, no se
-     * traduce y cambia solo. Está en `src/content/community.ts`.
+     * traduce y cambia solo. Está en `src/content/community.ts` —y hoy no se
+     * muestra en ninguna parte, porque la cifra está sin confirmar.
      */
     community: {
       eyebrow: "Comunidad",
-      title: "Más allá de usarla bien.",
-      intro:
-        "Usas IA todos los días y te manejas. Pero ves lo que otros están construyendo y sientes que hay un nivel que todavía no tocas.",
-      /** El componente antepone el número. Aquí solo va lo que se traduce. */
-      meta: "encuentros en Lima",
 
-      problem: {
-        eyebrow: "El problema",
-        body: [
-          "Haces prompts. Automatizas cosas. Te manejas bien.",
-          "Pero cuando ves lo que otra gente construye con esto, aparece la sensación de que hay todo un nivel que no tocas todavía. Y no queda claro por dónde seguir.",
-          "No eres el único. Hay mucha gente que ya perdió el miedo a la IA, que la usa a diario, y que se quedó justo ahí.",
-        ],
-        closing: "Por eso existe AI PlayGrounds.",
-      },
+      /**
+       * El título es la palabra sola. Antes era una frase —"Más allá de
+       * usarla bien"— que competía con el párrafo grande que ahora va a su
+       * derecha. En una retícula de dos columnas el título nombra la página
+       * y el argumento lo lleva la otra columna; dos frases compitiendo por
+       * ese papel se anulan.
+       */
+      title: "Comunidad",
 
-      what: {
-        eyebrow: "Qué es",
-        body: [
-          "No es gente repitiendo lo que ya viste en todos lados.",
-          "Es gente construyendo cosas reales con IA y contando cómo las hizo: qué decidió, qué midió y qué se le rompió por el camino.",
-        ],
-      },
+      /** El porqué. Es el texto de marca de esta página. */
+      lead: "Creemos que entender vale más que generar. La IA volvió fácil producir, mientras el verdadero valor se quedó esperando a quien estuviera dispuesto a ir a fondo. Y eso no se hace solo — se hace con gente que también decidió profundizar.",
 
-      meetups: {
-        eyebrow: "Qué pasa cuando nos juntamos",
-        items: [
+      /**
+       * El cómo. AI Labs se nombra aquí dentro aunque NO sea un vertical
+       * sino un espacio aparte: fue decisión expresa del documento, que deja
+       * anotado que si algún día se siente forzado, se le da su propia línea.
+       */
+      verticalsLabel: "Verticales:",
+      verticalsLead: "Software con IA, AI Engineer en producción, MLOps, Finance & Risk. Y abrimos AI Labs, donde un proceso de industria o una pregunta científica llega hasta el final.",
+
+      ctaEvents: "Ver próximos encuentros",
+      ctaVertical: "Conversemos sobre un vertical",
+
+      /**
+       * La cifra sostiene que hay una brecha real de aplicación en la región.
+       * NO prueba que hagan falta comunidades como esta para cerrarla: esa
+       * segunda parte es lectura nuestra, no algo que McKinsey haya medido.
+       * Por eso el copy enuncia el dato y se detiene ahí.
+       */
+      whyWeExist: {
+        eyebrow: "Por qué existimos",
+        stats: [
           {
-            title: "Charlas técnicas",
+            value: "23%",
             description:
-              "De quien construyó lo que está contando. Con las decisiones y los errores incluidos.",
+              "de las organizaciones en LATAM genera valor económico con IA",
           },
           {
-            title: "Talleres",
-            description: "Se sale con algo hecho, no con apuntes.",
-          },
-          {
-            title: "Conversación entre pares",
-            description:
-              "Lo que no cabe en un video: preguntar lo específico de tu caso a quien ya pasó por ahí.",
-          },
-          {
-            title: "Lo que sigue después",
-            description:
-              "El encuentro termina; el grupo no. Ahí se contesta lo que quedó abierto.",
+            value: "6%",
+            description: "reporta un impacto significativo",
           },
         ],
+        source: "Foro Económico Mundial + McKinsey, 2026",
       },
 
       /**
-       * Decir en voz alta para quién NO es filtra mejor que cualquier
-       * descripción. También es "sin hype" aplicado a la propia comunidad:
-       * mandar a alguien a otro sitio cuando este no le sirve.
+       * Growth y contenido todavía no está abierto como vertical, así que no
+       * aparece. Si el deck lo sigue mostrando con dueña asignada, es el deck
+       * el que hay que revisar: esta lista dice lo que existe hoy.
        */
-      audience: {
-        eyebrow: "Para quién es",
-        forTitle: "Es para ti si",
-        forItems: [
-          "Ya usas IA a diario y empiezas a chocar con sus límites.",
-          "Quieres entender por qué algo funciona, no solo que funcione.",
-          "Tienes algo en producción, o vas camino de ello.",
-          "Prefieres evaluar una herramienta antes de adoptarla.",
+      verticals: {
+        eyebrow: "Verticales activas",
+        items: [
+          {
+            title: "Software con IA",
+            description:
+              "Agentes de código, contexto, integración con el repo. Qué acelera de verdad y qué genera deuda que pagas después.",
+          },
+          {
+            title: "AI Engineer en producción",
+            description:
+              "Sistemas con LLMs que ya tienen usuarios. Evals, latencia, costo por request, fallas silenciosas.",
+          },
+          {
+            title: "AI / MLOps e infraestructura",
+            description:
+              "Lo que sostiene un modelo corriendo: pipelines, despliegue, monitoreo, drift.",
+          },
+          {
+            title: "AI for Finance & Risk",
+            description:
+              "Crédito, fraude, riesgo, cobranzas. Modelos con consecuencias regulatorias.",
+          },
         ],
-        againstTitle: "No es para ti si",
-        againstItems: [
-          "Empiezas de cero con IA. Hay sitios mejores para eso, y este no lo es.",
-          "Buscas prompts para copiar y pegar.",
-          "Vienes a buscar clientes.",
-        ],
+        note: "Si alguna te interesa, escríbenos. Se suma gente todo el tiempo.",
       },
 
-      join: {
-        eyebrow: "Cómo entrar",
-        note: "Entrar es gratis. No hay solicitud que aprobar.",
-        steps: [
-          "Únete al grupo de WhatsApp.",
-          "Preséntate: en qué trabajas y qué estás construyendo.",
-          "Ven al próximo encuentro.",
+      partners: {
+        eyebrow: "No lo hacemos solos",
+        items: [
+          {
+            title: "Hack@LATAM",
+            description:
+              "Sede Lima en UTEC, dentro de una hackathon de impacto social simultánea en cinco países. Mayo 2026, con indies.la.",
+          },
+          {
+            title: "AI Hack Perú",
+            description:
+              "24 horas, 120 participantes en Lima. Noviembre 2025, con The Hackathon Company.",
+          },
+          {
+            title: "IRF",
+            description:
+              "Seis semanas de innovación y tecnología para talento de regiones, del Impact Regional Fellowship de SpinOut.",
+          },
         ],
-        ctaWhatsapp: "Unirme por WhatsApp",
-        ctaEvents: "Ver próximos encuentros",
+        note: "Si tu comunidad quiere armar algo, escríbenos.",
       },
 
+      closing:
+        "Si esto también es lo que crees, ya eres uno de los nuestros. Falta que lo hagas con nosotros.",
+
+      /**
+       * Las reglas de la casa NO están en el documento de copy. Se conservan
+       * por decisión expresa: puede que se cayeran a propósito o puede que
+       * fuera un olvido, y al final de la página no le quitan sitio a nada.
+       */
       rules: {
         eyebrow: "Reglas de la casa",
         items: [
@@ -325,28 +355,127 @@ export const es = {
       ],
     },
 
+    /**
+     * Eventos.
+     *
+     * Recibe dos cosas que vivían en /comunidad: el bloque que describe el
+     * formato de la sesión —se llamaba "cómo funciona"— y la retícula de qué
+     * pasa cuando nos juntamos. Las dos describen el EVENTO y no la
+     * comunidad, y tenerlas allí obligaba a contar lo mismo en dos páginas
+     * del mismo desplegable.
+     *
+     * `weekly.body` y `meetups` se solapan en parte: el primero dice que
+     * quien expone abre el trabajo completo, y el segundo lo repite en
+     * "charlas técnicas". Se dejan los dos porque el solape es de una línea,
+     * pero es el primer sitio donde recortar si la página se siente larga.
+     */
     events: {
       eyebrow: "Eventos",
-      title: "Hackathons, charlas y encuentros.",
-      intro:
-        "Lo que hacemos en persona y en línea. Abierto a quien quiera venir a construir.",
-      upcoming: [
-        "Los próximos eventos con fecha, lugar y registro.",
-        "El archivo de los que ya pasaron, con sus materiales.",
-        "Cómo proponer un evento a la comunidad.",
-      ],
+      title: "Eventos",
+      lead: "Donde el trabajo se abre completo, no se demuestra pulido.",
+      body: "Los encuentros llevan lo que pasa en los verticales y en AI Labs a revisión en vivo: la arquitectura, las decisiones, los números, y la parte que falló.",
+      cta: "Ver próximos encuentros",
+
+      weekly: {
+        eyebrow: "Encuentros semanales",
+        body: [
+          "Quien expone abre el trabajo completo: la arquitectura o el método, las decisiones, los números, y la parte que falló. Sin demo pulida.",
+          "Después se pregunta. Ahí es donde pasa lo bueno.",
+        ],
+        /** El único dato accionable de la sección. Va aparte y en mono. */
+        schedule: "Online los miércoles, 7 pm · Cada tanto nos vemos en Lima",
+      },
+
+      meetups: {
+        eyebrow: "Qué pasa cuando nos juntamos",
+        items: [
+          {
+            title: "Charlas técnicas",
+            description:
+              "De quien construyó lo que está contando. Con las decisiones y los errores incluidos.",
+          },
+          {
+            title: "Talleres",
+            description: "Se sale con algo hecho, no con apuntes.",
+          },
+          {
+            title: "Conversación entre pares",
+            description:
+              "Lo que no cabe en un video: preguntar lo específico de tu caso a quien ya pasó por ahí.",
+          },
+          {
+            title: "Lo que sigue después",
+            description:
+              "El encuentro termina; el grupo no. Ahí se contesta lo que quedó abierto.",
+          },
+        ],
+      },
+
+      /**
+       * El listado todavía no vive aquí: el documento deja la fuente sin
+       * decidir —Luma, una base de Notion embebida, u otra—. Mientras tanto
+       * el botón manda a donde los encuentros sí están publicados.
+       */
+      calendar: {
+        eyebrow: "Calendario",
+        note: "Los encuentros se publican y se registran en Luma. El listado todavía no vive en esta página.",
+        cta: "Ver todos los eventos",
+      },
     },
 
+    /**
+     * AI Labs — descripción general.
+     *
+     * De las tres páginas que pide el documento (general, Producto y
+     * Research) aquí solo está la general. Las otras dos llegan cuando haya
+     * piezas que enseñar; mientras tanto esta resume los dos espacios, que es
+     * exactamente lo que el documento pide de ella.
+     *
+     * `paths.eyebrow` es la única etiqueta INVENTADA de todo este bloque: el
+     * documento describe los dos caminos y sus botones, pero no les pone
+     * título de sección. "Cómo entrar" es lo que hacen.
+     */
     aiLabs: {
       eyebrow: "AI Labs",
-      title: "Lo que construye la comunidad.",
-      intro:
-        "Productos salidos de los programas y de los encuentros. No demos: cosas que resuelven un problema concreto.",
-      upcoming: [
-        "Cada producto, con el problema que resuelve.",
-        "Quién lo construyó y con qué tecnologías.",
-        "Enlaces a la demo y al repositorio.",
-      ],
+      title: "AI Labs",
+      lead: "Aquí los proyectos llegan hasta el final: proceso real, o pregunta resuelta.",
+      body: "Investigamos la frontera de la IA aplicada: procesos reales de industria y preguntas científicas abiertas, en las verticales donde ya trabajamos.",
+      spacesLabel: "Espacios:",
+      spacesLead: "Proceso real · Pregunta resuelta",
+
+      spaces: {
+        eyebrow: "Los dos espacios",
+        items: [
+          {
+            title: "Producto",
+            description:
+              "Procesos reales de industria impactados por IA, documentando el problema, las decisiones y lo que falló para que el proceso siga funcionando después de la demo.",
+          },
+          {
+            title: "Research / AI for Science",
+            description:
+              "Preguntas científicas abiertas de la frontera de la IA aplicada, verificando con criterio antes de repetir lo que se viraliza.",
+          },
+        ],
+      },
+
+      paths: {
+        eyebrow: "Cómo entrar",
+        items: [
+          {
+            title: "Tienes un proceso en tu industria",
+            description:
+              "Si tu equipo ya corre algo con IA y quieres que se documente como caso, con el problema, las decisiones y lo que falló incluido.",
+            cta: "Quiero que mi proyecto sea un caso",
+          },
+          {
+            title: "Vienes de la academia o la comunidad",
+            description:
+              "Si quieres publicar research, sumarte a un journal club, o ser parte del equipo detrás de una vertical.",
+            cta: "Quiero investigar o publicar con ustedes",
+          },
+        ],
+      },
     },
 
     about: {

@@ -5,16 +5,22 @@
  * tienen sitio en los diccionarios — igual que el reparto de
  * `src/content/learnings.ts`, y por el mismo motivo.
  *
- * `meetupsHeld` es el dato que más trabajo hace en toda la página. Una
- * comunidad que dice "hacemos encuentros" no demuestra nada; una que dice
- * cuántos lleva, sí. Por eso está y por eso hay que mantenerlo al día.
+ * `meetupsHeld` HOY NO SE MUESTRA EN NINGUNA PARTE, y es deliberado. Estuvo
+ * en el encabezado de /comunidad como "24 encuentros en Lima" hasta que el
+ * documento de copy dejó constancia de dos problemas: la cifra está sin
+ * confirmar, y los encuentros son online los miércoles —en Lima solo de vez
+ * en cuando—, así que la frase era inexacta por partida doble.
  *
- * PENDIENTE: hoy el número se escribe a mano y se queda viejo solo. Cuando
- * /eventos tenga el listado real, debe salir de contar los eventos pasados,
- * no de esta constante.
+ * La constante se conserva porque el dato sigue siendo el que más trabajo
+ * haría: una comunidad que dice "hacemos encuentros" no demuestra nada; una
+ * que dice cuántos lleva, sí. Vuelve a la página en cuanto alguien confirme
+ * el número, y le toca a /eventos, no a /comunidad.
+ *
+ * PENDIENTE: hoy se escribe a mano y se queda viejo solo. Cuando /eventos
+ * liste los encuentros de verdad, debe salir de contarlos.
  */
 
-/** Encuentros ya realizados. Fuente: el perfil de Luma. */
+/** Encuentros ya realizados. Sin confirmar; no se muestra todavía. */
 export const meetupsHeld = 24;
 
 /**
