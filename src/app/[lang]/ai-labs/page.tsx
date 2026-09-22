@@ -38,13 +38,13 @@ export default async function AiLabsPage() {
         note={{ label: t.spacesLabel, text: t.spacesLead }}
       />
 
+      <EntryPaths />
+
       <AccentGrid
         eyebrow={t.spaces.eyebrow}
         items={t.spaces.items}
         columns={2}
       />
-
-      <EntryPaths />
     </>
   );
 }
