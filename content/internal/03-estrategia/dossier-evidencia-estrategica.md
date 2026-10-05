@@ -2,7 +2,7 @@
 
 **Proyecto / mercado(s) / idioma(s):** AI PlayGrounds · Latinoamérica · español primero; inglés posterior; portugués no incluido ahora.
 **Alcance contratado:** Multipágina; Formación principal, Comunidad / participación, Corporativa / servicios; AI Labs con Productos e Investigación independientes; Empresas una página.
-**Etapa / actualización:** E1 v10 reconciliado, pendiente de aprobación · 05/10/2026 · contrato SEO/AEO/GEO v1 conservado y precisado.
+**Etapa / actualización:** E1 v11 sincronizado al contrato instalado, pendiente de aprobación · 05/10/2026 · contrato SEO/AEO/GEO v1 conservado; presentación cliente actualizada.
 **Estado:** interno, evidencia/procedencia/auditoría; no Estrategia ni entregable formal; no requiere aprobación ni se comparte por defecto.
 
 Reconciliación del dossier legacy de 03/10/2026. Se conserva lo reconstruible, sin completar vacíos retrospectivamente. La fuente operativa completa es `content/internal/03-estrategia/estrategia-contenido.md`; aquí se explica por qué se sostienen decisiones. No reemplaza brief, matrices, research, Keyword Map o feedback. Estados: HECHO DOCUMENTADO, INFERENCIA, PROPUESTA, APROBADO y PENDIENTE. Declaración del equipo no es verificación independiente ni permiso.
@@ -188,7 +188,7 @@ La especificación completa y muestras viven únicamente en estrategia §9.
 
 | Fecha/versión | Alternativas | Evidencia/feedback | Decisión humana/autoridad | Vigente | Cambio/motivo/divergencia | Referencia |
 |---|---|---|---|---|---|---|
-| 30/09 estrategia; E1 hasta v5 03/10 | A Experto y accesible; B Cercano y participativo | Rigor accesible y comunidad; seis muestras comparables en E1 | No elección acreditada | Dos propuestas, A recomendada no aprobada | Feedback no eligió voz; no guía formal | Estrategia §9 |
+| 30/09 estrategia; E1 hasta v5 03/10 | A Experto y accesible; B Cercano y participativo | Rigor accesible y comunidad; seis muestras comparables en E1 | No elección o recomendación humana acreditada | Dos propuestas del agente, A recomendada por el agente, no aprobada | Feedback no eligió voz; no guía formal | Estrategia §9 |
 | 05/10 migración/E1 v6 | Mismas dos opciones/muestras | Completar especificación operativa faltante | Migración autorizada, no selección | PENDIENTE humano en mismo gate E1 | Formalidad/tono/tecnicidad/densidad/recursos/límites explícitos; no nueva alternativa | Estrategia §9 |
 
 ## 11. Feedback ledger — amplio/estratégico
@@ -240,5 +240,7 @@ Cadena reconstruible: alcance/brief → B0/B1/Gate A → evidencia Planner/web y
 **Reconciliación canónica, 05/10/2026:** matriz D01–D24 previa a edición → Estrategia/Dossier/feedback actualizados → E1 v10, Versión revisada pendiente de aprobación. Mismas ocho páginas, dos fichas y 62 secciones; acceso directo de navegación a colecciones sin paso obligatorio por Labs, controles comunes de procedencia/publicabilidad, N1–N3, transparencia en Universo/Postulación y foto condicional. Se conservan fichas, Q17/Q18, G7, T5 pendiente, orden de Formación, explicación/evidencia de Inicio y dos voces/seis muestras. §4.3 identifica SEO e IA y sus aplicaciones; no controles o candidatos internos expuestos. Snapshot íntegro fuera del estado operativo; rerun histórico intacto, no segundo E1 activo. QA final en el registro de reconciliación.
 
 Migración 05/10: la estrategia legacy estaba desactualizada respecto al feedback y no contenía arquitectura completa; E1 v5 comprimía secciones/recorridos y carecía de tabla de públicos. Se reconcilian primero internos, luego E1. La propuesta antigua de arquitectura conserva su estado; ningún dato operativo se convierte en hecho ni ninguna recomendación de voz en elección.
+
+**Actualización al contrato instalado, 05/10/2026:** gap analysis previo en feedback E1 → Estrategia §8.11/§9/§11 actualizadas → E1 v11 pendiente. Cadena SEO/AEO/GEO, C1–C9, candidatos/handoffs y readiness ya cumplían; sin nueva evidencia, registro de claims o cambio estratégico. El puente pasa a §4.2, con SEO e IA diferenciados, AEO y GEO desarrollados antes de sus siglas y seis aplicaciones de registros vigentes; detalle de páginas en §4.3. La recomendación histórica de A se identifica como del agente, sin elección/recomendación humana o aprobación acreditadas. Se conservan ocho páginas, dos fichas, 62 secciones, ownership/gobernanza y T5 pendiente; no reapertura ni research nuevo. Los apartados de versiones anteriores mantienen sus remisiones históricas. E2 no iniciado.
 
 Al aprobarse E1: registrar mensaje/alcance en internos y mantener snapshot cliente sincronizado como base vinculante E2, incluso si elige opción distinta a recomendación. Hasta entonces no E2 ni feedback-e2. Registro de migración y mapa de rutas en `content/internal/registro-migracion-editorial.md`; no contiene otra estrategia activa.

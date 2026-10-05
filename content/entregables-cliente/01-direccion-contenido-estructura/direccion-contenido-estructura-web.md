@@ -2,7 +2,7 @@
 
 **Proyecto / mercado / idioma:** AI PlayGrounds · Latinoamérica · español en primera etapa.
 **Alcance contratado:** sitio multipágina: Formación, Comunidad / participación, Corporativa / servicios y AI Labs con Productos e Investigación. Empresas tendrá una página.
-**Versión / fecha / estado:** 10 · 05/10/2026 · Dirección de Contenido y Estructura Web — Versión revisada (pendiente de aprobación).
+**Versión / fecha / estado:** 11 · 05/10/2026 · Dirección de Contenido y Estructura Web — Versión revisada (pendiente de aprobación).
 
 ## 1. Qué entendimos
 
@@ -20,7 +20,7 @@ Una identidad común con recorridos claros para aprender, formar equipos, partic
 
 La web debe ayudar a las personas a entender qué pueden aprender y expresar interés; a las organizaciones, evaluar formación para sus equipos e iniciar una conversación; y a visitantes y autores, descubrir productos o trabajos y llegar a sus fuentes.
 
-La distribución sigue las necesidades que ya definimos: Formación reúne el aprendizaje para personas y Empresas atiende la formación de equipos; Productos e Investigación permiten explorar objetos distintos. Comunidad ofrece vías de participación y Equipo presenta a quienes sostienen la organización. Inicio orienta y AI Labs explica el espacio de iniciativas. La aplicación del contraste de búsquedas a estas páginas se muestra en el apartado 4.3.
+La distribución sigue las necesidades que ya definimos: Formación reúne el aprendizaje para personas y Empresas atiende la formación de equipos; Productos e Investigación permiten explorar objetos distintos. Comunidad ofrece vías de participación y Equipo presenta a quienes sostienen la organización. Inicio orienta y AI Labs explica el espacio de iniciativas. Los criterios de SEO y preparación para sistemas de IA se muestran en el apartado 4.2.
 
 ## 3. A quiénes nos dirigimos
 
@@ -52,7 +52,38 @@ La distribución sigue las necesidades que ya definimos: Formación reúne el ap
 
 Son ocho páginas base y dos tipos de ficha, sin páginas adicionales para eventos, líneas, filtros, países o escuelas. Equipo conserva acceso desde navegación, sin otro bloque en Inicio; tampoco se recupera el selector Personas/Empresas. Productos e Investigación tendrán accesos directos de navegación, junto al acceso propio de AI Labs: explorar una colección no exige visitar antes la explicación de Labs. La agrupación visual se resolverá en diseño.
 
-### 4.2 Estructura de cada página
+### 4.2 Cómo preparamos la estructura para SEO e IA
+
+La estructura considera cómo las personas buscan formación, productos o trabajos y qué contexto necesitan los sistemas de IA para interpretar y recuperar esa información. Estas decisiones se reflejan en las páginas, sus respuestas y los campos de cada ficha.
+
+#### SEO y arquitectura de búsqueda
+
+El contraste de búsquedas de septiembre agrupó en clusters las necesidades de aprender, formar equipos, descubrir productos o trabajos y participar. Ayudó a precisar qué responde cada página dentro del alcance acordado: Formación reúne las dos líneas; Empresas atiende la evaluación y conversación de equipos; Productos e Investigación separan la búsqueda de soluciones de la consulta de trabajos originales. Cada página concentra la respuesta principal a esa necesidad, mientras Inicio orienta y AI Labs aporta contexto. Los accesos directos a ambas colecciones permiten explorar sin pasar primero por Labs.
+
+La señal de cursos y herramientas fue más clara que la de investigación y comunidad; estas últimas también responden al propósito del proyecto. Formación ya era la prioridad del negocio y Equipo proviene de tu solicitud. La evidencia de búsqueda respalda la distribución, sin convertir categorías o líneas en cursos disponibles.
+
+#### Comprensión y recuperación por sistemas de IA
+
+La **optimización para motores de respuesta (Answer Engine Optimization, AEO)** se aplica aquí a preguntas con un lugar claro para responderlas: el nivel en Formación / Punto de partida, la disponibilidad en Estado de la oferta y las condiciones del registro en Lista de espera. Así, una respuesta sobre próximas formaciones puede conservar la diferencia entre expresar interés y obtener una plaza.
+
+La **optimización para motores generativos (Generative Engine Optimization, GEO)** se refleja en nombres identificables y campos consistentes, con procedencia y condiciones junto al dato. Una ficha de producto separa creador, estado, uso, acceso y licencia; una de investigación mantiene autores, tipo, fecha, resultados y límites vinculados al original. Las conexiones entre entradas aparecen solo con respaldo documental. Esta organización ayuda a interpretar qué objeto se describe, quién lo produjo y qué puede afirmarse sobre él.
+
+AI Engineering, los productos que integran IA y los trabajos relacionados con IA son parte de la temática de AI PlayGrounds. La preparación descrita aquí atiende otra dimensión: cómo sistemas generativos pueden descubrir, interpretar y recuperar el contenido del sitio con ese contexto.
+
+| Necesidad / criterio | Cómo se refleja en la estructura | Qué permite comprender |
+|---|---|---|
+| Distinguir aprendizaje con apoyo de IA de construcción de sistemas que la integran | Formación / Líneas formativas: Software Engineering with AI y AI Engineering, explicadas en español | Qué tareas aborda cada línea sin asumir dos cursos o un itinerario disponible |
+| Evaluar nivel y disponibilidad antes de dejar interés | Formación / Punto de partida, Estado de la oferta y Lista de espera | Requisitos cuando se definan, ausencia de convocatoria y alcance del registro; la condición de espera acompaña la acción |
+| Consultar formación para un equipo | Empresas / Alcance y modalidad y Consulta empresarial; Descubrimiento de Productos como camino secundario | Qué se puede conversar sobre formación y dónde explorar soluciones, sin prometer ejecución o adaptación |
+| Elegir qué producto o trabajo abrir | Productos e Investigación / Exploración y Fichas del listado, con filtros según el inventario confirmado | Nombre y utilidad en Productos; título, pregunta y autores en Investigación. Los resúmenes reutilizan los datos de cada ficha |
+| Entender utilidad, procedencia y condiciones de un producto | Ficha de producto / Problema y público, Relación con IA, Creado por, Estado y uso, Acceso y licencia | Para quién sirve, cómo interviene IA, quién lo creó y cómo acceder; madurez y uso son datos distintos |
+| Comprender el aporte de un trabajo y consultar su fuente | Ficha de investigación / Autores y afiliación, Tipo, fecha y estado, Resultados y límites, Recursos originales | Quién lo realizó, qué sostiene el original y hasta dónde llegan sus hallazgos |
+
+Fichas y tarjetas compartirán datos verificados. Los cambios de oferta, producto, trabajo, rol o iniciativa de Labs exigirán revisar sus menciones y enlaces; un dato sin soporte o permiso se corregirá o retirará.
+
+Esta preparación mejora la claridad y favorece el descubrimiento, la interpretación y la recuperación contextual del contenido. Quedan requisitos técnicos por implementar y validar; no garantiza rankings, tráfico, citación ni aparición en respuestas generadas por IA.
+
+### 4.3 Estructura de cada página
 
 Los nombres describen estructura, no copy final. En páginas principales, Hero aporta primera impresión y orientación, distinta del desarrollo que sigue. En fichas, Identificación cumple la función de cabecera; no se añade un Hero artificial.
 
@@ -206,26 +237,6 @@ Datos, fuentes y permisos deben confirmarse por trabajo; popularidad o presencia
 
 La composición y el orden se ajustarán al equipo real con los datos que compartas. La presentación sigue siendo colectiva, sin perfiles individuales ni mentorías. Roles y especialidades se distinguirán cuando difieran; una foto faltante no impide presentar información acreditada, aunque su tratamiento visual debe resolverse.
 
-### 4.3 Cómo la estructura prepara AI PlayGrounds para SEO e IA
-
-Para SEO, el contraste de búsquedas de septiembre agrupó en clusters las necesidades de aprender, formar equipos, descubrir productos o trabajos y participar. Precisó qué responde cada página dentro del alcance acordado: líneas juntas en Formación, conversación propia en Empresas y colecciones separadas. La señal de cursos y herramientas fue más clara que la de investigación y comunidad, que también responden al propósito del proyecto; no mide demanda de cursos propios. Equipo proviene de tu solicitud.
-
-La preparación para comprensión y recuperación por sistemas generativos de IA conserva contexto en cada respuesta: qué significa AI Engineering aquí, si hay convocatoria o quién produjo un trabajo y qué límites tiene. Es distinta de hablar de IA como tema de una formación o tecnología de un producto. Las aplicaciones se concretan en estos bloques:
-
-| Necesidad y razón | Dónde se refleja en la web | Qué permite comprender |
-|---|---|---|
-| Distinguir aprendizaje con apoyo de IA de construcción de sistemas que la integran | Formación / Líneas formativas: Software Engineering with AI y AI Engineering, explicadas en español | Qué tareas aborda cada línea sin asumir dos cursos o un itinerario disponible |
-| Evaluar nivel y disponibilidad antes de dejar interés | Formación / Punto de partida, Estado de la oferta y Lista de espera | Requisitos cuando se definan, ausencia de convocatoria y alcance del registro; la condición de espera acompaña la acción |
-| Consultar formación para un equipo, con expectativas distintas del aprendizaje individual | Empresas / Alcance y modalidad y Consulta empresarial; Productos como camino secundario | Qué se puede conversar sobre formación y dónde explorar soluciones, sin prometer ejecución o adaptación |
-| Elegir qué producto o trabajo abrir antes de entrar al detalle | Productos e Investigación / Exploración y Fichas del listado, con filtros según el inventario confirmado | En Productos, el nombre y la utilidad orientan la elección; en Investigación, el título, la pregunta y los autores. Los resúmenes reutilizan los datos de cada ficha |
-| Entender qué hace un producto y cómo interviene IA | Ficha de producto / Problema y público, Relación con IA, Creado por, Estado y uso, Acceso y licencia | Utilidad, creador y condiciones verificables; un producto construido con IA puede no tener una función de IA |
-| Comprender el aporte de un trabajo y comprobar su procedencia | Ficha de investigación / Autores y afiliación, Tipo, fecha y estado, Resultados y límites, Recursos originales | Quién lo realizó, qué se hizo y qué sostiene el original; los hallazgos conservan sus límites |
-| Elegir una forma de participación | Comunidad / Vías de participación, Normas y responsables, Acceso general e Interés en colaborar | Diferencia entre entrar a WhatsApp y solicitar una conversación para colaborar; datos y normas se completan antes de publicar |
-| Reconocer el espacio de iniciativas y sus conexiones reales | AI Labs / Qué es AI Labs e Iniciativas actuales; Relaciones documentadas en fichas | Cómo se sitúan Productos e Investigación y qué vínculos tienen entradas concretas, solo cuando estén acreditados |
-| Conocer a las personas detrás de la organización | Equipo / Personas del equipo: nombres, roles/aportes y biografías aportados | Quién contribuye y de qué manera, sin convertir pertenencia al equipo en docencia o autoría de todos los trabajos |
-
-Fichas y tarjetas compartirán los datos verificados. Los cambios de oferta, producto, trabajo, rol o iniciativa de Labs exigirán revisar sus menciones y enlaces; un dato sin soporte o permiso se corregirá o retirará. Esta preparación editorial facilita descubrimiento y comprensión, con implementación técnica por verificar; no garantiza rankings, tráfico, citación ni aparición en respuestas generativas de IA.
-
 ## 5. Cómo se moverán las personas por la web
 
 | La persona quiere | Recorrido | Resultado |
@@ -242,7 +253,7 @@ Los canales concretos y flujos pendientes deben confirmarse antes de publicar ca
 
 ## 6. Cómo debería sonar la marca
 
-No hay una guía verbal aprobada. Las dos direcciones conservan precisión y condiciones; las muestras comparan los mismos contextos, hechos y compromisos y no son copy final. Se propone tratamiento de tú y español comprensible para Latinoamérica, con nombres técnicos explicados y profundidad ajustada a la tarea.
+Las dos direcciones son propuestas del agente, pendientes de tu elección y aprobación. No hay una guía verbal aprobada. Ambas conservan precisión y condiciones; las muestras comparan los mismos contextos, hechos y compromisos y no son copy final. Se propone tratamiento de tú y español comprensible para Latinoamérica, con nombres técnicos explicados y profundidad ajustada a la tarea.
 
 | Opción | Cómo se percibirá la marca | Adaptación según contexto |
 |---|---|---|

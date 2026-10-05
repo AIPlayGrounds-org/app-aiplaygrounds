@@ -6,6 +6,8 @@
 **Estado:** fuente operativa completa; arquitectura y dirección editorial PROPUESTAS para E1, pendiente de aprobación consolidada. No es un entregable formal ni una aprobación nueva.
 **Contrato:** SEO/AEO/GEO v1 completado para la dirección E1; readiness desglosado en §8.10. Datos, permisos, decisiones del propietario e implementación pendientes conservan su estado. No se reejecutan B0/B1/B2, gates o research ni se inicia E2.
 
+**Revisión vigente:** 05/10/2026, contrato instalado de `web-content-design` → E1 v11. Gap analysis previo en feedback E1: cadena interna ya cubierta; se actualizan únicamente proyección cliente, correspondencia y procedencia explícita de voz. Sin reapertura material ni research nuevo.
+
 ## 1. Estado y decisiones de partida
 
 ### Fuentes vigentes y precedencia
@@ -482,7 +484,7 @@ Cadena comprobable de ejemplo: audiencia que evalúa producto (§3) → K3 (Keyw
 
 ### 8.11 Consecuencias a proyectar en E1
 
-§4.3 cliente explicará que los clusters de septiembre agruparon evaluación de aprendizaje (K1 con dos líneas), formación de equipos (K2), descubrimiento de productos/trabajos (K3/K4) y participación (K5). Respaldaron distribución y diferenciación sobre el alcance ya decidido; no crearon la prioridad de Formación ni la página Equipo. Aplicaciones: Líneas formativas juntas; Alcance/Consulta separados en Empresas; relación con IA/Creado por/Estado y uso en producto; autores/tipo/fecha/resultados-límites/original en investigación; vías y condiciones en Comunidad; personas/roles aportados en Equipo; Labs explica relación de iniciativas sin apropiarse de autoría. Mostrar necesidad → página/bloque/campo → utilidad con fuentes y condiciones, sin matrices internas o detalles técnicos.
+§4.2 cliente explicará que los clusters de septiembre agruparon evaluación de aprendizaje (K1 con dos líneas), formación de equipos (K2), descubrimiento de productos/trabajos (K3/K4) y participación (K5). Respaldaron distribución y diferenciación sobre el alcance ya decidido; no crearon la prioridad de Formación ni la página Equipo. Aplicaciones: Líneas formativas juntas; Alcance/Consulta separados en Empresas; relación con IA/Creado por/Estado y uso en producto; autores/tipo/fecha/resultados-límites/original en investigación; vías y condiciones en Comunidad; personas/roles aportados en Equipo; Labs explica relación de iniciativas sin apropiarse de autoría. Mostrar necesidad → página/bloque/campo → utilidad con fuentes y condiciones, sin matrices internas o detalles técnicos.
 
 Una respuesta generativa sobre AI Engineering, un producto o un trabajo necesita distinguir el objeto y su alcance. La estructura permite encontrar esas explicaciones y conservar fuente/condición junto al dato; no garantiza que un motor las recupere o cite. La ampliación no añade páginas, secciones de página, nuevas FAQ o claims publicables. E1 conserva ocho páginas, dos tipos, 62 secciones, dos voces y seis muestras comparables.
 
@@ -490,9 +492,11 @@ La revisión incremental proyecta además Q17/Q18: Exploración y Fichas del lis
 
 **Proyección reconciliada v10:** encabezado cliente «Cómo la estructura prepara AI PlayGrounds para SEO e IA», con aplicaciones conservadas de intención/ownership y contexto para comprensión/recuperación generativa. E1 explicita acceso directo a Productos/Investigación, transparencia de criterios/procedencia dentro de bloques existentes y fotos de Equipo solo si disponibles/autorizadas. No expone IDs/estados internos de control, candidatos, matriz de reconciliación o readiness. Cierre breve: preparación editorial con implementación pendiente, sin garantía de rankings, tráfico, citación ni aparición en respuestas de IA.
 
+**Proyección vigente v11:** §4.1 Vista general → §4.2 Cómo preparamos la estructura para SEO e IA → §4.3 Estructura de cada página. §4.2 distingue visualmente «SEO y arquitectura de búsqueda» y «Comprensión y recuperación por sistemas de IA». El primer bloque explica distribución por necesidad/intención, clusters y página responsable (§8.1), con acceso directo a colecciones (§7). El segundo desarrolla en su primera aparición cliente optimización para motores de respuesta (Answer Engine Optimization, AEO) y optimización para motores generativos (Generative Engine Optimization, GEO): AEO se aplica a Q2–Q5 y sus bloques responsables; GEO a nombres E1–E8, campos §5.1, procedencia C6/C7, relaciones R5–R8 y condiciones de §8.5. Diferenciar expresamente IA como temática/oferta de IA como canal de descubrimiento e interpretación. Seleccionar seis aplicaciones representativas: líneas, disponibilidad/espera, Empresas, exploración/listado, ficha de producto y ficha de investigación. Las demás consecuencias siguen en el detalle de páginas; no se suprimen requisitos. Conservar revisión mutable G1–G7 y cierre con claridad, descubrimiento, recuperación contextual y validación técnica posterior, sin garantías. Esta presentación reutiliza registros existentes y no modifica arquitectura, claims o readiness.
+
 ## 9. Dirección editorial
 
-**Estado:** PROPUESTA; no guía formal ni elección humana acreditada. Conservar exactamente dos opciones existentes, sin abrir otras. A era recomendada por encaje con profundidad accesible; recomendación no es aprobación. Seis muestras por dirección, mismos contextos/hechos/condiciones, no copy final.
+**Estado:** PROPUESTA; no guía formal ni elección humana acreditada. Conservar exactamente dos opciones existentes, sin abrir otras. Ambas son propuestas del agente, pendientes de elección/aprobación humana. La recomendación previa de A por encaje con profundidad accesible corresponde al agente; no hay recomendación del usuario acreditada ni aprobación del cliente. Seis muestras por dirección, mismos contextos/hechos/condiciones, no copy final.
 
 | Dimensión | A. Experto y accesible | B. Cercano y participativo |
 |---|---|---|
@@ -538,14 +542,14 @@ No se atribuyen responsables personales, tiempos de atención, automatizaciones,
 
 ## 11. Correspondencia con E1
 
-| Sección cliente v10 | Fuente interna vigente | Estado proyectado |
+| Sección cliente v11 | Fuente interna vigente | Estado proyectado |
 |---|---|---|
 | 1 Qué entendimos | §§1, 4 y brief/B2/feedback | Hechos declarados/decisiones y límites |
 | 2 Qué proponemos | §§2, 4, 8; Dossier para razón/límites | Propuesta, sin atribuir prioridades al research |
 | 3 A quiénes | §3 | Públicos compactos, necesidades inferidas explícitas internamente |
 | 4.1 Vista general | §5 | Ocho páginas/dos tipos; inclusión de Equipo decidida, estructura propuesta |
-| 4.2 Estructura por página | §6 | Mismo orden, función, elementos y condiciones; no nuevas secciones |
-| 4.3 Preparación SEO e IA | §§5.1, 8.1–8.5, 8.11; Dossier §9, Keyword Map vigente | Beneficio visible; aplicaciones de clusters/entidades/preguntas/campos/fuentes, sin readiness ni configuración |
+| 4.2 Preparación SEO e IA | §§5.1, 7, 8.1–8.5, 8.9, 8.11; Dossier §9, Keyword Map vigente | Dos dimensiones visibles, AEO/GEO desarrollados y seis aplicaciones; sin readiness ni configuración |
+| 4.3 Estructura por página | §6 | Mismo orden, función, elementos y condiciones; no nuevas secciones |
 | 5 Recorridos | §7 | Acciones de alcance, destinos pendientes |
 | 6 Voz | §9 | Dos opciones/seis muestras sin selección |
 | 7 Decisiones/pendientes | §10 y feedback | Aprobación E1/voz abiertas; datos diferenciados |
@@ -567,3 +571,5 @@ E1 puede resumir/reformular; no estrena estrategia ni aprobación. Permanecen in
 - [x] E1 v10 previsto deriva de internos reconciliados: ocho páginas/dos tipos/62 secciones, controles comunes, evidencia N1–N3 y accesos directos; voces y estados conservados. QA posterior en registro de reconciliación; revisión editorial final antes de entrega.
 
 **Revisión incremental del contrato, 05/10/2026:** la inspección encontró la ampliación v1 ya registrada. Los únicos gaps operativos adicionales fueron explicitar el ownership de exploración/listado de ambas colecciones (Q17/Q18) y la revisión de iniciativas actuales de AI Labs y sus menciones en Inicio (G7). Se completan desde §3/§6, K3/K4 y C1/C6/C7 existentes. No se modifica Keyword Map ni se ejecuta research; no se reabre una decisión material. Los pendientes de §10 y las capas no resueltas de §8.10 siguen vigentes.
+
+**QA de actualización v11, 05/10/2026:** completitud confirmada desde las mismas fuentes internas; §8.11 y §11 fijan la proyección antes de editar E1. Se conservan ocho páginas, dos tipos y 62 secciones, incluidos los nueve bloques de Producto y siete de Investigación, decisiones humanas, readiness y handoffs. Voz: dos propuestas del agente con seis muestras, sin elección. La revisión cliente solo cambia presentación y remisiones; aprobación E1/voz pendientes y E2 no iniciado.
