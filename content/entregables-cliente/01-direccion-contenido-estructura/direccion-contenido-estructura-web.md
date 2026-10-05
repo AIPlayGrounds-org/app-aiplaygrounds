@@ -2,7 +2,7 @@
 
 **Proyecto / mercado / idioma:** AI PlayGrounds · Latinoamérica · español en primera etapa.
 **Alcance contratado:** sitio multipágina: Formación, Comunidad / participación, Corporativa / servicios y AI Labs con Productos e Investigación. Empresas tendrá una página.
-**Versión / fecha / estado:** 8 · 05/10/2026 · Dirección de Contenido y Estructura Web — Versión revisada (pendiente de aprobación).
+**Versión / fecha / estado:** 9 · 05/10/2026 · Dirección de Contenido y Estructura Web — Versión revisada (pendiente de aprobación).
 
 ## 1. Qué entendimos
 
@@ -217,13 +217,14 @@ Quien encuentre AI Engineering en un buscador o en una respuesta generada con IA
 | Distinguir aprendizaje con apoyo de IA de construcción de sistemas que la integran | Formación / Líneas formativas: Software Engineering with AI y AI Engineering, explicadas en español | Qué tareas aborda cada línea sin asumir dos cursos o un itinerario disponible |
 | Evaluar nivel y disponibilidad antes de dejar interés | Formación / Punto de partida, Estado de la oferta y Lista de espera | Requisitos cuando se definan, ausencia de convocatoria y alcance del registro; la condición de espera acompaña la acción |
 | Consultar formación para un equipo, con expectativas distintas del aprendizaje individual | Empresas / Alcance y modalidad y Consulta empresarial; Productos como camino secundario | Qué se puede conversar sobre formación y dónde explorar soluciones, sin prometer ejecución o adaptación |
+| Elegir qué producto o trabajo abrir antes de entrar al detalle | Productos e Investigación / Exploración y Fichas del listado, con filtros según el inventario confirmado | En Productos, el nombre y la utilidad orientan la elección; en Investigación, el título, la pregunta y los autores. Los resúmenes reutilizan los datos de cada ficha |
 | Entender qué hace un producto y cómo interviene IA | Ficha de producto / Problema y público, Relación con IA, Creado por, Estado y uso, Acceso y licencia | Utilidad, creador y condiciones verificables; un producto construido con IA puede no tener una función de IA |
 | Comprender el aporte de un trabajo y comprobar su procedencia | Ficha de investigación / Autores y afiliación, Tipo, fecha y estado, Resultados y límites, Recursos originales | Quién lo realizó, qué se hizo y qué sostiene el original; los hallazgos conservan sus límites |
 | Elegir una forma de participación | Comunidad / Vías de participación, Normas y responsables, Acceso general e Interés en colaborar | Diferencia entre entrar a WhatsApp y solicitar una conversación para colaborar; datos y normas se completan antes de publicar |
 | Reconocer el espacio de iniciativas y sus conexiones reales | AI Labs / Qué es AI Labs e Iniciativas actuales; Relaciones documentadas en fichas | Cómo se sitúan Productos e Investigación y qué vínculos tienen entradas concretas, solo cuando estén acreditados |
 | Conocer a las personas detrás de la organización | Equipo / Personas del equipo: nombres, roles/aportes y biografías aportados | Quién contribuye y de qué manera, sin convertir pertenencia al equipo en docencia o autoría de todos los trabajos |
 
-Las fichas y tarjetas utilizarán los mismos campos para entradas comparables y conservarán la atribución y fuente de cada dato. Cuando cambien el estado de una oferta, un producto, un trabajo o un rol del equipo, habrá que revisar también sus menciones en otras páginas. Esta preparación facilita el descubrimiento y la comprensión para personas, buscadores y sistemas generativos; no garantiza posicionamiento, tráfico, citación o aparición en sus respuestas.
+Las fichas y tarjetas utilizarán los mismos campos para entradas comparables y conservarán la atribución y fuente de cada dato. Cuando cambien el estado de una oferta, un producto, un trabajo o un rol del equipo, habrá que revisar también sus menciones en otras páginas. Si cambia una iniciativa pública de AI Labs, se revisarán su presentación en Inicio y los enlaces que llevan a ella. Esta preparación facilita el descubrimiento y la comprensión para personas, buscadores y sistemas generativos; no garantiza posicionamiento, tráfico, citación o aparición en sus respuestas.
 
 ## 5. Cómo se moverán las personas por la web
 

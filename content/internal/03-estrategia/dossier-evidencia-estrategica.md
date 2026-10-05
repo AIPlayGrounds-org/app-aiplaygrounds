@@ -152,6 +152,17 @@ Registros agregados por familia cuando comparten fuente y condición. Al recibir
 
 **Alcance y cierre de la ampliación:** 05/10/2026, SEO/AEO/GEO v1. Gaps detectados: §8 anterior exponía principios sin registros reconstruibles de entidades, preguntas/campos, relaciones, modelos, claims granulares, handoffs, revisión mutable o readiness por página. E1 carecía de aplicación cliente suficiente en tabla. Se completa solo esa definición y procedencia. El Keyword Map ya permite decidir al nivel de la oferta confirmada; no se modifica. Las incertidumbres son datos propios, permisos, decisiones de publicación y operación: más consultas genéricas no las resolverían. No nueva ronda de estrategia/research, nuevos gates ni reapertura material. Pendientes factuales conservados; política de crawlers y verificaciones/medición se explicitan como handoff posterior, no condición nueva de aprobación E1.
 
+### Revisión incremental del contrato — 05/10/2026
+
+La inspección actual encontró la ampliación v1 anterior ya incorporada en Estrategia y E1 v8. Se añade solo la trazabilidad de dos gaps residuales; el cierre anterior se conserva como historial.
+
+| Consecuencia | Procedencia existente / clase | Límite y estado | Reflejo |
+|---|---|---|---|
+| Q17/Q18: elegir qué producto o trabajo abrir desde el directorio | Audiencias/tareas de Estrategia §3, K3/K4 aceptados en B2, Exploración y Fichas del listado de §6; recomendación editorial inferida | Ownership de bloques precisado; inventario, corpus, taxonomías/filtros y valores siguen PENDIENTES C6/C7. No nuevas necesidades, filtros o capacidades | Estrategia §8.3/§8.10; E1 v9 §4.3 |
+| G7: revisar iniciativas de AI Labs y menciones en Inicio | C1, R2 y feedback 1/16/17; recomendación inferida de gobernanza sobre relación ya APROBADA | Vigencia de C1: un alta, retirada o cambio de relación confirmado por el equipo dispara revisión de Labs/Inicio y enlaces. Fuente esperada: decisión del equipo registrada aquí con fecha y alcance; responsable propuesto de AI Labs + editor. No declara una iniciativa nueva ni autoriza cambiar arquitectura | Estrategia §8.9/§8.10; E1 v9 §4.3 |
+
+Sin research adicional ni nuevo Decision Delta: las consecuencias se resuelven con evidencia interna vigente. No se reabre estrategia, Gate A/B o aprobación de arquitectura. E1 y elección de voz siguen pendientes; E2 no iniciado.
+
 ## 10. Trazabilidad de la dirección editorial
 
 La especificación completa y muestras viven únicamente en estrategia §9.
@@ -202,6 +213,8 @@ Cadena reconstruible: alcance/brief → B0/B1/Gate A → evidencia Planner/web y
 **Actualización posterior:** petición Equipo del 05/10 → referencia U1 y ACCEPT localizado → estrategia actualizada → E1 v7 revisado pendiente. Ocho páginas base y dos tipos; las siete páginas previas y sus 59 secciones se conservan, se añaden tres secciones de Equipo. El registro de migración permanece como snapshot histórico del cierre v6, no como conteo vigente de arquitectura.
 
 **Actualización aditiva de contrato, 05/10/2026:** Estrategia §§5.1/8.1–8.11 y claims C1–C9 de este Dossier → E1 v8 revisado pendiente. Se preservan ocho páginas, dos tipos y 62 secciones de página, feedback y dos opciones de voz con seis muestras. Readiness registra requisitos resueltos, datos/objetos/política pendientes y NO APLICA motivados; no certifica publicación o ejecución. E1 añade §4.3 con aplicación cliente y ajusta la explicación §2 para evitar duplicación. La voz y aprobación humana siguen pendientes; E2 no iniciado.
+
+**Revisión incremental posterior, 05/10/2026:** Q17/Q18 y G7 en Estrategia → E1 v9 revisado pendiente. §4.3 añade la aplicación de Exploración/Fichas del listado y extiende la revisión de menciones a las iniciativas de AI Labs en Inicio. Arquitectura, orden, muestras de voz y pendientes conservados. Esta revisión confirma el resto de la ampliación existente; no la ejecuta de nuevo.
 
 Migración 05/10: la estrategia legacy estaba desactualizada respecto al feedback y no contenía arquitectura completa; E1 v5 comprimía secciones/recorridos y carecía de tabla de públicos. Se reconcilian primero internos, luego E1. La propuesta antigua de arquitectura conserva su estado; ningún dato operativo se convierte en hecho ni ninguna recomendación de voz en elección.
 
