@@ -2,7 +2,7 @@
 
 **Proyecto / mercado / idioma:** AI PlayGrounds · Latinoamérica · español en primera etapa.
 **Alcance contratado:** sitio multipágina: Formación, Comunidad / participación, Corporativa / servicios y AI Labs con Productos e Investigación. Empresas tendrá una página.
-**Versión / fecha / estado:** 9 · 05/10/2026 · Dirección de Contenido y Estructura Web — Versión revisada (pendiente de aprobación).
+**Versión / fecha / estado:** 10 · 05/10/2026 · Dirección de Contenido y Estructura Web — Versión revisada (pendiente de aprobación).
 
 ## 1. Qué entendimos
 
@@ -50,7 +50,7 @@ La distribución sigue las necesidades que ya definimos: Formación reúne el ap
 | Ficha de investigación — tipo repetible | Visitantes que consultan un trabajo concreto | Dar contexto sin sustituir la fuente original |
 | Equipo | Personas, empresas y posibles colaboradores que quieren conocer quiénes sostienen AI PlayGrounds | Presentar integrantes, roles/aportes y experiencia pertinente |
 
-Son ocho páginas base y dos tipos de ficha. La incorporación de Equipo responde a tu solicitud; su estructura se propone abajo. No se proponen páginas independientes para eventos, líneas formativas, filtros, países o escuelas. Empresas continúa accesible desde navegación; Inicio no incluye el bloque selector Personas/Empresas retirado. Se propone acceso a Equipo desde navegación, sin añadir otro bloque a Inicio.
+Son ocho páginas base y dos tipos de ficha, sin páginas adicionales para eventos, líneas, filtros, países o escuelas. Equipo conserva acceso desde navegación, sin otro bloque en Inicio; tampoco se recupera el selector Personas/Empresas. Productos e Investigación tendrán accesos directos de navegación, junto al acceso propio de AI Labs: explorar una colección no exige visitar antes la explicación de Labs. La agrupación visual se resolverá en diseño.
 
 ### 4.2 Estructura de cada página
 
@@ -139,10 +139,10 @@ No se inventan iniciativas adicionales ni una red automática de conocimiento. L
 | Orden | Sección | Objetivo | Contenido / elementos clave |
 |---|---|---|---|
 | 1 | Hero | Orientar al descubrimiento | Propuesta del directorio |
-| 2 | Universo y criterios | Aclarar qué se incluye | Productos que integran IA, se construyeron con apoyo de IA o ambas; criterios de curación |
+| 2 | Universo y criterios | Aclarar qué se incluye | Productos que integran IA, se construyeron con apoyo de IA o ambas; criterios, fuentes y límites de revisión/actualización cuando se definan |
 | 3 | Exploración | Facilitar elección | Filtros propios según taxonomía e inventario confirmados |
 | 4 | Fichas del listado | Entender utilidad y abrir detalle | Resumen de cada entrada y acceso a ficha |
-| 5 | Postulación y revisión | Recibir propuestas | Criterios, datos y solicitud sujeta a curación |
+| 5 | Postulación y revisión | Recibir propuestas | Criterios, datos y solicitud sujeta a curación; revisión/corrección de entradas según proceso confirmado |
 
 Inventario, criterios, filtros y operación de postulación están pendientes. Open source es atributo opcional; no todos los productos son herramientas con función de IA. La curación no equivale a auditoría ni la solicitud a publicación automática.
 
@@ -171,10 +171,10 @@ Cada entrada necesita datos, fuentes y permisos. La ficha no crea un perfil inde
 | Orden | Sección | Objetivo | Contenido / elementos clave |
 |---|---|---|---|
 | 1 | Hero | Orientar a la consulta | Propuesta de colección de trabajos |
-| 2 | Universo y tipos | Explicar inclusión | Trabajos relacionados con IA; tipos y criterios confirmados |
+| 2 | Universo y tipos | Explicar inclusión | Trabajos relacionados con IA; tipos, criterios y fuentes; versión del original distinta de revisión de la ficha |
 | 3 | Exploración | Facilitar elección | Filtros propios según corpus y clasificación |
 | 4 | Fichas del listado | Entender y abrir detalle | Pregunta o aporte, atribución y acceso a ficha |
-| 5 | Postulación y revisión | Recibir propuestas | Solicitud sujeta a curación, con criterios y datos |
+| 5 | Postulación y revisión | Recibir propuestas | Solicitud sujeta a curación y corrección según proceso definido; datos del remitente separados de autoría |
 
 Corpus, criterios y operación están pendientes. Herramientas bibliográficas no se presentan como trabajos de investigación. El directorio no implica autoría, publicación académica o revisión científica propias de AI PlayGrounds.
 
@@ -201,16 +201,16 @@ Datos, fuentes y permisos deben confirmarse por trabajo; popularidad o presencia
 | Orden | Sección | Objetivo | Contenido / elementos clave |
 |---|---|---|---|
 | 1 | Hero | Presentar al equipo en conjunto | Apertura breve sobre las personas detrás de AI PlayGrounds |
-| 2 | Personas del equipo | Conocer a cada integrante y su aporte | Tarjetas con foto, nombre, rol/aporte y biografía breve; especialidad, ciudad/país y enlaces profesionales opcionales según información disponible |
+| 2 | Personas del equipo | Conocer a cada integrante y su aporte | Nombre, rol/aporte y bio breve; foto autorizada si disponible; especialidad, ciudad/país y enlaces profesionales opcionales |
 | 3 | Conoce lo que hacemos | Conectar equipo y actividad | Continuidad hacia Formación, Comunidad y AI Labs; contribuciones específicas solo cuando estén confirmadas |
 
-La referencia de Crafter Station inspira la presentación colectiva y las tarjetas. La composición, agrupación y orden se ajustarán al equipo real a partir de la información que compartas. La propuesta concentra las presentaciones en esta página; no añade perfiles individuales o agendas de mentoría. Roles dentro de AI PlayGrounds y especialidades profesionales se distinguirán cuando sean diferentes.
+La composición y el orden se ajustarán al equipo real con los datos que compartas. La presentación sigue siendo colectiva, sin perfiles individuales ni mentorías. Roles y especialidades se distinguirán cuando difieran; una foto faltante no impide presentar información acreditada, aunque su tratamiento visual debe resolverse.
 
-### 4.3 Cómo facilita encontrar y comprender la información
+### 4.3 Cómo la estructura prepara AI PlayGrounds para SEO e IA
 
-El contraste de búsquedas y páginas de septiembre de 2026 agrupó en clusters las necesidades de aprender, formar equipos, descubrir productos o trabajos y participar. Ayudó a precisar qué responde cada página dentro del alcance que ya habíamos acordado. Por eso las dos líneas conviven en Formación, Empresas tiene su propia conversación y los directorios se mantienen separados. La señal de cursos y herramientas fue más clara que la de investigación y comunidad; estas también responden al propósito de AI PlayGrounds. El contraste no mide demanda de cursos propios. Equipo se incorpora por tu solicitud.
+Para SEO, el contraste de búsquedas de septiembre agrupó en clusters las necesidades de aprender, formar equipos, descubrir productos o trabajos y participar. Precisó qué responde cada página dentro del alcance acordado: líneas juntas en Formación, conversación propia en Empresas y colecciones separadas. La señal de cursos y herramientas fue más clara que la de investigación y comunidad, que también responden al propósito del proyecto; no mide demanda de cursos propios. Equipo proviene de tu solicitud.
 
-Quien encuentre AI Engineering en un buscador o en una respuesta generada con IA debería poder entender qué significa aquí y si existe una formación abierta. Del mismo modo, una ficha de investigación debe permitir reconocer el trabajo, sus autores y sus límites, sin atribuirlo a AI PlayGrounds por aparecer en el directorio. La estructura anterior reúne esas explicaciones, condiciones y fuentes en los bloques donde se necesitan:
+La preparación para comprensión y recuperación por sistemas generativos de IA conserva contexto en cada respuesta: qué significa AI Engineering aquí, si hay convocatoria o quién produjo un trabajo y qué límites tiene. Es distinta de hablar de IA como tema de una formación o tecnología de un producto. Las aplicaciones se concretan en estos bloques:
 
 | Necesidad y razón | Dónde se refleja en la web | Qué permite comprender |
 |---|---|---|
@@ -224,7 +224,7 @@ Quien encuentre AI Engineering en un buscador o en una respuesta generada con IA
 | Reconocer el espacio de iniciativas y sus conexiones reales | AI Labs / Qué es AI Labs e Iniciativas actuales; Relaciones documentadas en fichas | Cómo se sitúan Productos e Investigación y qué vínculos tienen entradas concretas, solo cuando estén acreditados |
 | Conocer a las personas detrás de la organización | Equipo / Personas del equipo: nombres, roles/aportes y biografías aportados | Quién contribuye y de qué manera, sin convertir pertenencia al equipo en docencia o autoría de todos los trabajos |
 
-Las fichas y tarjetas utilizarán los mismos campos para entradas comparables y conservarán la atribución y fuente de cada dato. Cuando cambien el estado de una oferta, un producto, un trabajo o un rol del equipo, habrá que revisar también sus menciones en otras páginas. Si cambia una iniciativa pública de AI Labs, se revisarán su presentación en Inicio y los enlaces que llevan a ella. Esta preparación facilita el descubrimiento y la comprensión para personas, buscadores y sistemas generativos; no garantiza posicionamiento, tráfico, citación o aparición en sus respuestas.
+Fichas y tarjetas compartirán los datos verificados. Los cambios de oferta, producto, trabajo, rol o iniciativa de Labs exigirán revisar sus menciones y enlaces; un dato sin soporte o permiso se corregirá o retirará. Esta preparación editorial facilita descubrimiento y comprensión, con implementación técnica por verificar; no garantiza rankings, tráfico, citación ni aparición en respuestas generativas de IA.
 
 ## 5. Cómo se moverán las personas por la web
 
@@ -233,6 +233,7 @@ Las fichas y tarjetas utilizarán los mismos campos para entradas comparables y 
 | Aprender | Inicio → Formación → reconocer punto de partida, enfoque, líneas y estado | Expresar interés en lista de espera; no obtiene plaza o inscripción |
 | Formar un equipo | Empresas → necesidades y alcance → evidencia → consulta | Conversación sobre formación. Si busca solución existente, pasa a Productos |
 | Explorar AI Labs | Inicio o navegación → AI Labs → comprender espacio → Productos o Investigación → ficha | Recurso original o exploración del directorio |
+| Buscar un producto o trabajo directamente | Navegación a Productos o Investigación → exploración/listado → ficha → original | Consultar un recurso sin paso obligatorio por Labs; su contexto sigue disponible |
 | Participar | Comunidad → propósito y actividades → vías y condiciones | WhatsApp general; para colaboración, solicitud y conversación previa |
 | Proponer producto o trabajo | Directorio correspondiente → criterios → postulación | Solicitud sujeta a revisión, no publicación automática |
 | Conocer al equipo | Navegación → Equipo → personas, roles y aportes → actividad relacionada | Comprender quiénes sostienen AI PlayGrounds y continuar hacia Formación, Comunidad o AI Labs |
@@ -263,7 +264,7 @@ No hay una guía verbal aprobada. Las dos direcciones conservan precisión y con
 
 | Tema | Propuesta | Qué confirmar / consecuencia |
 |---|---|---|
-| Dirección y arquitectura | Ocho páginas y dos tipos de ficha, funciones, secciones/orden y recorridos descritos; Equipo incorporado por tu solicitud | Aprobar o indicar ajustes al conjunto E1 revisado, incluida la estructura propuesta de Equipo; fija la base para E2 |
+| Dirección y arquitectura | Ocho páginas y dos fichas, funciones, secciones y recorridos; acceso directo a colecciones y Equipo colectivo | Aprobar o ajustar el conjunto revisado, incluidos estos accesos; fija la base para E2 |
 | Voz | A. Experto y accesible o B. Cercano y participativo | Elegir una; ninguna se considera aprobada todavía |
 
 ### Información que puede completarse después
@@ -275,7 +276,7 @@ No hay una guía verbal aprobada. Las dos direcciones conservan precisión y con
 | Eventos, enlaces, normas y responsables de comunidad | Informar actividad y participación vigentes | Antes de publicar esos bloques y accesos |
 | Entradas, criterios, curación, filtros, actualización, fuentes y permisos | Determinar contenido publicable y alcance de colecciones | Antes de presentar directorios activos y publicar fichas |
 | Casos, cifras, organizaciones, relaciones y permisos | Sustentar evidencia contextual | Antes de publicar nombres, métricas, testimonios o casos |
-| Integrantes de Equipo: nombres, roles/aportes, experiencia/bios y fotos; ubicación y enlaces profesionales opcionales | Redactar presentaciones fieles y definir composición/orden | Puede recibirse por persona; antes de redactar/publicar sus presentaciones |
+| Equipo: nombres, roles/aportes, bios y permisos; fotos si disponibles/autorizadas, ubicación y enlaces opcionales | Redactar presentaciones fieles y definir composición/orden | Por persona, antes de publicar su tarjeta; tratamiento sin foto por resolver |
 
 La aprobación de E1 cubre dirección, arquitectura, recorridos y voz como base de redacción. No convierte pendientes operativos en hechos ni inicia una oferta o funcionalidad no confirmada.
 

@@ -2,7 +2,7 @@
 
 **Proyecto / mercado(s) / idioma(s):** AI PlayGrounds · Latinoamérica · español primero; inglés posterior; portugués no incluido ahora.
 **Alcance contratado:** Multipágina; Formación principal, Comunidad / participación, Corporativa / servicios; AI Labs con Productos e Investigación independientes; Empresas una página.
-**Etapa / actualización:** E1 revisado pendiente de aprobación · 05/10/2026 · ampliación aditiva SEO/AEO/GEO v1.
+**Etapa / actualización:** E1 v10 reconciliado, pendiente de aprobación · 05/10/2026 · contrato SEO/AEO/GEO v1 conservado y precisado.
 **Estado:** interno, evidencia/procedencia/auditoría; no Estrategia ni entregable formal; no requiere aprobación ni se comparte por defecto.
 
 Reconciliación del dossier legacy de 03/10/2026. Se conserva lo reconstruible, sin completar vacíos retrospectivamente. La fuente operativa completa es `content/internal/03-estrategia/estrategia-contenido.md`; aquí se explica por qué se sostienen decisiones. No reemplaza brief, matrices, research, Keyword Map o feedback. Estados: HECHO DOCUMENTADO, INFERENCIA, PROPUESTA, APROBADO y PENDIENTE. Declaración del equipo no es verificación independiente ni permiso.
@@ -16,6 +16,7 @@ Reconciliación del dossier legacy de 03/10/2026. Se conserva lo reconstruible, 
 - **PROPUESTAS abiertas:** arquitectura de ocho páginas base/dos fichas tras añadir Equipo; funciones/secciones/orden/recorridos y voz A/B. La inclusión de Equipo está decidida por el usuario; su estructura es propuesta y datos individuales pendientes. Feedback no aprueba el conjunto.
 - **PENDIENTES:** oferta/condiciones; mecanismos/operación de acciones; inventario/criterios/curación/actualización; actividad/permisos/evidencia; reglas/moderación. Equipo AI PlayGrounds como fuente esperada, sin responsables personales inventados. E1/voz requieren usuario.
 - **Instrumentos históricos:** Planner/websearch/webfetch ejecutados en septiembre. Trends/GSC omitidos. No se comprueba disponibilidad actual ni se hace nuevo research en migración.
+- **Estado canónico reconciliado:** `content/` es la única fuente operativa por el encargo actual; matriz D01–D24 y snapshot en `content/internal/registro-reconciliacion-editorial.md`. El rerun queda histórico e intacto. Se reutilizan N1–N3 observados durante el rerun; no hay nuevas consultas, aprobaciones de arquitectura/voz o autorización de E2.
 - **Sustituciones localizadas:** B0 → B1; propuestas de research → B2; naming antiguo → Software Engineering with AI; interés PoC/MVP → Empresas/Productos y PoC/MVP diferido; AI Labs como suma de directorios → espacio de iniciativas; builder como identidad → atribución contextual; arquitectura v3 → cambios v4/feedback → v5 documental → v6 canónico. No se reabre resto de decisiones.
 
 ## 2. Mapa de decisiones estratégicas
@@ -32,6 +33,8 @@ Reconciliación del dossier legacy de 03/10/2026. Se conserva lo reconstruible, 
 | D8 Voz | Rigor/cercanía y claridad de condiciones | Sin guía formal aprobada | Elección humana | PENDIENTE A/B; especificación únicamente estrategia §9 |
 | D9 Idiomas/mercados | Reutilización sin falsa cobertura | LATAM, investigación incremental autorizada | Evidencia y decisión humana | APROBADO español primero/inglés después; pt separado no oferta |
 | D10 Equipo | Presentar a quienes sostienen la organización | No había página en E1 v6 | Petición explícita del usuario y datos individuales por recibir | APROBADO incluir página; estructura/ubicación de enlace propuestas; no perfiles individuales nuevos |
+
+Selección actual entre diferencias reales: matriz D01–D24 del registro de reconciliación. No reabrir las decisiones humanas D1–D6/D9/D10 por una preferencia del agente. Cambios operativos adoptados: acceso directo a colecciones (D04), controles por registro (D02), precisión de candidatos (D03), transparencia dentro de bloques existentes (D12), foto condicional (D16) y beneficio cliente explícito (D01). Permanecen PROPUESTA salvo instrucción humana concreta; el conjunto E1/voz sigue PENDIENTE.
 
 ## 3. Research Preflight — reconstrucción histórica, no ejecución nueva
 
@@ -127,6 +130,8 @@ Contrastados intención, cobertura, solapamientos, entidades, preguntas, relacio
 
 Registros agregados por familia cuando comparten fuente y condición. Al recibir un producto, trabajo, evento, evidencia o integrante real, desglosar aquí su registro con fuente original, fecha significativa, permiso y estado publicable; referenciarlo desde Estrategia sin duplicar valores. Fuente interna, decisión APROBADA y autorización de publicación son cosas distintas. No se completan fuentes o permisos ausentes retrospectivamente.
 
+**Control común reconciliado:** cada entrada C6/C7/C8 tendrá una clave estable que vincule ficha, tarjeta y claims materiales, fuente/vigencia, permiso/alcance, estado editorial con responsable y remitente separado de autor cuando exista postulación. Modelo y condiciones en Estrategia §5.1. Se usan estos mismos registros; no nuevo dossier por entrada ni inventario paralelo. Por revisar/publicable/suspendido-retirado es estado de control, distinto de HECHO DOCUMENTADO/APROBADO y de madurez del objeto. Sin datos esenciales/fuente/permiso no se marca publicable; retirar o corregir el material afectado ante pérdida de soporte. La foto de Equipo es condicional, nunca sustituye identidad y atribución.
+
 | ID / claim o hecho | Tipo / fuente y alcance | Fecha / vigencia | Página/campos y dependencias | Estado factual / publicable | Dependencia / responsable |
 |---|---|---|---|---|---|
 | C1 Identidad AI PlayGrounds, Formación principal, líneas, Labs y universo de colecciones; límites de lanzamiento | HECHO DOCUMENTADO según brief + decisiones APROBADAS B1/B2; Labs/atribución corregidos por feedback. Fuente interna de dirección, no prueba de resultados | Brief septiembre; B2 30/09; feedback 01/10, reconciliación 05/10. Revisar solo si cambia decisión real | Inicio, Formación/Líneas, Empresas, Labs, universo de ambos directorios; E1–E5/R1–R4/S1/S2 | Utilizable con condiciones como dirección propuesta; no wording literal aprobado ni permiso sobre entradas/nombres/logos de terceros | Usuario aprueba E1/voz; no figura jurídica, superioridad o autoría propia del corpus inferidas |
@@ -146,7 +151,7 @@ Registros agregados por familia cuando comparten fuente y condición. Al recibir
 | Entidades E1–E5 y preguntas Q1–Q16; ownership página/bloque/campo | Brief, B2, Keyword Map vigente, feedback; recomendación editorial inferida sobre necesidades ya registradas | Nombres de organización/líneas/espacio confirmados; preguntas inferidas, no entrevistas. E6–E8 siguen sin registros reales | Definición incorporada a Estrategia §§8.1–8.3; no research nuevo, sin nuevo Decision Delta |
 | Campos repetibles de producto, trabajo y tarjetas Equipo | B2/feedback 18/19/20; Equipo petición humana y U1; recomendación inferida de modelado | Se precisan campos ya previstos en arquitectura, sin catálogo, personas, CMS o perfiles adicionales | PROPUESTA, Estrategia §5.1; valores C6–C8 PENDIENTES |
 | Relaciones R1–R9 | B2/feedback y arquitectura propuesta; C6–C8 para relaciones por registro | Links propuestos no prueban autoría, afiliación o derivación. Creador ≠ postulante; listado ≠ creación propia | Estrategia §8.4; relaciones factuales específicas PENDIENTES |
-| S1/S2/S5 candidatos contextuales; S3/S4 dependientes del objeto | Organización, colecciones y tarjetas ya previstas; reglas generales de la skill `references/seo-ai-editorial.md` F1/F3/F5; recomendación inferida de handoff, sin revalidación técnica del proyecto | Sin inventario no se elige tipo universal de producto/trabajo. Investigación no prueba artículo académico; afiliación no prueba publisher | S1/S2/S5 como propuesta validable; S3/S4 PENDIENTES de objeto. Estrategia §8.6, desarrollo valida vocabulario/rangos y contenido visible |
+| S1/S2/S5 candidatos contextuales; S3/S4 dependientes del objeto | Organización, colecciones y tarjetas previstas; reglas de skill F1/F3/F5 y definiciones primarias N1–N3 incorporadas desde rerun | Sin inventario no se elige tipo universal. SoftwareApplication exige aplicación real; ResearchProject no representa automáticamente una obra. Ficha y original separados, sin autoría/fecha transferidas | S1/S2/S5 como propuesta validable; S3/S4 PENDIENTES de objeto. Estrategia §8.6; desarrollo valida vocabulario/rangos/contenido y elegibilidad si procede, no ejecutado |
 | T1–T5, M1–M7 y G1–G6 | Dependencias de contenido actuales y reglas generales vigentes de la skill; F1–F4/F6/F7 allí, no nuevas fuentes de research del proyecto | Sin auditoría técnica, fuentes/acceso analítico o reporting propio. Política del propietario sin decisión; acceso a herramienta documentada no equivale a métrica disponible | Estrategia §§8.7–8.9: roles propuestos, criterios/momentos; ejecución, accesos y política PENDIENTES |
 | Proyección cliente de clusters y comprensión generativa | Keyword Map cierre/B2 síntesis aprobada, arquitectura/feedback; campos y condiciones anteriores | Research respaldó categorías/distribución; no originó prioridad Formación ni Equipo. No prueba causalidad de citación o rankings | E1 v8 §4.3 deriva de Estrategia §8.11; arquitectura intacta |
 
@@ -162,6 +167,20 @@ La inspección actual encontró la ampliación v1 anterior ya incorporada en Est
 | G7: revisar iniciativas de AI Labs y menciones en Inicio | C1, R2 y feedback 1/16/17; recomendación inferida de gobernanza sobre relación ya APROBADA | Vigencia de C1: un alta, retirada o cambio de relación confirmado por el equipo dispara revisión de Labs/Inicio y enlaces. Fuente esperada: decisión del equipo registrada aquí con fecha y alcance; responsable propuesto de AI Labs + editor. No declara una iniciativa nueva ni autoriza cambiar arquitectura | Estrategia §8.9/§8.10; E1 v9 §4.3 |
 
 Sin research adicional ni nuevo Decision Delta: las consecuencias se resuelven con evidencia interna vigente. No se reabre estrategia, Gate A/B o aprobación de arquitectura. E1 y elección de voz siguen pendientes; E2 no iniciado.
+
+### Evidencia primaria reutilizada del rerun — candidatos S3/S4
+
+Origen auditable: `content-rerun/internal/02-research/research-queries.md`, N1–N3; webfetch Markdown observado el 05/10/2026. Se incorpora evidencia y límite, no el razonamiento/arquitectura del rerun como autoridad. Fuente primaria global en inglés; pertinente a definición, no demanda. Las páginas advertían versión de desarrollo; N3 mostraba V30.1/16-09-2026. N1/N2 tuvieron salida extensa truncada: definiciones/propiedades usadas fueron visibles; no auditoría exhaustiva ni reconsulta actual.
+
+| ID / fuente primaria | Observado | Clase / consecuencia editorial | Límite |
+|---|---|---|---|
+| N1 · https://schema.org/SoftwareApplication | Define una aplicación de software y hereda CreativeWork; propiedades applicationCategory/softwareVersion y creator/license heredadas | Documentación técnica primaria; delimita S3 a aplicaciones acreditadas y propiedades visibles | Un producto construido con IA no prueba software o función IA; Schema no certifica rich result |
+| N2 · https://schema.org/CreativeWork | Obra creativa genérica; author/creator, about, datePublished/dateModified, license | Documentación técnica primaria; S4 separa obra original del texto editorial de la ficha y significado de fechas | Autor de obra no es autor del resumen automáticamente; ningún dato se infiere del directorio |
+| N3 · https://schema.org/ResearchProject | Thing → Organization → Project → ResearchProject; proyecto de investigación | Documentación técnica primaria; candidato solo si el objeto es ese proyecto, no un artículo/trabajo por label | Herencia no prueba organización concreta de AI PlayGrounds; requiere objeto/datos/relación acreditados |
+
+**Decision Delta histórico del rerun: DESCARTA** un mapping uniforme por colección. **Decision Delta de reutilización frente al baseline: CONFIRMA** el principio condicional ya vigente, precisando definiciones y separación ficha-original. No se atribuye al baseline un mapping universal que nunca propuso. La selección/handoff por objeto sigue siendo recomendación inferida y PROPUESTA; no aprobación, implementación o resultado de visibilidad.
+
+Preflight de esta reconciliación: evidencia N1–N3 `USAR / EJECUTADO` en la ejecución documentada del rerun; consultas nuevas a web/Planner/Trends/GSC `OMITIR — no puede cambiar esta decisión`, operación `—`. La siguiente dependencia es inventario/tipo real, no más definición genérica. Cierre: suficiente para conservar/precisar candidatos condicionales; revalidar rangos y soporte de motor al implementar.
 
 ## 10. Trazabilidad de la dirección editorial
 
@@ -191,6 +210,8 @@ Fuente y detalle íntegro: `content/internal/04-feedback/feedback-e1.md`, observ
 
 No ESCALATE documentado. La migración identifica/actualiza fuentes internas y después sincroniza E1; no afirma que esa secuencia se hubiese cumplido en el trabajo legacy.
 
+**Feedback actual de reconciliación:** registro en `content/internal/04-feedback/feedback-e1.md`. ACCEPT: base canónica bajo content, fichas conservadas, beneficio SEO+IA reconocible, precisión de ownership/gobernanza/política pendiente. ADAPT: controles y transparencia proporcionales en registros/bloques existentes; accesos directos sin imponer agrupación visual; revisión de Formación/Inicio conservando funciones. No aprobación consolidada de E1 ni selección de voz.
+
 ## 12. Riesgos, incertidumbre y cierre
 
 | Afirmación/decisión | Incertidumbre/riesgo | Evidencia que podría cambiarla | Estado / efecto publicable |
@@ -215,6 +236,8 @@ Cadena reconstruible: alcance/brief → B0/B1/Gate A → evidencia Planner/web y
 **Actualización aditiva de contrato, 05/10/2026:** Estrategia §§5.1/8.1–8.11 y claims C1–C9 de este Dossier → E1 v8 revisado pendiente. Se preservan ocho páginas, dos tipos y 62 secciones de página, feedback y dos opciones de voz con seis muestras. Readiness registra requisitos resueltos, datos/objetos/política pendientes y NO APLICA motivados; no certifica publicación o ejecución. E1 añade §4.3 con aplicación cliente y ajusta la explicación §2 para evitar duplicación. La voz y aprobación humana siguen pendientes; E2 no iniciado.
 
 **Revisión incremental posterior, 05/10/2026:** Q17/Q18 y G7 en Estrategia → E1 v9 revisado pendiente. §4.3 añade la aplicación de Exploración/Fichas del listado y extiende la revisión de menciones a las iniciativas de AI Labs en Inicio. Arquitectura, orden, muestras de voz y pendientes conservados. Esta revisión confirma el resto de la ampliación existente; no la ejecuta de nuevo.
+
+**Reconciliación canónica, 05/10/2026:** matriz D01–D24 previa a edición → Estrategia/Dossier/feedback actualizados → E1 v10, Versión revisada pendiente de aprobación. Mismas ocho páginas, dos fichas y 62 secciones; acceso directo de navegación a colecciones sin paso obligatorio por Labs, controles comunes de procedencia/publicabilidad, N1–N3, transparencia en Universo/Postulación y foto condicional. Se conservan fichas, Q17/Q18, G7, T5 pendiente, orden de Formación, explicación/evidencia de Inicio y dos voces/seis muestras. §4.3 identifica SEO e IA y sus aplicaciones; no controles o candidatos internos expuestos. Snapshot íntegro fuera del estado operativo; rerun histórico intacto, no segundo E1 activo. QA final en el registro de reconciliación.
 
 Migración 05/10: la estrategia legacy estaba desactualizada respecto al feedback y no contenía arquitectura completa; E1 v5 comprimía secciones/recorridos y carecía de tabla de públicos. Se reconcilian primero internos, luego E1. La propuesta antigua de arquitectura conserva su estado; ningún dato operativo se convierte en hecho ni ninguna recomendación de voz en elección.
 

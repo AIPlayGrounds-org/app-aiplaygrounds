@@ -69,3 +69,20 @@ La autorización de migración y «continua» no son aprobación de E1 ni elecci
 | Arquitectura E1 / nueva página Equipo | Mostrar personas detrás de la organización; cambio arquitectónico solicitado explícitamente | Estrategia §§1/3/4/5/6/7/8/10/11; Dossier; referencia U1 en research-queries; E1 vista general/estructura/recorrido/pendientes | ACCEPT: incorporar Equipo como octava página base. Decisión localizada del usuario; estructura y campos PROPUESTOS, datos PENDIENTES. No aprobación global E1 ni elección de voz |
 
 La estrategia se actualizó primero; E1 se resincroniza a v7, Dirección de Contenido y Estructura Web — Versión revisada, pendiente de aprobación. La referencia aporta patrón editorial, no capacidades de calendarios/mentoría, servicios comerciales o perfiles independientes. Se propone una página colectiva con tarjetas y recepción incremental de datos; no se crean integrantes ficticios. Se conservan las siete páginas anteriores, ambos tipos de ficha, Gate A/B y el research cerrado.
+
+## Feedback actual — reconciliación canónica de baseline y rerun, 05/10/2026
+
+Fuente: encargo humano actual «Reconcilia decisiones» y «El resultado final debe quedar nuevamente bajo content/». Matriz D01–D24 en `content/internal/registro-reconciliacion-editorial.md`, generada después del snapshot y antes de editar. Las entradas anteriores siguen como historial vinculante de sus puntos; no se sustituyen por una aprobación global nueva.
+
+| Observación / intención | Tratamiento | Decisión y dependencias aplicadas |
+|---|---|---|
+| Base content, snapshot y rerun intacto | ACCEPT | Un único estado operativo en content; snapshot histórico verificable; rerun no se promueve ni modifica |
+| SEO+IA reconocibles para cliente | ACCEPT | Estrategia §8.11 y proyección E1 §4.3 con título visible, tabla aplicada y límites; no informe técnico |
+| Procedencia/controles/evidencia de candidatos | ADAPT | Controles comunes en modelo y Dossier, N1–N3 con contexto/Delta y candidatos condicionales; sin documentos o campos públicos adicionales |
+| Acceso directo a Productos e Investigación si no hay conflicto | ACCEPT | Se propone navegación directa, conserva Labs y recorrido contextual; agrupación visual no fijada ni probada |
+| Evaluar Formación/Inicio sin compactación por cantidad | ADAPT | Se conservan bloques y orden baseline por función/ownership; Equipo accesible en navegación, sin módulo Home nuevo |
+| Conservar fichas frente a compactación incompatible | ACCEPT | Producto nueve secciones e Investigación siete en su orden baseline; controles no alteran arquitectura |
+| Proteger Labs/ownership/gobernanza/crawlers | ACCEPT | Q17/Q18/G7 y T5 propietario pendiente preservados; nuevos enlaces sujetos a revisión de G7; no configuración |
+| E1 coherente, dos voces y pendiente de aprobación | ACCEPT | Resincronización v10 desde internos, mismas dos opciones/seis muestras; ningún E2 ni aprobación inventada |
+
+Campos/fotos/criterios concretos y selección visual siguen como PROPUESTA/PENDIENTE; el encargo no aprueba cada preferencia del agente. No ESCALATE: se resuelven diferencias dentro del alcance autorizado sin contradicción humana nueva. La aprobación de E1 y la elección de voz siguen siendo decisiones humanas pendientes del mismo gate.

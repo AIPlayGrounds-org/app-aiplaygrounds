@@ -2,7 +2,7 @@
 
 **Proyecto / mercado / idioma:** AI PlayGrounds · Latinoamérica · español en primera etapa.
 **Base:** B2 y Keyword Map con Gate B resuelto; feedback E1 del 01/10/2026 y petición de incorporar Equipo del 05/10/2026.
-**Actualización:** 05/10/2026 — revisión incremental del contrato SEO/AEO/GEO v1: ownership de exploración de directorios y gobernanza de iniciativas, sobre la ampliación ya registrada.
+**Actualización:** 05/10/2026 — reconciliación canónica de baseline y rerun: accesos directos, controles editoriales mínimos, evidencia primaria de candidatos y proyección cliente SEO + IA. Decisiones y snapshot en `content/internal/registro-reconciliacion-editorial.md`.
 **Estado:** fuente operativa completa; arquitectura y dirección editorial PROPUESTAS para E1, pendiente de aprobación consolidada. No es un entregable formal ni una aprobación nueva.
 **Contrato:** SEO/AEO/GEO v1 completado para la dirección E1; readiness desglosado en §8.10. Datos, permisos, decisiones del propietario e implementación pendientes conservan su estado. No se reejecutan B0/B1/B2, gates o research ni se inicia E2.
 
@@ -14,9 +14,12 @@
 - Evidencia: `content/internal/02-research/research.md`, `research-queries.md`, `keyword-map.md`, `keyword-observations.csv`. Research concluido; no se repite en la migración.
 - Feedback humano: `content/internal/04-feedback/feedback-e1.md`. Sus ACCEPT/ADAPT tienen precedencia solo sobre los puntos afectados; no equivalen a aprobación global E1.
 - Auditoría: `content/internal/03-estrategia/dossier-evidencia-estrategica.md`. Sustenta decisiones; no define estrategia ni duplica la especificación de voz.
+- Reconciliación actual: `content/internal/registro-reconciliacion-editorial.md`, matriz D01–D24 registrada antes de editar. `content/` es el único estado operativo; `content-rerun/` y el snapshot son evidencia histórica, sin workflow paralelo activo. La autorización actual no aprueba E1, navegación concreta ni voz.
 - Proyección cliente: `content/entregables-cliente/01-direccion-contenido-estructura/direccion-contenido-estructura-web.md`. El v5 legacy documentaba una propuesta de arquitectura que faltaba desarrollar internamente. Se reconcilia como PROPUESTA, contrastada con B2, estrategia previa y feedback; no se usa como prueba de aprobación. v6 documentó la migración; v7 incorporó Equipo; v8 deriva de la ampliación aditiva SEO/AEO/GEO v1. v9 precisa la aplicación de exploración y revisión de iniciativas, sin cambio de arquitectura.
 
 Precedencia: decisión humana posterior explícita > estado aprobado vigente > B2/decisiones previas > estrategia propuesta > research/inferencias. E1 no es fuente primaria. B1/B2 conservan snapshots de etapa; los puntos sustituidos no se reabren.
+
+E1 v10 deriva de esta reconciliación. Se conservan las decisiones humanas de la tabla siguiente, las ocho páginas, dos fichas y 62 secciones. Los cambios adoptados del rerun precisan controles, evidencia y recorridos; no sustituyen la arquitectura de fichas, Q17/Q18, G7 ni la política pendiente T5. Datos, permisos y aprobación consolidada siguen pendientes.
 
 ### Decisiones humanas preservadas
 
@@ -119,6 +122,8 @@ Arquitectura vigente tras petición de Equipo: ocho páginas base y dos tipos re
 | Ficha de investigación | Pregunta/aporte/procedencia | Visitante que consulta | Directorio/fuente original | Un trabajo y sus autores | Tipo PROPUESTO; datos/fuentes/permisos |
 | Equipo | Presentar personas, roles/aportes y experiencia pertinente | Personas, empresas y colaboradores que quieren conocer quién sostiene la organización | Enlace de navegación propuesto; continuidad a Formación, Comunidad y AI Labs | Contexto institucional, sin cluster SEO comercial propio ni perfiles individuales | Inclusión APROBADA; estructura PROPUESTA; integrantes/datos por recibir |
 
+**Accesos de navegación — PROPUESTA reconciliada:** Productos e Investigación tendrán accesos directos identificables, junto al acceso propio de AI Labs, Formación, Empresas, Comunidad y Equipo. Quien busque una colección podrá entrar a ella sin visitar antes Labs; quien necesite contexto conserva el recorrido AI Labs → iniciativa. La agrupación visual se resolverá en diseño, sin fijar un menú desplegable ni añadir páginas. Los destinos solo se habilitan cuando su contenido sea publicable. Se conserva **Investigación** como nombre de página; el plural del encargo no se interpreta como renombrado.
+
 ### 5.1 Modelos de campos repetibles
 
 Modelos PROPUESTOS que precisan los elementos de §6, sin cambiar secciones ni elegir CMS. Cada entrada conserva su fuente, fecha significativa, permiso y estado publicable en el registro correspondiente del Dossier (§9, C6–C8). No se confunde dato obligatorio para publicar con dato ya recibido. Los campos condicionales se omiten si no hay base; un campo esencial ausente bloquea esa entrada, sin rellenarla con ejemplos. Las tarjetas de listado reutilizan valores de la ficha: no mantienen otra versión del dato.
@@ -154,7 +159,7 @@ Modelos PROPUESTOS que precisan los elementos de §6, sin cambiar secciones ni e
 | Investigación / recursos originales | Original/materiales, enlaces y atribución | Obligatorio al menos una fuente original verificable | Recursos originales | C7 | R7/G5; PENDIENTE |
 | Investigación / relaciones | Vínculo concreto con producto/otro trabajo | Solo documentado, no por tema compartido | Relaciones documentadas | C6/C7 | R8; PENDIENTE, omitir si no existe |
 | Equipo / nombre | Nombre público aportado por integrante | Obligatorio | Personas del equipo | C8, usuario/integrante | E8; PENDIENTE |
-| Equipo / foto | Imagen de la persona con autorización | Para tarjeta prevista; tratamiento sin foto por resolver si falta | Personas del equipo | C8 | Permiso PENDIENTE |
+| Equipo / foto | Imagen de la persona con autorización | Condicional; falta de foto o permiso no bloquea nombre/rol/bio acreditados; diseño sin foto por resolver | Personas del equipo | C8 | Permiso PENDIENTE; no imagen ficticia |
 | Equipo / rol-aporte | Función/contribución dentro de AI PlayGrounds | Obligatorio; distinguir especialidad profesional | Personas del equipo | C8 | R9; PENDIENTE |
 | Equipo / biografía | Experiencia breve sustentada por hechos aportados | Obligatorio; no credenciales inferidas | Personas del equipo | C8 | Q14; PENDIENTE |
 | Equipo / especialidad | Contexto profesional adicional | Opcional, según datos | Personas del equipo | C8 | PENDIENTE |
@@ -162,6 +167,20 @@ Modelos PROPUESTOS que precisan los elementos de §6, sin cambiar secciones ni e
 | Equipo / enlaces profesionales | Destinos propios autorizados | Opcional; sin perfil interno o agenda nuevos | Personas del equipo | C8 | R7/G6; PENDIENTE |
 
 Eventos siguen como bloque de Comunidad; no se introduce catálogo de eventos ni modelo de cursos inexistentes. Si una oferta futura exige un tipo repetible, se definirá con sus datos y alcance, no en esta actualización.
+
+#### Control editorial mínimo por registro
+
+Aplica a productos, trabajos e integrantes. Es control interno del mismo registro, no otra ficha pública, CMS obligatorio o documento por campo. Usa el registro de procedencia del Dossier C6–C8; la tarjeta reutiliza la ficha. Valores PENDIENTES hasta recibir datos. Conservar un único valor factual y referenciarlo, sin copiar fuentes/fechas en varios inventarios.
+
+| Campo interno común | Significado / condición de uso | Registro responsable / relación |
+|---|---|---|
+| Identificador estable | Clave única al dar de alta; permanece si cambia título, categoría o URL. No prescribe UUID ni slug | Entrada C6/C7/C8 y campos de §5.1; enlaza ficha/tarjeta/menciones |
+| Fuente y vigencia | Referencia original por claim material, fecha de comprobación, versión o significado de fecha cuando importa. Separar revisión editorial de publicación del original | Dossier §9; G4/G5/G6; permite atribución contextual visible |
+| Permiso / alcance público | Evidencia o fundamento del uso autorizado y qué cubre; pendiente no es permiso. Enlace al original no autoriza copiar contenido o fotos | Dossier §9 C6–C8; bloquea el material cuyo uso no está sustentado |
+| Estado editorial y responsable | Por revisar / publicable / suspendido-retirado, con motivo y rol responsable. Publicable requiere fuente, datos esenciales y permiso; no implica aprobación E1 o QA técnico | Curación o responsable Equipo + editor, roles propuestos; distinto de madurez del producto/estado del trabajo |
+| Remitente de postulación | Contacto interno solo si existe postulación; separado de creador/autor/persona publicada, sin mostrarse por defecto | C3/C6/C7; no membresía o autoría por envío |
+
+La revisión se activa por alta, corrección, cambio material, incidencia o permiso; no por calendario artificial. Si un claim pierde soporte, suspenderlo o retirar el material afectado y revisar tarjetas/menciones/propiedades candidatas. Uso de producto y resultados de trabajo siguen condicionales a evidencia: desconocido no significa cero ni exige inventar una métrica.
 
 ## 6. Arquitectura completa por página
 
@@ -230,10 +249,10 @@ La propuesta legacy se incorpora por compatibilidad, no como aprobación. Feedba
 | Orden | Sección | Objetivo | Qué comunica/resuelve | Contenido/elementos esperados | Evidencia/condición | Dependencia material |
 |---|---|---|---|---|---|---|
 | 1 | Hero | Orientar al descubrimiento | Encontrar/entender soluciones | Propuesta del directorio | No todo producto es herramienta de IA | Voz/estado publicable |
-| 2 | Universo y criterios | Explicar inclusión | IA funcional, construcción o ambas | Alcance y criterios reales | Open source opcional; no auditoría | Criterios/curación |
+| 2 | Universo y criterios | Explicar inclusión | IA funcional, construcción o ambas | Alcance, criterios, fuentes y límites de revisión/actualización cuando definidos | Open source opcional; curación no auditoría ni aval integral | Criterios/curación/responsable |
 | 3 | Exploración | Facilitar elección | Atributos pertinentes | Filtros propios confirmados cuando definidos | No filtros→URLs automáticas ni buscador inventado | Taxonomía/filtros/inventario |
 | 4 | Fichas del listado | Comparar y abrir detalle | Utilidad y datos esenciales | Resumen por entrada y enlace | Fuente/estado por producto | Entradas, datos y permisos |
-| 5 | Postulación y revisión | Recibir propuestas | Inclusión sujeta a curación | Criterios, datos y acción confirmados | No publicación automática | Canal/responsable/respuesta |
+| 5 | Postulación y revisión | Recibir propuestas | Inclusión sujeta a curación | Criterios, datos, acción y revisión/corrección de entrada según operación confirmada | No publicación automática ni plazo inventado | Canal/responsable/respuesta y gestión de cambios |
 
 ### Ficha de producto — tipo repetible, sin Hero separado
 
@@ -254,10 +273,10 @@ La propuesta legacy se incorpora por compatibilidad, no como aprobación. Feedba
 | Orden | Sección | Objetivo | Qué comunica/resuelve | Contenido/elementos esperados | Evidencia/condición | Dependencia material |
 |---|---|---|---|---|---|---|
 | 1 | Hero | Orientar a consulta | Descubrir trabajos | Propuesta de colección | No validación científica | Voz/estado publicable |
-| 2 | Universo y tipos | Explicar inclusión | Trabajos frente a herramientas bibliográficas | Alcance y tipos confirmados | No revista ni revisión propia | Corpus/criterios |
+| 2 | Universo y tipos | Explicar inclusión | Trabajos frente a herramientas bibliográficas | Alcance/tipos, fuentes, versión y revisión de ficha diferenciada del original; criterios reales | Curación editorial no revisión por pares ni publicación científica propia | Corpus/criterios/responsable |
 | 3 | Exploración | Facilitar elección | Atributos pertinentes a trabajos | Filtros propios según corpus | No taxonomía o páginas automáticas | Taxonomías/filtros finales |
 | 4 | Fichas del listado | Consultar detalle | Pregunta/aporte/atribución | Resumen y enlace a ficha | Autor ≠ postulante | Entradas/fuentes/permisos |
-| 5 | Postulación y revisión | Recibir trabajos | Solicitud curada | Criterios, datos, acción | Sin publicación/aval automáticos | Canal/responsable/respuesta |
+| 5 | Postulación y revisión | Recibir trabajos | Solicitud curada | Criterios, datos y acción; remitente distinto de autor; gestión de correcciones según proceso definido | Sin publicación/aval automáticos ni plazos inventados | Canal/responsable/respuesta y gestión de cambios |
 
 ### Ficha de investigación — tipo repetible, sin Hero separado
 
@@ -278,7 +297,7 @@ Referencia editorial aportada: https://crafter.run/en/team, lectura directa el 0
 | Orden | Sección | Objetivo | Qué comunica/resuelve | Contenido/elementos esperados | Evidencia/condición | Dependencia material |
 |---|---|---|---|---|---|---|
 | 1 | Hero | Presentar a las personas detrás de AI PlayGrounds | Sentido del equipo dentro de la organización | Apertura colectiva breve, diferenciada de las presentaciones individuales | Sin composición o especialidades colectivas inventadas | Composición confirmada y voz E1 |
-| 2 | Personas del equipo | Conocer a cada integrante y su aporte | Nombre, rol organizacional y experiencia pertinente | Tarjetas con foto, nombre, rol/aporte y biografía breve; especialidad, ciudad/país y enlaces profesionales opcionales según datos aportados | Cada dato debe corresponder a la persona; no perfiles independientes ni orden jerárquico supuesto | Lista, roles, biografías, fotos y datos publicables por recibir; agrupación/orden según composición real |
+| 2 | Personas del equipo | Conocer a cada integrante y su aporte | Nombre, rol organizacional y experiencia pertinente | Tarjetas con nombre, rol/aporte y biografía breve; foto autorizada si disponible; especialidad, ciudad/país y enlaces profesionales opcionales | Cada dato debe corresponder a la persona; sin foto ficticia, perfiles independientes u orden jerárquico supuesto | Lista, roles, biografías y permisos por recibir; foto condicional, diseño sin foto por resolver; agrupación/orden según composición real |
 | 3 | Conoce lo que hacemos | Relacionar personas con la actividad del sitio | Formación, Comunidad y AI Labs como caminos existentes | Enlaces contextuales a esas páginas, sin ofrecer contacto individual o agenda | No atribuir docencia/autoría/responsabilidad de iniciativa sin datos | Relación real si se menciona una contribución específica |
 
 La página admite recepción incremental de información sin publicar tarjetas ficticias. No se decide de antemano quién es fundador, core, docente o colaborador ni que todos los miembros de WhatsApp formen parte del equipo. La composición y el orden se resolverán con los datos que el usuario irá aportando; la referencia no determina esas categorías.
@@ -290,6 +309,7 @@ La página admite recepción incremental de información sin publicar tarjetas f
 | Aprender | Inicio o Formación | Formación: punto de partida/enfoque/líneas/estado | Comprender orientación y expresar interés | Lista de espera; no plaza/inscripción, destino pendiente |
 | Formar equipo | Navegación/Empresas | Necesidades/alcance → evidencia autorizada → consulta | Conversación de formación | Canal pendiente; Productos si busca solución existente |
 | Explorar iniciativas | Inicio/navegación | AI Labs → Productos o Investigación → ficha | Comprender y acceder | Recurso original o regreso al directorio |
+| Buscar un producto o trabajo directamente | Accesos de navegación a Productos o Investigación; entrada directa a colección/ficha | Colección: universo → exploración/listado → ficha → original; AI Labs como contexto opcional | Elegir y consultar un recurso sin paso obligatorio por Labs | Destino publicable y enlace verificado; no autoría/aval por relación de navegación |
 | Participar | Comunidad | Propósito/actividades → vías/condiciones | Elegir participación | WhatsApp general; core/iniciativas por formulario y conversación |
 | Proponer entrada | Directorio pertinente | Criterios → postulación | Solicitud de inclusión | Revisión, no publicación automática; operación pendiente |
 | Conocer quién sostiene la organización | Navegación → Equipo, ubicación propuesta | Presentación colectiva → personas/roles/aportes → actividad relacionada | Comprender composición y experiencia pertinente | Continuidad a Formación, Comunidad o AI Labs; sin agenda/contacto personal asumidos |
@@ -362,7 +382,7 @@ Amplía las necesidades de §3; las preguntas son inferidas, no entrevistas ni h
 | R1 Formación → incluye líneas → E2/E3; Formación ↔ Empresas por aprendizaje técnico | Conceptual | B2; APROBADO al nivel de líneas/necesidad | Explicación conjunta en Formación, destinatario/acción diferenciados en Empresas |
 | R2 AI PlayGrounds → espacio de iniciativas → AI Labs; AI Labs → iniciativas públicas actuales → Productos/Investigación | Entre entidades / conceptual | Brief y feedback 1/16/17; APROBADO. No propiedad/autoría de todo listado | Qué es AI Labs e Iniciativas actuales |
 | R3 Colección → incluye entrada → producto/trabajo | Entre entidades | Alcance APROBADO; pertenencia de cada entrada PENDIENTE de curación C6/C7 | Tarjeta enlaza a ficha; inclusión no avala resultados |
-| R4 Inicio → Formación/Comunidad/AI Labs; Empresas → Productos; Equipo → Formación/Comunidad/AI Labs | Link interno | Estructura §§5–7 PROPUESTA; camino secundario empresarial APROBADO | Enlaces descriptivos y destinos verificados en implementación; no atribución factual por enlace |
+| R4 Inicio → Formación/Comunidad/AI Labs; Empresas → Productos; Equipo → Formación/Comunidad/AI Labs; navegación → Productos/Investigación directamente y AI Labs por separado | Link interno | Estructura §§5–7 y reconciliación D04/D05 PROPUESTA; camino secundario empresarial APROBADO | Accesos descriptivos independientes; Labs contextualiza sin paso obligatorio; destinos verificados en implementación, no autoría por enlace |
 | R5 Persona/equipo → creó → producto | Entre entidades | C6; PENDIENTE por entrada | Campo Creado por; nunca deducir de postulante o membresía |
 | R6 Persona/equipo → autoría → trabajo; persona → afiliación documentada → organización | Entre entidades | C7; PENDIENTE por trabajo y fecha | Autores y afiliación; no AI PlayGrounds como publisher por defecto |
 | R7 Ficha → remite a fuente/material → original; tarjeta Equipo → enlace profesional → destino propio | Documental / link externo | C6/C7/C8; PENDIENTE hasta verificar fuente/destino | Recursos originales o enlace profesional; link no prueba una credencial |
@@ -379,14 +399,14 @@ En E2, tras aprobación E1, cada página/ficha publicable tendrá SEO title y me
 
 ### 8.6 Structured data candidato
 
-Selección preliminar como PROPUESTA de handoff, no implementación. Reglas generales y fuentes de la skill en `.opencode/skills/web-content-design/references/seo-ai-editorial.md` (desde raíz del workspace), F1/F3/F5; no se ha revalidado vocabulario ni elegibilidad para este proyecto. Desarrollo/SEO (rol propuesto) revisará definición, rangos, correspondencia con contenido visible y validación antes del lanzamiento; si el objeto/campo no encaja, lo omitirá y registrará motivo. Dossier §9 conserva límites específicos. Los IDs S1–S5 de esta tabla identifican candidatos técnicos; las cadenas S1–S6 de §2 son antecedentes estratégicos distintos, referenciados allí por sección.
+Selección preliminar como PROPUESTA de handoff, no implementación. Base general: `.opencode/skills/web-content-design/references/seo-ai-editorial.md`, F1/F3/F5. Se incorpora el contraste primario N1–N3 observado en el rerun el 05/10, conservado en Dossier §9; no se vuelve a consultar ni se acredita elegibilidad de un motor. Desarrollo/SEO revisará definición/rangos vigentes, contenido visible, sintaxis y requisitos de la experiencia antes de publicar; si el objeto/campo no encaja, se omite con motivo. Los candidatos S1–S5 de esta tabla son distintos de las cadenas estratégicas S1–S6 de §2.
 
 | ID / página o tipo | Objeto / candidato y motivo | Propiedad candidata → campo visible / claim | Pendiente / no afirmable | Responsable / momento / verificación |
 |---|---|---|---|---|
 | S1 Inicio | AI PlayGrounds; `Organization` como representación de la organización, sin afirmar figura jurídica | `name` → nombre C1; `description` → Qué es AI PlayGrounds C1; `url` → URL final | URL/logo/identificadores externos no confirmados; sin `legalName`, dirección o forma jurídica inferidos | Desarrollo/SEO propuesto, lanzamiento; validar tipo/rangos y visible vs marcado |
 | S2 Productos / Investigación | Colecciones; `CollectionPage` candidato para cada directorio real | `name`, `description` → universo C1; `hasPart` solo si referencia entradas visibles verificadas C6/C7 | Entradas/URLs PENDIENTES; sin marcar inventario ficticio o filtros vacíos | Mismo rol/momento; validar relaciones y objetos enlazados |
-| S3 Ficha de producto | Objeto E6 aún sin inventario; candidato específico PENDIENTE. `SoftwareApplication` solo si es software; `Product` solo si la definición encaja | Tras selección: `name`/`description` → campos nombre/descripción C6; otras propiedades solo según tipo y fuente | No `offers`, precio, rating, licencia, creador o disponibilidad por inferencia; no afirmar software para todas las entradas | Desarrollo/SEO con editor y fuente de entrada, antes de publicar cada ficha; identificar objeto y validar propiedades |
-| S4 Ficha de investigación | Objeto E7 PENDIENTE; `ScholarlyArticle` solo artículo académico documentado; `Article`/`CreativeWork` solo si encaja el objeto | Tras selección: `name` o `headline` según tipo → título; `author` → autores; `datePublished` solo fecha de publicación; `url` → URL de ficha; todos C7 | No todo experimento/proyecto es artículo; fecha de actualización no es publicación; sin publisher/afiliación/licencia/resultados inferidos | Desarrollo/SEO + editor/fuente original, por ficha antes de publicación; validar definición/rangos y correspondencia |
+| S3 Ficha de producto | Objeto E6 aún sin inventario; candidato específico PENDIENTE. `SoftwareApplication` solo aplicación de software acreditada (N1); `Product` u otro solo si encaja el objeto | Tras selección: `name`/`description` → campos nombre/descripción C6; `applicationCategory`/`softwareVersion`/`creator`/`license` solo con valores visibles y fuente pertinente | No `offers`, precio, rating, licencia, creador o disponibilidad por inferencia; IA en construcción no prueba aplicación ni función IA | Desarrollo/SEO con editor y fuente de entrada, antes de publicar cada ficha; identificar objeto y validar propiedades/rangos |
+| S4 Ficha de investigación | Objeto E7 PENDIENTE; `CreativeWork` para obra real (N2), `Article`/`ScholarlyArticle` solo si tipo acreditado; `ResearchProject` solo proyecto como tal, no texto por label (N3) | Separar obra/proyecto original de ficha editorial que lo describe. `name`/`headline`, `author`, `datePublished` y `url` según objeto, campos C7 y relación documentada; no reutilizar autor/fecha del original como autor/fecha del resumen | ResearchProject hereda Organization/Project, no Article/CreativeWork; no todo trabajo es proyecto-organización o artículo. Revisión de ficha ≠ publicación del original; sin publisher/afiliación/licencia/resultados inferidos | Desarrollo/SEO + editor/fuente original, por ficha antes de publicación; confirmar qué objeto se representa, validar definición/rangos/campos y relación ficha-original |
 | S5 Equipo | Personas verificadas; `Person` candidato contextual en página colectiva, sin crear perfiles | `name` → nombre C8; `description` → bio C8; `image` → foto autorizada; `affiliation` solo relación R9 documentada | Personas/roles/destinos/permiso PENDIENTES; especialidad no equivale a cargo; sin afiliación inferida por enlace | Desarrollo/SEO + equipo, antes de publicar tarjetas; verificar dato/permiso y tipo/rango |
 
 Formación y Empresas: no candidato `Course`, `Offer` o servicio específico sin oferta cerrada. Comunidad: no candidato `Event` sin evento identificado. AI Labs: no candidato adicional material para el espacio. Se registra la selección pendiente o el NO APLICA en §8.10; no se añade marcado por rutina ni JSON-LD.
@@ -425,6 +445,8 @@ M6 es una posibilidad documentada por la skill (F6/F7), no una nueva investigaci
 
 Roles propuestos, sin personas asignadas. El equipo valida el dato y su permiso; el editor revisa todas las menciones dependientes y desarrollo las propiedades candidatas cuando existan. Vigencia factual y fuente detalladas en Dossier §9. La revisión responde a cambios reales, sin fechas artificiales de actualización.
 
+Los controles comunes de §5.1 se mantienen en el registro C6/C7/C8, sin inventario paralelo. Una pérdida de soporte o permiso cambia el estado editorial y dispara corrección/suspensión del material y sus menciones; no cambia automáticamente el estado de madurez del producto/trabajo. G7 incluye los accesos directos de navegación si cambia una iniciativa o su relación con Labs; modificar arquitectura aún requiere decisión humana.
+
 | ID / dato-claim | Dónde y dependencias | Fuente | Responsable propuesto | Evento de revisión |
 |---|---|---|---|---|
 | G1 Oferta, modalidad, requisitos, docentes, certificados y estado C2 | Formación: formatos/estado/dudas/lista; síntesis de Inicio y Empresas; datos de docentes si se vinculan | Equipo/registro de oferta | Responsable de Formación + editor | Definición/cambio de oferta o apertura/cierre de convocatoria; verificar antes de publicar |
@@ -438,6 +460,8 @@ Roles propuestos, sin personas asignadas. El equipo valida el dato y su permiso;
 ### 8.10 AEO/GEO readiness por página/tipo
 
 Fecha: 05/10/2026. **APLICA — resuelto** significa definición estratégica trazable; no aprobación E1, dato publicable o implementación comprobada. **APLICA — pendiente** conserva un dato/decisión material ausente. La matriz compacta evalúa cada capa por página; las referencias dan cadena, dependencia y responsables/momentos. Las capas institucionales sin cluster comercial se justifican, no se completan con demanda ficticia. En toda fila, crawl/index/discovery se divide en **APLICA — resuelto** para requisitos T1–T3 y **APLICA — pendiente** para la decisión del propietario T5; la ejecución de todos los controles sigue pendiente. Los IDs de intención S1–S6 remiten a §2; los de candidatos S1–S5 en la columna structured data remiten a §8.6.
+
+**Desglose operativo de discovery para cada fila:** «política T5 pendiente» en la tabla significa exactamente **APLICA — pendiente**, no parte del resultado resuelto. Aplica individualmente a Inicio, Formación, Empresas, Comunidad, AI Labs, Productos, Ficha de producto, Investigación, Ficha de investigación y Equipo. T1–T3: **APLICA — resuelto** como requisitos con responsables/momentos/verificación de §8.7; T5: **APLICA — pendiente**, propietario antes de fijar controles, finalidad/plataforma/decisión aún ausentes. No cambia por incorporar accesos directos ni controles editoriales. Esta separación conserva la decisión humana pendiente sin declarar rastreo/indexación o política ejecutados.
 
 | Página/tipo | Necesidad/intención | Cluster/topic | Entidad | Preguntas | Bloque/campo | Claims/evidencia | Relaciones | Modelo repetible | Structured data candidato | Crawl/index/discovery | Medición posterior | Gobernanza mutable |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -463,6 +487,8 @@ Cadena comprobable de ejemplo: audiencia que evalúa producto (§3) → K3 (Keyw
 Una respuesta generativa sobre AI Engineering, un producto o un trabajo necesita distinguir el objeto y su alcance. La estructura permite encontrar esas explicaciones y conservar fuente/condición junto al dato; no garantiza que un motor las recupere o cite. La ampliación no añade páginas, secciones de página, nuevas FAQ o claims publicables. E1 conserva ocho páginas, dos tipos, 62 secciones, dos voces y seis muestras comparables.
 
 La revisión incremental proyecta además Q17/Q18: Exploración y Fichas del listado permiten decidir qué entrada abrir con atributos confirmados y resúmenes reutilizados del detalle. G7 extiende la explicación de actualización a las iniciativas actuales de AI Labs y su presentación en Inicio. Ambas consecuencias desarrollan bloques existentes; no anuncian nuevos filtros, inventario o iniciativas.
+
+**Proyección reconciliada v10:** encabezado cliente «Cómo la estructura prepara AI PlayGrounds para SEO e IA», con aplicaciones conservadas de intención/ownership y contexto para comprensión/recuperación generativa. E1 explicita acceso directo a Productos/Investigación, transparencia de criterios/procedencia dentro de bloques existentes y fotos de Equipo solo si disponibles/autorizadas. No expone IDs/estados internos de control, candidatos, matriz de reconciliación o readiness. Cierre breve: preparación editorial con implementación pendiente, sin garantía de rankings, tráfico, citación ni aparición en respuestas de IA.
 
 ## 9. Dirección editorial
 
@@ -504,7 +530,7 @@ Especificación completa solo aquí; Dossier conserva historia de alternativas/d
 | Casos/cifras/organizaciones y relación; testimonios/fotos/logos/proyectos; permisos | Equipo/fuentes originales | Evidencia y claims | Uso público; +520/120 siguen declaraciones, no autorización | PENDIENTE |
 | Países representados; estadísticas 23%/6% originales | Equipo/fuentes originales | Afirmaciones específicas | Publicar esas afirmaciones; no bloquea dirección general | PENDIENTE |
 | Economía, escuelas, verticales, PoC/MVP, idiomas y capas futuras | Decisión futura del equipo | Evolución fuera de etapa | No bloquean E1; requieren decisión consciente antes de introducirse | PENDIENTE / fuera de lanzamiento |
-| Integrantes de Equipo: nombre, rol/aporte, experiencia/bio, foto; especialidad, ubicación y enlaces opcionales; composición/orden | Usuario, información incremental de cada persona | Tarjetas, presentación colectiva y vínculos con actividad | Redacción/publicación de Equipo; no bloquea incluir su estructura en E1 | PENDIENTE |
+| Integrantes de Equipo: nombre, rol/aporte, experiencia/bio y permiso; foto si disponible/autorizada, especialidad/ubicación/enlaces opcionales; composición/orden | Usuario, información incremental de cada persona | Tarjetas, presentación colectiva y vínculos con actividad | Datos esenciales/permiso bloquean la tarjeta; falta de foto no los sustituye ni bloquea información acreditada, diseño sin foto por resolver | PENDIENTE |
 | Política de crawlers por proveedor/finalidad T5 | Propietario; desarrollo/SEO propuesto valida | Controles de acceso técnico | Configuración/lanzamiento; no bloquea dirección E1 | PENDIENTE, nueva explicitación de handoff |
 | Verificaciones T1–T4; objetos/propiedades S1–S5; accesos y medición M1–M6 | Equipo + desarrollo/SEO/analítica, roles propuestos | Implementación, representación y seguimiento posterior | Lanzamiento o medición; sin ejecución acreditada | PENDIENTE; definición de handoff resuelta |
 
@@ -512,14 +538,14 @@ No se atribuyen responsables personales, tiempos de atención, automatizaciones,
 
 ## 11. Correspondencia con E1
 
-| Sección cliente v9 | Fuente interna vigente | Estado proyectado |
+| Sección cliente v10 | Fuente interna vigente | Estado proyectado |
 |---|---|---|
 | 1 Qué entendimos | §§1, 4 y brief/B2/feedback | Hechos declarados/decisiones y límites |
 | 2 Qué proponemos | §§2, 4, 8; Dossier para razón/límites | Propuesta, sin atribuir prioridades al research |
 | 3 A quiénes | §3 | Públicos compactos, necesidades inferidas explícitas internamente |
 | 4.1 Vista general | §5 | Ocho páginas/dos tipos; inclusión de Equipo decidida, estructura propuesta |
 | 4.2 Estructura por página | §6 | Mismo orden, función, elementos y condiciones; no nuevas secciones |
-| 4.3 Encontrar y comprender | §§5.1, 8.1–8.5, 8.11; Dossier §9, Keyword Map vigente | Aplicación de clusters/entidades/preguntas/campos/fuentes, sin readiness ni configuración |
+| 4.3 Preparación SEO e IA | §§5.1, 8.1–8.5, 8.11; Dossier §9, Keyword Map vigente | Beneficio visible; aplicaciones de clusters/entidades/preguntas/campos/fuentes, sin readiness ni configuración |
 | 5 Recorridos | §7 | Acciones de alcance, destinos pendientes |
 | 6 Voz | §9 | Dos opciones/seis muestras sin selección |
 | 7 Decisiones/pendientes | §10 y feedback | Aprobación E1/voz abiertas; datos diferenciados |
@@ -538,6 +564,6 @@ E1 puede resumir/reformular; no estrena estrategia ni aprobación. Permanecen in
 - [x] Bloqueos de aprobación/E2 distinguidos de datos y operación previos a publicación.
 - [x] AEO/GEO readiness por las ocho páginas y dos tipos: cadenas reconstruibles, datos pendientes y NO APLICA justificados; handoffs sin afirmar ejecución (§8.10).
 - [x] Entidades, preguntas, campos repetibles, relaciones y claims vinculados a procedencia; revisión mutable proporcional (§§5.1, 8; Dossier §9).
-- [x] E1 v9 se deriva de estas fuentes tras revisión incremental SEO/AEO/GEO v1; arquitectura y estados conservados, aplicación cliente en §4.3 y revisión editorial final el 05/10/2026.
+- [x] E1 v10 previsto deriva de internos reconciliados: ocho páginas/dos tipos/62 secciones, controles comunes, evidencia N1–N3 y accesos directos; voces y estados conservados. QA posterior en registro de reconciliación; revisión editorial final antes de entrega.
 
 **Revisión incremental del contrato, 05/10/2026:** la inspección encontró la ampliación v1 ya registrada. Los únicos gaps operativos adicionales fueron explicitar el ownership de exploración/listado de ambas colecciones (Q17/Q18) y la revisión de iniciativas actuales de AI Labs y sus menciones en Inicio (G7). Se completan desde §3/§6, K3/K4 y C1/C6/C7 existentes. No se modifica Keyword Map ni se ejecuta research; no se reabre una decisión material. Los pendientes de §10 y las capas no resueltas de §8.10 siguen vigentes.
