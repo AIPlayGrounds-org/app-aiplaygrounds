@@ -1,6 +1,6 @@
 # Brief del proyecto
 
-> Plantilla de discovery. Completa solo lo aplicable y distingue hechos, propuestas y pendientes. No diseñar aquí el sitemap ni aprobar copy público.
+> Brief de discovery aportado, septiembre de 2026. Se conserva íntegro como fuente histórica: no es copy público ni estrategia vigente. Las decisiones posteriores y la adenda de reconciliación al final tienen precedencia sobre los pendientes originales afectados. Migración documental: 05/10/2026.
 
 ## Encargo y alcance
 
@@ -121,3 +121,31 @@ Anota solo vacíos que puedan cambiar la oferta, el público, una acción, una c
 - Verificar casos, métricas y permisos antes de utilizarlos públicamente.
 - Verificar las cifras y fuentes externas que puedan utilizarse como evidencia.
 - Definir qué funcionalidades de directorios e iniciativas de AI Labs estarán operativas en el lanzamiento y cuáles corresponden únicamente a evoluciones futuras.
+
+## Adenda de reconciliación — estado vigente al 05/10/2026
+
+Esta adenda conserva el discovery original y distingue sus vacíos históricos de los pendientes actuales; no reconstruye discovery ni modifica decisiones humanas.
+
+- **APROBADO — alcance actualizado por Gate A/B:** Multipágina con Formación, Comunidad / participación, Corporativa / servicios y Directorio. Empresas conserva una sola página. Español primero, inglés diferido, LATAM prioritario. Fuentes: `content/internal/01-brief-diagnostico/diagnostico-b1.md` y `diagnostico-b2.md`.
+- **APROBADO — posicionamiento:** aplicación real con rigor técnico; profundidad como destino, no barrera. Gate A resolvió el conflicto entre el listado y la tabla originales; no hay wording literal aprobado.
+- **APROBADO — líneas formativas:** Software Engineering with AI y AI Engineering, explicadas en español. No son cursos disponibles ni rutas secuenciales. La decisión de naming cerró Gate B el 30/09/2026.
+- **APROBADO — Empresas:** formación → conversación; camino secundario → Productos. PoC/MVP queda para revisión posterior, sin captación exploratoria ni ejecución en lanzamiento. Sustituye únicamente la propuesta secundaria original.
+- **APROBADO — feedback E1:** AI Labs es un espacio de incubación, experimentación y desarrollo de iniciativas, no la mera suma de dos directorios. Productos e Investigación son iniciativas públicas actuales independientes. Eje organizacional, línea formativa y ruta con progresión real no son equivalentes. Fuente: `content/internal/04-feedback/feedback-e1.md`, 01/10/2026.
+- **HECHO DOCUMENTADO — oferta:** no hay convocatoria abierta; primeras formaciones principalmente online/en vivo, full days potencialmente presenciales; híbrido y pregrabado son posibilidades futuras. Se contempla aproximadamente un programa introductorio por línea, aún insuficiente para anunciarlo; escuela no es estructura actual.
+- **PENDIENTE:** selección de voz y aprobación consolidada E1. No se acredita E2. Modelo económico, compensaciones y beneficios potenciales del core permanecen como contexto interno, no promesas públicas; detalle conservado en feedback.
+
+### Directorio — módulo confirmado por aclaración humana, no nueva propuesta
+
+| Aspecto | Información vigente / estado | Procedencia |
+|---|---|---|
+| Universo | **APROBADO:** Productos e Investigación, colecciones curadas independientes. Productos admite IA integrada, utilizada para construirlo o ambas; open source es atributo, no requisito. | Gate A/B, B1/B2 |
+| Datos de producto | Utilidad, problema/público, relación con IA, Creado por, estado y uso separados, acceso/licencia/recursos; área de aplicación, tipo y categoría explícitos. Especificación y propuesta de secciones en estrategia; valores concretos pendientes. | B1/B2 y feedback E1 |
+| Datos de investigación | Pregunta/área, autores/afiliación documentada, tipo/fecha/estado, enfoque, resultados y límites, recursos originales. Autor y postulante separados; sin validación científica propia asumida. | B1/B2 y feedback E1 |
+| Exploración | Filtros propios por colección incluidos en alcance; taxonomías y filtros finales **PENDIENTES**, no implementación verificada ni páginas por filtro. | Gate A, B1/B2 |
+| Acceso y postulación | Descubrir, comprender y acceder a recurso original; postular con curación, sin publicación automática. Canales, criterios, responsables y respuesta **PENDIENTES**. | B1/B2 |
+| Procedencia/geografía | Fuentes, permisos, vigencia y actualización por entrada **PENDIENTES**; no inventario ni países representados confirmados. Nerv es ejemplo aportado, no entrada verificada. | B0/B1/B2 |
+| Evolución | Trust, perfiles independientes, Knowledge/Recognition y monetización futura no son capacidades actuales. Relaciones entre colecciones solo documentadas. | Gate A/B y feedback E1 |
+
+### Pendientes originales resueltos y pendientes que permanecen
+
+Naming de audiencia/líneas, posicionamiento, alcance de Directorio, español primero y recorrido empresarial secundario están resueltos por las fuentes anteriores. No se investigan ni se aprueban de nuevo. Permanecen catálogo/datos/certificados, destinos y operación de acciones, inventario/criterios/filtros/curación, normas/moderación, países representados, evidencia y permisos, cifras propias y estadísticas 23%/6% sin verificar. La matriz operativa de dependencias vive en `content/internal/03-estrategia/estrategia-contenido.md`, §10; las secciones originales conservan el estado que tenían en discovery.

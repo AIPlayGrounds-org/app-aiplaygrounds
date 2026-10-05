@@ -4,13 +4,13 @@
 
 **Fecha:** 30/09/2026
 
-**Estado:** Gate B resuelto; base consolidada para clasificación, estrategia y arquitectura propuestas. No equivale a aprobación de E1.
+**Estado:** Gate B resuelto; base consolidada para clasificación, estrategia y arquitectura propuestas. No equivale a aprobación de E1. Snapshot de etapa: el feedback posterior de `content/internal/04-feedback/feedback-e1.md` tiene precedencia localizada (AI Labs, líneas, atribución y secciones); la estrategia integra el estado vigente. Migración documental: 05/10/2026.
 
 ## Fuentes, aprobación y alcance
 
-- `content/brief.md`: fuente aportada por el usuario, septiembre 2026; declara oferta, público, planes y evidencia candidata.
-- `content/diagnostico-b0.md` y `content/diagnostico-b1.md`: diagnóstico íntegro y validación de Gate A, con trazabilidad y pendientes conservados.
-- `content/research.md`, `content/research-queries.md`, `content/keyword-observations.csv`, `content/keyword-map.md`: consultas nacionales, fuentes, inferencias y propuestas revisadas. Se observó PE/MX/CO/AR/CL/EC/CR — es; BR — pt separado. La evidencia externa no verifica capacidades o resultados propios.
+- `content/internal/01-brief-diagnostico/brief.md`: fuente aportada por el usuario, septiembre 2026; declara oferta, público, planes y evidencia candidata.
+- `content/internal/01-brief-diagnostico/diagnostico-b0.md` y `content/internal/01-brief-diagnostico/diagnostico-b1.md`: diagnóstico íntegro y validación de Gate A, con trazabilidad y pendientes conservados.
+- `content/internal/02-research/research.md`, `research-queries.md`, `keyword-observations.csv`, `keyword-map.md`: consultas nacionales, fuentes, inferencias y propuestas revisadas. Se observó PE/MX/CO/AR/CL/EC/CR — es; BR — pt separado. La evidencia externa no verifica capacidades o resultados propios.
 - Respuestas humanas de Gate B: aceptación general, revisiones localizadas, Productos opción C, español primero, Empresas → Productos y PoC/MVP posterior, elección final **Software Engineering with AI**. Confirmación final: «ese camino tomaremos por ahora».
 
 **APROBADO — alcance:** sitio Multipágina, Formación como oferta central, Comunidad / participación, Corporativa / servicios y dos directorios en AI Labs. Empresas será una sola página de primera etapa. Español predeterminado y único idioma trabajado/publicado en esta etapa; inglés diferido. LATAM sigue siendo público prioritario. Ejes técnicos pueden nombrarse en inglés con explicación española sin crear una versión inglesa del sitio.

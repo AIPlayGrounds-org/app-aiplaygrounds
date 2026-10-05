@@ -4,9 +4,9 @@
 
 **Fecha:** 29/09/2026
 
-**Estado:** provisional, pendiente de validación humana — Gate A.
+**Estado histórico:** provisional al 29/09/2026; revisión parcial conservada abajo. **Estado vigente del proyecto:** Gate A resuelto en B1; B0 es antecedente, no gate abierto. Migración documental: 05/10/2026.
 
-**Fuente:** `content/brief.md`, versión leída el 29/09/2026. Las referencias a líneas corresponden a esa versión.
+**Fuente:** `content/internal/01-brief-diagnostico/brief.md`, versión leída el 29/09/2026. Las referencias a líneas corresponden a esa versión histórica, no a la numeración después de migración/adenda.
 
 Este documento analiza la fuente aportada. Una declaración del equipo documenta lo declarado, no constituye verificación independiente ni permiso de publicación. Las propuestas de este diagnóstico no están aprobadas. No se ha realizado research estratégico/SEO ni se ha definido arquitectura.
 

@@ -4,21 +4,21 @@
 
 **Fecha de ejecución y observación:** 29/09/2026
 
-**Base vinculante:** `content/diagnostico-b1.md`; Gate A ya validado.
+**Base vinculante:** `content/internal/01-brief-diagnostico/diagnostico-b1.md`; Gate A ya validado.
 
-**Estado:** Gate B resuelto tras revisiones del usuario y elección de Software Engineering with AI. Research concluido; conclusiones aceptadas consolidadas en `content/diagnostico-b2.md`. Estrategia/arquitectura/dirección editorial se presentan para revisión en E1, no están aprobadas por este gate.
+**Estado:** Gate B resuelto tras revisiones del usuario y elección de Software Engineering with AI. Research concluido; conclusiones aceptadas consolidadas en `content/internal/01-brief-diagnostico/diagnostico-b2.md`. Estrategia/arquitectura/dirección editorial se presentan para revisión en E1, no están aprobadas por este gate. Migración 05/10/2026: se conserva la ejecución histórica, sin nuevas consultas. Los estados intermedios de Gate B son historial; el cierre del final prevalece.
 
 ## 1. Estado técnico vigente
 
 El CLI `seo-keywords` resuelve dinámicamente países e idiomas. La autenticación ADC con scope adwords y quota project fue corregida por el usuario; las consultas de esta ronda devolvieron resultados correctamente en PE/MX/CO/AR/CL/EC/CR — es y BR — pt.
 
-`functions.websearch` está disponible y se utilizó sustantivamente. `functions.webfetch` se utilizó solo después de búsquedas, sobre URLs concretas seleccionadas. Los errores de la ronda anterior no son restricciones vigentes. Los intentos con HTTP 429 de esta ronda están separados del resto de consultas exitosas en `content/research-queries.md`.
+`functions.websearch` estaba disponible y se utilizó sustantivamente en la ronda registrada. `functions.webfetch` se utilizó solo después de búsquedas, sobre URLs concretas seleccionadas. Los errores de la ronda anterior no eran restricciones de esa ronda. Los intentos con HTTP 429 están separados del resto de consultas exitosas en `content/internal/02-research/research-queries.md`. Esta migración no comprueba disponibilidad operativa actual ni convierte disponibilidad histórica en observación nueva.
 
 **Archivos de evidencia:**
 
-- `content/research-queries.md`: seeds exactas, comandos reconstruibles por mercado, búsquedas/resultados y lecturas directas F1–F10.
-- `content/keyword-observations.csv`: observaciones seleccionadas usadas en el análisis y descartes materiales; país, idioma, conjunto de seeds, keyword, avg_monthly_searches y ads_competition.
-- `content/keyword-map.md`: clusters, necesidad, intención, prioridad y ownership propuestos, con relaciones y límites.
+- `content/internal/02-research/research-queries.md`: seeds exactas, comandos reconstruibles por mercado, búsquedas/resultados y lecturas directas F1–F10.
+- `content/internal/02-research/keyword-observations.csv`: observaciones seleccionadas usadas en el análisis y descartes materiales; país, idioma, conjunto de seeds, keyword, avg_monthly_searches y ads_competition.
+- `content/internal/02-research/keyword-map.md`: clusters, necesidad, intención, prioridad y ownership propuestos, con relaciones y límites.
 
 No se repitieron B0, Gate A o B1. No se hizo clasificación O/C ni arquitectura final.
 
@@ -107,7 +107,7 @@ No se propone una keyword por volumen solamente. La tabla de observaciones conti
 
 Se ejecutaron búsquedas para formación técnica, Empresas, Productos, Investigación y Comunidad; también para los términos de rol, la expectativa de especialización en CO y el contexto BR/pt. Todas las preguntas prioritarias tienen contraste exitoso documentado, aunque seis intentos iniciales devolvieron HTTP 429. No se presenta esos fallos como evidencia ni como ausencia vigente de herramientas.
 
-El registro íntegro de consultas exactas, contexto, URLs, tipos de página, patrones, naming y decisiones afectadas está en `content/research-queries.md` (W1–W16; F1–F10). Las búsquedas son resultados web actuales, no «Top 10 de Google» ni SERPs nacionales garantizadas.
+El registro íntegro de consultas exactas, contexto, URLs, tipos de página, patrones, naming y decisiones afectadas está en `content/internal/02-research/research-queries.md` (W1–W16; F1–F10). Las búsquedas son resultados web de la fecha observada, no «Top 10 de Google» ni SERPs nacionales garantizadas.
 
 ### Observaciones de fuentes → inferencias separadas
 
@@ -159,7 +159,7 @@ El registro íntegro de consultas exactas, contexto, URLs, tipos de página, pat
 
 ## 10. Propuestas para Gate B — requieren decisión humana
 
-Todas tienen estado **PROPUESTA**, excepto las restricciones de B1 que ya están aprobadas. La tabla de clusters detallada está en `content/keyword-map.md`.
+Todas tenían estado **PROPUESTA**, excepto las restricciones de B1 que ya estaban aprobadas. La tabla de clusters detallada está en `content/internal/02-research/keyword-map.md`. Este bloque es histórico; prevalece el cierre de Gate B del final.
 
 1. **Naming y audiencia:** mantener Formación como área principal; usar «cursos de IA» cuando corresponda a una oferta real. Distinguir «Desarrollo de software asistido por IA» de «AI Engineering — construcción de aplicaciones y sistemas con IA». Usar audiencia amplia de desarrolladores/profesionales técnicos; no AI Builder/Product Engineer como puerta exclusiva. No comunicar cada formación como nivel avanzado o camino íntegro a producción.
 2. **Empresas:** ownership principal de formación técnica para equipos en la única página aprobada. Sección secundaria «Exploración de problemas con IA», enfocada en expresar interés/conversar, sin compromiso de PoC/MVP o consultoría disponible. Identificar antes de copy qué adaptación a equipos realmente puede ofrecerse, sin copiar promesas de otros proveedores.
@@ -213,3 +213,7 @@ Este bloque sustituye el estado de los puntos correspondientes del registro ante
 **APROBADO:** el usuario elige «Software Engineering with AI» y confirma «ese camino tomaremos por ahora». Se usa como nombre del eje K1a en esta etapa, con explicación en español de diseñar, construir, probar y mejorar software con apoyo de IA. «Por ahora» permite una revisión futura explícita, no deja esta decisión sin resolver.
 
 Con esta elección se cierra el último punto del gate. Se consolidan únicamente las conclusiones aceptadas y las correcciones posteriores, incluido el recorrido secundario Empresas → Productos y la revisión futura de PoC/MVP. Las métricas no se alteran y el nombre elegido no se presenta como keyword de demanda propia demostrada. B2 conserva incertidumbres de oferta/operación/evidencia. Los registros anteriores de gate pendiente son historial, no estado vigente.
+
+## Correspondencia con el contrato actual — sin nueva investigación
+
+Preflight histórico de dos ejes, triangulación y Decision Delta por decisión se reconcilian en `content/internal/03-estrategia/dossier-evidencia-estrategica.md`, §§3–6, a partir de esta ejecución y sus W/F. No se afirma que el registro antiguo tuviera ese formato ni se inventa una comunicación histórica de Delta. Resultado de la reconciliación: prioridad formativa **CONFIRMA**; etiquetas exclusivas de audiencia **CAMBIA**; formación empresarial **CONFIRMA**; límites PoC/MVP **CONFIRMA** (su postergación es humana); Productos **CONFIRMA**; Investigación **CONFIRMA**; equivalencia de trabajos con herramientas bibliográficas **DESCARTA**; participación **CONFIRMA**; cobertura/idioma **CONFIRMA**. Rentabilidad PoC/MVP sigue **INCONCLUSO** por falta de precios, costos, capacidad y conversión. Ningún token crea aprobación nueva.

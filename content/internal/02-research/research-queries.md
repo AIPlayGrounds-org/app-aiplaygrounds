@@ -6,7 +6,7 @@
 
 Las seeds tienen estado **SEED DE INVESTIGACIÓN**. Derivación: formación técnica/software, áreas y términos explorados en el brief incorporado por B1; formación empresarial e interés en PoC; directorios y comunidad confirmados en Gate A. Las traducciones pt solo investigan el mercado brasileño, sin agregar oferta en portugués.
 
-`content/keyword-observations.csv` conserva una **selección de observaciones efectivamente usadas o descartes materiales**, no el universo completo de ideas devueltas. Cada fila identifica país, idioma, conjunto exacto de seeds, keyword, demanda aproximada, competencia publicitaria y tratamiento. Los conjuntos siguientes permiten reconstruir su procedencia. La API entrega ideas para el conjunto, no atribución individual inequívoca de cada idea a una sola seed; no se inventa esa atribución. El ID de consulta es `país/idioma/conjunto`.
+`content/internal/02-research/keyword-observations.csv` conserva una **selección de observaciones efectivamente usadas o descartes materiales**, no el universo completo de ideas devueltas. Cada fila identifica país, idioma, conjunto exacto de seeds, keyword, demanda aproximada, competencia publicitaria y tratamiento. Los conjuntos siguientes permiten reconstruir su procedencia. La API entrega ideas para el conjunto, no atribución individual inequívoca de cada idea a una sola seed; no se inventa esa atribución. El ID de consulta es `país/idioma/conjunto`.
 
 Comando por fila del registro: `seo-keywords --country <país> --language <idioma> --limit <límite> --format json <seeds del conjunto, en orden y entre comillas>`.
 
@@ -81,3 +81,12 @@ Herramienta: `functions.webfetch`, Markdown. Se leyeron únicamente URLs concret
 | F10 Innowise — URL de W14 | Interés empresarial, fuente comercial internacional | Distingue PoC para viabilidad técnica/datos de MVP utilizable por primeros usuarios | No tratarlos como equivalentes; mantener conversación exploratoria en B1. No tomar métricas de casos comerciales del artículo como evidencia propia. Lectura útil del bloque conceptual; no se auditó todo el sitio. |
 
 No hubo fetch adicional de BR o posgrados CO: las páginas primarias ya devueltas por websearch muestran títulos/modalidad suficientes para la decisión acotada de naming; no hace falta revisar cada temario para evitar prometer grados o portugués. No hubo fetch de toda la lista de herramientas, postulaciones ni perfiles de comunidad; no cambia la decisión editorial actual.
+
+## Referencia editorial aportada después del research — Equipo
+
+**U1 · Fecha de lectura:** 05/10/2026. **Fuente/procedencia:** https://crafter.run/en/team, enlace aportado explícitamente por el usuario para incorporar una página de equipo. **Instrumento:** webfetch directo de URL aportada, Markdown; no nuevo discovery ni repetición del research de septiembre.
+
+- **HECHO DOCUMENTADO sobre la fuente:** apertura «The people growing the shipping culture» y presentación colectiva de Crafter Station; tarjetas con foto, nombre, rol y ubicación, enlazadas a páginas de integrantes. Bloques adicionales ofrecen agendas/mentorías de 30 minutos y colaboración comercial de esa organización.
+- **PROPUESTA para AI PlayGrounds:** apertura colectiva, tarjetas con identidad/rol/aporte/bio breve y continuidad hacia actividad del sitio; datos individuales pendientes de aportación del usuario. Ubicación/enlaces profesionales opcionales. La referencia no acredita composición, roles, disponibilidad de mentorías, calendarios o servicios propios de AI PlayGrounds.
+- **Decisión previa al contraste:** usuario pide añadir una página Equipo. **Decision Delta: CONFIRMA** que una presentación colectiva con tarjetas es una referencia editorial utilizable; la inclusión de la página proviene del usuario, no de investigación. El fetch no determina composición, orden, agrupaciones ni demanda SEO.
+- **Cierre:** suficiente para proponer estructura ligera; no se consultaron perfiles individuales ni más fuentes porque la siguiente dependencia son los datos de cada integrante. Reflejo operativo: estrategia §§5–7 y 10; trazabilidad en Dossier/feedback; E1 v7 derivado.

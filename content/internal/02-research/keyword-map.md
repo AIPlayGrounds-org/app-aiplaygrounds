@@ -6,13 +6,13 @@
 
 **Mercados observados:** PE/MX/CO/AR/CL/EC/CR — es; BR — pt separado.
 
-**Estado:** marco de necesidades/ownership aceptado en Gate B con correcciones posteriores; síntesis aprobada en `content/diagnostico-b2.md`. Este documento conserva la tabla investigada como antecedente y el registro actualizado; no constituye sitemap ni copy aprobado.
+**Estado:** marco de necesidades/ownership aceptado en Gate B con correcciones posteriores; síntesis aprobada en `content/internal/01-brief-diagnostico/diagnostico-b2.md`. Este documento conserva la tabla investigada como antecedente y el registro actualizado; no constituye sitemap ni copy aprobado. Migración documental: 05/10/2026. El cierre final prevalece sobre las reservas históricas; el feedback E1 posterior sustituye «builder» como identidad pública por atribución contextual, sin alterar evidencia ni clusters.
 
 ## Evidencia y reglas de lectura
 
-Planner se ejecutó correctamente por mercado; websearch y webfetch selectivo se usaron sustantivamente. Las limitaciones técnicas anteriores están resueltas; historial en `content/research.md`.
+Planner se ejecutó correctamente por mercado; websearch y webfetch selectivo se usaron sustantivamente. Las limitaciones técnicas anteriores se resolvieron para esa ejecución; historial en `content/internal/02-research/research.md`. No se verifica disponibilidad actual durante la migración.
 
-- Métricas/competencia publicitaria por país y conjunto de seeds: `content/keyword-observations.csv`; procedencia y comandos en `content/research-queries.md`.
+- Métricas/competencia publicitaria por país y conjunto de seeds: `content/internal/02-research/keyword-observations.csv`; procedencia y comandos en `content/internal/02-research/research-queries.md`.
 - W/F indican búsqueda web/lectura directa en ese registro; los patrones son de la muestra, no «Top 10 de Google» ni SERP nacional garantizada.
 - avg_monthly_searches es demanda aproximada. ads_competition no es dificultad orgánica. No se suman variantes, países ni idiomas.
 - «Página responsable propuesta» es ownership conceptual, no URL definitiva, aprobación de sitemap ni necesidad automática de una página nueva.

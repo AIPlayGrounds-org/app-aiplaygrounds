@@ -4,14 +4,14 @@
 
 **Fecha:** 29/09/2026
 
-**Estado:** Gate A resuelto; base validada para research.
+**Estado:** Gate A resuelto; base validada para research. Snapshot de etapa conservado; B2 y feedback E1 contienen las decisiones posteriores que sustituyen solo sus puntos afectados. Migración documental: 05/10/2026.
 
 **Aprobación:** usuario, mensaje «esta bien continua», posterior a la explicación de B0 y sus aclaraciones.
 
 ## Fuentes y conservación del diagnóstico
 
-- `content/brief.md`: brief aportado, septiembre de 2026.
-- `content/diagnostico-b0.md`: ocho dimensiones y síntesis transversal, con procedencia, tensiones y límites. B1 incorpora ese diagnóstico como antecedente íntegro; no elimina sus detalles ni convierte los pendientes en aprobaciones.
+- `content/internal/01-brief-diagnostico/brief.md`: brief aportado, septiembre de 2026.
+- `content/internal/01-brief-diagnostico/diagnostico-b0.md`: ocho dimensiones y síntesis transversal, con procedencia, tensiones y límites. B1 incorpora ese diagnóstico como antecedente íntegro; no elimina sus detalles ni convierte los pendientes en aprobaciones.
 - Conversación del Gate A: confirmación de posicionamiento; especificación de AI Labs; PoC/MVP para recoger interés; lista de espera sin convocatoria abierta; confirmación general posterior.
 
 Una declaración documentada no es verificación independiente ni permiso de publicación. La aprobación de esta lectura no acredita capacidades ya implementadas ni aprueba copy literal.
@@ -101,4 +101,4 @@ Una declaración documentada no es verificación independiente ni permiso de pub
 
 ## Ajuste posterior del mercado de investigación
 
-**APROBADO:** la autorización inicial para comenzar por Perú fue ampliada por el usuario a cobertura nacional incremental latinoamericana: inicio PE/MX/CO/AR/CL en español y nuevos mercados cuando puedan cambiar decisiones; Brasil/pt se evalúa por separado según pertinencia. Se mantiene Latinoamérica como público prioritario del sitio. No hay un máximo fijo de países ni se consulta LATAM como país. Esta autorización no valida propuestas de research ni altera oferta, arquitectura o alcance. B1 conserva sus decisiones; ejecución e historial técnico resuelto se registran en `content/research.md`.
+**APROBADO:** la autorización inicial para comenzar por Perú fue ampliada por el usuario a cobertura nacional incremental latinoamericana: inicio PE/MX/CO/AR/CL en español y nuevos mercados cuando puedan cambiar decisiones; Brasil/pt se evalúa por separado según pertinencia. Se mantiene Latinoamérica como público prioritario del sitio. No hay un máximo fijo de países ni se consulta LATAM como país. Esta autorización no valida propuestas de research ni altera oferta, arquitectura o alcance. B1 conserva sus decisiones; ejecución e historial técnico resuelto se registran en `content/internal/02-research/research.md`.

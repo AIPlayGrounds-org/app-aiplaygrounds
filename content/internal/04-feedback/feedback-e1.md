@@ -1,10 +1,9 @@
 # Registro interno de feedback de E1
 
-**Fecha:** 01/10/2026
-
-**Fuente vinculante de esta actualización:** decisiones y aclaraciones del usuario posteriores al E1 v3. Complementan y, donde corresponda, sustituyen interpretaciones anteriores sin regenerar brief, matrices, research ni Keyword Map.
-
-**Artefacto afectado:** `content/direccion-contenido-estructura-web.md`, v4 — Versión revisada, pendiente de aprobación. Este registro no es otro E1 ni un entregable estratégico adicional.
+**Fecha de feedback:** 01/10/2026. **Reconciliación documental:** 05/10/2026.
+**Fuente vinculante:** decisiones y aclaraciones del usuario posteriores al E1 v3. Complementan y, donde corresponde, sustituyen interpretaciones anteriores sin regenerar brief, matrices, research ni Keyword Map.
+**Artefacto derivado afectado:** `content/entregables-cliente/01-direccion-contenido-estructura/direccion-contenido-estructura-web.md`; v4 revisado el 01/10, v5 documental el 03/10, v6 canónico y v7 con Equipo el 05/10. Siempre pendiente de aprobación. El bloque posterior de Equipo actualiza el conteo histórico v6. Este registro no es otro E1 ni entregable estratégico adicional.
+**Fuente operativa afectada:** `content/internal/03-estrategia/estrategia-contenido.md`. Trazabilidad en `dossier-evidencia-estrategica.md`, §11. La migración corrige la falta de sincronización legacy: incorpora primero el feedback en estrategia y después proyecta E1.
 
 ## Normalización y resolución
 
@@ -48,6 +47,25 @@ No existe un modelo definitivo. Se consideran compensación mayoritaria a quien 
 
 No se aprueban porcentajes, fees, repartos, salarios, compensación, beneficios económicos ni consultoría general. La estructura jurídica futura tampoco se presenta como constituida. Ninguna de estas alternativas pasa al contenido público del E1.
 
-## Estado de las decisiones
+## Estado de las decisiones y fuentes afectadas
 
-Estas aclaraciones son la fuente más reciente para concepto de AI Labs, terminología, atribución y cambios de secciones. La arquitectura resultante requiere aprobación consolidada de E1; la voz continúa entre Experto y accesible y Cercano y participativo. No se ha aprobado E1 ni iniciado E2. Los artefactos previos permanecen como historial, con sus decisiones no afectadas conservadas.
+Estas aclaraciones son la fuente más reciente para concepto de AI Labs, terminología, atribución y cambios de secciones. La arquitectura resultante requiere aprobación consolidada de E1; la voz continúa entre Experto y accesible y Cercano y participativo. No se ha aprobado E1 ni iniciado E2. Los artefactos previos permanecen como historial de etapa, con sus decisiones no afectadas conservadas en rutas canónicas.
+
+| Grupo | Fuente interna actualizada en reconciliación | Reflejo cliente |
+|---|---|---|
+| AI Labs/contexto/economía | Estrategia §§1/4/5/6/10; Dossier §§2/8/11; contexto íntegro arriba | Concepto Labs; sin beneficios/modelo económico públicos |
+| Terminología/modalidades/atribución | Estrategia §§2/3/4/6/9 | Formación, públicos, Creado por/autores y muestras existentes |
+| Inicio/Comunidad/Hero/fichas/conexiones | Estrategia §§5/6/7/8 | Arquitectura por sección y recorridos separados |
+| Alcance/sincronización/estado | Estrategia §§1/10/11/12; Dossier §13 | E1 v6 pendiente; siete páginas/dos tipos, voz sin selección |
+
+La autorización de migración y «continua» no son aprobación de E1 ni elección de voz. No se crea feedback-e2 por completar directorios.
+
+## Feedback posterior — incorporación de Equipo, 05/10/2026
+
+**Fuente:** mensaje del usuario: «agregaria una pagina adicional que hable del equipo»; aporta https://crafter.run/en/team y anticipa que compartirá información de cada integrante de AI PlayGrounds.
+
+| Ubicación / elemento | Intención / tipo | Impacto y fuentes afectadas | Resolución / estado |
+|---|---|---|---|
+| Arquitectura E1 / nueva página Equipo | Mostrar personas detrás de la organización; cambio arquitectónico solicitado explícitamente | Estrategia §§1/3/4/5/6/7/8/10/11; Dossier; referencia U1 en research-queries; E1 vista general/estructura/recorrido/pendientes | ACCEPT: incorporar Equipo como octava página base. Decisión localizada del usuario; estructura y campos PROPUESTOS, datos PENDIENTES. No aprobación global E1 ni elección de voz |
+
+La estrategia se actualizó primero; E1 se resincroniza a v7, Dirección de Contenido y Estructura Web — Versión revisada, pendiente de aprobación. La referencia aporta patrón editorial, no capacidades de calendarios/mentoría, servicios comerciales o perfiles independientes. Se propone una página colectiva con tarjetas y recepción incremental de datos; no se crean integrantes ficticios. Se conservan las siete páginas anteriores, ambos tipos de ficha, Gate A/B y el research cerrado.
