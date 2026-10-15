@@ -71,6 +71,8 @@ Las observaciones externas siguen vigentes. La consolidación B2 espera únicame
 
 ## Cierre del registro — Gate B resuelto, 30/09/2026
 
+**Actualización vigente, 14/10/2026 — APROBADO:** por feedback humano sobre E1 v11, K1a se denomina **Software with AI**; el otro eje conserva **AI Engineering**. Sustituye únicamente el nombre oficial anterior, sin cambiar IDs, necesidades, intención, evidencia ni ownership dentro de Formación. No se midió demanda propia del nuevo nombre. Las alternativas, consultas y aprobación del 30/09 siguientes se conservan como historia; no se reabre Gate B ni se ejecuta research. Fuente: `content/internal/04-feedback/feedback-e1.md`.
+
 **APROBADO:** K1a se denomina **Software Engineering with AI** para esta etapa, según elección expresa del usuario. Se mantienen necesidad, intención y evidencia del desarrollo de software con apoyo de IA, con descripción en español. Los nombres alternativos anteriores no están aprobados; el elegido no tiene volumen propio medido en esta ronda.
 
 La tabla de clusters investigada y los estados de revisión anteriores son trazabilidad histórica. La versión consolidada vinculante se registra en B2: K1/K1a/K1b, K2, K3, K4 y K5 aceptados al nivel de necesidades y ownership conceptual; Productos admite ambos universos y «herramientas de IA» solo su subconjunto funcional. Empresas dirige secundariamente a Productos; PoC/MVP se difiere. Español primero, inglés después. URLs, menú y composiciones concretas siguen como propuestas para E1.

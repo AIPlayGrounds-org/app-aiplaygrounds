@@ -10,6 +10,8 @@
 
 ## 1. Estado técnico vigente
 
+**Nota de precedencia editorial, 14/10/2026:** la ejecución y cierre de septiembre se conservan como historial. El feedback sobre E1 v11 sustituye el nombre oficial K1a por Software with AI y conserva AI Engineering; no modifica evidencia, seeds, consultas ni conclusiones de necesidades. B. Cercano y participativo pasa a dirección editorial APROBADA. Estado operativo en Estrategia y feedback E1; aprobación consolidada E1 pendiente. No research nuevo ni reapertura de Gate B.
+
 El CLI `seo-keywords` resuelve dinámicamente países e idiomas. La autenticación ADC con scope adwords y quota project fue corregida por el usuario; las consultas de esta ronda devolvieron resultados correctamente en PE/MX/CO/AR/CL/EC/CR — es y BR — pt.
 
 `functions.websearch` estaba disponible y se utilizó sustantivamente en la ronda registrada. `functions.webfetch` se utilizó solo después de búsquedas, sobre URLs concretas seleccionadas. Los errores de la ronda anterior no eran restricciones de esa ronda. Los intentos con HTTP 429 están separados del resto de consultas exitosas en `content/internal/02-research/research-queries.md`. Esta migración no comprueba disponibilidad operativa actual ni convierte disponibilidad histórica en observación nueva.

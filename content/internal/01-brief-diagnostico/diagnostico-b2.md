@@ -8,6 +8,8 @@
 
 ## Fuentes, aprobación y alcance
 
+**Precedencia localizada, 14/10/2026:** el feedback humano sobre E1 v11 fija AI Engineering y Software with AI como nombres oficiales. Software with AI sustituye Software Engineering with AI para el eje K1a, sin alterar necesidad, intención, ownership o aprobación de Gate B. También elige B. Cercano y participativo como dirección editorial; no aprueba E1 global. Este B2 conserva los nombres y decisiones del snapshot del 30/09; estado operativo en Estrategia y `content/internal/04-feedback/feedback-e1.md`.
+
 - `content/internal/01-brief-diagnostico/brief.md`: fuente aportada por el usuario, septiembre 2026; declara oferta, público, planes y evidencia candidata.
 - `content/internal/01-brief-diagnostico/diagnostico-b0.md` y `content/internal/01-brief-diagnostico/diagnostico-b1.md`: diagnóstico íntegro y validación de Gate A, con trazabilidad y pendientes conservados.
 - `content/internal/02-research/research.md`, `research-queries.md`, `keyword-observations.csv`, `keyword-map.md`: consultas nacionales, fuentes, inferencias y propuestas revisadas. Se observó PE/MX/CO/AR/CL/EC/CR — es; BR — pt separado. La evidencia externa no verifica capacidades o resultados propios.

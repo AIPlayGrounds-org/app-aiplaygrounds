@@ -5,6 +5,42 @@
 **Artefacto derivado afectado:** `content/entregables-cliente/01-direccion-contenido-estructura/direccion-contenido-estructura-web.md`; v4 revisado el 01/10, v5 documental el 03/10, v6 canónico y v7 con Equipo el 05/10. Siempre pendiente de aprobación. El bloque posterior de Equipo actualiza el conteo histórico v6. Este registro no es otro E1 ni entregable estratégico adicional.
 **Fuente operativa afectada:** `content/internal/03-estrategia/estrategia-contenido.md`. Trazabilidad en `dossier-evidencia-estrategica.md`, §11. La migración corrige la falta de sincronización legacy: incorpora primero el feedback en estrategia y después proyecta E1.
 
+**Estado vigente al 14/10/2026:** E1 v15 APROBADO mediante «Apruebo E1 v15». Se resuelve la reapertura Home/Labs y el modelado de unidades/campos; E2 se resincroniza a v4, pendiente de aprobación final. Los apartados siguientes conservan el proceso anterior a esta aprobación. Sin gates nuevos ni otra elección de voz.
+
+## Aprobación explícita de E1 v15 — 14/10/2026
+
+ACCEPT: el usuario aprueba E1 v15 y solicita resincronizar todo E2. Alcance: ocho páginas, dos tipos, 63 secciones, Áreas independiente antes de Labs, distinción de iniciativas/colecciones, modelos §§5.1–5.2, recorridos y voz vigentes. Resuelve ESCALATE de la revisión estructural siguiente. No aprueba datos, permisos o canales pendientes ni E2 por anticipado. Registro primero en Estrategia §1 y Dossier, después estado del snapshot E1 y producción E2; no cambios en el detalle aprobado de arquitectura. Siguiente gate: aprobación final humana de E2 una vez entregada su corrección, sin cierre automático.
+
+## Revisión estructural con la skill actual — 14/10/2026
+
+**Fuente:** encargo actual de revisar el proyecto sin reconstruirlo, distinguiendo bloques simples de contenido estructurado/repetible y deteniéndose si E1 requiere aprobación. No es aprobación humana de los modelos propuestos. Se revisan brief, B0/B1/B2, research/consultas/Keyword Map/CSV, estrategia, Dossier, ambos feedback, registros históricos y E1 v14/E2 v3; no nuevas consultas externas.
+
+| Ubicación / hallazgo | Tratamiento | Fuente interna y proyección |
+|---|---|---|
+| Evidencia Inicio 7 / Empresas 4 reducida a guion y notas E2 | ACCEPT: conservar pieza de evidencia y campos comunes/condicionales según su tipo; sin seleccionar prueba ficticia | Estrategia §5.2 → E1 detalle de Inicio/Empresas; C5/G3 |
+| Comunidad 3, actividad solo en notas; 4, vías aplanadas en un párrafo | ADAPT: una unidad por actividad real, inventario pendiente; dos vías con propósito, canal, condición y siguiente paso, sin fabricar servicios o automatizaciones | §5.2 → E1 Comunidad; C3–C5/Q13/Q16 |
+| Labs 3, iniciativas como heading + guion; campos solo en notas | ACCEPT: unidad iniciativa con trabajo, estado, atribución y vínculo acreditado; área/recurso condicionales | §5.2 → E1 Labs; C1/C10/R2/R10/Q15 |
+| Productos/Investigación 3–4 y Equipo 2, modelos relegados a notas | ACCEPT: resúmenes por entrada e integrante con campos, reutilización de ficha y esquema sin unidades ficticias. Exploración conserva atributos por confirmar | §§5.1–5.2 → E1 colecciones/Equipo; C6–C8/Q14/Q17/Q18 |
+| Áreas y líneas ya desarrolladas; ambas fichas ya modeladas | ACCEPT: conservar inventario, orden/no progresión y campos. Explicitar colecciones internas de autores/recursos/vínculos, sin rehacer fichas | §§5.1–5.2; E1 mantiene 4 áreas, 2 líneas y fichas de 9/7 bloques |
+| Hero, identidad, propósito, enfoque, modalidad, alcance y estado resueltos con prosa | ACCEPT: mantener simples. No convertir conceptos de aprendizaje en pasos ni formatos en cursos, planes o funcionalidades | §5.2; E1 sin nuevas tablas por rutina |
+| Readiness confundía página estática con ausencia de repetición | ADAPT: precisión localizada de columna Modelo repetible por §5.2; no cambiar otras capas, candidatos o handoffs | Estrategia §5.2 prevalece sobre los cinco NO APLICA históricos de §8.10 |
+| E1 pendiente de aprobación, gap material de estructura visible | ESCALATE: incluir la precisión en E1 v15 y detener la producción E2 | Mismo gate E1; no aprobación por el encargo ni reapertura de Gate A/B |
+
+**Secuencia:** feedback → Estrategia §§1/5.2/6/10–12 → Dossier/procedencia y feedback → E1 v15. No edición de E2, de fuentes de research, de brief/B0/B1/B2 ni de la skill. No se crea otro entregable o gate.
+
+**Consistencia E1–E2:** ocho páginas, dos tipos y mismos 63 nombres/órdenes de sección. E2 v3 conserva 4 áreas, 2 líneas y los modelos de ambas fichas; aún no expresa los nuevos esquemas en el cuerpo de evidencia, eventos, iniciativas, resúmenes, personas y vías. Esa diferencia está identificada, no resuelta ni presentada como sincronizada. Después de aprobar E1 v15, transformar cada sección E2 en bloque propio, mantener copy disponible y mostrar unidades/campos o «Esquema por completar — no publicable» junto al heading. Retirar la convención de guiones y las prescripciones de tarjetas, conservando notas, pendientes y metadata. No poblar datos ausentes ni forzar versión final durante la reapertura.
+
+**Siguiente acción humana:** aprobar E1 v15 (incluida la ubicación Áreas antes de Labs pendiente de v14 y la precisión de unidades/campos) o indicar ajustes. Voz B, nombres, prioridad formativa y demás decisiones no se someten de nuevo a elección. Aportar datos puede hacerse después; sin datos esenciales/permiso no se publica la unidad.
+
+### QA de esta actualización
+
+- **Checks documentales: 8/8 correctos.** Comparación con el estado de trabajo capturado antes de editar, incluidas modificaciones preexistentes: mismas 63 secciones en Estrategia/E1/E2; E2 idéntico en bytes; apartados de estrategia cliente, públicos, vista general, SEO/IA, recorridos y voz de E1 idénticos; bloques simples sin descomposición; solo cinco documentos previstos modificados, sin archivos nuevos; columnas Markdown consistentes; modelos/bloqueos/procedencia visibles y trazables; 198 observaciones CSV conservadas.
+- **QA editorial y de estructura:** lectura del detalle completo E1 y contraste con §5.2. Actividades, iniciativas, evidencia, vías, listados y personas dejan clara su unidad y campos; no quedan solo en notas. Fichas mantienen atribución, atributos y vínculos condicionales; las secciones simples siguen simples. No se inventan nombres, cantidades, pasos, resultados, funciones, destinos o permisos. La prosa nueva explica el contenido de AI PlayGrounds sin alterar voz B; tablas/listas no definen UI.
+- **QA O/C aplicable:** O1/C1 conserva identidad/alcance y roles sin credenciales inventadas; O2/C5 exige atributos comparables y fuentes sin inventario o filtros ficticios; O3/C2 mantiene consulta sin contrato; O4/C4 conserva espera sin plaza; O5/C6 distingue solicitud, incorporación y publicación; C7 conserva autoría, original, fechas y límites. No se ejecuta QA visual/técnico ni se certifican resultados SEO/AEO/GEO.
+- **Check de la skill:** `python -B .opencode/skills/web-content-design/scripts/check_package.py` → OK: frontmatter, 25 Markdown, enlaces locales, runtime y estructura de evals. Es validación mecánica del paquete, no evaluación de comportamiento o calidad de este proyecto. Suites de desarrollo no ejecutadas: no aplican al encargo editorial ni sustituyen el QA de estructura.
+- **Diff:** revisión de diferencias contra el baseline de esta intervención y `git diff --check`, sin incidencias. Los cambios previos del usuario, incluidos la skill y sus evals, se preservan. Sin commit ni push.
+- **Límite pendiente:** consistencia de arquitectura E1–E2 comprobada; sincronización estructural completa NO realizada por el gate. E1 v15 pendiente de aprobación; E2 v3 Borrador conserva los gaps señalados. La actualización no declara ningún bloque sin datos listo para publicar.
+
 ## Normalización y resolución
 
 ACCEPT aplica decisiones explícitas. ADAPT conserva contexto interno sin convertirlo en oferta o promesa pública. No hay ESCALATE pendiente: el usuario proporciona la definición que resuelve las diferencias conceptuales.
@@ -29,7 +65,26 @@ ACCEPT aplica decisiones explícitas. ADAPT conserva contexto interno sin conver
 | 22 | Conservar prioridades/alcance y diferir PoC/MVP e inglés | Conjunto de E1 | ACCEPT: sin nuevas páginas, research, clustering, escuelas, programas o E2 |
 | 23 | Sincronizar resumen y detalle y verificar regresiones | E1 completo y estado | ACCEPT: versión revisada pendiente de aprobación; voz A/B aún sin selección |
 
+## Feedback humano sobre E1 v11 — 14/10/2026
+
+**Fuente:** mensaje del usuario en esta sesión: «Se elige la opción B: cercano y participativo» y nombres exactamente «AI Engineering» / «Software with AI». Solicita actualizar internos y trazabilidad antes de E1, conservar las demás decisiones y detenerse para aprobación E1.
+
+| Ubicación / elemento | Intención / tipo | Impacto y fuentes afectadas | Tratamiento / resolución |
+|---|---|---|---|
+| E1 §6 y §7 / voz A–B | Elección humana explícita de la dirección ya propuesta; decisión editorial | Brief/adenda, Estrategia §§1/9/10/11/12; Dossier D8/§10/ledger/riesgos; proyección E1 | ACCEPT. B. Cercano y participativo APROBADO como dirección editorial. A deja de ser alternativa activa; la recomendación del agente queda histórica. No se vuelve a pedir elección. |
+| E1 §§1/4 / nombre de eje | Fijar denominación oficial, sin cambiar tareas o necesidades | Brief/adenda, nota de precedencia B2, Keyword Map K1a, nota en Research; Estrategia §§1/4/6/8.2, entidad E2; Dossier D3/C1/§7; proyección E1 | ACCEPT. Software with AI sustituye Software Engineering with AI como nombre oficial; AI Engineering se conserva. K1a y entidad E2 mantienen IDs, significado, ownership y relaciones. No reemplazo de usos descriptivos, seeds, consultas, evidencia o citas históricas. |
+
+**Secuencia:** registrar decisiones → actualizar fuentes internas y procedencia → control de completitud → resincronizar E1 v12. Brief conserva discovery; B2, Research, Keyword Map y registros de migración/reconciliación conservan historia, con notas de precedencia donde corresponde. No research nuevo ni reapertura de Gate A/B, arquitectura, clusters o readiness. La voz elegida no aprueba el conjunto E1 ni sus muestras como copy literal. E1 queda pendiente de aprobación humana explícita; no E2 ni gate adicional.
+
+**QA posterior v12:** comparación con v11: vista general, puente SEO/IA, diez tablas de páginas/tipos con 62 secciones, recorridos y tabla de información pendiente se conservan íntegros, salvo sustitución del nombre oficial donde aparece. Se mantienen las seis muestras B; E1 ya no presenta A ni solicita elección de voz. Ninguna aparición del nombre anterior en E1. Las menciones históricas en internos conservan fecha/precedencia explícita; no se alteran seeds, consultas o evidencia. Revisión editorial final: voz elegida explicada con aplicación concreta a formación, comunidad y condiciones; sin nuevas promesas, datos o arquitectura. `git diff --check` sin errores. Ocho archivos afectados, todos bajo `content/`; sin E2, cambios en rerun/snapshots o gates nuevos. Próxima acción humana: aprobar explícitamente el E1 v12 revisado como base para E2, o indicar ajustes al conjunto.
+
 ## Contexto estratégico interno — no copy público
+
+### Aprobación consolidada de E1 v12 — 14/10/2026
+
+**Fuente y alcance:** respuesta del usuario «si continua» inmediatamente posterior a la entrega de E1 v12 y su solicitud explícita de aprobación. Confirmación inequívoca en este contexto: E1 v12 APROBADO como base para redactar E2. Incluye ocho páginas base, dos tipos de ficha, 62 secciones, funciones, orden, recorridos y acceso directo a colecciones; conserva voz B y nombres oficiales previamente aprobados. Sustituye el estado pendiente de aprobación consolidada, no los pendientes de datos, permisos, oferta, canales, reglas o implementación. No convierte las muestras en copy literal.
+
+**Aplicación:** registrar primero aprobación en Estrategia y Dossier; sincronizar estado del único E1 como snapshot aprobado, sin cambiar su arquitectura; producir E2 derivado como Contenido Web — Borrador. Sin research, nuevo gate o workspace maestro. E2 puede redactar el marco confirmado, labels y modelos de campos, pero las respuestas por oferta/entrada/persona y acciones sin operación confirmada siguen bloqueadas. No se crea feedback-e2 antes de recibir revisión de ese borrador.
 
 Un **eje** agrupa esfuerzos de miembros alrededor de un campo y de cómo IA puede impactarlo o potenciarlo. AI for Science, AI for Finance y posibles ámbitos de MLOps, LLMOps, infraestructura/operaciones son ejemplos conceptuales tempranos, no áreas públicas u ofertas confirmadas.
 

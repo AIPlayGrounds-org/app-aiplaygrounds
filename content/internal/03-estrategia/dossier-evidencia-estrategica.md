@@ -2,22 +2,28 @@
 
 **Proyecto / mercado(s) / idioma(s):** AI PlayGrounds · Latinoamérica · español primero; inglés posterior; portugués no incluido ahora.
 **Alcance contratado:** Multipágina; Formación principal, Comunidad / participación, Corporativa / servicios; AI Labs con Productos e Investigación independientes; Empresas una página.
-**Etapa / actualización:** E1 v11 sincronizado al contrato instalado, pendiente de aprobación · 05/10/2026 · contrato SEO/AEO/GEO v1 conservado; presentación cliente actualizada.
+**Etapa / actualización:** 14/10/2026 · E1 v15 APROBADO mediante «Apruebo E1 v15» → E2 v4 resincronizado, pendiente de aprobación final. Mantiene Áreas antes de Labs, siete secciones en Inicio/63 totales. Datos, permisos, operación y validaciones pendientes conservados; voz B vigente.
 **Estado:** interno, evidencia/procedencia/auditoría; no Estrategia ni entregable formal; no requiere aprobación ni se comparte por defecto.
+
+**Precedencia vigente:** las decisiones humanas del 14/10/2026 sustituyen únicamente la elección A/B pendiente y el nombre anterior del eje K1a. Los apartados fechados de migración/reconciliación y research conservan el estado observado entonces, no decisiones pendientes actuales. Véanse D3/D8, actualización C1, §10 y §13.
 
 Reconciliación del dossier legacy de 03/10/2026. Se conserva lo reconstruible, sin completar vacíos retrospectivamente. La fuente operativa completa es `content/internal/03-estrategia/estrategia-contenido.md`; aquí se explica por qué se sostienen decisiones. No reemplaza brief, matrices, research, Keyword Map o feedback. Estados: HECHO DOCUMENTADO, INFERENCIA, PROPUESTA, APROBADO y PENDIENTE. Declaración del equipo no es verificación independiente ni permiso.
 
 ## 1. Estado del proyecto
 
+**Precedencia actual sobre las notas históricas:** feedback-e2 documenta criterio sobre «formación técnica», cuatro áreas organizacionales y precisión de Labs. C10 registra fuente humana, no hallazgo de research. Se reabre solo D5/D7 en su proyección web; no alcance, audiencia, oferta o voz. Las notas anteriores de E1 v12 aprobado conservan esa aprobación histórica, no una aprobación de v13.
+
+**Decisión posterior vinculante:** el usuario responde «si continua» a la solicitud explícita de aprobar E1 v12 como base para E2. E1 APROBADO en su conjunto: arquitectura, funciones, orden, recorridos y accesos. D7 y R4 quedan aprobados en ese alcance; la dependencia de aprobación E1 en C1 queda resuelta. Los registros de estado anteriores conservan historia. Datos C2–C8, permisos, canales, reglas, taxonomías, URLs e implementación mantienen sus pendientes. No hay evidencia factual nueva ni research: no corresponde Decision Delta adicional.
+
 - **Alcance APROBADO:** Multipágina, Formación principal, Comunidad, formación corporativa en una página Empresas, directorios independientes. AI Labs incuba, experimenta y desarrolla iniciativas; las colecciones actuales no lo definen exhaustivamente. Español primero.
 - **Etapa:** E1 v4 recibió feedback el 01/10; v5 fue reconciliado documentalmente el 03/10 según el registro legacy. La migración produjo v6 derivado de internos reconciliados; una petición posterior del 05/10 incorpora Equipo y se proyecta a v7. Sigue pendiente de aprobación humana consolidada; no autorización E2.
-- **Decisiones humanas:** posicionamiento/profundidad accesible, Software Engineering with AI y AI Engineering, Empresas → formación/conversación y Productos secundario, PoC/MVP posterior, Productos con IA funcional/de construcción/ambas, comunidad general WhatsApp/core formulario y conversación. Cambios ACCEPT/ADAPT en feedback E1; estrategia §1 precisa alcance.
+- **Decisiones humanas vigentes:** posicionamiento/profundidad accesible, AI Engineering y Software with AI, Empresas → formación/conversación y Productos secundario, PoC/MVP posterior, Productos con IA funcional/de construcción/ambas, comunidad general WhatsApp/core formulario y conversación. B. Cercano y participativo APROBADO por decisión humana del 14/10. Cambios ACCEPT/ADAPT en feedback E1; estrategia §1 precisa alcance.
 - **HECHOS DOCUMENTADOS según equipo:** primeras formaciones principalmente online/en vivo; no convocatoria abierta; +520 WhatsApp; antecedentes Hack@LATAM, AI Hack Perú/120, IRF/SpinOut e iniciativas. No verificaciones/permiso publicable. Nerv es ejemplo aportado, investigación ejemplo ilustrativo.
-- **PROPUESTAS abiertas:** arquitectura de ocho páginas base/dos fichas tras añadir Equipo; funciones/secciones/orden/recorridos y voz A/B. La inclusión de Equipo está decidida por el usuario; su estructura es propuesta y datos individuales pendientes. Feedback no aprueba el conjunto.
-- **PENDIENTES:** oferta/condiciones; mecanismos/operación de acciones; inventario/criterios/curación/actualización; actividad/permisos/evidencia; reglas/moderación. Equipo AI PlayGrounds como fuente esperada, sin responsables personales inventados. E1/voz requieren usuario.
+- **PROPUESTAS abiertas:** arquitectura de ocho páginas base/dos fichas tras añadir Equipo; funciones/secciones/orden/recorridos. La inclusión de Equipo está decidida por el usuario; su estructura es propuesta y datos individuales pendientes. Voz B resuelta; feedback no aprueba el conjunto E1.
+- **PENDIENTES:** oferta/condiciones; mecanismos/operación de acciones; inventario/criterios/curación/actualización; actividad/permisos/evidencia; reglas/moderación. Equipo AI PlayGrounds como fuente esperada, sin responsables personales inventados. E1 requiere aprobación humana consolidada; voz ya resuelta.
 - **Instrumentos históricos:** Planner/websearch/webfetch ejecutados en septiembre. Trends/GSC omitidos. No se comprueba disponibilidad actual ni se hace nuevo research en migración.
 - **Estado canónico reconciliado:** `content/` es la única fuente operativa por el encargo actual; matriz D01–D24 y snapshot en `content/internal/registro-reconciliacion-editorial.md`. El rerun queda histórico e intacto. Se reutilizan N1–N3 observados durante el rerun; no hay nuevas consultas, aprobaciones de arquitectura/voz o autorización de E2.
-- **Sustituciones localizadas:** B0 → B1; propuestas de research → B2; naming antiguo → Software Engineering with AI; interés PoC/MVP → Empresas/Productos y PoC/MVP diferido; AI Labs como suma de directorios → espacio de iniciativas; builder como identidad → atribución contextual; arquitectura v3 → cambios v4/feedback → v5 documental → v6 canónico. No se reabre resto de decisiones.
+- **Sustituciones localizadas:** B0 → B1; propuestas de research → B2; naming antiguo → Software Engineering with AI en Gate B → Software with AI por decisión humana del 14/10; elección A/B pendiente → B. Cercano y participativo APROBADO; interés PoC/MVP → Empresas/Productos y PoC/MVP diferido; AI Labs como suma de directorios → espacio de iniciativas; builder como identidad → atribución contextual; arquitectura v3 → cambios v4/feedback → v5 documental → v6 canónico. No se reabre resto de decisiones.
 
 ## 2. Mapa de decisiones estratégicas
 
@@ -25,16 +31,16 @@ Reconciliación del dossier legacy de 03/10/2026. Se conserva lo reconstruible, 
 |---|---|---|---|---|
 | D1 Alcance/jerarquía | Qué presenta/prioriza la web | Brief aprobado; Labs aclarado Gate A | Oferta real, capacidad | APROBADO: Formación principal, alcance multipágina/directorios; Empresas única |
 | D2 Posicionamiento | Profundidad sin excluir fundamentos | Conflicto de estados en brief | Validación humana | APROBADO Gate A; wording no aprobado literalmente |
-| D3 Audiencia/líneas | Distinguir tareas y nombres | Etiquetas AI Builder/Product Engineer y naming K1a propuestos | Research y elección humana | APROBADO B2: audiencia amplia, Software Engineering with AI/AI Engineering |
+| D3 Audiencia/líneas | Distinguir tareas y nombres | Etiquetas AI Builder/Product Engineer y naming K1a propuestos; nombre elegido en B2 sustituido el 14/10 | Research y elección humana; feedback E1 14/10 | APROBADO: audiencia amplia; nombres oficiales AI Engineering / Software with AI; mismas tareas, K1a e ID de entidad E2 |
 | D4 Empresas | Acción secundaria sin ampliar entrega | Recoger interés PoC/MVP según B1 | Capacidad y decisión humana | APROBADO: formación/conversación; secundario Productos; PoC/MVP posterior |
-| D5 AI Labs | Espacio frente a colecciones | Aclaración Gate A; interpretación incompleta | Feedback E1 | APROBADO concepto de incubación/experimentación/desarrollo; colecciones actuales no exhaustivas |
+| D5 AI Labs | Espacio frente a áreas, iniciativas y colecciones | Concepto aprobado; v12 presentaba directorios como iniciativas actuales | Feedback E2 posterior | APROBADO: áreas pertenecen a AI PlayGrounds; Labs desarrolla iniciativas. Representación web precisada en E1 v13 pendiente, sin atribución de origen por inclusión en colección |
 | D6 Productos | Elegibilidad y relación con IA | Pregunta abierta en research | Decisión humana; datos por entrada | APROBADO ambas relaciones/ambas; no todo producto herramienta IA |
-| D7 Arquitectura | Distribuir necesidades sin duplicación | Propuesta E1 v5 y cambios ACCEPT | B2, estrategia y feedback | PROPUESTA completa en estrategia §§5–7; no sitemap global aprobado |
-| D8 Voz | Rigor/cercanía y claridad de condiciones | Sin guía formal aprobada | Elección humana | PENDIENTE A/B; especificación únicamente estrategia §9 |
+| D7 Arquitectura | Distribuir necesidades sin duplicación | E1 v12 aprobado; v13 rechazado en ubicación de áreas | Segunda ronda feedback E2 14/10; Estrategia §8.12 | E1 v14 pendiente: Áreas sección independiente antes de Labs en Inicio, siete secciones/63 total; Labs distingue iniciativas/colecciones. Otras páginas y acuerdos preservados |
+| D8 Voz | Rigor/cercanía y claridad de condiciones | A/B propuestas; A recomendada por el agente | Elección humana explícita, feedback E1 14/10 | APROBADO: B. Cercano y participativo; especificación únicamente estrategia §9; no aprobación global E1 |
 | D9 Idiomas/mercados | Reutilización sin falsa cobertura | LATAM, investigación incremental autorizada | Evidencia y decisión humana | APROBADO español primero/inglés después; pt separado no oferta |
 | D10 Equipo | Presentar a quienes sostienen la organización | No había página en E1 v6 | Petición explícita del usuario y datos individuales por recibir | APROBADO incluir página; estructura/ubicación de enlace propuestas; no perfiles individuales nuevos |
 
-Selección actual entre diferencias reales: matriz D01–D24 del registro de reconciliación. No reabrir las decisiones humanas D1–D6/D9/D10 por una preferencia del agente. Cambios operativos adoptados: acceso directo a colecciones (D04), controles por registro (D02), precisión de candidatos (D03), transparencia dentro de bloques existentes (D12), foto condicional (D16) y beneficio cliente explícito (D01). Permanecen PROPUESTA salvo instrucción humana concreta; el conjunto E1/voz sigue PENDIENTE.
+Selección entre diferencias del 05/10: matriz D01–D24 del registro de reconciliación. No reabrir las decisiones humanas D1–D6/D9/D10 por una preferencia del agente. Cambios operativos adoptados: acceso directo a colecciones (D04), controles por registro (D02), precisión de candidatos (D03), transparencia dentro de bloques existentes (D12), foto condicional (D16) y beneficio cliente explícito (D01). Permanecen PROPUESTA salvo instrucción humana concreta; el conjunto E1 sigue PENDIENTE. D3 y D8 incorporan únicamente las decisiones posteriores del 14/10.
 
 ## 3. Research Preflight — reconstrucción histórica, no ejecución nueva
 
@@ -105,7 +111,7 @@ Tokens reconciliados de evidencia ya existente; no nueva investigación ni afirm
 
 ## 7. Clusters / Keyword Map relevante
 
-Síntesis aprobada vinculante en B2 §Clusters; detalle/historia en Keyword Map. K1 formación personas con K1a Software Engineering with AI/K1b AI Engineering; K2 equipos; K3 Productos (herramientas solo subconjunto); K4 Investigación (señal de directorio regional débil); K5 participación (necesidad no negada por cero aproximado). Ownership conceptual aceptado, no slugs/sitemap/cursos aprobados. No cluster nacional, pt agregado, perfiles o filtro→página. Prioridades cruzan oferta/negocio/tarea/evidencia, no solo volumen. No se copia el mapa completo.
+Síntesis aprobada vinculante en B2 §Clusters; detalle/historia y actualización de nombre del 14/10 en Keyword Map. K1 formación personas con K1a Software with AI/K1b AI Engineering; K2 equipos; K3 Productos (herramientas solo subconjunto); K4 Investigación (señal de directorio regional débil); K5 participación (necesidad no negada por cero aproximado). Ownership conceptual aceptado, no slugs/sitemap/cursos aprobados. No cluster nacional, pt agregado, perfiles o filtro→página. Prioridades cruzan oferta/negocio/tarea/evidencia, no solo volumen. No se copia el mapa completo; el nuevo nombre es decisión humana, no hallazgo de demanda.
 
 ## 8. Decisiones de arquitectura — motivos y procedencia
 
@@ -146,6 +152,8 @@ Registros agregados por familia cuando comparten fuente y condición. Al recibir
 
 ### Trazabilidad nueva necesaria para SEO/AEO/GEO v1
 
+**Actualización localizada C1, 14/10/2026:** fuente adicional: decisión humana en feedback E1 sobre v11, nombres oficiales AI Engineering y Software with AI. Sustituye únicamente el nombre anterior de K1a/entidad E2 en Formación y sus menciones; conserva R1, preguntas, claims, condiciones y ownership. El nombre se usa literalmente dentro de ese alcance; las explicaciones siguen siendo reformulables. B. Cercano y participativo queda APROBADO en D8/§10, por lo que la dependencia «Usuario aprueba E1/voz» de la fila histórica C1 se reduce a aprobación consolidada E1. No nuevas afirmaciones de oferta, permisos o resultados.
+
 | Consecuencia / referencia operativa | Base existente / clase de soporte | Hecho vs inferencia y límite | Estado / investigación |
 |---|---|---|---|
 | Entidades E1–E5 y preguntas Q1–Q16; ownership página/bloque/campo | Brief, B2, Keyword Map vigente, feedback; recomendación editorial inferida sobre necesidades ya registradas | Nombres de organización/líneas/espacio confirmados; preguntas inferidas, no entrevistas. E6–E8 siguen sin registros reales | Definición incorporada a Estrategia §§8.1–8.3; no research nuevo, sin nuevo Decision Delta |
@@ -182,6 +190,22 @@ Origen auditable: `content-rerun/internal/02-research/research-queries.md`, N1�
 
 Preflight de esta reconciliación: evidencia N1–N3 `USAR / EJECUTADO` en la ejecución documentada del rerun; consultas nuevas a web/Planner/Trends/GSC `OMITIR — no puede cambiar esta decisión`, operación `—`. La siguiente dependencia es inventario/tipo real, no más definición genérica. Cierre: suficiente para conservar/precisar candidatos condicionales; revalidar rangos y soporte de motor al implementar.
 
+### Feedback E2: evidencia y dependencias nuevas — C10
+
+**Fuente primaria interna:** conversación humana posterior a E2 v1, 14/10/2026. Citas materiales: «estas areas no pertenecen a AI Labs pertenecen a AI PlayGrounds»; orden «AI Foundations / AI for Software / AI for Science / AI for Finance»; pueden surgir otras según iniciativas de la comunidad; foco de Foundations «como funcionan y como mejorar los propios modelos». Autoriza aplicar lo conversado al Markdown con voz B. HECHO DOCUMENTADO según propietario y decisiones APROBADAS en ese alcance; no evidencia de productos/resultados, inventario o capacidad científica validada.
+
+| Registro | Alcance / procedencia | Aplicación y dependencias | Estado |
+|---|---|---|---|
+| C10 Áreas, orden y pertenencia; concepto de Labs | Conversación humana y segunda ronda feedback-e2: «se desarrolle como una seccion en el home». E9–E12 y R10/Q19 en Estrategia §8.12. Sustituye ubicación anidada propuesta por el agente en v13 | Inicio/Áreas, sección propia; Qué es presenta comunidad sin enumerarlas; Labs/Qué es AI Labs/Iniciativas actuales. No cuatro cursos, alias de líneas o pertenencia de entradas inferida | Concepto y sección independiente APROBADOS en alcance localizado; orden antes de Labs recomendado por agente, presentación conjunta E1 v14 PENDIENTE. Sin resultados, inventario o permisos nuevos |
+| C1, R2 y G7 precisados | C10 y feedback E2 prevalecen sobre las menciones históricas de dos directorios como iniciativas actuales | Directorios conservan universo y fichas; relaciones concretas Labs/área/entrada solo con soporte. G7 añade revisión por cambio real de área, nombre u orden, equipo + editor | No inventario nuevo, propiedad de todo listado ni objeto Schema adicional. Datos C6–C8 y política T5 siguen pendientes |
+| Criterio editorial de Formación | Usuario acepta reducir fórmula; rigor de Gate A se conserva. El research no imponía literalidad o repetición | Metadata/copy Inicio, Formación y Empresas, misma oferta. Formulación estratégica en §4; redacción en E2 v2 con voz B | ACCEPT aplicado, sin cambio de audiencia o promesa, ni research/Keyword Map nuevos |
+
+**Ledger vigente de feedback:** ACCEPT para sección independiente y retiro de «oferta principal» del copy institucional, conservando la prioridad estratégica. ADAPT para el orden antes de Labs y revisión editorial integral; ESCALATE permanece localizado en aprobación E1 v14. Sustituye la propuesta del agente de anidar áreas en el bloque institucional, expresamente corregida por el usuario. Se mantienen nombres, orden de las cuatro áreas, pertenencia a AI PlayGrounds, líneas formativas y voz B; no datos nuevos ni cambios al alcance. Detalle en feedback-e2, segunda ronda.
+
+**Referencia Google Labs:** https://labs.google/ fue aportada y leída puntualmente durante la conversación, antes del permiso de edición. Se observó presentación de experimentos e invitaciones a conocer/probar iniciativas. Prueba su propia presentación, no catálogo/operación de AI PlayGrounds; no se trasladan acceso temprano, filtros, funcionalidades o madurez. Se usa como referencia editorial, no nueva investigación de demanda. No se repite consulta ni se añade Decision Delta de research.
+
+**Completitud y sincronización vigente:** Estrategia §§1/4/6/8.12/9 y este registro permiten derivar E1 v14; E2 v3 revisa el copy completo y sincroniza referencias a 63 secciones. Q19 pasa a Inicio/Áreas; Q1 sigue en Qué es. No se rehace readiness salvo esa referencia; T1–T5, S1–S5, M1–M7 y controles mutables mantienen límites. Revisión de metadata/labels y modelos sin nuevos claims C1–C10. La prioridad de Formación se expresa por orden/CTA, no por frase comercial. Sin nuevo gate o aprobación final E2 durante reapertura. Apartados históricos de v13/v2 conservan su alcance anterior.
+
 ## 10. Trazabilidad de la dirección editorial
 
 La especificación completa y muestras viven únicamente en estrategia §9.
@@ -190,6 +214,7 @@ La especificación completa y muestras viven únicamente en estrategia §9.
 |---|---|---|---|---|---|---|
 | 30/09 estrategia; E1 hasta v5 03/10 | A Experto y accesible; B Cercano y participativo | Rigor accesible y comunidad; seis muestras comparables en E1 | No elección o recomendación humana acreditada | Dos propuestas del agente, A recomendada por el agente, no aprobada | Feedback no eligió voz; no guía formal | Estrategia §9 |
 | 05/10 migración/E1 v6 | Mismas dos opciones/muestras | Completar especificación operativa faltante | Migración autorizada, no selección | PENDIENTE humano en mismo gate E1 | Formalidad/tono/tecnicidad/densidad/recursos/límites explícitos; no nueva alternativa | Estrategia §9 |
+| 14/10 feedback E1 v11 → v12 | B. Cercano y participativo elegida; A histórica | «Se elige la opción B: cercano y participativo»; dirección editorial elegida, sin elección A/B pendiente | Decisión explícita del usuario; APROBADO solo en este alcance | B es la única dirección activa; aprobación global E1 PENDIENTE | Sustituye elección pendiente y recomendación previa de A del agente; conserva rigor, condiciones y seis muestras B como ejemplos, no copy literal | Feedback E1 14/10; Estrategia §9; E1 v12 §6 |
 
 ## 11. Feedback ledger — amplio/estratégico
 
@@ -207,6 +232,8 @@ Fuente y detalle íntegro: `content/internal/04-feedback/feedback-e1.md`, observ
 | 18/19/20 | Conservar/completar fichas/conexiones | Directorios/datos | Estrategia §§5/6/8 | ACCEPT | Campos expresos, resultados/límites, fuente y vínculo real |
 | 22/23 | Alcance/prioridades y sincronización | E1 conjunto | Estrategia §§1/10/11/12 | ACCEPT | Español/PoC posterior; E1 revisado pendiente, voz sin selección; sin E2 |
 | Petición 05/10 Equipo | Mostrar personas; cambio arquitectónico explícito | Página/navegación propuesta/recorrido/pendientes, conteo de páginas | Estrategia §§1/3–8/10/11; registro U1; feedback posterior | ACCEPT | Equipo incorporado; E1 v7 pendiente. Decisión localizada, sin nueva aprobación global ni datos personales inventados |
+| 14/10 voz B | Resolver elección editorial | Voz/estado de aprobación, sin arquitectura nueva | Brief/adenda; Estrategia §§1/9/10/11/12; D8/§10 | ACCEPT | B APROBADO; A deja de ser alternativa activa; E1 revisado pendiente de aprobación consolidada |
+| 14/10 nombres oficiales | AI Engineering / Software with AI exactamente | Naming K1a/entidad E2 y menciones; tareas/IDs/ownership intactos | Brief, notas B2/Research, Keyword Map; Estrategia §§1/4/6/8.2; D3/C1/§7 | ACCEPT | Sustituye solo nombre oficial anterior de K1a; evidencia y citas históricas conservadas, sin research ni gate reabierto |
 
 No ESCALATE documentado. La migración identifica/actualiza fuentes internas y después sincroniza E1; no afirma que esa secuencia se hubiese cumplido en el trabajo legacy.
 
@@ -221,13 +248,38 @@ No ESCALATE documentado. La migración identifica/actualiza fuentes internas y d
 | Colecciones | Inventario/criterios/filtros/curación/permisos/actualización | Entradas y reglas reales | PENDIENTE; no mostrarlas activas ni publicar fichas sin preparación |
 | Pruebas propias | +520/120/actividades según equipo; relaciones/permiso por probar | Fuente original vigente, atribución y autorización | PENDIENTE de publicación; no suma seguidores ni logos como clientes por inferencia |
 | Estadísticas 23%/6% | Atribución externa sin verificar | Fuente primaria | PENDIENTE; no uso público ni dependencia de promesa |
-| Voz y aprobación E1 | No elección ni aprobación humana global | Intervención explícita del usuario | PENDIENTE; bloquea E2 |
+| Aprobación consolidada E1 | Resuelta; no implica publicación de piezas dependientes de datos | «si continua» en respuesta a aprobación explícita de E1 v12, 14/10 | APROBADO; habilita E2 Borrador, no aprobación de E2 |
 | Rentabilidad/modelo económico/PoC-MVP | Sin costos/precios/capacidad/resultados | Oferta/operación real y decisión futura | INCONCLUSO; no promesas económicas, fuera de lanzamiento |
 | Integrantes de Equipo | Composición, roles/aportes, bios, fotos y datos por recibir | Información que el usuario aportará incrementalmente | PENDIENTE; página incluida, sin personas/credenciales ficticias |
 
 Cierre de research por saturación de decisiones, no máximo de países: tras EC/CR y BR separado faltan datos propios/operación, no más términos genéricos. UY/PY/BO/PA/GT/DO u otro contexto no tiene una pregunta material actual que probablemente resuelva mejor; no es prueba de uniformidad LATAM. Reabrir solo si oferta local, idioma/mercado aprobado, pricing/pagos nacionales o nueva categoría introduce decisión material. Limitaciones reales: salida Planner seleccionada/límites, período/red no explicitados, no SERP nacional/Top 10, señales desiguales, fuentes comerciales no prueban resultados propios, fragmentos conversacionales/fuentes primarias de cifras no archivados. No se inventan para cerrar documentalmente.
 
 ## 13. Sincronización con E1 y precedencia
+
+**Actualización posterior vinculante, 14/10/2026:** usuario «Apruebo E1 v15» y feedback específico para representar estructuras en todo E2 → Estrategia §1 y §§5.1–5.2/10–12 → registros feedback → snapshot E1 aprobado → E2 v4, pendiente de aprobación final. Resuelve los pendientes de dirección de D5/D7/C10 y el ESCALATE previo. No recibe inventarios, fuentes o permisos nuevos; C2–C8 y datos por iniciativa siguen pendientes. Los estados v15/v3 y anteriores abajo son históricos.
+
+**Procedencia de E2 v4:** diez páginas/tipos y 63 secciones de Estrategia §6/E1 v15; unidades y campos de §§5.1–5.2; marco y condiciones C1–C4/C10; evidencia y atribución por registro C5–C8 sin datos completados; C9 no utilizable. Relaciones R1–R10, preguntas Q1–Q19, gobernanza G1–G7 y handoffs S1–S5/T1–T5/M1–M7 preservados. La reestructuración documental no acredita capacidades, hechos, UI, vigencia factual, indexación o visibilidad generativa. No investigación adicional ni Decision Delta nuevo.
+
+**Gate:** el feedback E2 queda resuelto en el alcance editorial/estructural aprobado. Se entrega la versión corregida para aprobación final humana posterior; no se transfiere la aprobación E1 a E2 ni a sus bloques sin datos. La aprobación editorial futura tampoco sustituirá fuentes/permisos o pruebas operativas antes de publicación.
+
+**Vigente, actualización estructural 14/10/2026:** petición humana de aplicar la skill actual → Estrategia §5.2 y estados/dependencias → feedback-e1/feedback-e2 y este Dossier → E1 v15 pendiente. Los registros siguientes conservan sus estados históricos. No se resincroniza E2 v3 mientras esté pendiente el gate E1; no nueva aprobación ni cierre.
+
+| Precisión de estructura | Procedencia y límite | Consecuencia |
+|---|---|---|
+| Áreas/líneas y vías comparables | C1/C3/C4/C10 y feedback humano; inventarios conocidos de cuatro áreas, dos líneas y dos vías | Mantener nombres/tareas/condiciones, sin diferencias artificiales ni procesos nuevos |
+| Actividad, iniciativas y evidencia | C4/C5/C10, arquitectura/feedback existentes. Modelado editorial inferido en Estrategia §5.2, no hechos o permisos nuevos | Una unidad por actividad/iniciativa/pieza pertinente; campos comunes y condicionales, inventarios publicables pendientes. No sustituir iniciativas por colecciones ni cifras por autoridad |
+| Resúmenes, personas y colecciones dentro de fichas | C6–C8 y modelos §5.1; misma atribución, fuentes, permisos y relaciones | Información visible en E1 para decidir; E2 deberá mostrarla junto a cada sección tras aprobación. Sin registros ficticios, nuevas páginas o CMS |
+| Readiness de modelo dentro de páginas estáticas | Contrato `references/content-structures.md`; tarea/unidades ya previstas en arquitectura | §5.2 precisa solo Modelo repetible en cinco filas históricas de §8.10. No nueva evidencia, Schema o implementación |
+
+**Control de procedencia:** C1–C10 conservados; no alta de eventos, iniciativas, personas, productos, trabajos, casos o testimonios. Los campos propuestos no son datos verificados. No research ni Decision Delta adicional: la revisión no investiga una pregunta material nueva. El registro maestro factual sigue aquí en §9; fuentes, permisos, vigencia y responsables no se duplican en otro inventario.
+
+**Alcance de aprobación:** E1 v15 precisa estructura material dentro de los bloques existentes y mantiene la revisión Home/Labs ya abierta. Requiere decisión humana en el mismo gate E1, sin reaprobar voz, nombres, research, Gate A/B o alcance. Diferencias E1–E2 y siguiente acción en feedback-e1; E2 v3 no se presenta como actualizado a la nueva capacidad.
+
+**Proyección E2 v1, 14/10/2026:** primer Contenido Web — Borrador creado en `content/entregables-cliente/02-contenido-web/contenido-web.md`, después de registrar aprobación E1 y sincronizar su snapshot. Sin nueva evidencia ni claims factuales: marco C1–C4 reformulado en voz B; C5 no publicado; C6–C8 solo modelos/labels y datos por recibir; C9 excluido. Ocho páginas/dos tipos/62 secciones preservados. Las notas de ejecución y publicación pendientes no se convierten en hechos. QA editorial y estructural en Estrategia §12; próximo paso: revisión humana de E2 y aportación de datos que resuelvan bloqueos. No se crea feedback-e2 ni se solicita aprobación final antes de esa revisión.
+
+**Aprobación posterior a v12, 14/10/2026:** mensaje humano «si continua» → aprobación registrada en feedback, Estrategia y este Dossier → estado de E1 actualizado como snapshot APROBADO, sin alterar decisiones → E2 v1 Contenido Web — Borrador. La redacción factual por oferta/entrada/integrante y acciones operativas sigue limitada por C2–C8. No feedback E2 recibido; no aprobación final ni cierre. La nota de v12 pendiente que sigue conserva la secuencia previa a esta aprobación.
+
+**Estado vigente, 14/10/2026:** feedback E1 v11 (dos ACCEPT) → fuentes internas actualizadas → E1 v12, Dirección de Contenido y Estructura Web — Versión revisada, pendiente de aprobación. Voz B y nombres oficiales aprobados de forma localizada; no aprobación global E1. La cadena conserva ocho páginas, dos fichas y 62 secciones, decisiones, readiness, evidencia y pendientes restantes. Las notas fechadas del 05/10 y anteriores, incluidos los registros de reconciliación/migración, son historia y no mantienen abierta la elección A/B ni el nombre sustituido. E2 no iniciado. Sin research adicional ni Decision Delta nuevo: es feedback humano, no investigación material nueva.
 
 Cadena reconstruible: alcance/brief → B0/B1/Gate A → evidencia Planner/web y Keyword Map → Gate B/B2 → estrategia propuesta → feedback ACCEPT/ADAPT → fuentes internas reconciliadas → E1 v6 revisado pendiente. E1 ⊆ estado interno, correspondencia en estrategia §11. El dossier no aprueba estrategia/E1 ni es un tercer entregable.
 
