@@ -1,5 +1,7 @@
 # Registro de corridas actuales
 
+**Campaña OpenSEO 2026-11-04:** [`openseo-2026-11-04.md`](openseo-2026-11-04.md) resume las 14 sesiones iniciales y las 2 repeticiones con fixtures inline. Artefactos completos de respuesta/prompt/auditoría y snapshots versionables en `tests/behavior/openseo-2026-11-04/` de la repo fuente, fuera del paquete runtime; exports completos temporales según README de la campaña. Los registros iniciales parciales se conservan y las repeticiones se añaden, no los reemplazan. Juicio de agentes, no humano.
+
 `runs.jsonl` puede conservar corridas históricas y actuales, incluidas fallidas/interrumpidas si hay evidencia, siempre que cada registro preserve claramente su provenance. Diseñar una fixture no equivale a ejecutarla; el historial puede conservarse y no se eliminan registros por pertenecer a un contrato anterior. Cada entrada debe permitir distinguir `skill_commit`, fecha, suite, modelo, contexto/notes, si el candidate estaba dirty cuando aplique y si corresponde a arquitectura histórica o vigente. El análisis vigente filtra por commit, fecha y contrato correspondientes: una corrida histórica no valida automáticamente el contrato actual. Se admiten suites `activation`, `behavior`, `e2e` y `tool-smoke`; esta última registra una dependencia/herramienta comprobada directamente, no un juicio conductual del agente.
 
 ## Campos requeridos

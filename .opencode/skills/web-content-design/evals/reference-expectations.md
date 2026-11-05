@@ -65,6 +65,14 @@ Congelar antes de correr las filas indicadas. “No necesita” significa sobrec
 
 Registrar referencias realmente leídas, incluidas adicionales; evaluar pertinencia/contexto, no concordancia exacta de orden.
 
+## OpenSEO — pre-registro de carga
+
+OSEO-01–14 de [`openseo-cases.md`](openseo-cases.md): `search-research.md`, `openseo-research.md` y asset Dossier cuando hay research/preflight; `strategy-architecture.md` y asset Estrategia para consecuencias. OSEO-12 antes de B1 usa gobernanza y se detiene en Gate A; su corrección local posterior no requiere research nuevo. Herramientas solo mocks/fixtures inline, sin MCP pagado ni web por rutina. Los casos RES existentes sin OpenSEO conservan sus herramientas/expectativas; disponibilidad MCP no obliga a comprar la misma señal ni altera la precedencia Planner. Cambios de idioma/país de OSEO-14 prevalecen sobre defaults editoriales.
+
+## Estructuras semánticas — pre-registro de carga
+
+STRUCT-01–24 de [`content-structure-cases.md`](content-structure-cases.md): cargar `content-structures.md` y `strategy-architecture.md`; variante E1: asset E1 y Estrategia; variante E2: asset E2 y `quality-and-delivery.md`. Feedback/capacidad conflictiva de STRUCT-24 requiere además `feedback-gate.md`. Ninguna herramienta externa, research, implementación ni reconstrucción de Gates por rutina. Fixture inline es la fuente interna autorizada para el fragmento; no exigir archivos ni un proyecto real. No cargar todos los perfiles O/C ni direcciones alternativas: están fijados. Registrar carga real, no asumirla por enlace.
+
 ## Nuevos requisitos SEO/AEO/GEO — pre-registro de carga
 
 | Casos | Referencias mínimas pertinentes | Herramientas / límites |

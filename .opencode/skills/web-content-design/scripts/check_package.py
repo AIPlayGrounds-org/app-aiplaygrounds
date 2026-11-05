@@ -14,9 +14,11 @@ REQUIRED = (
     "SKILL.md",
     "references/intake-and-governance.md",
     "references/search-research.md",
+    "references/openseo-research.md",
     "references/pattern-library.md",
     "references/editorial-directions.md",
     "references/strategy-architecture.md",
+    "references/content-structures.md",
     "references/seo-ai-editorial.md",
     "references/feedback-gate.md",
     "references/quality-and-delivery.md",
@@ -29,6 +31,8 @@ REQUIRED = (
     "evals/README.md",
     "evals/activation.md",
     "evals/behavior-cases.md",
+    "evals/content-structure-cases.md",
+    "evals/openseo-cases.md",
     "evals/e2e-cases.md",
     "evals/holdouts.md",
     "evals/reference-expectations.md",
@@ -65,6 +69,42 @@ LEGACY_E1_PATTERNS = (
 )
 
 # These are package contracts, not a readiness evaluator for client projects.
+CONTENT_STRUCTURE_CONTRACTS = {
+    "SKILL.md": ("references/content-structures.md", "E2 muestra el contenido estructurado en su cuerpo principal"),
+    "references/content-structures.md": (
+        "## Decisión proporcional por sección", "## Primitivas componibles",
+        "## Perfiles semánticos y restricciones", "## Proyección E1 y E2",
+        "## Capas, faltantes y condición editorial", "## QA de estructura",
+        "página → sección → función → estructura de contenido → unidad(es) → campos → copy → acción",
+        "Bloque editorial", "Entidad y colección", "Comparación", "Secuencia",
+        "Atributo/valor", "Pregunta/respuesta", "Acción y estado",
+        "Esquema por completar — no publicable", "no especifica UI",
+    ),
+    "references/strategy-architecture.md": ("content-structures.md", "también estáticas"),
+    "assets/internal-content-strategy.md": (
+        "content-structures.md", "incluidas colecciones o estructuras compuestas dentro de páginas estáticas",
+        "modelo de campos de §5", "Modelos incompletos conservados",
+    ),
+    "assets/deliverable-1-direction.md": (
+        "content-structures.md", "información necesaria por unidad",
+        "Conserva el esquema validado si faltan datos", "no copy final",
+    ),
+    "assets/deliverable-2-web-content.md": (
+        "content-structures.md", "### Sección [nombre aprobado]",
+        "el contenido principal debe mostrar la estructura", "no especifican cards",
+        "**Notas editoriales — separadas del copy", "**Datos pendientes / esquema por completar — no publicable",
+    ),
+    "references/quality-and-delivery.md": (
+        "QA de estructura", "content-structures.md", "No aplanar todo a prosa ni convertir todo en tablas",
+    ),
+    "evals/content-structure-cases.md": (
+        "## Protocolo y prompts reproducibles", "Variante E1", "Variante E2",
+        "## Juicio transversal obligatorio", "no ejecutados",
+    ),
+    "evals/reference-expectations.md": ("STRUCT-01–24", "content-structures.md"),
+    "evals/rubric.md": ("## Estructuras semánticas", "estructura en cuerpo principal"),
+}
+
 DISCOVERY_CONTRACTS = {
     "SKILL.md": ("SEO/AEO/GEO v1", "AEO/GEO readiness", "NO APLICA — motivo",
                  "Política de entrenamiento: decisión del propietario"),
@@ -112,6 +152,40 @@ DISCOVERY_CONTRACTS = {
     "references/quality-and-delivery.md": ("### Continuidad SEO/AEO/GEO y handoffs",),
     "evals/behavior-cases.md": tuple(f"| READY-{number:02d} " for number in range(1, 18)),
     "evals/e2e-cases.md": ("## E2E-11", "## E2E-12", "## E2E-13"),
+}
+
+OPENSEO_CONTRACTS = {
+    "SKILL.md": ("proveedor MCP opcional", "references/openseo-research.md"),
+    "references/search-research.md": ("openseo-research.md", "no requiere consultar ambos proveedores",
+                                      "get_serp_results", "no es cero",
+                                      "Fuente utilizada no equivale a consulta nueva",
+                                      "`USAR` nunca lleva estado `—`",
+                                      "lectura de evidencia aportada/reutilizada"),
+    "references/openseo-research.md": (
+        "schemas/descripciones actuales", "list_projects", "get_project_context",
+        "no por primer resultado", "Sin dominio o autorización continúa sin OpenSEO",
+        "research_keywords", "get_keyword_metrics", "get_serp_results",
+        "find_serp_competitors", "get_domain_overview", "get_domain_keyword_suggestions",
+        "get_ranked_keywords", "no expone endpoint dedicado de clustering/content gap",
+        "español (`es`)", "Latinoamérica", "No mezcles ni sumes volúmenes de diferentes países",
+        "por métrica", "KD=0 no implica automáticamente competencia orgánica baja",
+        "Desconocido, no volumen cero", "nunca sustituto de KD",
+        "etiqueta original, intención editorial, evidencia, discrepancia",
+        "No superar el presupuesto autorizado", "presupuesto máximo configurable",
+        "consumo verificado + reservas pendientes/no conciliadas + máximo nueva llamada",
+        "no se puede acotar el cargo máximo", "sin confirmaciones por consulta",
+        "Consumo estimado y consumo verificado se reportan por separado",
+        "meta.creditsCharged", "meta.creditsRemaining", "no reintentes a ciegas",
+        "Sin OpenSEO instalado", "Google Keyword Planner", "Gate B/B2",
+        "mismo proyecto", "no obliga a ejecutar research nuevo", "no actives otros skills",
+    ),
+    "assets/internal-strategy-evidence.md": ("OpenSEO opcional", "Presupuesto restante seguro",
+                                            "Consumo verificado", "openseo-research.md"),
+    "assets/internal-content-strategy.md": ("Cuando OpenSEO haya sido usado", "aceptadas en B2"),
+    "references/strategy-architecture.md": ("Las señales de OpenSEO", "no una página por keyword"),
+    "references/seo-ai-editorial.md": ("OpenSEO MCP opcional", "openseo-research.md"),
+    "evals/openseo-cases.md": ("## Estado de ejecución", "no llames al MCP real",
+                               "fixtures locales", "sin tools"),
 }
 
 # First-column label identifies a template table; the other labels are minimum
@@ -264,6 +338,42 @@ def check(root: Path = ROOT) -> list[str]:
         for phrase in phrases:
             if phrase not in contents:
                 problems.append(f"{path}: falta contrato estructural SEO/AEO/GEO: {phrase}")
+    for path, phrases in CONTENT_STRUCTURE_CONTRACTS.items():
+        contents = (root / path).read_text(encoding="utf-8")
+        for phrase in phrases:
+            if phrase not in contents:
+                problems.append(f"{path}: falta contrato de estructuras de contenido: {phrase}")
+    for path, phrases in OPENSEO_CONTRACTS.items():
+        contents = (root / path).read_text(encoding="utf-8")
+        for phrase in phrases:
+            if phrase not in contents:
+                problems.append(f"{path}: falta contrato OpenSEO: {phrase}")
+    # Fixtures are prompts and expected observables, not recorded agent runs.
+    openseo_cases = (root / "evals/openseo-cases.md").read_text(encoding="utf-8")
+    rows = [line for line in openseo_cases.splitlines() if re.match(r"^\| OSEO-\d+ \|", line)]
+    ids = [line.split("|")[1].strip() for line in rows]
+    if set(ids) != {f"OSEO-{number:02d}" for number in range(1, 15)} or len(ids) != 14:
+        problems.append("evals/openseo-cases.md: requiere OSEO-01–14 únicos")
+    for row in rows:
+        cells = [cell.strip() for cell in row.strip("|").split("|")]
+        if len(cells) != 3 or not all(cells):
+            problems.append("evals/openseo-cases.md: requiere ID, fixture y observables")
+    # Fixture integrity only: never infer that the agent chose the right model,
+    # produced client-readable content, or respected UI/evidence boundaries.
+    structure_cases = (root / "evals/content-structure-cases.md").read_text(encoding="utf-8")
+    case_rows = [line for line in structure_cases.splitlines()
+                 if re.match(r"^\| STRUCT-\d+ \|", line)]
+    case_ids = [line.split("|")[1].strip() for line in case_rows]
+    expected_ids = {f"STRUCT-{number:02d}" for number in range(1, 25)}
+    if set(case_ids) != expected_ids or len(case_ids) != len(expected_ids):
+        problems.append("evals/content-structure-cases.md: requiere STRUCT-01–24 únicos")
+    for row in case_rows:
+        cells = [cell.strip() for cell in row.strip("|").split("|")]
+        if len(cells) != 4 or not all(cells):
+            problems.append("evals/content-structure-cases.md: fila requiere ID, fixture y observables E1/E2")
+    e2_structure = (root / "assets/deliverable-2-web-content.md").read_text(encoding="utf-8")
+    if "| Orden | Sección aprobada / componente | Heading propuesto | Copy público |" in e2_structure:
+        problems.append("E2: tabla monolítica obsoleta puede ocultar unidades/campos")
     # Validate visible terms in the template heading, not its exact wording or
     # whether an agent actually explains/applies the benefit in a client E1.
     e1_template = (root / "assets/deliverable-1-direction.md").read_text(encoding="utf-8")

@@ -62,7 +62,7 @@ Redacta solo tras aprobación humana del Entregable 1 — **Dirección de Conten
 
 Trata el brief como fuente de información y contexto, no como copy aprobado: conserva su significado, hechos, condiciones, restricciones y decisiones, pero puedes reorganizar, sintetizar y reformular su wording según estrategia, audiencia, intención, arquitectura y dirección editorial aprobadas. **APROBADO** no implica literalidad. Si el usuario marca explícitamente una frase como `Texto literal aprobado`, `Texto literal` o pide inequívocamente conservarla literalmente, reproduce exactamente ese wording dentro del alcance indicado; esta restricción solo aplica a esa frase, no a todo el brief. La flexibilidad editorial nunca autoriza alterar cifras, cobertura, beneficios, servicios, elegibilidad, condiciones, claims permitidos ni decisiones aprobadas, ni convertir opiniones en hechos.
 
-Componentes según necesidad: SEO title, meta description, slug recomendado, H1/H2/H3, body copy, CTA, labels, formularios, FAQ, microcopy, mensajes de error/éxito, enlaces/destinos y notas de implementación. No rellenes para completar plantilla. Todo dato faltante queda fuera del copy público y en pendientes internos. No inventes funcionalidad, URLs, jerarquía visual, CTA/canal de contacto ni confirmación; si falta CTA real, omítelo o deja la propuesta claramente identificada con destino pendiente.
+Contenido según necesidad: SEO title, meta description, slug recomendado, H1/H2/H3, body copy, unidades y campos estructurados, CTA, labels, formularios, FAQ, microcopy, mensajes de error/éxito, enlaces/destinos y notas de implementación. No rellenes para completar plantilla. Todo dato faltante queda fuera del copy público, identificado en pendientes no publicables; conserva junto a la sección su estructura o esquema necesario según [`content-structures.md`](content-structures.md), sin esconderlo solo en internos. No inventes funcionalidad, URLs, jerarquía visual, CTA/canal de contacto ni confirmación; si falta CTA real, omítelo o deja la propuesta claramente identificada con destino pendiente.
 
 Separa función editorial de jerarquía HTML y diseño visual. Title no es H1; metadescripción no es bajada. Enlaces con destino real y etiqueta que explique función. Instrucciones y errores claros con recuperación disponible. Si no hay diseño o imagen, marca verificación visual/alt como pendiente; no certifiques accesibilidad global.
 
@@ -74,7 +74,7 @@ Cuando se conozca el componente real, ajusta longitud, densidad y jerarquía al 
 
 Si el diseño o design system define espacio real, se puede fijar un presupuesto aproximado de palabras/caracteres por familia y campo (título, descripción, CTA/label). Es local a esa UI, orientativo y adaptable cuando el significado lo requiera; no es un límite universal ni autoriza a eliminar información material. Si la UI aún no existe, mantén densidad razonablemente consistente y trata la longitud como provisional, con una pasada de ajuste cuando se conozca el diseño.
 
-La simetría visual no justifica eliminar hechos, condiciones, diferenciadores reales, evidencia ni información necesaria. Si un contenido materialmente más extenso no cabe sin degradarlo, recomienda otra composición (p. ej., jerarquía distinta, detalle expandible o componente alternativo) en lugar de mutilarlo; mantén la función y estrategia aprobadas.
+La simetría visual no justifica eliminar hechos, condiciones, diferenciadores reales, evidencia ni información necesaria. Si un contenido materialmente más extenso no cabe sin degradarlo, señala la incompatibilidad para que diseño resuelva la composición sin mutilar contenido; mantén función y estrategia aprobadas. No prescribas por defecto detalle expandible ni un componente alternativo. La estructura semántica y las tablas documentales no deciden UI.
 
 ## QA general previo al Entregable 2
 
@@ -94,6 +94,7 @@ Revisa cada página y el conjunto:
 10. Riesgo de inventar capacidad o implicar precio, elegibilidad, compromiso, plazos o resultados.
 11. Claridad, contexto, entidades y claims sostenibles para lectura humana y recuperación generativa, sin prometer visibilidad.
 12. Criterios QA específicos de cada patrón O/variante y categoría cargada.
+13. QA de estructura de [`content-structures.md`](content-structures.md): proporcionalidad, unidades/campos y relaciones visibles, continuidad E1→E2, esquemas incompletos preservados y cinco capas separadas; ninguna UI o capacidad inventada. No aplanar todo a prosa ni convertir todo en tablas.
 
 ### Continuidad SEO/AEO/GEO y handoffs
 

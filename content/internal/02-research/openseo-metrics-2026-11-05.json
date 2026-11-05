@@ -1,0 +1,53 @@
+{
+  "source": "OpenSEO MCP get_keyword_metrics / DataForSEO",
+  "projectId": "1c4bb956-3952-4af3-8965-cd5808e6159a",
+  "observedDateUTC": "2026-11-05",
+  "underlyingMetricPeriod": null,
+  "parameters": {"languageCode":"es","includeMonthlyTrends":false,"includeClickstreamData":false,"sortBy":"search_volume"},
+  "requestedKeywords": ["comunidad de inteligencia artificial","comunidades de ia","organizaciones de inteligencia artificial","proyectos de inteligencia artificial","fundamentos de inteligencia artificial","modelos de inteligencia artificial","evaluación de modelos de inteligencia artificial","desarrollo de software con inteligencia artificial","programación con ia","programación asistida por ia","inteligencia artificial para investigación científica","inteligencia artificial en la ciencia","inteligencia artificial en finanzas","inteligencia artificial aplicada a finanzas","ai engineering","software with ai","curso de inteligencia artificial","formación en inteligencia artificial","capacitación en inteligencia artificial para empresas","herramientas de inteligencia artificial","productos de inteligencia artificial","directorio de herramientas de ia","investigaciones sobre inteligencia artificial","comunidad de desarrolladores","ai foundations","ai for software","ai for science","ai for finance"],
+  "rowFields": ["keyword","search_volume","keyword_difficulty","main_intent","cpc_usd","ads_competition","ads_competition_level"],
+  "missingRowMeaning": "unknown_not_zero; compute requestedKeywords minus returned row keywords for each market",
+  "metaOmittedFields": ["creditsCharged","creditsRemaining","runId"],
+  "markets": [
+    {"country":"PE","locationCode":2604,"balanceBefore":9787,"balanceAfter":9772,"reservedCredits":150,"rows":[
+      ["curso de inteligencia artificial",880,0,"informational",1.72,0.73,"HIGH"],
+      ["herramientas de inteligencia artificial",260,4,"commercial",1.18,0.28,"LOW"],
+      ["ai for science",10,null,"informational",null,0.29,"LOW"],
+      ["desarrollo de software con inteligencia artificial",10,null,"informational",2.08,0.47,"MEDIUM"],
+      ["formación en inteligencia artificial",10,null,"informational",null,0,"LOW"],
+      ["inteligencia artificial en finanzas",10,null,"commercial",null,0.19,"LOW"],
+      ["investigaciones sobre inteligencia artificial",10,null,"informational",null,0,"LOW"],
+      ["proyectos de inteligencia artificial",10,null,"informational",null,0,"LOW"]
+    ]},
+    {"country":"MX","locationCode":2484,"observedAtUTC":"2026-11-05T01:47:37.318Z","balanceBefore":9772,"balanceAfter":9756,"reservedCredits":150,"rows":[
+      ["curso de inteligencia artificial",1300,0,"informational",2.7,0.76,"HIGH"],
+      ["ai engineering",590,53,"informational",2.45,0.57,"MEDIUM"],
+      ["herramientas de inteligencia artificial",480,4,"commercial",1.03,0.24,"LOW"],
+      ["modelos de inteligencia artificial",260,7,"informational",1.96,0.04,"LOW"],
+      ["fundamentos de inteligencia artificial",210,0,"informational",2.07,0.21,"LOW"],
+      ["inteligencia artificial en finanzas",30,null,"commercial",1.3,0.62,"MEDIUM"],
+      ["proyectos de inteligencia artificial",30,0,"informational",null,0.07,"LOW"],
+      ["inteligencia artificial en la ciencia",20,null,"informational",null,0,"LOW"],
+      ["ai for science",10,null,"informational",null,0.33,"MEDIUM"],
+      ["desarrollo de software con inteligencia artificial",10,null,"informational",null,0.64,"MEDIUM"],
+      ["directorio de herramientas de ia",10,null,"commercial",null,null,null],
+      ["inteligencia artificial aplicada a finanzas",10,null,"commercial",0.82,0.86,"HIGH"],
+      ["inteligencia artificial para investigación científica",10,null,"commercial",1.02,0.65,"MEDIUM"],
+      ["productos de inteligencia artificial",10,null,"commercial",null,0,"LOW"]
+    ]},
+    {"country":"CO","locationCode":2170,"observedAtUTC":"2026-11-05T01:47:45.412Z","balanceBefore":9756,"balanceAfter":9740,"reservedCredits":150,"rows":[
+      ["curso de inteligencia artificial",1000,0,"informational",2,0.76,"HIGH"],
+      ["ai engineering",480,57,"informational",1.34,0.55,"MEDIUM"],
+      ["herramientas de inteligencia artificial",320,13,"commercial",0.67,0.39,"MEDIUM"],
+      ["modelos de inteligencia artificial",140,5,"informational",0.67,0.06,"LOW"],
+      ["proyectos de inteligencia artificial",50,57,"informational",null,0.1,"LOW"],
+      ["ai for science",10,null,"informational",0.63,0.25,"LOW"],
+      ["comunidad de desarrolladores",10,18,"navigational",null,0.05,"LOW"],
+      ["desarrollo de software con inteligencia artificial",10,null,"informational",2.11,0.83,"HIGH"],
+      ["inteligencia artificial en finanzas",10,null,"commercial",2.39,0.33,"LOW"],
+      ["inteligencia artificial en la ciencia",10,null,"informational",null,0.02,"LOW"],
+      ["productos de inteligencia artificial",10,null,"commercial",null,0,"LOW"],
+      ["programación asistida por ia",10,null,"informational",null,null,null]
+    ]}
+  ]
+}

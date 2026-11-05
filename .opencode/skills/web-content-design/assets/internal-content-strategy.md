@@ -51,7 +51,7 @@ Por audiencia:
 
 ### Modelos de campos para tipos repetibles
 
-Cuando haya fichas/directorios/catálogos/cursos/servicios/publicaciones/casos/eventos, definir una vez por tipo; excepciones materiales se registran por entrada. No presupone CMS ni se exige para páginas estáticas. Vincular campos a secciones de §6 y registros de §8/Dossier, sin copiar valores/claims en varias fuentes.
+Aplicar [`../references/content-structures.md`](../references/content-structures.md). Cuando la tarea requiera unidades/campos, definir el modelo una vez por tipo o sección, incluidas colecciones o estructuras compuestas dentro de páginas estáticas; excepciones materiales se registran por entrada. No presupone CMS, UI, URL propia ni Schema; un bloque editorial simple no necesita modelo de campos. Vincular campos a secciones de §6 y registros de §8/Dossier, sin copiar valores/claims en varias fuentes. «Tipo» puede identificar la unidad de una sección, no necesariamente un tipo de página.
 
 | Tipo | Campo | Significado / formato editorial | Obligatorio o condición de uso | Sección responsable | Fuente / claim referenciado | Relación / estado / dependencia |
 |---|---|---|---|---|---|---|
@@ -63,6 +63,8 @@ Ejemplos orientativos, seleccionar solo lo pertinente:
 ## 6. Arquitectura completa por página
 
 Describir cada página o tipo de página. Hero se incluye como sección independiente solo si tiene una función propia distinta de la primera sección de desarrollo. No duplicar continuidad en esta tabla cuando se expresa mejor en recorridos.
+
+En contenido/elementos esperados definir, solo si es material: forma o combinación, unidad/inventario conocido, modelo de campos de §5, relación/orden y acción esperada. Usar un esquema breve asociado si la celda queda ilegible. Conservar modelos validados sin poblar y señalar qué falta y qué bloquea en §10; no sustituirlos por un párrafo ni inventar cantidad/unidades.
 
 | Orden | Sección | Objetivo | Qué comunica o resuelve | Contenido/elementos esperados | Evidencia o condición | Dependencia material |
 |---|---|---|---|---|---|---|
@@ -82,6 +84,8 @@ Aplicar [`../references/seo-ai-editorial.md`](../references/seo-ai-editorial.md)
 |---|---|---|---|---|
 
 No copiar métricas ni keywords completas. Topic solo aclara dominio semántico cuando cluster no basta; no nuevo mapa. Sin research ejecutado, atribuir origen a brief/decisión humana, no a señales supuestas.
+
+Cuando OpenSEO haya sido usado, §8.1 referencia la intención contrastada/provisional, mercado y evidencia del Keyword Map; aplica aquí solo consecuencias aceptadas en B2 para cobertura/prioridad/ownership y después copy/metadatos de E2. No copiar métricas, consumo ni queries; su trazabilidad permanece en Research/Dossier. Ninguna etiqueta, KD o gap del proveedor aprueba páginas ni cambia alcance comercial automáticamente. Sin OpenSEO, la misma cadena sigue siendo válida con fuentes existentes y límites explícitos.
 
 ### 8.2 Modelo mínimo de entidades
 
@@ -180,6 +184,7 @@ Mantener fuera de E1 la metodología, detalle de research, queries/URLs, matrice
 - [ ] Audiencias, páginas, secciones, objetivos, recorridos, CTA, mensajes, dependencias y dirección editorial están definidos o señalados como pendientes.
 - [ ] Cada decisión material puede rastrearse a su estado interno y fuente/decisión humana.
 - [ ] Los pendientes que bloquean aprobación se distinguen de datos que pueden completarse después.
+- [ ] Estructura proporcional por sección: unidades/campos y relaciones materiales definidos; E1 los hará comprensibles sin copy completo, E2 los mostrará en su cuerpo principal. Modelos incompletos conservados, sin prescribir UI.
 - [ ] AEO/GEO readiness registrada por página material: cadena reconstruible, pendientes y NO APLICA justificados; handoffs definidos sin afirmar ejecución.
 - [ ] Preguntas tienen sección/campo responsable; entidades, relaciones y modelos repetibles materiales están operativos, con claims referenciados y gobernanza proporcional.
 - [ ] La proyección E1 prevista permite mostrar consecuencias arquitectónicas materiales con lenguaje cliente y límites, sin matrices/logs internos ni promesas de resultados.

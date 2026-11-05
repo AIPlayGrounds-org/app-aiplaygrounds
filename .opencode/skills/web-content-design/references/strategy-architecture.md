@@ -16,6 +16,8 @@ Antes de generar E1 exige responder: **¿Puedo producir todas las secciones sust
 
 La arquitectura debe responder por página/tipo: qué contiene y para qué sirve cada sección. Registra orden, objetivo, qué comunica/resuelve, contenido/elementos esperados, evidencia/condición y dependencias materiales. Define aparte los recorridos: intención, punto de entrada, trayecto y resultado/CTA. No dupliques continuidad en la tabla de arquitectura si se expresa mejor en recorridos.
 
+Aplica el contrato canónico de [`content-structures.md`](content-structures.md) a todas las secciones, también estáticas: bloque editorial cuando baste; unidades/campos, comparación, secuencia, atributos o acción/estado cuando la tarea lo requiera, combinables. Registra modelos en Estrategia §5 y su aplicación en §6 sin duplicarlos. Esta decisión no depende de tener fichas dinámicas ni de SEO/Schema. E1 debe hacer comprensible la estructura material; E2 la desarrolla visiblemente, no solo en notas. No decidir componentes UI al modelar contenido.
+
 Hero es una sección independiente solo cuando cumple una función propia distinta de la primera sección de desarrollo; nunca es universal. Para fichas dinámicas o páginas repetibles, especifica el tipo/plantilla, no repitas una fila por registro.
 
 Los tipos repetibles requieren además modelo por campo (significado, condición de uso, fuente/claim, sección, relaciones y estado) en Estrategia §5. No toda página estática es un content type ni toda ficha exige URL SEO propia. La cadena necesidad/cluster → entidad/pregunta → página/bloque/campo → claim/evidencia → relación → requisito técnico → medición se reconstruye mediante registros referenciados y readiness de Estrategia §8, según [`seo-ai-editorial.md`](seo-ai-editorial.md). Preguntas no obligan a FAQ ni entidades a nuevas páginas. Completar readiness antes de cerrar Estrategia/E1, sin gate adicional.
@@ -23,6 +25,8 @@ Los tipos repetibles requieren además modelo por campo (significado, condición
 Deriva páginas/secciones de B2, estrategia, necesidades/tareas, O/C, patrones pertinentes, capacidades reales, evidencia, condiciones y decisiones humanas. No crees páginas por keywords. Ownership, cobertura temática, relaciones, entidades/preguntas y conclusiones SEO/IA con impacto material deben incorporarse primero en Estrategia. [`seo-ai-editorial.md`](seo-ai-editorial.md) no autoriza introducir esas decisiones directamente en E1. Los patrones de [`pattern-library.md`](pattern-library.md) alimentan arquitectura interna antes de proyectar.
 
 ## Proyección unidireccional Interno → E1
+
+Las señales de OpenSEO (intención contrastada, competidores, gaps, volumen/KD disponibles) llegan por Research/Keyword Map y aceptación en Gate B/B2, no desde un reporte del proveedor directamente a arquitectura. Un gap es oportunidad propuesta solo si encaja con oferta, capacidad, necesidad y alcance. En One Page conserva clusters compatibles con una URL; en multipágina exige necesidad diferenciada, no una página por keyword. No reabrir alcance comercial por volumen o KD ni copiar la arquitectura del competidor.
 
 E1 es un artefacto derivado, no una fuente primaria de edición: `E1 ⊆ estado interno`. No puede introducir por primera vez audiencia, página, sección, objetivo, recorrido, CTA, mensaje, dependencia, dirección editorial, campo de ficha ni condición material. Puede omitir, resumir, reformular y reorganizar el estado vigente.
 

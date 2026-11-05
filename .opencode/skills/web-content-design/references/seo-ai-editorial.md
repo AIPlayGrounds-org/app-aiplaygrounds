@@ -22,7 +22,7 @@ Este contraste cubre la dimensión de contenido, semántica y estructura editori
 - Usa headings jerárquicos que orientan; evita títulos vacíos, duplicidad funcional y keyword stuffing.
 - Conecta páginas con enlaces internos descriptivos y destinos reales.
 - Propón SEO title y meta description propios, fieles al contenido y útiles; distingue ambos de H1 y bajada. No garantices texto mostrado, ranking, clic ni impongas longitud universal.
-- Usa Keyword Planner con sus límites expuestos en `search-research.md`; el volumen no manda solo.
+- Usa Keyword Planner y OpenSEO MCP opcional con sus límites expuestos en [`search-research.md`](search-research.md); el volumen no manda solo. SERP/intención, KD disponible, competidores y gaps sustentan cobertura, copy y metadatos, no deciden automáticamente arquitectura ni negocio. Métricas ausentes no son cero; competencia publicitaria/CPC no son dificultad orgánica. La operación y consumo de OpenSEO viven solo en [`openseo-research.md`](openseo-research.md); no activar tracking/checks IA o auditoría técnica para completar este contraste.
 - No declares canibalización por parecido textual ni recomiendes fusionar sin evidencia de consultas/páginas/periodo.
 
 ## Entidades, respuestas y relaciones

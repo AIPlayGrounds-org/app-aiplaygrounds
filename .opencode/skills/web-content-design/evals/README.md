@@ -15,6 +15,8 @@ Esta suite evalúa la arquitectura B0/B1/B2 y los contratos cliente/interno E1, 
 | [`activation.md`](activation.md) | Activación espontánea | 22 development + 8 holdouts de activación reservados; no validan B0/B1/B2 |
 | [`behavior-cases.md`](behavior-cases.md) | Brief, gates, research, ownership O/C, E1 cliente, Dossier, triangulación/Delta/saturación, feedback ledger, arquitectura de secciones, voz/copy/QA | development; ampliada para nueva arquitectura |
 | [`e2e-cases.md`](e2e-cases.md) | Recorridos B0→B1→research→B2→E1 y ciclo posterior, requisitos semánticos y handoffs | 13 casos development |
+| [`content-structure-cases.md`](content-structure-cases.md) | Estructuras proporcionales, 20 escenarios de variedad + 4 adversariales; variantes E1/E2 independientes | 24 fixtures development (48 observaciones previstas), no ejecutadas |
+| [`openseo-cases.md`](openseo-cases.md) | Proveedor opcional, países/idiomas, métricas/intención, presupuesto, errores, aislamiento y gates | OSEO-01–14 ejecutados con fixtures inline; 2 repeticiones tras corrección menor; [campaña y límites](results/openseo-2026-11-04.md) |
 | [`holdouts.md`](holdouts.md) | Holdout conductual transversal | Ninguno activo para B0/B1/B2; diseñar/reservar al congelar y no ejecutar durante desarrollo |
 
 Las expectativas de carga pre-registradas están en [`reference-expectations.md`](reference-expectations.md). La rúbrica está en [`rubric.md`](rubric.md). Las corridas reales se registran en [`results/runs.jsonl`](results/runs.jsonl), cuyo esquema se explica en [`results/README.md`](results/README.md).
@@ -22,6 +24,8 @@ Las expectativas de carga pre-registradas están en [`reference-expectations.md`
 **Ampliación SEO/AEO/GEO v1 (2026-10-05):** READY-01–17 y E2E-11–13 son fixtures definidos, no ejecutados. Cubren cadena/ownership hasta bloque, entidades, modelos repetibles, claims/relaciones, candidatos Schema, discovery/bots, aplicación E1, límites, copy humano, medición, governance, NO APLICA y legacy. Los registros históricos no validan este contrato. Tests/checker son validación estructural separada, no behavior ni E2E del agente.
 
 ### Clases de ejecución
+
+**Regresión local OpenSEO:** `python3 -m unittest discover -s tests -v` verifica contratos con mutaciones, integridad de fixtures e instalación/actualización en proyecto desechable, más hashes, prompts y auditoría local de la campaña preservada. Sin MCP/red/créditos ni dependencias nuevas; no vuelve a ejecutar agentes. Para behavior nuevo seguir [`openseo-cases.md`](openseo-cases.md) con mocks o fixture inline, nunca conectar el proveedor pagado para probar la skill sin autorización expresa. Separar siempre resultado mecánico de conducta observada.
 
 - **Activation:** observar selección espontánea de `web-content-design`; no mencionar el nombre de la skill ni forzar su carga en el prompt.
 - **Behavior:** cargar la skill explícitamente para aislar calidad de respuesta; usar un contexto limpio por caso. Puede ser un development spot-check sin baseline o un comportamiento comparativo A/B; solo el segundo exige ambas variantes.

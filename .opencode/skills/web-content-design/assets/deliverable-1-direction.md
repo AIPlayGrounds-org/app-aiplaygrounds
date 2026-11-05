@@ -77,6 +77,10 @@ Por cada página o tipo repetible, presenta arquitectura legible por sección. N
 
 Indica solo condiciones o dependencias materiales que el cliente necesite conocer. Hero se representa como sección independiente únicamente cuando cumple una función propia diferente de la primera sección de desarrollo; no es universal. Los nombres son estructura, no copy final.
 
+En «Contenido / elementos clave» explica la estructura material con lenguaje sencillo: qué unidades contiene la sección, información necesaria por unidad, cómo se relacionan/ordenan/comparan y acción esperada si aplica. Cantidades solo confirmadas. Usa un esquema breve debajo de la sección si el detalle no cabe legiblemente en la tabla; no añadas campos sin utilidad. Ejemplo de dirección: servicios con nombre, necesidad que resuelven, destinatario y destino al detalle; no redactar todavía cada descripción. Un bloque de presentación puede seguir siendo heading y texto. Admite secciones híbridas sin forzar una categoría única.
+
+Conserva el esquema validado si faltan datos e indica qué se completará y cuándo; una decisión estructural ausente se resuelve primero en internos. No mostrar taxonomías internas ni decidir cards, grids u otros componentes: las tablas del documento organizan contenido, no especifican UI. Contrato de modelado/proyección: [`../references/content-structures.md`](../references/content-structures.md).
+
 ## 5. Cómo se moverán las personas por la web
 
 Explica recorridos entre páginas/secciones y el resultado; no repitas la arquitectura completa.

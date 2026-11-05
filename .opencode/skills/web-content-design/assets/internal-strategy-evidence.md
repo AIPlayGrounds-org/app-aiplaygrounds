@@ -44,6 +44,17 @@ Registra mercado/idioma, fecha, restricciones de acceso y razón de selección/o
 
 ## 4. Research ejecutado
 
+### OpenSEO opcional — acceso y consumo por investigación
+
+Solo si es pertinente, aplicar [`../references/openseo-research.md`](../references/openseo-research.md). Integrar en preflight §3: identidad/dominio del proyecto actual y referencia local al ID resuelto, país/código/idioma, conexión/cobertura, autorización (alcance/fecha), presupuesto máximo configurable en créditos y/o moneda, tarifa/conversión y fuente/fecha, saldo conocido o desconocido. No incluir credenciales ni datos de otros proyectos. Sin proveedor/autorización/créditos/presupuesto, registrar motivo y alternativa; no bloquear decisiones independientes ni añadir gate.
+
+| Consulta / referencia a research-queries | Estimación y fuente (no verificada) | Reserva máxima / pendiente de conciliación | Consumo verificado (meta.creditsCharged o desconocido) | Saldo (meta.creditsRemaining o desconocido) | Fecha / runId si disponible / error | Presupuesto restante seguro / alternativa |
+|---|---|---|---|---|---|---|
+
+No duplicar respuestas completas aquí. Conciliar reservas sin asumir error=cargo cero; consumo estimado y verificado separados. Comprobar tope acumulado antes de cada llamada según referencia; sin máximo acotable no consumir. Reutilización solo del mismo proyecto/mercado/idioma/alcance/vigencia. Esta subsección no se rellena por rutina ni se entrega al cliente.
+
+### Evidencia de investigación
+
 | Pregunta/decisión | Seeds y motivo | Mercado/idioma | Instrumento y consultas | Fecha | Resultado/error | Límites |
 |---|---|---|---|---|---|---|
 
@@ -51,6 +62,8 @@ Registra mercado/idioma, fecha, restricciones de acceso y razón de selección/o
 |---|---|---|---|---|---|---|---|---|---|---|---|
 
 Websearch descubre resultados actuales. Webfetch puede profundizar URL aportada por usuario, fuente primaria conocida/documentada o resultado descubierto con websearch. No fabricar SERPs ni atribuir un Top 10 sin fuente que lo garantice. Conserva procedencia y observación separadas de inferencia.
+
+SERP MCP de OpenSEO también descubre URLs profundizables sin repetir websearch. En `research-queries.md` conserva fuente/herramienta/parámetros no secretos, seed/consulta, fecha, país/idioma, alcance por métrica, source/fallback, filas ausentes/null/error y respuesta referenciada; Keyword Map referencia intención del proveedor vs editorial, evidencia SERP, prioridad/motivo y estado. Cobertura por métrica observada, nunca porcentajes heredados de otra investigación. No confundir CPC/competencia publicitaria con KD ni KD=0 con baja competencia comprobada.
 
 ## 5. Triangulación de evidencia
 

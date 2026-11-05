@@ -11,6 +11,8 @@ Son dos ejes independientes. Antes de research formal, registra por decisión la
 
 Para una fuente omitida, el estado operativo es `—` porque no corresponde ejecutar. Ejemplos: Planner pertinente con seeds todavía no responsables = `USAR / FALTA BASE RESPONSABLE`; Trends irrelevante = `OMITIR — no puede cambiar esta decisión / —`; Trends pertinente que necesita CSV = `USAR / REQUIERE INPUT DEL USUARIO`; herramienta pertinente no instalada = `USAR / NO DISPONIBLE`; ejecución completada o fallida = `USAR / EJECUTADO` o `USAR / ERROR OBSERVADO`.
 
+**Fuente utilizada no equivale a consulta nueva.** Si la evidencia aportada, una fixture o un registro histórico compatible sustenta la decisión, registra esa fuente `USAR`: `LISTO` si está accesible y falta analizarla, o `EJECUTADO` cuando se haya leído/analizado, indicando expresamente **lectura de evidencia aportada/reutilizada**, su procedencia y fecha original. Esto no acredita una llamada al proveedor en esta sesión. No marques la fuente `OMITIR` solo porque no se recomprará la señal; anota «sin nueva consulta» como decisión de adquisición, no como estado operativo nuevo. **`USAR` nunca lleva estado `—`**, tampoco para material inline: el marcador queda reservado a fuentes omitidas. Si una tabla enumera solo herramientas externas y la fixture es un input, puede documentarse su análisis fuera de la tabla, sin fingir ejecución remota.
+
 Planner informa lenguaje de búsqueda, ideas, señal aproximada de demanda y comparación de términos. No prueba por sí solo prioridad estratégica, intención completa, arquitectura, dificultad SEO, naming adecuado, necesidad de página ni calidad comercial. `avg_monthly_searches` es aproximado; `ads_competition` es competencia publicitaria.
 
 Websearch descubre resultados actuales; webfetch profundiza una URL pertinente que haya sido (a) aportada explícitamente por el usuario, (b) conocida/documentada como fuente primaria pertinente, o (c) descubierta mediante websearch. No obligues a websearch a redescubrir una URL conocida. Para búsqueda de mercado, websearch descubre y webfetch profundiza selectivamente; listar URLs no es síntesis. No uses webfetch como sustituto del descubrimiento, no construyas/fetchees URLs de buscadores, no fabriques SERPs ni afirmes Top 10 sin fuente que lo garantice. Un fetch directo de una fuente conocida permite probar un hecho específico sobre ella; las conclusiones amplias aún requieren triangulación independiente. Si Planner es pertinente y se usará web, conserva la precedencia: preflight → intento real Planner → interpretar señal → seleccionar preguntas/clusters → websearch → webfetch selectivo → contraste. Esto no convierte Planner en fuente universalmente prioritaria: para intención/terminología, web puede ser más decisional.
@@ -20,6 +22,10 @@ Si webfetch no recupera el contenido (p. ej., bloqueo, 404 o error), registra el
 Trends es opcional y no se consulta ni pregunta por rutina. Úsalo si tendencia, crecimiento/caída, estacionalidad, geografía relativa, comparación temporal o búsquedas relacionadas podrían cambiar una decisión. Si es material pero requiere export, registra `USAR / REQUIERE INPUT DEL USUARIO`, solicita puntualmente el CSV y continúa lo demás; si no llega, registra limitación explícita, salvo que sea indispensable para resolver esa decisión. Si no hay decisión temporal, registra `OMITIR — no puede cambiar esta decisión` y estado operativo `—`. GSC solo con propiedad existente y datos aportados o acceso válido; describe el comportamiento de esa propiedad/periodo, no demanda total, dificultad SEO ni research de mercado completo. Sitio nuevo: `OMITIR — no puede cambiar esta decisión`; no preguntar.
 
 El dossier interno conserva preflight, consultas, mercados, fechas, fuentes, resultados, límites y Decision Delta. E1 muestra únicamente `conclusión → razón suficiente → límite material` si es necesario para comprender/aprobar.
+
+### OpenSEO en el preflight existente
+
+OpenSEO se evalúa en el **Research Preflight general** existente, no como etapa posterior obligatoria. Para keywords, métricas/KD, intención/SERP, competidores, clustering y content gap editorial pertinentes carga [`openseo-research.md`](openseo-research.md), contrato único de operación MCP, país/idioma, calidad, autorización, consumo y fallback. No sustituye ni elimina la precedencia de Planner cuando está `USAR / LISTO`; no requiere consultar ambos proveedores para corroborar la misma métrica. No inicia research antes de B1 ni añade gate/entregable. Español y Latinoamérica son defaults editoriales, no autorización para elegir país ni mezclar volúmenes nacionales. La ausencia del proveedor no bloquea este método.
 
 ## 1. Keywords semilla
 
@@ -44,6 +50,8 @@ Conserva resultados recibidos de forma que puedan rastrearse a seed, fecha, merc
 - Ausencia de campo/valor: desconocido, no cero.
 
 ## 3. Limpiar y filtrar
+
+Con OpenSEO aplica además el control por métrica de su referencia: null/keyword ausente no es cero; CPC y competencia publicitaria no son dificultad orgánica; KD=0 no prueba baja competencia. Conserva país, idioma, fecha, fuente y alcance por métrica; etiqueta automática de intención se contrasta con SERP y queda provisional si la evidencia no basta. Competidores/gaps aportan hipótesis de necesidades relevantes frente a oferta/cobertura planificada, nunca páginas obligatorias.
 
 Descarta o marca términos fuera de oferta, público/mercado o capacidad real; ruido semántico de la herramienta; ambigüedad sin valor; duplicados conceptuales; variantes que no cambian necesidad/intención. Conserva una nota breve del criterio cuando el descarte sea material. No confundas la oferta de competidores con algo que el cliente ofrece.
 
@@ -75,11 +83,13 @@ Cuando Planner está `USAR / LISTO` y se utilizará websearch, la consulta real 
 
 Describe el trabajo como “resultados web actuales”, “contraste de intención” o “evidencia observada”. No afirmes que viste literalmente el “Top 10 de Google” salvo que la fuente utilizada garantice explícitamente que esos resultados son del Top 10 de Google.
 
+Cuando se use OpenSEO, `get_serp_results` también permite discovery de URLs y contraste SERP por mercado; sus resultados pueden profundizarse directamente con webfetch sin repetir websearch. Es una vía adicional documentada a la secuencia web anterior, no permiso para fabricar/fetchear URLs de buscadores. Mantén intento Planner previo cuando esté pertinente y listo antes de ese contraste SERP. Si la muestra MCP ya resuelve la pregunta, no dupliques el contraste web por rutina; registra fuente, profundidad y alcance real.
+
 ## 5. Fuentes complementarias
 
 - **Google Trends:** opcional. Úsalo solo si comparación, tendencia, crecimiento/caída, estacionalidad, geografía o búsquedas relacionadas podrían cambiar una decisión. CSV exportado por el usuario es suficiente para análisis. Su índice es interés relativo/normalizado dentro de escala y filtros elegidos, no volumen absoluto; no comparar series sin revisar configuración.
 - **Google Search Console:** solo para web previa con CSV/XLSX aportado (queries, impresiones, clics, CTR, posición, páginas). Úsalo como evidencia de la propiedad; periodo, filtros, anonimización y alcance importan. No es demanda completa del mercado ni auditoría SEO técnica.
-- Fuentes externas adicionales solo se incorporan cuando el usuario las proporciona o solicita explícitamente y pueden aportar evidencia relevante a una decisión. Se tratan como evidencia complementaria, no como dependencias del workflow.
+- **OpenSEO MCP:** proveedor complementario previsto por preflight, no obligatorio; operación y controles en `openseo-research.md`. No necesita petición adicional de fuente si es pertinente, pero sí autorización de consumo antes de llamadas pagadas. Otras fuentes externas adicionales solo se incorporan cuando el usuario las proporciona o solicita explícitamente y pueden aportar evidencia relevante a una decisión. Se tratan como evidencia complementaria, no como dependencias del workflow.
 
 ## 6. Priorizar, proponer y gobernar decisiones
 
@@ -88,6 +98,8 @@ Cruza, cuando haya evidencia: relevancia de negocio; necesidad; intención; dema
 Keyword Map interno conserva `cluster | nivel | necesidad/intención | keywords representativas | evidencia/métrica y límites | prioridad/motivo | página responsable propuesta | relación padre/hijos | riesgo de solapamiento | implicación estratégica | estado/cobertura/destino/pendiente`. Research presenta evidencia, observaciones y **propuestas de conclusión**, no decisiones aprobadas. Tras revisión humana incorpora solo conclusiones aceptadas en B2; rechazo/corrección queda registrado y ninguna salida del instrumento altera B2 automáticamente. El Entregable 1 muestra clusters y conclusiones comprensibles, no cientos de términos.
 
 ## Triangulación, calidad, profundidad y cierre
+
+Para métricas MCP, `evidencia/métrica y límites` del Keyword Map enlaza registro de consulta/fecha/país/idioma/fuente en `research-queries.md`, incluida cobertura faltante e intención editorial vs etiqueta automática; `prioridad/motivo` explicita efecto real y estado. Amplía filas existentes solo cuando sea material, sin otro Keyword Map ni nueva plantilla obligatoria para proyectos legacy.
 
 Una fuente primaria puede probar un hecho específico sobre esa fuente (p. ej., que su producto tiene cierto nombre). Por sí sola no generaliza significado, uso de mercado, intención, adopción, práctica común ni conveniencia terminológica. Para conclusiones amplias triangula fuentes pertinentes e independientes, conserva desacuerdos y no fuerces consenso.
 

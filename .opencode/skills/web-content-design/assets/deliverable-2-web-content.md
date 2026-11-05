@@ -36,10 +36,31 @@ Organiza copy público para cliente y diseño/desarrollo. Ajusta campos al proye
 **Meta description:**
 **H1:**
 
-| Orden | Sección aprobada / componente | Heading propuesto | Copy público | Condición o respaldo relevante | CTA / enlace y destino |
-|---|---|---|---|---|---|
+### Sección [nombre aprobado]
 
-Conserva la secuencia aprobada de secciones. Identifica con precisión cualquier subdivisión visual o agrupación menor que mantenga su función; no la presentes como cambio estratégico. Si se propone cambiar propósito, cobertura, evidencia/condición, acción o recorrido, déjalo fuera de la versión aprobada de copy hasta resolver la reapertura.
+Repite un bloque por sección en su orden aprobado. Sigue [`../references/content-structures.md`](../references/content-structures.md): el contenido principal debe mostrar la estructura, no resumirla en una celda ni esconderla en notas. Estas indicaciones son de plantilla: sustituir por el contenido real, sin exponer taxonomía o instrucciones al cliente.
+
+**Heading propuesto (si aplica):**
+
+Copy público: heading y cuerpo con apoyo/acción opcionales cuando basten. Para contenido compuesto, mostrar unidades y campos en tablas documentales, listas etiquetadas, secuencias o subsecciones, según legibilidad; combinar partes cuando la sección sea híbrida. No imponer tabla a todo ni CTA por unidad. Ejemplos de representación, no de UI:
+
+| Servicio | Qué resuelve | Para quién | Acción / destino |
+|---|---|---|---|
+
+O lista ordenada con acción y resultado por paso; o subsecciones por persona/proyecto cuando sus descripciones sean extensas. Seleccionar solo el formato necesario, no copiar ejemplos vacíos.
+
+**CTA / enlace y destino (si corresponde):**
+
+**Notas editoriales — separadas del copy (si hacen falta):**
+
+| Condición o respaldo relevante | Afecta a | Restricción editorial |
+|---|---|---|
+
+Conservar en copy las condiciones/atribuciones que el visitante necesita; aquí solo procedencia y restricciones editoriales adicionales.
+
+**Datos pendientes / esquema por completar — no publicable (si aplica):** campos o unidades faltantes, referencia al registro de pendientes y bloqueo concreto. Si no hay datos reales, mostrar aquí el modelo con labels comprensibles y propósito, no unidades ficticias ni guiones que oculten qué falta. El esquema permanece junto a la sección en el cuerpo principal; no es copy público ni prueba de publicación lista.
+
+Conserva la secuencia aprobada de secciones. Identifica con precisión cualquier subdivisión editorial o agrupación menor que mantenga su función; no la presentes como cambio estratégico. Si se propone cambiar propósito, cobertura, evidencia/condición, acción o recorrido, déjalo fuera de la versión aprobada de copy hasta resolver la reapertura. Tablas/listas son representación documental; no especifican cards, grids, accordions, tablas HTML ni otra composición visual. Restricciones de UI aportadas permanecen separadas.
 
 ### Formularios, microcopy y estados (si aplican)
 

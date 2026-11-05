@@ -1,221 +1,244 @@
-# Research formal desde B1 — Evidencia regional y propuestas
+# Research estratégico y SEO · AI PlayGrounds v2
 
-**Proyecto:** AI PlayGrounds
+**Etapa:** Research desde [B1 validada](../01-brief-diagnostico/diagnostico-b1.md), sin reiniciar intake. **Estado:** propuestas para Gate B; no B2.
+**Ciclo:** 04/11/2026 local; ejecución técnica ya en 05/11 UTC. **Mercados iniciales:** Perú, México y Colombia, español, nacionales y separados. No limitan el alcance institucional latinoamericano.
 
-**Fecha de ejecución y observación:** 29/09/2026
+**Actualización SEO:** adquisición MCP completada el 05/11/2026 UTC. Se preserva la investigación estratégica de §§2–5; sus límites de adquisición iniciales se actualizan únicamente mediante §11. Las cifras de §6 y el CSV siguen siendo históricas; no se sobrescriben con datos nuevos.
 
-**Base vinculante:** `content/internal/01-brief-diagnostico/diagnostico-b1.md`; Gate A ya validado.
+## 1. Resultado y cobertura real
 
-**Estado:** Gate B resuelto tras revisiones del usuario y elección de Software Engineering with AI. Research concluido; conclusiones aceptadas consolidadas en `content/internal/01-brief-diagnostico/diagnostico-b2.md`. Estrategia/arquitectura/dirección editorial se presentan para revisión en E1, no están aprobadas por este gate. Migración 05/10/2026: se conserva la ejecución histórica, sin nuevas consultas. Los estados intermedios de Gate B son historial; el cierre del final prevalece.
+Se conserva el contraste estratégico dirigido de **17 páginas primarias**, sin repetirlo. La continuación autorizó Default y resolvió la información de costo mediante código público oficial. OpenSEO aportó **34 filas métricas nacionales** para 84 combinaciones solicitadas, **47 SERP exitosas de 48 intentadas** y una exploración de ideas depurada. Hay datos nuevos de volumen, KD, CPC e intención donde el proveedor los devolvió. Planner sigue sin repararse; su fallo ya no impide esta adquisición complementaria.
 
-## 1. Estado técnico vigente
+La adquisición SEO está cerrada proporcionalmente para Gate B, con vacíos explícitos. Se puede contrastar demanda literal e intención por mercado, pero **no declarar cuatro oportunidades de landing demostradas, dificultad baja por KD0, liderazgo o rentabilidad**. Los ocupantes orgánicos observados no son automáticamente competidores comerciales equivalentes de toda la organización.
 
-**Nota de precedencia editorial, 14/10/2026:** la ejecución y cierre de septiembre se conservan como historial. El feedback sobre E1 v11 sustituye el nombre oficial K1a por Software with AI y conserva AI Engineering; no modifica evidencia, seeds, consultas ni conclusiones de necesidades. B. Cercano y participativo pasa a dirección editorial APROBADA. Estado operativo en Estrategia y feedback E1; aprobación consolidada E1 pendiente. No research nuevo ni reapertura de Gate B.
+Trazabilidad: [consultas y fuentes F1–F17 / O1](research-queries.md), [observaciones históricas](keyword-observations.csv), [métricas MCP nuevas](openseo-metrics-2026-11-05.json), [SERP e intención](openseo-serp-2026-11-05.md), [Keyword Map](keyword-map.md) y [Dossier](../03-estrategia/dossier-evidencia-estrategica.md). B1, brief, arquitectura heredada y archivo v1 permanecen sin modificar.
 
-El CLI `seo-keywords` resuelve dinámicamente países e idiomas. La autenticación ADC con scope adwords y quota project fue corregida por el usuario; las consultas de esta ronda devolvieron resultados correctamente en PE/MX/CO/AR/CL/EC/CR — es y BR — pt.
+## 2. Reutilización de v1
 
-`functions.websearch` estaba disponible y se utilizó sustantivamente en la ronda registrada. `functions.webfetch` se utilizó solo después de búsquedas, sobre URLs concretas seleccionadas. Los errores de la ronda anterior no eran restricciones de esa ronda. Los intentos con HTTP 429 están separados del resto de consultas exitosas en `content/internal/02-research/research-queries.md`. Esta migración no comprueba disponibilidad operativa actual ni convierte disponibilidad histórica en observación nueva.
-
-**Archivos de evidencia:**
-
-- `content/internal/02-research/research-queries.md`: seeds exactas, comandos reconstruibles por mercado, búsquedas/resultados y lecturas directas F1–F10.
-- `content/internal/02-research/keyword-observations.csv`: observaciones seleccionadas usadas en el análisis y descartes materiales; país, idioma, conjunto de seeds, keyword, avg_monthly_searches y ads_competition.
-- `content/internal/02-research/keyword-map.md`: clusters, necesidad, intención, prioridad y ownership propuestos, con relaciones y límites.
-
-No se repitieron B0, Gate A o B1. No se hizo clasificación O/C ni arquitectura final.
-
-## 2. Preflight: decisiones y preguntas antes de investigar
-
-**Keyword Planner: pertinente y usado.** Existen seeds responsables desde formación/software, empresas, directorios y comunidad confirmados en B1. AI Engineering, Product Engineer y AI Builder se investigan como términos explorados en el brief incorporado por B1, no como nombres ya aprobados de cursos, oferta o audiencia.
-
-| Decisión que puede cambiar | Pregunta | Mercado/idioma e instrumento | Criterio de cierre |
-|---|---|---|---|
-| Naming formativo y audiencia | ¿Cómo distinguir desarrollar con apoyo de IA de integrar IA en software? ¿Product Engineer/AI Builder representan al público? | Consultas nacionales es; Planner; contraste web de cursos/roles y fuentes primarias | Propuesta de lenguaje entendible y separación de tareas sustentada, sin inventar catálogo ni presentar volumen genérico como intención formativa |
-| Mensaje de Empresas y acción secundaria | ¿Qué lenguaje distingue formación para equipos de interés exploratorio en PoC/MVP? | Planner es; consultas empresariales y fuentes de conceptos/oferta | Mantener oferta principal y límites B1; proponer denominación sin prometer ejecución ni ampliar a consultoría |
-| Descubrimiento y ownership de Labs | ¿Herramientas/productos e investigación tienen necesidades e intención distintas? | Planner es; directorios, trabajos y referentes de colección | Separación de unidades/recorridos sustentada; elegibilidad de Productos explícitamente pendiente; sin páginas por filtros |
-| Función de Comunidad | ¿Qué espera quien busca participar y cómo se diferencia de estudiar/postular una entrada? | Planner es; muestras de comunidad en EC/CR | Mensaje/acción distinguibles sin derivar miembros, demanda regional o incorporación automática |
-| Cobertura geográfica y lingüística | ¿Nuevos mercados cambian vocabulario, intención, nombres o páginas? ¿BR cambia expectativa de «Latinoamérica»? | Inicio PE/MX/CO/AR/CL es; expansión incremental EC/CR es y BR pt | Detener cuando nuevos mercados no alteren decisiones; pt separado, sin suma de países ni versiones lingüísticas automáticas |
-
-Trends y GSC no son dependencias: no se aportaron datos. No se verificaron estadísticas externas 23%/6%; no condicionan estas decisiones y siguen pendientes de publicación. Inglés posterior no justifica consultar US/en o US/es ahora.
-
-## 3. Secuencia ejecutada y cobertura incremental
-
-1. Corregir estados técnicos obsoletos y registrar preflight.
-2. Consultar PE/MX/CO/AR/CL en español con conjuntos T/G/B/D/E.
-3. Limpiar ideas por oferta/intención; aislar B y E para que los términos genéricos no oculten las seeds largas de menor señal.
-4. Comparar mercados: cursos/herramientas consistentes, especialización destacada en CO y ambigüedad de etiquetas en inglés.
-5. Añadir EC/CR en español para contrastar un contexto andino adicional y Centroamérica; añadir BR/pt por posible impacto lingüístico regional.
-6. Refinar consultas empresariales cortas R en MX/CO/CR: la señal larga insuficiente no equivale a falta de necesidad; comprobar lenguaje más amplio y su ambigüedad.
-7. Seleccionar clusters prioritarios y ejecutar búsquedas web reales para todos; preguntas transversales de naming y alcance incluidas.
-8. Leer selectivamente fuentes primarias/representativas devueltas por búsqueda; distinguir observación de fuente de inferencia.
-9. Revisar comparación regional, cierre incremental y propuestas de Gate B.
-
-### Registro de inclusión de mercados
-
-| País | Idioma | Motivo de inclusión | Decisión que puede cambiar | Señal nueva observada |
-|---|---|---|---|---|
-| PE | es | Base inicial indicada por usuario y contexto del proyecto | Lenguaje de formación/contacto en contexto local sin limitar alcance regional | «curso de inteligencia artificial» 880; AI Engineering 320; herramientas 320; muestra de capacitación Lima/contacto |
-| MX | es | Contexto latinoamericano hispanohablante distinto al andino | Escala y lenguaje empresarial frente a cursos para personas | Cursos 1300; AI Engineering 590; herramientas 480; «formación» 90; «IA para empresas» genérica ambigua; guías de capacitación para equipos |
-| CO | es | Contraste andino de oferta y nomenclatura | Evitar naming que induzca expectativa de posgrado | Especialización 1900 frente a curso 1000; páginas universitarias de posgrado; AI Engineering/aplicaciones en fuente con contexto colombiano |
-| AR | es | Contexto del Cono Sur con tradición de programas técnicos | Naming/formato, requisitos y recorrido de formación | Curso 1000; Product Engineer 110; diplomatura con nivelación y fundamento técnico en muestra, no oferta propia |
-| CL | es | Segundo contraste del Cono Sur | Audiencia/rol, lenguaje y necesidad de contenido | Curso 590; AI Engineering 260; vacante Product Engineer distingue definición de producto e implementación por AI Engineer |
-| EC | es | Añadido tras comparación inicial: probar transferencia andina fuera de PE/CO | ¿Vocabulario o escala obliga a propuesta nacional distinta? | Curso 210; AI Engineering 50; herramientas 140; comunidad de desarrolladores con IA en muestra; no nueva necesidad de URL nacional |
-| CR | es | Añadido para cubrir contexto centroamericano no observado | ¿Otro vocabulario o vía de entrada cambia naming/participación? | Curso 50; AI Engineering 70; herramientas 40; fuente local usa «Programación asistida con IA»; comunidad con WhatsApp; mismas tareas, sin variante nacional necesaria |
-| BR | pt | Mercado latinoamericano lingüísticamente distinto | Precisar idioma de la oferta y evitar trasladar naming es por defecto | Curso 9900; AI Engineering 1900; pesquisas 170; páginas de MBA/graduação; terminología portuguesa. No se fusiona con señales es |
-
-Los números de esta tabla son avg_monthly_searches aproximados por keyword/mercado, no un agregado regional. Se consultaron tantos contextos como se justificó por decisiones; no se cerró por alcanzar ocho países.
-
-## 4. Métricas comparables por país, sin agregación
-
-Valores de avg_monthly_searches; competencia publicitaria y trazabilidad de seeds en el CSV. Un guion significa dato no conservado/no observado en esa consulta, no cero. El período subyacente y la red no se muestran en el CLI; no se les atribuye un período inventado.
-
-| Keyword literal | PE/es | MX/es | CO/es | AR/es | CL/es | EC/es | CR/es |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| curso de inteligencia artificial | 880 | 1300 | 1000 | 1000 | 590 | 210 | 50 |
-| cursos de ia | 1900 | 2900 | 1600 | 2400 | 1600 | 320 | 90 |
-| aprender inteligencia artificial desde cero | 90 | 140 | 140 | 110 | 50 | 30 | 10 |
-| ai engineering | 320 | 590 | 480 | 590 | 260 | 50 | 70 |
-| ai builder | 140 | 170 | 170 | 90 | 90 | 20 | 20 |
-| product engineer | 20 | 140 | 40 | 110 | 50 | 10 | 10 |
-| desarrollo de software con inteligencia artificial | 10 | 10 | 10 | 10 | 10 | 10 | 10 |
-| herramientas de inteligencia artificial | 320 | 480 | 320 | 110 | 140 | 140 | 40 |
-| investigaciones sobre inteligencia artificial | 10 | 10 | 10 | 10 | 10 | 10 | 10 |
-| especializacion en inteligencia artificial | 110 | 20 | 1900 | 170 | 10 | 10 | 10 |
-
-**BR/pt, por separado:** «curso de inteligência artificial» 9900/HIGH; «ai engineering» 1900/MEDIUM; «ferramentas de inteligência artificial» 320/MEDIUM; «pesquisas sobre inteligência artificial» 170/MEDIUM. HIGH/MEDIUM son ads_competition, no dificultad SEO.
-
-**Límite empresarial:** las tres seeds largas B devolvieron 0/UNSPECIFIED en PE/MX/CO/AR/CL. La formulación corta «inteligencia artificial para empresas» devolvió MX 50/MEDIUM, CO 30/MEDIUM y CR 10/MEDIUM. La búsqueda web muestra capacitación, herramientas y otros servicios; no se interpreta ese volumen como demanda exclusiva de formación o PoC. Mantener esta oferta obedece también a prioridad de negocio B1, no a términos exactos de alto volumen.
-
-**Límite directorios/comunidad:** las seeds exactas «directorio de productos de inteligencia artificial» y «comunidad de inteligencia artificial» devolvieron 0/UNSPECIFIED en las consultas aisladas E de los cinco mercados iniciales. La tarea de descubrimiento/participación sí está documentada en B1 y contrastada en fuentes. No confundir cero aproximado de frase con inexistencia de necesidad, ni un término ausente de una salida limitada con cero.
-
-## 5. Limpieza y descartes materiales
-
-| Familia/ejemplos observados | Tratamiento | Motivo y consecuencia |
+| Evidencia anterior | Clasificación solicitada | Uso en v2 / límite |
 |---|---|---|
-| Curso IA / cursos de IA / curso inteligencia artificial, tilde/no tilde | Agrupar por necesidad, sin sumar variantes | No justifican páginas por sinónimo; conservar literal en evidencia |
-| AI Builder / AI Builder Microsoft | Conservar para contraste de ambigüedad; excluir como identidad global de audiencia | Microsoft documenta un producto con ese nombre; no atribuir toda la demanda a perfiles builders |
-| Product Engineer | Conservar como referencia de rol, no audiencia exclusiva | Muestra laboral con funciones específicas, no todos los desarrolladores de B1 |
-| AspenOne v12, Power BI Turbo Net | Descartar ruido | No oferta o público confirmado |
-| Google, Coursera, Udemy, UTN, FIAP, SENAI; Apple/IBM/Elon Musk | Descartar intención de marca/proveedor concreto | No importar herramientas, docentes, certificaciones o productos al catálogo |
-| Cursos gratis / chat gratis / descargar PDF | No priorizar adquisición por gratis o acceso a chatbot | Precio de formaciones pendiente; el sitio no es un chat ni descarga genérica; pueden informar expectativas, no promesa |
-| Especialización, graduação, faculdade, big data | Registrar diferencia local/lingüística y excluir del lanzamiento | B1 no ofrece especializaciones o grados en lanzamiento; no perseguir volumen fuera de oferta |
-| Empresa de IA / IA para empresas genérica | Descartar como promesa de proveedor generalista; conservar ambigüedad para QA de naming | Formación sí; consultoría amplia y software factory no; precisión necesaria en Empresas |
-| Herramientas para investigar con IA | No fusionar con investigación sobre IA | Herramienta de búsqueda académica puede pertenecer a Productos; un trabajo original pertenece a Investigación |
-| Filtros/países/autores/licencia/estado/uso | No generar clusters o páginas por rutina | Faltan catálogo, intención diferenciada y necesidad; no aprobación automática por filtros |
+| CSV de 198 filas, consultas y fechas 29/09 | Reutilizable | Fuente histórica íntegra. Selección PE/MX/CO de 30 métricas para contraste; no se suman países ni variantes, ni se presentan como noviembre |
+| Separar asistencia al desarrollo e integración de modelos | Reutilizable | Contraste actual F11/F17/F8 compatible; nombres ya aprobados se conservan, no se reabren por SEO |
+| Productos: herramienta funcional vs producto construido con IA; trabajo vs herramienta bibliográfica; creador vs remitente | Reutilizable | Criterio de atribución y objetos, compatible con F4/F9/F13/F15. No prueba inventario propio |
+| FAIR y Que IA Es como referencias de participación/descubrimiento | Requiere actualización | Releídas F6/F15; se conservan patrones observables, no sus cifras o promesas comerciales |
+| Majup como cohorte online/en vivo del research antiguo | Requiere actualización | F11 ahora deriva a Majup Learn, con ritmo propio/membresía. No reutilizar modalidad o disponibilidad de septiembre como actualidad |
+| Prioridad global de formación, K1 como centro de toda la organización | Ya no relevante | Sustituida por encargo/B1 antes de este research. Los volúmenes históricos de cursos no restauran esa prioridad |
+| PoC/MVP como oportunidad exploratoria de captación | Ya no relevante | Ya diferido por decisión histórica vigente; no se investiga rentabilidad ni se reabre como servicio |
+| AI Foundations/Science/Finance y participación en trabajo actual | Insuficiente para la nueva estrategia | v1 no mide esas nuevas familias a la granularidad requerida. Fuentes actuales ayudan a definir, no aportan volumen nacional |
+| LinkedIn/mercados EC/CR y Brasil/pt observados en v1 | Reutilizable solo como contexto | No se convierten en métricas PE/MX/CO ni en expansión de esta ronda. Portugués permanece separado |
+| Métricas propias, casos, Equipo y permisos pendientes en v1 | Insuficiente para la nueva estrategia | No hay nuevas fuentes organizacionales o evidencia propia. No se publica +520/120 o un roster por reutilizar el dossier |
 
-No se propone una keyword por volumen solamente. La tabla de observaciones contiene ejemplos descartados para que el filtrado sea trazable. El límite de ideas por consulta impide declarar exhaustividad.
+## 3. Referentes y competencia: muestra dirigida
 
-## 6. Contraste web y lectura directa
+Selección por pertinencia editorial, no ranking de líderes. Sin SERP actual o datos de dominios **no se acredita competencia orgánica**; sin oferta/inventario propio no se identifica un competidor comercial equivalente de toda AI PlayGrounds. La proximidad comercial siguiente es una hipótesis por la tarea compartida, no cuota de mercado.
 
-Se ejecutaron búsquedas para formación técnica, Empresas, Productos, Investigación y Comunidad; también para los términos de rol, la expectativa de especialización en CO y el contexto BR/pt. Todas las preguntas prioritarias tienen contraste exitoso documentado, aunque seis intentos iniciales devolvieron HTTP 429. No se presenta esos fallos como evidencia ni como ausencia vigente de herramientas.
+| Referente / clase | Propuesta y arquitectura observadas | Participación / conversión visible | Qué aporta / qué no copiar |
+|---|---|---|---|
+| SomosNLP, comunidad IA hispanohablante · F5 | Misión lingüística explícita; proyectos, recursos, eventos, comunidad | Discord; donar corpus; aportar charlas/tutoriales/código; colaboración de investigación | Participación por contribución concreta. No convertir hackathons o empleo de ese sitio en capacidades propias; fechas de próximos eventos no verificadas |
+| FAIR Costa Rica, organización y comunidad · F6 | Propósito de IA responsable, ejes y públicos; comunidad junto a formación y vinculación | WhatsApp y eventos | Identidad más amplia que cursos; sus acreditaciones/gobernanza no son oferta AI PlayGrounds |
+| EleutherAI y LAION, investigación/experimentación abierta · F2/F3/F13 | Misión → áreas/trabajo → artefactos originales → personas/comunidad | Explorar investigación, contribuir, Discord y apoyo de recursos/donación | Rigor explicado mediante objetos y atribución. No equivalencia de madurez, publicaciones, estructura jurídica o infraestructura |
+| CENIA, centro de investigación y transferencia · F1/F14 | Institución, investigación, vinculación y formación separadas; líneas con responsables y originales | Contacto, estudiantes y comunidad visibles en navegación | Hacer legibles campos y personas. No importar organigrama, servicios de transferencia o reputación científica |
+| Crafter Station, comunidad de construcción de software con espacio para IA · F7 | Red LATAM; open source, investigación/lab, eventos y equipo | Explorar proyectos, participar, eventos y colaborar | Trabajo visible y personas como puente de confianza. No es exclusivamente IA ni prueba de competencia comercial; sus cuatro componentes no modelan Academy/Community/Labs |
+| Hugging Face, plataforma de colaboración/productos · F4 | Objetos diferenciados: modelos, datasets, apps, papers; comunidad y aprendizaje; Enterprise aparte | Explorar/compartir objetos, registro y soluciones pagadas | Identidad comunitaria compatible con varias conversiones y autoría por objeto. No crear plataforma social, hosting o compute propios |
+| Google Labs, equipo que presenta experimentos/productos · F9 | Experimentos con descripción, estado de acceso y destinos; maduración diferenciada | Probar, conocer más, lista de espera y feedback según objeto | Labs puede mostrar trabajo temprano sin un servicio de incubación. No asumir pruebas públicas, acceso anticipado o catálogo propios |
+| Majup Learn/Majup Labs, DeepLearning.AI y DataCamp, proveedores formativos · F11/F8/F17 | Aprendizaje por tareas; AI Engineering, asistencia en código, catálogo y oferta para equipos | Curso/registro/membresía y conversación empresarial | Referentes próximos para Academy, no modelo global institucional. No prometer certificados, empleo, progresión, comunidad privada o personalización por imitación |
+| AI4Finance/FinGPT, proyecto técnico-financiero · F10 | Proyecto, responsables, tareas, modelos/datos, papers y límites | Código, demo, comunidad/contribución | Finance como campo de trabajo verificable; no limitarlo a trading ni prometer rentabilidad. README incluye material de 2023 y mercados US/China |
 
-El registro íntegro de consultas exactas, contexto, URLs, tipos de página, patrones, naming y decisiones afectadas está en `content/internal/02-research/research-queries.md` (W1–W16; F1–F10). Las búsquedas son resultados web de la fecha observada, no «Top 10 de Google» ni SERPs nacionales garantizadas.
+**Hallazgo — INFERENCIA:** comunidad, aprendizaje y construcción ya coexisten en varios referentes independientes; esa combinación por sí sola no demuestra una diferenciación exclusiva de AI PlayGrounds. Una oportunidad defendible es hacer visibles el contexto latinoamericano, los aportes concretos y la relación entre cuatro campos y trabajo real, **si el equipo aporta ese trabajo**. No se afirma que los competidores carezcan de ello.
 
-### Observaciones de fuentes → inferencias separadas
+## 4. Necesidades de públicos y oportunidades institucionales
 
-- **EVIDENCIA OBSERVADA, W1/F1:** Majup usa «AI Engineering: Fundamentos de Construcción de Aplicaciones de IA», con APIs, evaluación, observabilidad y producción; declara requisitos. **INFERENCIA:** AI Engineering puede funcionar como etiqueta técnica acompañada de explicación, no como sustituto de todo «Formación». La promesa de producción de otro proveedor no acredita la de AI PlayGrounds. La fecha de cohorte en la fuente no se usa como convocatoria vigente.
-- **EVIDENCIA OBSERVADA, W13/F2:** UCenfotec usa «Programación asistida con IA» para lógica, asistentes y prompting, con modalidad/nivel; aparece sin existencias y sin fecha/docente. DataCamp también distingue tareas de escribir/probar/documentar código. **INFERENCIA:** nombrar por tarea ayuda a distinguir asistencia de integrar IA, pero los programas observados pueden mezclar ambas; no imponer una taxonomía curricular inflexible.
-- **EVIDENCIA OBSERVADA, W2/F3 y W3/F4:** Microsoft identifica AI Builder como funcionalidad de Power Platform; Nubox define Product Engineer con responsabilidades de producto en pareja con AI Engineer. **INFERENCIA:** no usar esas etiquetas como único nombre de toda la audiencia ni convertir sus volúmenes en demanda de nuestros cursos.
-- **EVIDENCIA OBSERVADA, W5/W15/F7:** aparecen capacitación, cursos para equipos, formación corporativa y contacto/propuesta. **INFERENCIA:** Empresas debe aclarar destinatario, objetivo formativo y qué sigue al contacto. Personalización, seguimiento, métricas de retorno y capacidad de implementación de otros proveedores no son oferta confirmada de AI PlayGrounds.
-- **EVIDENCIA OBSERVADA, W14/F10:** PoC y MVP tienen objetivos/entregables diferentes en fuentes comerciales. **INFERENCIA:** una conversación de interés no debe titularse como servicio de desarrollo listo para contratar. «Exploración de problemas con IA» sigue siendo propuesta de naming propio, no término de demanda demostrado.
-- **EVIDENCIA OBSERVADA, W4/F6:** directorios de herramientas/apps muestran utilidad, categoría, enlace y postulación; pueden mezclar comercial/open source y tener anuncios/premium. F5 solo devolvió título, sin datos adicionales. **INFERENCIA:** oportunidad de descubrimiento funcional, condicionada a la elegibilidad y al inventario de Productos. No copiar monetización, rankings o cientos de categorías.
-- **EVIDENCIA OBSERVADA, W6–W8/F8:** búsquedas amplias devuelven artículos/archivos y herramientas bibliográficas, mientras Daily Papers aporta un patrón real de colección de trabajos con fechas y atribución. **INFERENCIA:** Investigación necesita diferenciar trabajo original de herramienta para investigar y autor de postulante. La evidencia regional de una búsqueda genérica para el directorio es débil; no prometer revisión por pares o calidad científica por popularidad.
-- **EVIDENCIA OBSERVADA, W9/W16/F9:** propósito, eventos, comunidad y rutas de participación aparecen en muestras CR/EC; FAIR tiene enlace a WhatsApp. **INFERENCIA:** Comunidad merece un recorrido de participación distinto de comprar formación o postular una entrada. No prueba presencia de miembros de AI PlayGrounds en esos países.
-- **EVIDENCIA OBSERVADA, W10:** especialización en CO aparece como posgrado universitario con título/admisión/duración. **INFERENCIA:** evitar el nombre en lanzamiento para no crear expectativas de credencial distinta de los certificados pendientes de B1.
-- **EVIDENCIA OBSERVADA, W12:** BR combina AI Engineering con engenharia, MBA y graduação. **INFERENCIA:** la comunicación latinoamericana debe precisar que la formación inicial es en español; no asumir que una etiqueta inglesa resuelve todo el contexto portugués.
+| Necesidad propuesta | Evidencia y límite | Oportunidad de contenido/conversión dentro del alcance |
+|---|---|---|
+| Comprender qué hace la organización y por qué existe | B1; F1/F2/F3/F6 muestran propósito antes de oferta | Inicio como presentación institucional; Equipo para quiénes la sostienen. No cluster comercial inventado para Equipo |
+| Saber cómo participar según interés y aporte | F5/F6/F7, tres organizaciones independientes, muestran acciones distintas | Comunidad: distinguir acercarse, contribuir y posible incorporación, con actividades/responsables reales; no solo botón genérico de compra |
+| Reconocer qué se investiga/experimenta/construye y de quién es | F2/F3/F4/F9/F13/F14 | Labs y colecciones con procedencia/estado; distinguir organización, equipo, persona autora y tercero |
+| Evaluar aprendizaje con objetivos y condiciones | F8/F11/F17 y v1 | Academy en Formación; líneas explicadas por tarea, oferta y siguiente paso según disponibilidad confirmada |
+| Evaluar si una relación con AI PlayGrounds tiene sentido para una organización | B1; F1/F4/F6/F7/F11 muestran formas diferentes, no una única oferta común | Empresas puede aclarar qué conversaciones se reciben, con formación y Productos como base heredada. Colaboración adicional sigue pendiente de capacidades, no se vende por inferencia |
 
-## 7. Comparación regional explícita
+Estas necesidades son **INFERENCIAS editoriales** desde evidencia pública y discovery, no entrevistas ni comportamiento medido de visitantes de AI PlayGrounds. No hay datos para ordenar conversiones por rentabilidad.
 
-1. **Señales consistentes:** cursos de IA, aprendizaje desde fundamentos y herramientas tienen señal en los siete mercados es. AI Engineering aparece en los siete, pero su volumen es más amplio que intención de curso. La convergencia sustenta hipótesis de lenguaje compartido, no una demanda LATAM agregada.
-2. **Vocabulario:** «curso» supera al literal «formación» observado en cada país es; «formación» puede seguir siendo un buen nombre de área por abarcar workshops/full days/cursos/programas. «Capacitación» y «formación para equipos» aparecen en contexto empresarial. BR usa inteligencia/termos pt y denominaciones académicas propias.
-3. **Intención:** cursos generales incluyen herramientas, fundamentos y formación académica; programar con ayuda e integrar modelos son tareas distinguibles. Empresas incluye capacitación e implementación en la muestra; Investigación mezcla artículos, repositorios y herramientas; hay que precisar contenido/acciones.
-4. **Volumen material:** CO especialización 1900/HIGH sobresale frente a la misma keyword en otros países; cambia la cautela de naming, no la oferta. MX/AR tienen señales mayores de cursos que EC/CR en estas consultas; no justifica dejar de atender a los otros mercados ni traducir búsquedas a matrícula esperada.
-5. **Oportunidades particulares:** expectativa de posgrado en CO y lenguaje académico pt en BR requieren claridad de formato/credencial. UTN aparece como búsqueda de marca AR; se descarta como oportunidad propia. No hay evidencia suficiente de cursos locales/servicios presenciales propios.
-6. **Clusters robustos en los mercados es observados:** aprender IA y descubrir herramientas; robustez de necesidad más evidencia B1 para formación técnica/equipos y participación. No se declara que todas sus long tails tengan volumen alto.
-7. **Clusters específicos:** no se propone ningún cluster nacional nuevo que encaje en oferta actual. Especialización CO y grados BR quedan fuera. Portugués es evidencia de otro mercado lingüístico, no un cluster mezclado con español.
-8. **Naming:** AI Builder no como denominación global; Product Engineer como referencia, no categoría exclusiva. Proponer «Desarrollo de software asistido por IA» y «AI Engineering — construcción de aplicaciones y sistemas con IA», con explicación de integración, evaluación/operación según cada formación.
-9. **Arquitectura/ownership:** Formación para personas y Empresas tienen tareas distintas; dentro de Formación distinguir asistencia e integración sin crear dos URLs hasta tener oferta y necesidad de página comprobadas. Productos e Investigación mantienen ownership separado. No evidencia que justifique URLs nacionales o por filtro ahora; es propuesta, no arquitectura final.
-10. **Incertidumbres que podrían justificar nuevos mercados:** formación presencial/local real, pricing/medios de pago nacionales, expansión lingüística aprobada, catálogo que introduzca términos locales o intención específica. Esos datos no existen en B1; no se inventan para expandir por rutina.
+## 5. Cuatro verticales: oportunidad y límites
 
-## 8. Cierre de expansión geográfica
+| Vertical | Evidencia contrastada | Propuesta / preguntas útiles | Qué queda sin validar |
+|---|---|---|---|
+| AI Foundations | F2/F3/F14 muestran evaluación, modelos/métodos, datos y líneas de investigación; F8 usa foundations en contexto de aprendizaje | Explicar qué se comprende/evalúa/mejora de modelos, distinto de un curso inicial. «¿Qué pregunta técnica abordamos y con qué evidencia?» | Demanda e intención de la etiqueta/seed en PE/MX/CO; tareas/artefactos propios. La ambigüedad es inferida del contraste de páginas, no SERP nacional |
+| AI for Software | F7 construcción abierta; F17 asistencia para pruebas/depuración; F11 integración, RAG/evals/agentes | Presentar campo organizacional sin convertirlo en alias de Software with AI. Distinguir práctica/experimento de necesidad formativa | Trabajo propio e inventario; falta SERP para delimitar intención informativa frente a servicios/cursos |
+| AI for Science | F13 modelos/datos/herramientas para preguntas científicas y límites de verificación; F14 líneas aplicadas; F9 distingue herramientas de literatura/hipótesis | Mostrar pregunta, enfoque, fuente, estado y límites; no equiparar cualquier herramienta bibliográfica con resultado científico | Demanda nacional actual y corpus propio; la intención de usar IA para investigar es diferente de descubrir papers, pero no se demuestra su peso relativo |
+| AI for Finance | F10 tareas financieras con modelos/datos, documentación y disclaimer; F16 trata usos analíticos/operativos, riesgos de datos y responsabilidad | Presentar el campo con problemas/procesos, evidencia y límites. No reducirlo a predicción de activos o servicio de asesoría | Nicho prioritario, propiedad/iniciativas, demanda PE/MX/CO y conversión comercial. F16 es encuesta UK de 2024; ninguna cifra se extrapola a LATAM |
 
-**Pregunta de control:** ¿consultar otro mercado puede cambiar una decisión material ahora?
+Las cuatro verticales permanecen como **topics institucionales confirmados**, con candidatas de búsqueda por investigar. No hay evidencia suficiente para convertirlas en cuatro clusters SEO independientes con landing propia. La descripción contextual puede vivir en Inicio, y los objetos reales en Investigación/Productos/Labs según su naturaleza, sin fabricar URLs.
 
-- Tras los cinco iniciales, sí: EC y CR podían cuestionar la transferencia del vocabulario y la cobertura centroamericana. Se consultaron y reforzaron cursos/herramientas/etiquetas sin aportar una necesidad de página o promesa nacional distinta.
-- BR sí podía cambiar la expectativa lingüística del alcance latinoamericano. Se investigó por separado; el resultado exige claridad sobre español y mantener portugués como decisión futura, no más volumen fusionado.
-- Tras Planner y contraste web, no se identifica una decisión pendiente que UY/PY/BO/PA/GT/DO u otro país vaya probablemente a resolver mejor: falta catálogo/operación/criterios de inclusión, no más muestras de términos genéricos. **INFERENCIA:** bajo valor informativo marginal para naming y ownership actuales, basada en convergencia de los siete mercados es y contraste de fuentes de varios contextos. No es prueba de uniformidad de toda LATAM.
+## 6. Métricas SEO por mercado: históricas, no actualizadas
 
-**Se detiene esta ronda por saturación de decisiones, no por máximo de países.** Reabrir si aparece una oferta local, diferencia lingüística aprobada o nueva categoría que pueda cambiar arquitectura. El research externo está suficientemente contrastado al nivel de categorías para proponer Gate B, no para decidir URLs de cursos/productos concretos.
+`avg_monthly_searches` de Planner observado el **29/09/2026**, fuente H-CSV con líneas exactas en el CSV activo. Periodo subyacente y red no quedaron expuestos por el CLI histórico; no se les atribuye ventana inventada.
 
-## 9. Límites e incertidumbres reales conservadas
+| Keyword literal | Perú / es | México / es | Colombia / es | Interpretación limitada |
+|---|---:|---:|---:|---|
+| ai engineering | 320 | 590 | 480 | Término puede cubrir rol, disciplina y formación; no demanda exclusiva de curso |
+| programacion con ia | 50 | 70 | 30 | Tarea afín a asistencia; no demanda medida de Software with AI |
+| desarrollo de software con inteligencia artificial | 10 | 10 | 10 | Ambiguo entre asistencia/integración/servicios; no tres necesidades nuevas por país |
+| curso de inteligencia artificial | 880 | 1300 | 1000 | Oportunidad formativa genérica; no prioridad global de organización |
+| formación en inteligencia artificial | 10 | 90 | 30 | Variante de lenguaje, no sumarla a cursos como demanda distinta |
+| herramientas de inteligencia artificial | 320 | 480 | 320 | Solo subconjunto funcional de Productos; no todo lo construido con IA |
+| investigaciones sobre inteligencia artificial | 10 | 10 | 10 | Señal literal reducida; no prueba intención única de colección |
+| comunidad de inteligencia artificial | 0 | 0 | 0 | Cero aproximado informado en septiembre, no ausencia de necesidad o comunidad |
+| directorio de productos de inteligencia artificial | 0 | 0 | 0 | Etiqueta de colección, no razón para retirar su página aprobada |
+| capacitación en inteligencia artificial para empresas | 0 | 0 | 0 | Frase larga aproximada; no inexistencia de formación empresarial |
 
-- Demanda aproximada y variantes del instrumento; salida limitada y período no explicitado. La competencia publicitaria no mide posicionamiento orgánico.
-- Búsqueda web sin geolocalización nacional garantizada; patrones de muestra, no rankings/rentabilidad/representatividad exhaustiva.
-- Mayor sustento de demanda para cursos/herramientas; menor señal exacta para investigación/comunidad y capacitación empresarial. Su función también responde al alcance y objetivos aprobados.
-- Naming propuesto no validado por entrevistas ni prueba de comprensión; la evidencia externa ayuda a proponer, no aprueba automáticamente.
-- Universo de Productos resuelto por el usuario tras el research: se admiten productos que integran IA y productos construidos con ayuda de IA. «Herramientas de IA» describe solo el subconjunto funcional correspondiente, no todo el directorio.
-- Oferta, fechas, docentes, requisitos, precios y certificados no definidos; no convocatoria abierta. Personalización empresarial y resultados de formación no acreditados por la oferta de terceros.
-- Curación, inventario, taxonomías/filtros, fuentes de uso/estado, actualización, enlaces, normas y permisos siguen pendientes. No postulación/publicación automática.
-- Planes jurídicos y evolución Trust/Knowledge/Builders/Researchers/Recognition no son capacidades actuales.
-- Las fuentes aportan evidencia de su contenido; sus claims comerciales de volumen, calidad, retorno o empleo no se trasladan al proyecto.
+La selección activa incluye además **18 registros sin métricas** (seis expresiones en tres mercados): organizaciones, fundamentos, IA para investigación científica, IA en finanzas, Software with AI y proyectos IA. Cada celda vacía es desconocida. Son candidatas responsables, no seis familias validadas por volumen.
 
-## 10. Propuestas para Gate B — requieren decisión humana
+**Cobertura por métrica en los 48 registros:** volumen 30/48 y competencia publicitaria 30/48, todos históricos; KD 0/48, CPC 0/48, intención automática 0/48, SERP nacional actual 0/48. Es «cero registros con dato», no KD=0 o CPC=0. El CSV completo v1 conserva otras variantes/descartes, no se duplican como métricas nuevas. No se suman países/variantes ni se estima tráfico o cuotas.
 
-Todas tenían estado **PROPUESTA**, excepto las restricciones de B1 que ya estaban aprobadas. La tabla de clusters detallada está en `content/internal/02-research/keyword-map.md`. Este bloque es histórico; prevalece el cierre de Gate B del final.
+**Lectura por mercado — INFERENCIA acotada:** MX tiene mayor volumen que PE/CO para curso literal y herramientas en esta muestra histórica; CO presenta menos señal de programación con IA que PE/MX; AI Engineering tiene señal en los tres. No es tendencia de noviembre, demanda normalizada o tamaño de mercado. Sin nueva adquisición no se puede ordenar oportunidad actual ni dificultad por país.
 
-1. **Naming y audiencia:** mantener Formación como área principal; usar «cursos de IA» cuando corresponda a una oferta real. Distinguir «Desarrollo de software asistido por IA» de «AI Engineering — construcción de aplicaciones y sistemas con IA». Usar audiencia amplia de desarrolladores/profesionales técnicos; no AI Builder/Product Engineer como puerta exclusiva. No comunicar cada formación como nivel avanzado o camino íntegro a producción.
-2. **Empresas:** ownership principal de formación técnica para equipos en la única página aprobada. Sección secundaria «Exploración de problemas con IA», enfocada en expresar interés/conversar, sin compromiso de PoC/MVP o consultoría disponible. Identificar antes de copy qué adaptación a equipos realmente puede ofrecerse, sin copiar promesas de otros proveedores.
-3. **Labs:** Productos e Investigación conservan directorios/fichas independientes. Productos comunica utilidad, destinatario, builder, estado, uso y acceso; Investigación pregunta/enfoque/resultados/autores/estado/recursos originales. No filtros convertidos automáticamente en páginas ni pagos/rankings/revisión científica implícita.
-4. **Elegibilidad de Productos — decisión material abierta:** ¿admite productos que integran IA, productos construidos con apoyo de IA, o ambos? Si ambos, proponer un dato claro en la ficha sobre cómo interviene IA; no afirmar que todo listado sea una herramienta de IA. Esto puede ajustar el cluster K3, no se aprueba una opción por defecto.
-5. **Cobertura y páginas:** mantener contenido inicial en español dirigido a LATAM, aclarando idioma de formación. No crear páginas por país ni portugués por las métricas observadas. El marco de ownership K1/K2/K3/K4/K5 y subnecesidades K1a/K1b es provisional; las páginas de oferta concreta se evalúan cuando exista catálogo.
+## 7. Intención, clustering y oportunidades de contenido
 
-Solicitar aceptación, corrección o rechazo por propuesta. Solo después de decisión humana puede consolidarse B2 con la síntesis de clusters aceptados. No avanzar a O/C, estrategia final, arquitectura final o E1 antes de ese gate.
+El [Keyword Map](keyword-map.md) conserva seis grupos principales y dos subnecesidades de Academy. Su actualización SEO contrasta etiquetas automáticas con SERP nacionales; las verticales siguen siendo topics institucionales, sin cuatro landings independientes demostradas. La síntesis estratégica siguiente se conserva; los matices nuevos de intención y volumen están en §11 y en la actualización del mapa.
 
-## Historial técnico resumido — resuelto, sin vigencia actual
+- **Institucional/navegacional:** comprender identidad, actividad y personas. La necesidad procede de B1 y referentes, no de un volumen de marca observado.
+- **Participativa:** acercarse/contribuir a comunidad y proyectos. F5/F6/F7 muestran acciones distintas de inscripción a cursos; no volumen nacional actual.
+- **Formativa:** evaluar aprendizaje; asistencia de código e integración de IA se distinguen por tareas (F11/F17), no por cursos inventados o progresión obligatoria.
+- **Comercial/consulta:** formación de equipos como categoría heredada; ampliar conversaciones institucionales es oportunidad condicional, no consultoría disponible.
+- **Exploratoria:** evaluar utilidad/acceso de productos frente a comprender trabajos y originales; colecciones independientes, sin autoría por inclusión.
 
-La versión anterior del CLI solo admitía PE/es; un intento incorrecto con LATAM y pruebas MX/CO fueron rechazados. Después hubo fallos ADC de reautenticación y scopes insuficientes. Inicialmente no se tenía websearch; una prueba posterior sí funcionó. El usuario corrigió y validó CLI, ADC/adwords, quota project y disponibilidad web antes de esta ronda. Los fallos históricos no aportaron métricas y no condicionan la disponibilidad actual. La nueva ronda sustituye las propuestas sin contraste del research anterior; conserva B1 y sus incertidumbres de oferta/evidencia.
+**Solapamiento controlado:** misma tarea de asistencia no genera un cluster distinto por Software with AI, programación asistida y desarrollo con IA; AI for Software es campo, no otra oferta. Los originales de Science/Finance/Foundations se asignan por objeto y datos, no por nuevas páginas para todos los términos. No se diagnostica canibalización de un sitio sin queries/páginas/periodo.
 
-## Revisión humana de Gate B — decisiones y reservas
+**Gap editorial — PROPUESTA:** falta evidencia propia que conecte propósito, vertical, personas y trabajo actual; la arquitectura permite esa cadena, pero los inventarios no están disponibles. Es comparación con cobertura planificada, no prueba de que el dominio pierda posiciones frente a esos referentes.
 
-**Fuente:** respuesta del usuario a las propuestas y preguntas de Gate B. Este registro actualiza el estado de las propuestas anteriores, sin alterar métricas ni atribuir la validación humana al research.
+## 8. SEO, AEO y GEO: evidencia frente a recomendación
 
-- **APROBADO:** aceptación general del research y del marco de clusters, con reserva expresa sobre el nombre «Desarrollo de software asistido por IA» (K1a). La pregunta sobre incluir «IA» en los nombres exige explicar la diferencia entre etiqueta interna, navegación y contexto del contenido; no se registra eliminación de IA del ámbito temático.
-- **PENDIENTE:** nombre final de K1a. El usuario solicita alternativas. Las alternativas editoriales deben mantener la tarea de construir software con apoyo de IA, distinguible de integrar modelos/APIs; no tienen aprobación o demanda demostradas solo por proponerse.
-- **APROBADO:** audiencia amplia y aceptación general de la dirección de naming, salvo la reserva localizada de K1a. No se interpreta «Sí» general como anulación de esa reserva explícita.
-- **HECHO DOCUMENTADO:** «Exploración de problemas con IA» resulta interesante al usuario, que pide reforzar el interés en PoC/MVP según utilidad/atractivo y potencial de ingresos para la comunidad. **PENDIENTE:** formulación pública final. **APROBADO, base B1:** por ahora se recoge interés, sin prometer ejecución. No hay evidencia de precios, costos, capacidad o conversión que permita elegir el formato más rentable.
-- **APROBADO:** Productos admite ambos universos: IA integrada en el producto e IA utilizada para desarrollarlo. Se mantiene independencia de licencia. **PROPUESTA:** registrar de forma comprensible cómo interviene IA en cada entrada, sin imponer un filtro nuevo ni presentar todo listado como herramienta de IA.
-- **APROBADO:** español como idioma predeterminado; no portugués por ahora. **HECHO DOCUMENTADO:** el usuario contempla implementar versión inglesa. **PENDIENTE:** si debe publicarse junto al lanzamiento español o después de estabilizar esta primera versión; el usuario plantea expresamente el costo de mantener ambos idiomas mientras cambia el contenido.
-- **PROPUESTA editorial:** para inglés dirigido al mismo público/tareas, reutilizar estrategia y arquitectura aprobadas cuando existan, con traducción adaptada al lector. No duplicar clusters ni investigar US por defecto. Si inglés apunta a otro mercado/oferta, requerirá contraste de lenguaje/intención en ese mercado confirmado antes de prometer SEO. La edición bilingüe exige actualizar ambas versiones cuando cambian hechos/condiciones/acciones.
+- **Práctica soportada oficialmente, F12:** para AI Overviews/AI Mode de Google no hay requisitos adicionales o archivos/esquemas especiales de IA; importan fundamentos SEO, elegibilidad de indexación/snippet y contenido textual localizable. Cumplirlos no garantiza aparecer. No se extrapola a todos los asistentes.
+- **Recomendación inferida para este proyecto:** definir con claridad organización, vertical, iniciativa, colección y autor; responder preguntas útiles con fuente, estado y condición junto al objeto. Puede ayudar a comprensión humana y recuperación con contexto; **no demuestra aumento causal de citación**.
+- **Preguntas editoriales propuestas:** «¿qué es AI PlayGrounds?», «¿cómo se relacionan comunidad, verticales y Academy?», «¿qué trabajo puede explorarse hoy y quién lo hizo?», «¿cómo se participa?», «¿qué ofrece hoy para mi equipo?». No son PAA recuperadas ni prompts medidos; se vinculan al Keyword Map sin exigir FAQ o respuestas de longitud fija.
+- **Datos específicos de visibilidad IA:** no recogidos. No hay respuestas/citas de ChatGPT, Gemini u otras plataformas, tracking o prompts privados observados. Las métricas Planner son de Google Ads, no de asistentes. No se declara «cero visibilidad IA» por ausencia de medición.
+- Entidades, preguntas por bloque, claims/modelos, candidatos técnicos y readiness se desarrollarán en Estrategia **después de B2**. No se certifica cobertura AEO/GEO completa en esta fase ni se genera configuración.
 
-**Estado del gate:** resolver naming de K1a, nivel de énfasis público de PoC/MVP dentro de captación de interés y momento de inglés antes de consolidar la base B2. No hay estrategia, sitemap ni copy aprobados.
+## 9. Decision Delta y propuestas para Gate B
 
-### Actualización posterior de la revisión humana
+Los tokens siguientes se conservan iguales en el Dossier. **PROPUESTA** hasta decisión humana; `CONFIRMA` no atribuye al research decisiones que ya procedían de B1.
 
-Este bloque sustituye el estado de los puntos correspondientes del registro anterior; no modifica la evidencia de investigación.
+| ID / decisión inicial | Evidencia | Conclusión propuesta | Decision Delta | Consecuencia |
+|---|---|---|---|---|
+| D1 Identidad institucional y participación diferenciada según B1 | F1/F2/F3/F5/F6/F7 | Propósito, trabajo y distintas vías de vinculación son compatibles con el nuevo marco; formación no debe absorber toda la presentación | CONFIRMA | Priorizar comprensión para nuevos visitantes; participación, aprendizaje, descubrimiento y consulta según necesidad, no un único embudo de cursos |
+| D2 Verticales como campos, no cursos ni unidades de Labs | F2/F3/F11/F13/F14/F16/F17 | Mantener distinciones conceptuales y preguntas por campo; no cuatro landings por nomenclatura | CONFIRMA | Explicaciones españolas, trabajo con procedencia; demanda/SEO independiente de verticales todavía no validada |
+| D3 Reutilizar sin cambios la fotografía formativa competidora de v1 | F11 frente a H-R/F1 histórico; F8/F17 como contraste | Cambió la presentación/modalidad de Majup; no reutilizar condiciones antiguas como actuales | CAMBIA | Actualizar referente Academy por tareas/estado, no cambiar nombres o modalidad propia ni añadir membresías |
+| D4 Colecciones independientes y Labs con iniciativas reales | F4/F9/F13/F15 y B1 | Descubrimiento de objetos, experimentos y autoría deben distinguirse | CONFIRMA | Productos/fichas e Investigación/fichas conservan independencia; Labs no sustituido por directorios ni portafolio propio ficticio |
+| D5 Diferenciación exclusiva, conversión más rentable y prioridad SEO de mercados/verticales | O1: métricas y SERP nacionales nuevas; KD parcial y sin rendimiento/capacidades propias | Se identifican oportunidades por intención, pero no exclusividad, rentabilidad o un orden único de mercados/verticales | INCONCLUSO | El bloqueo MCP queda resuelto; usar oportunidades acotadas de §11 sin ranking de negocio o nueva oferta |
+| D6 Necesidad de recetas/archivos especiales o equivalencia Google→asistentes para GEO | F12 y límites de instrumentos | No exigir recetas especiales para experiencias IA de Google ni trasladar volúmenes Google a asistentes | DESCARTA | Criterios editoriales/SEO y medición separada; sin garantía de citación |
 
-- **HECHO DOCUMENTADO:** el usuario retoma «Ingeniería de software con IA» como alternativa de K1a y pregunta si debe presentarse en español o inglés, en relación con AI Engineering. **PROPUESTA:** usar «Ingeniería de software con IA» en español y mantener AI Engineering con explicación española de construcción de aplicaciones/sistemas con IA. El nombre inglés Software Engineering with AI no tiene preferencia regional demostrada por el research actual. **PENDIENTE:** confirmación de la denominación visible.
-- **APROBADO:** enfoque de español para la primera etapa. Se difiere la preparación/publicación inglesa; no se crea ahora un Keyword Map inglés ni se investiga un mercado anglófono.
-- **APROBADO:** aceptación de la explicación de clusters/uso contextual de IA y del enfoque de validación según necesidad, sin acreditar capacidad de ejecución o rentabilidad de PoC/MVP.
-- **HECHO DOCUMENTADO:** el usuario no acepta «Exploración de problemas con IA» como denominación. Deja de ser el nombre recomendado activo de la propuesta empresarial secundaria.
-- **PROPUESTA DEL USUARIO:** el recorrido secundario de Empresas podría dirigir al directorio Productos y revisar después PoC/MVP. **PENDIENTE:** confirmar si este enlace sustituye la captación de interés en PoC/MVP durante el lanzamiento o si ambas acciones deben coexistir. El «puede que» no se registra como CTA/destino definitivo aprobado.
-- **Restricción vigente:** Formación continúa como oferta principal de Empresas y la página empresarial sigue siendo única. El directorio no acredita que AI PlayGrounds implemente, adapte o respalde todos los productos listados.
+### Decisiones para vuestra revisión
 
-**Gate B actualmente pendiente:** denominación visible de K1a y decisión sobre destino/función del recorrido secundario de Empresas. El calendario inglés ya no bloquea esta etapa. B2 no consolidada.
+1. **Aceptar/corregir D1 y D2:** comprensión institucional primero, participación y descubrimiento con funciones propias; cuatro topics explicados sin convertirlos en cursos ni nuevas páginas.
+2. **Aceptar/corregir el Keyword Map:** seis grupos, dos subnecesidades formativas y ownership propuesto dentro de ocho páginas/dos fichas, sin nuevas URLs por vertical/keyword/filtro/país. No se somete a reelección la arquitectura ya aprobada.
+3. **Aceptar/corregir D3 y D4:** actualizar referentes formativos, conservar líneas por tareas y tratar Labs, objetos propios y colecciones con procedencia/estado explícitos. Captación condicionada a operación confirmada.
+4. **Aceptar/corregir las oportunidades SEO de §11 y el mapa actualizado:** Productos por utilidad/contexto; Academy por tareas en español; Comunidad por participación real, sin usar volumen genérico de proyectos; verticales explicadas con evidencia de trabajo. D5 conserva límites de rentabilidad/exclusividad, aunque la adquisición MCP ya está realizada.
+5. **Aceptar/corregir D6 y límites restantes:** sin promesas GEO o liderazgo; filas ausentes y KD null permanecen desconocidos, sin restaurar formación como oferta principal. El anterior requisito de otro proyecto/dominio ya no aplica: Default fue autorizado y usado con mercados explícitos. Inventario propio, canales y responsables siguen pendientes antes de concretar claims o conversiones.
 
-### Última precisión del usuario
+**Estado: Gate B pendiente.** No se consolida B2 ni se inicia estrategia/E1/E2. Aprobar las propuestas no convierte datos ausentes en resultados medidos ni autoriza un nuevo gasto fuera del alcance.
 
-- **HECHO DOCUMENTADO:** preocupa que K1a sea el único eje nombrado en español dentro de una familia de términos ingleses. **PROPUESTA:** mantener nombres técnicos de ejes en inglés y explicar necesidades/resultados en español; esto no equivale a publicar una versión inglesa del sitio.
-- **PROPUESTA de naming K1a:** AI-Augmented Software Engineering, acompañado de una descripción española sobre diseñar, construir, probar y mejorar software con IA. Alternativas editoriales: AI-Powered Software Engineering o Software Engineering with AI. Ninguna tiene demanda propia o preferencia regional demostrada en esta ronda; el naming aún requiere elección humana. Se mantiene la distinción funcional frente a AI Engineering.
-- **APROBADO:** el usuario acepta el recorrido empresarial propuesto: Formación para equipos → conversación; descubrir soluciones existentes → directorio Productos; PoC/MVP → revisar posteriormente. Se sustituye la captación exploratoria PoC/MVP del lanzamiento por el camino secundario de descubrimiento, sin cambiar la prioridad formativa ni prometer implementación/adaptación de productos listados.
+## 10. Validaciones de cierre
 
-**Pendiente actual de Gate B:** elección de nombre visible K1a. El recorrido secundario de Empresas y el foco español de la primera etapa están resueltos. B2 sigue sin consolidarse.
+**Registro del cierre de Prompt 2, anterior a O1.** Se conserva para trazabilidad; la validación de esta continuación y su consumo están en §12.
 
-### Cierre de Gate B — 30/09/2026
+- **Integridad:** los 16 originales archivados conservan sus SHA-256; brief/B0/B1, decisiones heredadas, baseline de ocho páginas/dos tipos y ambos `.opencode` idénticos al inicio de Prompt 2. Manifiesto previo y diff auxiliar en `/tmp/opencode/aiplaygrounds-prompt2-lx2jsubj/`, sin dependencia de ese directorio para consultar evidencia editorial duradera.
+- **Alcance de cambios:** solo los dos README activos cambian entre archivos preexistentes en el workspace; se añaden cinco archivos de esta etapa: research, queries, Keyword Map, CSV y Dossier. La comparación se hace contra el estado inicial de esta intervención, no solo contra HEAD, porque existe trabajo previo sin commit.
+- **Métricas:** 48 claves país/idioma/keyword únicas; las 30 filas históricas coinciden exactamente con keyword, país, idioma, volumen y competencia de la línea citada de H-CSV; 18 desconocidos permanecen vacíos. Sin KD/CPC/intención automática inventados, agregados nacionales o duplicados por variante en esa selección.
+- **Trazabilidad:** URLs y procedencia de F1–F17 registradas; se separan observación actual, fecha editorial desconocida e historia 2023–2026. W1–W8 no se presentan como SERP observadas. F1/F16 truncadas tienen alcance de lectura declarado. Los seis tokens Delta coinciden en Research y Dossier.
+- **Documentación:** enlaces y anclas locales, columnas de tablas Markdown, whitespace y referencias activas correctos. No se crea B2, Estrategia completa, E1/E2 o un entregable de reporte adicional. Keyword Map no agrega páginas ni aprueba su propio ownership.
+- **Skill:** `python -B .opencode/skills/web-content-design/scripts/check_package.py` → **OK**, frontmatter, 28 Markdown, enlaces locales, runtime y estructura de evals; check mecánico, no evaluación de comportamiento. Sin modificación de bytecode o configuración.
+- **Diff:** `git diff --check` y comprobación de archivos nuevos con índice temporal externo sin errores; staging real vacío. Revisión editorial del conjunto: términos específicos del proyecto, límites junto a conclusiones y ninguna capacidad, integrante, resultado o diferenciación exclusiva inventados. Sin tests de aplicación/UI ni reparaciones de infraestructura.
+- **Consumo:** OpenSEO inicial/final 9.787 créditos; cero llamadas pagadas, cero reservas pendientes, US$0 utilizados de US$2. No se atribuye cargo a fallos de Planner ni a búsquedas web; esos instrumentos no son créditos OpenSEO. Sin commit ni push.
 
-**APROBADO:** el usuario elige «Software Engineering with AI» y confirma «ese camino tomaremos por ahora». Se usa como nombre del eje K1a en esta etapa, con explicación en español de diseñar, construir, probar y mejorar software con apoyo de IA. «Por ahora» permite una revisión futura explícita, no deja esta decisión sin resolver.
+## 11. Adenda SEO MCP · datos nuevos y consecuencias
 
-Con esta elección se cierra el último punto del gate. Se consolidan únicamente las conclusiones aceptadas y las correcciones posteriores, incluido el recorrido secundario Empresas → Productos y la revisión futura de PoC/MVP. Las métricas no se alteran y el nombre elegido no se presenta como keyword de demanda propia demostrada. B2 conserva incertidumbres de oferta/operación/evidencia. Los registros anteriores de gate pendiente son historial, no estado vigente.
+**Fuente/fecha:** OpenSEO MCP, 05/11/2026 UTC; Default como contenedor autorizado. Mercados nacionales explícitos PE2604/es, MX2484/es y CO2170/es, desktop en SERP. No defaults US/en, ciudades o agregado LATAM. Se preservan íntegros el análisis estratégico y las métricas históricas; esta adenda sustituye sus limitaciones de adquisición, no sus decisiones aprobadas.
 
-## Correspondencia con el contrato actual — sin nueva investigación
+### Métricas por país
 
-Preflight histórico de dos ejes, triangulación y Decision Delta por decisión se reconcilian en `content/internal/03-estrategia/dossier-evidencia-estrategica.md`, §§3–6, a partir de esta ejecución y sus W/F. No se afirma que el registro antiguo tuviera ese formato ni se inventa una comunicación histórica de Delta. Resultado de la reconciliación: prioridad formativa **CONFIRMA**; etiquetas exclusivas de audiencia **CAMBIA**; formación empresarial **CONFIRMA**; límites PoC/MVP **CONFIRMA** (su postergación es humana); Productos **CONFIRMA**; Investigación **CONFIRMA**; equivalencia de trabajos con herramientas bibliográficas **DESCARTA**; participación **CONFIRMA**; cobertura/idioma **CONFIRMA**. Rentabilidad PoC/MVP sigue **INCONCLUSO** por falta de precios, costos, capacidad y conversión. Ningún token crea aprobación nueva.
+Cada celda muestra **volumen mensual aproximado / KD**, observado ahora; `ND` significa ausencia de fila y `null` campo no disponible. El periodo subyacente y la fecha de actualización por keyword no fueron expuestos. Las filas completas con CPC USD, intención automática y competencia publicitaria están en [JSON](openseo-metrics-2026-11-05.json). Sin suma de variantes o países.
+
+| Keyword literal | PE / es | MX / es | CO / es |
+|---|---|---|---|
+| comunidad de inteligencia artificial | ND | ND | ND |
+| organizaciones de inteligencia artificial | ND | ND | ND |
+| proyectos de inteligencia artificial | 10 / null | 30 / 0 | 50 / 57 |
+| fundamentos de inteligencia artificial | ND | 210 / 0 | ND |
+| modelos de inteligencia artificial | ND | 260 / 7 | 140 / 5 |
+| desarrollo de software con inteligencia artificial | 10 / null | 10 / null | 10 / null |
+| programación asistida por ia | ND | ND | 10 / null |
+| ai engineering | ND | 590 / 53 | 480 / 57 |
+| software with ai | ND | ND | ND |
+| inteligencia artificial para investigación científica | ND | 10 / null | ND |
+| inteligencia artificial en la ciencia | ND | 20 / null | 10 / null |
+| ai for science | 10 / null | 10 / null | 10 / null |
+| inteligencia artificial en finanzas | 10 / null | 30 / null | 10 / null |
+| inteligencia artificial aplicada a finanzas | ND | 10 / null | ND |
+| herramientas de inteligencia artificial | 260 / 4 | 480 / 4 | 320 / 13 |
+| productos de inteligencia artificial | ND | 10 / null | 10 / null |
+| directorio de herramientas de ia | ND | 10 / null | ND |
+| investigaciones sobre inteligencia artificial | 10 / null | ND | ND |
+| curso de inteligencia artificial | 880 / 0 | 1300 / 0 | 1000 / 0 |
+| formación en inteligencia artificial | 10 / null | ND | ND |
+| capacitación en inteligencia artificial para empresas | ND | ND | ND |
+| comunidad de desarrolladores | ND | ND | 10 / 18 |
+
+Las seis candidatas restantes de overview no devolvieron fila en ningún país: comunidades de ia; evaluación de modelos de inteligencia artificial; programación con ia; ai foundations; ai for software; ai for finance. **84 combinaciones solicitadas: 34 con fila, 50 ausentes.** Cobertura de campos sobre esas 84: volumen e intención automática 34; KD 14; CPC 18; competencia publicitaria numérica 32. El valor 0 de competencia en varias filas sí es cero observado; no se confunde con KD o CPC desconocidos. El registro histórico de 48 filas no se modifica: sus 18 desconocidos describían ese corte, no invalidan las nuevas observaciones separadas.
+
+- **Perú:** herramientas 260/KD4/CPC1,18 y curso 880/KD0/CPC1,72; desarrollo 10 con CPC2,08, KD null. El dato actual de AI Engineering no llegó: el 320 de septiembre sigue histórico, no se rellena la ausencia con él. Herramientas pasó de 320 histórico a 260 observado ahora; instrumentos/cortes no homogéneos, **no se afirma una caída de demanda**.
+- **México:** señal más amplia en esta lista: modelos 260/KD7/CPC1,96, fundamentos 210/KD0/CPC2,07, Finance 30/CPC1,30 (KD null), AI Engineering 590/KD53/CPC2,45, herramientas 480/KD4/CPC1,03. Esto permite priorizar ajuste de intención, no declarar que México sea el mercado más rentable o que Foundations deba convertirse en curso.
+- **Colombia:** AI Engineering 480/KD57/CPC1,34, modelos 140/KD5/CPC0,67 y herramientas 320/KD13/CPC0,67. Proyectos 50/KD57 contrasta con 30/KD0 en MX; ni las cifras de KD ni el volumen identifican deseo de contribuir. Comunidad de desarrolladores 10/KD18 viene etiquetada navigational, no comunidad de IA inequívoca.
+
+### SERP e intención: cambios materiales
+
+[Evidencia por país](openseo-serp-2026-11-05.md): **47 respuestas exitosas**, elementos mixtos hasta depth 10, selección trazada por ID/rank/domain/URL recibida. No se llama «top 10 orgánico» a diez elementos mixtos. Se incluyen ocupantes de búsquedas institucionales, comunidad, verticales, Academy, productos, proyectos, investigación y formación empresarial.
+
+1. **Foundations:** S-*-03 muestra definiciones/introducciones/recursos. CONFIRMA la necesidad de explicar el campo institucional; DESCARTA como equivalencia automática «AI Foundations = curso básico». No crea una página o nueva oferta.
+2. **Software:** S-*-04 mezcla guías, carrera, soluciones y formación. S-*-08 para Software with AI es sobre comparativas de herramientas en inglés; el nombre aprobado puede mantenerse, pero necesita descripción formativa por tarea en español. No se declara validado como keyword principal. La idea PE de 1.300 para ingeniería de software con IA se contrastó en S-PE-17: carreras y discusión educativa, por lo que no se asigna íntegra a Academy.
+3. **Science:** frase española larga (S-*-05) se acerca a herramientas/flujo de investigación; `ai for science` (S-*-14) también muestra programas, revista y entidades científicas. No fusionar intención de usar una herramienta, descubrir un paper y comprender trabajo científico propio. El commercial automático de la frase en MX es una lectura parcial.
+4. **Finance:** commercial automático en los tres, pero S-*-06 mezcla artículos, cursos y proveedores, con procesos/contabilidad/riesgos. No equivale a trading, consultoría propia o intención transaccional pura.
+5. **Academy:** curso viene informational/KD0, mientras S-*-09 muestra ofertas, comparativas y alternativas gratuitas. CAMBIA la lectura de esa etiqueta: intención formativa/comercial mixta; ningún KD0 prueba una victoria rápida. AI Engineering es disciplina/rol/roadmap además de aprendizaje y tiene KD53/57 en MX/CO.
+6. **Productos:** commercial compatible con descubrimiento/comparación (S-*-10), no solo compra. HubSpot, directorios y guías ocupan resultados. Oportunidad de curación por utilidad, relación con IA, acceso/estado y autoría; falta inventario propio para demostrar una ventaja real.
+7. **Comunidad:** no llegó volumen exacto ni mediante la alternativa de ideas. S-PE/MX-01/13 sí muestra espacios, instituciones y comunidades; CO es ruidoso incluso con variante. No se demuestra hueco de mercado o ausencia de comunidades. S-*-11 para proyectos tiene gestión/ejemplos/educación: no apropiarse de 10/30/50 como demanda de participación.
+8. **Empresas e Investigación:** S-MX-15 y variantes S-PE/CO-16 apoyan formación profesional/equipos con ajuste desigual; no habilitan asesoría o servicios nuevos. S-*-12 mezcla originales, divulgación y uso de IA para investigar; K5 necesita procedencia y contexto para una colección útil.
+
+Los referentes estratégicos no se volvieron a estudiar. La evidencia SEO identifica ocupantes orgánicos **de esas queries**, no rivales comerciales equivalentes del dominio ni quién le resta tráfico. Ejemplos por mercado: PE forosdeia.com/CENIA en comunidad y DirectorioIA en herramientas; MX ANIA/Academia de IA y HubSpot/AIFINDY; CO resultados comunitarios ruidosos y HubSpot/DirectorioIA en herramientas. DataCamp y proveedores educativos se cruzan con guías/plataformas; no hay un único competidor de toda AI PlayGrounds. Posiciones y casos exactos en la evidencia.
+
+### Oportunidades propuestas para Gate B
+
+| Necesidad | Propuesta acotada | Prioridad razonada y límite |
+|---|---|---|
+| Entender organización/campos | Inicio explica propósito y cuatro verticales con español concreto; Equipo y trabajo sostienen atribución | Prioridad institucional por B1, no por volumen genérico o marca medida |
+| Participar/contribuir | Comunidad con actividades, condiciones y siguiente paso confirmado; Labs muestra trabajo acreditado | Prioridad comunitaria; no degradarla por filas ausentes ni vender formación como identidad global |
+| Descubrir productos | Productos/fichas con tarea, relación con IA, acceso, fuente y estado | Señal observada en los tres países; el KD numérico orienta, no garantiza facilidad; inventario pendiente |
+| Elegir aprendizaje | Formación/AI Academy explica integración frente a asistencia de software, oferta y requisitos reales | Señal por tareas; no crear más programas, páginas o modalidad, no renombrar Software with AI por la SERP |
+| Comprender ciencia/finanzas/fundamentos | Topics con problemas, evidencia y límites; enlaces a objetos reales en Investigación/Productos/Labs | Intención contrastada, demanda parcial; ninguna prueba suficiente para cuatro nuevas páginas |
+| Investigar trabajos y formación para equipos | Colección Investigación con originales; Empresas con categoría/encaje y contacto operativo por confirmar | Evidencia mixta y específica, sin prometer servicios de implementación, asesoría, vacantes o rendimiento financiero |
+
+**Decision Delta adicional, sin cambiar decisiones históricas:** acceso a Default y viabilidad dentro de presupuesto **CAMBIA** respecto a O0; necesidad de desambiguación por tareas **CONFIRMA**; nombre de línea como keyword formativa probada y proyectos como volumen participativo **DESCARTA** como inferencias automáticas; exclusividad, rentabilidad y prioridad única de mercados/verticales **INCONCLUSO**. D1–D6 conservan sus tokens y autoridad humana en §9/Dossier; la investigación no aprueba propuestas.
+
+### Consumo y limitaciones pendientes
+
+Reservas conservadoras acumuladas de planificación: **1.530 créditos / US$1,53**, liberadas tras conciliar; no son cargo real. Saldos verificados: 9.787 → **9.491**, diferencia **296 créditos**, equivalente según código público a **US$0,296** de US$2. Margen US$1,704; sin solicitudes/reservas pendientes. Ledger y fuentes del cálculo en O1-C. Falta costo exacto por keyword/runId en meta; las diferencias de saldo por lote son observadas, la conversión monetaria no es factura ni nuevo cargo a tarjeta.
+
+Limitaciones reales: 50 combinaciones sin fila, KD null en 20/34 filas, CPC null en 16/34; sin fecha por métrica; redirecciones opacas y algunos snippets anómalos; error proveedor en capacitación PE exacta (se resolvió contraste mediante variante, no la query original). `research_keywords` devolvió 227 ideas con asociaciones amplias, marcas ajenas y ruido; no son 227 oportunidades. No se activó medición IA: un módulo AI Overview en SERP sin respuesta/citas no acredita mención propia ni demanda de asistentes.
+
+**Gate B listo para revisión, pendiente de aprobación:** revisar D1–D6, mapa y oportunidades de esta adenda; mantener las ocho páginas/dos tipos, decidir sobre prioridades de contenido y aceptar vacíos explícitos sin exigir una adquisición ilimitada. No hay bloqueo por Default US/en o autorización adicional dentro del presupuesto, ni avance a B2/E1/E2.
+
+### Cierre de clustering y preguntas relacionadas para Gate B
+
+**Keyword Clustering — COMPLETO para la decisión de Research, como propuesta; no aprobado.** El mapa contiene seis grupos por necesidad/ownership (K0–K5), con K2a/K2b como subnecesidades formativas y no páginas adicionales, y relaciona T1–T4 como topics institucionales sin clusters SEO autónomos demostrados. Las 47 SERP exitosas, las etiquetas automáticas donde existieron y el contraste de tareas respaldan la separación material: asistencia al desarrollo vs. integración/formación; herramientas vs. investigación científica; trabajos vs. uso de IA para investigar; participación comunitaria vs. búsquedas de proyectos; y aprendizaje general vs. AI Foundations. Los casos de intención mixta o evidencia parcial quedan explícitamente marcados, sin reclamar cada volumen para un grupo ni abrir landings. El sustento es suficiente para revisar este mapa y la arquitectura vigente, no para afirmar cobertura exhaustiva de todas las consultas ni aprobar ownership automáticamente.
+
+**Preguntas relacionadas/PAA — PARCIAL; no bloquea Gate B.** Solo hay dos títulos de pregunta observados en resultados (S-MX-04/05); no fueron validados como PAA ni se dispone de consultas, respuestas, volumen o recurrencia de preguntas. El proveedor señaló módulos `people_also_ask` en algunas SERP, pero los campos adquiridos no incluyeron su contenido. Por tanto, la evidencia no permite decir que la investigación PAA esté completa ni que esos dos títulos representen necesidades recurrentes. Sí permite contrastar de forma limitada las tareas de K2b y K4/K5.
+
+No se hizo una adquisición adicional: repetir las SERP ya consultadas no expone los campos PAA omitidos y ninguna pregunta PAA concreta pendiente cambiaría la separación de clusters, el ownership propuesto o las ocho páginas/dos fichas. Preguntas para definir respuestas, encabezados, FAQs o módulos por página corresponden a E1/E2 después de B2; visibilidad de asistentes requeriría una investigación distinta y no solicitada. Se acepta como límite explícito del Research, no como señal de ausencia de preguntas. **Recomendación: Gate B puede pasar a revisión humana con clustering suficiente y PAA parcial documentada; mantenerlo pendiente hasta esa decisión humana.**
+
+## 12. Validación de la continuación SEO
+
+- **Alcance:** cuatro documentos previos actualizados (Research, consultas, Keyword Map y Dossier) y dos evidencias nuevas (JSON de métricas y selección SERP/ideas). README, CSV histórico, brief/B0/B1, arquitectura, archivo y ambos `.opencode` idénticos al baseline de esta continuación. Sin edición del skill, configuraciones, código de aplicación, B2/E1/E2, commit o push.
+- **Preservación estratégica:** comparación literal de §§2–5 y del histórico §6 con el documento previo reconstruido del diff de Prompt 2, validado primero por su SHA-256 contra el baseline. Las fuentes F1–F17 no se volvieron a investigar. Los 16 originales del archivo conservan sus hashes.
+- **Datos:** JSON válido, 28 candidatas únicas y 8/14/12 filas por país; 34 filas con volumen/intención, 14 con KD, 18 con CPC, 32 con competencia numérica; 50 combinaciones ausentes. Sin duplicados o valores nulos convertidos en cero. Las 227 ideas y la ausencia de seed exacta se comprobaron contra la salida técnica; solo se retuvo una selección pertinente, no se presentan todas como oportunidades.
+- **SERP:** 48 IDs únicos (17 PE, 15 MX, 16 CO), incluido el error S-PE-15; 47 éxitos. Posición orgánica separada de rank mixto, país de consulta separado de origen del dominio, URL opaca no reconstruida. No se usan snippets anómalos para validar claims o ausencia de competencia. Preguntas de resultados separadas de PAA y prompts IA no adquiridos.
+- **Trazabilidad y revisión editorial:** enlaces/anclas locales, columnas de tablas y diff correctos; D1–D6 coinciden con Dossier. Revisión conjunta de prosa: oportunidades específicas de organización/comunidad/campos/Academy/productos, con límites próximos a las cifras y sin nueva promesa de oferta. Las tablas iniciales del mapa están identificadas como corte previo y la actualización SEO prevalece.
+- **Skill:** `python -B .opencode/skills/web-content-design/scripts/check_package.py` → OK, frontmatter, 28 Markdown, enlaces locales, runtime y estructura de evals, sin modificar bytecode. Es QA mecánico, no certificación de comportamiento o visibilidad.
+- **Consumo:** fuentes públicas antes de pagar y reservas por lote documentadas; saldo final reconfirmado 9.491, diferencia 296 créditos (equivalente público US$0,296), dentro de US$2; sin reservas o solicitudes pendientes. No se atribuye costo cero a metadatos omitidos. Defaults de Default sin cambios, confirmados por `list_projects` al cierre.

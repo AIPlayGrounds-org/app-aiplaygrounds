@@ -35,7 +35,15 @@ READY-01–17 y E2E-11–13 requieren revisar cadena material reconstruible entr
 
 El checker solo verifica contratos estructurales del paquete. No puntúa readiness de proyectos ni conducta AEO/GEO. Nuevas fixtures no son evidencia de ejecución; registrar corridas reales con versión/dirty, traza y juicio antes de declarar cumplimiento observado.
 
-## Activación
+## Estructuras semánticas — juicio de fragmentos E1/E2
+
+Aplicar a STRUCT-01–24: tarea y proporcionalidad; unidades, campos obligatorios/condicionales y relaciones conservados; E1 suficientemente definido sin copy completo; E2 con estructura en cuerpo principal y copy/datos reales revisables; faltantes sin borrar modelo ni simular publicación lista; cinco capas distinguibles y ninguna UI prescrita sin base. Tabla documental válida no implica tabla HTML; lista/prosa/subsecciones también pueden cumplir. No puntuar por cantidad de campos o tablas. Aplanamiento material, estructura escondida en notas, UI impuesta o sobreestructuración que perjudica la tarea son fallos mayores; invención de datos/capacidades/claims publicables conserva severidad crítica. El checker no evalúa estos resultados.
+
+## OpenSEO — juicio de investigación y consumo
+
+Para OSEO-01–14 aplicar además [`openseo-cases.md`](openseo-cases.md): gasto sin autorización/fuera de presupuesto, contaminación entre proyectos, métricas inventadas/null=0 o Ads como KD son críticos. Intención automática sin contraste material ni límite, KD=0 como facilidad probada, geografía mezclada, endpoints inventados o bloqueo global por proveedor opcional son mayores salvo consecuencias críticas. Los tests de contratos e instalación no validan el comportamiento de un agente ni la facturación; registrar por separado.
+
+## Activación espontánea
 
 Registrar expected, observed (`yes/no/partial/not_observed`), falso positivo/negativo, si activó antes de responder y si atendió solo la parte web/editorial del prompt mixto. No usar llamadas explícitas a skill para estimar activación. Reportar conteos y casos, no solo tasa agregada.
 
