@@ -1,0 +1,960 @@
+{
+  "id": "QM03-CO",
+  "tool": "get_keyword_metrics",
+  "at": "2026-11-05T16:29:31.175Z",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "keywords": [
+      "qué es AI PlayGrounds",
+      "qué es una comunidad de inteligencia artificial",
+      "cómo unirse a una comunidad de inteligencia artificial",
+      "dónde encontrar comunidades de inteligencia artificial",
+      "cómo empezar un proyecto de inteligencia artificial",
+      "qué datos se necesitan para un proyecto de inteligencia artificial",
+      "cómo evaluar un proyecto de inteligencia artificial",
+      "cómo elegir herramientas de inteligencia artificial",
+      "cuál es la mejor inteligencia artificial",
+      "qué riesgos tiene usar herramientas de inteligencia artificial",
+      "cómo funciona la inteligencia artificial",
+      "cómo programar con inteligencia artificial",
+      "cómo revisar código generado por inteligencia artificial",
+      "cuál es la mejor ia para programar",
+      "se puede programar solo con inteligencia artificial",
+      "qué es ai engineering",
+      "qué hace un ingeniero de inteligencia artificial",
+      "qué diferencia hay entre ai engineering y machine learning",
+      "cómo usar inteligencia artificial en investigación científica",
+      "cómo citar inteligencia artificial en apa 7",
+      "cómo verificar información generada por inteligencia artificial",
+      "es ético usar inteligencia artificial en investigación",
+      "cuál es la mejor ia para investigación científica",
+      "cómo buscar artículos científicos con inteligencia artificial",
+      "cómo se utiliza la inteligencia artificial en las finanzas",
+      "qué riesgos tiene la inteligencia artificial en finanzas",
+      "qué aplicaciones tiene la inteligencia artificial en finanzas",
+      "es necesario saber programar para aprender inteligencia artificial",
+      "cómo implementar inteligencia artificial en una empresa",
+      "cuánto cuesta implementar inteligencia artificial en una empresa",
+      "cómo proteger datos al usar inteligencia artificial",
+      "cómo elegir una solución de inteligencia artificial",
+      "cómo saber si un artículo científico es confiable",
+      "cómo analizar la calidad de un artículo científico",
+      "qué es un preprint"
+    ],
+    "locationCode": 2170,
+    "languageCode": "es",
+    "includeMonthlyTrends": true,
+    "includeClickstreamData": false
+  },
+  "response": {
+    "keywords": [
+      {
+        "keyword": "cómo funciona la inteligencia artificial",
+        "search_volume": 880,
+        "keyword_difficulty": 19,
+        "main_intent": "informational",
+        "cpc": 0.62,
+        "competition": 0.14,
+        "competition_level": "LOW",
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 9,
+            "search_volume": 1600
+          },
+          {
+            "year": 2026,
+            "month": 8,
+            "search_volume": 880
+          },
+          {
+            "year": 2026,
+            "month": 7,
+            "search_volume": 720
+          },
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 720
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 880
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 880
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 880
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 880
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 720
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 1300
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 1600
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 1600
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 1300
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 1000
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 1300
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 1600
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 1900
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 1600
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 590
+          },
+          {
+            "year": 2024,
+            "month": 12,
+            "search_volume": 320
+          },
+          {
+            "year": 2024,
+            "month": 11,
+            "search_volume": 1000
+          },
+          {
+            "year": 2024,
+            "month": 10,
+            "search_volume": 1600
+          },
+          {
+            "year": 2024,
+            "month": 9,
+            "search_volume": 1600
+          },
+          {
+            "year": 2024,
+            "month": 8,
+            "search_volume": 1600
+          },
+          {
+            "year": 2024,
+            "month": 7,
+            "search_volume": 1600
+          },
+          {
+            "year": 2024,
+            "month": 6,
+            "search_volume": 880
+          },
+          {
+            "year": 2024,
+            "month": 5,
+            "search_volume": 1600
+          },
+          {
+            "year": 2024,
+            "month": 4,
+            "search_volume": 1600
+          },
+          {
+            "year": 2024,
+            "month": 3,
+            "search_volume": 1300
+          },
+          {
+            "year": 2024,
+            "month": 2,
+            "search_volume": 1600
+          },
+          {
+            "year": 2024,
+            "month": 1,
+            "search_volume": 720
+          },
+          {
+            "year": 2023,
+            "month": 12,
+            "search_volume": 390
+          },
+          {
+            "year": 2023,
+            "month": 11,
+            "search_volume": 1300
+          },
+          {
+            "year": 2023,
+            "month": 10,
+            "search_volume": 1900
+          },
+          {
+            "year": 2023,
+            "month": 9,
+            "search_volume": 1900
+          },
+          {
+            "year": 2023,
+            "month": 8,
+            "search_volume": 1600
+          },
+          {
+            "year": 2023,
+            "month": 7,
+            "search_volume": 1300
+          },
+          {
+            "year": 2023,
+            "month": 6,
+            "search_volume": 1600
+          },
+          {
+            "year": 2023,
+            "month": 5,
+            "search_volume": 1900
+          },
+          {
+            "year": 2023,
+            "month": 4,
+            "search_volume": 1900
+          },
+          {
+            "year": 2023,
+            "month": 3,
+            "search_volume": 1300
+          },
+          {
+            "year": 2023,
+            "month": 2,
+            "search_volume": 1000
+          },
+          {
+            "year": 2023,
+            "month": 1,
+            "search_volume": 210
+          },
+          {
+            "year": 2022,
+            "month": 12,
+            "search_volume": 110
+          },
+          {
+            "year": 2022,
+            "month": 11,
+            "search_volume": 480
+          },
+          {
+            "year": 2022,
+            "month": 10,
+            "search_volume": 590
+          },
+          {
+            "year": 2022,
+            "month": 9,
+            "search_volume": 590
+          },
+          {
+            "year": 2022,
+            "month": 8,
+            "search_volume": 590
+          },
+          {
+            "year": 2022,
+            "month": 7,
+            "search_volume": 480
+          },
+          {
+            "year": 2022,
+            "month": 6,
+            "search_volume": 260
+          },
+          {
+            "year": 2022,
+            "month": 5,
+            "search_volume": 720
+          },
+          {
+            "year": 2022,
+            "month": 4,
+            "search_volume": 590
+          },
+          {
+            "year": 2022,
+            "month": 3,
+            "search_volume": 480
+          },
+          {
+            "year": 2022,
+            "month": 2,
+            "search_volume": 320
+          },
+          {
+            "year": 2022,
+            "month": 1,
+            "search_volume": 70
+          },
+          {
+            "year": 2021,
+            "month": 12,
+            "search_volume": 90
+          },
+          {
+            "year": 2021,
+            "month": 11,
+            "search_volume": 320
+          },
+          {
+            "year": 2021,
+            "month": 10,
+            "search_volume": 480
+          },
+          {
+            "year": 2021,
+            "month": 9,
+            "search_volume": 480
+          },
+          {
+            "year": 2021,
+            "month": 8,
+            "search_volume": 480
+          },
+          {
+            "year": 2021,
+            "month": 7,
+            "search_volume": 260
+          },
+          {
+            "year": 2021,
+            "month": 6,
+            "search_volume": 210
+          },
+          {
+            "year": 2021,
+            "month": 5,
+            "search_volume": 320
+          },
+          {
+            "year": 2021,
+            "month": 4,
+            "search_volume": 390
+          },
+          {
+            "year": 2021,
+            "month": 3,
+            "search_volume": 390
+          },
+          {
+            "year": 2021,
+            "month": 2,
+            "search_volume": 260
+          },
+          {
+            "year": 2021,
+            "month": 1,
+            "search_volume": 50
+          },
+          {
+            "year": 2020,
+            "month": 12,
+            "search_volume": 110
+          },
+          {
+            "year": 2020,
+            "month": 11,
+            "search_volume": 390
+          },
+          {
+            "year": 2020,
+            "month": 10,
+            "search_volume": 480
+          },
+          {
+            "year": 2020,
+            "month": 9,
+            "search_volume": 590
+          },
+          {
+            "year": 2020,
+            "month": 8,
+            "search_volume": 480
+          },
+          {
+            "year": 2020,
+            "month": 7,
+            "search_volume": 320
+          },
+          {
+            "year": 2020,
+            "month": 6,
+            "search_volume": 320
+          },
+          {
+            "year": 2020,
+            "month": 5,
+            "search_volume": 320
+          },
+          {
+            "year": 2020,
+            "month": 4,
+            "search_volume": 320
+          },
+          {
+            "year": 2020,
+            "month": 3,
+            "search_volume": 390
+          },
+          {
+            "year": 2020,
+            "month": 2,
+            "search_volume": 390
+          },
+          {
+            "year": 2020,
+            "month": 1,
+            "search_volume": 90
+          },
+          {
+            "year": 2019,
+            "month": 12,
+            "search_volume": 50
+          },
+          {
+            "year": 2019,
+            "month": 11,
+            "search_volume": 260
+          },
+          {
+            "year": 2019,
+            "month": 10,
+            "search_volume": 260
+          },
+          {
+            "year": 2019,
+            "month": 9,
+            "search_volume": 320
+          },
+          {
+            "year": 2019,
+            "month": 8,
+            "search_volume": 260
+          },
+          {
+            "year": 2019,
+            "month": 7,
+            "search_volume": 140
+          },
+          {
+            "year": 2019,
+            "month": 6,
+            "search_volume": 110
+          },
+          {
+            "year": 2019,
+            "month": 5,
+            "search_volume": 210
+          },
+          {
+            "year": 2019,
+            "month": 4,
+            "search_volume": 210
+          },
+          {
+            "year": 2019,
+            "month": 3,
+            "search_volume": 260
+          },
+          {
+            "year": 2019,
+            "month": 2,
+            "search_volume": 320
+          },
+          {
+            "year": 2019,
+            "month": 1,
+            "search_volume": 140
+          },
+          {
+            "year": 2018,
+            "month": 12,
+            "search_volume": 70
+          },
+          {
+            "year": 2018,
+            "month": 11,
+            "search_volume": 320
+          }
+        ]
+      },
+      {
+        "keyword": "cuál es la mejor inteligencia artificial",
+        "search_volume": 590,
+        "keyword_difficulty": 0,
+        "main_intent": "informational",
+        "cpc": 0.9,
+        "competition": 0.5,
+        "competition_level": "MEDIUM",
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 9,
+            "search_volume": 720
+          },
+          {
+            "year": 2026,
+            "month": 8,
+            "search_volume": 720
+          },
+          {
+            "year": 2026,
+            "month": 7,
+            "search_volume": 590
+          },
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 480
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 720
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 720
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 720
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 720
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 210
+          },
+          {
+            "year": 2024,
+            "month": 12,
+            "search_volume": 210
+          },
+          {
+            "year": 2024,
+            "month": 11,
+            "search_volume": 260
+          },
+          {
+            "year": 2024,
+            "month": 10,
+            "search_volume": 260
+          },
+          {
+            "year": 2024,
+            "month": 9,
+            "search_volume": 260
+          },
+          {
+            "year": 2024,
+            "month": 8,
+            "search_volume": 320
+          },
+          {
+            "year": 2024,
+            "month": 7,
+            "search_volume": 210
+          },
+          {
+            "year": 2024,
+            "month": 6,
+            "search_volume": 140
+          },
+          {
+            "year": 2024,
+            "month": 5,
+            "search_volume": 260
+          },
+          {
+            "year": 2024,
+            "month": 4,
+            "search_volume": 210
+          },
+          {
+            "year": 2024,
+            "month": 3,
+            "search_volume": 260
+          },
+          {
+            "year": 2024,
+            "month": 2,
+            "search_volume": 210
+          },
+          {
+            "year": 2024,
+            "month": 1,
+            "search_volume": 90
+          },
+          {
+            "year": 2023,
+            "month": 12,
+            "search_volume": 110
+          },
+          {
+            "year": 2023,
+            "month": 11,
+            "search_volume": 170
+          },
+          {
+            "year": 2023,
+            "month": 10,
+            "search_volume": 170
+          },
+          {
+            "year": 2023,
+            "month": 9,
+            "search_volume": 170
+          },
+          {
+            "year": 2023,
+            "month": 8,
+            "search_volume": 170
+          },
+          {
+            "year": 2023,
+            "month": 7,
+            "search_volume": 170
+          },
+          {
+            "year": 2023,
+            "month": 6,
+            "search_volume": 210
+          },
+          {
+            "year": 2023,
+            "month": 5,
+            "search_volume": 390
+          },
+          {
+            "year": 2023,
+            "month": 4,
+            "search_volume": 260
+          },
+          {
+            "year": 2023,
+            "month": 3,
+            "search_volume": 170
+          },
+          {
+            "year": 2023,
+            "month": 2,
+            "search_volume": 110
+          },
+          {
+            "year": 2023,
+            "month": 1,
+            "search_volume": 30
+          },
+          {
+            "year": 2022,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2022,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2022,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2022,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2022,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2022,
+            "month": 7,
+            "search_volume": 20
+          },
+          {
+            "year": 2022,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2022,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2022,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2022,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2022,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2022,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2021,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2021,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2021,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2021,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2021,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2021,
+            "month": 7,
+            "search_volume": 20
+          },
+          {
+            "year": 2021,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2021,
+            "month": 5,
+            "search_volume": 20
+          },
+          {
+            "year": 2021,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2021,
+            "month": 3,
+            "search_volume": 20
+          },
+          {
+            "year": 2021,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2021,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2020,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2020,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2020,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2020,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2020,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2020,
+            "month": 7,
+            "search_volume": 10
+          },
+          {
+            "year": 2020,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2020,
+            "month": 5,
+            "search_volume": 20
+          },
+          {
+            "year": 2020,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2020,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2020,
+            "month": 2,
+            "search_volume": 0
+          },
+          {
+            "year": 2020,
+            "month": 1,
+            "search_volume": 0
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/Default (contenedor autorizado)/keywords"
+    }
+  },
+  "reserve": 21
+}

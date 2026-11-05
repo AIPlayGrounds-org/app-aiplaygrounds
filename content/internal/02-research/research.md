@@ -1,6 +1,197 @@
 # Research estratégico y SEO · AI PlayGrounds v2
 
-**Etapa:** Research desde [B1 validada](../01-brief-diagnostico/diagnostico-b1.md), sin reiniciar intake. **Estado:** propuestas para Gate B; no B2.
+**Estado vigente · 05/11/2026: Gate B APROBADO** por la autorización humana GB22, con las precisiones de R11. Investigación SEO reconstruida y complemento de preguntas aceptados como base, sin convertir sus limitaciones en datos completos. B1, investigación estratégica no SEO y arquitectura conservados. B2/Estrategia se actualizan para E1 v2.2, que queda pendiente de aprobación; no E2. Los estados de propuesta/reapertura de R1–R10 y del registro anterior describen sus cortes de adquisición.
+
+## R11. Gate B aprobado y precisiones de aplicación
+
+**Fuente:** mensaje humano «AI PlayGrounds v2 — Aprobación de Gate B y actualización de E1 v2.2»,05/11/2026; [registro GB22 y feedback](../04-feedback/feedback-e1.md). Acepta N01–N13,69 expresiones candidatas y matriz mixta de48 preguntas. PAA textual sigue siendo una limitación conocida:0 PAA verificadas;13 keywords/16 títulos/19 inferencias no se intercambian. La prioridad institucional no equivale a oportunidad SEO probada y los clusters no determinan páginas nuevas.
+
+**Aplicación revisada:** P05 solo referencia competitiva; P09 fuera del plan de respuesta del website, sin tutoriales en Labs; P27 fuera de Investigación, sin guía APA; P45 pasa a apoyo de prioridad media para los campos de ficha, no contenido prioritario. Se preservan fuentes, métricas y selección original de investigación; la capa de decisión está en B2/Estrategia, no se reescriben las capturas.
+
+R-D1–R-D7 se incorporan con sus tokens y límites:CONFIRMA/CAMBIA/CAMBIA/DESCARTA/CAMBIA/CONFIRMA/INCONCLUSO. La aprobación no resuelve rentabilidad, mercados, capacidad propia o vacíos de inventario. Autorización limitada a reconsolidar [B2](../01-brief-diagnostico/diagnostico-b2.md), [Estrategia](../03-estrategia/estrategia-contenido.md) y E1 v2.2 pendiente. Sin nueva investigación o consumo; el último saldo observado sigue siendo histórico7.170, no una comprobación remota nueva.
+
+## R10. Complemento final de preguntas antes de Gate B
+
+**05/11/2026 · EJECUTADO, pendiente de revisión humana.** Se añade evidencia sin sustituir R1–R9 ni reagrupar N01–N13. La [matriz interna](preguntas-2026-11-05/matriz.md) contiene **48 preguntas canónicas**:13 keywords interrogativas,16 títulos orgánicos y19 inferencias editoriales;26 altas,17 medias y5 bajas. Las29 con fuente literal no son29 consultas de usuarios demostradas:16 son títulos publicados. Cobertura13/13, con distinta fuerza de evidencia; N01/N02 siguen dependiendo principalmente de B1 y de inferencia institucional.
+
+La nueva adquisición real de OpenSEO añade12 seed/país,901 filas de expansión,27 SERP exitosas de30 y5 filas de102 solicitudes métricas. Reutiliza las66 SERP anteriores, sin repetirlas en bloque. El inventario local de candidatas incluye790 observaciones antiguas/nuevas,731 combinaciones únicas literal/origen/país y74 observaciones enlazadas a las48 canónicas. No son790 oportunidades ni74 preguntas diferentes. [Cobertura computada](preguntas-2026-11-05/cobertura.json), [literales y localizadores](preguntas-2026-11-05/observaciones.csv), [respuestas sanitizadas](preguntas-2026-11-05/raw/).
+
+**PAA verificadas0; búsquedas relacionadas textuales0.** Las nuevas SERP identificaron17/19 módulos sin texto; las93 SERP exitosas anteriores/nuevas suman39/81 módulos. Los intentos web tampoco recuperaron módulos atribuibles a consulta/mercado. No se convierte una FAQ ajena o un título en PAA. La base de preguntas IA del catálogo solo admite US/inglés y no se ejecutó para simular cobertura española. [Fuentes web y discrepancias](preguntas-2026-11-05/fuentes-web.md).
+
+La prioridad se basa en pertinencia institucional y decisión del visitante, no en volumen. Para E1 se proponen responsabilidades de bloque/campos de identidad, participación, iniciativas, contraste de líneas, evaluación de objetos y relación empresarial, sin nuevas páginas;3 posibles FAQs contextuales, nunca automáticas. Para E2 quedan12 preguntas principalmente explicativas y los datos concretos de cada oferta/objeto/proceso. No se editó E1 ni se generó E2. [Prioridades por cluster, países, implicaciones y cierre](preguntas-2026-11-05/cierre.md).
+
+Consumo de este complemento:**650 créditos observados**, saldo7.820→7.170, equivalente públicoUS$0,650 del saldo incluido; sin recargas ni cambios remotos. Rondas anteriores296/1.671 se conservan separadas; acumulado documentado2.617. [Registro R3](research-queries.md#r3-complemento-de-preguntas-antes-de-gate-b).
+
+**Recomendación:** llevar el complemento a revisión humana de Gate B con aceptación explícita del límite PAA y del origen editorial de las preguntas institucionales. No se aprueba Gate B ni se avanza a B2/Estrategia/E1/E2. Si PAA textual es requisito innegociable del revisor, el gate sigue pendiente de esa fuente; no se declara cumplido mediante alternativas mal etiquetadas.
+
+## R1. Resultado ejecutivo de la reconstrucción
+
+Se investigaron **30 combinaciones seed/país**, diez por mercado, mediante ocho llamadas reales de expansión. OpenSEO devolvió **2.838 filas de descubrimiento**, con duplicados entre seeds y abundante ruido. Tras deduplicar por expresión literal y país, son 612 keywords en Perú, 595 en México y 621 en Colombia. **No son 2.838 oportunidades ni se suman volúmenes nacionales.**
+
+El contraste posterior comprende 144 combinaciones solicitadas a métricas, 81 filas devueltas, **66 SERP distintas y exitosas** (22 por país, `es`, desktop, depth20), tres análisis de competidores SERP, un overview de dominio y 300 filas de keywords posicionadas de DataCamp en español. La selección editorial contiene **69 expresiones candidatas** y 13 clusters, con funciones distintas y confianza explícita. No se reutilizaron K0–K5 como plantilla del descubrimiento.
+
+El consumo observado de esta ejecución es **1.671 créditos, equivalentes a US$1,671**, por diferencia de saldo 9.491 → 7.820. No hay cargo por llamada en los metadatos; el desglose contable individual sigue desconocido. No se modificó facturación, configuración remota o tracking.
+
+**Evidencia duradera:** [operaciones y presupuesto](research-queries.md#r2-reconstrucción-independiente-openseo), [mapa nuevo](keyword-map.md), [cobertura computada](seo-rebuild-2026-11-05/coverage.json), [respuestas MCP con parámetros](seo-rebuild-2026-11-05/raw/), [observaciones completas](seo-rebuild-2026-11-05/observaciones.csv), [selección de candidatas](seo-rebuild-2026-11-05/candidatas.csv), [ausencias explícitas](seo-rebuild-2026-11-05/ausencias-overview.csv), [preguntas y procedencia](seo-rebuild-2026-11-05/preguntas.csv), [contraste SERP por consulta](seo-rebuild-2026-11-05/serp-e-intencion.md) y [27 comparaciones entre SERP](seo-rebuild-2026-11-05/solapamiento-serp.csv).
+
+## R2. Preflight, independencia y método
+
+La definición de partida es la organización enfocada en IA, impulsada por una comunidad que aprende, investiga, experimenta y construye. Academy es su iniciativa formativa. Las cuatro verticales son campos organizacionales, no cursos o servicios deducidos de consultas.
+
+| Decisión investigada | Pregunta / criterio de cierre | Fuente y alcance |
+|---|---|---|
+| Identidad y comunidad | ¿Qué expresiones y resultados distinguen una organización de una comunidad participativa? Cerrar al identificar funciones y ambigüedad de marca | Expansión, overview y SERP nacionales; B1 fija identidad, no el volumen |
+| Verticales y práctica técnica | ¿Las búsquedas buscan introducción, carrera, aplicación o trabajo científico? Cerrar con contraste nacional y pares de SERP | Seeds Foundations/Software/Science/Finance/Engineering; no páginas por vertical |
+| Productos, Labs y trabajos | ¿Se buscan herramientas, ejemplos de proyectos, laboratorios o publicaciones? Separar las tareas y registrar límites | Expansión, SERP, cobertura competidora; inventario propio pendiente |
+| Academy | ¿Qué distingue aprendizaje, disciplina profesional e ingeniería universitaria? Contrastar etiqueta automática con ofertas/resultados | Overview, series mensuales y SERP; nombre de línea no equivale a keyword validada |
+| Empresas | ¿Se buscan capacidades, software, aplicación o cursos? Cerrar sin atribuir servicios propios por oferta ajena | Dos expresiones empresariales por mercado y contraste competitivo |
+| Preguntas | ¿Qué dudas aparecen como keywords o títulos y qué contenido PAA es accesible? Clasificar procedencia sin inventar recurrencia | Expansión interrogativa, overview y contenido realmente devuelto en SERP |
+
+**OpenSEO: USAR / EJECUTADO.** Se inspeccionaron los 82 schemas MCP actuales. `groupKeywords` incluye variantes próximas; **no realiza clustering por necesidad o SERP**. No existe operación dedicada accesible para clustering, content gap, Questions o PAA. Los estimadores disponibles son de tracking/visibilidad IA y no se usaron como estimadores de esta investigación. Se ejecutaron `research_keywords`, `get_keyword_metrics`, `get_serp_results`, `find_serp_competitors`, `get_domain_overview` y `get_ranked_keywords`; cuenta, proyectos, contexto y localizaciones se comprobaron con lecturas gratuitas.
+
+**Planner: USAR / ERROR OBSERVADO.** Un intento real nacional PE/es falló por reautenticación antes del contraste SERP; no se reparó ni repitió por país. No sustituyó OpenSEO. **Webfetch: USAR / EJECUTADO**, solo tres lecturas primarias de ocupantes descubiertos y precios/código oficial para presupuesto. Sin investigación web convencional como reemplazo. GSC, Trends y checks de respuestas IA se omiten: no resuelven estas decisiones con los datos disponibles.
+
+Las respuestas nuevas se adquirieron antes de comparar la investigación anterior. Los registros originales completos se conservan en [snapshot Research](seo-rebuild-2026-11-05/previous/research.md) y [snapshot Keyword Map](seo-rebuild-2026-11-05/previous/keyword-map.md). Las evidencias anteriores de septiembre y la primera ronda MCP siguen intactas, con sus fechas. Los identificadores privados de proyecto se sustituyen por `DEFAULT` en las copias de respuestas; no se alteran keywords o métricas.
+
+## R3. Cobertura y resultados independientes por país
+
+| Mercado nacional / idioma | Filas expansión | Keywords expansión únicas | Overview devuelto / solicitado | KD disponible | CPC disponible | Competencia Ads disponible | SERP |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Perú 2604 / es | 910 | 612 | 23 / 48 | 9 / 23 | 14 / 23 | 18 / 23 | 22 |
+| México 2484 / es | 976 | 595 | 31 / 48 | 12 / 31 | 17 / 31 | 28 / 31 | 22 |
+| Colombia 2170 / es | 952 | 621 | 27 / 48 | 10 / 27 | 18 / 27 | 23 / 27 | 22 |
+
+Cada fila overview tiene volumen e intención automática. Las 63 combinaciones sin fila son **desconocidas**, no ceros. Unión expansión + overview: 623 expresiones PE, 614 MX y 637 CO; estas cifras cuentan expresiones observadas por mercado, no demanda ni públicos únicos. Las 300 filas competidoras se contabilizan aparte.
+
+### Candidatas representativas: volumen mensual aproximado / KD
+
+| Expresión exacta | Perú | México | Colombia |
+|---|---|---|---|
+| comunidad de inteligencia artificial | ND | ND | ND |
+| organizaciones de inteligencia artificial | ND | ND | ND |
+| fundamentos de la inteligencia artificial | 70 / null | 210 / 0 | 50 / null |
+| desarrollo de software con inteligencia artificial | 10 / null | 10 / null | 10 / null |
+| ingenieria de software con inteligencia artificial | 1.300 / 0 | 10 / null | 10 / null |
+| AI Engineering, devuelto como ai engineering | ND | 590 / 53 | 480 / 57 |
+| ingeniería de inteligencia artificial | 880 / 0 | 90 / 0 | 320 / 0 |
+| inteligencia artificial en la investigación científica | 10 / null | 10 / null | 10 / null |
+| herramientas de inteligencia artificial para investigación | 10 / null | 10 / null | 10 / null |
+| inteligencia artificial en finanzas | 10 / null | 30 / null | 10 / null |
+| herramientas de inteligencia artificial | 260 / 4 | 480 / 4 | 320 / 13 |
+| proyectos de inteligencia artificial | 10 / null | 30 / 0 | 50 / 57 |
+| curso de inteligencia artificial | 880 / 0 | 1.300 / 0 | 1.000 / 0 |
+| inteligencia artificial para empresas | 20 / 50 | 50 / 0 | 40 / 52 |
+| soluciones de inteligencia artificial para empresas | 10 / null | 10 / null | 10 / null |
+
+Fuente: B01/B02/B03 en respuestas nuevas. ND = fila no devuelta; null = métrica no disponible dentro de una fila. **KD0 no demuestra facilidad.** CPC es USD y competencia Ads es publicitaria 0–1; KD orgánica 0–100. Valores originales y etiquetas en CSV/JSON. No se suman variantes con posible volumen compartido. AI Engineering PE sigue sin fila nueva; el 320 histórico no completa esa ausencia.
+
+- **Perú:** la expresión de ingeniería de software de mayor volumen se cruza con carreras, UPC y Senati. No asignar sus 1.300 búsquedas a Academy. Fundamentos 70 aporta una señal literal antes no recuperada; su SERP introductoria no representa por sí sola el trabajo de AI Foundations. Comunidad muestra CPIA y Club de la IA; eso respalda contenido participativo, no una oportunidad sin competidores.
+- **México:** herramientas 480, fundamentos 210 y AI Engineering 590 aportan señales distintas. Comunidad incluye ANIA, foros y academia; organizaciones mezcla listas de empresas y entidades. Empresas muestra tanto aplicaciones/explicaciones como proveedores. No se deduce liderazgo comercial o un mercado prioritario por tamaño aparente.
+- **Colombia:** herramientas 320/KD13 y proyectos 50/KD57 requieren cautela; proyectos no es una keyword de incorporación comunitaria. Ingeniería de IA 320 refleja carreras; AI Engineering 480/KD57 refleja también rol y aprendizaje. Comunidad muestra Club de la IA, Bogotá IA y COLOMB-IA, además de resultados ajenos al país.
+
+### Series y vigencia
+
+B01–B03 incluyen `monthly_searches`, que la expansión no expone. Se conservaron completas, incluso historia anterior a 2025. Ejemplo: curso PE, septiembre 2026=880 y septiembre 2025=1.000; esto **no** demuestra una tendencia estructural o caída futura. El último mes varía por keyword: curso PE llega a septiembre 2026, «qué es la inteligencia artificial» MX a agosto 2026. No se atribuyen datos a octubre/noviembre por haberse consultado en noviembre. Los rankings del análisis de DataCamp son muestras históricas con `last_updated_time`, distintas de las SERP live adquiridas ahora; no se promedian.
+
+## R4. SERP, competencia y diferenciación
+
+Se usó `depth=20` de elementos mixtos, no veinte resultados orgánicos garantizados. Se distinguen `rank` y `organicRank`. Las URLs `google.com/goto` y dominios ausentes se conservan sin reconstruirlas. [Registro de lectura por consulta](seo-rebuild-2026-11-05/serp-e-intencion.md) vincula tipo, necesidad, conclusión y evidencia; la respuesta original permite revisar títulos y descripciones completos.
+
+| Necesidad | Evidencia observada / organizaciones | Intención contrastada y oportunidad |
+|---|---|---|
+| Identidad frente a comunidad | C01/C02/C03 Q01–02; comunidad tiene CPIA, ANIA, COLOMB-IA/Club de la IA; organizaciones también listas de proveedores | Mantener identidad institucional, explicar aportes/vías de participación. No intentar responder una lista de empresas con un Hero institucional |
+| Disciplina técnica frente a carrera | C01–03 Q03–05; E02–04 Q02–03; universidades, documentación, guías de desarrolladores y comparativas | Diferenciar práctica, formación y título universitario. AI Engineering y Software with AI requieren descriptor español; el nombre inglés no prueba intención de curso |
+| Science, herramienta y trabajo | C01–03 Q06; C04–06 Q06; E02–04 Q05; CSIC, guías de bibliotecas, revistas, TEC | Separar aprender a usar IA, elegir herramienta y evaluar un trabajo. Las tres tareas no deben competir como tres versiones de una misma colección |
+| Finance | C01–03 Q07 y E02–04 Q06; cursos, bancos, consultoras y guías | `commercial` es parcial: hay información, formación y aplicaciones operativas. Describir problemas y límites; no asesoría ni rendimiento propio inferidos |
+| Productos | C01–03 Q09; HubSpot, Xataka, DirectorioIA y guías | `commercial` incluye comparar/descubrir. Proponer curación por tarea, acceso, procedencia y limitación, si el corpus lo permite |
+| Proyectos/Labs | C01–03 Q10 y C04–06 Q05; ejemplos educativos, gestión y laboratorios universitarios | Proyectos no mide participación. Labs puede mostrar experimentos y cómo aportar, pero no prometer infraestructura o laboratorio físico |
+| Academy | C04–06 Q03; E02–04 Q04; proveedores, programas públicos y guías | La etiqueta `informational` de curso no representa toda la intención: existe evaluación comercial y alternativas gratuitas. Academy queda dentro de Formación |
+| Empresas | C04–06 Q01–02; plataformas, casos, proveedores y formación | La necesidad excede formación; presentar cuatro verticales, capacidades acreditadas y oportunidades verificables en la página existente |
+
+`find_serp_competitors` devolvió listas vacías para PE/MX y 15 dominios para CO, todos sustentados en **una sola keyword, herramientas de IA**. Es cobertura parcial de Labs, no ausencia de competencia nacional. CO Labs sitúa OpenWebinars, Slack y DataCamp entre los primeros; la SERP live devuelve otra mezcla. Se conserva la discrepancia temporal/de fuente sin sustituir una muestra por otra.
+
+Como contraste de cobertura, se investigó DataCamp: overview CO estima 3.131 keywords y tráfico orgánico 25.116; son estimaciones de dominio y no Analytics, sesiones o cuota del mercado. `get_ranked_keywords`, alcance `/es` subfolder, devuelve 100 filas de 1.696 PE, 5.353 MX y 3.131 CO. Incluye tutoriales, explicaciones de herramientas y cursos; su orden por volumen también trae marcas y términos ambiguos. No se copian esas prioridades para la organización ni se considera el top100 un inventario completo. [Filas y fechas](seo-rebuild-2026-11-05/competidor-datacamp.csv).
+
+**Competidores de búsqueda ≠ competidores institucionales/comerciales.** CPIA y ANIA comparten parte de la función de articulación, con mandatos/ofertas propios; DataCamp es principalmente un referente competitivo de aprendizaje/contenido. No se declara un rival equivalente de toda AI PlayGrounds. La lectura primaria de Somos SIA detectó contexto español/Extremadura: aparecer en CO no la convierte en comunidad colombiana.
+
+**Gap editorial propuesto:** la cobertura planificada necesita relacionar problema, vertical, persona, actividad y objeto verificable. Las SERP premian formatos diferentes según tarea; una página genérica de cursos no responde todas ellas. Esto es una comparación editorial con la cobertura prevista, **no una prueba de pérdida de rankings propios ni de ausencia de ese contenido en todos los competidores**.
+
+## R5. Clustering construido con datos de OpenSEO
+
+**Método: clustering editorial, no resultado automático de OpenSEO.** Se evaluó el catálogo real antes de agrupar. Se separaron necesidades/intenciones, se revisaron pares de SERP del mismo país y se contrastó la forma de respuesta esperada. `solapamiento-serp.csv` registra dominios compartidos de los primeros hasta diez orgánicos con dominio conocido; no simula coincidencia de URL ni usa un umbral para decidir automáticamente.
+
+Ejemplos materiales: comunidad/organizaciones comparten 0/1/0 dominios conocidos en PE/MX/CO; ingeniería de software/desarrollo comparten 1/0/0; AI Engineering/ingeniería de IA, 0/0/0. Ciencia aplicada/herramientas de investigación comparten 1/0/0 y además formatos distintos. Los dominios desconocidos reducen cobertura: esos ceros **no** demuestran disjunción completa. Finanzas/aplicaciones comparten 2/1/0, pero la tarea común permite mantener un cluster mixto sin crear landings por variante.
+
+El [nuevo Keyword Map](keyword-map.md) documenta N01–N13: marca, participación, experimentación, herramientas, fundamentos, software con IA, AI Engineering, ciencia aplicada, herramientas de investigación, finanzas, elección de aprendizaje, relación empresarial y trabajos originales. Los grupos con evidencia insuficiente de demanda o de encaje de página quedan condicionales. **13 clusters no significan 13 páginas ni 13 oportunidades SEO demostradas.** N09 es subnecesidad especializada de descubrimiento; N06/N07 tienen facetas formativas, no dos ofertas añadidas; N13 conserva baja confianza como intención de colección.
+
+## R6. Preguntas relacionadas: qué se obtuvo realmente
+
+Se detectaron **22 módulos PAA y 62 módulos Related Searches** en las 66 SERP. Sus objetos devueltos carecen de preguntas/búsquedas concretas. **PAA extraídas: 0. Related Searches extraídas: 0.** No se presentan módulos identificados como contenido recuperado. El catálogo no ofrece parámetros para expandirlos; repetir a más profundidad no demuestra que vaya a exponer esos campos.
+
+Se utilizó otro método verificable dentro de OpenSEO: expansión de seed interrogativa por país y selección de keywords interrogativas del universo, además de títulos-pregunta orgánicos. El inventario distingue ambos. Detectó 9 expresiones interrogativas sobre IA en PE, 43 MX y 27 CO; la selección relevante para este mapa conserva 5/13/13 expresiones literales, con variantes que **no se suman como popularidad**. El resto permanece en el CSV para revisión/exclusión, no como preguntas recomendadas automáticamente.
+
+| Pregunta literal recuperada como keyword | PE | MX | CO | Fuente / aplicación propuesta |
+|---|---|---|---|---|
+| qué es la inteligencia artificial | 1.300 | 6.600 | 2.400 | B01/B02/B03; contexto introductorio N05, sin convertir Inicio en enciclopedia |
+| que herramientas de inteligencia artificial existen | 20 | 10 | 10 | A04/B03; N04, criterios de exploración |
+| que se necesita para aprender inteligencia artificial | ND | 10 | 10 | E01 por mercado; N11, requisitos por oferta real |
+| dónde aprender inteligencia artificial | ND | 20 | 10 | E01; N11, alternativas/encaje sin claims de superioridad |
+| que se aprende en un curso de inteligencia artificial | ND | 10 | 10 | E01; N11, objetivos reales sin programa inventado |
+| para que sirve la inteligencia artificial en las empresas | 0 | 10 | 10 | A05/A06/A07 y B; N12, capacidades/casos acreditados |
+| cuál es una aplicación de la inteligencia artificial en finanzas | ND | ND | 0 | A03-CO; N10, no ausencia de necesidad por cero |
+
+Los textos conservan la ortografía de la fuente; en producción podrán corregirse sin afirmar una nueva métrica literal. También hay títulos como «¿Cuál es la mejor herramienta de IA para investigar?» en E03-MX-Q05: **título orgánico, no PAA, sin volumen atribuible**. Las preguntas «¿cómo participar?» o «¿qué trabajo es propio?» siguen siendo **inferencias editoriales desde B1**, no resultados PAA. No se escriben respuestas finales ni FAQs.
+
+## R7. Comparación posterior con la investigación anterior
+
+| Aspecto | Investigación anterior, conservada | Reconstrucción nueva / diferencia material |
+|---|---|---|
+| Descubrimiento | Tres seeds comunitarias, 227 filas; grupos K0–K5 retenidos | 30 seed/país, 2.838 filas brutas; filtro de ruido y 69 candidatas diferenciadas. N01–N13 se construyeron después de adquirir datos |
+| Métricas | 28 candidatas ×3; 34 filas | 48 ×3; 81 filas; series mensuales conservadas. Fundamentos PE70/CO50 y nuevas expresiones empresariales añaden evidencia |
+| SERP | 47 éxitos de48, depth10 mixto | 66 distintas,22 por mercado, depth20; comparación de nueve pares por país y trazabilidad de dominios desconocidos |
+| Competencia | Ocupantes derivados de SERP; sin ejecución Labs dedicada documentada | Tres `find_serp_competitors`, overview y ranking de dominio; resultados vacíos y discrepancias documentados, no ocultados |
+| Preguntas | Dos títulos; contenido PAA ausente; se pospuso profundización | Seed interrogativa en los tres mercados, preguntas keyword y títulos separados; contenido PAA sigue inaccesible por MCP |
+| Empresas | K3 centrado en formación para equipos | N12 cubre aplicación, capacidades y oportunidades empresariales; formación es una faceta y no el límite de la presentación |
+| Identidad/arquitectura | Institución primero, ocho páginas/dos fichas, verticales no cursos | CONFIRMA; no es un hallazgo originado en SEO. Se refuerza desambiguación de marca con SERP nueva |
+| Lecturas ya conocidas | Engineering no equivale a curso; proyectos no mide participación; Science no equivale a herramienta | CONFIRMA mediante nueva muestra, sin atribuir novedad a hallazgos ya formulados |
+
+La diferencia metodológica es cobertura y comprobación reproducible, no demostrar que todas las conclusiones anteriores fueran erróneas. La nueva evidencia **no** acredita demanda exclusiva de cada cluster ni una segmentación exhaustiva de Latinoamérica.
+
+## R8. Decision Delta y consecuencias pendientes
+
+| ID / decisión inicial | Evidencia nueva | Conclusión propuesta | Decision Delta | Consecuencia |
+|---|---|---|---|---|
+| R-D1 Identidad institucional y comunidad por B1 | C01–03 Q01–02; E02–04 Q01; lectura primaria CPIA/ANIA | Mantener institución primero; desambiguar marca y funciones | CONFIRMA | Inicio/Equipo con personas y actividad acreditadas, no cursos como promesa global |
+| R-D2 K0–K5 como única clasificación activa | Universo nuevo, pares SERP y mapa N01–N13 | Sustituir ese mapa de investigación por una clasificación por necesidades más precisa | CAMBIA | Revisar síntesis SEO de B2 y referencias K/T de estrategia antes de consolidar |
+| R-D3 Empresas como consulta fundamentalmente formativa | C04–06 Q01–02; A05–07; decisión humana vigente | Presentar verticales, capacidades y oportunidades verificables; Academy como posibilidad | CAMBIA | Revisar K3/B2 §4/§6 y desarrollo Empresas de Estrategia/E1; sin inventar servicios |
+| R-D4 Keywords de carrera o proyectos como demanda propia | C01–03 Q04–05/Q10; E02–04 Q03 | No apropiar demanda universitaria ni interpretar ejemplos de proyectos como incorporación | DESCARTA | No priorizar cursos inexistentes, carreras o reclutamiento por esos volúmenes |
+| R-D5 Preguntas postergadas y PAA dada por cubierta | E01, B01–03 y módulos sin contenido | Incorporar preguntas keyword verificables; mantener PAA específica desconocida | CAMBIA | Actualizar inventario de preguntas, sin FAQ automática o aprobación de respuestas |
+| R-D6 Cuatro verticales, ocho páginas y dos fichas | B1/arquitectura; SERP temáticas heterogéneas | Mantener alcance; grupos temáticos no fuerzan nuevas páginas | CONFIRMA | Desarrollar contenido dentro de páginas existentes según inventario y encaje |
+| R-D7 Ventaja exclusiva, rentabilidad y prioridad regional | Muestras nacionales, métricas parciales, sin rendimiento propio | No resolver esos extremos con volumen/KD o un competidor | INCONCLUSO | Sin ranking de mercados, retorno o cuota regional |
+
+**Revisión posterior de B2:** mantener identidad, comunidad, nombres, distinciones de autoría/objetos, arquitectura y límites de promesas. Reconsiderar su §4 de clusters, §6 de Empresas y §7 de preguntas. Sus métricas/47 SERP describen la ronda anterior; no sustituirlas silenciosamente. **No se reescribe ni consolida B2 en esta ejecución.**
+
+**Estrategia:** revisar referencias K0–K5/T1–T4, ownership y preguntas de §8 SEO/IA; separar N08/N09/N13 y especificar qué necesidad responde cada objeto. Empresas debe exponer las cuatro verticales, capacidades y oportunidades confirmadas. Nuevos tutoriales/guías que no encajen en las ocho páginas se registran como backlog pendiente, sin crear blog o landing.
+
+**E1 v2.1:** podrían cambiar el puente SEO/IA, el enfoque y bloques de Empresas, los descriptores de las líneas en Formación, criterios de Productos e Investigación y la desambiguación institucional de Inicio/Equipo. La evidencia no exige renombrar páginas o verticales. No se generan E1 v2.2 ni E2.
+
+**Decisiones humanas que se conservan para incorporación posterior, sin atribuirlas al research:** cierres con CTA contextual en páginas/fichas según recorrido; mayor posicionamiento institucional; Empresas con cuatro verticales/capacidades/oportunidades verificables; estructura organizacional actualizada. Correcciones nominales confirmadas: **Edhú Nuñez — Head of Product; Kevin Huaman — integrante de AI for Science; Jhonatan Morgan — Head of AI y líder de AI Foundations.** No se infieren otros roles, bios, jerarquías o permisos.
+
+## R9. Cierre recomendado y límites
+
+**Recomendación: presentar la investigación SEO y el nuevo Keyword Map para revisión humana de Gate B.** Cobertura suficiente para revisar prioridades y responsabilidades editoriales; aprobación aún PENDIENTE. Aceptar, corregir o rechazar R-D1–R-D7 y N01–N13, especialmente el alcance empresarial, las necesidades condicionales de ciencia/colecciones y las oportunidades sin página adecuada. No hace falta reaprobar Brief, Gate A, B1 o arquitectura.
+
+PAA específica continúa no recuperada, hay 63 combinaciones overview sin fila, KD/CPC parciales, redirecciones opacas y evidencia competitiva Labs desigual. No se puede asegurar exhaustividad, rankings, rentabilidad, demanda regional o inventarios propios. Más gasto en la misma SERP no resolvería la omisión estructural de preguntas PAA ni los datos internos faltantes. El saldo restante permite futuras adquisiciones acotadas si una decisión concreta las exige; no es necesario agotarlo para cerrar esta propuesta.
+
+**QA de esta ejecución:** resultados y métricas se contrastan con JSON/CSV; revisión editorial y controles locales registrados en [validación](seo-rebuild-2026-11-05/validacion.md). Sin cambios de skill/configuraciones/archivo v1/B1/B2/Estrategia/E1, salvo avisos de vigencia documentales en Research/Dossier/README. Sin commit o push.
+
+---
+
+## Registro anterior conservado: no es el estado SEO vigente
+
+**Todo el cuerpo que sigue pertenece a la investigación y aprobación anteriores.** Sus cifras, clusters, recomendaciones de cierre y usos de «vigente» o «APROBADO» describen aquel corte. R1–R9 y el nuevo Keyword Map prevalecen exclusivamente para SEO. Los apartados 2–5 siguientes conservan literalmente la investigación estratégica no SEO, que no se reabre. El snapshot completo anterior está también en `seo-rebuild-2026-11-05/previous/`. Ninguna aprobación histórica cierra la reapertura actual.
+
+**Etapa:** Research desde [B1 validada](../01-brief-diagnostico/diagnostico-b1.md), sin reiniciar intake. **Estado vigente: Gate B APROBADO el 05/11/2026 por Prompt 3/4.** Los estados pendientes del cuerpo son el registro previo a esta intervención; prevalece §13. Síntesis aceptada en [B2](../01-brief-diagnostico/diagnostico-b2.md).
 **Ciclo:** 04/11/2026 local; ejecución técnica ya en 05/11 UTC. **Mercados iniciales:** Perú, México y Colombia, español, nacionales y separados. No limitan el alcance institucional latinoamericano.
 
 **Actualización SEO:** adquisición MCP completada el 05/11/2026 UTC. Se preserva la investigación estratégica de §§2–5; sus límites de adquisición iniciales se actualizan únicamente mediante §11. Las cifras de §6 y el CSV siguen siendo históricas; no se sobrescriben con datos nuevos.
@@ -242,3 +433,11 @@ No se hizo una adquisición adicional: repetir las SERP ya consultadas no expone
 - **Trazabilidad y revisión editorial:** enlaces/anclas locales, columnas de tablas y diff correctos; D1–D6 coinciden con Dossier. Revisión conjunta de prosa: oportunidades específicas de organización/comunidad/campos/Academy/productos, con límites próximos a las cifras y sin nueva promesa de oferta. Las tablas iniciales del mapa están identificadas como corte previo y la actualización SEO prevalece.
 - **Skill:** `python -B .opencode/skills/web-content-design/scripts/check_package.py` → OK, frontmatter, 28 Markdown, enlaces locales, runtime y estructura de evals, sin modificar bytecode. Es QA mecánico, no certificación de comportamiento o visibilidad.
 - **Consumo:** fuentes públicas antes de pagar y reservas por lote documentadas; saldo final reconfirmado 9.491, diferencia 296 créditos (equivalente público US$0,296), dentro de US$2; sin reservas o solicitudes pendientes. No se atribuye costo cero a metadatos omitidos. Defaults de Default sin cambios, confirmados por `list_projects` al cierre.
+
+## 13. Gate B aprobado · 05/11/2026
+
+**Fuente humana:** Prompt 3/4: «Autorizo aprobar Gate B con las conclusiones y limitaciones documentadas en Research». Acepta expresamente K0–K5 como base de investigación, no arquitectura definitiva, y PAA parcial sin bloqueo. Autoriza B2, estrategia y E1; exige detenerse antes de E2 y no hacer commit/push.
+
+**APROBADO:** conclusiones D1–D6, oportunidades acotadas de §11 y sus límites, K2a/K2b como subnecesidades y T1–T4 como referencias institucionales. Los tokens CONFIRMA / CONFIRMA / CAMBIA / CONFIRMA / INCONCLUSO / DESCARTA se conservan: aceptar un resultado inconcluso no resuelve exclusividad, rentabilidad o prioridad de mercados. La arquitectura heredada no se somete a reelección ni se deriva de los clusters.
+
+La aprobación no acredita inventarios, personas, ofertas, canales, métricas ausentes o eficacia GEO. Las preguntas de diseño de contenido pueden precisarse en E1/E2 sin llamarlas PAA observadas. Esta continuación no hace investigación externa ni consume créditos; cualquier nueva consulta pagada requiere autorización previa específica del usuario. Gate A se conserva; [B2](../01-brief-diagnostico/diagnostico-b2.md) consolida lo aceptado. E1 mantiene su propio gate humano.

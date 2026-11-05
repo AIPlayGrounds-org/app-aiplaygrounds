@@ -1,0 +1,3100 @@
+{
+  "id": "Q01-PE",
+  "tool": "research_keywords",
+  "at": "2026-11-05T16:25:39.131Z",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "seeds": [
+      {
+        "seed": "comunidades de inteligencia artificial",
+        "locationCode": 2604,
+        "languageCode": "es"
+      },
+      {
+        "seed": "cómo empezar un proyecto de inteligencia artificial",
+        "locationCode": 2604,
+        "languageCode": "es"
+      },
+      {
+        "seed": "cómo programar con inteligencia artificial",
+        "locationCode": 2604,
+        "languageCode": "es"
+      },
+      {
+        "seed": "qué hace un ingeniero de inteligencia artificial",
+        "locationCode": 2604,
+        "languageCode": "es"
+      },
+      {
+        "seed": "inteligencia artificial para investigación científica",
+        "locationCode": 2604,
+        "languageCode": "es"
+      }
+    ],
+    "resultLimit": 150,
+    "includeClickstreamData": false,
+    "groupKeywords": false
+  },
+  "response": {
+    "results": [
+      {
+        "seed": "comunidades de inteligencia artificial",
+        "ok": true,
+        "rowCount": 75,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "inteligencia artificial",
+            "searchVolume": 74000,
+            "keywordDifficulty": 53,
+            "cpc": 0.34,
+            "competition": 0.22,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria de software con inteligencia artificial",
+            "searchVolume": 1300,
+            "keywordDifficulty": 0,
+            "cpc": 1.69,
+            "competition": 0.41,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial",
+            "searchVolume": 1000,
+            "keywordDifficulty": 11,
+            "cpc": 0.99,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial que es",
+            "searchVolume": 1300,
+            "keywordDifficulty": 45,
+            "cpc": 0.57,
+            "competition": 0.1,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educación",
+            "searchVolume": 590,
+            "keywordDifficulty": 3,
+            "cpc": 1.17,
+            "competition": 0.1,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imagenes de inteligencia artificial",
+            "searchVolume": 880,
+            "keywordDifficulty": 0,
+            "cpc": 0.53,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "estrategia nacional de inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "carrera inteligencia artificial",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": 1.39,
+            "competition": 0.59,
+            "intent": "informational"
+          },
+          {
+            "keyword": "definición de inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 31,
+            "cpc": 0.65,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aplicaciones de inteligencia artificial",
+            "searchVolume": 590,
+            "keywordDifficulty": 9,
+            "cpc": 0.63,
+            "competition": 0.42,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia de la inteligencia artificial",
+            "searchVolume": 260,
+            "keywordDifficulty": 14,
+            "cpc": 0.5,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "carrera de inteligencia artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": 1.85,
+            "competition": 0.61,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de software con inteligencia artificial senati",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 2.06,
+            "competition": 0.26,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en salud",
+            "searchVolume": 140,
+            "keywordDifficulty": 5,
+            "cpc": null,
+            "competition": 0.13,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial articulos cientificos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.61,
+            "competition": 0.13,
+            "intent": "informational"
+          },
+          {
+            "keyword": "seleccion artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para hacer tareas",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": 0.36,
+            "competition": 0.47,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imagen artificial intelligence",
+            "searchVolume": 390,
+            "keywordDifficulty": 81,
+            "cpc": 0.27,
+            "competition": 0.39,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uso de la inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 1.34,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de software con inteligencia artificial trabajo",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "periodismo e inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.57,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia de negocios con excel",
+            "searchVolume": 40,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.29,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial documental",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniero de software con inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": 2.57,
+            "competition": 0.26,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial fuerte",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": 2.93,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ciencia artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 47,
+            "cpc": 1.4,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia visual espacial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "comunidades de aprendizaje minedu",
+            "searchVolume": 90,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia artificial y ética",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "estrategia nacional de inteligencia artificial peru",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "robotica e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial estrecha",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tecnología artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": 61,
+            "cpc": 1.14,
+            "competition": 0.32,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia visoespacial",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "linea de tiempo inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "características de la inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 39,
+            "cpc": 1.1,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para recursos humanos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "concurso de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.23,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial que resuelva problemas matemáticos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.39,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial en la educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y diseño grafico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial vs inteligencia artificial generativa",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial más utilizadas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial superinteligente",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "problemas de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "redes bayesianas inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "argumentos en contra de la inteligencia artificial en la educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial areas de aplicacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "practicante inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mal uso de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en el transporte",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inicios de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "desafíos de la inteligencia artificial en la educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "desarrollo con inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "esquema de causalidad inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial humano",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial chinas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.2,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial distribuida",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia comercial",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": 1.59,
+            "competition": 0.28,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial en el ámbito empresarial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ciencia de datos e inteligencia artificial senati",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "redes neuronales e inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alien isolation inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "simulación e inteligencia de datos",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.27,
+            "competition": 0.13,
+            "intent": "informational"
+          },
+          {
+            "keyword": "radiación artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "soberanía de la inteligencia",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "obsolescencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia aumentada definicion",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fondos de inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "artificial intelligence que es",
+            "searchVolume": 110,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sinónimos de inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": 20,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "conclusión de la inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": 0,
+            "cpc": 3.06,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "introducción a la inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": 0.55,
+            "competition": 0.38,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sinónimo de inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": 24,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          }
+        ]
+      },
+      {
+        "seed": "cómo empezar un proyecto de inteligencia artificial",
+        "ok": true,
+        "rowCount": 75,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "como crear un logo con inteligencia artificial",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": 0.54,
+            "competition": 0.71,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la medicina dibujos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la ingenieria en inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como empezar a dibujar",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 0.29,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como entregar un proyecto arquitectonico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cual es el objetivo de un proyecto arquitectonico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyecto de vida dibujos faciles",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "a qué se refiere ingeniería del proyecto",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un proyecto arquitectónico",
+            "searchVolume": 20,
+            "keywordDifficulty": 52,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "5 dibujos de luz artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "dibujos de proyecto de vida para dibujar",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imagen de inteligencia artificial para dibujar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ejemplos de inteligencia artificial en la construcción",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como empezar un proyecto de arquitectura",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como crear logos increibles con inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial que dibuja lo que escribes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "la mejor inteligencia artificial para crear logos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "cual es la mejor inteligencia artificial para crear logos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.05,
+            "competition": 0.43,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "como crear mi logo con inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "que es la inteligencia artificial dibujo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como crear un logo para mi negocio con inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.13,
+            "competition": 0.79,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "la arquitectura puede ser reemplazada por la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "imágenes de la inteligencia artificial para dibujar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es ingenieria de datos e inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "dibujos de inteligencia artificial faciles",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como empezar a vender dibujos digitales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imágenes de proyecto de vida para dibujar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un proyecto ejecutivo en arquitectura",
+            "searchVolume": 10,
+            "keywordDifficulty": 46,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como hacer un diseño de un proyecto",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un proyecto en ingenieria civil",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un proyecto ejecutivo de obra",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo dibujar un paisaje artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como presentar un proyecto de arquitectura",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un embalse artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como empezar a dibujar en autocad",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la obra civil de un proyecto",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como exponer un proyecto arquitectonico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como empezar a dibujar un rostro",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cual es la ingenieria de un proyecto",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuanto cuesta el proyecto de un arquitecto",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la ingenieria de detalle en un proyecto",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "quiero aprender a dibujar por donde empezar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "dibujos para empezar a dibujar a lapiz",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empezar a dibujar a lapiz",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuales son las etapas de un proyecto minero",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "diseño de interiores como empezar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como se presenta un proyecto arquitectonico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como hacer una maqueta para un proyecto",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "por donde empezar a dibujar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un proyecto de construccion civil",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que necesito para empezar a dibujar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.62,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como hacer un proyecto de arquitectura",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "paisaje artificial para dibujar facil",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que planos conforman un proyecto arquitectonico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como empezar a dibujar bien",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia dibujo facil",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ejercicios para empezar a dibujar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como realizar un proyecto minero",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el estudio técnico de un proyecto",
+            "searchVolume": 10,
+            "keywordDifficulty": 52,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que planos incluye un proyecto arquitectonico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo dibujar un proyecto",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como empezar a dibujar personas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como exponer un proyecto de arquitectura",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que planos se entregan en un proyecto arquitectonico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un proyecto grafico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "qué representan en un proyecto los planos de detalles",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuales son las etapas de un proyecto arquitectonico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empezar a dibujar desde cero",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que planos lleva un proyecto arquitectonico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "por donde empezar para aprender a dibujar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como empezar a dibujar arquitectura",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como nace un proyecto de ejecución de obra",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un proyecto arquitectonico ejecutivo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un proyecto de diseño grafico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un proyecto de diseño industrial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          }
+        ]
+      },
+      {
+        "seed": "cómo programar con inteligencia artificial",
+        "ok": true,
+        "rowCount": 75,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "como funciona la inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 36,
+            "cpc": 0.68,
+            "competition": 0.12,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la inteligencia artificial y para que sirve",
+            "searchVolume": 480,
+            "keywordDifficulty": 70,
+            "cpc": 0.97,
+            "competition": 0.13,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cual es la mejor inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": null,
+            "cpc": 0.91,
+            "competition": 0.34,
+            "intent": "informational"
+          },
+          {
+            "keyword": "quien creo la inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 7,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "quién creó la inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 8,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la inteligencia artificial ejemplos",
+            "searchVolume": 70,
+            "keywordDifficulty": 23,
+            "cpc": 0.26,
+            "competition": 0.13,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es cnn en inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como usar la inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 26,
+            "cpc": 0.77,
+            "competition": 0.55,
+            "intent": "informational"
+          },
+          {
+            "keyword": "quien creó la inteligencia artificial y en que año",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "qué significa inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.14,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como se usa la inteligencia artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": 0.87,
+            "competition": 0.37,
+            "intent": "informational"
+          },
+          {
+            "keyword": "10 desventajas de la inteligencia artificial en la educación",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que son los algoritmos en la inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como se creo la inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": 33,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuando aparece la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como utilizar la inteligencia artificial en la educacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como citar inteligencia artificial en apa 7",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "qué es la inteligencia artificial cisco",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que carreras van a desaparecer con la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que tan inteligente es la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como hacer un bot con inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es programar y para que sirve",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la visión artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "donde programar en java",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "quien inventó la inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que significa programar",
+            "searchVolume": 110,
+            "keywordDifficulty": 50,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cual fue la primera inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo programar una publicación en facebook",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial generativa ejemplos",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la inteligencia artificial resumen",
+            "searchVolume": 20,
+            "keywordDifficulty": 74,
+            "cpc": null,
+            "competition": 0.13,
+            "intent": "informational"
+          },
+          {
+            "keyword": "10 desventajas de la inteligencia artificial",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "quien creó la inteligencia artificial 2023",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que entendemos por inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "en que año se creo la inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "qué entendemos por inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender a programar en java",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.51,
+            "competition": 0.5,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es una red neuronal artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque es importante la inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuales son los tipos de inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "por qué es importante la inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "4 tipos de inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "10 ejemplos de inteligencia artificial en la vida cotidiana",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo mejorar una foto con inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.82,
+            "competition": 0.66,
+            "intent": "informational"
+          },
+          {
+            "keyword": "5 desventajas de la inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "5 tipos de inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuantos tipos de inteligencia artificial existen",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como programar en scratch",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la inteligencia artificial en pocas palabras",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "quién es la mejor inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.24,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para saber como sera tu hijo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la inteligencia artificial segun expertos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuales son los 3 tipos de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "qué es la inteligencia artificial y cómo se aplica actualmente",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "5 preguntas de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "quien inicio la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial a que famoso me parezco",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "10 usos de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es inteligencia artificial en educacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "para qué se utiliza la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.12,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuales son los celulares con inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que lenguaje de programacion se utiliza para la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuál es la mejor inteligencia artificial para crear fotos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.5,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "qué es la inteligencia artificial generativa en el contexto educativo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "quien es alexa inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la inteligencia artificial en la actualidad",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la inteligencia artificial autores",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como afecta la inteligencia artificial en la educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la inteligencia artificial general",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cual es la mejor inteligencia artificial 2025",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "que es iterar en inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "10 ventajas y desventajas de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que tipo de inteligencia artificial es chatgpt",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "existe la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como impacta la inteligencia artificial en la educacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como afecta la inteligencia artificial en el trabajo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          }
+        ]
+      },
+      {
+        "seed": "qué hace un ingeniero de inteligencia artificial",
+        "ok": true,
+        "rowCount": 75,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "que hace un ingeniero industrial",
+            "searchVolume": 2400,
+            "keywordDifficulty": 0,
+            "cpc": 2.37,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero de sistemas",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": 1.83,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero ambiental",
+            "searchVolume": 590,
+            "keywordDifficulty": 0,
+            "cpc": 1.4,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero de minas",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": 4.5,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuando es el dia del ingeniero civil",
+            "searchVolume": 480,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la inseminacion artificial",
+            "searchVolume": 480,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo se escribe ingeniero",
+            "searchVolume": 390,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuanto gana un ingeniero agronomo",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ingeniero agronomo que hace",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero mecanico",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "en que trabaja un ingeniero de sistemas",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que significa ingeniero",
+            "searchVolume": 260,
+            "keywordDifficulty": 13,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como utilizar la inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": null,
+            "cpc": 0.47,
+            "competition": 0.63,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero mecatronico",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": 1.14,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero quimico",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como crear un logo con inteligencia artificial",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": 0.54,
+            "competition": 0.71,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero geologo",
+            "searchVolume": 70,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero agroindustrial",
+            "searchVolume": 70,
+            "keywordDifficulty": 53,
+            "cpc": 3.95,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero electrónico",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 5.82,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuando es el día del ingeniero agrónomo",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero de telecomunicaciones",
+            "searchVolume": 50,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es ingeniero agrónomo",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la medicina dibujos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la ingenieria en inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuando es el dia del ingeniero de minas",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuanto gana un ingeniero agroindustrial",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuanto gana un ingeniero de sonido",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuanto gana un ingeniero quimico",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "qué es un ecosistema artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque le dicen ingeniero a manuel pellegrini",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es ser ingeniero electronico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como hacer lluvia artificial casera",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "un físico puede trabajar como ingeniero",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero de calidad",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un ingeniero full stack",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "el mejor ingeniero del mundo wiki",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero alimentario",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniero mecanico electricista que hace",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "que hace un ingeniero hidraulico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero de materiales",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniero de sistemas cuantos años se estudia",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniero de minas cuantos años se estudia",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "que hace un ingeniero de seguridad",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es ser ingeniero en sistemas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniero ambiental que es",
+            "searchVolume": 110,
+            "keywordDifficulty": 6,
+            "cpc": 1.15,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniero biomédico que hace",
+            "searchVolume": 110,
+            "keywordDifficulty": null,
+            "cpc": 7.09,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es ingeniero metalurgico",
+            "searchVolume": 110,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuando es el día del ingeniero de sistemas",
+            "searchVolume": 110,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniero industrial en que puede trabajar",
+            "searchVolume": 90,
+            "keywordDifficulty": 10,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "a que se dedica un ingeniero civil",
+            "searchVolume": 90,
+            "keywordDifficulty": 55,
+            "cpc": 0.05,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero en metalurgia",
+            "searchVolume": 90,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuanto gana un ingeniero biomedico",
+            "searchVolume": 90,
+            "keywordDifficulty": 52,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "donde puede trabajar un ingeniero industrial",
+            "searchVolume": 70,
+            "keywordDifficulty": 10,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero forestal",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuando es el día del ingeniero industrial",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como hacer nieve artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": 53,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un ingeniero residente",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero comercial",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo dibujar un ingeniero",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "de que se encarga un ingeniero civil",
+            "searchVolume": 50,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es ser ingeniero",
+            "searchVolume": 50,
+            "keywordDifficulty": 56,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "donde puede trabajar un ingeniero de sistemas",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuanto gana un ingeniero agrícola",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero industrial y cuanto gana",
+            "searchVolume": 50,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniero zootecnista que es",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como se abrevia ingeniero",
+            "searchVolume": 50,
+            "keywordDifficulty": 50,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que hace un ingeniero pesquero",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuanto gana un ingeniero forestal",
+            "searchVolume": 50,
+            "keywordDifficulty": 52,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "en que se puede especializar un ingeniero industrial",
+            "searchVolume": 50,
+            "keywordDifficulty": 49,
+            "cpc": null,
+            "competition": 0.1,
+            "intent": "informational"
+          },
+          {
+            "keyword": "topper de ingeniero civil para imprimir",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "transactional"
+          },
+          {
+            "keyword": "donde trabaja un ingeniero ambiental",
+            "searchVolume": 40,
+            "keywordDifficulty": 49,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el nivel de ingeniero",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "donde puede trabajar un ingeniero ambiental",
+            "searchVolume": 40,
+            "keywordDifficulty": 50,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inseminacion artificial como se hace",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.04,
+            "intent": "informational"
+          }
+        ]
+      },
+      {
+        "seed": "inteligencia artificial para investigación científica",
+        "ok": true,
+        "rowCount": 76,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "herramientas de inteligencia artificial para la investigación científica",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial",
+            "searchVolume": 74000,
+            "keywordDifficulty": 53,
+            "cpc": 0.34,
+            "competition": 0.22,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria de software con inteligencia artificial",
+            "searchVolume": 1300,
+            "keywordDifficulty": 0,
+            "cpc": 1.69,
+            "competition": 0.41,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial",
+            "searchVolume": 1000,
+            "keywordDifficulty": 11,
+            "cpc": 0.99,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial que es",
+            "searchVolume": 1300,
+            "keywordDifficulty": 45,
+            "cpc": 0.57,
+            "competition": 0.1,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educación",
+            "searchVolume": 590,
+            "keywordDifficulty": 3,
+            "cpc": 1.17,
+            "competition": 0.1,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imagenes de inteligencia artificial",
+            "searchVolume": 880,
+            "keywordDifficulty": 0,
+            "cpc": 0.53,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "estrategia nacional de inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "carrera inteligencia artificial",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": 1.39,
+            "competition": 0.59,
+            "intent": "informational"
+          },
+          {
+            "keyword": "definición de inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 31,
+            "cpc": 0.65,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aplicaciones de inteligencia artificial",
+            "searchVolume": 590,
+            "keywordDifficulty": 9,
+            "cpc": 0.63,
+            "competition": 0.42,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia de la inteligencia artificial",
+            "searchVolume": 260,
+            "keywordDifficulty": 14,
+            "cpc": 0.5,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "investigación formativa",
+            "searchVolume": 480,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "carrera de inteligencia artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": 1.85,
+            "competition": 0.61,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de software con inteligencia artificial senati",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 2.06,
+            "competition": 0.26,
+            "intent": "informational"
+          },
+          {
+            "keyword": "revolución científica",
+            "searchVolume": 390,
+            "keywordDifficulty": 3,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "infografía científica",
+            "searchVolume": 320,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en salud",
+            "searchVolume": 140,
+            "keywordDifficulty": 5,
+            "cpc": null,
+            "competition": 0.13,
+            "intent": "informational"
+          },
+          {
+            "keyword": "teoría científica",
+            "searchVolume": 590,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial articulos cientificos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.61,
+            "competition": 0.13,
+            "intent": "informational"
+          },
+          {
+            "keyword": "notación científica operaciones combinadas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "seleccion artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "investigación tecnológica",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para hacer tareas",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": 0.36,
+            "competition": 0.47,
+            "intent": "informational"
+          },
+          {
+            "keyword": "investigación educativa",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imagen artificial intelligence",
+            "searchVolume": 390,
+            "keywordDifficulty": 81,
+            "cpc": 0.27,
+            "competition": 0.39,
+            "intent": "informational"
+          },
+          {
+            "keyword": "instituto nacional de investigación y capacitación de telecomunicaciones",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "alfabetización científica",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uso de la inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 1.34,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "investigación y desarrollo",
+            "searchVolume": 210,
+            "keywordDifficulty": 1,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyecto de investigación ucv",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": 2.13,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de software con inteligencia artificial trabajo",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "periodismo e inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.57,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia de negocios con excel",
+            "searchVolume": 40,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.29,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial documental",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "antecedentes de un proyecto de investigación",
+            "searchVolume": 30,
+            "keywordDifficulty": 11,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniero de software con inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": 2.57,
+            "competition": 0.26,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial fuerte",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": 2.93,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ciencia artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 47,
+            "cpc": 1.4,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia visual espacial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "multiplicación de notación científica",
+            "searchVolume": 90,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "notación científica y exponencial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "investigación e innovación tecnológica",
+            "searchVolume": 90,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y ética",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "estrategia nacional de inteligencia artificial peru",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "robotica e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial estrecha",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "recursos no monetarios del proyecto de investigación",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "investigación fiscal",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tecnología artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": 61,
+            "cpc": 1.14,
+            "competition": 0.32,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia visoespacial",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "linea de tiempo inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "características de la inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 39,
+            "cpc": 1.1,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para recursos humanos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "concurso de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.23,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial que resuelva problemas matemáticos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.39,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial en la educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y diseño grafico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial vs inteligencia artificial generativa",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial más utilizadas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial superinteligente",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "problemas de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "redes bayesianas inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "argumentos en contra de la inteligencia artificial en la educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial areas de aplicacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "practicante inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mal uso de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en el transporte",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inicios de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "desafíos de la inteligencia artificial en la educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "desarrollo con inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "esquema de causalidad inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial humano",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "el proyecto de investigación introducción a la metodología científica arias",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial chinas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.2,
+            "intent": "informational"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/Default (contenedor autorizado)/keywords"
+    }
+  },
+  "reserve": 470
+}

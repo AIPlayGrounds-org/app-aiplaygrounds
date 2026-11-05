@@ -1,0 +1,1627 @@
+[
+  {
+    "cluster": "N01",
+    "pregunta": "¿Qué es AI PlayGrounds y qué hace?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Institucional/navegacional",
+    "necesidad": "Identificar organización y actividad frente a playgrounds de modelos",
+    "pagina": "Inicio",
+    "funcion": "E1_BLOQUE",
+    "etapa": "E1",
+    "justificacion": "Esencial por B1; la SERP de marca muestra homónimos y no una definición inequívoca",
+    "contexto": "B1; QS01-PE-Q01; QS02-MX-Q01; OLD:E02-PE-Q01; OLD:E04-CO-Q01",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P01",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N01",
+    "pregunta": "¿Cómo se relacionan las cuatro verticales, AI Academy y AI Labs?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Institucional/informativa",
+    "necesidad": "Distinguir campos, formación y experimentación sin presentar cursos como organización",
+    "pagina": "Inicio",
+    "funcion": "E1_BLOQUE",
+    "etapa": "E1",
+    "justificacion": "Define comprensión institucional antes de elegir recorrido; no demanda de un curso",
+    "contexto": "B1; Keyword Map N01/N05–N10",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P02",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N01",
+    "pregunta": "¿Quiénes impulsan AI PlayGrounds y qué aporta cada persona?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Institucional",
+    "necesidad": "Reconocer personas y funciones acreditadas",
+    "pagina": "Equipo",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 para campos; E2 para valores confirmados",
+    "justificacion": "La confianza necesita atribución y roles, no una keyword de alto volumen",
+    "contexto": "B1; decisiones nominales humanas registradas en Research R8",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P03",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N01",
+    "pregunta": "¿Qué es el Playground de Open AI?",
+    "origen": "Título orgánico",
+    "match": "¿Qué es el Playground de Open AI?",
+    "prioridad": "Baja",
+    "intencion": "Informativa/navegacional ajena",
+    "necesidad": "Entender una herramienta homónima de otra organización",
+    "pagina": "Ninguna",
+    "funcion": "FUERA_ALCANCE",
+    "etapa": "No implementar",
+    "justificacion": "Se conserva como evidencia de ambigüedad, no tema que deba responder AI PlayGrounds",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P04",
+    "evidencia": [
+      "QS01-PE-Q01-I6",
+      "QS02-MX-Q01-I7"
+    ],
+    "paises": [
+      "MX",
+      "PE"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N02",
+    "pregunta": "¿Cómo puedo colaborar o ser parte del IAF?",
+    "origen": "Título orgánico",
+    "match": "8. ¿Cómo puedo colaborar o ser parte del IAF?",
+    "prioridad": "Media",
+    "intencion": "Participativa/consulta",
+    "necesidad": "Encontrar vía de colaboración de una entidad",
+    "pagina": "Comunidad",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 como contraste; no copiar literal ajeno",
+    "justificacion": "Título real y FAQ corroborada, pero referido a otra organización",
+    "contexto": "WF04; QS02-MX-Q02",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P05",
+    "evidencia": [
+      "QS02-MX-Q02-I19"
+    ],
+    "paises": [
+      "MX"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N02",
+    "pregunta": "¿Cómo puedo participar en AI PlayGrounds y qué implica?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Participativa",
+    "necesidad": "Distinguir acceso general, contribución y posible incorporación",
+    "pagina": "Comunidad",
+    "funcion": "E1_BLOQUE",
+    "etapa": "E1",
+    "justificacion": "Necesidad central de la organización; adaptar una pregunta ajena no la convierte en consulta medida",
+    "contexto": "B1; WF03; WF04; OLD:C01-PE-Q01; OLD:C02-MX-Q01; OLD:C03-CO-Q01",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P06",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N02",
+    "pregunta": "¿Necesito experiencia técnica y qué condiciones tiene participar?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Participativa/evaluación",
+    "necesidad": "Evaluar elegibilidad, compromiso y condiciones antes de actuar",
+    "pagina": "Comunidad",
+    "funcion": "FAQ_CONTEXTUAL_CANDIDATA",
+    "etapa": "E1 decidir ubicación; E2 solo con reglas confirmadas",
+    "justificacion": "La incertidumbre puede bloquear participación; FAQ opcional si no se resuelve junto a cada vía",
+    "contexto": "B1; WF03; WF04",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P07",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N03",
+    "pregunta": "¿Qué datos se necesitan para iniciar un proyecto de IA?",
+    "origen": "Título orgánico",
+    "match": "¿Qué datos se necesitan para iniciar un proyecto de IA?",
+    "prioridad": "Media",
+    "intencion": "Informativa/técnica",
+    "necesidad": "Comprender requisitos de un proyecto concreto",
+    "pagina": "AI Labs",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 para campos de iniciativa; E2 para datos por caso",
+    "justificacion": "Ayuda a describir recursos/requisitos sin anunciar que todo proyecto exige datos propios",
+    "contexto": "QS02-MX-Q03",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P08",
+    "evidencia": [
+      "QS02-MX-Q03-I12"
+    ],
+    "paises": [
+      "MX"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N03",
+    "pregunta": "¿Cómo gestionar un proyecto de inteligencia artificial?",
+    "origen": "Título orgánico",
+    "match": "¿Cómo gestionar un proyecto de inteligencia artificial?",
+    "prioridad": "Media",
+    "intencion": "Informativa/operativa",
+    "necesidad": "Entender proceso y estado del trabajo",
+    "pagina": "AI Labs",
+    "funcion": "E2_COPY",
+    "etapa": "E2 después de E1 e inventario",
+    "justificacion": "Puede orientar descripción de enfoque/estado; no justifica una guía de gestión o servicio nuevo",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P09",
+    "evidencia": [
+      "QS01-PE-Q03-I6"
+    ],
+    "paises": [
+      "PE"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N03",
+    "pregunta": "¿Qué iniciativas están activas, en qué estado están y cómo puedo aportar?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Exploratoria/participativa",
+    "necesidad": "Reconocer trabajo real y continuidad posible",
+    "pagina": "AI Labs",
+    "funcion": "E1_BLOQUE",
+    "etapa": "E1",
+    "justificacion": "Permite evaluar iniciativas sin confundir ejemplo didáctico con oportunidad operativa",
+    "contexto": "B1; QS01-PE-Q03; QS02-MX-Q03; QS03-CO-Q03",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P10",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N03",
+    "pregunta": "¿Cómo se construye un modelo de inteligencia artificial?",
+    "origen": "Título orgánico",
+    "match": "¿Cómo se construye un modelo de inteligencia artificial?",
+    "prioridad": "Baja",
+    "intencion": "Informativa/tutorial",
+    "necesidad": "Aprender un procedimiento técnico general",
+    "pagina": "Ninguna como guía completa",
+    "funcion": "FUERA_ALCANCE",
+    "etapa": "Backlog, sin nueva página",
+    "justificacion": "La arquitectura actual no incorpora un tutorial completo por cada iniciativa o modelo",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P11",
+    "evidencia": [
+      "QS03-CO-Q03-I12"
+    ],
+    "paises": [
+      "CO"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N04",
+    "pregunta": "¿Qué herramientas de inteligencia artificial existen?",
+    "origen": "Keyword interrogativa",
+    "match": "que herramientas de inteligencia artificial existen",
+    "prioridad": "Media",
+    "intencion": "Exploratoria/comparativa",
+    "necesidad": "Descubrir alternativas por necesidad",
+    "pagina": "Productos",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1",
+    "justificacion": "Se traduce a criterios de exploración del corpus, no a directorio exhaustivo",
+    "contexto": "",
+    "aliases": [
+      "cuales son las herramientas de inteligencia artificial",
+      "cuales son las herramientas de la inteligencia artificial"
+    ],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P12",
+    "evidencia": [
+      "OLD:A04-tools-S1-R7",
+      "OLD:A04-tools-S1-R29",
+      "OLD:A04-tools-S2-R21",
+      "OLD:A04-tools-S2-R41",
+      "OLD:A04-tools-S3-R59",
+      "OLD:B01-PE-R12",
+      "OLD:B02-MX-R30",
+      "OLD:B03-CO-R25"
+    ],
+    "paises": [
+      "CO",
+      "MX",
+      "PE"
+    ],
+    "confianza": "Alta en literal/mercado del proveedor; media en intención; volumen estimado, no audiencia propia",
+    "metricas": [
+      {
+        "oid": "OLD:A04-tools-S1-R7",
+        "literal": "que herramientas de inteligencia artificial existen",
+        "pais": "PE",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:52:51.628Z",
+        "volumen": 20,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:A04-tools-S1-R29",
+        "literal": "cuales son las herramientas de inteligencia artificial",
+        "pais": "PE",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:52:51.628Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:A04-tools-S2-R21",
+        "literal": "que herramientas de inteligencia artificial existen",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:52:51.628Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:A04-tools-S2-R41",
+        "literal": "cuales son las herramientas de inteligencia artificial",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:52:51.628Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:A04-tools-S3-R59",
+        "literal": "cuales son las herramientas de la inteligencia artificial",
+        "pais": "CO",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:52:51.628Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:B01-PE-R12",
+        "literal": "que herramientas de inteligencia artificial existen",
+        "pais": "PE",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:53:56.829Z",
+        "volumen": 20,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:B02-MX-R30",
+        "literal": "que herramientas de inteligencia artificial existen",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:53:58.882Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:B03-CO-R25",
+        "literal": "que herramientas de inteligencia artificial existen",
+        "pais": "CO",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:54:00.413Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      }
+    ]
+  },
+  {
+    "cluster": "N04",
+    "pregunta": "¿Cómo elegir qué herramienta de IA utilizar?",
+    "origen": "Título orgánico",
+    "match": "¿Cómo elegir qué herramienta de IA utilizar?",
+    "prioridad": "Alta",
+    "intencion": "Comparativa/evaluación",
+    "necesidad": "Evaluar ajuste de una herramienta a una tarea y a sus datos",
+    "pagina": "Productos; ficha de producto",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 para criterios/campos; E2 por recurso",
+    "justificacion": "Pertinencia, limitaciones, datos y acceso ayudan a decidir; no basta listar productos",
+    "contexto": "W10; WF08",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P13",
+    "evidencia": [
+      "W10-WF08"
+    ],
+    "paises": [
+      "Sin mercado asignable"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N04",
+    "pregunta": "¿Para qué sirve este producto, cuáles son sus límites y cómo accedo?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Exploratoria/evaluación",
+    "necesidad": "Evaluar utilidad, condiciones y siguiente paso de un objeto",
+    "pagina": "Ficha de producto",
+    "funcion": "E1_BLOQUE",
+    "etapa": "E1 para modelo; E2 para valores por objeto",
+    "justificacion": "Convierte una duda genérica en campos verificables del modelo aprobado",
+    "contexto": "B1; WF08; OLD:C01-PE-Q09; OLD:C02-MX-Q09; OLD:C03-CO-Q09",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P14",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N04",
+    "pregunta": "¿Cuál es la mejor inteligencia artificial?",
+    "origen": "Keyword interrogativa",
+    "match": "cuál es la mejor inteligencia artificial",
+    "prioridad": "Baja",
+    "intencion": "Comparativa muy amplia",
+    "necesidad": "Buscar un ganador sin especificar tarea",
+    "pagina": "Ninguna como ranking universal",
+    "funcion": "FUERA_ALCANCE",
+    "etapa": "No implementar como promesa",
+    "justificacion": "Volumen alto no justifica un ranking universal ni claims de superioridad",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P15",
+    "evidencia": [
+      "Q01-PE-S3-R3",
+      "QM02-MX-R2",
+      "QM03-CO-R2"
+    ],
+    "paises": [
+      "CO",
+      "MX",
+      "PE"
+    ],
+    "confianza": "Alta en literal/mercado del proveedor; media en intención; volumen estimado, no audiencia propia",
+    "metricas": [
+      {
+        "oid": "Q01-PE-S3-R3",
+        "literal": "cual es la mejor inteligencia artificial",
+        "pais": "PE",
+        "idioma": "es",
+        "fecha": "2026-11-05T16:25:39.131Z",
+        "volumen": 170,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "QM02-MX-R2",
+        "literal": "cuál es la mejor inteligencia artificial",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T16:29:30.298Z",
+        "volumen": 880,
+        "kd": 0,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "QM03-CO-R2",
+        "literal": "cuál es la mejor inteligencia artificial",
+        "pais": "CO",
+        "idioma": "es",
+        "fecha": "2026-11-05T16:29:31.175Z",
+        "volumen": 590,
+        "kd": 0,
+        "intent_auto": "informational"
+      }
+    ]
+  },
+  {
+    "cluster": "N05",
+    "pregunta": "¿Qué es la inteligencia artificial?",
+    "origen": "Keyword interrogativa",
+    "match": "qué es la inteligencia artificial",
+    "prioridad": "Media",
+    "intencion": "Informativa introductoria",
+    "necesidad": "Comprender el concepto general",
+    "pagina": "Inicio, solo contexto breve si hace falta",
+    "funcion": "E2_COPY",
+    "etapa": "E2 dentro de dirección aprobada",
+    "justificacion": "No convertir Inicio en enciclopedia ni asignar toda la demanda a la entidad",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P16",
+    "evidencia": [
+      "OLD:B01-PE-R2",
+      "OLD:B02-MX-R1",
+      "OLD:B03-CO-R1"
+    ],
+    "paises": [
+      "CO",
+      "MX",
+      "PE"
+    ],
+    "confianza": "Alta en literal/mercado del proveedor; media en intención; volumen estimado, no audiencia propia",
+    "metricas": [
+      {
+        "oid": "OLD:B01-PE-R2",
+        "literal": "qué es la inteligencia artificial",
+        "pais": "PE",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:53:56.829Z",
+        "volumen": 1300,
+        "kd": 45,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:B02-MX-R1",
+        "literal": "qué es la inteligencia artificial",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:53:58.882Z",
+        "volumen": 6600,
+        "kd": 37,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:B03-CO-R1",
+        "literal": "qué es la inteligencia artificial",
+        "pais": "CO",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:54:00.413Z",
+        "volumen": 2400,
+        "kd": 50,
+        "intent_auto": "informational"
+      }
+    ]
+  },
+  {
+    "cluster": "N05",
+    "pregunta": "¿Cómo funciona la inteligencia artificial?",
+    "origen": "Keyword interrogativa",
+    "match": "cómo funciona la inteligencia artificial",
+    "prioridad": "Media",
+    "intencion": "Informativa",
+    "necesidad": "Comprender datos, modelos y límites básicos",
+    "pagina": "Sin destino de guía completa aprobado",
+    "funcion": "E2_COPY",
+    "etapa": "E2 para explicación proporcional; guía al backlog",
+    "justificacion": "Sirve para claridad conceptual; la demanda no transforma AI Foundations en curso",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P17",
+    "evidencia": [
+      "Q01-PE-S3-R1",
+      "QM02-MX-R1",
+      "QM03-CO-R1"
+    ],
+    "paises": [
+      "CO",
+      "MX",
+      "PE"
+    ],
+    "confianza": "Alta en literal/mercado del proveedor; media en intención; volumen estimado, no audiencia propia",
+    "metricas": [
+      {
+        "oid": "Q01-PE-S3-R1",
+        "literal": "como funciona la inteligencia artificial",
+        "pais": "PE",
+        "idioma": "es",
+        "fecha": "2026-11-05T16:25:39.131Z",
+        "volumen": 320,
+        "kd": 36,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "QM02-MX-R1",
+        "literal": "cómo funciona la inteligencia artificial",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T16:29:30.298Z",
+        "volumen": 1900,
+        "kd": 27,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "QM03-CO-R1",
+        "literal": "cómo funciona la inteligencia artificial",
+        "pais": "CO",
+        "idioma": "es",
+        "fecha": "2026-11-05T16:29:31.175Z",
+        "volumen": 880,
+        "kd": 19,
+        "intent_auto": "informational"
+      }
+    ]
+  },
+  {
+    "cluster": "N05",
+    "pregunta": "¿Qué es el machine learning en la inteligencia artificial?",
+    "origen": "Keyword interrogativa",
+    "match": "que es el machine learning en la inteligencia artificial",
+    "prioridad": "Baja",
+    "intencion": "Informativa técnica",
+    "necesidad": "Entender relación conceptual",
+    "pagina": "Ninguna como artículo independiente",
+    "funcion": "FUERA_ALCANCE",
+    "etapa": "Backlog",
+    "justificacion": "Subtema introductorio real pero marginal para describir la organización y sus recorridos",
+    "contexto": "",
+    "aliases": [
+      "que es el aprendizaje automático en inteligencia artificial"
+    ],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P18",
+    "evidencia": [
+      "OLD:E01-questions-S2-R21",
+      "OLD:E01-questions-S2-R45",
+      "OLD:E01-questions-S3-R21"
+    ],
+    "paises": [
+      "CO",
+      "MX"
+    ],
+    "confianza": "Alta en literal/mercado del proveedor; media en intención; volumen estimado, no audiencia propia",
+    "metricas": [
+      {
+        "oid": "OLD:E01-questions-S2-R21",
+        "literal": "que es el machine learning en la inteligencia artificial",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:59:05.153Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:E01-questions-S2-R45",
+        "literal": "que es el aprendizaje automático en inteligencia artificial",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:59:05.153Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:E01-questions-S3-R21",
+        "literal": "que es el machine learning en la inteligencia artificial",
+        "pais": "CO",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:59:05.153Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      }
+    ]
+  },
+  {
+    "cluster": "N05",
+    "pregunta": "¿Qué aborda AI Foundations y cómo se distingue de un curso introductorio?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Institucional/informativa",
+    "necesidad": "Entender la vertical sin confundirla con una oferta educativa",
+    "pagina": "Inicio",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1",
+    "justificacion": "La ambigüedad de fundamentos observada exige explicar la función organizacional",
+    "contexto": "B1; OLD:C01-PE-Q08; OLD:C02-MX-Q08; OLD:C03-CO-Q08",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P19",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N06",
+    "pregunta": "¿Cómo empezar a programar con inteligencia artificial?",
+    "origen": "Título orgánico",
+    "match": "¿Cómo empezar a programar con inteligencia artificial?",
+    "prioridad": "Media",
+    "intencion": "Informativa/formativa",
+    "necesidad": "Reconocer tarea de asistencia y punto de partida",
+    "pagina": "Formación",
+    "funcion": "E2_COPY",
+    "etapa": "E2, sin tutorial completo ni nuevo programa",
+    "justificacion": "Ayuda a explicar Software with AI por tarea, manteniendo requisitos reales",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P20",
+    "evidencia": [
+      "OLD:C04-PE-Q04-I18",
+      "OLD:C05-MX-Q04-I18"
+    ],
+    "paises": [
+      "MX",
+      "PE"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N06",
+    "pregunta": "¿Cuál es la mejor IA para programar?",
+    "origen": "Keyword interrogativa",
+    "match": "cuál es la mejor ia para programar",
+    "prioridad": "Media",
+    "intencion": "Comparativa",
+    "necesidad": "Comparar asistentes para el flujo de desarrollo",
+    "pagina": "Productos si hay herramientas pertinentes; Formación solo contexto",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 para criterios; E2 por recurso",
+    "justificacion": "La etiqueta commercial puede expresar elección de herramientas y no compra de formación",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P21",
+    "evidencia": [
+      "QM02-MX-R3"
+    ],
+    "paises": [
+      "MX"
+    ],
+    "confianza": "Alta en literal/mercado del proveedor; media en intención; volumen estimado, no audiencia propia",
+    "metricas": [
+      {
+        "oid": "QM02-MX-R3",
+        "literal": "cuál es la mejor ia para programar",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T16:29:30.298Z",
+        "volumen": 210,
+        "kd": null,
+        "intent_auto": "commercial"
+      }
+    ]
+  },
+  {
+    "cluster": "N06",
+    "pregunta": "¿Qué tan buena es la IA para aprender programación?",
+    "origen": "Título orgánico",
+    "match": "¿Qué tan buena es la IA para aprender programación?",
+    "prioridad": "Media",
+    "intencion": "Informativa/evaluación",
+    "necesidad": "Evaluar apoyo y dependencia al aprender",
+    "pagina": "Formación",
+    "funcion": "E2_COPY",
+    "etapa": "E2",
+    "justificacion": "Objeción pertinente a explicar método y límites; no habilita promesas de aprendizaje",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P22",
+    "evidencia": [
+      "QS01-PE-Q04-I3"
+    ],
+    "paises": [
+      "PE"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N06",
+    "pregunta": "¿Qué debe revisar una persona al desarrollar software con apoyo de IA?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Informativa/técnica",
+    "necesidad": "Reconocer responsabilidad, calidad y límites de la asistencia",
+    "pagina": "Formación; ficha de producto si aplica",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 para criterio; E2 para alcance real",
+    "justificacion": "La discusión orgánica de uso/calidad justifica explicar supervisión y alcance, no prometer código correcto",
+    "contexto": "QS01-PE-Q04; QS03-CO-Q04; OLD:C01-PE-Q05; OLD:C02-MX-Q05; OLD:C03-CO-Q05",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P23",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N07",
+    "pregunta": "¿Qué hace un ingeniero de inteligencia artificial?",
+    "origen": "Título orgánico",
+    "match": "¿Qué hace un ingeniero de inteligencia artificial?",
+    "prioridad": "Media",
+    "intencion": "Informativa/profesional",
+    "necesidad": "Entender rol y actividades, con posible intención universitaria",
+    "pagina": "Formación",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 para desambiguación; E2 para descriptor",
+    "justificacion": "No atribuir a Academy la demanda de carreras o el título profesional",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P24",
+    "evidencia": [
+      "OLD:E02-PE-Q03-I11",
+      "OLD:E03-MX-Q03-I16",
+      "OLD:E04-CO-Q03-I14",
+      "QS02-MX-Q05-I2",
+      "QS03-CO-Q05-I2"
+    ],
+    "paises": [
+      "CO",
+      "MX",
+      "PE"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N07",
+    "pregunta": "¿Qué es un desarrollador de IA?",
+    "origen": "Título orgánico",
+    "match": "¿Qué es un desarrollador de IA?",
+    "prioridad": "Media",
+    "intencion": "Informativa/profesional",
+    "necesidad": "Comprender construcción e integración de aplicaciones de IA",
+    "pagina": "Formación",
+    "funcion": "E2_COPY",
+    "etapa": "E2",
+    "justificacion": "Apoya el descriptor de AI Engineering, sin afirmar empleo o título propio",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P25",
+    "evidencia": [
+      "OLD:C02-MX-Q05-I4",
+      "QS01-PE-Q05-I2"
+    ],
+    "paises": [
+      "MX",
+      "PE"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N07",
+    "pregunta": "¿En qué se diferencian AI Engineering y Software with AI?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Comparativa/formativa",
+    "necesidad": "Elegir entre integrar IA y desarrollar software con su apoyo",
+    "pagina": "Formación",
+    "funcion": "E1_BLOQUE",
+    "etapa": "E1",
+    "justificacion": "Decisión de recorrido de Academy ya confirmada; la formulación específica no es una búsqueda medida",
+    "contexto": "B1; OLD:C01-PE-Q03; OLD:C01-PE-Q05; OLD:C02-MX-Q03; OLD:C03-CO-Q03",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P26",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N08",
+    "pregunta": "¿Cómo citar inteligencia artificial en APA 7?",
+    "origen": "Keyword interrogativa",
+    "match": "como citar inteligencia artificial en apa 7",
+    "prioridad": "Media",
+    "intencion": "Informativa/procedimental",
+    "necesidad": "Declarar procedencia del uso de IA en trabajo académico",
+    "pagina": "Investigación/ficha solo si procede como nota de uso",
+    "funcion": "E2_COPY",
+    "etapa": "E2; guía normativa completa fuera de alcance",
+    "justificacion": "Duda recuperada; no ofrecer una guía APA o atribuir autoría científica al modelo",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P27",
+    "evidencia": [
+      "Q01-PE-S3-R17"
+    ],
+    "paises": [
+      "PE"
+    ],
+    "confianza": "Alta en literal/mercado del proveedor; media en intención; volumen estimado, no audiencia propia",
+    "metricas": [
+      {
+        "oid": "Q01-PE-S3-R17",
+        "literal": "como citar inteligencia artificial en apa 7",
+        "pais": "PE",
+        "idioma": "es",
+        "fecha": "2026-11-05T16:25:39.131Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      }
+    ]
+  },
+  {
+    "cluster": "N08",
+    "pregunta": "¿Qué datos, método y validación sostienen una aplicación científica de IA?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Informativa/evaluación científica",
+    "necesidad": "Distinguir una demostración de un resultado con evidencia",
+    "pagina": "Investigación; ficha de investigación",
+    "funcion": "E1_BLOQUE",
+    "etapa": "E1 para campos; E2 por trabajo",
+    "justificacion": "CSIC y UNAM apoyan supervisión, datos y reproducibilidad; no es pregunta PAA o keyword recuperada",
+    "contexto": "WF05; WF06; OLD:C01-PE-Q06; OLD:C02-MX-Q06; OLD:C03-CO-Q06",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P28",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N08",
+    "pregunta": "¿Qué límites tiene este resultado y qué sigue siendo responsabilidad del investigador?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Informativa/evaluación",
+    "necesidad": "Evitar confundir salida de una herramienta con evidencia científica",
+    "pagina": "Ficha de investigación",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 para campo de límites; E2 por objeto",
+    "justificacion": "La necesidad de límites condiciona comprensión y uso de trabajos, no una FAQ general de ciencia",
+    "contexto": "WF05; WF06; B1",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P29",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N09",
+    "pregunta": "¿Cuál es la mejor herramienta de IA para investigar?",
+    "origen": "Título orgánico",
+    "match": "¿Cuál es la mejor herramienta de IA para investigar? : r/PhD",
+    "prioridad": "Alta",
+    "intencion": "Comparativa/exploratoria",
+    "necesidad": "Elegir apoyo para una tarea de investigación",
+    "pagina": "Productos/ficha, si hay corpus pertinente",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 para criterios; E2 por producto",
+    "justificacion": "Pregunta observada en resultados de discusión; se responde por tarea y limitaciones, no con un ganador universal",
+    "contexto": "",
+    "aliases": [
+      "¿Cuál es la mejor IA para investigar? : r/OpenAI",
+      "¿Cuál IA es la mejor para apoyar la investigación científica?"
+    ],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P30",
+    "evidencia": [
+      "OLD:E02-PE-Q05-I7",
+      "OLD:E03-MX-Q05-I2",
+      "OLD:E04-CO-Q05-I5",
+      "QS01-PE-Q07-I6",
+      "QS01-PE-Q07-I16",
+      "QS02-MX-Q07-I8",
+      "QS03-CO-Q07-I5",
+      "QS03-CO-Q07-I9",
+      "QS03-CO-Q07-I18"
+    ],
+    "paises": [
+      "CO",
+      "MX",
+      "PE"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N09",
+    "pregunta": "¿Cómo compruebo las referencias y los resultados que ofrece una herramienta?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Evaluación/verificación",
+    "necesidad": "Distinguir búsqueda bibliográfica, referencia existente y resultado válido",
+    "pagina": "Ficha de producto, cuando la función lo requiera",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 para advertencias/campos; E2 por recurso",
+    "justificacion": "La elección de herramientas necesita condiciones de comprobación, no atribuir fiabilidad al listado",
+    "contexto": "WF05; WF06; QS01-PE-Q07; QS02-MX-Q07; QS03-CO-Q07",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P31",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N10",
+    "pregunta": "¿Cuál es una aplicación de la inteligencia artificial en finanzas?",
+    "origen": "Keyword interrogativa",
+    "match": "cuál es una aplicación de la inteligencia artificial en finanzas",
+    "prioridad": "Alta",
+    "intencion": "Informativa/aplicada",
+    "necesidad": "Entender usos concretos del campo",
+    "pagina": "Inicio; Empresas; objetos pertinentes",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1",
+    "justificacion": "Relevante para la vertical incluso con cero aproximado observado CO; no demanda de trading",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P32",
+    "evidencia": [
+      "OLD:A03-CO-S4-R3"
+    ],
+    "paises": [
+      "CO"
+    ],
+    "confianza": "Alta en literal/mercado del proveedor; media en intención; volumen estimado, no audiencia propia",
+    "metricas": [
+      {
+        "oid": "OLD:A03-CO-S4-R3",
+        "literal": "cuál es una aplicación de la inteligencia artificial en finanzas",
+        "pais": "CO",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:52:28.254Z",
+        "volumen": 0,
+        "kd": null,
+        "intent_auto": "informational"
+      }
+    ]
+  },
+  {
+    "cluster": "N10",
+    "pregunta": "¿Cómo se utiliza la IA en las finanzas?",
+    "origen": "Título orgánico",
+    "match": "¿Cómo se utiliza la IA en las Finanzas?",
+    "prioridad": "Media",
+    "intencion": "Informativa/aplicada",
+    "necesidad": "Comprender procesos y utilidad antes de evaluar una solución",
+    "pagina": "Empresas; Productos/Investigación según objeto",
+    "funcion": "E2_COPY",
+    "etapa": "E2, con casos acreditados",
+    "justificacion": "La SERP mezcla aplicaciones, proveedores y formación; no implica asesoría propia",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P33",
+    "evidencia": [
+      "QS02-MX-Q08-I17",
+      "QS03-CO-Q08-I14"
+    ],
+    "paises": [
+      "CO",
+      "MX"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N10",
+    "pregunta": "¿Qué riesgos, límites y decisiones humanas deben explicarse en una aplicación financiera?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Evaluación/responsabilidad",
+    "necesidad": "Evaluar uso de datos, errores y límites sin promesa de rentabilidad",
+    "pagina": "Empresas; ficha de producto o investigación pertinente",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 para campos; E2 por caso",
+    "justificacion": "Pertinencia estratégica y evidencia temática de riesgos; el literal no tiene volumen ni se atribuye a PAA",
+    "contexto": "B1; W09; QS01-PE-Q08; QS02-MX-Q08; QS03-CO-Q08",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P34",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N11",
+    "pregunta": "¿Qué se necesita para aprender inteligencia artificial?",
+    "origen": "Keyword interrogativa",
+    "match": "que se necesita para aprender inteligencia artificial",
+    "prioridad": "Alta",
+    "intencion": "Formativa/evaluación",
+    "necesidad": "Evaluar punto de partida y requisitos",
+    "pagina": "Formación",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 para requisito por oferta; E2 para valor real",
+    "justificacion": "Reduce incertidumbre antes del interés; no se inventa nivel requerido",
+    "contexto": "",
+    "aliases": [
+      "que necesito para aprender inteligencia artificial"
+    ],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P35",
+    "evidencia": [
+      "OLD:E01-questions-S2-R19",
+      "OLD:E01-questions-S3-R15",
+      "OLD:E01-questions-S3-R76"
+    ],
+    "paises": [
+      "CO",
+      "MX"
+    ],
+    "confianza": "Alta en literal/mercado del proveedor; media en intención; volumen estimado, no audiencia propia",
+    "metricas": [
+      {
+        "oid": "OLD:E01-questions-S2-R19",
+        "literal": "que se necesita para aprender inteligencia artificial",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:59:05.153Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:E01-questions-S3-R15",
+        "literal": "que se necesita para aprender inteligencia artificial",
+        "pais": "CO",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:59:05.153Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:E01-questions-S3-R76",
+        "literal": "que necesito para aprender inteligencia artificial",
+        "pais": "CO",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:59:05.153Z",
+        "volumen": null,
+        "kd": null,
+        "intent_auto": "informational"
+      }
+    ]
+  },
+  {
+    "cluster": "N11",
+    "pregunta": "¿Qué se aprende en un curso de inteligencia artificial?",
+    "origen": "Keyword interrogativa",
+    "match": "que se aprende en un curso de inteligencia artificial",
+    "prioridad": "Alta",
+    "intencion": "Formativa/comercial",
+    "necesidad": "Comprender objetivos y alcance antes de elegir",
+    "pagina": "Formación",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 para objetivos; E2 para oferta confirmada",
+    "justificacion": "Aporta criterios concretos de evaluación y no resta prioridad a la identidad institucional",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P36",
+    "evidencia": [
+      "OLD:E01-questions-S2-R42",
+      "OLD:E01-questions-S3-R24"
+    ],
+    "paises": [
+      "CO",
+      "MX"
+    ],
+    "confianza": "Alta en literal/mercado del proveedor; media en intención; volumen estimado, no audiencia propia",
+    "metricas": [
+      {
+        "oid": "OLD:E01-questions-S2-R42",
+        "literal": "que se aprende en un curso de inteligencia artificial",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:59:05.153Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:E01-questions-S3-R24",
+        "literal": "que se aprende en un curso de inteligencia artificial",
+        "pais": "CO",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:59:05.153Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      }
+    ]
+  },
+  {
+    "cluster": "N11",
+    "pregunta": "¿Dónde aprender inteligencia artificial?",
+    "origen": "Keyword interrogativa",
+    "match": "dónde aprender inteligencia artificial",
+    "prioridad": "Media",
+    "intencion": "Comparativa/formativa",
+    "necesidad": "Comparar alternativas y encontrar una vía de aprendizaje",
+    "pagina": "Formación",
+    "funcion": "E2_COPY",
+    "etapa": "E2",
+    "justificacion": "Útil para explicar encaje de Academy, no para declarar superioridad frente a alternativas",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P37",
+    "evidencia": [
+      "OLD:E01-questions-S2-R13",
+      "OLD:E01-questions-S3-R16"
+    ],
+    "paises": [
+      "CO",
+      "MX"
+    ],
+    "confianza": "Alta en literal/mercado del proveedor; media en intención; volumen estimado, no audiencia propia",
+    "metricas": [
+      {
+        "oid": "OLD:E01-questions-S2-R13",
+        "literal": "dónde aprender inteligencia artificial",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:59:05.153Z",
+        "volumen": 20,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:E01-questions-S3-R16",
+        "literal": "dónde aprender inteligencia artificial",
+        "pais": "CO",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:59:05.153Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      }
+    ]
+  },
+  {
+    "cluster": "N11",
+    "pregunta": "¿Cómo aprender inteligencia artificial gratis?",
+    "origen": "Keyword interrogativa",
+    "match": "cómo aprender inteligencia artificial gratis",
+    "prioridad": "Baja",
+    "intencion": "Formativa/condición económica",
+    "necesidad": "Buscar recursos sin pago",
+    "pagina": "Ninguna como promesa de Academy",
+    "funcion": "FUERA_ALCANCE",
+    "etapa": "Revisar solo si una oferta gratuita se acredita",
+    "justificacion": "La keyword no confirma que las líneas propias sean gratuitas",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P38",
+    "evidencia": [
+      "OLD:E01-questions-S2-R1"
+    ],
+    "paises": [
+      "MX"
+    ],
+    "confianza": "Alta en literal/mercado del proveedor; media en intención; volumen estimado, no audiencia propia",
+    "metricas": [
+      {
+        "oid": "OLD:E01-questions-S2-R1",
+        "literal": "cómo aprender inteligencia artificial gratis",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:59:05.153Z",
+        "volumen": 40,
+        "kd": null,
+        "intent_auto": "informational"
+      }
+    ]
+  },
+  {
+    "cluster": "N11",
+    "pregunta": "¿Qué modalidad, fechas, precio y condiciones tiene la oferta disponible?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Comercial/formativa",
+    "necesidad": "Evaluar condiciones antes de dejar interés",
+    "pagina": "Formación",
+    "funcion": "FAQ_CONTEXTUAL_CANDIDATA",
+    "etapa": "E1 ubicación condicional; E2 con catálogo confirmado",
+    "justificacion": "Datos operativos decisivos aún pendientes; FAQ solo si no se resuelven junto a cada oferta",
+    "contexto": "B1; Keyword Map N11",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P39",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N12",
+    "pregunta": "¿Para qué sirve la inteligencia artificial en las empresas?",
+    "origen": "Keyword interrogativa",
+    "match": "para que sirve la inteligencia artificial en las empresas",
+    "prioridad": "Alta",
+    "intencion": "Informativa/comercial",
+    "necesidad": "Relacionar necesidades organizacionales con aplicaciones",
+    "pagina": "Empresas",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1",
+    "justificacion": "Sustenta presentar capacidades y cuatro verticales, no solamente formación",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P40",
+    "evidencia": [
+      "OLD:A05-PE-S2-R17",
+      "OLD:A06-MX-S2-R13",
+      "OLD:A07-CO-S2-R23",
+      "OLD:B01-PE-R23",
+      "OLD:B02-MX-R28",
+      "OLD:B03-CO-R23"
+    ],
+    "paises": [
+      "CO",
+      "MX",
+      "PE"
+    ],
+    "confianza": "Alta en literal/mercado del proveedor; media en intención; volumen estimado, no audiencia propia",
+    "metricas": [
+      {
+        "oid": "OLD:A05-PE-S2-R17",
+        "literal": "para que sirve la inteligencia artificial en las empresas",
+        "pais": "PE",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:53:11.057Z",
+        "volumen": 0,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:A06-MX-S2-R13",
+        "literal": "para que sirve la inteligencia artificial en las empresas",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:53:19.748Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:A07-CO-S2-R23",
+        "literal": "para que sirve la inteligencia artificial en las empresas",
+        "pais": "CO",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:53:30.922Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:B01-PE-R23",
+        "literal": "para que sirve la inteligencia artificial en las empresas",
+        "pais": "PE",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:53:56.829Z",
+        "volumen": 0,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:B02-MX-R28",
+        "literal": "para que sirve la inteligencia artificial en las empresas",
+        "pais": "MX",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:53:58.882Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      },
+      {
+        "oid": "OLD:B03-CO-R23",
+        "literal": "para que sirve la inteligencia artificial en las empresas",
+        "pais": "CO",
+        "idioma": "es",
+        "fecha": "2026-11-05T15:54:00.413Z",
+        "volumen": 10,
+        "kd": null,
+        "intent_auto": "informational"
+      }
+    ]
+  },
+  {
+    "cluster": "N12",
+    "pregunta": "¿Cómo implementar la inteligencia artificial en la empresa?",
+    "origen": "Título orgánico",
+    "match": "¿Cómo implementar la Inteligencia Artificial en la empresa?",
+    "prioridad": "Media",
+    "intencion": "Informativa/comercial",
+    "necesidad": "Comprender pasos y encaje de una adopción",
+    "pagina": "Empresas, solo alcance acreditado",
+    "funcion": "E2_COPY",
+    "etapa": "E2",
+    "justificacion": "No convierte la búsqueda de implementación en un servicio disponible de AI PlayGrounds",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P41",
+    "evidencia": [
+      "QS03-CO-Q09-I2"
+    ],
+    "paises": [
+      "CO"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N12",
+    "pregunta": "¿Cómo aplicar IA en mi empresa sin ser programador?",
+    "origen": "Título orgánico",
+    "match": "¿Cómo aplicar IA en mi empresa sin ser programador?",
+    "prioridad": "Media",
+    "intencion": "Informativa/evaluación",
+    "necesidad": "Entender requisitos y alternativas para una organización",
+    "pagina": "Empresas",
+    "funcion": "E2_COPY",
+    "etapa": "E2, sin promesa de implementación sin conocimientos",
+    "justificacion": "Objeción real de formato; ayuda a explicar interlocutores/requisitos, no capacidades ficticias",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P42",
+    "evidencia": [
+      "QS02-MX-Q09-I7"
+    ],
+    "paises": [
+      "MX"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N12",
+    "pregunta": "¿Qué capacidades y oportunidades verificables ofrece AI PlayGrounds en las cuatro verticales?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Institucional/comercial/consulta",
+    "necesidad": "Evaluar relación empresarial más allá de formación",
+    "pagina": "Empresas",
+    "funcion": "E1_BLOQUE",
+    "etapa": "E1",
+    "justificacion": "Decisión humana vigente y SERP empresarial amplia; requiere evidencia propia antes de concretar oferta",
+    "contexto": "B1; decisión humana actual; OLD:C04-PE-Q01; OLD:C05-MX-Q01; OLD:C06-CO-Q01",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P43",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N12",
+    "pregunta": "¿Qué información necesito compartir para explorar una colaboración y qué ocurre después?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Consulta/participativa",
+    "necesidad": "Entender siguiente paso, datos necesarios y límites de compromiso",
+    "pagina": "Empresas",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 para recorrido; E2 tras confirmar canal/proceso",
+    "justificacion": "Hace legible la conversación sin inventar cotización, diagnóstico, plazo o servicio",
+    "contexto": "B1; WF04; QS01-PE-Q09; QS02-MX-Q09; QS03-CO-Q09",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P44",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N13",
+    "pregunta": "¿Cómo analizar la calidad de un artículo científico?",
+    "origen": "Título orgánico",
+    "match": "¿Cómo analizar la calidad de un artículo científico?",
+    "prioridad": "Alta",
+    "intencion": "Informativa/evaluación",
+    "necesidad": "Examinar autoría, método, resultados y respaldo de un trabajo",
+    "pagina": "Investigación; ficha de investigación",
+    "funcion": "E1_DENTRO",
+    "etapa": "E1 para campos; E2 por trabajo",
+    "justificacion": "La guía primaria permite justificar información de evaluación sin afirmar revisión por pares de las entradas",
+    "contexto": "WF02",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P45",
+    "evidencia": [
+      "QS01-PE-Q10-I7",
+      "QS02-MX-Q10-I10"
+    ],
+    "paises": [
+      "MX",
+      "PE"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N13",
+    "pregunta": "¿Cómo saber si leer un artículo científico en detalle?",
+    "origen": "Título orgánico",
+    "match": "¿Cómo saber si leer un artículo científico en detalle?",
+    "prioridad": "Media",
+    "intencion": "Exploratoria/evaluación",
+    "necesidad": "Determinar relevancia antes de abrir el original",
+    "pagina": "Investigación; ficha de investigación",
+    "funcion": "E2_COPY",
+    "etapa": "E2",
+    "justificacion": "Un resumen contextual puede orientar selección; la fuente es sanitaria y no se generaliza su validez científica",
+    "contexto": "",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P46",
+    "evidencia": [
+      "QS01-PE-Q10-I13",
+      "QS02-MX-Q10-I13",
+      "QS03-CO-Q10-I4",
+      "QS03-CO-Q10-I13",
+      "QS03-CO-Q10-I19"
+    ],
+    "paises": [
+      "CO",
+      "MX",
+      "PE"
+    ],
+    "confianza": "Alta en título devuelto; media en intención; destino/cuerpo no verificado salvo WF02/WF04/WF08",
+    "metricas": []
+  },
+  {
+    "cluster": "N13",
+    "pregunta": "¿Quién hizo el trabajo, cuál es su estado y dónde consulto el original?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Exploratoria/verificación",
+    "necesidad": "Reconocer autoría, versión, procedencia y acceso",
+    "pagina": "Ficha de investigación",
+    "funcion": "E1_BLOQUE",
+    "etapa": "E1 para modelo; E2 para datos",
+    "justificacion": "Necesario para separar trabajos propios, vinculados y externos; no es demanda literal medida",
+    "contexto": "B1; WF02",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P47",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  },
+  {
+    "cluster": "N13",
+    "pregunta": "¿Cómo propongo un trabajo y qué implica su revisión antes de publicarlo?",
+    "origen": "Inferencia editorial",
+    "match": "",
+    "prioridad": "Alta",
+    "intencion": "Participativa/postulación",
+    "necesidad": "Entender criterios y expectativa de una postulación",
+    "pagina": "Investigación",
+    "funcion": "FAQ_CONTEXTUAL_CANDIDATA",
+    "etapa": "E1 ubicación; E2 solo con proceso confirmado",
+    "justificacion": "Recorrido aprobado como modelo condicionado: postular no equivale a publicar ni integrar el equipo",
+    "contexto": "B1; arquitectura base; Keyword Map N13",
+    "aliases": [],
+    "estado": "PROPUESTA — pendiente Gate B",
+    "id": "P48",
+    "evidencia": [],
+    "paises": [
+      "Aplicación editorial transversal; sin demanda nacional acreditada"
+    ],
+    "confianza": "Editorial sustentada en contexto; demanda literal no acreditada",
+    "metricas": []
+  }
+]

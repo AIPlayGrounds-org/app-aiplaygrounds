@@ -1,0 +1,1190 @@
+{
+  "id": "E02-PE",
+  "tool": "get_serp_results",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "queries": [
+      {
+        "keyword": "AI PlayGrounds",
+        "locationCode": 2604,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "Software with AI",
+        "locationCode": 2604,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "ingeniería de inteligencia artificial",
+        "locationCode": 2604,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo aprender inteligencia artificial",
+        "locationCode": 2604,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "herramientas de inteligencia artificial para investigación",
+        "locationCode": 2604,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "aplicaciones de inteligencia artificial en finanzas",
+        "locationCode": 2604,
+        "languageCode": "es",
+        "device": "desktop"
+      }
+    ],
+    "depth": 20
+  },
+  "response": {
+    "results": [
+      {
+        "keyword": "AI PlayGrounds",
+        "ok": true,
+        "items": [
+          {
+            "type": "organic",
+            "rank": 1,
+            "organicRank": 1,
+            "title": "AI Playground: Experiential Demos",
+            "url": "https://cloud.google.com/resources/aiplayground-demos",
+            "domain": "cloud.google.com",
+            "description": "24 oct. 2026 — Explore the AI Playground to see how multimodal models, proactive agentic AI, and edge computing solve real business challenges."
+          },
+          {
+            "type": "ai_overview",
+            "rank": 2,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "images",
+            "rank": 3,
+            "organicRank": null,
+            "title": "Imágenes",
+            "url": "https://www.google.com/search?sca_esv=6b0e606c2b1206da&hl=es&gl=PE&sxsrf=AKL5yDgyEn-LUPgndGBiQ6wZVca7KKVZ6A:1793894365748&q=AI+PlayGrounds&udm=2&source=univ&fir=RcpuELg0WivIxM%252CfaRPLux72kYFtM%252C_%253By0J_3i4zxCpfhM%252CiCoozrWyWoxO2M%252C_%253BjhKj01Nq2YemLM%252CboeQacC94a_e_M%252C_%253Be2lcAWIUdqIy3M%252Cief0bc7sINCStM%252C_%253B3XcMZYSLSMMcWM%252COpoZuqcQrTEoAM%252C_%253BYiok-KLj0Tk0CM%252CboeQacC94a_e_M%252C_%253B1CxBuvilkE38fM%252Com-4N6Hm549dMM%252C_%253BoQAZ7wPxvkwEUM%252C9cBULfgjdI0sQM%252C_%253B39WNsW7xIbAcJM%252Com-4N6Hm549dMM%252C_&usg=AI4_-kRV77ojjVfqPfyAG_wc50wKNluoYg&sa=X&ved=2ahUKEwiF4bujmfGXAxV9EDQIHV99MigQ7Al6BAgfEAU",
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 2,
+            "title": "drshahizan/Generative-AI-Playground",
+            "url": "https://google.com/goto?url=CAEScgHEIkXXzdOxNZAiLQrTFd1os-fa5JXo_lmrU10yiNDx2BHRoE_uM6pInMzhPJuvXK1K_AaGeeVInUsv3d75-ZW2CT-SIqHCKXPdCX7P9Wi6zupXl3wYqJIbhByspNCuAOE2lmDWuOVApjHwgj_uldn8BQ",
+            "domain": "github.com",
+            "description": "Generative-AI-Playground is a platform for experimenting with different generative models and techniques. It lets you try out advanced technologies like ..."
+          },
+          {
+            "type": "organic",
+            "rank": 5,
+            "organicRank": 3,
+            "title": "AI Playground - Explore AI for Web3 on Google Cloud",
+            "url": "https://cloud.google.com/application/web3/ai-playground",
+            "domain": "cloud.google.com",
+            "description": "AI Playground is your gateway to the smartest tools on the decentralized web. Explore a dynamic ecosystem of apps, interactive Colabs, and actionable skills ..."
+          },
+          {
+            "type": "organic",
+            "rank": 6,
+            "organicRank": 4,
+            "title": "Image Playground",
+            "url": "https://google.com/goto?url=CAESaQHEIkXXLvKYh1vAwFLXJvxQXjro_uXqehBzQ-vZ_BaH_Jpi2McKb5Kjn8HhXWL05bzXCY91ESKriGWHv3BoEPkHWio-9njZwndoHxXRZ2B5dDft2gN4ksWsRTHg4kXbuno2WEPLSoZfdA",
+            "domain": "platform.openai.com",
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 5,
+            "title": "Top 10 Free AI Playgrounds For You to Try in 2025",
+            "url": "https://google.com/goto?url=CAESfQHEIkXXqRdn_VCd9nkCTII5OT5SI-OlrdVKhNAHFwzvqTVIFJeE9W68-NKlHrqQ2EEYXYySRH0_Oq8LWxITfuL7r4hqCmS4sVHI69Z0svtECVOyaj_QNfimS07Q9Arg5g0wiOuSkuMjr32SNMP9lG8nIDd2nfAUV8tGsM1-",
+            "domain": "analyticsvidhya.com",
+            "description": "19 nov. 2024 — Top 10 Free AI Playgrounds · OpenAI Playground · Hugging Face · Poe · Chat LMSys · AI SDK · TensorFlow Playground · Aleph Alpha · AI21 Labs."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 6,
+            "title": "Playground: Generador Imágenes - Apps en Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.playgroundaiimagegenerator.faceswap&hl=es_PE",
+            "domain": "play.google.com",
+            "description": "Esta AI Playground App convierte tus ideas en arte en cuestión de segundos ... Usos principales del PlayGround AI Image Playground: • AI Logo Maker ..."
+          },
+          {
+            "type": "video",
+            "rank": 9,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 7,
+            "title": "Chatea con LLM y crea prototipos de aplicaciones de IA ...",
+            "url": "https://google.com/goto?url=CAESkgEBxCJF17eCh6lj_SAWOXgVCvz-c-wDKeE6eQADis1fbEvjK_JDx97xzkZZq6PPAy3tN-ADpwQmrMYh909sgXpqfgcTiS1E7nBsuy-7T1byv_PObWr_fFfCEF9tHu6ANdM5m0GV3qvjNlcAUZxdLiseVJ96I0WbNOGH5Mj3DKlZrHFV-_hg2zzoqHExoFTJn_2ieg",
+            "domain": "learn.microsoft.com",
+            "description": "Ai Playground es un entorno de chat para modelos de lenguaje grande (LLM). En el entorno de pruebas, puedes probar, solicitar información y comparar modelos de ..."
+          },
+          {
+            "type": "related_searches",
+            "rank": 11,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 12,
+            "organicRank": 8,
+            "title": "Generative AI Playgrounds: Pioneering the Next ...",
+            "url": "https://google.com/goto?url=CAESogEBxCJF1zYfoTM-HQSLoxnJnnb6sIWyX9fmwhmGZy619u0z7vPzqvOatkyeJb6bxctQu4Yzm78f-BWrpVPCh-rR_U6gyGXpUjOVWyj0PDfLsOhEtcVdhmUWuFpjpvJqAeZQojsyPZoOYiNqX35gtANmksg_6eTAfReVLDv_grikrtRtM3SmIVhBDS87_nHzZ7kT96FTpkuWmbreXjZi_5siXWs",
+            "domain": "unite.ai",
+            "description": "9 ago. 2024 — Generative AI playgrounds are intuitive platforms that facilitate interaction with generative models. They enable users to experiment and refine ..."
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 9,
+            "title": "The AI Playground | NVIDIA Research",
+            "url": "https://google.com/goto?url=CAEScAHEIkXXQTvouKNn0KXMe9Wpgzl7Tb5E18SmI_tJ5rGgnc5o2_ZLjDc27udxOIVyEa0qAOoqdoW10X_86PWuFhSgQkjPrZCHKaiqCrD0WBstqQEZT11R-uNg_C1401ZPJsXRoK1MRBD5lpM7chNqOcU",
+            "domain": "nvidia.com",
+            "description": "The AI Playground on NGC™ offers an easy-to-use interface that allows you to quickly try generative AI models such as NeVA, SDXL, Llama 2, and CLIP directly ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 10,
+            "title": "ChatPlayground - The #1 Platform for Comparing AI Models",
+            "url": "https://google.com/goto?url=CAESWgHEIkXXT8UlucaZv2AGdppCNasoJKsFE2E9IP2WLiSRSZakSDN_raIr9wWg-Yp7rrLrxJwQTN4ohtKWWjaG2-_sVXEGpTJpGjc4t0rgpSosC-SZ7DhY_5JNwA",
+            "domain": "chatplayground.ai",
+            "description": "Compare ChatGPT, Claude, Gemini, Perplexity and DeepSeek side by side in one interface, all for one $20/month plan."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 11,
+            "title": "11 Best AI Playgrounds For You To Explore In 2026",
+            "url": "https://google.com/goto?url=CAESZwHEIkXX_6WL-ASffrCaNEJLLN7p60twmf1DrMoBRxmPzu56948MEJ3Mmhz9BD-CmHQW4Ziv--zUtNv6MJ_inKqqQ-2f_SSSWLXe3wx7DgrVcPvfimD8ceH_Fncm-eNejE0528Mtlj4",
+            "domain": "addlly.ai",
+            "description": "12 may. 2026 — 11 Best AI Playgrounds For You to Explore in 2026 · 1. Addlly AI · 2. Hugging Face Spaces · 3. DeepSeek AI · 4. OpenAI Playground · 5. Replit."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 12,
+            "title": "AI Playground",
+            "url": "https://google.com/goto?url=CAESWQHEIkXXN8sJBDRplqYR7jmnFPRKr1JLN_h2chO6x2lXGOy_JTURiZIm4_YBUJB0_YDopWim3fAaSfLCIsOEvGhdZ_Ur7PYO1psUhr-5ushO0Q9wwGEf_Sf1",
+            "domain": "ai-playground.io",
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 13,
+            "title": "Together AI playground",
+            "url": "https://google.com/goto?url=CAESXgHEIkXXDve-XDtJgidY0Ml0A72f7KT9FJWTxJZStwfTUyhg3zaObYYay5zaGy3HCdktjNvPQbvp09utfiPuU2EoAWvz1lYhomawftWOObv0AJvVoq8iaXpqt1RL0G0",
+            "domain": "api.together.ai",
+            "description": null
+          },
+          {
+            "type": "images",
+            "rank": 18,
+            "organicRank": null,
+            "title": "Imágenes",
+            "url": "https://www.google.com/search?sa=N&hl=es&gl=PE&sca_esv=6b0e606c2b1206da&sxsrf=AKL5yDj25-3dfj6IcABRkukA6bhFLo8Gsg:1793894366794&q=AI+PlayGrounds&udm=2&source=univ&fir=OsfkRQ_vLuL-jM%252C1fZzdfhSleHKMM%252C_%253B2ucihUbEgho9vM%252CGKlY8lr0EScKiM%252C_%253B4KrEPuF2HYLZYM%252CDkAcCySIL2EYoM%252C_%253BVHnHu7zUaMxG2M%252CboeQacC94a_e_M%252C_%253BMIXMbflmO9k_VM%252Cv5zriryUYweKhM%252C_%253BlJ51rn6a4nJ82M%252CfaRPLux72kYFtM%252C_%253B0BDau3nrzFq-GM%252CiCoozrWyWoxO2M%252C_%253BnLPA4_wRiGMpIM%252Com-4N6Hm549dMM%252C_%253Be-_skTB-0K12rM%252CboeQacC94a_e_M%252C_&usg=AI4_-kSHYnzgJzMPCuOMVeHg3y_MfIqREg&ved=2ahUKEwiD2fyjmfGXAxWTOzQIHcD0LeA4ChDsCXoECCsQBQ",
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 14,
+            "title": "AI Playground - Apps on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.deardhruv.llmplayground",
+            "domain": "play.google.com",
+            "description": "28 oct. 2026 — Run powerful AI models completely offline. No cloud, no subscriptions, and zero data leaving your phone. AI Playground brings state-of-the-art ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 15,
+            "title": "AI Playground. My AI Manager - by Lenormand Thomas",
+            "url": "https://google.com/goto?url=CAESgAEBxCJF19KaydL1MqNJU64z0mjbImhAdUe1FmKS6Cj9_wlLLnEu-KwJUTi4IcijxokLKvmrSY3obsXmqcsTs5XsgGTeLlpacyJlS9O8AspH5x1Os3YHEm-e5G5qXXmVdRYC52icYDi32BoJ5f5XzVTpvaslYtiSq3AJMX3bIsBpXQ",
+            "domain": null,
+            "description": "Users should be able to create machine learning models intuitively, without requiring in-depth coding knowledge. The user interface must be user ..."
+          }
+        ],
+        "locationCode": 2604,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "Software with AI",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "11 Best AI tools for developers in 2025 - Pieces.app",
+            "url": "https://google.com/goto?url=CAEScwHEIkXXlqXIDS36cpSPMZxyIsp_ULw7DW2_VMnrozHUvNIjNwBZbeei8AHvMQ3LY6G4sd1hb1mSazv42wCJ3UZHoxURP4HsQiXBrJ5upXODBingetqZ2pwBQG-srSw5O_DEBqySDR8FafOMKQYY90pUO9E",
+            "domain": "pieces.app",
+            "description": "7 abr. 2025 — Looking to build your next coding project? Learn about the best AI tools for coding that you can use to code faster and better."
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 2,
+            "title": "8 best AI coding tools for developers: tested & compared!",
+            "url": "https://google.com/goto?url=CAESZAHEIkXXIsc9uDQTSywHjT4nLLv1z20XbPgVqXkyL_lpgfqNTmazPsGuB7urI5-IxUJq3b7SvAUInC5H2AWMaUQCeujXCOudVhRVigIKx4oOUlG1WuEO9us6NBCiRI0WFmFT4z8",
+            "domain": "blog.n8n.io",
+            "description": "18 mar. 2025 — Struggling to choose the best AI tool for coding? We tested 8 leading platforms to help you decide. Discover our top picks to streamline ..."
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 3,
+            "title": "15 Best AI Platforms for 2026 (Free + Paid Options)",
+            "url": "https://google.com/goto?url=CAESdgHEIkXXbGTUiV9J2WtijMBK1C98yCdpf3wg42ngy5G0jDT5AflImjWSR934pysBdpGjgsuzodC7bzWHaa16vF8JLk0bxl--mXildKqFs00urAMBV2HV0kP6LzcDw8pC6FUaR858-Hu3bQHRCd3s0s1nMPdQq9M",
+            "domain": "peoplemanagingpeople.com",
+            "description": "hace 2 días — Read expert reviews of the top AI platforms with a comparison of features, pros & cons, prices, and more. Find free and paid AI tools."
+          },
+          {
+            "type": "organic",
+            "rank": 5,
+            "organicRank": 4,
+            "title": "ChatGPT: Leading AI Software in Human-Like Dialogue",
+            "url": "https://google.com/goto?url=CAESZwHEIkXXzhGRXk4cYo5LZyBvCYNH-ct6CvLYzq-a2fulS_KgkF1YGURSNdeOTv0WP3eQXPeKdGQXADEQP-RlZwuCF9Esah4Ne3bV06b9TW5kegpBmXBCPdxYWCwRsreEUFb5ZP3AlDU",
+            "domain": "viso.ai",
+            "description": "20 oct. 2023 — Discover how AI Software like ChatGPT revolutionizes dialogue with human-like responses. Customize AI for specific tasks in our ..."
+          },
+          {
+            "type": "video",
+            "rank": 6,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 5,
+            "title": "The 21 best generative AI tools in 2026",
+            "url": "https://google.com/goto?url=CAESaQHEIkXXxRgYqsmGeMrf-zyA_MXq6nt5yrfLy20krnD5KE1Lhk3aHGCBnbIpPBvnxznaDNu0CoMfUn3eC691hifWwzYefkD4caU_Y1NcCOazpipaHoDoU-679FVRCqX5_0ZIfpCGPP_SFA",
+            "domain": "zapier.com",
+            "description": "2 jun. 2026 — Jasper for AI-powered marketing content. Shortwave for email writing and management. Notion for creating a second brain."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 6,
+            "title": "AI Tools | Harvard University Information Technology",
+            "url": "https://google.com/goto?url=CAESYgHEIkXXSAADbHWuO7PrYHpIkITmgjjDDU7yw-86OW2MEhBdBAeCQqsrgU9Yi4kmrZlV3cdZKrJWZnHBST_KlgE8HWs0pegp-e7sVejLzPLooO8pdXe6Nr3FSZBz5pbWZBj6",
+            "domain": "huit.harvard.edu",
+            "description": "On this page, you can find AI tools currently available from HUIT. Your School's local IT department may also offer additional tools."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 7,
+            "title": "Best Artificial Intelligence Software: User Reviews from ...",
+            "url": "https://google.com/goto?url=CAEScgHEIkXXmx65-w-CSk0AdDcaqsiB8iKwowmciHvwpr-d2kNOT4tpCd12UR3iotOTu0HGHB3aUT2VyAzwWmbkucogz-cMBz7YmKlExiZLFQR-31ndunOoUf_ilBWRpUqw9k7ByIRlo0R8401e1oKrUYK7Lg",
+            "domain": "g2.com",
+            "description": "25 ago. 2026 — Looking to explore the latest in Artifical Intelligence (AI) software solutions? Read real user reviews, compare pricing, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 8,
+            "title": "AI Tools - Find AI Software Categorized by Futurepedia",
+            "url": "https://google.com/goto?url=CAESYAHEIkXXlbFp1v9EPXm8O5t4geZtNB-zu5keLEGa0_6ytZj5PqRktp2sZR8HbgQSQTW5bIBB8mTcc26536eWK6T15f8nTKvFPf1CcYB0ynKEIXmUCdyo6RLTSviyNyiIAQ",
+            "domain": "futurepedia.io",
+            "description": "Browse 2500+ verified AI tools sorted into 70+ categories. Compare features, pricing & reviews, then pick the right tool for the job in minutes."
+          },
+          {
+            "type": "related_searches",
+            "rank": 11,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 12,
+            "organicRank": 9,
+            "title": "Best Open Source Artificial Intelligence Software 2026",
+            "url": "https://google.com/goto?url=CAESdwHEIkXXk2hxSQ3SKrieXdAkZQ_wYDvUcim5ySypX-nlIy4qbv41sM6Q9riPauL4EPNDhCpIz5PF9oLZxxIdTCN0kSlNGbX5bAFp1PCQDIDs5J4qzI-tTacVsXnGnSf2dqPwGkkrsVFfxVhO2_jq4ZpXFmV3fjIO",
+            "domain": "sourceforge.net",
+            "description": "Artificial Intelligence Software · Buzz · AI-Aimbot · Replica Dataset · Weka · ComfyUI · Ollama · Ultimate Vocal Remover (UVR5) · Tesseract OCR. Open Source OCR ..."
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 10,
+            "title": "I tried 70+ best AI tools in 2026",
+            "url": "https://google.com/goto?url=CAESaQHEIkXX62IptZ-FUmN2e-uHmcqN6N2j2VkRyrCa4nhe-So0hkL8cU7xcPFgkTDYB_KBfWApuK18VCTJE4lpQW3nPmcRx7NXJvgysafH9b9BqugK1E17Yup2GJTj52LAp2-8-ci3qmnFCA",
+            "domain": "techradar.com",
+            "description": "28 abr. 2026 — If your digital life revolves around Gmail, Docs, Sheets, and Calendar, Gemini is the AI you want in your corner. Built with native integration ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 11,
+            "title": "AI for Software Development Teams",
+            "url": "https://google.com/goto?url=CAESfwHEIkXXGJ4XR9jy-FDrfyP-_2LyO-4EDzvY5PsiExsoBrk8Au2whGIhBs0Q8TRXqDG6He3CPAafwNz-x6Ai5y8g-AHC8DeRHFDey_wqQFGUr1qCPMeLD9fHREED_Kfe0q_1Dzzhxsfcs5jvkZCisNlJDQgizfe20-blGNvTAwQ",
+            "domain": "swfte.com",
+            "description": "65% of developers use AI coding tools weekly. Complete guide to AI tools for programming, web development, and software engineering."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 12,
+            "title": "14 AI Coding Assistant Tools, Tested Across Real Workflows",
+            "url": "https://google.com/goto?url=CAESdQHEIkXXpaM2CjXdliO2Jxgq1f1QxH0mkh9ZSd2Oh1Dwu_namDCtC4EE8icjeMLIAVn3ozskFAxWptvQIQtjE-Fv0QPkc1UhD25OW1snOnIZMEV8rCyczZlFL6SRAljbPx6FOPPHfcvtJLaHy0duZGPfJcruNg",
+            "domain": "qodo.ai",
+            "description": "25 feb. 2026 — We tested 14 AI coding tools across editor assistants, agents, app builders, and review platforms, covering real workflows, real limitations ..."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 13,
+            "title": "AI for developers",
+            "url": "https://cloud.google.com/use-cases/ai-for-developers",
+            "domain": "cloud.google.com",
+            "description": "AI for developers can automate tasks, generate quality code, customize models, and accelerate software and application development. Try Gemini platform free."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 14,
+            "title": "List of artificial intelligence projects",
+            "url": "https://google.com/goto?url=CAESgwEBxCJF17nticmrMdk0Z70AQOlhoPBnOqlVV6kgVNmIbgxx9NAxGt52zHBrUCwfVs-95mlm0W0eB_Dz9ZnZ_OJ9yPRsRyewi2SdY2ZzEiOmu_MmOmvb2snDQO95fP5HHEOJNPMBbV7h8EEU7o6AinqnEp9fid-8WwWn0NgnsDXk7O7sjQ",
+            "domain": "en.wikipedia.org",
+            "description": "Amazon Q Developer — AI coding assistant by Amazon Web Services. · Claude Code — AI coding tool by Anthropic. · Codex — AI coding agent by OpenAI. · Cursor — AI- ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 15,
+            "title": "Más de 10 herramientas de IA sin coste económico para el ...",
+            "url": "https://cloud.google.com/use-cases/free-ai-tools?hl=es",
+            "domain": "cloud.google.com",
+            "description": "También ofrecemos herramientas sin coste para casos prácticos de IA habituales, como traducción, análisis de imágenes y vídeos, transcripción de voz y más."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 16,
+            "title": "Artificial Intelligence Software 2026 - GetApp",
+            "url": "https://google.com/goto?url=CAESiQEBxCJF12DxB_hmKvJR95hZ2ZIzzv7bePk4uCmkGiGBNEboj9DZM-4Nu33Vgv0lIJ5O4z2KF5e2bUfeWCwvm8lJmUsmfgGwASQ5M7qOYUq0tsz6e9jXr-eR6S2TMmmJHDVhFXonJw-vsiY6dBS1My2u_CKCYGPJjTpvQokQee7rPE34GkQj4jFNSQ",
+            "domain": "getapp.com",
+            "description": "Artificial Intelligence Software · Speech-to-Text · Google Cloud Text-to-Speech · Google Cloud Translation AI · GitLab · Site24x7 · New Relic · Adobe Firefly."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 17,
+            "title": "You have to see these AI tools for devs!",
+            "url": "https://google.com/goto?url=CAESaAHEIkXX8vPELCNbAQMdXnkGXHrnc331SN_L2GYplX7K4fQ5W3K97Hchr3WAjCGDyDvePVOjaO76GEyll_dJrGcjzyIR676GHA8jg_izernm3G8YiklXmvHW_nenInKMKYOBAfzZ-3Ow",
+            "domain": null,
+            "description": "Cada vez más herramientas inteligentes soportadas por IA, cada vez más productividad y cada vez más formas de expandir tus horizontes como ..."
+          }
+        ],
+        "locationCode": 2604,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "ingeniería de inteligencia artificial",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "La Universidad Nacional de Ingeniería presenta su nueva carrera",
+            "url": "https://google.com/goto?url=CAES2AEBxCJF1-RUdCq_xr0xqkSfb58MfA2WcmwihA5RhmoY23WiqF2BMXu5TKeUrxtaGO2Zo4vD-TZxjE4IL1yaI6o0CgAV2oxDrxsnzwtbEbQwbAEL5csWAGQrlZC2YAoKUsRHVwvVhuP0YgGXXLHVUwYEVTwK3FwQ0VHjbk-DBKAeCAEWFXxfv-BUpmrpMHLdOQ_ihF4ITDxGO0TMBOxc2Y12QnS8o4dp_z1Jnd7Mnef6NFrJ8m4ljZJDrjaPgLnzDa3Ciz2sqdFsqSTrBx4xQ4kx84tPZ2D_H0U",
+            "domain": null,
+            "description": "La Universidad Nacional de Ingeniería presenta su nueva carrera: Ingeniería de Inteligencia Artificial, formación que combinará tecnología, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 2,
+            "title": "Grado universitario en Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESgAEBxCJF1_VqUBx8D21HK5ZU7uNrJqPs-YM-swUsWy-oUic4lyq3wMFdBydi4J4AV26WmRKMefdm3tZGwHhkUTY4PJp3UzE2YU4rgVd099cx_jNyObZ7hHUFqnWobHvqOA-IcH9v6fyB3s8wbE1N9ChNL_wulGDExbrhfAVgz6rXzQ",
+            "domain": "upc.edu",
+            "description": "El grado en Inteligencia Artificial (GIA ) tiene como objetivo formar a profesionales con la capacidad de identificar como las técnicas de la inteligencia ..."
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 3,
+            "title": "¿Dónde estudiar inteligencia artificial en Perú? | Blog",
+            "url": "https://google.com/goto?url=CAESigEBxCJF1z7t9LcdFJXRSVQlfi5v66mUZ7mNNFxCtGcXSquCE96W1KdRMWC2mYsneoMUe91RfFCZj9oiCGu2qKEgubgKhjVgHSiOKESPLetPY-u-x_btHDPQnmVk5MGQ6S9go8katZgrnnObP6yA0kko_MmrjOe9CGuc_oDLI_A7SMUbA4tXz66d4gQ",
+            "domain": "isil.pe",
+            "description": "5 mar. 2025 — La duración de los estudios en Inteligencia Artificial (IA) en Perú varía según el tipo de programa académico que elijas, desde 3 años a 5 años."
+          },
+          {
+            "type": "people_also_ask",
+            "rank": 5,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 6,
+            "organicRank": 4,
+            "title": "que tan seria es la nueva Carrera de Inteligencia Artificial?",
+            "url": "https://google.com/goto?url=CAESngEBxCJF19AUsTDMUZXtnOLqqDjkjZDNq8KRuvJgIQ8k-JX_J1pRIBxHbZMktBf5XKrGed57QD4p0IXvhePxkcJkqLen3nnuUJPlZg409McFGpCQEPwyhDNafSAPPQ0YxMeePcaK3oSNDBKADLlSpuKKjOcR8_tAXcVOSdDwMWfikxPJY8zWIgxgYnqt7USZ9NOsiMZjAeWmtrAlewM-fA",
+            "domain": null,
+            "description": "Mucho se habla que es la chamba loteria del futuro, no vaya a ser que sea otro NFT que caerá en el olvido"
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 5,
+            "title": "EDITABLE BORCHURE ING. DE INTELIGENCIA ARTIF",
+            "url": "https://google.com/goto?url=CAESrAEBxCJF1yf4KorgNGsAgV1CAQcm41iewgVokxq1QhmlECKt5CEl5ZCGtxZ0X0NNPxycHs7OhOgPnk29oFZv23OexdQgo1LW4Pam7rH2wmsKmX_2BszJdTegEUdyWMBw_gYOzehUYfc5Pow3nmRbdoPIPOQY_E-BwooqBCsk_Tk5OqSI1cH7Kov5BegEMFyOFn3mlCZR1RIR_IJzEg_xJlUCEybmK2E3CSYYCnqN",
+            "domain": "uma.edu.pe",
+            "description": "Se apoyan en los datos para construir algoritmos y modelos estadísti- cos avanzados, así como técnicas avanzadas de inteligencia artificial, machine learning o ..."
+          },
+          {
+            "type": "video",
+            "rank": 8,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 6,
+            "title": "Artificial Intelligence Engineering degree prepares for the future",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXJUcKgvs2mESMOfxeGEpP3GUr_tkJgqQpQLRLfXCwyXOeZsw9ZDf4DeJ6j9HTEjgkrCEbZLDJkto657SO29LjpxSnXEWn8de86EzvbFWWMCEJqjD9vsaH4WIjreF6shGGesMt",
+            "domain": null,
+            "description": "La inteligencia artificial es parte de una revolución de este siglo ... ingeniería de IA que trabaja la universidad nacional de ingeniería ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 7,
+            "title": "Ingeniería en Inteligencia Artificial: esta es la carrera que ...",
+            "url": "https://google.com/goto?url=CAESqwEBxCJF15Nuk0Rmt2k_mXnMJT_uztq1_d__JwZZsT8r8Qr3-HB5-75G4g8pImPI_ZF-thg2Bo0q5LU7GOX8lQFchRjMXsNVM-sakuxLoMkQp9Cib5ZcqrO9yctEvQfY0W5tW8x4p-ZLzwqiWotbPVKbUawgBzmwQ1a5-PjFD6tFL5pi-pioJft8B1kn7Op0e-d7GSz0QCD-6EVR_c7iviQiWQJrzZ48PDFIhKE",
+            "domain": "uwiener.edu.pe",
+            "description": "hace 6 días — Estudiar Ingeniería en Inteligencia Artificial permite prepararse para un campo en constante crecimiento y desarrollar competencias para ..."
+          },
+          {
+            "type": "organic",
+            "rank": 11,
+            "organicRank": 8,
+            "title": "¿Qué hace un ingeniero de inteligencia artificial?",
+            "url": "https://google.com/goto?url=CAEShQEBxCJF1xA01vFxfgEhq34mc8YK_QxUlCTui-mJaJTBkk_uCYh6eSsKWUOx7-BPscZA5wZKgLtSLqbT6Y2SWm_84yCxCPIqPdYyuyXArm5NI60IVrYq2i9145iMn7EV_4ex-T74NKNUJYwUjNLWgrPrqaPqTxyHWG3ZzSZjjOMQnH_3XboU",
+            "domain": "ceste.es",
+            "description": "26 oct. 2026 — La figura del ingeniero de inteligencia artificial es la que convierte los avances teóricos en soluciones que funcionan dentro de una ..."
+          },
+          {
+            "type": "related_searches",
+            "rank": 12,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 9,
+            "title": "Ingeniería de Software e Inteligencia Artificial (Carrera Virtual)",
+            "url": "https://google.com/goto?url=CAESuQEBxCJF1yscHCvUyGhno75F6EVpsyJH0Owvmj7yjM2uHkYnVwyQL1hCTdWZJF3JOr2JoiceE659FDd6TpIskIlXQ8nnyTRySC5aJQLocpV25hjcCnB7PG16OLeKZd1-TisBTt6qOL5BwIIg_n_FLN_qiwbcDf-8Yyv8sXrrcnw5EKcDDMTIDM2I1tE1odXC0V8VythQsrmkNZNHGPc4j7EiVHGaY41VYlFF7klxggcuqYvX3QxzbKhtIA",
+            "domain": "senati.edu.pe",
+            "description": "Al estudiar esta carrera serás capaz de: · Analizar procesos de negocio y proponer mejoras con soluciones de desarrollo de software. · Desarrollar soluciones ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 10,
+            "title": "MT616 Artificial Intelligence",
+            "url": "https://google.com/goto?url=CAEScwHEIkXXgzZ_1PQGtChhkTN0ul8O8k9POkAcxKkq4OU3n_FfdX911GYVf9voAvu5z9EQ3H8mIdG5hVJ_SIa7O1kW7_67F_iMGzd5NMp6rA3Q5YO5DkNxlF3EJJ2hPr9nMonH6qVlrwOhnfHNJFwzOF1RZmQ",
+            "domain": "acreditacion.uni.edu.pe",
+            "description": "MT616 Artificial Intelligence. Download. Seguir: Ingeniería Mecatrónica. Presentación · Misión y Visión · Objetivos Educacionales · Resultados del ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 11,
+            "title": "UNI aprueba la nueva carrera de Ingeniería en Inteligencia ...",
+            "url": "https://google.com/goto?url=CAESwgEBxCJF17CkOmfGodqiL2kbeeeGQ20MjThK_s-F3HmLy03L_sk6erMD1Ym-vgqygqPANPVAGnP2pbeBOrcKxpqxETJFGNgvRcPTrpEloHnvZfQXYV5hqqnk9j6HoL9eU8tOpACBo_U1tsHH9fTa6fdztBn5SciCz72crEAoXiJX7sETWnJ3ElrRty_LqpXgxe-v5gz6_VZ9G9Jd0tqvQT_L2LXji15nFAMTIC1VGxflM8GUuGFIqdr8oDiqzKtPG7hp1g",
+            "domain": "proactivo.com.pe",
+            "description": "31 dic. 2025 — Su plan de estudios comprende programación para machine learning, big data, sistemas embebidos y en tiempo real, redes neuronales y aprendizaje ..."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 12,
+            "title": "Ingeniería en Inteligencia Artificial - La Paz",
+            "url": "https://google.com/goto?url=CAEShwEBxCJF14MtRoUmESYzvfUq9KOlTZ1Yj4cK6-7PqBhZQD_wGnUIBXv6tU42RfA8JlnKu9YMI-_osGKnfQicc5_SKpoSYoRhVCdAlPRZg7mmRe77vs3lMhgz5_8a-omNDOU7nm-249xSTG4mxILcw_jG_0CrDmdmha12aijJy_rJuN4wKP-6H6s",
+            "domain": "ucb.edu.bo",
+            "description": "Como ingeniero en inteligencia artificial, podrás desempeñarte en campos como desarrollo de software para sistemas inteligentes, análisis predictivo, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 13,
+            "title": "Desde cuándo esta universidad peruana enseñará la ...",
+            "url": "https://google.com/goto?url=CAES0wEBxCJF1wUJbIvXK7tgDD2p2PTBnbeV6hQPAqTBNpQwgY2I-6pH1MwmIDD6oCRgEJqmH-jwqwV8fTMSKc3y3pYoIVvs8icmIP4GPfKCsD0lgQ8oo0KQPjWPl8kPtb5fbtyF9bnxX33nLQYJsN9H40aYNWpJH81myk-A2gi8z0lniYdSsV1oaOHDh1PkDkd9mhChkUCEFrGZU_JZWmI1yhBn3rnz3EpGnYxErev3eA1lkVRxStyC_PaE61XdeOYUDnt_Ax5TteymTj9NALOCDFyR47_-",
+            "domain": "elcomercio.pe",
+            "description": "8 abr. 2024 — La UNI tiene estimado abrir esta nueva carrera de Ingeniería de Inteligencia Artificial en los próximos meses, pues el año pasado el Consejo de ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 14,
+            "title": "Es buena la carrera de ingeniería de software con ...",
+            "url": "https://google.com/goto?url=CAESowEBxCJF1-eLBErNDuuszU2nzN-PPf3KcRC653Bs7diTPdceTqoasBnfjAMU9aOaDIw4mRQLu5Jb3GqHCPaHgvXFdz3SrOnRNsrqFF0D75DBRf81UITzWpzvoZVVVhPDw1jPNRRM8WjK9ETVJc242KI84BtjGH7Cn9okmCMejJ5KcLYJzEHcgEORbMFqe4bFW8JQppNN-SZvQ4KgZuzDt4WnEdrD",
+            "domain": null,
+            "description": "Contexto: acabo de terminar la secundaria, y pues no sabía que estudiar, aunque siempre me interesó la ING de software con inteligencia artificial, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 15,
+            "title": "¡Es oficial!  La carrera de Inteligencia Artificial estará en el ...",
+            "url": "https://google.com/goto?url=CAES1wEBxCJF17nHh16oDYKaDZFgUMJP2ImzDyKgtYQdF6gXyKETIrQsa3BHb2ovdL_2FCKQpAUqXC--GqHAIFBxnE3MG0pDLKCQ03DGG4zuKKyTENSVrV7DfHGzlPmYVCsyK_LoVaNe1go0nlHo0Ylg4rT0yjGEiqe5DuTqkV-GwyGvXgyWjY2s94dY3Kr1qAcjN0fcwkp8xbUxSB_JXc-DdR0pmCcYcpb_aJMVlJLC5uLqrg3TfxWSumVjnItdgrucagO_anTr-WaWw5s6Rr38bHV9BU1ssnOruQ",
+            "domain": null,
+            "description": "La carrera de Inteligencia Artificial estará en el próximo examen de admisión de la Universidad Nacional de Ingeniería (UNI). La casa de ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 16,
+            "title": "Empleos de Ingeniero en inteligencia artificial",
+            "url": "https://google.com/goto?url=CAEShgEBxCJF1-OsrwUACB43Q33XTBX_yoA5LqeNeY6iFKWTm-QfeqQISAjT5dXv8i9Q6Fs4IkI5LEPyg3aHriNm2jCPZGJZ1p77rRv79gZYSITZWLqNUzDXNXrfVgmQkCVpzxxM75V1KiAi7X5ONZnmrz3D8a7TffiXcnOFrWiP55zbq60MVlbEdA",
+            "domain": "pe.indeed.com",
+            "description": "Liderar la implementación de inteligencia artificial en procesos académicos y administrativos. Promover el uso ético y seguro de la inteligencia artificial."
+          }
+        ],
+        "locationCode": 2604,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo aprender inteligencia artificial",
+        "ok": true,
+        "items": [
+          {
+            "type": "video",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "ai_overview",
+            "rank": 2,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "short_videos",
+            "rank": 3,
+            "organicRank": null,
+            "title": "Videos cortos",
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 1,
+            "title": "Ruta de Aprendizaje para aprender Inteligencia artificial",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXneThyLnZ7RO-zpUYUoEzVwbuKmqf9FMLc327Maiu794HXAt5_lj8_N6uScehn4zojwp9N4ShAbaFmX2GJq5NVKY_Hb6SpquoZbLsNaLeHbnMxjOoKmgTlOZXIJ29JYl3dpKd",
+            "domain": null,
+            "description": "Aprende inglés con un 90% de descuento ➤ https://dev.immigo.io/?via=fazt-web Convertirse en un Ingeniero de Inteligencia Artificial (AI ..."
+          },
+          {
+            "type": "organic",
+            "rank": 5,
+            "organicRank": 2,
+            "title": "Aprender inteligencia artificial desde cero: cómo empezar en IA",
+            "url": "https://google.com/goto?url=CAESoQEBxCJF1wDozmF-KRssFcEbZ4TH4wZD5u7x-ZLBQ_GSRLTnFrqWaDl2oE8dlovKBS42gb6WcdcpnAkbdZ_pgaEBa8FxomKb3Azl4Q143MfWO0a-GHXPOWPbO86juMUWWfcCrTU0evLj4zInTqcf-ytZWqz-htgzzZUIokO8lGro8gZiGHYLTcO3eGGNZDGHdzeAzXVWzSmZfUazddzOill60A",
+            "domain": "bejob.com",
+            "description": "Rutas de aprendizaje: cómo empezar a aprender IA paso a paso · 1. Curso de introducción a la inteligencia artificial · 2. Aprende sobre machine learning y deep ..."
+          },
+          {
+            "type": "organic",
+            "rank": 6,
+            "organicRank": 3,
+            "title": "¿Cómo puedo aprender IA siendo un completo principiante?",
+            "url": "https://google.com/goto?url=CAESrwEBxCJF13LBq642empH0Mmfw7xxDJuEg0qmpGR9mTwXSFcfLmUyy_dgPIaYsomyTk_Tw_MM2mBYBZhW7VR-8R2qPQauU1zTlzoHy7Mr15ZETcyKotgCJnDAh0-ZMHKxABEvR1yBw5sXZHP44syYUVWpPrZTu2Ddnbua3uKkNRvrggSIWFKdby_t4Pk_P-Vscuv7CXh5OoghzweuI0WbZgRfmOu_9u0XSXMLQAP-PrbP",
+            "domain": null,
+            "description": "¿YouTube tiene un montón, pero algún creador en específico? ¿Algún buen curso o plataforma? Gracias."
+          },
+          {
+            "type": "people_also_ask",
+            "rank": 7,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 4,
+            "title": "Curso Gratis de Introducción a la Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESYAHEIkXXcPoIA0RARhqAM1c3aJrSSYls91maN7LuCs6iVR2dKn17SS21hR7cRB7CbmGsQLP8-woBUX2AcILOuhq2XFU4Iv3ki23StNDmICVAX2ZFxAEpAQJw3qHAU3yhJw",
+            "domain": "platzi.com",
+            "description": "28 jul. 2026 — Aprende inteligencia artificial desde cero, gratis y en español. Sin requisitos previos y con certificado. Empieza hoy a aplicar mejor la IA ..."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 5,
+            "title": "Curso GRATIS de Inteligencia Artificial 2026 | Aprende IA ...",
+            "url": "https://google.com/goto?url=CAESaAHEIkXX2Ylfy8F89faPbtg9G9tK8uySq6gPucWn-LDffbO1TT2qtE1mjYBLVxhfm8m_joXTLHcphoIwDa_NuBwAvC75cLkM3pL4Y95RIShY64tSinslII22SoQxxK3syyEcWn8wv-dq",
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 6,
+            "title": "Inteligencia Artificial para principiantes: cómo aprender IA ...",
+            "url": "https://google.com/goto?url=CAESpAEBxCJF10kKVYx5QSHKdEps-8wWTg1ZfN46mEMYqoLtQxWvPblqc_TMrgbur5Cpo36YEYrP9IVDI0_c1IO7UJ3ZtdSExOvgMhazkM6-FCBTnlMH9MqBjE2ocgLcnUX45uMBCYqs4N2vAbBOAeDQgaBLZUh4Hcy2SO1o0QgmJbka2Q0va7eM5VwdzjHnPE2I9to4R2QeOHeI7g8XBvdrBt850tJ5vw",
+            "domain": "sinapsisai.com",
+            "description": "30 jul. 2025 — Aprender inteligencia artificial no es exclusivo de ingenieros. Con conceptos básicos, herramientas gratuitas, videos introductorios y cursos ..."
+          },
+          {
+            "type": "organic",
+            "rank": 11,
+            "organicRank": 7,
+            "title": "ARTIFICIAL INTELLIGENCE FOR BEGINNERS | Basic AI",
+            "url": "https://google.com/goto?url=CAESaAHEIkXX-OO5erGsET5S_aTn-JTaIf8wVcKTAjT9CDYgyOJ_Mxi0gPByfkVadRKlYszfJIhLzPfce0s7yX7oTJxfjggecmqSV8jj6lEhawuDHnuOpsbZ1UQlI6W-cRibFzbbzGajkDRU",
+            "domain": null,
+            "description": "En este video aprende de qué se trata la Inteligencia Artificial, explicado especialmente para ti que no te dedicas al área de tecnología ..."
+          },
+          {
+            "type": "related_searches",
+            "rank": 12,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 8,
+            "title": "¿Cómo aprender inteligencia artificial desde cero en 2026?",
+            "url": "https://google.com/goto?url=CAEShAEBxCJF19UNpXy5qmh-CIiDtuw2S96STwKzm-hIos6HHlpbeJ-9OnS4Km6ynUuXiEwd3vteUcwTgyVWnq4tJoqmYH7SnrwzU7p6ihUIsXHhYMaqinpnjz1Mf4S0p-TXSaGG2XJ-xclbb5SaiCPfXUAsQ93ejOSFjiqCRfLycw8c6wRE2uY",
+            "domain": "keepcoding.io",
+            "description": "7 set. 2026 — Quieres aprender inteligencia artificial desde cero? Descubre la hoja de ruta paso a paso: Python, librerías, Machine Learning y proyectos ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 9,
+            "title": "¿Cómo Aprende una Inteligencia Artificial? - MBIT School",
+            "url": "https://google.com/goto?url=CAESiAEBxCJF1xzfgev3_zfJvJyMirQ77FtoBNoFxwtX6eBhxnN8z9hndT8mA31B52EPHMx9JjN5ne64h2Qaotejtna4ycdQ9x58PqpLSKwftLnT0wi_3M7sfvtSkwcz1_9gIRNmOcdzojig_xbf4q62UhiorLFL1pbsfr1O8NBjRdq56etThp4K0axl",
+            "domain": "mbitschool.com",
+            "description": "Descubre aquí cómo aprende una IA, qué tipos de aprendizaje hay y cómo puedes tú programar una IA con MBIT School."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 10,
+            "title": "Cómo Empezar en Inteligencia Artificial: La Guía Definitiva ...",
+            "url": "https://google.com/goto?url=CAESzgEBxCJF131xSlOP4qCUleDPwDZXs8gFj7vVMVTgJXKM8x_LHdvxkoeClOcXr3aXcmH3VQbidRtFKC7fiQz8GXg7o_rpN1OwcA8AGKPomHMKV9E9iWlLksXeqKrjck2_Wn0wPNlbf1B6y_WYCls6hY6ZTaeni-vUBhTETjURLrkZq0L5dVP8tlbik1COkhZtj1UViXJ6WFTBKA7ZYWau9Mqe8ZoKBDa0VMDKJoeedGsZKhXp3ryDV9B-k8cpBIvfo23v7bibSg-nqLGRaK_H7w",
+            "domain": null,
+            "description": "El primer paso concreto · Decidir qué área específica de la IA te interesa profundizar · Elegir con criterio las herramientas y tecnologías que ..."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 11,
+            "title": "Como empezar con inteligencia artificial? : r/CharruaDevs",
+            "url": "https://google.com/goto?url=CAESnAEBxCJF1wV38cEAUzHBDH9fw-3Bg_6Gx8hs-OMV5uBgvsxY2ERqAfWSgwGTlUhfKzWqiAX8in26IAdXfFVPJ_aBBfil28RIeUKHr0Cemnnrrr82ctrNVzKn7smnDP18OuibDBKiRq4fA8uj_3crxtljc6D6RjVPnXywEvbN-8f6QDfP6yvFkhMha0SP3jez7KDkS1_cBaglEt_AeOA",
+            "domain": null,
+            "description": "Buenas! Cómo andan? Lo que dice el título, ando buscando meterme un poquito con temas de IA y vengo a pedir alguna recomendación de cursos, tutoriales ..."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 12,
+            "title": "ARTIFICIAL INTELLIGENCE FOR BEGINNERS | Basic AI",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXjMAMtBV164LLlYVDHd2Xu5_Ic5maJ9QIxuhRke97C6XGDSkl9Dy9XERSeqBjSe6ZayFUomGfCYInoM_zRUfW__7i4M0RJpZNH3F4NvpkfcZyXfRoRldUkMiDXkUpbimRH8dq",
+            "domain": null,
+            "description": "En este video aprende de qué se trata la Inteligencia Artificial, explicado especialmente para ti que no te dedicas al área de tecnología ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 13,
+            "title": "Cómo aprender inteligencia artificial desde cero ¡Guía 2025!",
+            "url": "https://google.com/goto?url=CAESewHEIkXX3nAIUx3HggNHvYiIoS8Mso0gMqSWGNfWwz-WWiaPd460BEvp27u2JIAyxDv-ouAc3zxbrpiR92QB6vd0Bbr8aekYPC5KrKqIw40a3AGvZ7lUXiMdDVeJ9cD4kqdSWdCWg79qwk6FtCwTU5jTN5vPiy6LRfH3ww",
+            "domain": "pontia.tech",
+            "description": "Paso a paso: cómo aprender inteligencia artificial desde cero · Paso 1: Familiarízate con los conceptos básicos · Paso 2: Aprende programación con Python · Paso ..."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 14,
+            "title": "42 cursos gratis de inteligencia artificial para aprender a ...",
+            "url": "https://google.com/goto?url=CAESsQEBxCJF14VVw_3EBIJ7QzhoSsjSzkMGUQS1Gi6zVjQfAC9afa6IasZmFVv61VaLlAnyLbvhB_GBZv9SqRYteqPi2eY-5qZXbBeXFKhjtdk3hIs_yN4sDJw8XTasaV_ZOFd0JMvvQMdcbCeLSF-d-jc0eOfLRYC7oNvgjerc5SyhmeSX2xjwkTUBW1GBimXVeGHQa0bTEoGkafLLbMNbdhuaUY1806OFmojHWlvR-RP8478",
+            "domain": "xataka.com",
+            "description": "4 jun. 2025 — Te traemos una recopilación con 42 cursos sobre Inteligencia Artificial, para que aprendas lo necesario para conocerla en profundidad."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 15,
+            "title": "Curso GRATIS de Inteligencia Artificial Paso a Paso para ...",
+            "url": "https://google.com/goto?url=CAESaAHEIkXX0jvVfcEOHHj7QRBb-qnY0MPedrYVNQ5-9HAHLPatFbs9uLi5YK07ia-eKos1EtYmbllJyBCUaLiUDEWE8m1zQ6H6UxdngHHrDucOkbVvIz-BE8aZi3Ndk5nrxQ2hvzpiqL16",
+            "domain": null,
+            "description": null
+          }
+        ],
+        "locationCode": 2604,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "herramientas de inteligencia artificial para investigación",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "Las mejores IA para el investigador moderno",
+            "url": "https://google.com/goto?url=CAEShQEBxCJF1xBPtfS526EzIBV755YlmDbxRSVEvF93TbEaScSTYS7vV7sl_ECKLL6uTxgDGdcIdfiD7TmBqwOqVmhIZeQaGF9BNRE-ZANilZgIRHThdAZYPH9YkesSetyQd5LxeECFTJZYTPf3bxs1SBDHSWydwjVmXDAPP9e6C7Om0ht1gy9U",
+            "domain": "observatorio.tec.mx",
+            "description": "19 set. 2023 — Es una plataforma para encontrar, comprender y aprender sobre cualquier publicación, ya que, gracias a la IA, SciSpace es capaz de explicar y ..."
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 2,
+            "title": "Herramientas de IA para investigación académica",
+            "url": "https://google.com/goto?url=CAESugEBxCJF13LPPCyHLjzR0q8KVh2c_ZC9sc3VXyKG2I3KFgZUYMPhNd2vnLmDctJh78ocgmd-OPUv0oMgrRkgLVKsi0GMuGpBqqCSbIKQsEZnS1BOkN3z-yKbIhLbIdPoKZRPHHVkh9Wd-h0aSju6rVEWCbyyqQAVCdtiqKJ8C6oDOnBv7grHjJG8l7LNQmIugpU9Mr7NWPweY-kyt5nL_o2anhzdK4D6r39ZeG_9M797QGkzwsuSG-MfToY",
+            "domain": null,
+            "description": "5. Visualización de datos y generación de gráficos: para comunicar resultados de forma más clara, visual y comprensible. Tres buenas prácticas ..."
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 3,
+            "title": "Herramientas de IA - Guía para el uso académico de la ...",
+            "url": "https://google.com/goto?url=CAESZwHEIkXXk08XDK-IGdem50HKdGbCRlHvzwYnBWK7KLBAwtDCYEbK72G4SiCPuvO2N0euP5cwtHwA_Nfx4oXZPOYd66b56QUgDvxsapXma7jJqifg1Ius32xiC8ZiddIhOLuj9ASClJk",
+            "domain": "uned.libguides.com",
+            "description": "23 set. 2026 — En esta guía conocerás las principales herramientas de Inteligencia Artificial (IA) generativa para el apoyo a la investigación. Además ..."
+          },
+          {
+            "type": "video",
+            "rank": 5,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 6,
+            "organicRank": 4,
+            "title": "IA para la investigación académica: busca, analiza y ... - Kimi.ai",
+            "url": "https://google.com/goto?url=CAESegHEIkXX8TjBr6GTgsr_nlybtGeK5AY5ehwWL6seUdFRJgqFnJS5RHb8yluzhCqiMQvO8-cy2F-2JXJivwYlu7rB2zww7Pqx5Vp4E7S7kDiTipH7IMWgsuiPrr3ZpgfuIavB2-YqHDKkQhFsVWN88gopPu4aS_67Sexb",
+            "domain": "kimi.ai",
+            "description": "La IA permite a los investigadores estudiar tendencias del mercado, comportamiento del consumidor, estrategias organizacionales, finanzas y emprendimiento ..."
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 5,
+            "title": "¿Cuál es la mejor herramienta de IA para investigar? : r/PhD",
+            "url": "https://google.com/goto?url=CAESmwEBxCJF12bFdMhHsPKbf1qAF1tuNgB1bXz6a-ZJ9ZNUmqLlqTPMOrAbTuL_uuSvpEAMnbWbiarzgX2Gi8eOtXupFaUadoY3dEQSUCpM3ZBf45JwDorQpJrNJnGyQYA3IZ8EcW2M5eOFDaWT0bs5ak6e3FXiD8Fg9kNqMx4c5hBybEDLlz38uYiShsAqzkBgtDMdNHT5y8yMfr3ggg",
+            "domain": null,
+            "description": "¿Alguien por aquí usando herramientas de IA diseñadas específicamente para investigación? Acabo de ver a mi terapeuta de la escuela porque estoy batallando ..."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 6,
+            "title": "Las 10 mejores herramientas de inteligencia artificial para ...",
+            "url": "https://google.com/goto?url=CAEScAHEIkXXiFq9LUE65M_XRbQOpMSCbhKDcJCcJXf9CjGT-8Rycoyhv-iLzrR3h0A_w9kQwrC9EComRPHx8T2un0wEGslmQMBg87UWvxCenbHpu3F4AvgGPjkgPVurhoRJo8PvbwEq9xKNHaFWrYhYSuY",
+            "domain": "powerdrill.ai",
+            "description": "30 set. 2025 — 1. Powerdrill · 2. Paperguide · 3. ResearchFlow · 4. Humanize AI · 5. HumanizerPro · 6. Semantic Scholar · 7. Scholarcy · 8. Scite."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 7,
+            "title": "Herramientas de Investigación con Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESlAEBxCJF1xPAyF6zzKBgXVM-lMPdIXYdPN_5VujpkADqO7CcR4hB6g_pE6epJHKQ4A0awDzDvTwhfmXYyWEKAK7_UN0L_DhHxKldOjTA1omOZbhSCIcsjw58hDawtKtmDxl1n-WOwFXi-Fie5SINH8asRhWbPTSgqERpAqctqzXXGdye69UXBEMbaZYSFpUYdxe0ukEJ",
+            "domain": "docentesdigitales.mx",
+            "description": "15 feb. 2024 — Elicit es un asistente de investigación virtual que con una sola palabra es capaz de buscar documentos y datos de investigación en más de 170 ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 8,
+            "title": "Herramientas de IA para investigadores",
+            "url": "https://google.com/goto?url=CAESwgEBxCJF1_0wWGrKcM-TcCk5S-6F6A52kuMD1O_zU55CXphzDfavmZ22CM2AN-v2ieXRnbXjWfEbs7N-ITnq7_alYvWYqjrgNaymcxYuF_nfIdJCoWG9BpSyo67PNWuZzKZv62AHGpg_myxFSXitj8JUZgBvahCCV0e3SJ0LrW6A-kepkBc3LtYRSlP789Wer_965rgRWAT74DHEh9TrVMx16JiQqvTZXZFt4nkGjlsrqcbtsDxz1GvQ6gaDycP7Py4TMQ",
+            "domain": "saberinvestigar.com",
+            "description": "Listado de herramientas de inteligencia artificial para terminar la tesis. Filtra por fase de la investigación y encuentra la herramienta que necesitas en cada ..."
+          },
+          {
+            "type": "related_searches",
+            "rank": 11,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 12,
+            "organicRank": 9,
+            "title": "La Inteligencia Artificial como herramienta de apoyo en ...",
+            "url": "https://google.com/goto?url=CAEScgHEIkXXvJ7Hskfcim2hoBYTVC4y7vn8V1IS5ZX3R1B8JlkEfrTNkk5yFHVNsirf0iQuj0bvE353ccX00QFv7_liD6HZQM1N--hAMAdLlUWfxvBLlcTnuAe246TmanWBDzsCPZoCzXrQy1kPl8Lis0fzdA",
+            "domain": "redalyc.org",
+            "description": "por AH Arias · 2023 · Mencionado por 8 — Al escoger una herramienta, por ejemplo Google Bard (2023), se puede plantear la siguiente interrogante en lenguaje natural: ¿Cuáles son los problemas que ..."
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 10,
+            "title": "Las herramientas IA para científicos: guía práctica ...",
+            "url": "https://google.com/goto?url=CAEScAHEIkXXscdvAb3wB5oaIMbi46CCSGpLiTq8r6WOE8DgodcrGtYY5p4lF3tHSSjxAbjfZoTptvsKyoxrQEPjJ6yYVl37MjQmoNdKrSJuKbnlMgs8fP5LUSxTZv3SYLB2mUhDmYLz4B2fj_sL-8MFXhc",
+            "domain": "maximaformacion.es",
+            "description": "4 dic. 2025 — Principales tipos de herramientas IA para investigadores · 1. Herramientas para analizar datos. · 2. Herramientas para búsqueda y redacción ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 11,
+            "title": "Las 5 mejores herramientas de IA para trabajos ...",
+            "url": "https://google.com/goto?url=CAESdgHEIkXX2_cw87t9FlO7b0um0eY_VHT6dVfIOxh90bOlwRpj7YDJP0GVAXgNVd42NuVeMOdVmJG7X1nFA7vH5hZnYSMs0vxo8Ozse3t1ahmz64FoSbsx03udLApLrcLhA5EqXy8A477PYYu0N_tJjhY7HJRlodE",
+            "domain": "sonix.ai",
+            "description": "10 may. 2026 — Las 5 mejores herramientas de IA para trabajos académicos en 2026 · 1. Sonix · 2. Paperpal · 3. Blainy · 4. SciSpace · 5. Jenni AI."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 12,
+            "title": "7 Aplicaciones de IA para Investigación Efectiva",
+            "url": "https://google.com/goto?url=CAESegHEIkXXHg5TIVq2Vjy2XySeaWHLKbQKDPfKhFp9-TkZA0GxkigK0dyCpgUtqm3ztnsgtF9jiu6JLJUipzNgq4JEPGVhXYU7AB-eNgdTL0-MXmApo4nR_egO43SvaNwrsKJD56BsKVItLZKQKXXNeFbm6V-tiWh20ipr",
+            "domain": "rescrito.com",
+            "description": "Descubre 7 aplicaciones de IA para investigación y mejora tu eficiencia académica. Aprende cómo optimizar tu trabajo en investigación."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 13,
+            "title": "Inteligencia Artificial en la investigación académica",
+            "url": "https://google.com/goto?url=CAEShQEBxCJF1yPQHGp5QlEC23hG5n3-NkeeOkF4qIHpvq2zJ18EUlbyXd0E60GuZ5LvHb-CpczydmcYicVB7EG993tEUlRXUDzS0hf-dZzJNrtN8mloBtEfB2Nlr4CGB2jXeKhN687i6eldIdckBxFxh0xuEoW65bEys0IJvrATV3H7T9awdgwc",
+            "domain": "micomunidadvirtual.uexternado.edu.co",
+            "description": "12 abr. 2024 — Algunos ejemplos de herramientas que son creadas con IA que se pueden implementar en la investigación Research Rabbit e Inciteful, que ofrecen ..."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 14,
+            "title": "Herramientas de Investigación con Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESnwEBxCJF13hBhYSWNt5Y_bLCFOk0F5jfRiqDYVn4bDV4ddQbNVIxtOPYnoj3f1H4FXVDnLwaX0khoblIniwO49lQZncnVotGtuSTzpiSxqYNDUmQ7fz5jE4G70hjUk1Y1v7Q607AIZAlJb_d7Pz7mkVAB0-0WregO7qYcBSIk_0SlZfbxxruIY3BALaOxuWMsEnOAW0_zV6pb2N8buFo-XQ",
+            "domain": null,
+            "description": "Descubrir artículos académicos con ayuda de búsquedas automatizadas. · Visualizar resultados de artículos que se vinculan entre sí mediante citas ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 15,
+            "title": "Recursos IA para investigadores - Biblioteca at Duoc UC",
+            "url": "https://google.com/goto?url=CAESagHEIkXXFiBNVrZ1nPB7riD1wAvqRC2XKg8M-MAE5zX6Ge04v9qTLvPYRjKCSpnTawtxXu2U287NyjIQ1ACubwPEqvPrdUdVQB79EefXO2wbB6TmGXnC8M4oy2JL6jaLT_jmqTUNcz7nRII",
+            "domain": "bibliotecas.duoc.cl",
+            "description": "23 jun. 2026 — Mediante la utilización de algoritmos avanzados y modelos de lenguaje natural, las IAs permiten una exploración más rápida y específica de datos ..."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 16,
+            "title": "Las mejores herramientas de IA para escribir trabajos de ...",
+            "url": "https://google.com/goto?url=CAEShAEBxCJF15AggfVY9wwOLN4ZjA11o9MY7GdP64Wd9IpT-82C7fmt0wAVN6tNp7M4T9CxyZZB5nYD7SfgWqc5DRY0h366zmxs_7Ea96WM4o800Jaw5YF7rke8DQsgrzSES6_zMcL1hKkyeSkfkPxt6lv4jRQeMmkU-LZTAmfUIH53wXb4S_M",
+            "domain": "scispace.com",
+            "description": "24 oct. 2024 — SciSpace es la mejor herramienta de IA para escribir trabajos de investigación en 2024. Cuenta con una plétora de herramientas de IA orientadas ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 17,
+            "title": "Escritor Académico e Herramienta de Investigación con IA ...",
+            "url": "https://google.com/goto?url=CAESUQHEIkXXW0rMv_J9GMF_OVP3ue8jNYll-VX2iKML85H8G8EsZIrhxvnj92H6HklMoSuSRdbQu-Cu-t5hrv2p26PsT8yqHaNpKRX92v8Tjoe1JQ",
+            "domain": "jenni.ai",
+            "description": "Jenni es una asistente de investigación y escritura académica impulsada por IA que ayuda a estudiantes, investigadores y académicos a crear ensayos, ..."
+          }
+        ],
+        "locationCode": 2604,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "aplicaciones de inteligencia artificial en finanzas",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "IA en finanzas: nuevas formas de planificar, ahorrar e invertir",
+            "url": "https://google.com/goto?url=CAEShQEBxCJF136GGH6E3-K6CYCq_tkPm1TCgC5mFpzI0ek2ajOoeimBDBv5uJvP8cJWrHloyUQKiG-8ZBA32Zgep2GjAI2kVHrE_D1cKzQ9JkVPGtmPkysAPDgvJ2qOX5vFJ1iCrPInQ5krY0ZYqqJYqSI0GUBJYXzkCTZQzClkMwvjmrS_HHCr",
+            "domain": "scotiabank.com.pe",
+            "description": "Esta tecnología en finanzas permite organizar tu dinero, predecir comportamientos del mercado, detectar riesgos y optimizar tu presupuesto sin tener ..."
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 2,
+            "title": "Inteligencia Artificial Aplicada a las Finanzas",
+            "url": "https://google.com/goto?url=CAESowEBxCJF1zbeRox2E0KEVkwoZ4DQQcsezdUAV1U0dvbmXj3H4LX2n4HK5YEG0s3dKh1tUMt-0jV6ByA74R03cjhlF1md7sIUh_30v6VYSqLIYCzB-4e89KonMuGonfXmYgB_E3_iZZQoVv009yLavjsGYIwxeePsfupCzF2D2WdLePF-NeYoPR-j2Q9dRjS1lLLjv9U1e9HyKvBuj9D2ptCY5exk",
+            "domain": "educacioncontinua.pucp.edu.pe",
+            "description": "Aplicaciones estratégicas de la Inteligencia Artificial en Finanzas. • Optimización de decisiones de inversión mediante algoritmos de IA. • Evaluación de ..."
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 3,
+            "title": "IA en finanzas y Fintech - Esade Executive Education",
+            "url": "https://google.com/goto?url=CAESiwEBxCJF1xWWLRPWWeY7IPGLyfIR_wT8jUnNl8iNgao_DNf4SjAvr1IbspxdiUPUDYeK3DCpd828FGVaAJwJwgOr1e0DS1bXl2EKN30Nl3-xV5ZpsU3ESsc7E4MOdK8A-DcGAJyaOjCPwqrgvA_o-0ugQPXxq9dsR8jxjzu0O0D0xuZfCbG7Rkjuk35-",
+            "domain": "esade.edu",
+            "description": "Descubre cómo aplicar la Inteligencia Artificial para transformar la gestión financiera, mejorar la precisión del análisis y optimizar la toma de decisiones ..."
+          },
+          {
+            "type": "organic",
+            "rank": 5,
+            "organicRank": 4,
+            "title": "Inteligencia artificial en finanzas: Guía práctica 💡",
+            "url": "https://google.com/goto?url=CAESgAEBxCJF12n6sKnHETs1URN75Uf3tUjOvfT4ShDb-YtS2D-sxpkyhFz4nRijacbthjpTRey0o11mwCujMjB2AV-4mdNRLLYerotc8Vbx9cMOFrin-8T7vOT_AR9yHF2y_N1Wv1fN4taZ1dvj9rNMkbY1yozC9ol2MRieE-ASWrXxkw",
+            "domain": "getyooz.com",
+            "description": "10 set. 2025 — La inteligencia artificial automatiza todo el ciclo de Cuentas a Pagar: desde la selección de proveedores hasta el pago y la conciliación, ..."
+          },
+          {
+            "type": "video",
+            "rank": 6,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 5,
+            "title": "La IA en las finanzas: Innovaciones y aplicaciones",
+            "url": "https://google.com/goto?url=CAESiwEBxCJF168bYDiTLW6s2m6B-ZF3hwp_QHrD0Ci_z8Uee7detCNXjiNkzfAIGvlY-CmhqwwUqzSLk2_8Se-LEs4cMnpGkjGFrXCNNoueRA3m9272K6230rBvsX4Nl1tYZjOD5ur_jQa3C9CP9SV_sU-CBpvLmnbADbwsvlJUqhXw4CdGo9IPTomGjKJJ",
+            "domain": "es.prophix.com",
+            "description": "27 nov. 2025 — Las herramientas de inteligencia artificial (IA) están transformando todos los sectores. Muchas funciones financieras dependen del procesamiento ..."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 6,
+            "title": "Las 8 mejores herramientas IA para finanzas personales e ...",
+            "url": "https://google.com/goto?url=CAESbwHEIkXXRqiilNwxKvgKgA-s3mstzrZwR-2OVVoVGT8Ta61O38yE0N8P8NbZGmTL4bjJmqgdu4gVVs7l9G_g_nTThUrsp-YHeuERFsaFxI2tZGPjlPrT3HUIE_cP_KK6657Dagj0hAB4gkWDQqt7Fw",
+            "domain": "escuelanomadadigital.com",
+            "description": "1. MonAI (gratis y de pago) · 2. YNAB (de pago con prueba gratuita) · 3. PocketGuard (de pago con prueba gratuita) · 4. TrendSpider (de pago con prueba gratuita)."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 7,
+            "title": "Aplicaciones reales de la IA en la gestión financiera",
+            "url": "https://google.com/goto?url=CAESegHEIkXXXb8KVPwwf07ZwiHIzWThN6Yd79xR89cl3H1C2QJ-Gxsp3SV6k-G3ns6VJO84CFT80ZQ8kIuKat-IxY8vKoIuzyM5uC0Ul_L0s8AvqgM-gUREu2xhvZcBrEVSGU0cE9YsLhVU4EFWe1JzcQb-KhtPwhypasuY",
+            "domain": "xepelin.com",
+            "description": "7 aplicaciones reales que pymes en Chile pueden darle a la IA, desde este momento, para optimizar la gestión financiera en áreas estratégicas y ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 8,
+            "title": "Usa la IA para finanzas con Gemini en ...",
+            "url": "https://workspace.google.com/intl/es-419/ai/finance/",
+            "domain": "workspace.google.com",
+            "description": "Usa Gemini en Hojas de cálculo de Google para identificar anomalías, valores atípicos, descubrir variaciones presupuestarias, obtener análisis rápidos y ..."
+          },
+          {
+            "type": "related_searches",
+            "rank": 11,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 12,
+            "organicRank": 9,
+            "title": "Aplicaciones de la Inteligencia Artificial a las finanzas. ...",
+            "url": "https://google.com/goto?url=CAESnAEBxCJF16U-BOoQY3H5UNPkG24ZBPsFjhT76FCqOZrgsLUvDpaCUy7fcpJmy_E4iWuUeh_WJANIiXiuaGGD8uH1LcTJREyv0ribqhPbLE27PSGLBEsnCcxrg6LGh-k2i5WunWIsc8r1PoB_u5Miy5zEvOZBANXnq9qmeUr6CCv_m7fYsbXoh4Q-BiYilKJXHT6AVwE1gL8467qYHGU",
+            "domain": "blogs.ucjc.edu",
+            "description": "2 oct. 2018 — Empresas como el BBVA han adoptando el aprendizaje automático para mejorar la previsión y, en última instancia, aumentar el valor para sus ..."
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 10,
+            "title": "¡IA para finanzas personales! Hoy en día existen varias ...",
+            "url": "https://google.com/goto?url=CAES0wEBxCJF1-Kc3JCHLY0m6b3ax3da58zoLK6pkZJ_N2ALknPk9bPVxvWL-KqNTWzKpDOGO76rTf17EKDUeJ1TLvqwDrAGLuXd-Xp1Vif9VZ4deW8pWp-dIsv7Zz7AojzQSd0WfIPG4_A9vt0a-vFiEdJyJd4iTYgnGCu1dpjnqkKHUWQvnTDmY0SAG82y9FhlLffSa94mI-4d8KkJOnyXOXW1Nf5tupnN0h4gz6-0-r9G3nFrj0lSlsTm1dHL5-4-wtRRBVoTEPadHcir5WSNPrw6_iFt",
+            "domain": null,
+            "description": "Hoy en día existen varias aplicaciones que utilizan esta tecnología para ayudarle a controlar los gastos, crear presupuestos y mejorar su estado ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 11,
+            "title": "Inteligencia Artificial e inversión: transformación clave en ...",
+            "url": "https://google.com/goto?url=CAESpQEBxCJF1zDr4VB4AI2w_eYI1-DzgeqEPbkkcG4jcZeT208K9s_FH_Rr-zU7oXw_R3Nl42n9dA61w05jk7m5io28cg5WHdackXGVTYBEVV1CQZlDKPV2V038T_l6Jmk4KeKQK5D2Wl6y0tSA3PSP6rBIztY39fa93nTJr93BP9oV97wOkI18cFHmUzwI9UbOPibCeN5u5JcoHQev7dWt56mzULehSic",
+            "domain": "mastermefi.com",
+            "description": "Aplicaciones reales de la IA en inversión y gestión financiera · Análisis de sentimiento · Imágenes satelitales y datos alternativos · Ejecución algorítmica ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 12,
+            "title": "Inteligencia Artificial aplicada a las finanzas: Guía completa",
+            "url": "https://google.com/goto?url=CAESmQEBxCJF19osBUf2eMiMBBd31rRjsaZksBZX-DPlz65osEFai20AqS9pReR7-mU2la_ENz95lN06JZ9btSsBHXqxLIR4CfURp2Ad6g3mKXpnBsQC35IMSLOFLODr8IvAgQMBpfvK3BQ1wESAT0ZDc4ko0Uh6AS0RLWNbTcX8I3I1Mm-4XWuJ1-iyAWVIg5OVBb5j_h9wwZqQMyI",
+            "domain": "iebschool.com",
+            "description": "25 ene. 2025 — Decisiones financieras basada en datos · Detección del fraude al trading algorítmico · Retos de la inteligencia artificial en finanzas · Ejemplos ..."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 13,
+            "title": "IA para finanzas: guía completa para aplicarla bien",
+            "url": "https://google.com/goto?url=CAESZwHEIkXXVFU5cWavIczAv6Qv8H46vFfhLlIqr3BfwZn8aP2E_ASg3oQ4sX7XpfneVSYU-rIbnyp-ca03_6bz7A9ggFLAcJTpwzQ6-jqidQq4PbxHGBi_V-9Ow7Cu_JtznLF1lLQde44",
+            "domain": "growitschool.com",
+            "description": "11 jun. 2026 — Descubre cómo aplicar IA para finanzas para ahorrar tiempo, analizar informes, preparar reuniones y mejorar tu productividad con criterio."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 14,
+            "title": "Qué es la IA en finanzas",
+            "url": "https://google.com/goto?url=CAESfwHEIkXX3n_lzV0C3ZDYHP93MuqCUnmbqK4vfwnUQJYUyPS-x3TCBj9T4m1qvfLkCkYlvoh-kEJfInGeC58oZj48HDYVUY7rRiQhG1hBSdc8yVbLNKODnkNOYH9d0egp8nfCU9u_IBXuWkumhT9MpzZVCdsEFvLkp1adGE4cQEQ",
+            "domain": "oracle.com",
+            "description": "Descubre cómo la inteligencia artificial (IA) y el machine learning (ML) están transformando la planificación de recursos financieros y empresariales."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 15,
+            "title": "Usos de la inteligencia artificial en la industria financiera",
+            "url": "https://google.com/goto?url=CAESbgHEIkXXk4ZEEDQA5uxwl74cN3UmuredoNn4rTFUL1b-1e7LJIbnCiRiBzji0YrfCqCNbSJNlV346LFdz9864jk45hgeQy_v0q2Xy2n01uj3E4LAq52HFO8vQFd4GI9ig4ZfFhWD87Ikt4YgKWFX",
+            "domain": "iep.edu.es",
+            "description": "7 mar. 2025 — En IEP te explicamos cómo se utiliza la IA en la banca y servicios financieros, sus aplicaciones prácticas y repercusiones en la industria ..."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 16,
+            "title": "Inteligencia artificial aplicada a las finanzas: usos reales",
+            "url": "https://google.com/goto?url=CAESsAEBxCJF17eS_ZJh2mGsk7JP9KUhjKx0PLjtJqjWI_8M1GQ4aBXh5MvV92YgXx3VzM-UYB7n-66A2QHAgfpAybIOHVmjwHMnXJHSxiHqm2gX0Ab1Hybu7j_nbSL0TnHy2lr3Y7TFV3KAWS35OZPGIa-FFJAWe42MqG8dIA5wrILzep4rlyVsVaLgueNtSLZN-TVe36kalN9YfyOkHNtwQ7AsonUz4X1oxuqcPkDceGKPXQ",
+            "domain": "negocios.com",
+            "description": "6 oct. 2026 — Una de las aplicaciones más extendidas de la inteligencia artificial en finanzas es el procesamiento masivo de información. Un sistema puede ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 17,
+            "title": "¿Cómo usar la IA en finanzas?",
+            "url": "https://google.com/goto?url=CAESswEBxCJF13QY2HjN6FtFMeHd6zD3ISurja_a7NVJOwbYKDjPjw8CterJWah_2I-eJTBXJcsLxogG1hHqn-KK3yS-98Ob2iprQmwBuWY-qpFDibOl-5MqSeYxDo6KDgMDxJbvreQs6sBi4Qd_lAIANQeaLOpaDGgrJ9VLEJ8DppB1Sed1Vh6bCdRMwql9l-vT0j8bdNS7c-NG5ZWB8pOx67_VZqPvtjPDFxPS9YnaODk4azHTdA",
+            "domain": "lenovo.com",
+            "description": "Es posible que se use la IA para todo, desde la detección de fraude hasta la gestión de las carteras de inversión. Estos sistemas inteligentes pueden examinar ..."
+          }
+        ],
+        "locationCode": 2604,
+        "languageCode": "es",
+        "device": "desktop"
+      }
+    ],
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/DEFAULT/keywords"
+    }
+  },
+  "at": "2026-11-05T15:59:32.595Z",
+  "reserve": 30
+}

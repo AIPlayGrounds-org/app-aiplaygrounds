@@ -1,0 +1,3436 @@
+{
+  "id": "A03-CO",
+  "tool": "research_keywords",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "seeds": [
+      {
+        "seed": "comunidad de inteligencia artificial",
+        "locationCode": 2170,
+        "languageCode": "es"
+      },
+      {
+        "seed": "inteligencia artificial para desarrollo de software",
+        "locationCode": 2170,
+        "languageCode": "es"
+      },
+      {
+        "seed": "inteligencia artificial en investigación científica",
+        "locationCode": 2170,
+        "languageCode": "es"
+      },
+      {
+        "seed": "inteligencia artificial en finanzas",
+        "locationCode": 2170,
+        "languageCode": "es"
+      },
+      {
+        "seed": "ingeniería de inteligencia artificial",
+        "locationCode": 2170,
+        "languageCode": "es"
+      }
+    ],
+    "resultLimit": 150,
+    "includeClickstreamData": false,
+    "groupKeywords": false
+  },
+  "response": {
+    "results": [
+      {
+        "seed": "comunidad de inteligencia artificial",
+        "ok": true,
+        "rowCount": 76,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "inteligencia artificial comunidad de madrid",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia artificial",
+            "searchVolume": 110000,
+            "keywordDifficulty": 0,
+            "cpc": 0.29,
+            "competition": 0.24,
+            "intent": "informational"
+          },
+          {
+            "keyword": "especialización en inteligencia artificial",
+            "searchVolume": 1900,
+            "keywordDifficulty": 0,
+            "cpc": 4.22,
+            "competition": 0.77,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial",
+            "searchVolume": 1300,
+            "keywordDifficulty": 18,
+            "cpc": 0.54,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imagenes de inteligencia artificial",
+            "searchVolume": 1600,
+            "keywordDifficulty": 0,
+            "cpc": 0.29,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia de la inteligencia artificial",
+            "searchVolume": 590,
+            "keywordDifficulty": 18,
+            "cpc": 0.33,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aplicaciones de inteligencia artificial",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": 0.45,
+            "competition": 0.49,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educación",
+            "searchVolume": 390,
+            "keywordDifficulty": 3,
+            "cpc": 1.42,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "marco ético para la inteligencia artificial en colombia",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para hacer tareas",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.45,
+            "competition": 0.6,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ejemplos de inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 6,
+            "cpc": 0.25,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia de negocios y analítica de datos",
+            "searchVolume": 50,
+            "keywordDifficulty": 52,
+            "cpc": 3.73,
+            "competition": 0.6,
+            "intent": "informational"
+          },
+          {
+            "keyword": "impacto de la inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": 0.17,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "introduccion a la vision artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alien isolation inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial robots",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.04,
+            "competition": 0.42,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alan turing inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sinonimos de inteligencia artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "programas de inteligencia artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 17,
+            "cpc": 0.68,
+            "competition": 0.67,
+            "intent": "informational"
+          },
+          {
+            "keyword": "infografía sobre la inteligencia artificial",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "la verdad sobre la inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 1.98,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "impacto de la inteligencia artificial en el desarrollo de software",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.2,
+            "competition": 0.43,
+            "intent": "informational"
+          },
+          {
+            "keyword": "beneficios de la inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.07,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "concepto de inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 73,
+            "cpc": 1.97,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uso de la inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 40,
+            "cpc": 0.8,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "quienes conforman la comunidad educativa",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "seleccion artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evolución de la inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": 0.28,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "modelo de inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.67,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia de la inteligencia",
+            "searchVolume": 10,
+            "keywordDifficulty": 57,
+            "cpc": 0.5,
+            "competition": 0.17,
+            "intent": "informational"
+          },
+          {
+            "keyword": "noticias sobre inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 49,
+            "cpc": 2.94,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y aprendizaje automático",
+            "searchVolume": 50,
+            "keywordDifficulty": 20,
+            "cpc": null,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y robótica",
+            "searchVolume": 50,
+            "keywordDifficulty": 12,
+            "cpc": 0.45,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "procesamiento de datos para modelos de inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": 0.59,
+            "competition": 0.15,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "fondos inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "introduccion a la inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": 52,
+            "cpc": 0.5,
+            "competition": 0.35,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia humana vs inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 59,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "crear inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 1.16,
+            "competition": 0.61,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial ted",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "metodos de busqueda inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "oratoria inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "comunidad de aprendizaje",
+            "searchVolume": 170,
+            "keywordDifficulty": 8,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "infografia de inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "robotica e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "robots e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": 3.32,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial debil",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "recomendación sobre la ética de la inteligencia artificial unesco",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial explicable",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyecto de ley inteligencia artificial colombia",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alan turing y la inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria en inteligencia artificial sergio arboleda",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.44,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia artificial russell",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curiosidades de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "las tic y la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y medio ambiente",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial 1956",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "revisar uso de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.37,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y creatividad",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "conpes 4144 inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "comisión europea inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "vector inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tabla de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial 2011",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educacion superior",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "guía ética para el uso responsable de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y derechos de autor",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sentencia corte constitucional inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia artificial ia ventajas y desventajas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial innovacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "política nacional de inteligencia artificial colombia",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ética y desafíos de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial existentes",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "especialización en inteligencia artificial medellín",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia visual espacial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evolucion artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "estamentos de la comunidad educativa",
+            "searchVolume": 20,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          }
+        ]
+      },
+      {
+        "seed": "inteligencia artificial para desarrollo de software",
+        "ok": true,
+        "rowCount": 75,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "inteligencia artificial",
+            "searchVolume": 110000,
+            "keywordDifficulty": 0,
+            "cpc": 0.29,
+            "competition": 0.24,
+            "intent": "informational"
+          },
+          {
+            "keyword": "desarrollo de software",
+            "searchVolume": 5400,
+            "keywordDifficulty": 7,
+            "cpc": 1.57,
+            "competition": 0.33,
+            "intent": "informational"
+          },
+          {
+            "keyword": "hardware y software",
+            "searchVolume": 3600,
+            "keywordDifficulty": 0,
+            "cpc": 0.28,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "especialización en inteligencia artificial",
+            "searchVolume": 1900,
+            "keywordDifficulty": 0,
+            "cpc": 4.22,
+            "competition": 0.77,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tecnologia en desarrollo de software",
+            "searchVolume": 720,
+            "keywordDifficulty": 0,
+            "cpc": 1.07,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial",
+            "searchVolume": 1300,
+            "keywordDifficulty": 18,
+            "cpc": 0.54,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "software y soluciones",
+            "searchVolume": 3600,
+            "keywordDifficulty": 0,
+            "cpc": 0.84,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "imagenes de inteligencia artificial",
+            "searchVolume": 1600,
+            "keywordDifficulty": 0,
+            "cpc": 0.29,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia de la inteligencia artificial",
+            "searchVolume": 590,
+            "keywordDifficulty": 18,
+            "cpc": 0.33,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de arquitectura de software",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "avances software",
+            "searchVolume": 590,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empresas de desarrollo de software",
+            "searchVolume": 390,
+            "keywordDifficulty": 0,
+            "cpc": 2.14,
+            "competition": 0.72,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "aplicaciones de inteligencia artificial",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": 0.45,
+            "competition": 0.49,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educación",
+            "searchVolume": 390,
+            "keywordDifficulty": 3,
+            "cpc": 1.42,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tecnología en desarrollo de sistemas informáticos uts",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "marco ético para la inteligencia artificial en colombia",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para hacer tareas",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.45,
+            "competition": 0.6,
+            "intent": "informational"
+          },
+          {
+            "keyword": "impacto de la inteligencia artificial en el desarrollo de software",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.2,
+            "competition": 0.43,
+            "intent": "informational"
+          },
+          {
+            "keyword": "definición de hardware y software",
+            "searchVolume": 70,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ejemplos de inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 6,
+            "cpc": 0.25,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de software",
+            "searchVolume": 70,
+            "keywordDifficulty": 16,
+            "cpc": null,
+            "competition": 0.12,
+            "intent": "informational"
+          },
+          {
+            "keyword": "investigación y desarrollo",
+            "searchVolume": 210,
+            "keywordDifficulty": 26,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de hardware y software",
+            "searchVolume": 40,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "impacto de la inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": 0.17,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "introduccion a la vision artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alien isolation inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial robots",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.04,
+            "competition": 0.42,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mapa conceptual sobre la inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": 29,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alan turing inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "desarrollo de productos",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 1.83,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sinonimos de inteligencia artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "programas de inteligencia artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 17,
+            "cpc": 0.68,
+            "competition": 0.67,
+            "intent": "informational"
+          },
+          {
+            "keyword": "infografía sobre la inteligencia artificial",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "la verdad sobre la inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 1.98,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ciencia en desarrollo",
+            "searchVolume": 110,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para directivos universidad de los andes",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.17,
+            "competition": 0.55,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "desarrollo de aplicaciones",
+            "searchVolume": 90,
+            "keywordDifficulty": 0,
+            "cpc": 1.81,
+            "competition": 0.33,
+            "intent": "informational"
+          },
+          {
+            "keyword": "beneficios de la inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.07,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "concepto de inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 73,
+            "cpc": 1.97,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uso de la inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 40,
+            "cpc": 0.8,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "concepto de hardware y software",
+            "searchVolume": 70,
+            "keywordDifficulty": 60,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "seleccion artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evolución de la inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": 0.28,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "modelo de inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.67,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia de la inteligencia",
+            "searchVolume": 10,
+            "keywordDifficulty": 57,
+            "cpc": 0.5,
+            "competition": 0.17,
+            "intent": "informational"
+          },
+          {
+            "keyword": "noticias sobre inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 49,
+            "cpc": 2.94,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y aprendizaje automático",
+            "searchVolume": 50,
+            "keywordDifficulty": 20,
+            "cpc": null,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y robótica",
+            "searchVolume": 50,
+            "keywordDifficulty": 12,
+            "cpc": 0.45,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "desarrollo en la tecnologia",
+            "searchVolume": 320,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "e&m desarrollo corporativo",
+            "searchVolume": 320,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "fondos inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia humana vs inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 59,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "crear inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 1.16,
+            "competition": 0.61,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial ted",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "metodos de busqueda inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "oratoria inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tecnología en desarrollo de software usco",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "infografia de inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "otra inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 0.21,
+            "competition": 0.49,
+            "intent": "informational"
+          },
+          {
+            "keyword": "robotica e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "política nacional de inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "robots e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": 3.32,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "innovación y desarrollo",
+            "searchVolume": 70,
+            "keywordDifficulty": 16,
+            "cpc": 0.7,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial debil",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "recomendación sobre la ética de la inteligencia artificial unesco",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de desarrollo de software",
+            "searchVolume": 20,
+            "keywordDifficulty": 52,
+            "cpc": null,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial explicable",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "arquitecturas de desarrollo de software",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.48,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyecto de ley inteligencia artificial colombia",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alan turing y la inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria en inteligencia artificial sergio arboleda",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.44,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia artificial russell",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia del desarrollo de software",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curiosidades de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "las tic y la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          }
+        ]
+      },
+      {
+        "seed": "inteligencia artificial en investigación científica",
+        "ok": true,
+        "rowCount": 77,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "inteligencia artificial en la investigación científica pdf",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial",
+            "searchVolume": 110000,
+            "keywordDifficulty": 0,
+            "cpc": 0.29,
+            "competition": 0.24,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uso de la inteligencia artificial en la investigación científica",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "especialización en inteligencia artificial",
+            "searchVolume": 1900,
+            "keywordDifficulty": 0,
+            "cpc": 4.22,
+            "competition": 0.77,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial",
+            "searchVolume": 1300,
+            "keywordDifficulty": 18,
+            "cpc": 0.54,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imagenes de inteligencia artificial",
+            "searchVolume": 1600,
+            "keywordDifficulty": 0,
+            "cpc": 0.29,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia de la inteligencia artificial",
+            "searchVolume": 590,
+            "keywordDifficulty": 18,
+            "cpc": 0.33,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aplicaciones de inteligencia artificial",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": 0.45,
+            "competition": 0.49,
+            "intent": "informational"
+          },
+          {
+            "keyword": "revolución científica",
+            "searchVolume": 590,
+            "keywordDifficulty": 4,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educación",
+            "searchVolume": 390,
+            "keywordDifficulty": 3,
+            "cpc": 1.42,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "teoría científica",
+            "searchVolume": 480,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "infografía científica",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "investigación educativa",
+            "searchVolume": 320,
+            "keywordDifficulty": 0,
+            "cpc": 2.38,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "marco ético para la inteligencia artificial en colombia",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para hacer tareas",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.45,
+            "competition": 0.6,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ejemplos de inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 6,
+            "cpc": 0.25,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "notación científica ejemplos",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia de negocios y analítica de datos",
+            "searchVolume": 50,
+            "keywordDifficulty": 52,
+            "cpc": 3.73,
+            "competition": 0.6,
+            "intent": "informational"
+          },
+          {
+            "keyword": "investigación y desarrollo",
+            "searchVolume": 210,
+            "keywordDifficulty": 26,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "impacto de la inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": 0.17,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "introduccion a la vision artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alien isolation inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial robots",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.04,
+            "competition": 0.42,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mapa conceptual sobre la inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": 29,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alan turing inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sinonimos de inteligencia artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "programas de inteligencia artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 17,
+            "cpc": 0.68,
+            "competition": 0.67,
+            "intent": "informational"
+          },
+          {
+            "keyword": "infografía sobre la inteligencia artificial",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "la verdad sobre la inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 1.98,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para directivos universidad de los andes",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.17,
+            "competition": 0.55,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "impacto de la inteligencia artificial en el desarrollo de software",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.2,
+            "competition": 0.43,
+            "intent": "informational"
+          },
+          {
+            "keyword": "beneficios de la inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.07,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "concepto de inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 73,
+            "cpc": 1.97,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uso de la inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 40,
+            "cpc": 0.8,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fases de un proyecto de investigación",
+            "searchVolume": 50,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "seleccion artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evolución de la inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": 0.28,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "calculadora científica con procedimiento",
+            "searchVolume": 20,
+            "keywordDifficulty": 60,
+            "cpc": 0.13,
+            "competition": 0.17,
+            "intent": "informational"
+          },
+          {
+            "keyword": "modelo de inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.67,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia de la inteligencia",
+            "searchVolume": 10,
+            "keywordDifficulty": 57,
+            "cpc": 0.5,
+            "competition": 0.17,
+            "intent": "informational"
+          },
+          {
+            "keyword": "noticias sobre inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 49,
+            "cpc": 2.94,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y aprendizaje automático",
+            "searchVolume": 50,
+            "keywordDifficulty": 20,
+            "cpc": null,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y robótica",
+            "searchVolume": 50,
+            "keywordDifficulty": 12,
+            "cpc": 0.45,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "procesamiento de datos para modelos de inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": 0.59,
+            "competition": 0.15,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "fondos inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia humana vs inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 59,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "crear inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 1.16,
+            "competition": 0.61,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial ted",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "metodos de busqueda inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "oratoria inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "infografia de inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "otra inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 0.21,
+            "competition": 0.49,
+            "intent": "informational"
+          },
+          {
+            "keyword": "robotica e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "política nacional de inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "robots e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": 3.32,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tecnología en investigación judicial y criminalística",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": 1.54,
+            "competition": 0.43,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial debil",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "recomendación sobre la ética de la inteligencia artificial unesco",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial explicable",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyecto de ley inteligencia artificial colombia",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "multiplicación de notación científica",
+            "searchVolume": 70,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alan turing y la inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria en inteligencia artificial sergio arboleda",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.44,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia artificial russell",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curiosidades de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "las tic y la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y medio ambiente",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "desafios eticos de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial 1956",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "revisar uso de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.37,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y creatividad",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "conpes 4144 inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "comisión europea inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "vector inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tabla de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial 2011",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educacion superior",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          }
+        ]
+      },
+      {
+        "seed": "inteligencia artificial en finanzas",
+        "ok": true,
+        "rowCount": 80,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "inteligencia artificial en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 2.39,
+            "competition": 0.33,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "finanzas con gus",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.75,
+            "competition": 0.43,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "cuál es una aplicación de la inteligencia artificial en finanzas",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finviz finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.29,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia artificial en el area de finanzas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "que es vpn en finanzas",
+            "searchVolume": null,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en finanzas ejemplos",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "imagenes de finanzas",
+            "searchVolume": 480,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "master en finanzas e inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "imagen de finanzas",
+            "searchVolume": 480,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "unidad de inteligencia financiera",
+            "searchVolume": 720,
+            "keywordDifficulty": 22,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es dtf en finanzas",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "vpn finanzas",
+            "searchVolume": null,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "finanzas png",
+            "searchVolume": 50,
+            "keywordDifficulty": 18,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas icono",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas y turismo",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas colombia",
+            "searchVolume": 110,
+            "keywordDifficulty": 74,
+            "cpc": 0.32,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de finanzas",
+            "searchVolume": 90,
+            "keywordDifficulty": 10,
+            "cpc": 1.3,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "especializacion finanzas eafit",
+            "searchVolume": 110,
+            "keywordDifficulty": 52,
+            "cpc": 0.24,
+            "competition": 0.33,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "finanzas video",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es ea en finanzas",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "marcianotech finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "finanzas 2023",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "claves de inteligencia financiera para principiantes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas ambientales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tranqui finanzas davivienda",
+            "searchVolume": 50,
+            "keywordDifficulty": 21,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tranqui finanzas dirección",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": 2.4,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ccpp finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "libros inteligencia financiera",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": 0.07,
+            "competition": 0.72,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas con diego",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "afi escuela de finanzas big data",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empresas de finanzas",
+            "searchVolume": 40,
+            "keywordDifficulty": 15,
+            "cpc": 3.68,
+            "competition": 0.12,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "tus finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "especializacion finanzas andes",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.79,
+            "competition": 0.48,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el var en finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es tio en finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fondo de emergencia finanzas personales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "vpn finanzas interpretación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que significa uvr en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un futuro en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que significa m&a en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imagenes de finanzas internacionales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "apalancamiento en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es colcap en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es pipeline en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "eps finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es cfc en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas y valor corporativo eafit",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.12,
+            "competition": 0.34,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "yield en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "leverage en español finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "preguntas tipo icfes de finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "rcp finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "finanzas regenerativas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mejores podcast de finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es rona en finanzas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas cesa",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ttv finanzas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "area andina finanzas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas basicas para no financieros eafit",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que significa vpn en finanzas",
+            "searchVolume": null,
+            "keywordDifficulty": 54,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es reciprocidad en finanzas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mis finanzas para invertir davivienda",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el eva en finanzas",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "versiculos de finanzas",
+            "searchVolume": 90,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que son finanzas internacionales",
+            "searchVolume": 70,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria finanzas eafit",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": 0.99,
+            "competition": 0.32,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas nicholls",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "la sigla uiaf significa unidad de inteligencia financiera",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sinónimos de finanzas",
+            "searchVolume": 70,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "portada de finanzas",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "especializacion en finanzas javeriana",
+            "searchVolume": 50,
+            "keywordDifficulty": 55,
+            "cpc": 0.39,
+            "competition": 0.44,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fotos de finanzas",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "especialización en finanzas javeriana",
+            "searchVolume": 50,
+            "keywordDifficulty": 55,
+            "cpc": 0.39,
+            "competition": 0.44,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas básicas",
+            "searchVolume": 50,
+            "keywordDifficulty": 54,
+            "cpc": 2.9,
+            "competition": 0.26,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas animado",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas para todos",
+            "searchVolume": 50,
+            "keywordDifficulty": 55,
+            "cpc": 1.65,
+            "competition": 0.1,
+            "intent": "informational"
+          },
+          {
+            "keyword": "nit activos y finanzas",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas y avales finaval sas",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "dtf finanzas",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un forward en finanzas",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          }
+        ]
+      },
+      {
+        "seed": "ingeniería de inteligencia artificial",
+        "ok": true,
+        "rowCount": 110,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "ingeniería de datos e inteligencia artificial",
+            "searchVolume": 720,
+            "keywordDifficulty": 1,
+            "cpc": 1.3,
+            "competition": 0.48,
+            "intent": "informational"
+          },
+          {
+            "keyword": "politecnico de colombia",
+            "searchVolume": 60500,
+            "keywordDifficulty": 47,
+            "cpc": 0.68,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 0,
+            "cpc": 0.91,
+            "competition": 0.53,
+            "intent": "informational"
+          },
+          {
+            "keyword": "politécnico superior de colombia",
+            "searchVolume": 12100,
+            "keywordDifficulty": 0,
+            "cpc": 0.59,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería en inteligencia artificial y ciencia de datos",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": 1.23,
+            "competition": 0.44,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria industrial",
+            "searchVolume": 27100,
+            "keywordDifficulty": 0,
+            "cpc": 1.58,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería en ciencia de datos e inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": 0.72,
+            "competition": 0.47,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria de sistemas",
+            "searchVolume": 12100,
+            "keywordDifficulty": 4,
+            "cpc": 1.83,
+            "competition": 0.37,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de datos e inteligencia artificial universidades",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": 1.32,
+            "competition": 0.5,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "revolución industrial",
+            "searchVolume": 12100,
+            "keywordDifficulty": 18,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de datos e inteligencia artificial colombia",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 1.49,
+            "competition": 0.62,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "aportes ingenieria civil",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería en inteligencia artificial universidad de caldas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.04,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "pensum ingenieria de sistemas",
+            "searchVolume": 2400,
+            "keywordDifficulty": 0,
+            "cpc": 0.45,
+            "competition": 0.14,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "qué es ingeniería de software con inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniero civil",
+            "searchVolume": 4400,
+            "keywordDifficulty": 0,
+            "cpc": 1.01,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de software con inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 2.5,
+            "competition": 0.83,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria de sistemas unad",
+            "searchVolume": 1600,
+            "keywordDifficulty": 0,
+            "cpc": 1.03,
+            "competition": 0.15,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "carrera técnica ingeniería de ciencia de datos e inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "zona industrial",
+            "searchVolume": 9900,
+            "keywordDifficulty": 0,
+            "cpc": 0.07,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de sistemas e inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 5.47,
+            "competition": 0.51,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería ambiental",
+            "searchVolume": 6600,
+            "keywordDifficulty": 0,
+            "cpc": 1.11,
+            "competition": 0.22,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de datos e inteligencia artificial ucm",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingenieria industrial unad",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": 1.03,
+            "competition": 0.16,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingeniería de ciencia de datos e inteligencia artificial sueldo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tecnico en sistemas",
+            "searchVolume": 2400,
+            "keywordDifficulty": 0,
+            "cpc": 1.45,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de software con inteligencia artificial sueldo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria de sistemas virtual",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": 2.38,
+            "competition": 0.74,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de software con inteligencia artificial senati",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "malla curricular ingenieria de sistemas unad",
+            "searchVolume": 390,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "carrera técnica ingeniería de software con inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ministerio de minas y energía de colombia",
+            "searchVolume": 4400,
+            "keywordDifficulty": 22,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingeniería de software e inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.45,
+            "competition": 0.55,
+            "intent": "informational"
+          },
+          {
+            "keyword": "repositorio uts",
+            "searchVolume": 880,
+            "keywordDifficulty": 3,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingeniería en inteligencia artificial plan de estudios",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "instituto tecnico industrial pascual bravo",
+            "searchVolume": 4400,
+            "keywordDifficulty": 9,
+            "cpc": 0.94,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingeniería de software con inteligencia artificial sueldo perú",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ingenieria en inteligencia artificial",
+            "searchVolume": 1000,
+            "keywordDifficulty": 2,
+            "cpc": 1.01,
+            "competition": 0.46,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de software con inteligencia artificial senati sueldo",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ingenieria de software virtual",
+            "searchVolume": 880,
+            "keywordDifficulty": 0,
+            "cpc": 2.38,
+            "competition": 0.7,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de software con inteligencia artificial trabajo",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería eléctrica",
+            "searchVolume": 3600,
+            "keywordDifficulty": 0,
+            "cpc": 0.93,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "licenciatura en ingeniería de datos e inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ie colombia",
+            "searchVolume": 3600,
+            "keywordDifficulty": 0,
+            "cpc": 0.33,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de software con inteligencia artificial que hace",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "electricidad industrial",
+            "searchVolume": 1600,
+            "keywordDifficulty": 0,
+            "cpc": 0.8,
+            "competition": 0.09,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de datos e inteligencia artificial nota de corte",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "escuela colombiana de ingeniería",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingeniería de ciencia de datos e inteligencia artificial sueldo perú",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria industrial virtual",
+            "searchVolume": 1300,
+            "keywordDifficulty": 0,
+            "cpc": 2.93,
+            "competition": 0.75,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería en inteligencia artificial y ciencia de datos uts",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ingenieria multimedia unad",
+            "searchVolume": 320,
+            "keywordDifficulty": 0,
+            "cpc": 0.6,
+            "competition": 0.02,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingeniería de datos e inteligencia artificial unad",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "trabajo ingeniero civil",
+            "searchVolume": 1900,
+            "keywordDifficulty": 0,
+            "cpc": 0.1,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de datos e inteligencia artificial pensum",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "institución educativa técnico industrial jorge eliécer gaitán",
+            "searchVolume": 4400,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingeniería en inteligencia artificial y ciencia de datos cuanto ganan",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ingeniería aeroespacial",
+            "searchVolume": 3600,
+            "keywordDifficulty": 0,
+            "cpc": 0.49,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería en inteligencia artificial y ciencia de datos virtual",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "instituto tecnico industrial piloto",
+            "searchVolume": 1900,
+            "keywordDifficulty": 0,
+            "cpc": 2.48,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingeniería en inteligencia artificial y ciencia de datos upb",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ingenieria de datos",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": 1.46,
+            "competition": 0.48,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de datos e inteligencia artificial cali",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "escuela de ingeniería julio garavito",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingeniería de datos e inteligencia artificial santo tomás",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "mineria de datos",
+            "searchVolume": 880,
+            "keywordDifficulty": 8,
+            "cpc": 1.74,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de datos e inteligencia artificial sueldo",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "sistemas transversales pereira",
+            "searchVolume": 1300,
+            "keywordDifficulty": 1,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingeniería en inteligencia artificial udesa plan de estudios",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería agroindustrial",
+            "searchVolume": 2900,
+            "keywordDifficulty": 0,
+            "cpc": 1,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "automatización industrial",
+            "searchVolume": 1600,
+            "keywordDifficulty": 0,
+            "cpc": 1.54,
+            "competition": 0.33,
+            "intent": "informational"
+          },
+          {
+            "keyword": "carreras tecnicas en el sena",
+            "searchVolume": 1300,
+            "keywordDifficulty": 22,
+            "cpc": 0.56,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "plan de estudios ingenieria de sistemas",
+            "searchVolume": 720,
+            "keywordDifficulty": 0,
+            "cpc": 0.88,
+            "competition": 0.19,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria en ciencia de datos",
+            "searchVolume": 880,
+            "keywordDifficulty": 0,
+            "cpc": 1.03,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria de datos e inteligencia artificial",
+            "searchVolume": 720,
+            "keywordDifficulty": 1,
+            "cpc": 1.3,
+            "competition": 0.48,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tarjeta profesional ingeniería",
+            "searchVolume": 3600,
+            "keywordDifficulty": 29,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "teoria de sistemas",
+            "searchVolume": 720,
+            "keywordDifficulty": 14,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sistemas de información geográfica empleo",
+            "searchVolume": 590,
+            "keywordDifficulty": 0,
+            "cpc": 0.06,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "teoría general de sistemas",
+            "searchVolume": 390,
+            "keywordDifficulty": 23,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ecosistema artificial",
+            "searchVolume": 1600,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tecnico en sistemas sena",
+            "searchVolume": 880,
+            "keywordDifficulty": 2,
+            "cpc": 0.85,
+            "competition": 0.18,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "pensum ingenieria civil",
+            "searchVolume": 720,
+            "keywordDifficulty": 0,
+            "cpc": 0.49,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "dia del ingeniero de sistemas",
+            "searchVolume": 720,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria civil uis",
+            "searchVolume": 590,
+            "keywordDifficulty": 0,
+            "cpc": 0.85,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mundo industrial",
+            "searchVolume": 720,
+            "keywordDifficulty": 0,
+            "cpc": 0.55,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria electronica unad",
+            "searchVolume": 480,
+            "keywordDifficulty": 0,
+            "cpc": 0.82,
+            "competition": 0.05,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "tecnologo en sistemas",
+            "searchVolume": 720,
+            "keywordDifficulty": 0,
+            "cpc": 1.6,
+            "competition": 0.34,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria de sistemas univalle",
+            "searchVolume": 320,
+            "keywordDifficulty": 0,
+            "cpc": 1.18,
+            "competition": 0.05,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingenieria de sistemas uis",
+            "searchVolume": 260,
+            "keywordDifficulty": 1,
+            "cpc": 3.33,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cun ingenieria de sistemas",
+            "searchVolume": 480,
+            "keywordDifficulty": 0,
+            "cpc": 1.19,
+            "competition": 0.34,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingenieria ambiental unad",
+            "searchVolume": 480,
+            "keywordDifficulty": 0,
+            "cpc": 0.69,
+            "competition": 0.1,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aportes de ingenieria civil",
+            "searchVolume": 90,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "itm carreras",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": 0.81,
+            "competition": 0.19,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingenieria electrica uis",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.66,
+            "competition": 0.01,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingenieria civil virtual",
+            "searchVolume": 880,
+            "keywordDifficulty": 0,
+            "cpc": 0.88,
+            "competition": 0.58,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria de sistemas javeriana",
+            "searchVolume": 480,
+            "keywordDifficulty": 0,
+            "cpc": 0.31,
+            "competition": 0.25,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "instrumentacion industrial",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": 0.75,
+            "competition": 0.17,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "aportes ingeniería civil",
+            "searchVolume": 1000,
+            "keywordDifficulty": 1,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria de sistemas uniandes",
+            "searchVolume": 210,
+            "keywordDifficulty": 6,
+            "cpc": 0.48,
+            "competition": 0.11,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "mapa mental sobre ingeniería de requisitos",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria de sistemas politecnico grancolombiano",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.53,
+            "competition": 0.37,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ingeniería agropecuaria",
+            "searchVolume": 1600,
+            "keywordDifficulty": 0,
+            "cpc": 1.1,
+            "competition": 0.16,
+            "intent": "informational"
+          },
+          {
+            "keyword": "soat y tecnomecanica 2026",
+            "searchVolume": 1000,
+            "keywordDifficulty": null,
+            "cpc": 0.31,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "automatizacion de sistemas mecatronicos",
+            "searchVolume": 590,
+            "keywordDifficulty": 0,
+            "cpc": 0.88,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingenieria de sistemas uniminuto",
+            "searchVolume": 390,
+            "keywordDifficulty": 0,
+            "cpc": 1.12,
+            "competition": 0.4,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "mantenimiento electromecanico industrial",
+            "searchVolume": 720,
+            "keywordDifficulty": 0,
+            "cpc": 0.67,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniero de sistemas en ingles",
+            "searchVolume": 140,
+            "keywordDifficulty": 16,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "especializacion en inteligencia artificial en colombia",
+            "searchVolume": 110,
+            "keywordDifficulty": null,
+            "cpc": 4.85,
+            "competition": 0.75,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ingenieria industrial javeriana",
+            "searchVolume": 480,
+            "keywordDifficulty": 2,
+            "cpc": 0.12,
+            "competition": 0.24,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "practicante ingenieria civil",
+            "searchVolume": 880,
+            "keywordDifficulty": 0,
+            "cpc": 0.07,
+            "competition": 0.07,
+            "intent": "informational"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/DEFAULT/keywords"
+    }
+  },
+  "at": "2026-11-05T15:52:28.254Z",
+  "reserve": 470
+}

@@ -2,6 +2,8 @@
 
 **Inicio:** 04/11/2026. **Base:** B1 aprobada y encargo Prompt 2. Interno; evidencia no equivale a aprobación de conclusiones.
 
+**Estado actual, 05/11/2026:** Gate B APROBADO por GB22,con límites de [Research R11](research.md#r11-gate-b-aprobado-y-precisiones-de-aplicación). Reconstrucción en R2 y complemento en R3:1.671 y650 créditos respectivamente, separados de296 anteriores. La revisión B2/Estrategia/E1 v2.2 no ejecuta investigación ni llamadas MCP/web y consume0 créditos nuevos; saldo no reconsultado. Los estados pendientes en los logs siguientes describen cortes históricos.
+
 ## Preflight anterior a consultas de mercado
 
 | Decisión que puede cambiar | Pregunta | Mercado/idioma | Fuente/instrumento | Criterio de cierre |
@@ -168,3 +170,141 @@ Las respuestas pagadas omitieron `meta.creditsCharged`, `meta.creditsRemaining` 
 **Resultado:** 34 filas métricas overview, 227 ideas recibidas (selección pertinente/descartes en evidencia, no 227 oportunidades), 48 SERP solicitadas / 47 exitosas. Diez llamadas pagadas aceptadas más un rechazo de argumentos; no llamadas paralelas pagadas, tracking, checks IA, setup o mutación de defaults. `get_project_context` fue lectura gratuita de contexto vacío. No se ejecutó Planner nuevamente ni se repitieron referentes estratégicos. La alternativa compatible resolvió el error de proveedor PE mediante otra formulación; el fallo original sigue registrado y no se representa como SERP exacta recuperada.
 
 **Cierre proporcional:** hay métricas/intención/SERP/ocupantes orgánicos suficientes para las propuestas de Gate B; persisten keywords sin dato y KD null, ruido de comunidad CO y ausencia de corpus propio. Más gasto genérico no justificaría cuatro páginas nuevas o un ranking de rentabilidad. Se conserva ese límite, no el anterior bloqueo por Default US/en o costo desconocido, ya resueltos.
+
+## R2 Reconstrucción independiente OpenSEO
+
+**Fuente de autoridad:** encargo humano «Reconstrucción integral de investigación SEO con OpenSEO», 05/11/2026. Autoriza saldo incluido disponible, PE/MX/CO-es, reconstrucción desde cero y revisión humana antes de reconsolidar consecuencias. No E1v2.2/E2, cambios de skill, commit/push, nuevos cargos, recargas o plan. La aprobación anterior se preserva como historia.
+
+### Identidad, capacidades y presupuesto comprobados antes de investigar
+
+Se ejecutaron `whoami` y `list_projects`: modo hosted, saldo inicial **9.491**, único proyecto Default sin dominio, defaults2840/en. Default fue autorizado por el usuario como contenedor; todas las consultas de investigación sobrescriben país/idioma, sin cambiar configuración global. `get_project_context` devolvió secciones, competidores y log vacíos. No se guardó contexto ni se activó setup.
+
+Se descubrieron **82 herramientas** y sus schemas/descripciones; catálogo preservado en [JSON](seo-rebuild-2026-11-05/raw/Z02-catalog.json). Incluye métricas, expansión, SERP y competidores. **Sin operación dedicada de clustering, content gap, PAA o Questions.** `get_google_business_questions` solo recupera preguntas de una ficha empresarial local, no preguntas orgánicas de IA; no se usó. `groupKeywords` incluye variantes, no clusters editoriales. Preguntas se investigan por expansión interrogativa y títulos; las SERP indican módulos PAA/Related Searches pero no exponen sus contenidos.
+
+Precios oficiales: https://openseo.so/pricing, leído05/11/2026, BaseUS$10/mes incluyeUS$10 de uso. Conversión **1.000 créditos/USD**, markup1,28 y fórmulas de reserva en código público oficial, commit **0749caf15796888dd9034cd52e8d344e2b44e09f**:
+
+- https://github.com/every-app/open-seo/blob/0749caf15796888dd9034cd52e8d344e2b44e09f/src/shared/billing.ts
+- https://github.com/every-app/open-seo/blob/0749caf15796888dd9034cd52e8d344e2b44e09f/src/server/lib/dataforseo/pricing.ts
+- https://github.com/every-app/open-seo/blob/0749caf15796888dd9034cd52e8d344e2b44e09f/src/server/features/keywords/services/research/research.ts
+- https://github.com/every-app/open-seo/blob/0749caf15796888dd9034cd52e8d344e2b44e09f/src/shared/keyword-locations.ts
+
+El código público no certifica versión exacta del despliegue hosted. Se mantuvo margen amplio y llamadas pagadas secuenciales; no un lote superior a2.000 créditos. El plan inicial de18 seed/país reserva hasta1.692; las ampliaciones respondieron al ruido/cobertura realmente observados, con saldo reconsultado antes de abrir otra fase. El **máximo autorizado total es el saldo inicial9.491**, no la suma acumulada de reservas liberadas. No se compra saldo, usa auto-reload o inicia consumo recurrente. No existe tope monetario por investigación en el schema; no se afirma protección server-side inexistente.
+
+Reserva por seed auto150: dos fuentes limit75 y eventual related150. Cálculo por suboperación: `ceil(1,28×(0,012+75×0,00012)×1000)=27` por fuente; dos fuentes54, fallback `ceil(1,28×(0,012+150×0,00012)×1000)=39`; total93. Se reservó94/seed. Sin clickstream o volumen local. Overview48 reserva24 (fórmula23), SERPdepth20 reserva5 por query sin operadores; competidoreslimit15 reserva18; rankedlimit100 reserva31; overviewdominio reserva300 conservadora. Son reservas/estimaciones, no cargos verificados por llamada.
+
+Países verificados en catálogo público: **PE2604/es, MX2484/es, CO2170/es**. Tres `search_serp_locations` devolvieron ciudades, no se utilizaron sus códigos como países ni se solicitó enriquecimiento local.
+
+### Precedencia Planner y fuentes complementarias
+
+`command -v seo-keywords` devolvió `/home/edhu/.local/bin/seo-keywords`; se leyó ayuda y se ejecutó:
+
+```sh
+seo-keywords 'comunidad de inteligencia artificial' 'inteligencia artificial para desarrollo de software' 'inteligencia artificial en investigación científica' --country PE --language es --limit 50 --format json
+```
+
+Resultado: código1, `google.auth.exceptions.RefreshError: Reauthentication is needed`. Sin métricas, no reparación/instalación/repetición por país. Se ejecutó antes de adquirir SERP, sin sustituir la obligación de OpenSEO. No se usó `websearch`.
+
+Tres `webfetch` primarios complementaron ocupantes observados en SERP: **F18 https://cpia.pe**, **F19 https://ania.org.mx**, **F20 https://somossia.org**. Observados05/11/2026; sin fecha global de publicación acreditada. F18 muestra presentación institucional, afiliación/empresas y oportunidades; F19 separa coalición, laboratorio, academia, colaboración y participación. F20 muestra educación/gobernanza y referencia a Extremadura: no es prueba de comunidad colombiana. Solo se retuvieron funciones observables, sin trasladar cifras, acreditaciones o servicios al proyecto. Son tres lecturas nuevas, distintas de las17 primarias estratégicas anteriores.
+
+### Llamadas y parámetros reales
+
+Todas las respuestas nuevas exitosas se conservaron completas con argumentos y timestamp en [raw](seo-rebuild-2026-11-05/raw/). Las claves de proyecto privadas se sustituyeron por `DEFAULT`, sin alterar datos. El orden de seeds en A04/E01 permite asignar las tres respuestas homónimas a PE/MX/CO; las respuestas no hacen eco del país. Las demás seeds se asocian por su llamada de país.
+
+| IDs | Herramienta / llamadas | Parámetros y cobertura |
+|---|---|---|
+| A01-PE/A02-MX/A03-CO | research_keywords /3 | Cinco seeds por mercado: comunidad de inteligencia artificial; inteligencia artificial para desarrollo de software; inteligencia artificial en investigación científica; inteligencia artificial en finanzas; ingeniería de inteligencia artificial |
+| A04-tools | research_keywords /1 | herramientas de inteligencia artificial ×PE/MX/CO |
+| A05-PE/A06-MX/A07-CO | research_keywords /3 | fundamentos de inteligencia artificial; inteligencia artificial para empresas; proyectos de inteligencia artificial, por país |
+| B01-PE/B02-MX/B03-CO | get_keyword_metrics /3 | Lista exacta48 expresiones en cada JSON; includeMonthlyTrends=true; includeClickstreamData=false; es y país explícitos |
+| C01-PE/C02-MX/C03-CO | get_serp_results /3 | Diez queries por país: comunidad; organizaciones; AI Engineering; ingeniería de software con IA; desarrollo de software con IA; IA en la investigación científica; IA en finanzas; fundamentos; herramientas; proyectos. Literales exactos en JSON |
+| C04-PE/C05-MX/C06-CO | get_serp_results /3 respuestas +1 intento perdido | Seis queries por país: IA para empresas; soluciones IA para empresas; curso de IA; programación con IA; laboratorio de IA; investigación en IA. depth20/desktop/es |
+| D01-PE/D02-MX/D03-CO | find_serp_competitors /3 | Ocho keywords comunes por país, resultTypes=[organic],limit15,sortBy=keyword_count,includeSubdomains=true; JSON conserva lista exacta |
+| D04-overview-CO | get_domain_overview /1 | datacamp.com,scope=subdomains,CO2170/es; antes de pedir detalle |
+| D05-PE/D06-MX/D07-CO | get_ranked_keywords /3 | https://www.datacamp.com/es,scope=subfolder,resultTypes=[organic],limit100,sortBy=search_volume; países independientes |
+| E01-questions | research_keywords /1 | cómo aprender inteligencia artificial ×PE/MX/CO, mismos parámetros de expansión |
+| E02-PE/E03-MX/E04-CO | get_serp_results /3 | AI PlayGrounds; Software with AI; ingeniería de inteligencia artificial; cómo aprender inteligencia artificial; herramientas de IA para investigación; aplicaciones IA en finanzas; literales completos en JSON |
+
+Expansión: **resultLimit150, includeClickstreamData=false, groupKeywords=false**, es y localización nacional en cada seed. Las30 respuestas seed fueron exitosas, fuente`blended`, sin fallback informado. Se distingue esta fuente de `keyword_overview` y rankings históricos. La expansión no expone series/fechas por métrica; overview entrega series, y el ranking de DataCamp sí contiene fechas de actualización específicas.
+
+**Incidencia C06:** después de persistir C04/C05, se perdió la respuesta CO con `ECONNRESET`. Se conservó reserva y se consultó saldo; no se reinició toda la tanda. Tras otras operaciones se recuperó C06 con **idénticos parámetros** según contrato de caché12h de la herramienta. El saldo fue8.029 antes y después de esa recuperación; no se infiere costo0 desde metadatos ausentes. La ventana C ya incluye el gasto observado del intento perdido. La recuperación devolvió las seis SERP; no quedan resultados o reservas sin conciliar.
+
+### Contabilidad de ejecución
+
+**46 llamadas MCP reales**:28 intentos a operaciones pagadas,27 respuestas conservadas (incluida recuperación) y un intento de respuesta perdida;18 lecturas gratuitas. Desglose gratuito:11 `whoami`,3 `list_projects`,1 `get_project_context`,3 `search_serp_locations`. Las búsquedas de schemas son descubrimiento del catálogo, no llamadas de investigación ni consultas pagadas.
+
+**27 respuestas de investigación:**8 expansión,3 métricas,9 SERP,3 competidores,1 overview dominio,3 ranked keywords. Operaciones lógicas:30 seed/país;144 solicitudes keyword/país;66 SERP distintas;24 keywords de entrada al análisis agregado de competidores (8×3);1 overview;3 muestras de dominio de100 filas. Los seis SERP reintentados no se contabilizan como seis keywords adicionales ni nuevas oportunidades.
+
+| Fase / ventana | Estimación/reserva previa relevante, no cargo | Saldo observado | Diferencia de saldo |
+|---|---|---|---:|
+| A01–03,15 seed/país | Hasta470 por llamada de5; reservas liberadas secuencialmente | 9491 →9001 | 490 |
+| A04,3 seed/país | Hasta282 | 9001 →8851 | 150 |
+| A05–07,9 seed/país | Hasta282 por llamada de3, según saldo ya observado | 8851 →8465 | 386 |
+| B01–03,48 expresiones×3 | Hasta24/call,72 conjunta | 8465 →8411 | 54 |
+| C01–06,48 SERP incluyendo intento perdido | Hasta5/query,240 conjunta | 8411 →8171 | 240 |
+| D01–07 y recuperación C06 | Competidores18×3;overview300;ranked31×3; recuperación conserva reserva30 hasta conciliar | 8171 →8029 | 142 |
+| E01,3 seed/país interrogativas | Hasta282 | 8029 →7910 | 119 |
+| E02–04,18 SERP | Hasta90 | 7910 →7820 | 90 |
+| Total ejecución | Reservas no equivalen a consumo ni se suman como gasto real | **9491 →7820** | **1671** |
+
+Resumen por fase: descubrimiento A1.026; métricas B54; SERP C240; competencia D/recuperación142; preguntas E01119; contraste final90. **US$1,671 equivalentes**, no factura o cargo a tarjeta. Saldo final equivalenteUS$7,820 según conversión pública. La primera ronda histórica había observado296; acumulado documental ambas rondas1.967 créditos/US$1,967, sin confundirlo con gasto de esta ejecución.
+
+**Limitación contable:** las respuestas pagadas no exponen `meta.creditsCharged`, `meta.creditsRemaining` o `meta.runId`. Son diferencias de saldo verificadas entre fases, no recibos individuales; `whoami` no permite excluir contablemente una actividad concurrente, aunque no se observó ninguna. No se imputa0 a campos omitidos ni se inventa costo por keyword. Final `list_projects` confirma defaults intactos. Sin llamadas pendientes o recargas/planes/medición recurrente activados.
+
+### Calidad y decisión
+
+[Cobertura computada](seo-rebuild-2026-11-05/coverage.json), [validaciones](seo-rebuild-2026-11-05/validacion.md), [mapa reconstruido](keyword-map.md) y [Research R1–R9](research.md#r1-resultado-ejecutivo-de-la-reconstrucción). Datos desconocidos, ceros y etiquetas originales se conservan. Los13 clusters son editoriales sustentados en datos OpenSEO, no clustering automático. PAA concreta sigue inaccesible; se usaron keywords interrogativas reales como alternativa verificable. Gate B permanece pendiente de revisión humana.
+
+## R3. Complemento de preguntas antes de Gate B
+
+**05/11/2026.** Encargo humano de ampliar preguntas para N01–N13 sin reagrupar, aprobar Gate B o avanzar de etapa. [Preflight y presupuesto](preguntas-2026-11-05/preflight.md). Comprobaciones MCP reales al inicio:`whoami`7.820; `list_projects`Default autorizado, sin dominio,2840/en; `get_project_context`vacío. Se inspeccionaron82 herramientas y schemas actuales. La investigación de preguntas IA/PAA disponible se limita a US/inglés y no se ejecutó para atribuir preguntas en español. Se reutilizó evidencia anterior y se fotografiaron hashes locales antes de editar.
+
+Autorización:solo saldo incluido disponible, sin recarga, plan, tracking ni cargo adicional. Plan inicial máximo1.902 créditos (18 seeds×94 +30 SERP×5 +60 métricas). La expansión se detuvo en12 seeds por ruido; las reservas efectivas de capturas fueron1.128 +150 +63 =**1.341 créditos**, inferior al plan y al umbral2.000. Diferenciar reservas de consumo. No se hicieron más operaciones pagadas tras el cierre.
+
+### Operaciones realmente ejecutadas
+
+Capturas completas en [raw](preguntas-2026-11-05/raw/), sanitizadas solo para identidad. `at` registra instante UTC; cada `args` conserva orden y literales exactos. Localizaciones explícitas:PE2604,MX2484,CO2170; idioma`es`, sin modificar defaults remotos.
+
+| ID | Herramienta / alcance | Solicitud y resultado |
+|---|---|---|
+| Q00 | Catálogo / lectura |82 schemas inspeccionados, saldo inicial7.820 |
+| Q01-PE | research_keywords /5 seed-país |`comunidades de inteligencia artificial`; `cómo empezar un proyecto de inteligencia artificial`; `cómo programar con inteligencia artificial`; `qué hace un ingeniero de inteligencia artificial`; `inteligencia artificial para investigación científica` |
+| Q02-PE | research_keywords /1 |`cómo usar inteligencia artificial en finanzas` |
+| Q03-MX/Q04-CO | research_keywords /3 por país |`cómo usar inteligencia artificial en finanzas`; `cómo implementar inteligencia artificial en empresas`; `cómo evaluar artículos científicos` |
+| QS01-PE/QS02-MX/QS03-CO | get_serp_results /10 por país |Orden común indicado debajo;27 éxitos/3 errores, sin reintentos |
+| QM01-PE/QM02-MX/QM03-CO | get_keyword_metrics /32,35,35 |102 solicitudes literales exactas en args;0,3,2 filas devueltas. Las97 ausencias quedan desconocidas |
+| QB01/QB02/QB03/QB04-final | Control de saldo |7.352/7.214/7.170/7.170; final proyectos confirma defaults intactos |
+
+Expansión:`resultLimit150,includeClickstreamData=false,groupKeywords=false`;12 operaciones seed/país,901 filas devueltas, conservadas incluso si irrelevantes. No se presupone relevancia por proximidad a una seed. Métricas:`includeMonthlyTrends=true,includeClickstreamData=false`; series originales en JSON. Las solicitudes exactas no devueltas no se convierten en keywords descubiertas.
+
+SERP:`depth20,desktop,es`. Orden idéntico por país:
+
+1. `qué es AI PlayGrounds`
+2. `cómo unirse a una comunidad de inteligencia artificial`
+3. `cómo empezar un proyecto de inteligencia artificial`
+4. `cómo usar IA para programar sin perder calidad`
+5. `qué hace un ingeniero de inteligencia artificial`
+6. `cómo usar inteligencia artificial en investigación científica`
+7. `cuál es la mejor IA para investigación científica`
+8. `cómo usar la inteligencia artificial en finanzas`
+9. `cómo implementar inteligencia artificial en una empresa`
+10. `cómo saber si un artículo científico es confiable`
+
+Errores conservados:QS02-MX-Q04 (Internal SE Server Error),QS02-MX-Q06 (partial results),QS03-CO-Q01 (Internal SE Server Error). [Detalle literal](preguntas-2026-11-05/errores-serp.json). No se tratan como SERP exitosas ni ausencia de resultados. La evidencia previa compatible permite continuar sin repetir; las66 anteriores no se recompran.
+
+### Consumo observado
+
+| Ventana | Saldo | Diferencia |
+|---|---|---:|
+| Inicio→expansión,Q01–04 |7.820→7.352|468|
+| SERP,QS01–03 |7.352→7.214|138|
+| Métricas,QM01–03 |7.214→7.170|44|
+| Comprobación final gratuita |7.170→7.170|0 de variación observada|
+| Total complemento |7.820→7.170|**650**|
+
+18 llamadas MCP:10 operaciones pagadas y8 lecturas gratuitas (5 cuenta,2 proyectos,1 contexto). El descubrimiento de catálogo no se cuenta como investigación MCP pagada. No hay cargos/runId en meta:650 es diferencia verificada por ventanas, con la misma salvedad de concurrencia de R2, no desglose contable por query. Conversión pública revisada anteriormente:1.000 créditos/USD; equivalenteUS$0,650 del saldo incluido, sin cobro adicional. Rondas distintas:296 +1.671 +650 =2.617 créditos documentados; saldo final7.170.
+
+### Alternativas, resultado y control
+
+Se ejecutaron10 `websearch` y8 `webfetch` (7 exitosas, UNIR Perú403); [consultas, URLs, extractos y límites](preguntas-2026-11-05/fuentes-web.md). No consumen créditos OpenSEO y no se les imputa un costo monetario externo desconocido. Cero módulos PAA/Related Searches textuales recuperados. Se diferencian keywords, títulos y preguntas editoriales.
+
+[Matriz](preguntas-2026-11-05/matriz.md):48 preguntas,13/16/19 por esos tres orígenes;26 altas. [Cierre](preguntas-2026-11-05/cierre.md) y [validación local](preguntas-2026-11-05/validacion.md). Se conservan las evidencias y consumos previos,13 clusters,69 expresiones,8 páginas y2 tipos de ficha. **Gate B pendiente humano**, sin cambios de B2/Estrategia/E1/E2, commit o push.

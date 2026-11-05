@@ -1,0 +1,636 @@
+{
+  "id": "Q02-PE",
+  "tool": "research_keywords",
+  "at": "2026-11-05T16:26:32.481Z",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "seeds": [
+      {
+        "seed": "cómo usar inteligencia artificial en finanzas",
+        "locationCode": 2604,
+        "languageCode": "es"
+      }
+    ],
+    "resultLimit": 150,
+    "includeClickstreamData": false,
+    "groupKeywords": false
+  },
+  "response": {
+    "results": [
+      {
+        "seed": "cómo usar inteligencia artificial en finanzas",
+        "ok": true,
+        "rowCount": 75,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "que son las finanzas",
+            "searchVolume": 720,
+            "keywordDifficulty": 5,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas personales excel",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.33,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "plantillas excel para finanzas personales",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.39,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas guanajuato",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es finanzas",
+            "searchVolume": 480,
+            "keywordDifficulty": 5,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el cok en finanzas",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "gerente de finanzas",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": 3.58,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el van en finanzas",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas corporativas esan",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": 0.43,
+            "competition": 0.39,
+            "intent": "informational"
+          },
+          {
+            "keyword": "plantilla finanzas personales excel gratis",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": 0.51,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "van en finanzas",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "dashboard finanzas personales excel gratis",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "payback finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "que es cce en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas wallpaper",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "excel finanzas personales 2022",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "nopat finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "cagr finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "auditoría de finanzas sud",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "plantilla para llevar mis finanzas personales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.27,
+            "competition": 0.12,
+            "intent": "informational"
+          },
+          {
+            "keyword": "giros y finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": 67,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "descargar finanzas personales excel gratis",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "transactional"
+          },
+          {
+            "keyword": "plantilla google sheets finanzas personales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "contabilidad y finanzas en ingles",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "plantillas powerpoint finanzas gratis",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.44,
+            "competition": 0.31,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas resumen",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso de finanzas derecho financiero y tributario villegas pdf gratis",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "que son las finanzas publicas y privadas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de contabilidad y finanzas pc2",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "libro de finanzas ross",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.01,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ciclo operativo finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "contabilidad vs finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "excel finanzas negocio",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que son las finanzas operativas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "bullet journal finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas personales con excel y dashboard",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas corporativas ejercicios",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "libros de finanzas empresariales",
+            "searchVolume": 110,
+            "keywordDifficulty": 50,
+            "cpc": null,
+            "competition": 0.5,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que son las finanzas corporativas",
+            "searchVolume": 110,
+            "keywordDifficulty": 15,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el p&l en finanzas",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "excel y finanzas",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es contabilidad y finanzas",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas de empresas",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": 1.25,
+            "competition": 0.09,
+            "intent": "informational"
+          },
+          {
+            "keyword": "template excel finanzas personales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso de tesorería y finanzas",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": 1.15,
+            "competition": 0.74,
+            "intent": "informational"
+          },
+          {
+            "keyword": "app finanzas",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.08,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "manual de economía y finanzas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso de tesoreria y finanzas",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": 1.11,
+            "competition": 0.8,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es gap en finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es tc en finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "importancia de las finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tecnología en finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.09,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "departamento de finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": 53,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "area de finanzas de una empresa",
+            "searchVolume": 30,
+            "keywordDifficulty": 14,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el pri en finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "pc1 fundamentos de contabilidad y finanzas utp",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "apps finanzas personales",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.44,
+            "competition": 0.04,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "tesoreria finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el nopat en finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas upc pagos pendientes",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es payback en finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es finanzas en una empresa",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuadro de finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es finanzas empresariales",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imagenes de finanzas corporativas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que son finanzas empresariales",
+            "searchVolume": 20,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "practica calificada 1 fundamentos de contabilidad y finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas tesoreria",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.79,
+            "competition": 0.2,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas claras",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "imagenes de contabilidad y finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "funciones del jefe de finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": 50,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas tesorería",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es tem en finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "el rol de la inteligencia artificial en la contabilidad moderna",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "caja cash inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/Default (contenedor autorizado)/keywords"
+    }
+  },
+  "reserve": 94
+}

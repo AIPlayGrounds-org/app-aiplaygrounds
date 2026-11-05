@@ -1,0 +1,3632 @@
+{
+  "id": "A04-tools",
+  "tool": "research_keywords",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "seeds": [
+      {
+        "seed": "herramientas de inteligencia artificial",
+        "locationCode": 2604,
+        "languageCode": "es"
+      },
+      {
+        "seed": "herramientas de inteligencia artificial",
+        "locationCode": 2484,
+        "languageCode": "es"
+      },
+      {
+        "seed": "herramientas de inteligencia artificial",
+        "locationCode": 2170,
+        "languageCode": "es"
+      }
+    ],
+    "resultLimit": 150,
+    "includeClickstreamData": false,
+    "groupKeywords": false
+  },
+  "response": {
+    "results": [
+      {
+        "seed": "herramientas de inteligencia artificial",
+        "ok": true,
+        "rowCount": 147,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "herramientas de inteligencia artificial",
+            "searchVolume": 260,
+            "keywordDifficulty": 4,
+            "cpc": 1.18,
+            "competition": 0.28,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial",
+            "searchVolume": 74000,
+            "keywordDifficulty": 53,
+            "cpc": 0.34,
+            "competition": 0.22,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial gratuitas",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 0.83,
+            "competition": 0.56,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ingenieria de software con inteligencia artificial",
+            "searchVolume": 1300,
+            "keywordDifficulty": 0,
+            "cpc": 1.69,
+            "competition": 0.41,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial gratis",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 0.79,
+            "competition": 0.45,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial",
+            "searchVolume": 1000,
+            "keywordDifficulty": 11,
+            "cpc": 0.99,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que herramientas de inteligencia artificial existen",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.25,
+            "competition": 0.38,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educación",
+            "searchVolume": 590,
+            "keywordDifficulty": 3,
+            "cpc": 1.17,
+            "competition": 0.1,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para estudiantes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial que es",
+            "searchVolume": 1300,
+            "keywordDifficulty": 45,
+            "cpc": 0.57,
+            "competition": 0.1,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para crear contenido",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imagenes de inteligencia artificial",
+            "searchVolume": 880,
+            "keywordDifficulty": 0,
+            "cpc": 0.53,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial de google",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "estrategia nacional de inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para generar videos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "carrera inteligencia artificial",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": 1.39,
+            "competition": 0.59,
+            "intent": "informational"
+          },
+          {
+            "keyword": "lista de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "definición de inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 31,
+            "cpc": 0.65,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para recursos humanos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aplicaciones de inteligencia artificial",
+            "searchVolume": 590,
+            "keywordDifficulty": 9,
+            "cpc": 0.63,
+            "competition": 0.42,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para abogados",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "historia de la inteligencia artificial",
+            "searchVolume": 260,
+            "keywordDifficulty": 14,
+            "cpc": 0.5,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uso de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "carrera de inteligencia artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": 1.85,
+            "competition": 0.61,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para contadores",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ingeniería de software con inteligencia artificial senati",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 2.06,
+            "competition": 0.26,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.23,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en salud",
+            "searchVolume": 140,
+            "keywordDifficulty": 5,
+            "cpc": null,
+            "competition": 0.13,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuales son las herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.57,
+            "competition": 0.41,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial articulos cientificos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.61,
+            "competition": 0.13,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para marketing",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.54,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "herramientas tic",
+            "searchVolume": 320,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "seleccion artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para crear imagenes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "las 3 competencias de ciencia y tecnología",
+            "searchVolume": 390,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial gratis para estudiantes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.46,
+            "competition": 0.86,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial para hacer tareas",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": 0.36,
+            "competition": 0.47,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial 2023",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "herramientas bi",
+            "searchVolume": 50,
+            "keywordDifficulty": 23,
+            "cpc": null,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "catalogo de herramientas de inteligencia artificial pcm",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tic aplicadas a la educación",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial ejemplos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imagen artificial intelligence",
+            "searchVolume": 390,
+            "keywordDifficulty": 81,
+            "cpc": 0.27,
+            "competition": 0.39,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para programadores",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uso de la inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 1.34,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial pdf",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniería de software con inteligencia artificial trabajo",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial más utilizadas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "periodismo e inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.57,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas digitales analítica de datos e inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial documental",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para hacer presentaciones",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ingeniero de software con inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": 2.57,
+            "competition": 0.26,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial ia",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial fuerte",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": 2.93,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "analítica de datos y herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ciencia artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 47,
+            "cpc": 1.4,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para redes sociales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia visual espacial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para diseño grafico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.33,
+            "competition": 0.77,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas basicas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial en la educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "nuevas herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y desarrollo de herramientas tecnológicas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "argumentos en contra de la inteligencia artificial en la educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para el trabajo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "desafíos de la inteligencia artificial en la educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial aplicado a la investigación académica",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial y ética",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para investigación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "estrategia nacional de inteligencia artificial peru",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para buscar trabajo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "robotica e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para docentes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.1,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial estrecha",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para empresas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "tecnología artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": 61,
+            "cpc": 1.14,
+            "competition": 0.32,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que son las herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.43,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia visoespacial",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para negocios",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ciencia tecnología y ambiente 3",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "5 herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "linea de tiempo inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "3 herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "características de la inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 39,
+            "cpc": 1.1,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de creación de contenido de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "concurso de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.58,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial que resuelva problemas matemáticos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.39,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "las 10 mejores herramientas de inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y diseño grafico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "17 herramientas de inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial vs inteligencia artificial generativa",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial en la nube",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial superinteligente",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial gratis para crear videos",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "problemas de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuales son las herramientas de inteligencia artificial generativa",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "redes bayesianas inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial en marketing digital",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial areas de aplicacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para crear imagenes gratis",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "practicante inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para hacer videos",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "mal uso de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para derecho",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial en el transporte",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para la acción clínica",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inicios de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para dar clases",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "desarrollo con inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "curso de inteligencia artificial ia herramientas para diseño y creadores",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "esquema de causalidad inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para la acción clínica 1ed 2025",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial humano",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas tecnológicas de inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial chinas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.2,
+            "intent": "informational"
+          },
+          {
+            "keyword": "máster en herramientas de inteligencia artificial 2025",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial distribuida",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial imagenes",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "herramientas informáticas para la toma de decisiones utp",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para la gestión pública",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "herramientas etl",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial cibertec",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "recursos tecnológicos en educación",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": 0.44,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para buscar informacion",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "steve jobs educación",
+            "searchVolume": 30,
+            "keywordDifficulty": 38,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas que pertenecen a la categoría de inteligencia artificial generativa",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial en el ámbito empresarial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "top 10 herramientas de inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ciencia de datos e inteligencia artificial senati",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "analítica de datos y herramientas de inteligencia artificial tec",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "redes neuronales e inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para hacer ensayos",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "alien isolation inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para parafrasear textos",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "herramientas informáticas para la toma de decisiones",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 1.56,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial aplicadas en la educación",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "las 3 competencias de ciencia y tecnología secundaria",
+            "searchVolume": 140,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas digitales de inteligencia artificial más usadas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "radiación artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "recomendaciones al interactuar con herramientas de inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas jit",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "transactional"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para automatizar microsoft excel",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "isaac asimov educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          }
+        ]
+      },
+      {
+        "seed": "herramientas de inteligencia artificial",
+        "ok": true,
+        "rowCount": 150,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "herramientas de inteligencia artificial",
+            "searchVolume": 480,
+            "keywordDifficulty": 4,
+            "cpc": 1.03,
+            "competition": 0.24,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial",
+            "searchVolume": 201000,
+            "keywordDifficulty": 58,
+            "cpc": 0.8,
+            "competition": 0.16,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial gratuitas",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": 0.93,
+            "competition": 0.49,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial",
+            "searchVolume": 3600,
+            "keywordDifficulty": 1,
+            "cpc": 0.6,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para educación",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 1.51,
+            "competition": 0.23,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia de la inteligencia artificial",
+            "searchVolume": 1300,
+            "keywordDifficulty": 11,
+            "cpc": 0.64,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "5 herramientas de inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educación",
+            "searchVolume": 1900,
+            "keywordDifficulty": 0,
+            "cpc": 1.04,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas basicas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de innovación",
+            "searchVolume": 1900,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para imagenes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas tecnológicas",
+            "searchVolume": 2400,
+            "keywordDifficulty": 0,
+            "cpc": 0.56,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para empresas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "imagenes de inteligencia artificial",
+            "searchVolume": 2900,
+            "keywordDifficulty": 0,
+            "cpc": 0.9,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial pdf",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial legislacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para programadores",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ventajas y desventajas de la inteligencia artificial",
+            "searchVolume": 1600,
+            "keywordDifficulty": 0,
+            "cpc": 2.03,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uso de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educacion",
+            "searchVolume": 1900,
+            "keywordDifficulty": 1,
+            "cpc": 1.04,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que herramientas de inteligencia artificial existen",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.39,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ventajas de la inteligencia artificial",
+            "searchVolume": 1300,
+            "keywordDifficulty": 0,
+            "cpc": 0.56,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "analítica de datos y herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.24,
+            "competition": 0.31,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de tecnología",
+            "searchVolume": 3600,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "las mejores herramientas de inteligencia artificial gratis",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aplicaciones de la inteligencia artificial",
+            "searchVolume": 2400,
+            "keywordDifficulty": 0,
+            "cpc": 0.74,
+            "competition": 0.42,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para negocios",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 6.39,
+            "competition": 0.52,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "programas de inteligencia artificial",
+            "searchVolume": 390,
+            "keywordDifficulty": 0,
+            "cpc": 1.14,
+            "competition": 0.51,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para crear contenido",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de arquitectura de software",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": 0.01,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial más utilizadas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "usos de la inteligencia artificial",
+            "searchVolume": 590,
+            "keywordDifficulty": 21,
+            "cpc": 0.63,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para redes sociales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de innovacion",
+            "searchVolume": 1900,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "lista de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.23,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "modelos de inteligencia artificial",
+            "searchVolume": 260,
+            "keywordDifficulty": 7,
+            "cpc": 1.96,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para crear presentaciones",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.18,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "concepto de inteligencia artificial",
+            "searchVolume": 720,
+            "keywordDifficulty": 51,
+            "cpc": 0.6,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que son herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "articulos sobre la inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 30,
+            "cpc": 3.03,
+            "competition": 0.16,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuales son las herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.74,
+            "competition": 0.35,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial mexico",
+            "searchVolume": 320,
+            "keywordDifficulty": 18,
+            "cpc": 1.28,
+            "competition": 0.06,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "3 herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia visual espacial",
+            "searchVolume": 880,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de la inteligencia artificial por software",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "linea del tiempo de la inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 0,
+            "cpc": 0.33,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "recomendaciones al interactuar con herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ejemplos de inteligencia artificial",
+            "searchVolume": 880,
+            "keywordDifficulty": 0,
+            "cpc": 1.11,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de contenido de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas savi",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": 0.28,
+            "competition": 0.09,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de diseño con inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas etl",
+            "searchVolume": 90,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas digitales de inteligencia artificial generativa",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 3.23,
+            "competition": 0.71,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "historia y evolución de la inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": 0.26,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ejemplos de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas saas",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.26,
+            "intent": "transactional"
+          },
+          {
+            "keyword": "herramientas de creación de contenido de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "centro de inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso herramientas de inteligencia artificial para la productividad profesional",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "evolución de la inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial gratis para estudiantes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "impacto de la tecnología en la educación",
+            "searchVolume": 390,
+            "keywordDifficulty": 9,
+            "cpc": 0.74,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "3 herramientas de creacion de contenido de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ciencia de datos e inteligencia artificial",
+            "searchVolume": 480,
+            "keywordDifficulty": 0,
+            "cpc": 2.21,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "17 herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "enfoque tecnocrático en la educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "las 10 mejores herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "asistente de inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": 25,
+            "cpc": 1.97,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuales son las mejores herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.5,
+            "intent": "informational"
+          },
+          {
+            "keyword": "plan nacional de inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial 2023",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "caracteristicas de la inteligencia artificial",
+            "searchVolume": 720,
+            "keywordDifficulty": 26,
+            "cpc": 3.31,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para buscar trabajo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que tipos de ciencias existen",
+            "searchVolume": 590,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para estudiantes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.57,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de redes neuronales artificiales",
+            "searchVolume": 30,
+            "keywordDifficulty": 56,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "qué acciones realizan las herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas itsm",
+            "searchVolume": 110,
+            "keywordDifficulty": null,
+            "cpc": 7.79,
+            "competition": 0.44,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mejores herramientas de inteligencia artificial para crear contenido",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "tecnología artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 61,
+            "cpc": 1.74,
+            "competition": 0.17,
+            "intent": "informational"
+          },
+          {
+            "keyword": "10 herramientas de inteligencia artificial para negocios",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial y robotica",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "tipos de aplicaciones",
+            "searchVolume": 390,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para contadores",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.66,
+            "competition": 0.5,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "10 científicos y sus aportaciones",
+            "searchVolume": 880,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para crear videos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial un enfoque moderno",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.13,
+            "competition": 0.21,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y desarrollo de herramientas tecnológicas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de tics",
+            "searchVolume": 320,
+            "keywordDifficulty": 0,
+            "cpc": 1.82,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para marketing",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.43,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "riesgos de la inteligencia artificial en la educación",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 2.22,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "lenguajes entornos y herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "seleccion artificial",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "6 herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educación redalyc",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para generar videos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ramas de la inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para profesionales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "herramientas tic",
+            "searchVolume": 480,
+            "keywordDifficulty": 0,
+            "cpc": 1.89,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para profesores",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "peligros de la inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": 0,
+            "cpc": 0.01,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial de google",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.18,
+            "intent": "informational"
+          },
+          {
+            "keyword": "turing inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 2,
+            "cpc": 0.72,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "chatgpt claude y gemini son herramientas de inteligencia artificial generativa",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "etf de inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": 0,
+            "cpc": 3.03,
+            "competition": 0.24,
+            "intent": "informational"
+          },
+          {
+            "keyword": "nuevas herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial estrecha",
+            "searchVolume": 70,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "directorio de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evolución de las herramientas",
+            "searchVolume": 590,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial ia",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "nuevas tecnologías en la educación",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 7.48,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial resumen",
+            "searchVolume": 390,
+            "keywordDifficulty": 51,
+            "cpc": 0.5,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "15 herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evolucion artificial",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuantas herramientas de inteligencia artificial existen",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evolución artificial",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para docentes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.46,
+            "competition": 0.47,
+            "intent": "informational"
+          },
+          {
+            "keyword": "paradigma conexionista inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas que pertenecen a la categoría de inteligencia artificial generativa",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "glosario de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para investigación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mitos sobre la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "4 herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ley inteligencia artificial mexico",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial ejemplos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "reconocimiento de patrones inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": 48,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para diseño grafico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "origen de la inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 17,
+            "cpc": 0.5,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "las mejores herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.82,
+            "competition": 0.64,
+            "intent": "informational"
+          },
+          {
+            "keyword": "taller de herramientas intelectuales tecnm",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para marketing digital",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.34,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "productos de inteligencia",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para el trabajo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de sistemas tecnológicos",
+            "searchVolume": 70,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "s herramientas de creación de contenido de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia visoespacial",
+            "searchVolume": 70,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de creacion de inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas avanzadas de calidad",
+            "searchVolume": 50,
+            "keywordDifficulty": 53,
+            "cpc": 6.55,
+            "competition": 0.03,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial aplicado a la investigación académica",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ley de inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 3,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial en la nube",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "4 tipos de innovación",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para escritores",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "tipos de cyberpunk",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para docentes universitarios",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "siglo 21 herramientas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "qué herramientas de inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia de negocios tecnm",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          }
+        ]
+      },
+      {
+        "seed": "herramientas de inteligencia artificial",
+        "ok": true,
+        "rowCount": 149,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "herramientas de inteligencia artificial gratuitas",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": 0.27,
+            "competition": 0.63,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial",
+            "searchVolume": 110000,
+            "keywordDifficulty": 0,
+            "cpc": 0.29,
+            "competition": 0.24,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para abogados",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "especialización en inteligencia artificial",
+            "searchVolume": 1900,
+            "keywordDifficulty": 0,
+            "cpc": 4.22,
+            "competition": 0.77,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para programadores",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial",
+            "searchVolume": 1300,
+            "keywordDifficulty": 18,
+            "cpc": 0.54,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para investigación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imagenes de inteligencia artificial",
+            "searchVolume": 1600,
+            "keywordDifficulty": 0,
+            "cpc": 0.29,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "15 herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia de la inteligencia artificial",
+            "searchVolume": 590,
+            "keywordDifficulty": 18,
+            "cpc": 0.33,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para crear contenido",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aplicaciones de inteligencia artificial",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": 0.45,
+            "competition": 0.49,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 2.97,
+            "competition": 0.73,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas itsm",
+            "searchVolume": 140,
+            "keywordDifficulty": 54,
+            "cpc": 4.89,
+            "competition": 0.3,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que son herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educación",
+            "searchVolume": 390,
+            "keywordDifficulty": 3,
+            "cpc": 1.42,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para contadores",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.83,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "educación 5.0",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "3 herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "marco ético para la inteligencia artificial en colombia",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial pdf",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para hacer tareas",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.45,
+            "competition": 0.6,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para negocios",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ejemplos de inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 6,
+            "cpc": 0.25,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuantas herramientas de inteligencia artificial existen",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas etl",
+            "searchVolume": 70,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para profesores",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "investigación y desarrollo",
+            "searchVolume": 210,
+            "keywordDifficulty": 26,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para empresas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "impacto de la inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": 0.17,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "directorio de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "introduccion a la vision artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial ia",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "alien isolation inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para buscar trabajo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.43,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial robots",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.04,
+            "competition": 0.42,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial más utilizadas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mapa conceptual sobre la inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": 29,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mejores herramientas de inteligencia artificial para crear contenido",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "alan turing inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "nuevas herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.71,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sinonimos de inteligencia artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "17 herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "programas de inteligencia artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 17,
+            "cpc": 0.68,
+            "competition": 0.67,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para el trabajo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "infografía sobre la inteligencia artificial",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "la verdad sobre la inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 1.98,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mejores herramientas de inteligencia artificial gratis",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial para directivos universidad de los andes",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.17,
+            "competition": 0.55,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para crear videos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "impacto de la inteligencia artificial en el desarrollo de software",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.2,
+            "competition": 0.43,
+            "intent": "informational"
+          },
+          {
+            "keyword": "6 herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "beneficios de la inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.07,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para docentes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "concepto de inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 73,
+            "cpc": 1.97,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para hacer presentaciones",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.5,
+            "competition": 0.57,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uso de la inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 40,
+            "cpc": 0.8,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuales son las herramientas de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.21,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas bi",
+            "searchVolume": 70,
+            "keywordDifficulty": 57,
+            "cpc": 3.05,
+            "competition": 0.23,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para crear imagenes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sinonimo de herramientas tecnologicas",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para imagenes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "seleccion artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas que pertenecen a la categoría de inteligencia artificial generativa",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "evolución de la inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": 0.28,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "analítica de datos y herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "10 tipos de innovación",
+            "searchVolume": 30,
+            "keywordDifficulty": 49,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de diseño con inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "modelo de inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.67,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.77,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia de la inteligencia",
+            "searchVolume": 10,
+            "keywordDifficulty": 57,
+            "cpc": 0.5,
+            "competition": 0.17,
+            "intent": "informational"
+          },
+          {
+            "keyword": "las 10 mejores herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.02,
+            "competition": 0.43,
+            "intent": "informational"
+          },
+          {
+            "keyword": "noticias sobre inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 49,
+            "cpc": 2.94,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial generativa",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.31,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y aprendizaje automático",
+            "searchVolume": 50,
+            "keywordDifficulty": 20,
+            "cpc": null,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de creación de contenido de inteligencia artificial unad",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y robótica",
+            "searchVolume": 50,
+            "keywordDifficulty": 12,
+            "cpc": 0.45,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "recomendaciones al interactuar con herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fondos inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "herramientas basicas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia humana vs inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 59,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para marketing digital",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.14,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "crear inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 1.16,
+            "competition": 0.61,
+            "intent": "informational"
+          },
+          {
+            "keyword": "4 herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial ted",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "metodos de busqueda inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uso de herramientas de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "oratoria inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de creación de contenido de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": 1,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "infografia de inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para marketing",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "otra inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 0.21,
+            "competition": 0.49,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para diseño grafico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.35,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "robotica e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial ejemplos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "política nacional de inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial gratis para estudiantes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "robots e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": 3.32,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para estudiantes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas sincrónicas y asincrónicas",
+            "searchVolume": 50,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para recursos humanos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 8.34,
+            "competition": 0.52,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tecnología en investigación judicial y criminalística",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": 1.54,
+            "competition": 0.43,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de creacion de inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial debil",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de contenido de inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "recomendación sobre la ética de la inteligencia artificial unesco",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tres herramientas de creación de contenido de inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial explicable",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial compatibles con microsoft word",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "proyecto de ley inteligencia artificial colombia",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial en la nube",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alan turing y la inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "s herramientas de creación de contenido de inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria en inteligencia artificial sergio arboleda",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.44,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para redes sociales",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial russell",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uso de herramientas digitales inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curiosidades de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial aplicado a la investigación académica",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "las tic y la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "10 herramientas de inteligencia artificial para negocios",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial y medio ambiente",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de la inteligencia artificial por software",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "desafios eticos de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial 2023",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial 1956",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "lenguajes entornos y herramientas de inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "revisar uso de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.37,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso herramientas de inteligencia artificial para la investigación",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial y creatividad",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "7 herramientas de inteligencia artificial para crear contenidos",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "conpes 4144 inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de marketing digital potenciadas por inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "comisión europea inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "estrategias de marketing digital con herramientas de inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "vector inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial lista",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "tabla de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para abogados en colombia",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial 2011",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso de inteligencia artificial ia herramientas para diseño y creadores",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial en la educacion superior",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial en ventas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "guía ética para el uso responsable de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ejemplos de herramientas de inteligencia artificial para empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial para crear productos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial y derechos de autor",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/DEFAULT/keywords"
+    }
+  },
+  "at": "2026-11-05T15:52:51.628Z",
+  "reserve": 282
+}

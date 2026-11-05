@@ -1,0 +1,1786 @@
+{
+  "id": "QS03-CO",
+  "tool": "get_serp_results",
+  "at": "2026-11-05T16:28:10.481Z",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "queries": [
+      {
+        "keyword": "qué es AI PlayGrounds",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo unirse a una comunidad de inteligencia artificial",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo empezar un proyecto de inteligencia artificial",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo usar IA para programar sin perder calidad",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "qué hace un ingeniero de inteligencia artificial",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo usar inteligencia artificial en investigación científica",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cuál es la mejor IA para investigación científica",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo usar la inteligencia artificial en finanzas",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo implementar inteligencia artificial en una empresa",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo saber si un artículo científico es confiable",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      }
+    ],
+    "depth": 20
+  },
+  "response": {
+    "results": [
+      {
+        "keyword": "qué es AI PlayGrounds",
+        "ok": false,
+        "error": "Internal SE Server Error. The data provider is temporarily unavailable; this is not a problem with the request."
+      },
+      {
+        "keyword": "cómo unirse a una comunidad de inteligencia artificial",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "video",
+            "rank": 2,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 1,
+            "title": "Cómo iniciarse en la inteligencia artificial desde cero",
+            "url": "https://google.com/goto?url=CAEStQEBxCJF16H7mdLdgCvLoEa-ip8hbLtPv-zlRdvJkB4G3rAG-znsjAURQSO3GsPUWgMX4qGVIygckGycu0w8X8SuVvOKzxtBdXIpJaUS90XT_QBsy1Cp-CUyYOB7yXfPshO9z6jh3AKRXolKxSuTkPxh_we-fI9nU2PvjbEBPQ0rYzQExIKoF1aAUKzEzYKlqeQs0wUNFe6u3QqDHLby7PeSxiaFW-2DPet_eb4fWlF0m9G-9J4m",
+            "domain": "xataka.com",
+            "description": "8/04/2024 — Una guía de inicio con todo lo que debes saber para empezar a usar la inteligencia artificial. · Qué es y qué no es la inteligencia artificial ..."
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 2,
+            "title": "CLUB DE LA IA - Inicio",
+            "url": "https://google.com/goto?url=CAESVAHEIkXXd6WZKYhYqUAT7t8yLjERESYfmvVrCJEONoUasdHC5zSxkrUH4RX3cLOyKREqF_gmuypFeiVPC1Lr0ObVEc0rL_Zdr5vJTohGTqvGgFNE_A",
+            "domain": "clubdelaia.com",
+            "description": "Bienvenido al Club de la IA, donde los curiosos se transforman en PROs de la IA. Accede a recursos y forma parte de una comunidad apasionada por la IA."
+          },
+          {
+            "type": "people_also_ask",
+            "rank": 5,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 6,
+            "organicRank": 3,
+            "title": "Cómo adentrarse en el mundo de la inteligencia artificial ...",
+            "url": "https://google.com/goto?url=CAESpgEBxCJF19ofMa_n5TmUxH2iyxsxOy0fSZA5tFdGSj8TKZwUfGV-qVws9dBUdyzbaAD1IKj6kAo568kFH_aClxC5x38k7qbvzHW_iJ5Vw5BNrcZT2QVABJj-sJWtfyqU4snr7IDuoZ45R5QYyJRwyiY9-ALtP52q6l0-W_RUo0UjYJUaCiAzaUNnl4zKUi-uJd9u0mJ4-LklZqlZSUxHED6tqGWelM4m",
+            "domain": "telefonica.com",
+            "description": "5/09/2024 — ¿Alguien sabe cómo empezar? Descubre más sobre cómo adentrarse en el mundo de la inteligencia artificial generativa. Probamos ChatGPT."
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 4,
+            "title": "Comu iA = La comunidad global de Inteligencia Artificial en ...",
+            "url": "https://google.com/goto?url=CAESUAHEIkXXIDNVpdyI0Pw25P0zGhkJVoOYQGr1eMSm0AanBVW_4bKINZCqONbL-5GreNLzbqOw4fJI4zbgupcV5nwtqNNl1HiLQm0d6L5SePNU",
+            "domain": "comuia.com",
+            "description": "Cursos Gratuitos IA. Aprende IA desde cero con cursos gratuitos en español: rutas, microlecciones, ejercicios prácticos y proyectos. Explora fundamentos, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 5,
+            "title": "Guía completa para trabajar en Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESlQEBxCJF1wRBy4lPQWB2J_QWbQQl3XANcHxCh4B4wbY4yHuQxVpH631NzcoSaY6odhpa3QDK1HvDa0cf78nP-G-N0vihRAtK8E7Y-nE3HKO_lmjmtibLmufc05RnWid8mJgawilcFWDn2AyJ7J1DsBKMeOFSD_K0XbqWglsJZxWPZuQDJHnZTBvkJt3Z-uG7K7Lza_PSqw",
+            "domain": "remitly.com",
+            "description": "18/12/2025 — Para tener un trabajo en IA, es bueno estudiar carreras STEM, como ingeniería informática o matemáticas. También ayuda mucho hacer un máster en ..."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 6,
+            "title": "AI Alliance, una comunidad internacional para avanzar la ...",
+            "url": "https://google.com/goto?url=CAESzAEBxCJF16xw_BbtuzLYsi1gfeNmj26yC201eBtoEL5ZAemfpkJreA5iI0OeJm8iH2BngHVe-c7uBH-yJdWkToSYU-O2ve4zQFN84axxtE3_LZx7TU49SQ5H_QfqSKj2oPXTsoU8JGaKjkXpIXiIq5DZvBpeUD-kRi0TrY1xtcQujNaYjvT95neIak7pPebv6pUrPJkPBOQNz0zsFQqBsKeTZp2xGauwuCld4ESg0k3GrPobqWKz8wL8YmqdIPdINULZ1MpFagiycaK7Apg",
+            "domain": "ekosnegocios.com",
+            "description": "11/12/2023 — La AI Alliance se centra en fomentar una comunidad abierta y permitir a los desarrolladores e investigadores acelerar la innovación responsable ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 7,
+            "title": "Comunidad de Networking, Colaboración y Oportunidades",
+            "url": "https://google.com/goto?url=CAESsAEBxCJF18ccP2ktDiqalTbn9Z5GmkpBKMTkdhvQTT6hD1BmTXXh7Xmuhxv9gCi1fmDVs-PiGUusQ36IsxkHVww_GQ6Jg50f2CWopJj8N6YpbZhsdeRdZxi-Y1hcGyEGOXwDMvxkUPtZO29AiobAc3JUxgBZU8MJZt3dbLnVBv3onpYfWlWmbAcnkLcsg39NwMkCEKoa6FFGZ3WUbR_Ll8Uv14rE1LM8zVhbRcNuNI-bdg",
+            "domain": "academiadeia.com",
+            "description": "Conecta con emprendedores, empresas, profesionales independientes, equipos y startups que ya aplican inteligencia artificial en diferentes sectores."
+          },
+          {
+            "type": "organic",
+            "rank": 11,
+            "organicRank": 8,
+            "title": "CONVOCATORIA PARA CONFORMAR UN COMITÉ DE ...",
+            "url": "https://google.com/goto?url=CAESrAEBxCJF18NRwd-CfvbZO38t7la2sT6mKsoZZQE8gG42h6cyRiTnmQH3JC5GL9sDOnau7v0kcSZyt2o3tBHh_7VsW4v6dh9g6blnKg80bE5jb5beXgVFfuYsKwLJ_khGyCEktSmRzRoKgtKawKYreEYtHroiMzhGYR78fTFG2wO87OcrZ7W2Lb74DTNJPmg4BodX70003k2QfgrG0m3FZewXceM0NTuXPDxRhPpv",
+            "domain": "minciencias.gov.co",
+            "description": "El proceso de selección se llevará a cabo de manera rigurosa y transparente, basándose en méritos individuales. Se evaluará la experiencia en temas de IA, la ..."
+          },
+          {
+            "type": "related_searches",
+            "rank": 12,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 9,
+            "title": "Sumate a nuestra comunidad de Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESlAEBxCJF11EM6nSDFg9m4XblBJ-sIvsPc9VTeqXkDL2w4G315jf1lCkclCOw6FsB-SoXeC7WApMoOu-A_giArDdUoLrP-Naum1dI_RZleZCGxD1RcPkW0Xnmgbq6cMlEvrXbRB88jMyV1MT5mBYVgb6JwrbPPJX5l-kTt-uvwz80vQY_3myI3CzOshDFHnEQGTHHgGYU",
+            "domain": null,
+            "description": "Sumate a BIT AI Community ! ¿Te apasiona la inteligencia artificial? ¿Quizás no sabes nada de esto pero querés aprender?"
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 10,
+            "title": "Estudia Inteligencia Artificial | Cursos Gratis Online",
+            "url": "https://google.com/goto?url=CAESfAHEIkXXs55J3mbpzz90Q06-E6NKwld7IegiFRVuGB_1PRdX36npfTIrUdKq3Utu9U-bcd_BzlXmCcm4X4CpTuhRaCjem9G6QK7tT4dTnks_hvSr0Wq1smjc8Mrh8WSvrkpBUDpbkJfcebecYG0ooSRyTrmQAZN_X9hMQ8s",
+            "domain": "polisura.edu.co",
+            "description": "Con esta ruta de formación, aprenderás todos los aspectos básicos de la inteligencia artificial y te convertirás en un experto en el uso de esta potente ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 11,
+            "title": "Afíliate a ACIA | Asociación Colombiana de Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESYgHEIkXXZwbzgazpRVyz-KJXYjb95Jd8Jst5D-0aOeWk2pLZ9N0ejJKtnWJ9M04cFYtWgqNS7ZgOKggDiseFp-6KTQddLFLmjLx8eCVoj1Tw3Vtg82JKJ2pAZOpbsfUjIVcU",
+            "domain": "iaencolombia.org",
+            "description": "Elige tu plan de afiliación a ACIA y continúa al pago en línea. Comunidad / Freemium y Gran empresa se gestionan por solicitud."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 12,
+            "title": "Comunidad Fundamentos IA",
+            "url": "https://google.com/goto?url=CAEScAHEIkXXYkL0FPV-sHFKg_5n_NLru2D4AYpmJQlG3NwaUGlvMKtJfBjSkB5d96sxG-FuECHqzD1StZtRP8lgSgeWTlhscNLNoyyKNCoV6BNggLyoJlY3Xiss03FMtfmuVOHGMt1e_3x7NO1QKFgfWHo",
+            "domain": "skool.com",
+            "description": "Comunidad Fundamentos IA (FAI). Aprende a usar IA desde los fundamentos, certifícate y domina las herramientas más útiles."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 13,
+            "title": "Aprende sobre la IA con Cursos Desde Cero",
+            "url": "https://google.com/goto?url=CAESqQEBxCJF1xbnXqsQUZFAlpX9XnR5OX_4RE9HUXopsrod1UAooC0Mjs--EjbZnuMhvgnCUJ46NGC72gsFr6CK_vcE6TQ91nMm3oVpPPyaHXWRJIb4Acb-fsB1FrHNEBF4PD9p7XolMmqRch7x0I0lBg8Pref7YHZULhi7HPrJk2ANFcZidnwLef6iQMBMdLj2CcFhLbDcB810u4oAP-f4X6iKo1idErRokxWq",
+            "domain": "grow.google",
+            "description": "Aprende sobre la inteligencia artificial (IA) y sus beneficios para las personas. Obtén certificaciones con cursos desde cero diseñados por Google."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 14,
+            "title": "Cómo elegir las mejores organizaciones de IA para unirse",
+            "url": "https://google.com/goto?url=CAESmwEBxCJF1zHccFrKFB2oQJ2WiwSuPkZ4x3L4beF46W6yh5zRn1mN-ggocj9SyPVPsCIV3s6gxv7vZgE7jC0enEXOGaYXEe7O1NchWOaz2nzHqzF0I0y7BtkhCZzpxcyYNuJ_1IDu8Mvod8gxSc7hfdH1MNdnGzVBXBRp9d5haONzlrVjQA17Zsvr2vcS0uETFcx_E85lnIaO0eHJ-w",
+            "domain": "es.linkedin.com",
+            "description": "10/12/2023 — Conozca los beneficios, los tipos y los ejemplos de las organizaciones de IA y cómo unirse a ellas para establecer contactos, aprender y avanzar en su ..."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 15,
+            "title": "Vinculación a la Cámara Colombiana de IA",
+            "url": "https://google.com/goto?url=CAESXgHEIkXXcpEdsB1L6vHKk6Rczp-_z5Y7higTWUNZq61mrLmUgO0N2zD_BGKKJX_lSKsK1NI7OLqd64ycGngv3tI4pukSkPjLcRDzNoQURV-HxMDL_xWm9Dofz9Yko-c",
+            "domain": "colomb-ia.org",
+            "description": "22/10/2026 — Elige tu perfil, conoce el valor de la afiliación y presenta tu solicitud. Una ruta simple para personas, organizaciones e instituciones que ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 16,
+            "title": "¿Cómo puedo entrar en inteligencia artificial?",
+            "url": "https://google.com/goto?url=CAESpgEBxCJF18UltwsYfs2DIwKrZJrmam2RsGPu_4SGoh9GvtZEwEtcw1XBTH3M0NrOx37SouCxIeg81TzlSrUm2jsIBWUwC-XLr39KsqAKMo7JLl6d-BhqvYoRGM2BlZK9QXlxweFHsULvKHZ8YDAlYkFC-Qx8eFuo9sjRuSAQnu7ffssQYnvGDV5vqx1-0GyAxkCakUvEmyPh-piKOfcUpNXRSVwzkEc8",
+            "domain": null,
+            "description": "Hola,\n\nHe estado buscando por internet acerca de la inteligencia artificial y me ha parecido interesante pero a la hora de buscar como aprender no me sale ..."
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo empezar un proyecto de inteligencia artificial",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "Crear un plan de proyecto con IA",
+            "url": "https://google.com/goto?url=CAEShgEBxCJF12oIs0EotZ7mGh25VILMcr14duu5vXbvl5ECdWKWG6sMd-XxFO_lhos6m7iCiESC1hrMzYotFdQt-0uuDpGL7RRBVYPH6Mzx3C2AQOENcvkRabBw_n5g5Tdg4wn2_ofiS3vDy3IXoi1u_dCd9FH-eUo9-A4AEgeHQM2Tsbu06lN1Gg",
+            "domain": "projectwizards.net",
+            "description": "¿Cómo creo un plan de proyecto con IA? Describa su proyecto en un campo de texto, elija el idioma, el tamaño del proyecto y las opciones, y haga clic en «Crear» ..."
+          },
+          {
+            "type": "video",
+            "rank": 3,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 2,
+            "title": "Aprende a crear tu primer proyecto con Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESjAEBxCJF18EZFL9HHs5Lqo-fcsu5DzFcPBN0ErcK5XN2ro4mLJP2BZRObGFih7_fjttXZQhsq1JtbQtf3Jd0PIgb7rmiCskAz64h7a-BhUYRNAQ1uFrCiJOwadDYfbyqkPjcQ18UZ1gJti5pU_hXyB15m8Ni-2HGibBYRq24eRb1Z6Nav6l58pC3FrMPnA",
+            "domain": "platzi.com",
+            "description": "20/08/2026 — Crea una solución con IA. Descubre cómo elegir el modelo correcto, qué herramientas no-code necesitas y cuáles son los pasos para crear tu ..."
+          },
+          {
+            "type": "people_also_ask",
+            "rank": 5,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "people_also_search",
+            "rank": 6,
+            "organicRank": null,
+            "title": "Busca productos y servicios relacionados",
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 3,
+            "title": "Cómo montar un proyecto con IA. 10 herramientas útiles",
+            "url": "https://google.com/goto?url=CAEShgEBxCJF1wJHY0xKIdriVoEKD5WVzOWV9tAEUaXs3A6N_8SZnKhxR2r82DPYgSBFofTA6bRbXmjYMRNg_a4PJNMb3GBl3mw3bmhMRFCizPJ75GDV442eAaZ-yJ_eYyO90C47BJiKfY9VtvqLLjckWN5XNuOIwDu9-UjDewXv6kyHVZhXEmofbA",
+            "domain": "immune.institute",
+            "description": "19/05/2025 — Perfiles de negocio, marketing, diseño o ventas pueden liderar cualquier tipo de proyecto con IA si saben utilizar bien estas herramientas."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 4,
+            "title": "5 pasos para empezar un proyecto de inteligencia artificial ...",
+            "url": "https://google.com/goto?url=CAESrAEBxCJF1zVPNOTFGDwSdRs1-TIS1j7gGgO3utZ4d93dHY5-09boyoYSRS92-o5RzC6KL75K_rZptyUp-kigFZzMNBH7O0oXrKS0oCa9N4hY4fx7XNgez8p-ISnpVxfuA6NYkdttZTgtilBXOq0aLADfExCbxz_8d9oTuDAUdJd_Zu3q6bg-WNi7dfqa5IpqAz6Z9NzC5aIEsEDHgEVZu4SepDae3G0Qc8lU5sjc",
+            "domain": "portalerp.com",
+            "description": "5/08/2024 — 1. Identificación de necesidades y oportunidades · 2. Capacitación y entrenamiento de equipos · 3. Selección de tecnología y herramientas · 4."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 5,
+            "title": "5 claves para impulsar proyectos de IA en tu organización",
+            "url": "https://google.com/goto?url=CAESbgHEIkXX3sXAKR5g5PJrnG9u-UHgNQT0WvtnXCl5y7gtOKmwDDoH4ftrigNtxVY2DsmH3EysPkbUyNBD7P40gdP4fP4pO8g-6-pn3vMLPr4JdF1pZafIXRagV5bNbG4-I_EcrdbD7SN8nev9YP8V",
+            "domain": "panel-ialab.com",
+            "description": "¿Cómo elaborar un proyecto con IA? ... 1. Define el problema que deseas resolver. Antes de empezar, identifica qué desafío empresarial abordará tu proyecto IA."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 6,
+            "title": "Tips para que tu proyecto de IA tenga éxito",
+            "url": "https://google.com/goto?url=CAESkQEBxCJF1xTDF9ih6qKxEmzZQCJugsKUPkn3mtMY45t8p-hjPQGXVaEUJD5jZrYG0ceodtxUJj5ivO7t9G-u1bDoPkoNHX_Mhv5xPvSLboW4saU4Cf_r4lU0Bx4JhWZ86mny4fR_v7a2bnd3fhvthv2rW7W_qARbHxlIfJ3kYbXWG7p6WjT53QJk7nwwr6gMBt9c",
+            "domain": "intelequia.com",
+            "description": "Necesitas hablar el idioma del CEO, entender el negocio de tu compañía y detectar donde la IA puede ayudar en la estrategia de negocio. Como responsable de ..."
+          },
+          {
+            "type": "organic",
+            "rank": 11,
+            "organicRank": 7,
+            "title": "Cómo estructurar un proyecto de inteligencia artificial",
+            "url": "https://google.com/goto?url=CAESiAEBxCJF1yYaC3EKujo1395bWRtl3gKCJuxRweQPXl4dyuaAkYbFb9wCJcqjew163aB32RsOnQE37TdP1oOKhJ2G3n4QsC-Bf7zTpuHeArUQs2ulNSkD9fvmFxmQ5LZxYCD0yxz_Cj9KOTm9tZlqKl-jzxL9iEPw8S7oQtOW-c1mLlrOz0fThin5",
+            "domain": "geekcorp.co",
+            "description": "Cómo estructurar un proyecto de inteligencia artificial en tu empresa: por dónde empezar, qué necesitas tener listo, el paso a paso y cuándo no conviene."
+          },
+          {
+            "type": "organic",
+            "rank": 12,
+            "organicRank": 8,
+            "title": "¿Cómo se construye un modelo de inteligencia artificial?",
+            "url": "https://google.com/goto?url=CAESkAEBxCJF15wdHhjSmf1MVqqIBi9_48ZtCbSpdveOVjf32eTdfYDT4g7BSkxEQX2uqcE2QxOPOrsGfza84h7kw3I5ENhqaf-jcK7N9-06h88WElc5EG1SQFU1v2-w_LWt33bDOUT0JMB7Cjrn6AyvWnuYg26-4QPJYI4eFWj2BC1qUtTXFbd4cJ__QYzCsgG2rrc",
+            "domain": "datos.gob.es",
+            "description": "4/02/2025 — Paso 1: definir el problema · Paso 2: recopilar los datos · Paso 3: preparar y explorar los datos · Paso 4: seleccionar un modelo · Paso 5: entrenar ..."
+          },
+          {
+            "type": "related_searches",
+            "rank": 13,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 9,
+            "title": "5 pasos para empezar un proyecto de IA en las empresas",
+            "url": "https://google.com/goto?url=CAESlAEBxCJF13wCT82y6mH-BjA2kqk_Gi_rKi4nGA9fgiALaECawbEOsVJZIGVWc5jBu--SO0EWroUnl0BNHCEzWKRgcFirH2gqy2Q9-Ds5Mu9Q1ucQiwvbXbhzEOvwTdzght7nRAEG5bup7txW0u2RI23yoRodLhOAyXdrLBjAsq7p_0u_z2H3GZpR5v3y9cLOYHChGFpS",
+            "domain": "portalerp.com",
+            "description": "31/07/2024 — 5 pasos para empezar un proyecto de IA en las empresas · 1 - Identificación de necesidades y oportunidades · 2 - Capacitación y entrenamiento de ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 10,
+            "title": "Pasos para iniciar un programa de inteligencia artificial",
+            "url": "https://google.com/goto?url=CAESfgHEIkXXJhPsyk3CMp7ccchBYAcGo6X6JRiiFeX3QS7QdnfWcKR0ZQnmVuooG6oRXUYFRAISebLIJSN1D-9wuUtWM7hNVTFg6DzQww9C4eCoq9g6g3YUdVz03TuFWemWTflguBIwYyZd-GhgBFYAIimFlJxkdKN46wlTERtAjQ",
+            "domain": "deel.com",
+            "description": "17/07/2026 — Aprende a lanzar un programa de inteligencia artificial seguro, rentable y medible en RRHH, nómina y cumplimiento legal."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 11,
+            "title": "Cómo empezar un proyecto de IA en tu empresa sin ...",
+            "url": "https://google.com/goto?url=CAESqgEBxCJF1-dwNudx0lzEAtnblop61y2okZspWSwp2r9gTtCEvvYE_LlnG-bNblM3YlE_-363aaB_TcH3uH7PVtGW-AslA0cTUY73C5yAhaZJr74gZa0gbZZdXzWIGJ1tLCudIwfmr6EFA-AryhxadhT6tGezUmyohbAS5q1cJQdxLi8KOXcebeBsbGnAubqNR20KEm7YUWLykKBOOaTdgkPRCkMqCp58PmEolQ",
+            "domain": "godigiart.com",
+            "description": "Para comenzar un proyecto de IA sin grandes presupuestos, lo primero que deben hacer las empresas es **definir claramente sus objetivos**. Esto significa ..."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 12,
+            "title": "Como EMPEZAR En Inteligencia Artificial DESDE CERO",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXxxMPOhNO7yGXgpFRnfEjkmG6iIWoxtbSk9M2PIGtMPK0A7yWEDMvrXTE4fDFqfqKieBOHKIhuTPPKy9FWSAIsGw55Ag-AVm1It7TWuZXox1KolqGoqcT8yARB7L8uZYMV-LC",
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 13,
+            "title": "Cómo crear una aplicación de inteligencia artificial",
+            "url": "https://google.com/goto?url=CAEScQHEIkXXVb-nvK0ioNqDppJM3ZkaPu7tXeZoW4jTFxiD1lbXtYElpifJmdqcCTKJT6GfOL_e6Kg6hjYUwNT9M_8tV65VC8wAjXoOqv9H5QH8PK03JDSgxetnevdfRiZX0C_EKBU7ieGN3DmJNNp1p2dN",
+            "domain": "innowise.com",
+            "description": "13/05/2026 — Cómo crear una aplicación de IA: proceso paso a paso · Definir el problema y los objetivos · Validar la idea · Preparar los datos · Elige ..."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 14,
+            "title": "Cómo usar la inteligencia artificial para generar y mejorar ...",
+            "url": "https://google.com/goto?url=CAESkwEBxCJF1-cb6HTBZCweeg_fEcENzsePQVzWdgZvunRR6b4t5oJwqjJGTL4HEkY0BEuvTAKjpCGLx1hu0-d2uHSSkTng2pXzynXhTTCUqwNy5K6sVz0G8UpQmg8PCo3I41hXb32v_YwJvIR98Jjjp5GuP00VPF4nowmks66HG9d_8HfPt-42iZdpTzZ6L66LNROHVTA",
+            "domain": "atodotraining.com",
+            "description": "21/01/2026 — Fase 1: Generar ideas de negocio con ayuda de la IA. Uno de los usos más potentes de la IA es como generadora de ideas iniciales. Cuando ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 15,
+            "title": "Qué aprender para trabajar con IA | Henry Blog",
+            "url": "https://google.com/goto?url=CAESlQEBxCJF19tY8M4Fm9wn2Uk0PlcGcn0-p_xlacCtnh6kZnQbWTiYBha2ozMQFNUN5MzOIIHjFg6hPtCMhHVIoqoaBE9XiwT8g3s0c2uazT8C1iDPKpE5kS-9uNdeM5tuif5d4wr3S6YK6XS2j0d0Qfc4sTKZTrn4brgspH9VPX-G3RzefnNdKsy4ilnp_G6naJUG10vcmg",
+            "domain": "soyhenry.com",
+            "description": "14/06/2026 — Descubre qué aprender primero para trabajar con IA. Conoce los fundamentos, las herramientas y las carreras clave para iniciar tu camino ..."
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo usar IA para programar sin perder calidad",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "Entender cómo usar IA para resolver problemas reales ...",
+            "url": "https://google.com/goto?url=CAES0wEBxCJF1-eZfNifFrudwY2DVr39luFhqNCPo5ceyoTWnH_-Vebo5fchGjiscGzbLrGfMFf6TGzvBd4WdNipo6sgvbwF5PL5nLtYna6bg7ZeusUYxA0MLNNMj6rLG5eal90uS5dj0aSnofdr7j0AvXPHe3RLhbZ-FTcc4qSatK22ncv2vLJJRFRp4rkLnrJDsJx4mN4qDZmdQatdJQ3f5GqTYMgjgpeDiJ6DbvrBuIVMSLLAaM5WZOpToGjeBhFd8xGOfUbUurZSYtgj3S1uoCxaMhlJ",
+            "domain": null,
+            "description": "¡Sí, más que nunca! La IA puede ayudarte a escribir código, encontrar errores y acelerar tu trabajo, pero no reemplaza la capacidad de entender ..."
+          },
+          {
+            "type": "video",
+            "rank": 3,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 2,
+            "title": "Como usan la IA para programar? : r/ColombiaDevs",
+            "url": "https://google.com/goto?url=CAESkwEBxCJF1yg8LmaIHs9cdnFHMbwYswpxRPXPpQe5o4F3Uc1Wy-rRlNRuXP-BsBAyZCJp5ztFprUhj4sLXa-qctFnZwx68BmiMm5xgSDSZLP7pKvVcpRx0M2IpaGXGu1FcqbqN9kNb8f1p-tZM-FuGmiXvZr3Iw_HD6DuE3xLRiwX7P2wn1RqEVZOlBjVeLiz1fw-71M",
+            "domain": null,
+            "description": "Para los desarrolladores/programadores que estén usando diferentes IA para generar código, como la utilizan? Pasando todo el contexto del proyecto? Con ..."
+          },
+          {
+            "type": "organic",
+            "rank": 5,
+            "organicRank": 3,
+            "title": "Vale la pena aprender a programar aun",
+            "url": "https://google.com/goto?url=CAESfQHEIkXXNE5UNI-J6TvPCriA1Y-NIe23fZxTouYaH40J797QYEUf7aqFIHG7dUfbfuWuG11ONBU48-cGHIfTYIvW7s_zhMxLxYRbpTBpS3VrKQriA3vX1LdxwTCBFHsFBve6QrghmPFxYu1Z3WV81xkrFTlXXkV3847EWcvc",
+            "domain": "fazt.dev",
+            "description": "1/07/2024 — Es resument, el avance de las IA en codigo se busca que cada vez se necesite menos escritura de codigo, se automatice para ganar productiviadad, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 6,
+            "organicRank": 4,
+            "title": "no uses la IA cuando estás aprendiendo a programar.",
+            "url": "https://google.com/goto?url=CAESqgEBxCJF16uqSvmNKKN0CA5JwMeGc4BRXryg5WjKAyzpWunH3j389mevrz7WYOqlh2l2ERDWKTh5QzmYs10NUtaGEDp7d7fPkbiB4CM9Fu8GY1qGltpMPlAU1WZVS005ln4jISJ0ufrd7Zi7heXtnbkmkoVQ-JPQRkWTeL94LQyW1vxrnzbamMXzHoiQu8QMC7KGqUtH97jCpADmHN3hT8fydcgqAy2fCos_jA",
+            "domain": null,
+            "description": "Si usas la IA como herramienta para aprender (no para producir código), entonces es mucho más eficiente para enseñar que la mayoría de las otras ..."
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 5,
+            "title": "Cómo usar la IA para ser más productivo en programación",
+            "url": "https://google.com/goto?url=CAESmwEBxCJF1wGSubeBpMeJLKXor15p_uEyxTaQjBaQqzfiy7rUKXxUUBtHl8G_mtF1R79EbYL_MSpABUgxsBwSlPNDt-fM2Li49QOQZw-GcBTACtun4482ERRRUWfjqB2hTrDP6o3vsrN3CRTR8Xz2SIj6-y7kshW0LArA0dSwDvEF3eaArMKTL30XhGpoNHclDOGKvb9L5uL_yrEYgw",
+            "domain": "webreactiva.com",
+            "description": "Cómo usar la IA para ser más productivo en programación · Herramientas Open Source y APIs · Asistentes de código con inteligencia artificial · Codeium y Cursor."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 6,
+            "title": "¿Cómo utilizas la IA para programar? ¿Acelera tu desarrollo?",
+            "url": "https://google.com/goto?url=CAESpAEBxCJF14h0bmn_Q9fgLIhxshr7X3KOr2DNqKKLvaWS9r4NReSlBQowmBhV9Uw9QuKDN79sA7DVsQJOEijzslmnZ52vQELY-C9t9esOlhDigxSYjFZovYY1vVhaxDO7Axb7aXCnNLVuiUyoA0Gjiaz28KXI_1nXSqXQ4PFRBuw6VTIBr4bCkRgdEvXljNUzLLX5G9qeKGcbWklLMkv5k151VO5xhA",
+            "domain": null,
+            "description": "Probé a usar Copilot para programar hace un tiempo. Era bueno para algunas tareas muy básicas, como rellenar un array con cadenas para los días ..."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 7,
+            "title": "IA para programadores: Las mejores herramientas de 2025",
+            "url": "https://google.com/goto?url=CAESewHEIkXXB1cAO0GvI-zV7nwCkKURBKXkzO43AJny1xxMekzyi3dRu_64OqUuopMljS2amhUG6PUI2QU60xYRATqxCMpB5iBUKnZ152uYT3YOG-TV3Z_atQP-vy47X1zI9REqrlxP25-SeAKQzGp6cJMec5V5m0DzU9QZ5A",
+            "domain": "blog.maestriasydiplomados.tec.mx",
+            "description": "28/05/2025 — Una IA para programar es como un copiloto inteligente: entiende tu código, predice lo que vas a escribir y te sugiere soluciones en tiempo real."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 8,
+            "title": "¿Cuál es la forma más eficiente de programar con IA ...",
+            "url": "https://google.com/goto?url=CAESrgEBxCJF19UQjpuhaRTbpHFF9j4Xwo941tQukiw4I7WGjlYuPJ6dOpzX9CzqnVv8cN3nM52pQXiZ8waqqNhDZifyxraYhDPXRHhhesk22F28qmRVEXX0d_iSjqmQf87EeGJ5_NC37Xhq6zCAmhS0t-s_vW9mkjQqgpbRzAr7LkSGpNDCPyKWFX1k-oX1pE8AMOfE08y3Qr7Jj7u7L9ud6f71GQgdRkyBIu1-yw3Ek-I",
+            "domain": null,
+            "description": "Hola, \n\nVeo que el mes pasado hubo un montón de tutoriales diferentes sobre cómo usar la eficiencia de Claude/Codex. \n\n¿Ya hay un estándar “de ..."
+          },
+          {
+            "type": "organic",
+            "rank": 11,
+            "organicRank": 9,
+            "title": "Vale la pena aprender a programar aun",
+            "url": "https://google.com/goto?url=CAESfQHEIkXXnoxKhLSS4b1QoOxGPq7AQGTDFXw-YyLGwf6fEkoFSX_keZtmIjLZwj1NixU_A2Xv47pEdnf29FHi-UDIVv6l-l1ofVCCiveMwTSlpEQKrf_TJ6Z9YXXz6pdlKiASuA8ZMh1M6Bvt8aSKKOlmaKwMOQmWFWKj-eLD",
+            "domain": "fazt.dev",
+            "description": "1/07/2024 — Copilot es una herramienta de autocompletado de codigo que se añade a los editores de codigo o IDEs, desarrollada por Github y que tambien usa ..."
+          },
+          {
+            "type": "organic",
+            "rank": 12,
+            "organicRank": 10,
+            "title": "Un par de tips si usas IA para programar - GDG Granada",
+            "url": "https://google.com/goto?url=CAESkQEBxCJF14pwS6eVPM_Cb6Pt4UybVdrp1gbh1iXVxp2GgX1a3BkZIMvscMuPrpsAOlx48CkP-N2ly-GUQkLlGKdSIc8VvaCHVb6Wx88G0dt4PCP7v5nmPWQO3ZCssZhhuijPNF6MW8fpV4SteKgIENRqwk1_SaAAgclLmGyAv80WB567BHOwHp7QDsFsYxeYfnSG",
+            "domain": null,
+            "description": "Markdown como lenguaje de mando: los LLM entienden de maravilla las estructuras marcadas. · TDD (Test-Driven Development): dale primero los tests ..."
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 11,
+            "title": "¿Cómo utilizas la IA para programar? ¿Acelera tu desarrollo?",
+            "url": "https://google.com/goto?url=CAESpAEBxCJF17XMX4Bf1DIQlhsAKswPm1hfW7TK2_QCp7hDoQ8smKOXcHeF0guwW-TsvVMvy2eymIXL467RN6OQJ8zy4-7R13iEwGMNzXTruEE1YrnZvaeEQSrjXKyn1MAubM4174EMnooAmdXffBpwvvfny_4gyltSZcR0PdUEfXWQ5Xi7V0Fbp8kZaFzgwjzAc5McPuC51FJ2Ca7_44-XglCOBu6ohQ",
+            "domain": null,
+            "description": "Probé a usar Copilot para programar hace un tiempo. Era bueno para algunas tareas muy básicas, como rellenar un array con cadenas para los días ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 12,
+            "title": "Programar con IA: el método de 3 pasos",
+            "url": "https://google.com/goto?url=CAES1gEBxCJF1wVc1iz8xXF0_5TYAiMwDHL117W4tfV4PwxYlC4_dCb_bTdasYcHRbqsG6M6Nnpr8_gC18PvpW1QBMuZfL8Xgc_ULElzebFZx270hUXeQEd1fQnyTJBrSbmgtOkXjgVyc8Tvj5Df2hc6wJaGkRfZ1lLx9Ialk-HHRgszLTKhBmkWbHRPCZgYohoEgrBHd0DDuqGPGAMb2MjBWR-KfNPjGs2wAehp6nLZ48FWezKrHK2Dinrpy914NbRfPHMZSm_uYihrArG7PKjPHZKEBubaE6WL",
+            "domain": "cursos.frogamesformacion.com",
+            "description": "24/08/2026 — Aprende a programar con IA de forma profesional: planifica, aporta contexto, revisa el código y evita deuda técnica, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 13,
+            "title": "Programar con copilotos de IA sin perder el control: flujo real ...",
+            "url": "https://google.com/goto?url=CAESvAEBxCJF1yPOMdWxGG5GRQHADUWfTpSC5qtGbzIDX_fXlmh-LHDwRvmk2ZMCkc2GMgcajbAGnM7WIXTAE7wfYBQ6eYLxDZFaxyxIrZvx1JB-aNjWVwXneDUFZFRUSjPidPFyKojvTHon4YjRFV2T8ikPAH8NPWjo5JCKKbynhR057JWqeFhN_jNM5vIxBbjUBijqoz7ITmo8qtr03k3GByddgomkmMICZQhwo1fNsGLiS90WzEtMFv_RW_2BHg",
+            "domain": "estupidez-artificial.com",
+            "description": "7/03/2026 — Los copilotos de IA aceleran tareas repetitivas, pero requieren revisión humana estricta. · Trabaja con un flujo claro: define interfaz, genera ..."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 14,
+            "title": "IA para programar: herramientas y cómo usarlas",
+            "url": "https://google.com/goto?url=CAESagHEIkXX0inkrSLLSLzcX8uj5kGkzGCARMjtmQkkAwlnAoUk0j72f2BRcEsKXbmcn0fkeEyzoO31xISf9cJvb4ZLebPkSyMxJmmLM9JqVVk7RAVuT4lX5RSx_xS9L4VvC3KyUsZ5OLriIx8",
+            "domain": "ia-skills.com",
+            "description": "1/10/2026 — Tres formas de programar con IA · El chat. ChatGPT, Claude, Gemini o DeepSeek en el navegador. · El asistente en el editor. GitHub Copilot, Cursor ..."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 15,
+            "title": "Programar CORRECTAMENTE con IA no es simplemente ...",
+            "url": "https://google.com/goto?url=CAES0QEBxCJF18GvoHlhSJj-qtS0saV7ovOzObzNFYW8ZFSriWIzLN4Ucddiin3L0zqU3gyen7f445DE36tkUF5Yxb--bMxK8Vnbyyobj6cb-RkuqkWx1kMeXMmuQ-D4mAn3V0xOFabxkFu2bF6Ey2t4yEWEu8hN01sT53GZwo1zb2PD7zzGZ4Jsn7_fnMggeWkkFTWvoItFVWZ2fXeS4RRUgylEgmGoZObbk6VBrgJ1p8Ocgm3mcbAad1_U2lUcesYXT1z0qv8ySIqogR6ou2M97sSPYQ",
+            "domain": null,
+            "description": "Programar CORRECTAMENTE con IA no es simplemente decirle «hazlo» y esperar el resultado. Todavía existe cierta desconfianza hacia el uso de ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 16,
+            "title": "Aprender programación en la era de la IA [2026]",
+            "url": "https://google.com/goto?url=CAESgQEBxCJF1w8dedZEvlPJibNMbRYTWoMvnfKKr9-HivHK8A4L0_1UNxm7Z2vU5C25hTZ80CQjtLwFaTumuBuY3_L5COSNNIC4cAHYwaqPi1I315AYJ7D7a9FOTMd8FYKxcoTN0rlz0ePxejvcTfzUlFBIOZEd_qWdC5ibO-B6Bo3kByE",
+            "domain": "keepcoding.io",
+            "description": "23/10/2024 — En este artículo te presentamos las conclusiones por las que creemos que es importante aprender programación en la era de la IA."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 17,
+            "title": "Uso correcto de la IA : r/programacion",
+            "url": "https://google.com/goto?url=CAESigEBxCJF1yFIKB3kDz44lVQ2Y-F0Q60Scg75XSaHfK-x1IxapXGkNKxrhv6_r0cWFALu_c9JGib6sca8tDtXHMxSnXXWePxij2-6y8Gof4mQeo-cbklGvyS8Zna0vBoOhzLyFzAA2h6evbmn3DjmX8d6VxY8auEvquRRIbhp9TiSv753uNu1e3U8oLc",
+            "domain": null,
+            "description": "El problema que veo es que el código de la IA es muy rápido pero mal organizado. No puedes devolverle el control después de tomarlo tú porque se ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 18,
+            "title": "Programar con IA: cómo crear aplicaciones sin ser técnico",
+            "url": "https://google.com/goto?url=CAEShAEBxCJF18Cis4FF-hIPVfKkwSuZQx848eJpfl2WAO41sra_yiZTNPE-hc9d8yJLnk8dDcxlfyKkayHLni8_0ZNPZWuq59-FoaXXmAe72IUihfubZ5hp0ICES1tOw0HOcj7r0hj03_7I34XBypyQb4j2fWxDeq7vAQYc2M1S-rNoU6PF5VY",
+            "domain": "spacerock.com.co",
+            "description": "10/07/2026 — Consiste en usar lenguaje natural para pedir estructuras, componentes y lógica. La IA acelera el trabajo, pero sigue siendo necesario definir el ..."
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "qué hace un ingeniero de inteligencia artificial",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "¿Qué hace un ingeniero de inteligencia artificial?",
+            "url": "https://google.com/goto?url=CAEShAEBxCJF14M2t8X39FKO_SA-yeOOQ-AiLZvYaUpVcwk404_q63RC5jwaByjYSDdbVOaHfu30Bzpn56HTrhf1M-O8H4rjQ6DU6znLDkLhFqXq1X1tpR6dtu4Z_CEjkb5F67wofe3ICV-UR0rsFEDKibVZRn1xZd2yKxMH_SYmoX25-aLv74Y",
+            "domain": "ceste.es",
+            "description": "26/10/2026 — Un ingeniero de inteligencia artificial diseña, entrena y pone en producción sistemas capaces de aprender de los datos. Su trabajo abarca la ..."
+          },
+          {
+            "type": "people_also_ask",
+            "rank": 3,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 2,
+            "title": "Formación para ingenieros de IA",
+            "url": "https://google.com/goto?url=CAESfwHEIkXXwt7Y3-kmRK-Ju9tFZJIuhBnF3sUXoUIEsKKPbKnevJraIlMcGmu3F2_kXTU5GZyMCkvOA02wuN01-eFI-K7-ZHP_5cJGSX3aRHb7sePpW42yUbNVF5sh5hZVzFr5Qk6rpHgD88cHOh2fPx4-D7gfhs1Uwgxe3YGbaBs",
+            "domain": "learn.microsoft.com",
+            "description": "Los ingenieros de inteligencia artificial (IA) son responsables de desarrollar, programar y entrenar las complejas redes de algoritmos que componen la ..."
+          },
+          {
+            "type": "organic",
+            "rank": 5,
+            "organicRank": 3,
+            "title": "Ingeniería en Inteligencia Artificial | IA",
+            "url": "https://google.com/goto?url=CAESggEBxCJF1yBZC7OCXwCLqEoOu4gzcuNKiBymCicDXK1dxUu_HRn_cTYnx1AnHXzIBDzg_-vph0fYAxw3SuWNIhCjauAmnQ7ShLsUhyOaTjFa5aCq0i-eWhpDNkHUSJGHIA39uPleLK90ynqC3fgNVLQYp8lPFFehpC87K9F9_ECwdIUM",
+            "domain": "palermo.edu",
+            "description": "La carrera de Ingeniería en Inteligencia Artificial forma líderes expertos en diseño y desarrollo de modelos y algoritmos de IA y su implementación en ..."
+          },
+          {
+            "type": "video",
+            "rank": 6,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 4,
+            "title": "Concretamente, ¿qué hace un ingeniero en IA?",
+            "url": "https://google.com/goto?url=CAESqwEBxCJF1-tBZKf62uqbpzrhWQACuJQPdofZIDm7do0G9dY04-eXjWlcT4E9r90jm43c6YZMDZca0RGBVbfy5DUvKXs2DBZMpoETwYUYkKaSHE-1FiwSCbhDkMFgjGmicY8nIBd3o1b1cdV2hd6mE8Mc663z73s7ZWXHy6kFr8dSu1G3ovRFKYecdmaZGqZlvzaMUBAHVJMZzSnMr2mKykqD0gkIuSpc7C86a2w",
+            "domain": null,
+            "description": "En este momento, se habla mucho de IA y en la universidad, hay un montón de másters en IA, pero concretamente, ¿después, de qué se ocupa un desarrollador ..."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 5,
+            "title": "Programa de Ingeniería de Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESjQEBxCJF13i95Xp9Ur6FDF0QjCGRqlf7f4DSWtYi8PXoCU78112eIxfjGV79NGcxzdhLPxjJH7uiJk8WAyIKSAZNCH4qGpNeGcDfMgJhsUwDZb3cEaGikht8SOelp-_ozSVQ45M0aWBA3ZZxHfNjzxWWHvgUoxNVnL_rFV2KD0hP7Un2prr1jHquGdsvovo",
+            "domain": "escuelaing.edu.co",
+            "description": "El ingeniero de Inteligencia Artificial, requiere un soporte tanto científico, como histórico y filosófico que le permita comprender y darle sentido a sus ..."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 6,
+            "title": "Puesto de ingeniero en Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESngEBxCJF15DqbUrFPSttkkzJJLrhPIMo-msE9I4ah6-zCCY52nW1MeaRr6zKXh9y-rgmnXtKdgBc11ZC9_6cwDO5mjcM_uIqA33YtqIXYEjf-gfzr4Wpq5ieQicP1G72QcXmTjBkszbbh4MUVOlMwjffQJ_y3KDPYNp5oyO0VqidiUd0F6qqsma5_SxRfbShhQuIHd7aCsgDDUk2_LoAWQ",
+            "domain": "hireline.io",
+            "description": "El ingeniero en Inteligencia Artificial crea software que imita el comportamiento humano, para resolver problemas a través de la ingestión y transformación ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 7,
+            "title": "¿Qué hace un ingeniero en inteligencia artificial ...",
+            "url": "https://google.com/goto?url=CAESqQEBxCJF19kXNmFLWD535Ek-QbGLmGDFDWEsD8Fu9V_ld-8jb2k1VCPuzWhprFg-XMMd20fX_RcdwtQVpawXDkYo3OSlU1PX1S2qa4cFNFs4IgGOQ6SYTm9ya94o1JdfyoMybMBhoNI1A6R47jgaxSSEMC7giphhgAcTpa5SsaiO4CtcTZLLDKyoqtz3ccIfsfC5b6k_OBXbt20spM9TiOd1Y6tOY9N1S8TZ",
+            "domain": "carreras.itam.mx",
+            "description": "Un ingeniero en inteligencia artificial se dedica a diseñar modelos de machine learning, desarrollar algoritmos y crear soluciones tecnológicas para automatizar ..."
+          },
+          {
+            "type": "organic",
+            "rank": 11,
+            "organicRank": 8,
+            "title": "Cómo convertirte en Ingeniero de Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESrQEBxCJF1_sGwOmU7cNunBPLaJJyNL3Tci6K0cTfPzuQNd1rbqhXKxRxIXGvzvch-HUlkib_yxl5yrUH9hOeiX-k9rzrvEYtTy3Mu753ZX5wYre6-s7pbeUh5XRCJRbgKiCMK6Sc56mkBBVUHnlKhV7yGuo5ssJysYANcO4bH2vSwqUNHTqUWwWpMZlDAncGeDIwPLBiC9_6lbiBBbG4YEqI2SKt4zIaqajDVfQ0Ow",
+            "domain": "4geeks.com",
+            "description": "13/10/2026 — Un ingeniero de inteligencia artificial diseña, desarrolla e implementa sistemas y algoritmos que permiten a las máquinas aprender, razonar y ..."
+          },
+          {
+            "type": "related_searches",
+            "rank": 12,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 9,
+            "title": "Ingeniería de IA: de 0 a AI Engineer jr. en 6 meses ¿Cómo?",
+            "url": "https://google.com/goto?url=CAESdAHEIkXX-_R-mFqLyglwb_HDO6QyL6rcfMg8PNUHDq_FIq-t4Na2iv938OzwcgaT-U9eNDTuO3GI7y6Gm8vIkj6s6gz-zkDuoMQdJRuGlGhAacn3D9daXZ9zcZRGpoCMhf8WhVXibk9t8kJikQwRMjS4pWnw",
+            "domain": "4geeks.com",
+            "description": "Deja de usar la IA y empieza a construirla. Crea sistemas que transforman empresas tradicionales en compañías impulsadas por inteligencia artificial. Aprende de ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 10,
+            "title": "Cómo convertirse en ingeniero en IA: requisitos, funciones y ...",
+            "url": "https://google.com/goto?url=CAESoAEBxCJF11ZjcPvxLkIu1AzpIdpLGWH3Zz5RJafTPqQvMnNvITMAO1toLBHfHsiu4QMKn0tGWkyKCdIRXb0Toj4TC5ulTH3YfkZhNzxg9icb1PqNmxbG3GfMu18NhEH09XZo7w2pHkrMlLuA5R7WflNVNkZ3SqxCxTKTej_TWMgk0aGMhIZrBREvCZlIxJ_h9Vlyhpuh3LhIBJghLdxTQ2-g",
+            "domain": "dks.digital",
+            "description": "12/12/2024 — Los ingenieros de Inteligencia Artificial son profesionales que están especializados en el diseño, desarrollo e implementación de sistemas ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 11,
+            "title": "QUE ES Un Ingeniero en IA ? : r/InteligenciArtificial",
+            "url": "https://google.com/goto?url=CAESlgEBxCJF18deoXRCy28303A_4FDf5TWOSYue2fpdZlHvH653LKv-dXOe0HR-ECBoGzSMY_xFI01HU2OXbT6xYd7LmQtgBVij4GwT8lHrXUdhGMREUXbhxfUllC809JlacZEAk2vLRgQI16teUQZn0SLt8fDI_u4F_XeA4chjctNzuTxuHwwSP6Fx3pQ05NPKS5XtCrrZJr4",
+            "domain": null,
+            "description": "He visto que no se ponen de acuerdo con el termino.\n\nHay muchos que dicen que un ingeniero en IA es alguien que utiliza las herramientas (las IA's acttuales) ..."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 12,
+            "title": "Conferencia. El rol del ingeniero en la era de la IA",
+            "url": "https://google.com/goto?url=CAESZwHEIkXXCKOpJeCpUrF8LoUS2LLAqLpbsDZ1xglvfdGaWVR8N0ouMQFjegvPGPK4rOVot02vSWdeajKoqG5VQJdwsSi_znV1A0TYCyG1wH9-pkXZByev5zwJGTOLKK4SeR4zJg08RKY",
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 13,
+            "title": "Trabajo de ingeniero de inteligencia | Portal de Empleo ...",
+            "url": "https://google.com/goto?url=CAESfAHEIkXXpAy6ExrQjJLQTKRRvAfuydYcSrQ5P17bBt5zZUnuPtqc4zjDvuRyQdK29L5rq1GdAEVyCrwxfKX-e4PuEpbqySXce5G-PZanvQSQj16rTYx6_7rWCkg4EKXM7ONlTEXL7FtY8fjXnZfpiY70rMg6X-FJGu0HRBs",
+            "domain": "co.computrabajo.com",
+            "description": "Las últimas vacantes de ingeniero de inteligencia de las mejores empresas de Colombia están aquí! Crea la hoja de vida perfecta de manera fácil y gratis con ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 14,
+            "title": "El ingeniero de inteligencia artificial. Formación y trabajo",
+            "url": "https://google.com/goto?url=CAESjwEBxCJF15kTOuStboUUJ5MaPe5GoWUm475hNkwW4BhuQArO6vfviSPjdG_6Vx6CKenLxAnVL0fFqDvUIpKQtcmAisygVYHWooZnfkOfkjdsEBWhSWzEeF76jx1pJThRwDdHVPSIfV5SeBj_PbDZrnN_mvSLZbmfMv8bY5vn93olH8ZQRSGYSj1UCOw57syTrw",
+            "domain": "trabajosia.com",
+            "description": "Una parte bastante grande de su trabajo consiste en preparar y gestionar los datos, ya que cualquier sistema de IA necesita información para aprender y mejorar, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 15,
+            "title": "¿Cuánto gana un ingeniero en inteligencia artificial?",
+            "url": "https://google.com/goto?url=CAESlAEBxCJF1zGbOrsDkM-cacjvTXL5qVV_CJn60yKKn9EqviIYFN83Ghgh5wMB1tEycg9fET1yPZtabXgZlGjrwAJ_uoISc8h0cONuidOPcSiMCR_KyGzZaWDNq262l5na3A3joQh5P7sn1-r0H6v3iSJ9sI7xJ1pVpIADUBDcXyc2x0JoIH2zoK9pXrSigp9ML_S_HVbr",
+            "domain": "colombia.unir.net",
+            "description": "22/02/2023 — Se dedican a diseñar y aplicar las técnicas de programación que permiten crear sistemas que solucionan problemas de forma independiente. Este es ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 16,
+            "title": "¿Cómo es la vida de un ingeniero de inteligencia artificial ...",
+            "url": "https://google.com/goto?url=CAESowEBxCJF158cGK0qnS9yjQ3hJ07b_HQLq8-1dTYAeW7UT1lgAknFqk0BMyFUqwArSumfy8WpWEXytYqu2MX0FfYRDSVOrLJQGMVtFMGfYkPW1LL5EKWeK_rn51rQ2aebNZfL7b0hry_fxWM8UW0ytG91kf2TFGqoaqOdnTWriKuIk60wQ1OGIdxW9_BGMzamXmt6R8qSjDa5O7JwebykwWs6mhjZ",
+            "domain": null,
+            "description": "¿Cómo es la vida de un ingeniero de inteligencia artificial, horario de trabajo?"
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo usar inteligencia artificial en investigación científica",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "video",
+            "rank": 2,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 1,
+            "title": "IA para la búsqueda de información - Inteligencia Artificial en ...",
+            "url": "https://google.com/goto?url=CAESdQHEIkXXQhZ_vG9GCtLDHft6u_vJJDeacnOwojjuu455H_VH-ta1AAC0Yk9-G4_2SmSSbn3nfpA9l1qvRxrIcfANf4TjHS512XQlYOifbZQk3Sq7mHlYBmSxIZXUep75XhqaBgNNVm2mH-rfUQ-2jebPA4wb_g",
+            "domain": "libguides.ulima.edu.pe",
+            "description": "30/01/2026 — Optimiza tu investigación con la inteligencia artificial (IA). Esta sección está diseñada para mostrarte cómo la IA puede simplificar y mejorar ..."
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 2,
+            "title": "IA para investigadores: cómo potenciar tu trabajo con ...",
+            "url": "https://google.com/goto?url=CAEShQEBxCJF14zVg5AudKZ26q5onsU2VwVQnTSe3gjzV-qKyb9NX6fe9tchzugSD3kc_Ixk3rUhdRRxLXzbTTM6mOm3GDkMMHN8sSiLlJddNcnYVMlExznhQBz2kWStaoFJOp4noUTPkzEksZUEZq1cgqI1-iZyQ-BXWYsTVJX0opmvjRfj7QMU",
+            "domain": "maximaformacion.es",
+            "description": "4/11/2025 — Si quieres ver cómo integrar IA de manera práctica en tu investigación, en Maxymia contamos con rutas diseñadas especialmente para científicos: ..."
+          },
+          {
+            "type": "organic",
+            "rank": 5,
+            "organicRank": 3,
+            "title": "La inteligencia artificial en la investigación científica",
+            "url": "https://google.com/goto?url=CAESsgEBxCJF1wBtDjsmpD5FVIjXOhrygsTebCKa68YapjlIi-KuNf4aBUqX2SQ8KKGrLOi1ofpWzQiRh0yo4-QakU8ov13q1PrMYdzH5hf_NRDuIO9cmRYt_iZTIRe6ECDfGJJJqR6lHUJsllaELE52Dibj1f7vqTKgqn-lySa49ixMBry-iufcSlBWnicS3S3QhDC79NnzPeaPVbgSOB_GSg6Gjo0PaPIgtNs7ed1hNyE0i5_a",
+            "domain": "oia.uda.edu.ar",
+            "description": "23/07/2025 — La IA revoluciona la investigación, pero invita a docentes e investigadores a un uso crítico y ético para garantizar rigor y responsabilidad ..."
+          },
+          {
+            "type": "organic",
+            "rank": 6,
+            "organicRank": 4,
+            "title": "Cómo hacer una investigación con IA: Guía Paso a Paso",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXchep0WYrgapKvlFe5J-6ymnnn5tBpNkJg8Lz3NabvwOPFqooZo7UvYgQmwqKJohykRK7MmRQ3ytU8FsPyEZha9yeROKq6cbQMLQTjmJiNEQr-T1GDJV4jwSgy8RBoXzftzXs",
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 5,
+            "title": "Uso de la inteligencia artificial en los procesos de ... - Dialnet",
+            "url": "https://google.com/goto?url=CAESeAHEIkXX8-9JfmQibJSxGn4z-W1BM-tA4jMvKGFboDJCETWxNqDUu2AwNAHKJszd9XVo6GHoKQH1Wad4FOPLvfToWlb-kKKQ6s_InOWSFwGrqfOTgOZoKqjzyRdYckrhQYDtlJI-PpVXh-Uy8Zk6dQVcF6ImAGZn6g",
+            "domain": "dialnet.unirioja.es",
+            "description": "por KEV Buenaño · 2024 · Mencionado por 46 — El propósito de la presente indagación es conocer si los docentes universitarios utilizan la Inteligencia Artificial en los procesos de investigación científica ..."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 6,
+            "title": "Las 5 mejores herramientas de IA para científicos ...",
+            "url": "https://google.com/goto?url=CAEScQHEIkXXUnSAImLRmZj2N83w-9-A5KNbY4BMu0DKCionzCkC-XfilqfuB5CSWuXrZEmuz41h9PmLh8ly6JHtt5HpD7YMTeVZaK1YZmBw37bg_RMGqiB_5WxhjuS08Erb3vrkx7o_Q_i2rTVotz73ymEy",
+            "domain": "sonix.ai",
+            "description": "30/04/2026 — Las mejores herramientas de IA para investigadores científicos deben ofrecer precisión, compatibilidad multilingüe e integración perfecta con ..."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 7,
+            "title": "Cómo se usa la IA para investigaciones científicas | Blog",
+            "url": "https://google.com/goto?url=CAEShAEBxCJF14sXqYCY5L1B9-JdJrqIDi--nnzIIJ0pIl6Q9XORb2QsdjA_3E6i0Fv9k99qPH2xx94CLJmFnfWdVXLHnyUUmycTGnBPYcNUKHC2bl61DPdF_XyY7Ca3GqfRsgXkhLyet6yl-zRn4G_sHeDcD2jv9n_SpSBdk9QxXeXVwsZO0eA",
+            "domain": "maximaformacion.es",
+            "description": "22/08/2025 — La diferencia principal es que la IA aprende de los datos y es capaz de detectar patrones invisibles para el ojo humano. Esto permite que los ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 8,
+            "title": "Pensar la inteligencia artificial",
+            "url": "https://google.com/goto?url=CAESegHEIkXXEvhcihlngeewnbuwx7Wj4lVZVZzQ9l30YDbEDWEZ1fPqqf1-8zosl78-ONGxe19sEfhL0L6FQaqvGpypKOhaQ7mjymt2SPbifLGh9AMOCRy9iaT0DG7IvgpGVpa0erXNixS9Acjq_ERar5U-n5_Eyo-UmN_G",
+            "domain": "conicet.gov.ar",
+            "description": "27/07/2023 — “Se trata de “programas informáticos diseñados para imitar la inteligencia humana y realizar tareas de manera autónoma”, define Vera, y ..."
+          },
+          {
+            "type": "organic",
+            "rank": 11,
+            "organicRank": 9,
+            "title": "Uso de la inteligencia artificial en los procesos ...",
+            "url": "https://google.com/goto?url=CAESmgEBxCJF15yVJRH2hmOt7oF0wssb7xVJFdPMialtXXj2p_WLf3V4xA1C5UDo8-nW6E09Ooow2Mdx8WnjS1rOFNlU9-9EIArCphQJU26_md2MQ67pX-FlaPT4xdgpU_V77T_OReiO9ZhGoAMrQmUs47Xu0sYPsT9l6q5a0xER54FpQUyFiG8-NjwUPPpauCr-Z_KIc1-EBWw692tx",
+            "domain": "libros.editorialunioncientifica.com",
+            "description": "1/05/2026 — La inteligencia artificial se ha establecido como una herramienta importante en la transformación de los procesos de investigación ..."
+          },
+          {
+            "type": "organic",
+            "rank": 12,
+            "organicRank": 10,
+            "title": "Usar IA para investigación científica #ia #inteligenciaartificial ...",
+            "url": "https://google.com/goto?url=CAESaAHEIkXX5t4laroN8PVGPsBe7CyM5-13SWQROKeigwyOeW2Or836JXNS4sn8fc8Se95UzzzA27njE4FsCTY8_P7cQ2_1Dav0lgFHsjBOGhfx3wKTQIkMSLRqKzXJG05UVSn9npHwpJNx",
+            "domain": null,
+            "description": "Cómo usar y cómo no usar la inteligencia artificial para la investigación científica ​ Cómo SÍ usar la IA en la investigación ​ Como ..."
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 11,
+            "title": "Vista de La inteligencia artificial y la investigación científica",
+            "url": "https://google.com/goto?url=CAESfAHEIkXXyzoQfMT2iEVPTot_EuLYy_gOo07i2jTqWyWUkhkfZgkgPzRkWDFweBffkLGyRO6UwkU6YFHMkS1mF5OnffLY_cuxjls5W7OjQZVxDQvm3Py6j32DB9H9DYoxXZJX8qn9lr8JbBmEblghom0boIxil2Mqv_hw6Jw",
+            "domain": "revistas.pucese.edu.ec",
+            "description": "Asimismo, la IA facilita la automatización de tareas repetitivas, como la recolección de datos, la clasificación de imágenes o la revisión delaliteratura ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 12,
+            "title": "La IA en la investigación científica: herramientas, prácticas ...",
+            "url": "https://google.com/goto?url=CAESxgEBxCJF10BmcAyhGLsiFAybDsk8MJQDyVuOLkv_Gk-ijc-5OT5agHcKvlL5ehfY9seByDXX0ZUR5Itf2wtsp4sXQrbuH8Vp3FyUm4L1SE1bQgcHqlQO9kjvY6d5_u6Oi7Q1zmF5V9hM0XYp9gsanF-kIv6dTOoV7r4S6oCDWxt-C2gzrdB5AwOzSVt9LWRDPMwr-uz-lPbGKDd1PKM3EtLA1Hp_DM21Uo4Fzrz-s8J1oeZSRDKMGjkCaXPaqOljgJ-gT7w-0zY",
+            "domain": "upo.es",
+            "description": "Uso de IA para redactar artículos científicos, propuestas de proyectos, abstracts y CV narrativos, incluyendo adaptación de estilo, mejora argumentativa y ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 13,
+            "title": "Top 4 artificial intelligence tools for researchers in 2025",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXVKa3b0wCn0zmG980qibxKWaHxWEO4FqB0gAXOO1FGSy4cUwYGUKqOWjSR73yDluZGJkt6qpRdUEowNyh51RA-N3ZdVz-owOtWCcTErMnateNvQZmzuX1BV_XLMbCcyafAZCE",
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 14,
+            "title": "Inteligencia artificial en la investigación",
+            "url": "https://google.com/goto?url=CAEShwEBxCJF14FQx6kKJG3sFS4FKA6QSQVEBUpKN3mmOUKWW12HVsaQ7Lhe01z88hytqVGOLk62vhOWfFv6hqGTmsMbZIuU8uo_3Hgfc5aNpRhXsyt1Osp8FPYK3nNvIjo4iMFBZckUy79m_gTKpgCxnW3t4fj3EN03ND0Qr5wU9cj2xztTvBQn7ig",
+            "domain": "ucmconecta.edu.co",
+            "description": "Además de potenciar capacidades y abrir nuevas fronteras, la inteligencia artificial busca ampliar la mirada científica, permitiendo a los investigadores ..."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 15,
+            "title": "Guía para uso y reporte de inteligencia artificial en revistas ...",
+            "url": "https://google.com/goto?url=CAESdgHEIkXXG5g8Lu9xSUstZkQuFza0H8NVhFHutwLlzjtu3R7ckHY7GKK6QdxTcP3-j-QPZ96njsGYWQjuLe8ZrQgAJp2pE4z_gSdbPWOPidzzL-Lo5v4E1EHPX9CZUNDUxLKcmTSGgPRPe22edYBYzXFpB7cA7Oo",
+            "domain": "dialnet.unirioja.es",
+            "description": "por LP Camacho · 2024 · Mencionado por 1 — La Inteligencia artificial (IA) propone una reestructuración de la forma tradicional de hacer y publicar ciencia, ya que aporta herramientas que complementan, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 16,
+            "title": "Potenciando la investigación con Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXZQ7N7InPKVVhhEJYeUQunCXnrZM0tm0kmwwzTo18PdfrqMkYMAzzWqcGBd2KASOHkdTN2odffClVIZX1VTApKCDFc1DwsuL8BmV0igL4vp4oNerqoUmTVIQosnLCHnrN0xfZ",
+            "domain": null,
+            "description": "Share your videos with friends, family, and the world."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 17,
+            "title": "Las mejores IA para el investigador moderno - Grupo Educar",
+            "url": "https://google.com/goto?url=CAESkgEBxCJF11-SuPePPjXWleghNiMfWXJudHz8C7WDKqrANqTYC62_2X-b9AeYhhRgz6RYdy_Wm0K7MS1AfkpC4NXh0kf1MwtGyS05tbAU_2vjwiaSIqabj_zMPdSne4iAYoKgR0o3FTs8jptcgmQRF2B3Rxikzz5bbwuZ8timvQC_8kaTcEZ5MGlww4jzxVDNjZAyxw",
+            "domain": "grupoeducar.cl",
+            "description": "28/09/2023 — No todo es ChatGPT, hoy en día existen más IA dedicadas al área de la investigación científica. Te presentamos cinco de ellas para facilitar ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 18,
+            "title": "Cómo usar IA para la investigación: Guía completa",
+            "url": "https://google.com/goto?url=CAEShgEBxCJF19jHW45Pn2hi5CYd8xkv1XZXs9idq-UelOYD3nIF0L1e5boujimIu8XecZNFeAfYQaAWB3Q2EN6gUSrgzP7iZJcX7aG2Vo2_zMlfWN0HypnL-VwFXCg0RpyXtGFQF8beMeX1pf5Yk8_7tGzhYn1ilMHDebuuEZIAHyD-p94h_kMpDA",
+            "domain": "cowabi.com",
+            "description": "La IA no solo ayuda en la recopilación y análisis de lo que ya existe, sino que también puede ser una poderosa herramienta para explorar lo desconocido y ..."
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cuál es la mejor IA para investigación científica",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "Probé 5 de las mejores herramientas de IA para ...",
+            "url": "https://google.com/goto?url=CAESqgEBxCJF17zlHSqGzpmnxlAp-_cPjTW95hZb3B6QPBoGwl0JdnL5e261mIHI60BmtoJlQlAPMqGwS9vS0AL9mRLhTMMPx2MtwKJjpkB0Wnl8r4gfyHLuabZjhg0o-k1NK-5HtQuxEcB3ZeK-20S3W7Jvm5xTydcrgqZSoIDYIj9tiKtUvChd13g8ELnPy8oJV08pgeP5FQ9WB1YVUyG9yC_ACjtAtFORvEvkrA",
+            "domain": null,
+            "description": "1. myStylus · 2. Scite · 3. Elicit · 4. Perplexity · 5. Consensus."
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 2,
+            "title": "Inteligencia artificial para la investigación científica",
+            "url": "https://google.com/goto?url=CAESkAEBxCJF1znax9AO43XM85aqIRfYLkTHZKVcIKSMBG9XW0ND7NFkjbxufhXCniVuYnJVSM2Jwi8Xp1IvX8C-ThOVnXPJmOtS7woUc8khZXv4IC4KbY3GibIJKhyCnRqGMJHCkxEvLbiQuAFhClI5mikkngypv-ScxhMXEQThvxMzz4BhT5J_tGCEp5uBE_DMnfM",
+            "domain": "uclm.es",
+            "description": "Scite.ai, es una herramienta de IA muy útil para descubrir y comprender mejor los artículos de investigación a través de las citas y de sus contextos. Stable ..."
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 3,
+            "title": "Las 10 mejores herramientas de inteligencia artificial para ...",
+            "url": "https://google.com/goto?url=CAEScAHEIkXX66oZoakehDoDerA9jP2rDlzVtWaz5Z7ILNN9zulsKuFBaURfaIQP9Jgd7z_OazJE3OVzD7fXAuR77QbTXDy24OTx3JN616N3Pggdwsu8EEK-Zyqxu5QbcCny-lmSC9ILrAvpVGXPzF_y1FA",
+            "domain": "powerdrill.ai",
+            "description": "30/09/2025 — 1. Powerdrill · 2. Paperguide · 3. ResearchFlow · 4. Humanize AI · 5. HumanizerPro · 6. Semantic Scholar · 7. Scholarcy · 8. Scite."
+          },
+          {
+            "type": "organic",
+            "rank": 5,
+            "organicRank": 4,
+            "title": "¿Cuál IA es la mejor para apoyar la investigación científica?",
+            "url": "https://google.com/goto?url=CAESsAEBxCJF16OdVs1oHu9vX4iqbpiCLar_Q_Kf4iTYVQum-1QfayN9tfsXHrbLZ8pj1aiGRoNcq1jhdC2GgK_RyQVEjuGiJfCpkVDElpOp_tDGToYRHon0ipt7RdDj8UkVe7dpszLEflPUf76COsCQxdOA7s7elbzdOlLIu5B45p29M6VpMsZCPe4apyu8rm8ZElT8dDX5343fo1TgMcziYt7m-rL2hCGZSEEWobvwhOJiBA",
+            "domain": null,
+            "description": "Estoy trabajando en mi tesis de pregrado y ando buscando una herramienta de IA que me pueda ayudar con la investigación científica, obvio, no para ..."
+          },
+          {
+            "type": "organic",
+            "rank": 6,
+            "organicRank": 5,
+            "title": "2 BEST AI TOOLS FOR RESEARCHERS",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXWdG0KQtRpn052-n-bYFSUKGuNhY1xPsbmM_YMEDSlTSGD2r8N57ovMbql1mfOWE0ISNFDy0ZjOOh1Mn8sC5AIIMMvFmYgfk4R4aprc3mH_j6Rhpb9hdwyPltX5tGCm49AJeX",
+            "domain": null,
+            "description": "Bienvenidos a Claves para Investigar. SUSCRÍBETE AHORA: https://bit.ly/44h5NWv Te presento dos inteligencias que te sorprenderán."
+          },
+          {
+            "type": "video",
+            "rank": 7,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 6,
+            "title": "Las Mejores Herramientas de IA para la Investigación ...",
+            "url": "https://google.com/goto?url=CAESlgEBxCJF1zCprnr7eX38i2Vx0UY6lOy7XUeGRaOzPtnZ_1i3zUj56CA1DGnrk_LWB-n2JENNNBvjuB-dq2ZMRx-BlA-N8Xwx9T1MvcBFtWu5aSt5kXLsUFh9PIK05BNuZtiodgjU9jcSne-FTpeL1fEpCPADJBYa7AeKlqGtWWMHNigswj0BcK5v4duuBApwW73wxGKJaWE",
+            "domain": "resources.rework.com",
+            "description": "17/07/2026 — PaperQA2, su agente central de código abierto, es el primer sistema de IA documentado que iguala o supera a investigadores de biología con nivel ..."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 7,
+            "title": "¿Cuál IA es la mejor para apoyar la investigación científica?",
+            "url": "https://google.com/goto?url=CAESqgEBxCJF1z6vuiigvcOCmx6pVDb9-rRIbEVKZbrsHPxp1HcqZoWGW-kvY1gmdqlQXfbRhIi-hYRTok2QW2wwDpAvE7m6E77F5Yhu2PADLoRQeUvM1Qey3dvIXlpp_UOk9caQrlmRItVwl9Fhu7onxONobvvNwhELNGnoo4aBixrnc5vm6qHABai3N_1m815c6zbGZDQuG06PnesMrguMRevLTnn3WVlay9_zhA",
+            "domain": null,
+            "description": "Estoy trabajando en mi tesis de pregrado y busco una herramienta de IA que me pueda ayudar con la investigación científica, obviamente no para que escriba ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 8,
+            "title": "Mejor IA para escribir tesis: comparativa 2026",
+            "url": "https://google.com/goto?url=CAESeAHEIkXX2NAUVWwzTahviE-f5kIPZ53Fn1iEOP9pLY0D1CaR7PRyDrzjaQ3KMGQQRK-7WktSea6yQs2roMt9cMt9XMYw39FsXweZ6Xh8qOymJw9X7dJ5zeIIRcXz39yswECNebxuOQOCYAHl1CMARLYKoBY9GVqORw",
+            "domain": "studytexter.com",
+            "description": "Comparativa de la mejor IA para escribir tesis: ChatGPT, Gemini, Claude, Perplexity, Elicit, SciSpace, Zotero y StudyTexter. Esta guía está escrita para ..."
+          },
+          {
+            "type": "related_searches",
+            "rank": 11,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 12,
+            "organicRank": 9,
+            "title": "Tipos de IA para la investigación científica",
+            "url": "https://google.com/goto?url=CAESowEBxCJF16OzCI5REgyfmDuV1LKDtG8Lkp39aEPc6yw7_UCLmLXitiuh6PM043R_AK1ekVKLpmTdtKTvzh3IRrQU8R1Gd8bW1OsFoKQE8BNEn4yRbZ2GFTxwt2GbFBkm4mBTXvqM9fvyS_zGAWSLHWQDyOoFyQ7B_WdWiAuj3CgXs1Pp-v3cBBNXrLchfTKGCZbo_a_W-MZLqZJDmDEBsMI5vrD0",
+            "domain": "guiasbib.upo.es",
+            "description": "31/07/2026 — PROS: La IA permite la automatización de la búsqueda de artículos precisos y relevantes mediante algoritmos que escanean bases de datos ..."
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 10,
+            "title": "Las 5 mejores herramientas de IA para asistentes de ...",
+            "url": "https://google.com/goto?url=CAESfgHEIkXX-LKr2ig-o9e_2o47TJwszkWd6oPl17_PfTSH17uX9KaNCNmMVAl5qt7Qug7RwAUzlPemhGODLDG_mzfUuoUjTUyI7XNjYNKI6ZvXtzCIuTw8kD_LOwcLkWZiA9O75mXs6M5CDQadXS0BpJUWcmwbVpFd4js0kFaRvg",
+            "domain": "sonix.ai",
+            "description": "30/04/2026 — Las 5 mejores herramientas de IA para asistentes de investigación en 2026 · 1. Sonix · 2. Solicitar · 3. Scite · 4. Undermind · 5. Consenso · Cómo ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 11,
+            "title": "Las 7 mejores herramientas de IA gratis para buscar artículos ...",
+            "url": "https://google.com/goto?url=CAESpAEBxCJF1xm2kqab7JjKOuC5-kKO-yQkQsWjSk1QHqJaZRPK_ZXsI_vW1Uy3bjt1083v1t2ykBiXXJhWSRNLVvvb9QrpidFzS2CM1Y7PSo1MHG-1eUOZfkbbqv4tJq3R39aLFTvgNJK5Hluh_erf4Dl9yGE7METfklQUKZNwg46X5sIXOdVGWF7OHygu4k5zddFfsovWwgx68E6M0Irz9p8jP4zLNg",
+            "domain": "octoparse.es",
+            "description": "18/06/2026 — Elicit es una herramienta gratuita creada para automatizar la revisión de literatura científica. Su IA te ayuda a encontrar, resumir y comparar ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 12,
+            "title": "¿Cuál es la mejor IA para hacer una tesis o artículo ...",
+            "url": "https://google.com/goto?url=CAES6QEBxCJF14I7mBScmFosmB7ylXvbgbNGafyu4hP1bm1jDsfd5RBRwmjABV-0sJBeKLqh3smoPJhDiz5SR009JICI22GAFEJE-Z7Z9Xo8diSVi_9Ww5q-s2mkFf915zXSGpGgiWshANI27jF8OALTqU4XPf2GK5ZQ-xKvW0Ou9DfzJrGdDQ5YRth6_RBo2f7EbOZ1-N3EIUFt5w3pLvoJzzj44CVePE52O2-9acSMFESLcSlDJKB_21x4hrzvSapXyCoOcYXmS2-MTsrmLZhacgfZPDP8NFPxB_DOkZ09isX9nunyvdSPu8PENQ",
+            "domain": null,
+            "description": "La respuesta es simple: depende de lo que necesites. Cada inteligencia artificial tiene fortalezas diferentes y, si aprendes a combinarlas, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 13,
+            "title": "Herramientas IA gratuitas para investigadores | Blog",
+            "url": "https://google.com/goto?url=CAESjgEBxCJF11r-1LtB11IXYdcwolUpuVzKPSrKF0R1qxv538oOTil2_VVUsL158Wmdz0UqQBduDLG7at-Tb5KekV9a2Xy97F2QH1n4OzBVSE1TWWd0J5s7mdM4TxTtm0qbLeA5eCdWPkpgOo_-Um2LT80o-4kd6BrgS1TZhNKwEZaevEDWLnRnjklafdOLSX7P",
+            "domain": "maximaformacion.es",
+            "description": "30/12/2025 — ¿Cómo elegir las mejores herramientas IA gratuitas? Aquí viene lo importante, porque no se trata de usar todas, sino las que van contigo."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 14,
+            "title": "Las 5 mejores herramientas de IA para académicos en 2025",
+            "url": "https://google.com/goto?url=CAESbQHEIkXXwRwrPEI6hyUR5AkoUMj2ieSvkMsN97hG2nqj_8EzxupHCWDVHzoCOyfzAV6fPAaqY3B4GTa8Dbjn9BoPyJTlGnLEf4gkOuqrSNLvzjNn8FeTHWcOGGI7CqcQ66JIifx-OF9YySk5N2Q",
+            "domain": "sonix.ai",
+            "description": "8/05/2026 — Las 5 mejores herramientas de IA para el ámbito académico en 2026 · 1. Sonix · 2. Conejo de investigación · 3. Consenso · 4. Indicar · 5. Scite · Cómo ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 15,
+            "title": "¿Cuál es la mejor IA para investigar? : r/OpenAI",
+            "url": "https://google.com/goto?url=CAESnQEBxCJF16tm6N7jZXuEtxprS7TZUP_4tuhmJ21BkVq8aLNUNRHMdRF4F6NkT8KPLL4qTblXPUZXKSd5HQyMaQyXsCu55R6jtVoRZRveq3LVbGJbG-i7tvXRw95G-pmOoegoMPeX0MxfmWXA6pM_PXcpK8a2hfZIZy4RfLLOty-04NWvJxUfiKkogTEGEULEQb2tm68gEEEbK2mumFWy",
+            "domain": null,
+            "description": "Como dice el título, uso ChatGPT la versión gratuita un montón para clavarme en cosas random, o sea, aventuras de negocios, datos históricos, etc. ..."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 16,
+            "title": "Las mejores inteligencias artificiales para estudiantes",
+            "url": "https://google.com/goto?url=CAESdAHEIkXXrckYyMDyPwLc7cFizk9hvjPwDuZ37SHb3HtnL6dd_wccjCYjdiPHPU5LktssVnL2xbYYm_Q9wA_61TERedZMgGm9WgxpLTtfPziEr7e4rgMfbVvtgYWAkPJhD-sAkGUlOwARa33ejvjPRQp3V8om",
+            "domain": "xataka.com",
+            "description": "5/09/2026 — NotebookLM es posiblemente una de las mejores herramientas para estudiar basadas en Inteligencia artificial. Viene a ser algo así como Gemini, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 17,
+            "title": "Herramientas de IA para la investigación: Revoluciona tu ...",
+            "url": "https://google.com/goto?url=CAESfQHEIkXXCLwJkwaoI54ZeM4RGSCdDFdMN3-A75v3PuauJpHhB3egn1v39jm75Y83wd7cpvrvoAsT3kZDqkO3iTqZZo7CZ7WoAmLWdPRK6SWTrpb4E9iWlpS_pjYqHKB4oc1dWCJvdCsVqbTZWdnvUAdph75IRRXrN88yA-AG",
+            "domain": "scispace.com",
+            "description": "20/09/2024 — 1. SciSpace ChatPDF - Asistente de investigación de IA que le ayuda a comprender artículos científicos. SciSpace-Copilot- AI-Research-Assistant- ..."
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo usar la inteligencia artificial en finanzas",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "Curso de Inteligencia Artificial para Finanzas",
+            "url": "https://google.com/goto?url=CAESYwHEIkXXUzURBzAj8wyZtro8eBZQJ0mc2Bxh-pnIqt5MpOQqXJPVhoZsMcLMZhHFYn4c5YJoSkpaSyasER4DPiIq4UByjQ3B88FzcU9I-pU2b_DZlV6O1PEq8IEFGIBKxlM_Bg",
+            "domain": "platzi.com",
+            "description": "Implementa IA en finanzas para tomar mejores decisiones, automatizar procesos y analizar datos con precisión. Aprende a usar herramientas como ChatGPT, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 2,
+            "title": "IA aplicada a Finanzas: ¿Cómo especializarte?",
+            "url": "https://google.com/goto?url=CAESpAEBxCJF1zPVO274UeVrmKfQhVgMleca2exYZKiPFqNjc7ZhfulXyGVD2hjskUESQk5FmRuvxDlXsMEtqx8_5Wx9yKBOUeAKwLOckgS_0m8vZehPCptn5OAE9fsCmWT-1vt_Pn-jhp5Lix1q2BAewzsk2JqehOjaQRBeAu2RyT09oTOjtl-g8Z5htWthNgctYy1EnQ4sjQfK3ssl3tgkB6fnvAx0JA",
+            "domain": "aden.org",
+            "description": "24/08/2026 — Te familiarizarás con herramientas como la regresión logística y los árboles de decisión, que te permitirán predecir fraudes, fluctuaciones del ..."
+          },
+          {
+            "type": "video",
+            "rank": 4,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 5,
+            "organicRank": 3,
+            "title": "Curso de Inteligencia Artificial aplicada a Finanzas",
+            "url": "https://google.com/goto?url=CAESmAEBxCJF16ZRM_tXEwbpY3FqAvx4-w_yt1JNW-HIbI_0tUPX0OKca7s01KIt3EqtpXCp28gAGVD8paACvjN66D6tDaRw3sPYNiziGAjzVpxR5nF_bUEBEC9-JJT9KzkcfSvAZ4chm3ukoCil8seyrufWaKrSXrxKuDjwd8846OI44Ok-5QP-ItFTYutCxyxKpfa6F-ZB1gsmSw",
+            "domain": "colombia.universidadeuropea.com",
+            "description": "Comprender a fondo los conceptos y tecnologías de la inteligencia artificial aplicadas al sector financiero. · Identificar y automatizar procesos financieros, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 6,
+            "organicRank": 4,
+            "title": "Impact of AI in the Financial Sector | #AIForum Finance",
+            "url": "https://google.com/goto?url=CAESaAHEIkXX2u45zVqKEC-cFo4gkC2XbGDZf9wVWSOvnpq2GUwa6keh59PAAs9yno_woZwBAFxVE_yDv7ynj_AHu8Sw9Oh6fEY-6S2uQzlVvj2qDBvh20V_VdQY4_OFsvcdLx5zovlcAdb1",
+            "domain": null,
+            "description": "Impacto del uso de la IA en bancos y empresas financieras. Durante el foro, descubrimos cómo ... inteligencia - artificial -sector-financiero/"
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 5,
+            "title": "IA para finanzas: guía completa para aplicarla bien",
+            "url": "https://google.com/goto?url=CAESZwHEIkXXHly9ZQopgjHgRtvwyMudXaLVhmNLJGBiUDmoF3CDduz-DSeA3i9XUVZTJPFyXFLAOFdbzc2KJwoPAEE1lh6C6DAvb_1NR0tpkL9q4pEz-n-Rxvaxd26fYJnbchKSbmpzkvs",
+            "domain": "growitschool.com",
+            "description": "11/06/2026 — Descubre cómo aplicar IA para finanzas para ahorrar tiempo, analizar informes, preparar reuniones y mejorar tu productividad con criterio."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 6,
+            "title": "¿Cómo aplicar la inteligencia artificial en las finanzas ...",
+            "url": "https://google.com/goto?url=CAESfwHEIkXXa6ojowRtoX-F0v6r5FLpne4HBrGIacBrf0VfNzIYbaf24BJkXHRBP3r2sjZSywEtajlC07Ne1Q-Pzmv4WDOTGpV4tVt9-1GJX7eAjJUyEb7gHH4A4lIYWiEpk5QWI611L2wyQocC0xkpEtc0o-BnL834SAbQvBFCdg4",
+            "domain": "capterra.es",
+            "description": "16/04/2021 — Automatización inteligente para reducir costes y tiempo · Análisis predictivos para tomar decisiones informadas · Personalización de la ..."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 7,
+            "title": "5 ideas para aprovechar la inteligencia artificial y mejorar ...",
+            "url": "https://google.com/goto?url=CAESnwEBxCJF1wBt5AH4uU9DGYw3fl0aBEe-W8YyYmQiQxLYGg5hqim4BFKWYv2htivqopM1YXMHZcoAZWv0lTarzxQwGLykyF1Nd-AMbFyAArVt-8FAbpo8jsj4JvijqO4lT9K95yTrS-cjT1IVuTr_VxwK4oYovruenG5TvrdycVYuo59V_O5myo0__5D3Jh2vBN3bE1wPwXQbqnBvau7gcQY",
+            "domain": "maicito.com",
+            "description": "5 ideas para aprovechar la inteligencia artificial y mejorar tus finanzas · 1. Asistentes financieros virtuales · 2. Automatización de inversiones: una propuesta ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 8,
+            "title": "Cómo la IA puede transformar tus finanzas",
+            "url": "https://google.com/goto?url=CAESdAHEIkXXFmS8kA-fBT2YND7deXR3x3XolkYHjwoYRKn0hu5VRJKMZM0iVTHuKv9jxEe2YC1kRyKUEVmkJ2lxLcDmT-kwgflq5WgfbFuY_Yt15LBV3LV7vlm2pkl3SAhvYMZG-Npmt2ezq3SiZgT8wckUjlsn",
+            "domain": "anatrenza.com",
+            "description": "18/09/2024 — Aplicaciones de la inteligencia artificial en finanzas · 1. Gestión de presupuestos personalizados · 2. Inversiones inteligentes · 3. Detección de ..."
+          },
+          {
+            "type": "related_searches",
+            "rank": 11,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 12,
+            "organicRank": 9,
+            "title": "Inteligencia Artificial aplicada a las finanzas: Guía completa",
+            "url": "https://google.com/goto?url=CAESmQEBxCJF184NYYfdQ57wk31SaZyjEnJeDlP7zgyFC1l4V7dHbW3-RV6JncFFmo17V5W8CPDjHkT9zQaGyZWp0WwFqChADk2OoxuyzlL-o8GmuqeAXfWlkTcK5v-QV5OJ_aC74JvIdjU16855Fzfp3sLXHmixxzPLZUzS-xFdww1yIPdHjiyXbyAsgkfllfxtn3rR6RLpncsQxNU",
+            "domain": "iebschool.com",
+            "description": "25/01/2025 — Retos de la inteligencia artificial en finanzas ... En este artículo te ofrecemos una guía completa de cómo la IA está transformando las finanzas."
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 10,
+            "title": "Qué es la IA en finanzas",
+            "url": "https://google.com/goto?url=CAESfwHEIkXXUP0PhYrAcJVk9BjesYilKlYZtiPk_BIhJbRSn9jHBaEK-xtaaYfzRfseKX2qymgWZlNf408-4Cp1EvQ5sdI1JyfFYaGx3v4FT-s7a0iamydrnc9lQsb8DGC-K5GXyf8LYHZRH6GY3PKiYpapos4yHoFhagLYl38b6Gk",
+            "domain": "oracle.com",
+            "description": "Descubre cómo la inteligencia artificial (IA) y el machine learning (ML) están transformando la planificación de recursos financieros y empresariales."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 11,
+            "title": "¿Cómo se utiliza la IA en las Finanzas?",
+            "url": "https://google.com/goto?url=CAESdwHEIkXX6AfzyiD4Q5JD7fDr4pS0gi1-IplT9pdJFqJ8KM1Cjbfvnm7dL3kApyJ4vCgr6mqjCHffcHf9QrRt_Y8pS0ASgA6H9YvKE--2OF0tJH5OJ2_cWG9CtesY0VcKJpBfkAIGNe_1_Fg2DvAcgmo9ygpkVQl7",
+            "domain": "electroneek.com",
+            "description": "10/11/2023 — Desde robo-advisors hasta la detección de fraudes, la IA proporciona una amplia gama de aplicaciones que han revolucionado la forma en que ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 12,
+            "title": "IA en finanzas: usos y beneficios para CFOs y ejemplos",
+            "url": "https://google.com/goto?url=CAESYAHEIkXX0Xp2mTRjFTkyNhr3lis_aRDjiW5Ppn2rtfDrtHbOKjl6aIaZ953f4EoZ_sCVEFAIWlzwSSfVapQD8W8vAHcKRclESwBmGkCjJFTq2BVw9mXeQocNJyw5dmfofQ",
+            "domain": "blog.pleo.io",
+            "description": "24/03/2024 — Aplicaciones de la inteligencia artificial en las finanzas · Automatización de cierres contables: la IA en contabilidad ya es una dulce realidad ..."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 13,
+            "title": "IA para Finanzas - Masterclass #1",
+            "url": "https://google.com/goto?url=CAESaAHEIkXX4h3fwfrTVLwyRJ7YeLBclCIgw2qhOtmVfs8AEHVZb8RH8_gnuG4EDX14bqdYgSv2_4ZYnkFm6vwQ_2UwNAKcnbJd1ZJrRMMmEIwU6HKzXaMTErsX9-6NYmVX-6T_PHSt43t3",
+            "domain": null,
+            "description": "Cómo usar Inteligencia Artificial para ganar más dinero | Eduardo Vazquez y Marco Antonio Regil. Marco Antonio Regil and Eduardo Vázquez IA ..."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 14,
+            "title": "La inteligencia artificial aplicada a las finanzas de ...",
+            "url": "https://google.com/goto?url=CAESgAEBxCJF17_M8o6ujfilo-ll3UsUZYD96BOWSFyC3GG1NvZx88nSzZxbcbTqk-JF1zPBWeIFU2mbhKF6cVyeS9WMHhAaGMC3KXs8VJN2mHK_OlGzcviSwpQ5cJ3eQAxNH_nYfqkvslcantrUjeckpEoZifbxq_NNPcJeuYI-mxlglA",
+            "domain": "payhawk.com",
+            "description": "22/05/2024 — Análisis predictivo: utiliza modelos estadísticos y algoritmos de machine learning para predecir eventos y tendencias financieras. Sin ir más ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 15,
+            "title": "El poder de la inteligencia artificial en las finanzas.",
+            "url": "https://google.com/goto?url=CAESrgEBxCJF15fmtGogCvIX-vDkDFbzr3YSNr4cxW_Eum6GJ31lygTiC0ByhH5RhenQg0QcIPs5ubfJP31XF0-YLk9epQVmf6oBcDOb5b2oLgEqdYzLKYmREThJ7ru4C-sQPAM06sUt9kGyUwhjr5Z0kyCfCBTxr_2FfsNpSxtKE28XgeJnzJCsBmRClkZvjVVwoKAWalx0jNtGrwvKfJJJoOvJgoFPPibK1KmQttEE4kw",
+            "domain": "observatoriofinancieroybursatil.uexternado.edu.co",
+            "description": "2/04/2024 — En conclusión, la IA impulsa la eficiencia en la gestión financiera y permite enfocarse en metas estratégicas, representando un avance ..."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 16,
+            "title": "La inteligencia artificial en las finanzas. ¿Cómo se utiliza?",
+            "url": "https://google.com/goto?url=CAESkgEBxCJF10-3XVAe-8_dwKpBrN2k860nmBSDvGONXNU95e2OrAYHhvYd1X74VAQKvykp89BYPvIJ1aSWPUFbrA-FRiRLr834XCSeTTKMMAph7-5gyCWLuznTTzME_9bYYuwfBC0BCLjNVz0CtntNgAaRsG-BL0j9PhoyrDHeqqkzGdlK5-8ICQKpJIyBRNRDDnKQxA",
+            "domain": "consultoresia.com",
+            "description": "La IA hace posible automatizar tareas empresariales relacionadas con el apartado financiero de la empresa, principalmente la elaboración de informes y la ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 17,
+            "title": "Cómo integrar inteligencia artificial en la gestión personal ...",
+            "url": "https://google.com/goto?url=CAESowEBxCJF1zRVIZz72IrxkRawph5sWAdlDC-QOgXG6my6AjxAQlPW1l7mOeW2WlyT3TLudJ8YFe1b3P5lm11tJWzPZNs9LBHr54Y6syJJ4tbOaRdd0y3mwWOurY_NSzKL00YJGDmt4Q0RA26UaJolFjtlfrdbNoTwDkeHBKOnUs00_EydQJ-lIEs8G3JljZJ7qpLxCpDfqDFIWt_xDjGGJmJtDQ4N",
+            "domain": "monet.com.co",
+            "description": "9/07/2025 — Puedes integrar IA usando apps financieras que automaticen gastos, generen alertas, analicen patrones y den recomendaciones personalizadas."
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo implementar inteligencia artificial en una empresa",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "¿Cómo implementar la Inteligencia Artificial en la empresa?",
+            "url": "https://google.com/goto?url=CAESgQEBxCJF1x5K8HIhydD8HikebZKxwI8z6sZls5rW0ns492M5nbEAnsiCAQKjdrYw0AuXpQ6uZ_1RgOVcWgjtKrYrPMn4c-5q53yE3FjlJ8LK9CZCXeG8_dFrcHDfUXpCTwKu0ZBxGRD8PPidQKy7Db5W1oyfYZW0DgLXSjxAZyCcbk4",
+            "domain": "apd.es",
+            "description": "28/06/2024 — Cómo implementar la inteligencia artificial en la empresa: principales pasos · 1. Definir objetivos claros · 2. Evaluar la infraestructura ..."
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 2,
+            "title": "Estrategias Efectivas de Implementación de IA en Empresas",
+            "url": "https://google.com/goto?url=CAEShQEBxCJF1yBIsesuNso1IKwUJBE7QnfMJxL8JQqoQbkJT2QYo-ta-sXcgm25dA4_I_-yxn7gTB35up-3pLpBDffMfx3U4SM0Vq7232byMSDpZ-6Alj_DELiA0g5vTqifOhAI2ly9dVNroxPL0e7LBpkuGqfH-Ls_vf4rzzhmZ7-Q2QtU09ep",
+            "domain": "aden.org",
+            "description": "4/09/2026 — Implementar inteligencia artificial en una empresa significa integrar sistemas capaces de analizar datos, reconocer patrones, automatizar tareas ..."
+          },
+          {
+            "type": "video",
+            "rank": 4,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "people_also_ask",
+            "rank": 5,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 6,
+            "organicRank": 3,
+            "title": "¿Qué es la inteligencia artificial en los negocios?",
+            "url": "https://google.com/goto?url=CAEShAEBxCJF17gPwINKFuBqThMwNqMum8vPuI4vOlJ7PlNZWpRLrN_5RKFQV3XuyO2eex9J1ALiklUGRzz2OULjffJCef_tJQpgjPlXNNP38J1wnlCoq3utv6FHZRiQ_8yTlz1hNmCZdZqXEPWV1J38Zknj72SR5PWiddAVh7UK3er2aDyWl1E",
+            "domain": "ibm.com",
+            "description": "5/06/2026 — La IA en los negocios es el uso de tecnologías de IA para automatizar el trabajo, optimizar las operaciones, mejorar la toma de decisiones e ..."
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 4,
+            "title": "8 pasos para implementar inteligencia artificial",
+            "url": "https://google.com/goto?url=CAEShgEBxCJF1ynXE0G0X-NO9FBqzKPvOJeDKGxiJmXKQN1KJptpjGraNfo9HueD5Xxw7pZ0Dal0cFrpdH7LO5VDND-HCdTonABQl2Ls-E1VtIRLiuhvSROEP3wOqqMO0c0FsCmOdz4kuWoO4vJZwvVjADCgb8uIA8QNIpamDc5YSkGIy652GFVTuQ",
+            "domain": "platzi.com",
+            "description": "30/03/2026 — Paso 1: Identifica áreas de oportunidad y valor para el usuario · Paso 2: Considera aspectos previos sobre los datos disponibles · Paso 3: ..."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 5,
+            "title": "IA para Empresas: Guía Completa 2026 ...",
+            "url": "https://google.com/goto?url=CAESiQEBxCJF14yUEPq0L7Mv0NME32gsxYuYrmJUMfDFcu7rD1m6aZ9n_bExwyoQr2sl3l4XPaMYgPmKgCYXqWSfQ5xWMGzBRJjCqOLkvkh5oSoZfarrHHXymfKjG9OSHsBYu2eYXSC2-Wz5Ci2DwMbTdA5M6pMEX2rb87lsIhtNUqetoQOIKSREWgmmWw",
+            "domain": "kinesisco.com",
+            "description": "4/12/2025 — Cómo aplicar IA en tu empresa en 2026: pasos, ejemplos y herramientas para mejorar productividad y reducir costes."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 6,
+            "title": "Cómo implementar IA en tu empresa y generar resultados",
+            "url": "https://google.com/goto?url=CAESdAHEIkXXMAtTUznVjoGmXZtD9JW8MJagrVCCL-wbRGdittfiGotLRp3wcibj8cRf9bOWO2YHFdV7ESQLSiWmS-gOImo_yzxi7YYGCYzhgdsH6ftDT5HC_9627TkT8hSpqoDVWd3M8Ja1pRfIUyeJFmWHEmHk",
+            "domain": "dms.software",
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 7,
+            "title": "Cómo usar la inteligencia artificial para potenciar tu empresa",
+            "url": "https://google.com/goto?url=CAESbgHEIkXXB0H5qIJ6cxuDilskKXulllIxoWFTrkA-WJbr_w8zApopeGBTyXTUeonMIVuuVpQmNFid1zmLPbpd12B2G6viGSoQFC8Jrjhkq5i4uGaUBBEsPEOHaO7D7Gi0K4ogsV_bARC3oARg1xC7",
+            "domain": "sage.com",
+            "description": "4/12/2025 — 5 pasos clave para la implementación de la IA en una empresa · 1. Identificar las áreas clave · 2. Elegir las herramientas adecuadas · 3. Formar a ..."
+          },
+          {
+            "type": "organic",
+            "rank": 11,
+            "organicRank": 8,
+            "title": "Cómo implementar IA en tu empresa: guía paso a paso",
+            "url": "https://google.com/goto?url=CAEShAEBxCJF14l-PeIz9UHh0tm3sMJzWzeKGmJ0tU5mFWDpQbnm3k6BnO7B3zwrrsaDrGqwJJc9Ut0RhcJFsKUgRvS5teTr-k6MugUZ5pnwJCoZmiWBfPe--WmvVMewTStPUw0RVkm9aB4s961jvEYAn6HoiDUG9sw8o_5_pl3vXrevPKXv-68",
+            "domain": "polaristechgroup.com",
+            "description": "13/10/2026 — Cómo implementar IA en tu empresa sin quedarte en ChatGPT: elegir el primer caso de uso, cuidar los datos, evaluar el prototipo y llevarlo a ..."
+          },
+          {
+            "type": "paid",
+            "rank": 12,
+            "organicRank": null,
+            "title": "IA para Procesos de Negocio - Consultoría de IA en Colombia",
+            "url": "https://google.com/goto?url=CAESVQHEIkXXaelkHKg7MlQwJy6QnqMizyqJNZ1DI8JZyLwMhUcHCgSirxakfRREMMN2Fu8gBPhZId3gCdbhNDtUhYvTnAj1Whxww1hXde2S5QsA99GLei8",
+            "domain": "diegonorena.com",
+            "description": "Aprende a aplicar inteligencia artificial en los procesos de tu organización. Explora casos de uso de IA con enfoque de negocio y solicita una propuesta de asesoría."
+          },
+          {
+            "type": "related_searches",
+            "rank": 13,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 9,
+            "title": "Cómo Implementar Inteligencia Artificial en tu Empresa",
+            "url": "https://google.com/goto?url=CAESwAEBxCJF19vEqe5nl0rnmSxxKmzIQnn5mNukQmtNVMM6BBOD7TnjecZpRLOsZFfQrsnI_Qh8GBAecqPI87ZHzAW9JIUL2jlcQCHaX5Q6hSimVjts0W9CrLs9g3niK8Oo0xfvUJR_ZcQs9nkDOhA5L2A_1qHVxhH45nfibhca7p3qAtLN-83e_eNIxsiTthwn4ncQFAvUlUJSPq0A4_hYdiW0QXWAtz81EmjSITve5BQhXlZxIFvtwNYmNWIb07-OxoY",
+            "domain": "cosmoconsult.com",
+            "description": "3/04/2025 — Cómo implementar soluciones de Inteligencia Artificial en tu empresa: Guía en 6 Pasos · 1. Definir objetivos y casos de uso · 2. Evaluar la ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 10,
+            "title": "Qué es la IA empresarial y cómo implantarla",
+            "url": "https://google.com/goto?url=CAESowEBxCJF1-cNJ7efz_ZpSvbePygxVOQoSTIVFTdpoeSO8vK71mdGdIL6IEoaG6pjQmoclQBIX8cDpVH1iXBB3fzSVHbKw5kqj38uhdCU5XWIrKdrStzNczhFNIsklYczssCnRLRWcRLIZslhzmoQ1vz7A5Ng5ZN594tOjO9fY8qVJ42f7iMX6SoRffxPk1Pst9tWhidkczNEGnza_ensuFmTpEdx",
+            "domain": "datacentermarket.es",
+            "description": "Inteligencia Artificial en las empresas: usos y cómo implementarla · Diseñar la gestión de los distintos tipos de datos · Elegir los perfiles profesionales ..."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 11,
+            "title": "5 pasos para implementar inteligencia artificial en tu ...",
+            "url": "https://google.com/goto?url=CAESpQEBxCJF12L2sSeSw7D9iRCmFOLudwHlq0hU9aaHwVAQ9LMWtPAMK33s-9edplM_g9lXAm8hjtIzWkgTbdHN_lwALv0J5c_Pu879K_ADp6htXYmR9QfwcS9GVeHQPVqHOHpX4-xlNa94IJznPQ5vz4AT4Rx3O-zoAmrjX7NrOcLR0x_5Vh8crqp_G9XKdti8L2KiwtTWX6Bok0uFvJIeqg7W2GUoYhY",
+            "domain": "iebschool.com",
+            "description": "23/03/2023 — Antes de aplicar la IA, es fundamental establecer los objetivos y los KPIs (indicadores clave de rendimiento) de la empresa. Para esto, es ..."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 12,
+            "title": "Cómo implementar la IA en una empresa",
+            "url": "https://google.com/goto?url=CAESbQHEIkXXCa0vDWZ8jZRS1pjMHACxv5CanLrn0kYJS2WpaI_sUD_krBs03EtBAZnhQdtzfQ2qJkl8TqPEXMgmDJG9t_hPoIwuAavK3K4fp2SRXn7NLnbOt8hyabdBv2gid7etCfdoL7EUq-HVYvM",
+            "domain": "panel-ialab.com",
+            "description": "1. Define los objetivos de la IA. · 2. Evaluar la infraestructura tecnológica actual. · 3. Elegir la tecnología y los partners correctos. · 4. Elaborar una ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 13,
+            "title": "🚀 ¿Cómo implementar Inteligencia Artificial? 2026",
+            "url": "https://google.com/goto?url=CAESfwHEIkXXarI_9-LDAO6ApqsP5vfgBwa2EjyfPL4WNSnl0XbgtQiA3xCT3IE-3jcYR13XYBMDy2sO-cIvejoV7m8VO-o8kYJLP-eKu0JgI9UApXws3iG-fTBxFMYjdMCkPKUX3AuQdYACg3LHvBfVedVixihSrq5Vj0Sg7pdE5uE",
+            "domain": "tecnologiabi.com",
+            "description": "Antes de lanzarte a implementar inteligencia artificial, es crucial asegurarte de que tu infraestructura tecnológica existente pueda soportarlas eficazmente."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 14,
+            "title": "Cómo implementar IA en la empresa y aprovechar sus ...",
+            "url": "https://google.com/goto?url=CAESrwEBxCJF19lWHtfw27yST2BFu5OwAiz3pMhwFQbf_vmeQ2Zsy-9SW7FJQwtemB7ghAppu1rK2BgJ3a8NLluzJLh6vEorNEoNtz-n06RWM3QEeNcJbFfRvScKZFGzzo6lsbzf5_GtvB7GGatBRJ0K_eRd1zSM-FX_Kej_f2yvQPyLgU1G58ugjElQN64KRqBRwZwdG_3p-xArv8eTKD9rbqwc_OXQaK8whWMolsyYHTFD",
+            "domain": "hp.com",
+            "description": "25/08/2025 — Para implementar IA en una empresa es clave definir objetivos claros, evaluar la calidad de los datos, capacitar al equipo y comenzar con ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 15,
+            "title": "Cómo implementar IA en una empresa: guía práctica - Union-TI",
+            "url": "https://google.com/goto?url=CAESnAEBxCJF1yRXReoS4Du8veP6Ox4sZXwsq9WOMF1D69q8V6bCCcHVlSx3aBqKcJR6fYTj0iV0OUa5Dot8LeYv_ihu5qnLO6NlhHoQN-HJ5mz9NqRbrEo3-CRVLQeNXXn6l5EpNeEuzB5RndXeEUY712UpeYj_oIT-T0V1ijxAevhi1H5d9zrHTCz4zlADKdYlMGpi8q7hTmq6FBK4oaM",
+            "domain": "unionti.cl",
+            "description": "30/09/2026 — Paso 1: elige un problema, no una herramienta · Paso 2: revisa dónde viven los datos · Paso 3: define reglas de seguridad antes del piloto · Paso 4 ..."
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "cómo saber si un artículo científico es confiable",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "¿Cómo saber si la información de un estudio científico es ...",
+            "url": "https://google.com/goto?url=CAESXAHEIkXXnJcZZk3b_Dprg0ZLARgVdO7CbwQS4IrqRn-W4XW74uZVjce3xdER8yyLtrtkMaEd1C0pt8d_wK5jVBHNlDQDVw-9DtlbU81bfTT5JODaye3AzMwwC6qv",
+            "domain": "gadeaciencia.org",
+            "description": "27/05/2020 — Para que un estudio sea válido, debe haber sido aceptado por un conjunto de científicos (manuscrito aceptado para su publicación o publicado)."
+          },
+          {
+            "type": "video",
+            "rank": 3,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 2,
+            "title": "¿Cómo saber si leer un artículo científico en detalle?",
+            "url": "https://google.com/goto?url=CAESuQEBxCJF16bqAdsr75poTjtdZcrp_9DqKzyN6rvGiokH8tg-uyzfyyHZxk-Ocr9oAiQnKO00bsP76lNszGceKzlwBqY0-UuqXjg1wWTL63Kk-n5nlrCrYrMR3OBJx_F9dYyndYhgM_8erkGVRJ2PPQnBcTCRkSOLaAyam40935T1LujaWnwrptYLN3nPgUqnXRQFjqPLeJ7l2QVLV_66ThURZlkj223qugO6_cnKx8HZ5FUI-Er_iz78cA",
+            "domain": "dermatologia.almirallmed.es",
+            "description": "11/05/2020 — Para evaluar la calidad de la revista se calcula el factor de impacto, dividiendo el número de citas recibidas entre el número total de ..."
+          },
+          {
+            "type": "people_also_ask",
+            "rank": 5,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 6,
+            "organicRank": 3,
+            "title": "El Artículo Científico",
+            "url": "https://google.com/goto?url=CAESbAHEIkXXWzqd4q4qzIgnKzDe7zQ8k4ix01WWfPWszDLE--eV0Cr_k1pTKVq2ufhrT1tityKb5LiM3Rj0baJsEPueKfAtBWhsm90YtvZlSkjPN0hMzHZN-5zT9osZ2XUX_GFpdOFltez46DKpDQ",
+            "domain": "celee.uao.edu.co",
+            "description": "CARACTERÍSTICAS DEL ARTÍCULO CIENTÍFICO · Puede ser escrito por 1 a 6 autores. · Es conciso, o sea, breve en el modo de presentar la información. · Es preciso, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 4,
+            "title": "Cómo identificar prácticas fraudulentas en una publicación ...",
+            "url": "https://google.com/goto?url=CAESqQEBxCJF1_3UXclDlMKphhD4gLYf3ILeA9Q7WlcbRLxdJuUjKL-2z_T6D_c_ruQnT899ze2llimHXJXTTsUiJPni6AlVAyKVHq-nctyx6l-13LG4aBU9gAuILC0efZqIxk3NpDjb4tX65ogH0ashv5BK_bgG2djWG2ggONEYWRVHqUR_RnHpzupYmWVKUod-FxFHMeI1E22rd8RMHP2F5hXEXj44-em0j6Xt",
+            "domain": "buvacampusdelibes.blogs.uva.es",
+            "description": "16/12/2024 — No tienen revisión por pares · Los tiempos de publicación son muy cortos · Contienen gran cantidad de artículos anuales · El pago de tasas se ..."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 5,
+            "title": "Gestión de la información científica: Criterios para evaluar ...",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXYNDCOc_8EAWgMW-2YBF5kEHg3a25WG5Legy6E595oDzmY3PgARQApcPSlqyydhwNWqakhLDCyP3OCXj4xYsqXRvemRb-4BoOx5uaEJa2oiuQ00CVDNNBfjPTLXQjzOUJz0Tr",
+            "domain": "biblioteca.usm.cl",
+            "description": "16/06/2026 — ¿ Cómo saber si una revista es de calidad y contiene conocimiento confiable para poder usar/citar en mi trabajo de investigación?"
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 6,
+            "title": "desde estudios biomédicos hasta investigaciones sociales",
+            "url": "https://google.com/goto?url=CAES2wEBxCJF12fv_HoARfWJr9pojc_SQ8_C6Onaxkrt5QDRyRR8c92af9pHmVOefadfm5jpKqxTx5zZT1v05Lda3h86clhoeu5sPOhrBYqQ8r7BBu5CwPJFhmbA70osgI4bJlJakrrThtPuJNhht4i_zGRQ9Gk6Jjx1fvECMWEvBSSX53kUcTUJ8xnof2EnGjRIlu4J5MOA3-gFahTwbGX5t3X8curuZDFQ_CZPfpHsW5OAMy2ykp8wUNQqFlWuw86MlK3UuPGGlRZzCpBBnEiyWoN8lzQOiH8Ky1uBN_E",
+            "domain": null,
+            "description": "Cada componente se vincula con indicadores medibles de confiabilidad, aplicables no solo al estudio en sí, sino también a los investigadores y a ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 7,
+            "title": "10 consejos prácticos para verificar afirmaciones científicas",
+            "url": "https://google.com/goto?url=CAESlgEBxCJF10dXgVD82rYY8U4zXaFZs6jyoejN_ZiVaVjHPMuacT6eT7jjmkE89PkGK_EQCwuyKE7YwhmvYk_Yp9-EEHW2AjZ3t5nuwgtyONFAbXAc-Cl3yaDzlClc2WbBKo1SWA0QztCKwVGaXV7jcfJ_dJ2jo87kF23VNWXwhh_UX0i5yuTcJaLIcGVEqXmZ5ZA2qUEsXpY",
+            "domain": "gijn.org",
+            "description": "24/08/2026 — Pide a expertos independientes que evalúen el estudio · ¿Responden los métodos a la pregunta de investigación? · ¿Respaldan los hallazgos las ..."
+          },
+          {
+            "type": "organic",
+            "rank": 11,
+            "organicRank": 8,
+            "title": "https://isdfundacion.org/2021/12/03/identificadore...",
+            "url": "https://google.com/goto?url=CAESjQEBxCJF137iayFO5LScRxDeL5bZjgKFPHCjDn8z8mPrLdJbjkt13I8M3Rx_u-CScncwfNChZbw6a8dpJ_UTC7kYEJIw9cOTp01I6ICf_13HR3wEXJnI702runn7IdPBOeCtZxd6nukf7dHeD7z7hMZqOwNIKQqPj4zcq4igtqtn0FJBzjR6gwKWN2BjFPc",
+            "domain": "isdfundacion.org",
+            "description": null
+          },
+          {
+            "type": "related_searches",
+            "rank": 12,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 9,
+            "title": "¿Cómo saber si leer un artículo científico en detalle?",
+            "url": "https://google.com/goto?url=CAESvQEBxCJF10VwwXyvd_q0R_WumqMBcCpZ2Ni-jFfKrLhDmAZ4BQa0_eYNf2_GwYW1xJM7hE6228lgjQbOdUoyuqEJY4Sd1OvdQs4Z35OaVNlhBBmrFp45wJOKvBtJ3o2BiY50BLmkpIprATQb5o_2af0SGnbQTiZB5QtzgBBGTjRnq-OGiqhaK77i1zOxDDHGAgIHkwibZ7fiwRIgDBpoAb3E09Dd1KBz8z0_wrQQUronWXEhghiqpQMCJZZVB0E",
+            "domain": "medicinainterna.almirallmed.es",
+            "description": "11/05/2020 — Para evaluar la calidad de la revista se calcula el factor de impacto, dividiendo el número de citas recibidas entre el número total de ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 10,
+            "title": "Cómo verificar estudios científicos: una guía",
+            "url": "https://google.com/goto?url=CAESpwEBxCJF19HUwT5Nf67lLRd4ILV8swCAdoNNq4vfBsoypqfpRF1Ek54nZ6eeUk2lvvzLmjsjYJbt84Ee1Rwbx0IY3lLcfhk3OJIVFzh6w6a1x7hFZWreZ03-SMTxyHdWl-MdA8iN4enCT6l4EP8fr0KsxMEtgx7GrdteG9u5RZ49-u-jtKRofxYgo_ordpFAyJDo0P4uQtLK5lDgf9783EMRcfjD__HPSg",
+            "domain": "es.linkedin.com",
+            "description": "26/09/2023 — Aprenda a verificar la fuente, leer el resumen, evaluar los métodos, comparar los resultados, interpretar la discusión y buscar opiniones de expertos ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 11,
+            "title": "Características y tipos de artículos científicos - ParaTextos",
+            "url": "https://google.com/goto?url=CAESnQEBxCJF1_YD8Wlv2Y8EW3l-DL7lyqOmi8Xj9D84x4CLnz7oBTEaitkACplAkSQ1xNI4118inDfDW9iElDKRIOLb2sXTG4AHFvrCg91LtGZUOw6lRO9shSS_9I8Zac4P-fD0_5DsN0hRMABVoaBmqXzcRrAjNNHxsmgx98WlIfR4gCBUKuX60KEqP-Wr90WujLpEIovMt-4pXq-jIXXR",
+            "domain": "editorialluisamigo.home.blog",
+            "description": "29/07/2020 — Ser inéditos. · Adaptarse a los requerimientos del medio de publicación. · Poseer rigor científico. · Tener estilo propio de escritura, cumpliendo ..."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 12,
+            "title": "Verificar si un artículo es real | Comprobar registros de ...",
+            "url": "https://google.com/goto?url=CAESbgHEIkXXvr9JJLfuYhen6HUEPVGdUfGDpIrEDWB0GtEbXX7BqjUWXx-2YsflhG1KlbQ0dGSIbcHZvJNlvEGad6sDlxvQlQ1YLr_hqBr0z5aG7xbVP4dWReBvxtlvYLqlKHjN7zf6BZYWiPbqWAmP",
+            "domain": "litsource.net",
+            "description": "Compruebe si existe un artículo y compare los detalles de la cita con el título, autor, año y metadatos de la fuente."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 13,
+            "title": "Evaluar la confiabilidad de la información en Internet",
+            "url": "https://google.com/goto?url=CAESewHEIkXXP62vqSUq5HsqtfRWtgb3M-fkXxNAlVA_OQ9wD3OPSRcdjQKRMwYAlLrI5wN7JIWKOwqxg7dpgagUKw2fh1NnKydZ3zaMAbSuueLzDfioyHhH6Q9FmphVhvAginaRyikXhEJWYFxC-4GEYQ5uO8ByfK7flPDMtQ",
+            "domain": "redalyc.org",
+            "description": "por M Kriscautzky · 2018 · Mencionado por 58 — Determinar la confiabilidad de la información es un problema del que tradi- cionalmente se ocupaban los editores de los textos de estudio; sin embargo, en ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 14,
+            "title": "A nosotros a veces nos confunde la información científica. ¿Es ...",
+            "url": "https://google.com/goto?url=CAESswEBxCJF1ykSTokHkmNzMKk0guUmM030ktww1Fu-I6da5zvzuSfrLdM6spixfhsEwynuY06m4Sk2QS-flRWSz_ETESkzcIY-IYsaSL5ANzCYW_zLpukizTA0SqBd8MkqepRraOTc8XBZ2eTj3iuWoy4w4GHhTQWFoLcg8jxvpi0tOvLMQXcWi1WUUh5ufO4IzUKBPQ8vpktRwaHUjww9KqTOHlPuhlEIhrOtBEY_hrEehUjzSQ",
+            "domain": null,
+            "description": "A nosotros a veces nos confunde la información científica. ¿Es veraz o no? Estas son algunas de las señales que solemos buscar para darle ..."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 15,
+            "title": "¿Cómo saber si leer un artículo científico en detalle?",
+            "url": "https://google.com/goto?url=CAEStgEBxCJF15GwRflfuWM2Bi4DlBMUZP7YkD8zuAR06bVneA-6fYfhczra7JOJxf35LGjR3n1NRkT_5OeOsKdUlIiZeMsyckGB3Wxt8WOYzsQULanzK30Ucf_AAIj1gE0F8ZngeSmEsFFKTPk5DZkZukDnUWlXL6HwjNIDv5JyMtQJVjo0xmJGSDjshPResFZO1jF94JaZibZusYC5lvGgF2gpTnxeTUTBeKmw74pU4OBROBQqDntQjQ",
+            "domain": "podologia.almirallmed.es",
+            "description": "11/05/2020 — Para evaluar la calidad de la revista se calcula el factor de impacto, dividiendo el número de citas recibidas entre el número total de ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 16,
+            "title": "¿Cómo puedo saber si un estudio científico es confiable?",
+            "url": "https://google.com/goto?url=CAESkQEBxCJF11PjuQcwQmAKArwA_xWFJq2jWlSFHPwn2PJitdFSGCKXoflBjUj0NY1BcBbrIbIHvydH9F39z5VRk_FLrOdbIAJl3gJRDND9DSiZCr_Bvq8Y26eyla9_dMnIJC21MA5ChOfB5bl5a-mKD1rdlnJ4SOcDV03-xC4M2Uu8-d43FYbOHTWeGyXDwTJ0X47t",
+            "domain": null,
+            "description": "¿Cómo puedo saber si un estudio científico es confiable?"
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      }
+    ],
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/Default (contenedor autorizado)/keywords"
+    }
+  },
+  "reserve": 50
+}

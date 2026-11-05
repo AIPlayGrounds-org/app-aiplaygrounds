@@ -1,0 +1,199 @@
+{
+  "seed_country_operations": 12,
+  "expansion_rows": 901,
+  "metric_requests": 102,
+  "metric_rows": 5,
+  "canonical_questions": 48,
+  "by_origin": {
+    "Inferencia editorial": 19,
+    "Título orgánico": 16,
+    "Keyword interrogativa": 13
+  },
+  "by_priority": {
+    "Alta": 26,
+    "Baja": 5,
+    "Media": 17
+  },
+  "by_function": {
+    "E1_BLOQUE": 9,
+    "E1_DENTRO": 19,
+    "FUERA_ALCANCE": 5,
+    "FAQ_CONTEXTUAL_CANDIDATA": 3,
+    "E2_COPY": 12
+  },
+  "observed_candidates": 790,
+  "unique_literal_origin_country": 731,
+  "selected_observations": 74,
+  "selected_observations_by_origin": {
+    "Keyword interrogativa": 37,
+    "Título orgánico": 37
+  },
+  "observed_by_origin": {
+    "Keyword interrogativa": 459,
+    "Título orgánico": 331
+  },
+  "selected_by_country": {
+    "CO": 25,
+    "PE": 20,
+    "MX": 28,
+    "Sin mercado asignable": 1
+  },
+  "new_serps_success": 27,
+  "failed_serps": 3,
+  "new_paa_modules": 17,
+  "new_related_modules": 19,
+  "paa_questions_verified": 0,
+  "related_texts_verified": 0,
+  "credits_initial": 7820,
+  "credits_final": 7170,
+  "credits_used": 650,
+  "clusters": {
+    "N01": {
+      "total": 4,
+      "origins": {
+        "Inferencia editorial": 3,
+        "Título orgánico": 1
+      },
+      "high": [
+        "P01",
+        "P02",
+        "P03"
+      ]
+    },
+    "N02": {
+      "total": 3,
+      "origins": {
+        "Título orgánico": 1,
+        "Inferencia editorial": 2
+      },
+      "high": [
+        "P06",
+        "P07"
+      ]
+    },
+    "N03": {
+      "total": 4,
+      "origins": {
+        "Título orgánico": 3,
+        "Inferencia editorial": 1
+      },
+      "high": [
+        "P10"
+      ]
+    },
+    "N04": {
+      "total": 4,
+      "origins": {
+        "Keyword interrogativa": 2,
+        "Título orgánico": 1,
+        "Inferencia editorial": 1
+      },
+      "high": [
+        "P13",
+        "P14"
+      ]
+    },
+    "N05": {
+      "total": 4,
+      "origins": {
+        "Keyword interrogativa": 3,
+        "Inferencia editorial": 1
+      },
+      "high": [
+        "P19"
+      ]
+    },
+    "N06": {
+      "total": 4,
+      "origins": {
+        "Título orgánico": 2,
+        "Keyword interrogativa": 1,
+        "Inferencia editorial": 1
+      },
+      "high": [
+        "P23"
+      ]
+    },
+    "N07": {
+      "total": 3,
+      "origins": {
+        "Título orgánico": 2,
+        "Inferencia editorial": 1
+      },
+      "high": [
+        "P26"
+      ]
+    },
+    "N08": {
+      "total": 3,
+      "origins": {
+        "Keyword interrogativa": 1,
+        "Inferencia editorial": 2
+      },
+      "high": [
+        "P28",
+        "P29"
+      ]
+    },
+    "N09": {
+      "total": 2,
+      "origins": {
+        "Título orgánico": 1,
+        "Inferencia editorial": 1
+      },
+      "high": [
+        "P30",
+        "P31"
+      ]
+    },
+    "N10": {
+      "total": 3,
+      "origins": {
+        "Keyword interrogativa": 1,
+        "Título orgánico": 1,
+        "Inferencia editorial": 1
+      },
+      "high": [
+        "P32",
+        "P34"
+      ]
+    },
+    "N11": {
+      "total": 5,
+      "origins": {
+        "Keyword interrogativa": 4,
+        "Inferencia editorial": 1
+      },
+      "high": [
+        "P35",
+        "P36",
+        "P39"
+      ]
+    },
+    "N12": {
+      "total": 5,
+      "origins": {
+        "Keyword interrogativa": 1,
+        "Título orgánico": 2,
+        "Inferencia editorial": 2
+      },
+      "high": [
+        "P40",
+        "P43",
+        "P44"
+      ]
+    },
+    "N13": {
+      "total": 4,
+      "origins": {
+        "Título orgánico": 2,
+        "Inferencia editorial": 2
+      },
+      "high": [
+        "P45",
+        "P47",
+        "P48"
+      ]
+    }
+  }
+}

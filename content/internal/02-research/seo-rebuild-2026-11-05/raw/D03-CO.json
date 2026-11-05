@@ -1,0 +1,275 @@
+{
+  "id": "D03-CO",
+  "tool": "find_serp_competitors",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "keywords": [
+      "comunidad de inteligencia artificial",
+      "fundamentos de la inteligencia artificial",
+      "desarrollo de software con inteligencia artificial",
+      "inteligencia artificial en la investigación científica",
+      "inteligencia artificial en finanzas",
+      "herramientas de inteligencia artificial",
+      "proyectos de inteligencia artificial",
+      "inteligencia artificial para empresas"
+    ],
+    "locationCode": 2170,
+    "languageCode": "es",
+    "resultTypes": [
+      "organic"
+    ],
+    "limit": 15,
+    "sortBy": "keyword_count",
+    "includeSubdomains": true
+  },
+  "response": {
+    "competitors": [
+      {
+        "se_type": "google",
+        "domain": "openwebinars.net",
+        "avg_position": 1,
+        "median_position": 1,
+        "rating": 99,
+        "etv": 23.649340628077525,
+        "keywords_count": 1,
+        "visibility": 1,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            1
+          ]
+        }
+      },
+      {
+        "se_type": "google",
+        "domain": "slack.com",
+        "avg_position": 2,
+        "median_position": 2,
+        "rating": 98,
+        "etv": 15.238719909207546,
+        "keywords_count": 1,
+        "visibility": 0.9,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            2
+          ]
+        }
+      },
+      {
+        "se_type": "google",
+        "domain": "www.datacamp.com",
+        "avg_position": 3,
+        "median_position": 3,
+        "rating": 97,
+        "etv": 11.483855077659369,
+        "keywords_count": 1,
+        "visibility": 0.8,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            3
+          ]
+        }
+      },
+      {
+        "se_type": "google",
+        "domain": "salesbusinessschool.es",
+        "avg_position": 4,
+        "median_position": 4,
+        "rating": 96,
+        "etv": 8.316187455200682,
+        "keywords_count": 1,
+        "visibility": 0.7,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            4
+          ]
+        }
+      },
+      {
+        "se_type": "google",
+        "domain": "uned.libguides.com",
+        "avg_position": 5,
+        "median_position": 5,
+        "rating": 95,
+        "etv": 6.926714095633824,
+        "keywords_count": 1,
+        "visibility": 0.6,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            5
+          ]
+        }
+      },
+      {
+        "se_type": "google",
+        "domain": "www.xataka.com",
+        "avg_position": 6,
+        "median_position": 6,
+        "rating": 94,
+        "etv": 5.1609715811659225,
+        "keywords_count": 1,
+        "visibility": 0.5,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            6
+          ]
+        }
+      },
+      {
+        "se_type": "google",
+        "domain": "www.synthesia.io",
+        "avg_position": 7,
+        "median_position": 7,
+        "rating": 93,
+        "etv": 3.9308242013831856,
+        "keywords_count": 1,
+        "visibility": 0.4,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            7
+          ]
+        }
+      },
+      {
+        "se_type": "google",
+        "domain": "www.repsol.com",
+        "avg_position": 8,
+        "median_position": 8,
+        "rating": 92,
+        "etv": 3.0000057899437067,
+        "keywords_count": 1,
+        "visibility": 0.3,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            8
+          ]
+        }
+      },
+      {
+        "se_type": "google",
+        "domain": "tuatara.co",
+        "avg_position": 9,
+        "median_position": 9,
+        "rating": 91,
+        "etv": 2.326220546665132,
+        "keywords_count": 1,
+        "visibility": 0.2,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            9
+          ]
+        }
+      },
+      {
+        "se_type": "google",
+        "domain": "www.lenovo.com",
+        "avg_position": 10,
+        "median_position": 10,
+        "rating": 90,
+        "etv": 1.8312929718196693,
+        "keywords_count": 1,
+        "visibility": 0.1,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            10
+          ]
+        }
+      },
+      {
+        "se_type": "google",
+        "domain": "www.youtube.com",
+        "avg_position": 11,
+        "median_position": 11,
+        "rating": 89,
+        "etv": 1.6130235436346296,
+        "keywords_count": 1,
+        "visibility": 0.05,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            11
+          ]
+        }
+      },
+      {
+        "se_type": "google",
+        "domain": "www.udelistmo.edu",
+        "avg_position": 12,
+        "median_position": 12,
+        "rating": 88,
+        "etv": 1.552315609636607,
+        "keywords_count": 1,
+        "visibility": 0.05,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            12
+          ]
+        }
+      },
+      {
+        "se_type": "google",
+        "domain": "www.computing.es",
+        "avg_position": 13,
+        "median_position": 13,
+        "rating": 87,
+        "etv": 1.3541400668650363,
+        "keywords_count": 1,
+        "visibility": 0.05,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            13
+          ]
+        }
+      },
+      {
+        "se_type": "google",
+        "domain": "www.rebiun.org",
+        "avg_position": 14,
+        "median_position": 14,
+        "rating": 86,
+        "etv": 1.310178656944825,
+        "keywords_count": 1,
+        "visibility": 0.05,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            14
+          ]
+        }
+      },
+      {
+        "se_type": "google",
+        "domain": "blog.hubspot.es",
+        "avg_position": 15,
+        "median_position": 15,
+        "rating": 85,
+        "etv": 1.2171131903810415,
+        "keywords_count": 1,
+        "visibility": 0.05,
+        "relevant_serp_items": 1,
+        "keywords_positions": {
+          "herramientas de inteligencia artificial": [
+            15
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/DEFAULT/domain"
+    }
+  },
+  "at": "2026-11-05T15:57:56.629Z",
+  "reserve": 18
+}
