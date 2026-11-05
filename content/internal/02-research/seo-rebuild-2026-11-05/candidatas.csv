@@ -1,0 +1,208 @@
+cluster,country,language,keyword,status,volume,kd,cpc_usd,ads_competition,intent_auto,evidence,selection
+N01,PE,es,AI PlayGrounds,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N01,MX,es,AI PlayGrounds,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N01,CO,es,AI PlayGrounds,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N01,PE,es,organizaciones de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N01,MX,es,organizaciones de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N01,CO,es,organizaciones de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N02,PE,es,comunidad de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N02,MX,es,comunidad de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N02,CO,es,comunidad de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N02,PE,es,comunidades de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N02,MX,es,comunidades de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N02,CO,es,comunidades de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N02,PE,es,comunidad de IA,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N02,MX,es,comunidad de IA,OBSERVADA,10,,,0.29,navigational,B02-MX,PROPUESTA editorial
+N02,CO,es,comunidad de IA,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N02,PE,es,eventos de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N02,MX,es,eventos de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N02,CO,es,eventos de inteligencia artificial,OBSERVADA,10,,3.28,0.16,informational,B03-CO,PROPUESTA editorial
+N02,PE,es,colaborar en proyectos de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N02,MX,es,colaborar en proyectos de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N02,CO,es,colaborar en proyectos de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N03,PE,es,laboratorio de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N03,MX,es,laboratorio de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N03,CO,es,laboratorio de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N03,PE,es,proyectos de inteligencia artificial,OBSERVADA,10,,,0,informational,B01-PE,PROPUESTA editorial
+N03,MX,es,proyectos de inteligencia artificial,OBSERVADA,30,0,,0.07,informational,B02-MX,PROPUESTA editorial
+N03,CO,es,proyectos de inteligencia artificial,OBSERVADA,50,57,,0.1,informational,A07-CO;B03-CO,PROPUESTA editorial
+N03,PE,es,proyectos de inteligencia artificial ejemplos,OBSERVADA,10,,,,informational,A05-PE,PROPUESTA editorial
+N03,MX,es,proyectos de inteligencia artificial ejemplos,OBSERVADA,10,,,0,informational,A06-MX,PROPUESTA editorial
+N03,CO,es,proyectos de inteligencia artificial ejemplos,OBSERVADA,10,,,0,informational,A07-CO,PROPUESTA editorial
+N03,PE,es,proyectos de inteligencia artificial con python,OBSERVADA,10,,,,informational,A05-PE,PROPUESTA editorial
+N03,MX,es,proyectos de inteligencia artificial con python,OBSERVADA,10,,,0,informational,A06-MX,PROPUESTA editorial
+N03,CO,es,proyectos de inteligencia artificial con python,OBSERVADA,10,,,,informational,A07-CO,PROPUESTA editorial
+N03,PE,es,proyectos de inteligencia artificial para principiantes,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N03,MX,es,proyectos de inteligencia artificial para principiantes,OBSERVADA,10,,,0,informational,A06-MX,PROPUESTA editorial
+N03,CO,es,proyectos de inteligencia artificial para principiantes,OBSERVADA,10,,,,informational,A07-CO,PROPUESTA editorial
+N04,PE,es,herramientas de inteligencia artificial,OBSERVADA,260,4,1.18,0.28,commercial,A04-tools;B01-PE,PROPUESTA editorial
+N04,MX,es,herramientas de inteligencia artificial,OBSERVADA,480,4,1.03,0.24,commercial,A04-tools;B02-MX,PROPUESTA editorial
+N04,CO,es,herramientas de inteligencia artificial,OBSERVADA,320,13,0.67,0.39,commercial,B03-CO,PROPUESTA editorial
+N04,PE,es,productos de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N04,MX,es,productos de inteligencia artificial,OBSERVADA,10,,,0,commercial,B02-MX,PROPUESTA editorial
+N04,CO,es,productos de inteligencia artificial,OBSERVADA,10,,,0,commercial,B03-CO,PROPUESTA editorial
+N04,PE,es,herramientas de inteligencia artificial gratuitas,OBSERVADA,30,,0.83,0.56,commercial,A04-tools,PROPUESTA editorial
+N04,MX,es,herramientas de inteligencia artificial gratuitas,OBSERVADA,40,,0.93,0.49,informational,A04-tools,PROPUESTA editorial
+N04,CO,es,herramientas de inteligencia artificial gratuitas,OBSERVADA,50,,0.27,0.63,informational,A04-tools,PROPUESTA editorial
+N04,PE,es,herramientas de inteligencia artificial para programadores,OBSERVADA,10,,,,informational,A04-tools;B01-PE,PROPUESTA editorial
+N04,MX,es,herramientas de inteligencia artificial para programadores,OBSERVADA,10,,,,informational,A04-tools;B02-MX,PROPUESTA editorial
+N04,CO,es,herramientas de inteligencia artificial para programadores,OBSERVADA,10,,,,informational,A04-tools;B03-CO,PROPUESTA editorial
+N04,PE,es,que herramientas de inteligencia artificial existen,OBSERVADA,20,,0.25,0.38,informational,A04-tools;B01-PE,PROPUESTA editorial
+N04,MX,es,que herramientas de inteligencia artificial existen,OBSERVADA,10,,,0.39,informational,A04-tools;B02-MX,PROPUESTA editorial
+N04,CO,es,que herramientas de inteligencia artificial existen,OBSERVADA,10,,0.29,0.42,informational,B03-CO,PROPUESTA editorial
+N04,PE,es,que son herramientas de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N04,MX,es,que son herramientas de inteligencia artificial,OBSERVADA,10,,,0,informational,A04-tools,PROPUESTA editorial
+N04,CO,es,que son herramientas de inteligencia artificial,OBSERVADA,10,,,0,informational,A04-tools,PROPUESTA editorial
+N05,PE,es,fundamentos de la inteligencia artificial,OBSERVADA,70,,1.16,0.3,informational,A05-PE;B01-PE,PROPUESTA editorial
+N05,MX,es,fundamentos de la inteligencia artificial,OBSERVADA,210,0,2.07,0.21,informational,A06-MX;B02-MX,PROPUESTA editorial
+N05,CO,es,fundamentos de la inteligencia artificial,OBSERVADA,50,,2.18,0.31,informational,A07-CO;B03-CO,PROPUESTA editorial
+N05,PE,es,fundamentos de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N05,MX,es,fundamentos de inteligencia artificial,OBSERVADA,210,0,2.07,0.21,informational,B02-MX,PROPUESTA editorial
+N05,CO,es,fundamentos de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N05,PE,es,qué es la inteligencia artificial,OBSERVADA,1300,45,0.57,0.1,informational,B01-PE,PROPUESTA editorial
+N05,MX,es,qué es la inteligencia artificial,OBSERVADA,6600,37,1,0.08,informational,B02-MX,PROPUESTA editorial
+N05,CO,es,qué es la inteligencia artificial,OBSERVADA,2400,50,0.5,0.07,informational,B03-CO,PROPUESTA editorial
+N05,PE,es,fundamentos de inteligencia artificial generativa,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N05,MX,es,fundamentos de inteligencia artificial generativa,OBSERVADA,10,,,0,informational,A06-MX,PROPUESTA editorial
+N05,CO,es,fundamentos de inteligencia artificial generativa,OBSERVADA,10,,2.67,0.79,informational,A07-CO,PROPUESTA editorial
+N05,PE,es,que es el machine learning en la inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N05,MX,es,que es el machine learning en la inteligencia artificial,OBSERVADA,10,,,0,informational,E01-questions,PROPUESTA editorial
+N05,CO,es,que es el machine learning en la inteligencia artificial,OBSERVADA,10,,,0,informational,E01-questions,PROPUESTA editorial
+N05,PE,es,que es cnn en inteligencia artificial,OBSERVADA,20,,,0,informational,E01-questions,PROPUESTA editorial
+N05,MX,es,que es cnn en inteligencia artificial,OBSERVADA,20,,,0.01,informational,E01-questions,PROPUESTA editorial
+N05,CO,es,que es cnn en inteligencia artificial,OBSERVADA,20,,,0,informational,E01-questions,PROPUESTA editorial
+N06,PE,es,desarrollo de software con inteligencia artificial,OBSERVADA,10,,2.08,0.47,informational,B01-PE,PROPUESTA editorial
+N06,MX,es,desarrollo de software con inteligencia artificial,OBSERVADA,10,,,0.64,informational,B02-MX,PROPUESTA editorial
+N06,CO,es,desarrollo de software con inteligencia artificial,OBSERVADA,10,,2.11,0.83,informational,B03-CO,PROPUESTA editorial
+N06,PE,es,programación con inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N06,MX,es,programación con inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N06,CO,es,programación con inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N06,PE,es,Software with AI,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N06,MX,es,Software with AI,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N06,CO,es,Software with AI,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N06,PE,es,ingenieria de software con inteligencia artificial,OBSERVADA,1300,0,1.69,0.41,informational,A01-PE;A04-tools;A05-PE;B01-PE,PROPUESTA editorial
+N06,MX,es,ingenieria de software con inteligencia artificial,OBSERVADA,10,,,0,informational,B02-MX,PROPUESTA editorial
+N06,CO,es,ingenieria de software con inteligencia artificial,OBSERVADA,10,,0.63,0.5,informational,B03-CO,PROPUESTA editorial
+N06,PE,es,impacto de la inteligencia artificial en el desarrollo de software,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N06,MX,es,impacto de la inteligencia artificial en el desarrollo de software,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N06,CO,es,impacto de la inteligencia artificial en el desarrollo de software,OBSERVADA,10,,0.2,0.43,informational,A03-CO;A04-tools;A07-CO,PROPUESTA editorial
+N06,PE,es,desarrollo con inteligencia artificial,OBSERVADA,10,,,,commercial,A01-PE;A04-tools;A05-PE,PROPUESTA editorial
+N06,MX,es,desarrollo con inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N06,CO,es,desarrollo con inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N07,PE,es,AI Engineering,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N07,MX,es,AI Engineering,OBSERVADA,590,53,2.45,0.57,informational,B02-MX,PROPUESTA editorial
+N07,CO,es,AI Engineering,OBSERVADA,480,57,1.34,0.55,informational,B03-CO,PROPUESTA editorial
+N07,PE,es,ingeniería de inteligencia artificial,OBSERVADA,880,0,1.28,0.43,informational,A01-PE;B01-PE,PROPUESTA editorial
+N07,MX,es,ingeniería de inteligencia artificial,OBSERVADA,90,0,3.2,0.48,informational,B02-MX,PROPUESTA editorial
+N07,CO,es,ingeniería de inteligencia artificial,OBSERVADA,320,0,0.91,0.53,informational,A03-CO;B03-CO,PROPUESTA editorial
+N07,PE,es,ingeniería de software con inteligencia artificial que hace,OBSERVADA,10,,,0.03,informational,A01-PE,PROPUESTA editorial
+N07,MX,es,ingeniería de software con inteligencia artificial que hace,OBSERVADA,10,,,,informational,A02-MX,PROPUESTA editorial
+N07,CO,es,ingeniería de software con inteligencia artificial que hace,OBSERVADA,0,,,,informational,A03-CO,PROPUESTA editorial
+N07,PE,es,qué es ingeniería de software con inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N07,MX,es,qué es ingeniería de software con inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N07,CO,es,qué es ingeniería de software con inteligencia artificial,OBSERVADA,10,,,0,informational,A03-CO;B03-CO,PROPUESTA editorial
+N08,PE,es,inteligencia artificial en la investigación científica,OBSERVADA,10,,,0.1,informational,A01-PE;B01-PE,PROPUESTA editorial
+N08,MX,es,inteligencia artificial en la investigación científica,OBSERVADA,10,,,0,informational,A02-MX;B02-MX,PROPUESTA editorial
+N08,CO,es,inteligencia artificial en la investigación científica,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N08,PE,es,uso de la inteligencia artificial en la investigación científica,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N08,MX,es,uso de la inteligencia artificial en la investigación científica,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N08,CO,es,uso de la inteligencia artificial en la investigación científica,OBSERVADA,10,,,,informational,A03-CO,PROPUESTA editorial
+N08,PE,es,inteligencia artificial para investigación científica,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N08,MX,es,inteligencia artificial para investigación científica,OBSERVADA,10,,1.02,0.65,commercial,B02-MX,PROPUESTA editorial
+N08,CO,es,inteligencia artificial para investigación científica,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N08,PE,es,inteligencia artificial en la investigación científica pdf,OBSERVADA,10,,,0.04,informational,A01-PE,PROPUESTA editorial
+N08,MX,es,inteligencia artificial en la investigación científica pdf,OBSERVADA,10,,,0,informational,A02-MX,PROPUESTA editorial
+N08,CO,es,inteligencia artificial en la investigación científica pdf,OBSERVADA,10,,,0,informational,A03-CO,PROPUESTA editorial
+N09,PE,es,herramientas de inteligencia artificial para investigación,OBSERVADA,10,,,0,informational,A04-tools;B01-PE,PROPUESTA editorial
+N09,MX,es,herramientas de inteligencia artificial para investigación,OBSERVADA,10,,,0.86,informational,A04-tools;B02-MX,PROPUESTA editorial
+N09,CO,es,herramientas de inteligencia artificial para investigación,OBSERVADA,10,,,0.86,informational,A04-tools;B03-CO,PROPUESTA editorial
+N09,PE,es,curso herramientas de inteligencia artificial para la investigación,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N09,MX,es,curso herramientas de inteligencia artificial para la investigación,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N09,CO,es,curso herramientas de inteligencia artificial para la investigación,OBSERVADA,,,,,commercial,A04-tools,PROPUESTA editorial
+N10,PE,es,inteligencia artificial en finanzas,OBSERVADA,10,,,0.19,commercial,A01-PE;B01-PE,PROPUESTA editorial
+N10,MX,es,inteligencia artificial en finanzas,OBSERVADA,30,,1.3,0.62,commercial,B02-MX,PROPUESTA editorial
+N10,CO,es,inteligencia artificial en finanzas,OBSERVADA,10,,2.39,0.33,commercial,A03-CO;B03-CO,PROPUESTA editorial
+N10,PE,es,inteligencia artificial en las finanzas,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N10,MX,es,inteligencia artificial en las finanzas,OBSERVADA,10,,1.63,0.2,commercial,A02-MX;B02-MX,PROPUESTA editorial
+N10,CO,es,inteligencia artificial en las finanzas,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N10,PE,es,inteligencia artificial aplicada a las finanzas,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N10,MX,es,inteligencia artificial aplicada a las finanzas,OBSERVADA,10,,,0.34,commercial,A02-MX;B02-MX,PROPUESTA editorial
+N10,CO,es,inteligencia artificial aplicada a las finanzas,OBSERVADA,10,,1.36,0.53,commercial,B03-CO,PROPUESTA editorial
+N10,PE,es,aplicaciones de inteligencia artificial en finanzas,OBSERVADA,10,,,,commercial,A01-PE;B01-PE,PROPUESTA editorial
+N10,MX,es,aplicaciones de inteligencia artificial en finanzas,OBSERVADA,10,,,0.52,commercial,B02-MX,PROPUESTA editorial
+N10,CO,es,aplicaciones de inteligencia artificial en finanzas,OBSERVADA,10,,,,commercial,B03-CO,PROPUESTA editorial
+N10,PE,es,inteligencia artificial en las finanzas ejemplos,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N10,MX,es,inteligencia artificial en las finanzas ejemplos,OBSERVADA,10,,,0.29,informational,A02-MX,PROPUESTA editorial
+N10,CO,es,inteligencia artificial en las finanzas ejemplos,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N10,PE,es,herramientas de inteligencia artificial para finanzas,OBSERVADA,10,,,,commercial,A04-tools;B01-PE,PROPUESTA editorial
+N10,MX,es,herramientas de inteligencia artificial para finanzas,OBSERVADA,10,,,,commercial,A04-tools;B02-MX,PROPUESTA editorial
+N10,CO,es,herramientas de inteligencia artificial para finanzas,OBSERVADA,10,,,,commercial,A04-tools;B03-CO,PROPUESTA editorial
+N10,PE,es,cuál es una aplicación de la inteligencia artificial en finanzas,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N10,MX,es,cuál es una aplicación de la inteligencia artificial en finanzas,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N10,CO,es,cuál es una aplicación de la inteligencia artificial en finanzas,OBSERVADA,0,,,,informational,A03-CO,PROPUESTA editorial
+N11,PE,es,curso de inteligencia artificial,OBSERVADA,880,0,1.72,0.73,informational,B01-PE,PROPUESTA editorial
+N11,MX,es,curso de inteligencia artificial,OBSERVADA,1300,0,2.7,0.76,informational,B02-MX,PROPUESTA editorial
+N11,CO,es,curso de inteligencia artificial,OBSERVADA,1000,0,2,0.76,informational,B03-CO,PROPUESTA editorial
+N11,PE,es,cursos de inteligencia artificial,OBSERVADA,720,0,1.98,0.79,informational,B01-PE,PROPUESTA editorial
+N11,MX,es,cursos de inteligencia artificial,OBSERVADA,1300,1,2.93,0.79,informational,B02-MX,PROPUESTA editorial
+N11,CO,es,cursos de inteligencia artificial,OBSERVADA,880,0,2.18,0.81,informational,B03-CO,PROPUESTA editorial
+N11,PE,es,aprender inteligencia artificial,OBSERVADA,30,,1.08,0.77,informational,B01-PE,PROPUESTA editorial
+N11,MX,es,aprender inteligencia artificial,OBSERVADA,50,,1.55,0.71,informational,B02-MX,PROPUESTA editorial
+N11,CO,es,aprender inteligencia artificial,OBSERVADA,40,,1.78,0.71,informational,B03-CO,PROPUESTA editorial
+N11,PE,es,cómo aprender inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N11,MX,es,cómo aprender inteligencia artificial,OBSERVADA,110,,1.03,0.72,informational,B02-MX,PROPUESTA editorial
+N11,CO,es,cómo aprender inteligencia artificial,OBSERVADA,90,,0.95,0.75,informational,B03-CO,PROPUESTA editorial
+N11,PE,es,como aprender inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N11,MX,es,como aprender inteligencia artificial,OBSERVADA,110,,1.16,0.76,informational,E01-questions,PROPUESTA editorial
+N11,CO,es,como aprender inteligencia artificial,OBSERVADA,90,,0.95,0.75,informational,E01-questions,PROPUESTA editorial
+N11,PE,es,cómo aprender inteligencia artificial gratis,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N11,MX,es,cómo aprender inteligencia artificial gratis,OBSERVADA,40,,1.34,0.59,informational,E01-questions,PROPUESTA editorial
+N11,CO,es,cómo aprender inteligencia artificial gratis,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N11,PE,es,dónde aprender inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N11,MX,es,dónde aprender inteligencia artificial,OBSERVADA,20,,1.64,0.7,informational,E01-questions,PROPUESTA editorial
+N11,CO,es,dónde aprender inteligencia artificial,OBSERVADA,10,,0.31,0.82,informational,E01-questions,PROPUESTA editorial
+N11,PE,es,que se necesita para aprender inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N11,MX,es,que se necesita para aprender inteligencia artificial,OBSERVADA,10,,,0.38,informational,E01-questions,PROPUESTA editorial
+N11,CO,es,que se necesita para aprender inteligencia artificial,OBSERVADA,10,,0.52,0.79,informational,E01-questions,PROPUESTA editorial
+N11,PE,es,que lenguaje de programacion aprender para inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N11,MX,es,que lenguaje de programacion aprender para inteligencia artificial,OBSERVADA,10,,,,informational,E01-questions,PROPUESTA editorial
+N11,CO,es,que lenguaje de programacion aprender para inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N11,PE,es,que se aprende en un curso de inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N11,MX,es,que se aprende en un curso de inteligencia artificial,OBSERVADA,10,,,0,informational,E01-questions,PROPUESTA editorial
+N11,CO,es,que se aprende en un curso de inteligencia artificial,OBSERVADA,10,,0.7,0.79,informational,E01-questions,PROPUESTA editorial
+N11,PE,es,cómo estudiar inteligencia artificial,OBSERVADA,20,,2.34,0.79,informational,A05-PE,PROPUESTA editorial
+N11,MX,es,cómo estudiar inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N11,CO,es,cómo estudiar inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N12,PE,es,inteligencia artificial para empresas,OBSERVADA,20,50,7.77,0.5,commercial,B01-PE,PROPUESTA editorial
+N12,MX,es,inteligencia artificial para empresas,OBSERVADA,50,0,10,0.71,commercial,B02-MX,PROPUESTA editorial
+N12,CO,es,inteligencia artificial para empresas,OBSERVADA,40,52,8.51,0.6,commercial,B03-CO,PROPUESTA editorial
+N12,PE,es,soluciones de inteligencia artificial para empresas,OBSERVADA,10,,2.11,0.89,commercial,B01-PE,PROPUESTA editorial
+N12,MX,es,soluciones de inteligencia artificial para empresas,OBSERVADA,10,,,0.14,commercial,B02-MX,PROPUESTA editorial
+N12,CO,es,soluciones de inteligencia artificial para empresas,OBSERVADA,10,,,,commercial,A07-CO;B03-CO,PROPUESTA editorial
+N12,PE,es,empresas de inteligencia artificial,OBSERVADA,40,50,0.6,0.24,commercial,B01-PE,PROPUESTA editorial
+N12,MX,es,empresas de inteligencia artificial,OBSERVADA,170,0,1.92,0.4,commercial,B02-MX,PROPUESTA editorial
+N12,CO,es,empresas de inteligencia artificial,OBSERVADA,90,52,1.32,0.29,commercial,B03-CO,PROPUESTA editorial
+N12,PE,es,cursos de inteligencia artificial para empresas,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N12,MX,es,cursos de inteligencia artificial para empresas,OBSERVADA,10,,19.2,0.82,commercial,A06-MX;B02-MX,PROPUESTA editorial
+N12,CO,es,cursos de inteligencia artificial para empresas,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N12,PE,es,cursos inteligencia artificial para empresas,OBSERVADA,10,,1.24,0.86,commercial,A05-PE,PROPUESTA editorial
+N12,MX,es,cursos inteligencia artificial para empresas,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N12,CO,es,cursos inteligencia artificial para empresas,OBSERVADA,10,,1.89,0.86,commercial,A07-CO,PROPUESTA editorial
+N12,PE,es,herramientas de inteligencia artificial para empresas,OBSERVADA,10,,,,commercial,A04-tools;A05-PE,PROPUESTA editorial
+N12,MX,es,herramientas de inteligencia artificial para empresas,OBSERVADA,10,,,0.86,commercial,A04-tools;A06-MX,PROPUESTA editorial
+N12,CO,es,herramientas de inteligencia artificial para empresas,OBSERVADA,10,,,0.86,commercial,A04-tools;A07-CO,PROPUESTA editorial
+N12,PE,es,para que sirve la inteligencia artificial en las empresas,OBSERVADA,0,,,,informational,A05-PE;B01-PE,PROPUESTA editorial
+N12,MX,es,para que sirve la inteligencia artificial en las empresas,OBSERVADA,10,,,,informational,A06-MX;B02-MX,PROPUESTA editorial
+N12,CO,es,para que sirve la inteligencia artificial en las empresas,OBSERVADA,10,,,0,informational,A07-CO;B03-CO,PROPUESTA editorial
+N12,PE,es,formacion inteligencia artificial para empresas,OBSERVADA,0,,,,informational,A05-PE,PROPUESTA editorial
+N12,MX,es,formacion inteligencia artificial para empresas,OBSERVADA,10,,,,informational,A06-MX,PROPUESTA editorial
+N12,CO,es,formacion inteligencia artificial para empresas,OBSERVADA,10,,,,informational,A07-CO,PROPUESTA editorial
+N13,PE,es,investigación en inteligencia artificial,OBSERVADA,10,,,,informational,B01-PE,PROPUESTA editorial
+N13,MX,es,investigación en inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N13,CO,es,investigación en inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N13,PE,es,proyectos de investigación inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N13,MX,es,proyectos de investigación inteligencia artificial,OBSERVADA,10,,,,informational,A06-MX,PROPUESTA editorial
+N13,CO,es,proyectos de investigación inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N13,PE,es,proyectos de investigacion inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial
+N13,MX,es,proyectos de investigacion inteligencia artificial,OBSERVADA,10,,,,informational,A06-MX,PROPUESTA editorial
+N13,CO,es,proyectos de investigacion inteligencia artificial,NO_OBSERVADA_EN_RESPUESTAS,,,,,,,PROPUESTA editorial

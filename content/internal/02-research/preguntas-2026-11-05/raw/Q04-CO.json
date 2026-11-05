@@ -1,0 +1,1864 @@
+{
+  "id": "Q04-CO",
+  "tool": "research_keywords",
+  "at": "2026-11-05T16:26:42.006Z",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "seeds": [
+      {
+        "seed": "cómo usar inteligencia artificial en finanzas",
+        "locationCode": 2170,
+        "languageCode": "es"
+      },
+      {
+        "seed": "cómo implementar inteligencia artificial en empresas",
+        "locationCode": 2170,
+        "languageCode": "es"
+      },
+      {
+        "seed": "cómo evaluar artículos científicos",
+        "locationCode": 2170,
+        "languageCode": "es"
+      }
+    ],
+    "resultLimit": 150,
+    "includeClickstreamData": false,
+    "groupKeywords": false
+  },
+  "response": {
+    "results": [
+      {
+        "seed": "cómo usar inteligencia artificial en finanzas",
+        "ok": true,
+        "rowCount": 75,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "giros y finanzas",
+            "searchVolume": 2400,
+            "keywordDifficulty": 16,
+            "cpc": 0.6,
+            "competition": 0.09,
+            "intent": "informational"
+          },
+          {
+            "keyword": "plantilla de finanzas personales",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": 0.79,
+            "competition": 0.12,
+            "intent": "informational"
+          },
+          {
+            "keyword": "excel finanzas personales",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": 0.56,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que son las finanzas",
+            "searchVolume": 720,
+            "keywordDifficulty": 6,
+            "cpc": 0.16,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "libros de finanzas",
+            "searchVolume": 590,
+            "keywordDifficulty": 0,
+            "cpc": 0.36,
+            "competition": 0.74,
+            "intent": "informational"
+          },
+          {
+            "keyword": "plantillas para finanzas personales excel",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el van en finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": 59,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas hidalgo",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "data finanzas",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es payback en finanzas",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es pnl en finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "dibujos de finanzas",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es overhead en finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el margen en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que son las finanzas corporativas",
+            "searchVolume": 110,
+            "keywordDifficulty": 9,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "intranet activos y finanzas",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ciencia de datos e inteligencia artificial sueldo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuanto cuesta hacer una inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "app finanzas personales",
+            "searchVolume": 50,
+            "keywordDifficulty": 55,
+            "cpc": 0.44,
+            "competition": 0.1,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "finanzas excel",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": 1.26,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "rol de la inteligencia artificial en la contabilidad",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "mejor app para finanzas personales 2022",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "giros y finanzas bogota",
+            "searchVolume": 40,
+            "keywordDifficulty": 2,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es tes en finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es ltv en finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es nopat en finanzas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es cae en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es contabilidad y finanzas sena",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "departamento de finanzas itm",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "plantillas de notion para finanzas personales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "plantillas finanzas personales gratis",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "definición de finanzas según autores",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "roll over en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "finanzas wallpaper",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es rollover en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas personales excel gratis",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es turnover en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas corporativas con power bi",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.69,
+            "competition": 0.68,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "plantilla notion finanzas personales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de finanzas ejemplos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es pkt en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es kdt en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas total",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es npl en finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "el tiempo finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "finanzas corporativas trabajo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "plantilla de control de finanzas personales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "microsoft finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "mis propias finanzas excel",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "manual de finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.5,
+            "intent": "informational"
+          },
+          {
+            "keyword": "similitudes entre contabilidad y finanzas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uniempresarial finanzas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "contabilidad y finanzas para dummies amazon",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es finanzas publicas",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "template excel finanzas personales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tecnología en finanzas",
+            "searchVolume": 110,
+            "keywordDifficulty": 51,
+            "cpc": 1.08,
+            "competition": 0.37,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "que es contabilidad y finanzas",
+            "searchVolume": 90,
+            "keywordDifficulty": 1,
+            "cpc": 1.11,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es p&l en finanzas",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "qué es contabilidad y finanzas",
+            "searchVolume": 70,
+            "keywordDifficulty": 0,
+            "cpc": 0.67,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "van en finanzas",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "metrix finanzas",
+            "searchVolume": 70,
+            "keywordDifficulty": 54,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imagen de finanzas personales",
+            "searchVolume": 70,
+            "keywordDifficulty": 59,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "logotipos de finanzas",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es gap en finanzas",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "app finanzas",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": 2.81,
+            "competition": 0.11,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "pagos giros y finanzas",
+            "searchVolume": 40,
+            "keywordDifficulty": 8,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "logo de contabilidad y finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "que es una opa en finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "imagenes de contabilidad y finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es pyg en finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "audio libros de finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 0.37,
+            "competition": 0.18,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uniformes del sena contabilidad y finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "departamento de finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": 55,
+            "cpc": 1.48,
+            "competition": 0.13,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uniforme sena contabilidad y finanzas",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "kpis finanzas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          }
+        ]
+      },
+      {
+        "seed": "cómo implementar inteligencia artificial en empresas",
+        "ok": true,
+        "rowCount": 75,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "inteligencia artificial chat",
+            "searchVolume": 6600,
+            "keywordDifficulty": 36,
+            "cpc": 0.33,
+            "competition": 0.16,
+            "intent": "informational"
+          },
+          {
+            "keyword": "computrabajo empresas",
+            "searchVolume": 8100,
+            "keywordDifficulty": 12,
+            "cpc": 2.41,
+            "competition": 0.11,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia artificial de google",
+            "searchVolume": 2900,
+            "keywordDifficulty": 38,
+            "cpc": 0.5,
+            "competition": 0.2,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para crear imagenes",
+            "searchVolume": 1600,
+            "keywordDifficulty": 3,
+            "cpc": 0.34,
+            "competition": 0.6,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cloud inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 13,
+            "cpc": 3.68,
+            "competition": 0.52,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial",
+            "searchVolume": 110000,
+            "keywordDifficulty": 0,
+            "cpc": 0.29,
+            "competition": 0.24,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empresas de software",
+            "searchVolume": 720,
+            "keywordDifficulty": 9,
+            "cpc": 2.11,
+            "competition": 0.34,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "computrabajo empresas ingresar",
+            "searchVolume": 590,
+            "keywordDifficulty": 16,
+            "cpc": 2.65,
+            "competition": 0.09,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia artificial online",
+            "searchVolume": 480,
+            "keywordDifficulty": 36,
+            "cpc": 0.16,
+            "competition": 0.33,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial gratis online",
+            "searchVolume": 480,
+            "keywordDifficulty": 73,
+            "cpc": 0.24,
+            "competition": 0.25,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en ingles",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empresas de tecnología en colombia",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": 3,
+            "competition": 0.44,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial para hacer presentaciones",
+            "searchVolume": 210,
+            "keywordDifficulty": 23,
+            "cpc": 0.69,
+            "competition": 0.66,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial png",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial gif",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": 0.58,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fotos con inteligencia artificial",
+            "searchVolume": 480,
+            "keywordDifficulty": 14,
+            "cpc": 0.19,
+            "competition": 0.33,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para hacer trabajos",
+            "searchVolume": 40,
+            "keywordDifficulty": 0,
+            "cpc": 0.95,
+            "competition": 0.65,
+            "intent": "informational"
+          },
+          {
+            "keyword": "conpes inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": 3,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial va con mayuscula",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "soporte tecnico claro empresas",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": 1.09,
+            "competition": 0.04,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia artificial animado",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "pagina de inteligencia artificial gratis",
+            "searchVolume": 110,
+            "keywordDifficulty": 64,
+            "cpc": 0.47,
+            "competition": 0.52,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empresas de consultoria de software",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.21,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "transformacion digital en empresas",
+            "searchVolume": 90,
+            "keywordDifficulty": 37,
+            "cpc": 0.97,
+            "competition": 0.26,
+            "intent": "informational"
+          },
+          {
+            "keyword": "uso responsable de la inteligencia artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "beneficios de la inteligencia artificial en la educación",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 1.79,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial mejor que chatgpt",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 0.6,
+            "competition": 0.58,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial de audio a texto",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.27,
+            "competition": 0.71,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empresas de tecnologia en medellin",
+            "searchVolume": 70,
+            "keywordDifficulty": 15,
+            "cpc": 1.33,
+            "competition": 0.67,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "silicon valley empresas",
+            "searchVolume": 50,
+            "keywordDifficulty": 63,
+            "cpc": 0.98,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empresas de tecnologia en colombia",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": 1.51,
+            "competition": 0.42,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "empresas nativas digitales",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.29,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "office 365 para empresas descargar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "transactional"
+          },
+          {
+            "keyword": "nombres para empresas de tecnologia y seguridad",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empresas digitales",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": 6.41,
+            "competition": 0.37,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial para contadores en colombia",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": 1.31,
+            "competition": 0.72,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "meme inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para celular",
+            "searchVolume": 10,
+            "keywordDifficulty": 7,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ameca inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "super inteligencia artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": 10,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "modelo onlyfans inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "5 noticias sobre la inteligencia artificial",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": 0.55,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "logos con inteligencia artificial",
+            "searchVolume": 40,
+            "keywordDifficulty": 65,
+            "cpc": 0.11,
+            "competition": 0.27,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "noticias de inteligencia artificial en colombia",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para niños",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sofia inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": 60,
+            "cpc": 0.36,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial que haga presentaciones",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.62,
+            "competition": 0.57,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial jw",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ventajas de la inteligencia artificial generativa",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ia acelera inteligencia artificial para tu negocio",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.29,
+            "intent": "transactional"
+          },
+          {
+            "keyword": "inteligencia artificial pelicula online",
+            "searchVolume": 10,
+            "keywordDifficulty": 54,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "becas mintic inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial china app",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial rae",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial imdb",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la guerra",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial chat china",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para escribir textos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.14,
+            "competition": 0.21,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial terminator",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "creador de imagenes inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": 42,
+            "cpc": 0.6,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial freepik",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para planear viajes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "hablar con inteligencia artificial en linea",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empresas de video y fotografia",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "empresas de software bogota",
+            "searchVolume": 50,
+            "keywordDifficulty": 55,
+            "cpc": 2.01,
+            "competition": 0.53,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "agencia inteligencia artificial españa",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "nombres de empresas de tecnologia",
+            "searchVolume": 40,
+            "keywordDifficulty": 5,
+            "cpc": null,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria virtual inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "agencia de inteligencia artificial colombia",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "office 2016 hogar y empresas",
+            "searchVolume": 30,
+            "keywordDifficulty": 52,
+            "cpc": null,
+            "competition": 0.5,
+            "intent": "transactional"
+          },
+          {
+            "keyword": "lista de empresas de tecnología en colombia",
+            "searchVolume": 20,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empresas de facturación electrónica colombia",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 4.95,
+            "competition": 0.64,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "empresas tecnologicas mas grandes del mundo",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial reemplazo de humanos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empresas de tecnologia en mexico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 5.83,
+            "competition": 0.83,
+            "intent": "commercial"
+          }
+        ]
+      },
+      {
+        "seed": "cómo evaluar artículos científicos",
+        "ok": true,
+        "rowCount": 75,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "evaluar para avanzar cuadernillos",
+            "searchVolume": 720,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evaluar para avanzar 2025",
+            "searchVolume": 480,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evaluar para avanzar 2021",
+            "searchVolume": 50,
+            "keywordDifficulty": 26,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evaluar para avanzar 2024",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "lista de cotejo para evaluar",
+            "searchVolume": 70,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evaluar para avanzar cuadernillos 2024",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "transactional"
+          },
+          {
+            "keyword": "poder evaluar 2024",
+            "searchVolume": 30,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos del español",
+            "searchVolume": 390,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "formato ieee para presentar artículos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "buscar artículos científicos",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": 0.64,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos definidos ejemplos",
+            "searchVolume": 90,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evaluar para avanzar 2020",
+            "searchVolume": 30,
+            "keywordDifficulty": 18,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evaluar para avanzar ingresar",
+            "searchVolume": 20,
+            "keywordDifficulty": 1,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "pruebas evaluar para avanzar 2026",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuadernillos evaluar para avanzar 2026",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "artículos demostrativos",
+            "searchVolume": 10,
+            "keywordDifficulty": 27,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos objetivos ejemplos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas para evaluar a los alumnos",
+            "searchVolume": 10,
+            "keywordDifficulty": 51,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "pruebas evaluar para avanzar 2024",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuadernillo 2 evaluar para avanzar 2023",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "indicadores para evaluar la lectura",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "formato para evaluar lectura",
+            "searchVolume": 10,
+            "keywordDifficulty": 51,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evaluar para avanzar 2026 grado 10",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "artículos en gramática",
+            "searchVolume": 140,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos y sustantivos",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evaluar para avanzar 2022",
+            "searchVolume": 70,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos definidos en francés",
+            "searchVolume": 90,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos en inglés y español",
+            "searchVolume": 50,
+            "keywordDifficulty": 52,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "pruebas evaluar para avanzar 2025",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "poder evaluar resultados concurso docente 2024",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evaluar funciones",
+            "searchVolume": 40,
+            "keywordDifficulty": 59,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos de revisión sistemática",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "rubrica para evaluar una exposicion",
+            "searchVolume": 40,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "poder evaluar universidad de antioquia",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "ejercicios de artículos definidos e indefinidos",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ensayos literarios o científicos",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos en español ejemplos",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos escolares en inglés",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos demostrativos en inglés",
+            "searchVolume": 20,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "formas de evaluar a los estudiantes",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evaluar para avanzar matemáticas",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "poder evaluar 2024 resultados",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "lista de artículos en español",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "poder evaluar resultados concurso docente 2026",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "artículos académicos ejemplos",
+            "searchVolume": 20,
+            "keywordDifficulty": 15,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "oraciones con artículos determinados",
+            "searchVolume": 20,
+            "keywordDifficulty": 52,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cinco ejemplos de artículos",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos científicos con doi",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso redacción de artículos científicos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.21,
+            "intent": "transactional"
+          },
+          {
+            "keyword": "tipos de artículos científicos y sus características",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de artículos científicos según apa",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "procrastinación artículos científicos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "redacción y publicación de artículos científicos enfoque discursivo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "economía circular artículos científicos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "artículos científicos de informática",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos científicos sobre educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "normas apa para artículos científicos 2022",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "redacción y publicación de artículos científicos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "desempeño laboral artículos científicos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "4 tipos de artículos científicos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos científicos para que las utilizan",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos científicos descriptivos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "guía para la redacción de artículos científicos unesco",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos científicos 2019",
+            "searchVolume": 10,
+            "keywordDifficulty": 57,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos científicos los tipos de investigación y las técnicas empleadas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos científicos unam",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos científicos recientes",
+            "searchVolume": 10,
+            "keywordDifficulty": 57,
+            "cpc": 2.84,
+            "competition": 0.12,
+            "intent": "informational"
+          },
+          {
+            "keyword": "revisión por pares de artículos científicos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "conflicto de intereses en artículos científicos ejemplos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "indicadores a evaluar en preescolar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo evaluar competencias desde el enfoque formativo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "rúbrica para evaluar convivencia escolar en el aula",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de artículos en la oración",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "rubrica para evaluar talleres",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artículos en singular",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/Default (contenedor autorizado)/keywords"
+    }
+  },
+  "reserve": 282
+}

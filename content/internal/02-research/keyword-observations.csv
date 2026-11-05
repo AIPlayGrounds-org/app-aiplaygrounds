@@ -1,0 +1,49 @@
+country,language,keyword,observed_date,source,avg_monthly_searches,ads_competition,kd,cpc,automatic_intent,source_line,status
+PE,es,ai engineering,2026-09-29,Planner_v1,320,LOW,,,,2,historical_reused
+PE,es,programacion con ia,2026-09-29,Planner_v1,50,MEDIUM,,,,17,historical_reused
+PE,es,desarrollo de software con inteligencia artificial,2026-09-29,Planner_v1,10,MEDIUM,,,,5,historical_reused
+PE,es,curso de inteligencia artificial,2026-09-29,Planner_v1,880,HIGH,,,,13,historical_reused
+PE,es,herramientas de inteligencia artificial,2026-09-29,Planner_v1,320,LOW,,,,24,historical_reused
+PE,es,investigaciones sobre inteligencia artificial,2026-09-29,Planner_v1,10,LOW,,,,27,historical_reused
+PE,es,comunidad de inteligencia artificial,2026-09-29,Planner_v1,0,UNSPECIFIED,,,,29,historical_reused
+PE,es,directorio de productos de inteligencia artificial,2026-09-29,Planner_v1,0,UNSPECIFIED,,,,28,historical_reused
+PE,es,formación en inteligencia artificial,2026-09-29,Planner_v1,10,UNSPECIFIED,,,,18,historical_reused
+PE,es,capacitación en inteligencia artificial para empresas,2026-09-29,Planner_v1,0,UNSPECIFIED,,,,20,historical_reused
+PE,es,organizaciones de inteligencia artificial,,not_observed,,,,,,,unknown
+PE,es,fundamentos de inteligencia artificial,,not_observed,,,,,,,unknown
+PE,es,inteligencia artificial para investigación científica,,not_observed,,,,,,,unknown
+PE,es,inteligencia artificial en finanzas,,not_observed,,,,,,,unknown
+PE,es,Software with AI,,not_observed,,,,,,,unknown
+PE,es,proyectos de inteligencia artificial,,not_observed,,,,,,,unknown
+MX,es,ai engineering,2026-09-29,Planner_v1,590,MEDIUM,,,,30,historical_reused
+MX,es,programacion con ia,2026-09-29,Planner_v1,70,MEDIUM,,,,45,historical_reused
+MX,es,desarrollo de software con inteligencia artificial,2026-09-29,Planner_v1,10,MEDIUM,,,,33,historical_reused
+MX,es,curso de inteligencia artificial,2026-09-29,Planner_v1,1300,HIGH,,,,41,historical_reused
+MX,es,herramientas de inteligencia artificial,2026-09-29,Planner_v1,480,MEDIUM,,,,52,historical_reused
+MX,es,investigaciones sobre inteligencia artificial,2026-09-29,Planner_v1,10,LOW,,,,55,historical_reused
+MX,es,comunidad de inteligencia artificial,2026-09-29,Planner_v1,0,UNSPECIFIED,,,,57,historical_reused
+MX,es,directorio de productos de inteligencia artificial,2026-09-29,Planner_v1,0,UNSPECIFIED,,,,56,historical_reused
+MX,es,formación en inteligencia artificial,2026-09-29,Planner_v1,90,MEDIUM,,,,46,historical_reused
+MX,es,capacitación en inteligencia artificial para empresas,2026-09-29,Planner_v1,0,UNSPECIFIED,,,,48,historical_reused
+MX,es,organizaciones de inteligencia artificial,,not_observed,,,,,,,unknown
+MX,es,fundamentos de inteligencia artificial,,not_observed,,,,,,,unknown
+MX,es,inteligencia artificial para investigación científica,,not_observed,,,,,,,unknown
+MX,es,inteligencia artificial en finanzas,,not_observed,,,,,,,unknown
+MX,es,Software with AI,,not_observed,,,,,,,unknown
+MX,es,proyectos de inteligencia artificial,,not_observed,,,,,,,unknown
+CO,es,ai engineering,2026-09-29,Planner_v1,480,MEDIUM,,,,62,historical_reused
+CO,es,programacion con ia,2026-09-29,Planner_v1,30,MEDIUM,,,,76,historical_reused
+CO,es,desarrollo de software con inteligencia artificial,2026-09-29,Planner_v1,10,HIGH,,,,65,historical_reused
+CO,es,curso de inteligencia artificial,2026-09-29,Planner_v1,1000,HIGH,,,,72,historical_reused
+CO,es,herramientas de inteligencia artificial,2026-09-29,Planner_v1,320,MEDIUM,,,,83,historical_reused
+CO,es,investigaciones sobre inteligencia artificial,2026-09-29,Planner_v1,10,LOW,,,,86,historical_reused
+CO,es,comunidad de inteligencia artificial,2026-09-29,Planner_v1,0,UNSPECIFIED,,,,88,historical_reused
+CO,es,directorio de productos de inteligencia artificial,2026-09-29,Planner_v1,0,UNSPECIFIED,,,,87,historical_reused
+CO,es,formación en inteligencia artificial,2026-09-29,Planner_v1,30,HIGH,,,,77,historical_reused
+CO,es,capacitación en inteligencia artificial para empresas,2026-09-29,Planner_v1,0,UNSPECIFIED,,,,79,historical_reused
+CO,es,organizaciones de inteligencia artificial,,not_observed,,,,,,,unknown
+CO,es,fundamentos de inteligencia artificial,,not_observed,,,,,,,unknown
+CO,es,inteligencia artificial para investigación científica,,not_observed,,,,,,,unknown
+CO,es,inteligencia artificial en finanzas,,not_observed,,,,,,,unknown
+CO,es,Software with AI,,not_observed,,,,,,,unknown
+CO,es,proyectos de inteligencia artificial,,not_observed,,,,,,,unknown

@@ -1,0 +1,17 @@
+{
+  "id": "Z01-final",
+  "tool": "whoami/list_projects",
+  "response": {
+    "creditsRemaining": 7820,
+    "projects": [
+      {
+        "name": "Default",
+        "domain": null,
+        "locationCode": 2840,
+        "languageCode": "en"
+      }
+    ]
+  },
+  "at": "2026-11-05T16:00:30.939Z",
+  "reserve": 0
+}

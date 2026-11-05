@@ -1,0 +1,182 @@
+country,text,type,volume,id,selection,reason
+MX,qué es la inteligencia artificial ia en finanzas,KEYWORD_INTERROGATIVA,,A02-MX,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,donde estudiar ingeniería en inteligencia artificial y ciencia de datos,KEYWORD_INTERROGATIVA,,A02-MX,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,cuál es una aplicación de la inteligencia artificial en finanzas,KEYWORD_INTERROGATIVA,0,A03-CO,CANDIDATA,Seleccionada por necesidad
+CO,qué es ingeniería de software con inteligencia artificial,KEYWORD_INTERROGATIVA,10,A03-CO,CANDIDATA,Seleccionada por necesidad
+PE,que herramientas de inteligencia artificial existen,KEYWORD_INTERROGATIVA,20,A04-tools,CANDIDATA,Seleccionada por necesidad
+PE,cuales son las herramientas de inteligencia artificial,KEYWORD_INTERROGATIVA,10,A04-tools,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+PE,que son las herramientas de inteligencia artificial,KEYWORD_INTERROGATIVA,10,A04-tools,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+PE,cuales son las herramientas de inteligencia artificial generativa,KEYWORD_INTERROGATIVA,,A04-tools,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,que herramientas de inteligencia artificial existen,KEYWORD_INTERROGATIVA,10,A04-tools,CANDIDATA,Seleccionada por necesidad
+MX,que son herramientas de inteligencia artificial,KEYWORD_INTERROGATIVA,10,A04-tools,CANDIDATA,Seleccionada por necesidad
+MX,cuales son las herramientas de inteligencia artificial,KEYWORD_INTERROGATIVA,10,A04-tools,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,cuales son las mejores herramientas de inteligencia artificial,KEYWORD_INTERROGATIVA,10,A04-tools,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,qué acciones realizan las herramientas de inteligencia artificial,KEYWORD_INTERROGATIVA,10,A04-tools,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,qué herramientas de inteligencia artificial,KEYWORD_INTERROGATIVA,,A04-tools,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,que son herramientas de inteligencia artificial,KEYWORD_INTERROGATIVA,10,A04-tools,CANDIDATA,Seleccionada por necesidad
+CO,cuales son las herramientas de la inteligencia artificial,KEYWORD_INTERROGATIVA,10,A04-tools,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+PE,cómo estudiar inteligencia artificial,KEYWORD_INTERROGATIVA,20,A05-PE,CANDIDATA,Seleccionada por necesidad
+PE,para que sirve la inteligencia artificial en las empresas,KEYWORD_INTERROGATIVA,0,A05-PE,CANDIDATA,Seleccionada por necesidad
+MX,para que sirve la inteligencia artificial en las empresas,KEYWORD_INTERROGATIVA,10,A06-MX,CANDIDATA,Seleccionada por necesidad
+CO,para que sirve la inteligencia artificial en las empresas,KEYWORD_INTERROGATIVA,10,A07-CO,CANDIDATA,Seleccionada por necesidad
+PE,qué es la inteligencia artificial,KEYWORD_INTERROGATIVA,1300,B01-PE,CANDIDATA,Seleccionada por necesidad
+PE,que herramientas de inteligencia artificial existen,KEYWORD_INTERROGATIVA,20,B01-PE,CANDIDATA,Seleccionada por necesidad
+PE,para que sirve la inteligencia artificial en las empresas,KEYWORD_INTERROGATIVA,0,B01-PE,CANDIDATA,Seleccionada por necesidad
+MX,qué es la inteligencia artificial,KEYWORD_INTERROGATIVA,6600,B02-MX,CANDIDATA,Seleccionada por necesidad
+MX,cómo aprender inteligencia artificial,KEYWORD_INTERROGATIVA,110,B02-MX,CANDIDATA,Seleccionada por necesidad
+MX,para que sirve la inteligencia artificial en las empresas,KEYWORD_INTERROGATIVA,10,B02-MX,CANDIDATA,Seleccionada por necesidad
+MX,que herramientas de inteligencia artificial existen,KEYWORD_INTERROGATIVA,10,B02-MX,CANDIDATA,Seleccionada por necesidad
+CO,qué es la inteligencia artificial,KEYWORD_INTERROGATIVA,2400,B03-CO,CANDIDATA,Seleccionada por necesidad
+CO,cómo aprender inteligencia artificial,KEYWORD_INTERROGATIVA,90,B03-CO,CANDIDATA,Seleccionada por necesidad
+CO,para que sirve la inteligencia artificial en las empresas,KEYWORD_INTERROGATIVA,10,B03-CO,CANDIDATA,Seleccionada por necesidad
+CO,que herramientas de inteligencia artificial existen,KEYWORD_INTERROGATIVA,10,B03-CO,CANDIDATA,Seleccionada por necesidad
+CO,qué es ingeniería de software con inteligencia artificial,KEYWORD_INTERROGATIVA,10,B03-CO,CANDIDATA,Seleccionada por necesidad
+PE,que es cnn en inteligencia artificial,KEYWORD_INTERROGATIVA,20,E01-questions,CANDIDATA,Seleccionada por necesidad
+PE,como utilizar la inteligencia artificial en la educacion,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,cómo aprender inteligencia artificial gratis,KEYWORD_INTERROGATIVA,40,E01-questions,CANDIDATA,Seleccionada por necesidad
+MX,cómo aprender inglés con inteligencia artificial,KEYWORD_INTERROGATIVA,20,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,como se entrena una inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,cómo aprender inglés con inteligencia artificial gratis,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,como aprender inteligencia artificial,KEYWORD_INTERROGATIVA,110,E01-questions,CANDIDATA,Seleccionada por necesidad
+MX,dónde aprender inteligencia artificial,KEYWORD_INTERROGATIVA,20,E01-questions,CANDIDATA,Seleccionada por necesidad
+MX,que es cnn en inteligencia artificial,KEYWORD_INTERROGATIVA,20,E01-questions,CANDIDATA,Seleccionada por necesidad
+MX,por qué es importante aprender inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,que se necesita para aprender inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,CANDIDATA,Seleccionada por necesidad
+MX,que lenguaje de programacion aprender para inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,CANDIDATA,Seleccionada por necesidad
+MX,que es el machine learning en la inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,CANDIDATA,Seleccionada por necesidad
+MX,que es un algoritmo en la inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,como usar la inteligencia artificial para estudiar,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,que es la carrera ciencia de datos e inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,como trabajar la inteligencia artificial en el aula,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,como ser experto en inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,que se ve en la carrera de inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,que necesita la inteligencia artificial para funcionar,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,que es el aprendizaje profundo en inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,donde hacer cursos de inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,cuál es el subcampo de la inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,que es la inteligencia artificial computacional,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,como se entrenan los modelos de inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,que materias lleva la carrera de inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,como se llama la carrera de inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,como preparar una clase con inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,dónde se estudia inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,cual es el mejor curso de inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,que se aprende en un curso de inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,CANDIDATA,Seleccionada por necesidad
+MX,que es deep learning en inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,para que sirve la carrera de inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+MX,que es el aprendizaje automático en inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,cómo aprender inglés con inteligencia artificial gratis,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,cómo aprender inglés con inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,como aprender inteligencia artificial,KEYWORD_INTERROGATIVA,90,E01-questions,CANDIDATA,Seleccionada por necesidad
+CO,que es cnn en inteligencia artificial,KEYWORD_INTERROGATIVA,20,E01-questions,CANDIDATA,Seleccionada por necesidad
+CO,que se necesita para aprender inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,CANDIDATA,Seleccionada por necesidad
+CO,dónde aprender inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,CANDIDATA,Seleccionada por necesidad
+CO,por qué es importante aprender inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,para que sirve la carrera de inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,que es deep learning en inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,que es el machine learning en la inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,CANDIDATA,Seleccionada por necesidad
+CO,como usar la inteligencia artificial para estudiar,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,para que sirve estudiar inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,que se aprende en un curso de inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,CANDIDATA,Seleccionada por necesidad
+CO,donde se puede estudiar inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,que es la inteligencia artificial computacional,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,donde puedo hacer un curso de inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,como se entrena una inteligencia artificial,KEYWORD_INTERROGATIVA,10,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,que necesito para aprender inteligencia artificial,KEYWORD_INTERROGATIVA,,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+CO,para que sirve aprender inteligencia artificial,KEYWORD_INTERROGATIVA,,E01-questions,REVISAR_O_EXCLUIR,Sin correspondencia editorial aprobada; no popularidad ni PAA
+PE,"Y tú, ¿qué esperas de la Comunidad de IA de Código Abierto ...",TITULO_ORGANICO,,C01-PE-Q01-R6,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,What is AI engineering? If you aren't building foundational ...,TITULO_ORGANICO,,C01-PE-Q03-R2,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,What is Ai Engineering? Exploring the Roles of an Ai ...,TITULO_ORGANICO,,C01-PE-Q03-R8,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,What is AI engineering?,TITULO_ORGANICO,,C01-PE-Q03-R10,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Qué tan buena es la carrera ingeniera de software en ...,TITULO_ORGANICO,,C01-PE-Q04-R3,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Cuánto gana un ingeniero de software de inteligencia ...,TITULO_ORGANICO,,C01-PE-Q04-R8,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Qué es el desarrollo de aplicaciones con IA?,TITULO_ORGANICO,,C01-PE-Q05-R5,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Cómo impactará la Inteligencia Artificial en el Desarrollo de ...,TITULO_ORGANICO,,C01-PE-Q05-R7,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Cómo hacer investigación científica con Inteligencia ...,TITULO_ORGANICO,,C01-PE-Q06-R5,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Qué es la Inteligencia Artificial (IA) en las finanzas? El ...,TITULO_ORGANICO,,C01-PE-Q07-R8,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Qué es la IA en las finanzas?,TITULO_ORGANICO,,C01-PE-Q07-R19,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Qué es la inteligencia artificial o IA?,TITULO_ORGANICO,,C01-PE-Q08-R7,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Qué es la Inteligencia Artificial? Fundamentos y Principios ...,TITULO_ORGANICO,,C01-PE-Q08-R16,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Qué es la Inteligencia Artificial (IA)?,TITULO_ORGANICO,,C01-PE-Q08-R17,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Qué es la IA en la gestión de proyectos?,TITULO_ORGANICO,,C01-PE-Q10-R15,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Qué es Foro de IA y por qué es el espacio clave para la ...,TITULO_ORGANICO,,C02-MX-Q01-R10,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Qué es la inteligencia artificial o IA?,TITULO_ORGANICO,,C02-MX-Q01-R14,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,What is AI engineering? If you aren't building foundational ...,TITULO_ORGANICO,,C02-MX-Q03-R2,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,What is AI engineering? - Archie,TITULO_ORGANICO,,C02-MX-Q03-R18,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Cómo cambia la IA la Ingeniería de Software?,TITULO_ORGANICO,,C02-MX-Q04-R4,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,Ingeniería Software o Ingeniería en iA? : r/EducacionChile,TITULO_ORGANICO,,C02-MX-Q04-R9,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Vale la pena estudiar Ingeniería de Software en México? ...,TITULO_ORGANICO,,C02-MX-Q04-R10,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Qué es un desarrollador de IA?,TITULO_ORGANICO,,C02-MX-Q05-R4,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Cómo empezar a usar IA en el desarrollo de software?,TITULO_ORGANICO,,C02-MX-Q05-R7,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,Inteligencia Artificial… ¿Qué es eso?,TITULO_ORGANICO,,C02-MX-Q06-R12,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,IA aplicada a Finanzas: ¿Cómo especializarte?,TITULO_ORGANICO,,C02-MX-Q07-R2,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Cómo usar la IA en finanzas?,TITULO_ORGANICO,,C02-MX-Q07-R9,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,Principios básicos de la Inteligencia Artificial ¿Cómo ...,TITULO_ORGANICO,,C02-MX-Q08-R5,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Qué es la Inteligencia Artificial (IA)?,TITULO_ORGANICO,,C02-MX-Q08-R7,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Qué es la Inteligencia Artificial? Fundamentos y Principios ...,TITULO_ORGANICO,,C02-MX-Q08-R17,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Qué son las herramientas de inteligencia artificial?,TITULO_ORGANICO,,C02-MX-Q09-R5,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Qué herramientas de IA existen?,TITULO_ORGANICO,,C02-MX-Q09-R10,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Qué es la IA en la gestión de proyectos?,TITULO_ORGANICO,,C02-MX-Q10-R19,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Qué es la inteligencia artificial o IA?,TITULO_ORGANICO,,C03-CO-Q01-R12,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Qué es una empresa o compañía de IA?,TITULO_ORGANICO,,C03-CO-Q02-R4,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,What is AI Engineering? - by Aurimas Griciūnas,TITULO_ORGANICO,,C03-CO-Q03-R3,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,What Is AI Engineering? Building and Running AI Systems,TITULO_ORGANICO,,C03-CO-Q03-R8,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,What is AI engineering? If you aren't building foundational ...,TITULO_ORGANICO,,C03-CO-Q03-R18,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Por qué la Inteligencia Artificial está cambiando el futuro ...,TITULO_ORGANICO,,C03-CO-Q04-R15,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Estás indeciso sobre qué carrera estudiar y sientes curiosidad ...,TITULO_ORGANICO,,C03-CO-Q04-R18,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Qué es el desarrollo de aplicaciones con IA?,TITULO_ORGANICO,,C03-CO-Q05-R7,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿qué significa la ia en el área de finanzas?,TITULO_ORGANICO,,C03-CO-Q07-R2,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Qué es y cómo aplicar la inteligencia artificial en finanzas?,TITULO_ORGANICO,,C03-CO-Q07-R3,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Cómo usar la IA en finanzas?,TITULO_ORGANICO,,C03-CO-Q07-R9,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿qué significa la ia en el área de finanzas?,TITULO_ORGANICO,,C03-CO-Q07-R13,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,Principios básicos de la Inteligencia Artificial ¿Cómo ...,TITULO_ORGANICO,,C03-CO-Q08-R3,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Qué es la Inteligencia Artificial (IA)?,TITULO_ORGANICO,,C03-CO-Q08-R5,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,8 Proyectos opensource sobre IA. A cual le hacemos vídeo?,TITULO_ORGANICO,,C03-CO-Q10-R16,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Qué es la IA empresarial? | Glosario,TITULO_ORGANICO,,C04-PE-Q01-R4,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,Inteligencia artificial: ¿Cómo utilizarla en los negocios?,TITULO_ORGANICO,,C04-PE-Q01-R15,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Qué es la IA empresarial? - AWS - Amazon.com,TITULO_ORGANICO,,C04-PE-Q02-R20,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Cómo programar una IA en 6 pasos?,TITULO_ORGANICO,,C04-PE-Q04-R3,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Cómo programar inteligencia artificial? [5 lenguajes] - OTI UNP,TITULO_ORGANICO,,C04-PE-Q04-R10,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿La mejor IA para programar? - Probamos Claude Code,TITULO_ORGANICO,,C04-PE-Q04-R11,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Qué opciones de IA para programar existen?,TITULO_ORGANICO,,C04-PE-Q04-R14,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Cómo empezar a programar con inteligencia artificial?,TITULO_ORGANICO,,C04-PE-Q04-R18,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,https://www.gob.pe/r/laboratorio?sheet=5,TITULO_ORGANICO,,C04-PE-Q05-R17,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Qué es la IA empresarial? | IA para negocios,TITULO_ORGANICO,,C05-MX-Q01-R2,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Qué es la IA empresarial? - AWS - Amazon.com,TITULO_ORGANICO,,C05-MX-Q01-R6,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿La mejor IA para programar? - Probamos Claude Code,TITULO_ORGANICO,,C05-MX-Q04-R10,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Qué es la Inteligencia Artificial en la programación web?,TITULO_ORGANICO,,C05-MX-Q04-R13,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Cómo usar la IA en programación? - Javascript en español,TITULO_ORGANICO,,C05-MX-Q04-R14,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Cómo empezar a programar con inteligencia artificial?,TITULO_ORGANICO,,C05-MX-Q04-R18,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Qué es la IA empresarial? | Glosario,TITULO_ORGANICO,,C06-CO-Q01-R4,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Qué es la IA empresarial?,TITULO_ORGANICO,,C06-CO-Q01-R9,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Qué es la IA empresarial? - AWS - Amazon.com,TITULO_ORGANICO,,C06-CO-Q01-R13,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Qué es la IA empresarial? Una guía completa,TITULO_ORGANICO,,C06-CO-Q01-R16,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,Soluciones de IA para empresas ¿cómo automatizar tu ...,TITULO_ORGANICO,,C06-CO-Q02-R7,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Dónde estudiar inteligencia artificial en Perú? | Blog,TITULO_ORGANICO,,E02-PE-Q03-R4,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,que tan seria es la nueva Carrera de Inteligencia Artificial?,TITULO_ORGANICO,,E02-PE-Q03-R6,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Qué hace un ingeniero de inteligencia artificial?,TITULO_ORGANICO,,E02-PE-Q03-R11,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Cómo puedo aprender IA siendo un completo principiante?,TITULO_ORGANICO,,E02-PE-Q04-R6,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Cómo aprender inteligencia artificial desde cero en 2026?,TITULO_ORGANICO,,E02-PE-Q04-R13,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Cómo Aprende una Inteligencia Artificial? - MBIT School,TITULO_ORGANICO,,E02-PE-Q04-R14,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,Como empezar con inteligencia artificial? : r/CharruaDevs,TITULO_ORGANICO,,E02-PE-Q04-R16,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Cuál es la mejor herramienta de IA para investigar? : r/PhD,TITULO_ORGANICO,,E02-PE-Q05-R7,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+PE,¿Cómo usar la IA en finanzas?,TITULO_ORGANICO,,E02-PE-Q06-R20,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,Dónde estudiar ingeniería en IA online desde México?,TITULO_ORGANICO,,E03-MX-Q03-R8,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Qué hace un ingeniero en inteligencia artificial ...,TITULO_ORGANICO,,E03-MX-Q03-R11,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Qué hace un ingeniero de inteligencia artificial?,TITULO_ORGANICO,,E03-MX-Q03-R16,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Cómo aprender más sobre inteligencia artificial?,TITULO_ORGANICO,,E03-MX-Q04-R6,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Cómo puedo empezar a estudiar inteligencia artificial?,TITULO_ORGANICO,,E03-MX-Q04-R9,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Cómo estudiar inteligencia artificial? Guía para empezar ...,TITULO_ORGANICO,,E03-MX-Q04-R19,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,¿Cuál es la mejor herramienta de IA para investigar? : r/PhD,TITULO_ORGANICO,,E03-MX-Q05-R2,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,🔎✨ ¿Buscas la herramienta ideal de IA para tu ...,TITULO_ORGANICO,,E03-MX-Q05-R3,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+MX,La inteligencia artificial: ¿te puede ayudar a optimizar tu ...,TITULO_ORGANICO,,E03-MX-Q06-R20,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,What Is an AI Playground? A Practical Guide,TITULO_ORGANICO,,E04-CO-Q01-R13,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,Vale la pena estudiar ingeniería en inteligencia artificial?,TITULO_ORGANICO,,E04-CO-Q03-R3,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Sabías que la Ingeniería en Inteligencia Artificial es ...,TITULO_ORGANICO,,E04-CO-Q03-R4,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Qué hace un ingeniero de inteligencia artificial?,TITULO_ORGANICO,,E04-CO-Q03-R14,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Por qué deberías estudiar Inteligencia Artificial en ...,TITULO_ORGANICO,,E04-CO-Q03-R20,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Cómo puedo aprender IA siendo un completo principiante?,TITULO_ORGANICO,,E04-CO-Q04-R7,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Cómo aprender inteligencia artificial desde cero en 2026?,TITULO_ORGANICO,,E04-CO-Q04-R10,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Qué puedo hacer para aprender IA?,TITULO_ORGANICO,,E04-CO-Q04-R11,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Qué puedo hacer para aprender IA?,TITULO_ORGANICO,,E04-CO-Q04-R14,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"
+CO,¿Cuál es la mejor herramienta de IA para investigar? : r/PhD,TITULO_ORGANICO,,E04-CO-Q05-R5,CONTEXTO_SERP,"Título observado, no pregunta PAA ni keyword con volumen atribuible"

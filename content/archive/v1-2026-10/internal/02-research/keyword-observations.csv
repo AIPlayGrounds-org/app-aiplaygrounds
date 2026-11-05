@@ -1,0 +1,199 @@
+country,language,seed_set_id,keyword,avg_monthly_searches,ads_competition,treatment
+PE,es,T,ai engineering,320,LOW,contrastar_area
+PE,es,T,ai builder,140,LOW,ambiguo_no_audiencia
+PE,es,T,product engineer,20,LOW,contrastar_rol
+PE,es,T,desarrollo de software con inteligencia artificial,10,MEDIUM,conservar_tema
+PE,es,T,ai builder microsoft,10,LOW,descartar_marca
+PE,es,T,inteligencia artificial desarrollo de software,10,MEDIUM,agrupar_sinonimo
+PE,es,T,aspenone v12,0,UNSPECIFIED,descartar_ruido
+PE,es,T,power bi turbo net,0,UNSPECIFIED,descartar_ruido
+PE,es,T,cursos de inteligencia artificial para desarrolladores,0,UNSPECIFIED,conservar_limite_medicion
+PE,es,T,integrar inteligencia artificial en aplicaciones,0,UNSPECIFIED,conservar_limite_medicion
+PE,es,G,cursos de ia,1900,HIGH,conservar_formacion
+PE,es,G,curso de inteligencia artificial,880,HIGH,conservar_formacion
+PE,es,G,cursos de ia gratis,480,HIGH,no_priorizar_gratis_no_confirmado
+PE,es,G,aprender inteligencia artificial desde cero,90,HIGH,conservar_nivel
+PE,es,G,especializacion en inteligencia artificial,110,HIGH,fuera_lanzamiento
+PE,es,G,programacion con ia,50,MEDIUM,conservar_tema
+PE,es,G,formación en inteligencia artificial,10,UNSPECIFIED,agrupar_sinonimo
+PE,es,G,curso ia google,110,MEDIUM,descartar_marca
+PE,es,B,capacitación en inteligencia artificial para empresas,0,UNSPECIFIED,conservar_limite_medicion
+PE,es,B,formación en inteligencia artificial para empresas,0,UNSPECIFIED,conservar_limite_medicion
+PE,es,B,prueba de concepto inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+PE,es,D,herramientas de ia,480,LOW,conservar_descubrimiento_condicional
+PE,es,D,herramientas de inteligencia artificial,320,LOW,conservar_descubrimiento_condicional
+PE,es,D,chat inteligencia artificial gratis,390,LOW,descartar_intencion_incompatible
+PE,es,E,investigacion sobre la inteligencia artificial,20,LOW,contrastar_intencion
+PE,es,E,investigaciones sobre inteligencia artificial,10,LOW,conservar_investigacion
+PE,es,E,directorio de productos de inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+PE,es,E,comunidad de inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+MX,es,T,ai engineering,590,MEDIUM,contrastar_area
+MX,es,T,ai builder,170,LOW,ambiguo_no_audiencia
+MX,es,T,product engineer,140,LOW,contrastar_rol
+MX,es,T,desarrollo de software con inteligencia artificial,10,MEDIUM,conservar_tema
+MX,es,T,ai builder microsoft,20,LOW,descartar_marca
+MX,es,T,inteligencia artificial desarrollo de software,10,HIGH,agrupar_sinonimo
+MX,es,T,aspenone v12,10,LOW,descartar_ruido
+MX,es,T,power bi turbo net,10,UNSPECIFIED,descartar_ruido
+MX,es,T,cursos de inteligencia artificial para desarrolladores,0,UNSPECIFIED,conservar_limite_medicion
+MX,es,T,integrar inteligencia artificial en aplicaciones,0,UNSPECIFIED,conservar_limite_medicion
+MX,es,G,cursos de ia,2900,HIGH,conservar_formacion
+MX,es,G,curso de inteligencia artificial,1300,HIGH,conservar_formacion
+MX,es,G,cursos de ia gratis,1300,HIGH,no_priorizar_gratis_no_confirmado
+MX,es,G,aprender inteligencia artificial desde cero,140,HIGH,conservar_nivel
+MX,es,G,especializacion en inteligencia artificial,20,HIGH,fuera_lanzamiento
+MX,es,G,programacion con ia,70,MEDIUM,conservar_tema
+MX,es,G,formación en inteligencia artificial,90,MEDIUM,agrupar_sinonimo
+MX,es,G,curso ia google,390,MEDIUM,descartar_marca
+MX,es,B,capacitación en inteligencia artificial para empresas,0,UNSPECIFIED,conservar_limite_medicion
+MX,es,B,formación en inteligencia artificial para empresas,0,UNSPECIFIED,conservar_limite_medicion
+MX,es,B,prueba de concepto inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+MX,es,D,herramientas de ia,880,MEDIUM,conservar_descubrimiento_condicional
+MX,es,D,herramientas de inteligencia artificial,480,MEDIUM,conservar_descubrimiento_condicional
+MX,es,D,chat inteligencia artificial gratis,320,LOW,descartar_intencion_incompatible
+MX,es,E,investigacion sobre la inteligencia artificial,90,LOW,contrastar_intencion
+MX,es,E,investigaciones sobre inteligencia artificial,10,LOW,conservar_investigacion
+MX,es,E,directorio de productos de inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+MX,es,E,comunidad de inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+MX,es,R,inteligencia artificial para empresas,50,MEDIUM,ambiguo_no_servicio_general
+MX,es,R,ia para empresas,90,HIGH,agrupar_sinonimo
+MX,es,R,empresa de ia,170,MEDIUM,descartar_proveedor_general
+MX,es,R,inteligencia artificial apple,90,LOW,descartar_marca
+CO,es,T,ai engineering,480,MEDIUM,contrastar_area
+CO,es,T,ai builder,170,LOW,ambiguo_no_audiencia
+CO,es,T,product engineer,40,LOW,contrastar_rol
+CO,es,T,desarrollo de software con inteligencia artificial,10,HIGH,conservar_tema
+CO,es,T,ai builder microsoft,10,LOW,descartar_marca
+CO,es,T,inteligencia artificial desarrollo de software,10,LOW,agrupar_sinonimo
+CO,es,T,aspenone v12,10,LOW,descartar_ruido
+CO,es,T,cursos de inteligencia artificial para desarrolladores,0,UNSPECIFIED,conservar_limite_medicion
+CO,es,T,integrar inteligencia artificial en aplicaciones,0,UNSPECIFIED,conservar_limite_medicion
+CO,es,G,cursos de ia,1600,HIGH,conservar_formacion
+CO,es,G,curso de inteligencia artificial,1000,HIGH,conservar_formacion
+CO,es,G,cursos de ia gratis,880,HIGH,no_priorizar_gratis_no_confirmado
+CO,es,G,aprender inteligencia artificial desde cero,140,MEDIUM,conservar_nivel
+CO,es,G,especializacion en inteligencia artificial,1900,HIGH,fuera_lanzamiento
+CO,es,G,programacion con ia,30,MEDIUM,conservar_tema
+CO,es,G,formación en inteligencia artificial,30,HIGH,agrupar_sinonimo
+CO,es,G,curso ia google,210,MEDIUM,descartar_marca
+CO,es,B,capacitación en inteligencia artificial para empresas,0,UNSPECIFIED,conservar_limite_medicion
+CO,es,B,formación en inteligencia artificial para empresas,0,UNSPECIFIED,conservar_limite_medicion
+CO,es,B,prueba de concepto inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+CO,es,D,herramientas de ia,480,MEDIUM,conservar_descubrimiento_condicional
+CO,es,D,herramientas de inteligencia artificial,320,MEDIUM,conservar_descubrimiento_condicional
+CO,es,D,chat inteligencia artificial gratis,480,LOW,descartar_intencion_incompatible
+CO,es,E,investigacion sobre la inteligencia artificial,20,LOW,contrastar_intencion
+CO,es,E,investigaciones sobre inteligencia artificial,10,LOW,conservar_investigacion
+CO,es,E,directorio de productos de inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+CO,es,E,comunidad de inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+CO,es,R,inteligencia artificial para empresas,30,MEDIUM,ambiguo_no_servicio_general
+CO,es,R,ia para empresas,50,HIGH,agrupar_sinonimo
+CO,es,R,empresa de ia,70,LOW,descartar_proveedor_general
+AR,es,T,ai engineering,590,MEDIUM,contrastar_area
+AR,es,T,ai builder,90,MEDIUM,ambiguo_no_audiencia
+AR,es,T,product engineer,110,LOW,contrastar_rol
+AR,es,T,desarrollo de software con inteligencia artificial,10,HIGH,conservar_tema
+AR,es,T,ai builder microsoft,10,MEDIUM,descartar_marca
+AR,es,T,inteligencia artificial desarrollo de software,10,UNSPECIFIED,agrupar_sinonimo
+AR,es,T,cursos de inteligencia artificial para desarrolladores,0,UNSPECIFIED,conservar_limite_medicion
+AR,es,T,integrar inteligencia artificial en aplicaciones,0,UNSPECIFIED,conservar_limite_medicion
+AR,es,G,cursos de ia,2400,HIGH,conservar_formacion
+AR,es,G,curso de inteligencia artificial,1000,HIGH,conservar_formacion
+AR,es,G,cursos de ia gratis,880,HIGH,no_priorizar_gratis_no_confirmado
+AR,es,G,aprender inteligencia artificial desde cero,110,HIGH,conservar_nivel
+AR,es,G,especializacion en inteligencia artificial,170,HIGH,fuera_lanzamiento
+AR,es,G,programacion con ia,70,HIGH,conservar_tema
+AR,es,G,formación en inteligencia artificial,30,HIGH,agrupar_sinonimo
+AR,es,G,curso ia google,390,HIGH,descartar_marca
+AR,es,G,curso inteligencia artificial utn,70,HIGH,descartar_marca
+AR,es,B,capacitación en inteligencia artificial para empresas,0,UNSPECIFIED,conservar_limite_medicion
+AR,es,B,formación en inteligencia artificial para empresas,0,UNSPECIFIED,conservar_limite_medicion
+AR,es,B,prueba de concepto inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+AR,es,D,herramientas de ia,320,MEDIUM,conservar_descubrimiento_condicional
+AR,es,D,herramientas de inteligencia artificial,110,MEDIUM,conservar_descubrimiento_condicional
+AR,es,D,chat inteligencia artificial gratis,320,MEDIUM,descartar_intencion_incompatible
+AR,es,E,investigacion sobre la inteligencia artificial,10,LOW,contrastar_intencion
+AR,es,E,investigaciones sobre inteligencia artificial,10,UNSPECIFIED,conservar_investigacion
+AR,es,E,directorio de productos de inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+AR,es,E,comunidad de inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+CL,es,T,ai engineering,260,MEDIUM,contrastar_area
+CL,es,T,ai builder,90,LOW,ambiguo_no_audiencia
+CL,es,T,product engineer,50,LOW,contrastar_rol
+CL,es,T,desarrollo de software con inteligencia artificial,10,MEDIUM,conservar_tema
+CL,es,T,ai builder microsoft,10,MEDIUM,descartar_marca
+CL,es,T,inteligencia artificial desarrollo de software,10,LOW,agrupar_sinonimo
+CL,es,T,aspenone v12,10,UNSPECIFIED,descartar_ruido
+CL,es,T,cursos de inteligencia artificial para desarrolladores,0,UNSPECIFIED,conservar_limite_medicion
+CL,es,T,integrar inteligencia artificial en aplicaciones,0,UNSPECIFIED,conservar_limite_medicion
+CL,es,G,cursos de ia,1600,HIGH,conservar_formacion
+CL,es,G,curso de inteligencia artificial,590,HIGH,conservar_formacion
+CL,es,G,cursos de ia gratis,480,HIGH,no_priorizar_gratis_no_confirmado
+CL,es,G,aprender inteligencia artificial desde cero,50,HIGH,conservar_nivel
+CL,es,G,especializacion en inteligencia artificial,10,HIGH,fuera_lanzamiento
+CL,es,G,programacion con ia,20,HIGH,conservar_tema
+CL,es,G,formación en inteligencia artificial,10,HIGH,agrupar_sinonimo
+CL,es,G,curso ia google,140,MEDIUM,descartar_marca
+CL,es,B,capacitación en inteligencia artificial para empresas,0,UNSPECIFIED,conservar_limite_medicion
+CL,es,B,formación en inteligencia artificial para empresas,0,UNSPECIFIED,conservar_limite_medicion
+CL,es,B,prueba de concepto inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+CL,es,D,herramientas de ia,210,MEDIUM,conservar_descubrimiento_condicional
+CL,es,D,herramientas de inteligencia artificial,140,MEDIUM,conservar_descubrimiento_condicional
+CL,es,D,chat inteligencia artificial gratis,110,MEDIUM,descartar_intencion_incompatible
+CL,es,E,investigacion sobre la inteligencia artificial,10,LOW,contrastar_intencion
+CL,es,E,investigaciones sobre inteligencia artificial,10,UNSPECIFIED,conservar_investigacion
+CL,es,E,directorio de productos de inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+CL,es,E,comunidad de inteligencia artificial,0,UNSPECIFIED,conservar_limite_medicion
+EC,es,T,ai engineering,50,MEDIUM,contrastar_area
+EC,es,T,ai builder,20,LOW,ambiguo_no_audiencia
+EC,es,T,product engineer,10,LOW,contrastar_rol
+EC,es,T,desarrollo de software con inteligencia artificial,10,HIGH,conservar_tema
+EC,es,T,ai builder microsoft,10,HIGH,descartar_marca
+EC,es,T,cursos de inteligencia artificial para desarrolladores,0,UNSPECIFIED,conservar_limite_medicion
+EC,es,T,integrar inteligencia artificial en aplicaciones,0,UNSPECIFIED,conservar_limite_medicion
+EC,es,F,cursos de ia,320,HIGH,conservar_formacion
+EC,es,F,curso de inteligencia artificial,210,HIGH,conservar_formacion
+EC,es,F,cursos de ia gratis,170,HIGH,no_priorizar_gratis_no_confirmado
+EC,es,F,aprender inteligencia artificial desde cero,30,MEDIUM,conservar_nivel
+EC,es,F,especializacion en inteligencia artificial,10,HIGH,fuera_lanzamiento
+EC,es,F,formación en inteligencia artificial,10,UNSPECIFIED,agrupar_sinonimo
+EC,es,F,curso inteligencia artificial aplicada a la empresa,10,UNSPECIFIED,contrastar_empresa
+EC,es,L,herramientas de ia,210,MEDIUM,conservar_descubrimiento_condicional
+EC,es,L,herramientas de inteligencia artificial,140,LOW,conservar_descubrimiento_condicional
+EC,es,L,investigaciones sobre inteligencia artificial,10,UNSPECIFIED,conservar_investigacion
+EC,es,L,investigacion sobre la inteligencia artificial,10,LOW,contrastar_intencion
+CR,es,T,ai engineering,70,MEDIUM,contrastar_area
+CR,es,T,ai builder,20,LOW,ambiguo_no_audiencia
+CR,es,T,product engineer,10,LOW,contrastar_rol
+CR,es,T,desarrollo de software con inteligencia artificial,10,UNSPECIFIED,conservar_tema
+CR,es,T,ai builder microsoft,10,LOW,descartar_marca
+CR,es,T,cursos de inteligencia artificial para desarrolladores,0,UNSPECIFIED,conservar_limite_medicion
+CR,es,T,integrar inteligencia artificial en aplicaciones,0,UNSPECIFIED,conservar_limite_medicion
+CR,es,F,cursos de ia,90,HIGH,conservar_formacion
+CR,es,F,curso de inteligencia artificial,50,HIGH,conservar_formacion
+CR,es,F,cursos de ia gratis,40,HIGH,no_priorizar_gratis_no_confirmado
+CR,es,F,aprender inteligencia artificial desde cero,10,MEDIUM,conservar_nivel
+CR,es,F,especializacion en inteligencia artificial,10,HIGH,fuera_lanzamiento
+CR,es,F,formación en inteligencia artificial,10,UNSPECIFIED,agrupar_sinonimo
+CR,es,F,curso inteligencia artificial aplicada a la empresa,10,UNSPECIFIED,contrastar_empresa
+CR,es,L,herramientas de ia,50,MEDIUM,conservar_descubrimiento_condicional
+CR,es,L,herramientas de inteligencia artificial,40,MEDIUM,conservar_descubrimiento_condicional
+CR,es,L,investigaciones sobre inteligencia artificial,10,HIGH,conservar_investigacion
+CR,es,L,investigacion sobre la inteligencia artificial,10,UNSPECIFIED,contrastar_intencion
+CR,es,R,inteligencia artificial para empresas,10,MEDIUM,ambiguo_no_servicio_general
+CR,es,R,ia para empresas,10,HIGH,agrupar_sinonimo
+CR,es,R,empresa de ia,10,LOW,descartar_proveedor_general
+BR,pt,PT1,curso de inteligência artificial,9900,HIGH,conservar_mercado_separado
+BR,pt,PT1,curso de inteligencia artificial,9900,HIGH,agrupar_no_sumar
+BR,pt,PT1,ai engineering,1900,MEDIUM,contrastar_mercado_separado
+BR,pt,PT1,ai builder,720,MEDIUM,ambiguo_no_audiencia
+BR,pt,PT1,product engineer,480,LOW,contrastar_rol
+BR,pt,PT1,faculdade de inteligência artificial,1600,HIGH,fuera_oferta
+BR,pt,PT1,graduação em inteligencia artificial,1600,HIGH,fuera_oferta
+BR,pt,PT1,especialização em inteligencia artificial,390,HIGH,fuera_lanzamiento
+BR,pt,PT1,curso de inteligência artificial para iniciantes,260,HIGH,conservar_nivel_mercado_separado
+BR,pt,PT1,fiap inteligencia artificial,210,HIGH,descartar_marca
+BR,pt,PT2,ferramentas de inteligência artificial,320,MEDIUM,conservar_mercado_separado
+BR,pt,PT2,pesquisas sobre inteligência artificial,170,MEDIUM,conservar_mercado_separado
+BR,pt,PT2,ferramenta ia elon musk,10,UNSPECIFIED,descartar_marca
+BR,pt,PT2,comunidade de inteligência artificial,0,UNSPECIFIED,conservar_limite_medicion
+BR,pt,PT2,diretório de produtos de inteligência artificial,0,UNSPECIFIED,conservar_limite_medicion

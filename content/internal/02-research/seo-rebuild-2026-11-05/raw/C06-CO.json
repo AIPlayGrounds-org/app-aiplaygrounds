@@ -1,0 +1,1191 @@
+{
+  "id": "C06-CO",
+  "tool": "get_serp_results",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "queries": [
+      {
+        "keyword": "inteligencia artificial para empresas",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "soluciones de inteligencia artificial para empresas",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "curso de inteligencia artificial",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "programación con inteligencia artificial",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "laboratorio de inteligencia artificial",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "investigación en inteligencia artificial",
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      }
+    ],
+    "depth": 20
+  },
+  "response": {
+    "results": [
+      {
+        "keyword": "inteligencia artificial para empresas",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "Estrategias Efectivas de Implementación de IA en Empresas",
+            "url": "https://google.com/goto?url=CAEShQEBxCJF11Xeur7-orHGbbHyyeV60kqZd4CoYeTmcvrWoOV7k3I-Q4HCapky3XkhS-0UkT6yhYJjP_JjnU5sOaZ7sizaLF1nglo9ZAF37-sdMoq9V_9m4cJ7AIlWA0MWk7n2imwYSpyCpr81fKox50XdtJcVo7Fbj-ewEztGeP43bKJhBjix",
+            "domain": "aden.org",
+            "description": "4/09/2026 — Implementar inteligencia artificial en una empresa significa integrar sistemas capaces de analizar datos, reconocer patrones, automatizar tareas ..."
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 2,
+            "title": "Inteligencia Artificial para empresas: aplicaciones y ...",
+            "url": "https://google.com/goto?url=CAESrAEBxCJF1_xqqzzr8zTIwjNMXR5Tq0zpyxKq2c8ffyMCDT6wHVejFtlA312eFf3IOaDMynPhQN36OEOKl3FkEKw6t2QsRcePPe483HIvDFd4lg4pU-yGhBEB6L7H-PVeD9WQ_xpDxdvk1zpQ3Ckb9lxyj8b9beyTxzwqVYMepeJbqwI4Umt0mFcRIDSLGVo0339iFWRNGaI1zvNOM_TmVt7X7rAxEskBL62_j62H",
+            "domain": "softwaredoit.es",
+            "description": "La inteligencia artificial están transformando la forma en que las empresas operan, alcanzando mayor eficiencia, optimización y rentabilidad. Toman decisiones ..."
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 3,
+            "title": "¿Qué es la IA empresarial? | Glosario",
+            "url": "https://google.com/goto?url=CAESdwHEIkXXXTgCJxN446UkGHE_M0l8PvIDLomfJ3SYOEhCzESR81FEL1KqtFwLtdg7nT612CuaH4oRu453wkpVEojn2dgmJOKh4tBLl7m0exVk4v8N83R264KQrufk9XsyTMpz75u16mb226FitDcD61c058BR2rNk",
+            "domain": "hpe.com",
+            "description": "La IA empresarial mejora la productividad y reduce los costes. Además, impulsa la innovación y la participación del cliente. La inteligencia artificial ayuda a ..."
+          },
+          {
+            "type": "organic",
+            "rank": 5,
+            "organicRank": 4,
+            "title": "Inteligencia Artificial para Empresas: Cómo transformar tu ...",
+            "url": "https://google.com/goto?url=CAESjgEBxCJF123aFIdQ2sf1AFa1uXNUkUmMyf2Nc-KtgK34RRbDhkxQWenWTlhTE8NpKVOcsXx6NxeQIanbT-DiFGFqwk4WEZt-F0puu-hrVFH3aDZvcFbTUNCvH-UaLEVi0GJjUnacF-sX7l7GrOwj2AEJUyn9z_U3JGOym3BcJYdAldmfm5kSC9TW8HxG5TuG",
+            "domain": "it-nova.co",
+            "description": "La inteligencia artificial para empresas implica la aplicación de algoritmos avanzados y sistemas de aprendizaje automático para automatizar procesos, analizar ..."
+          },
+          {
+            "type": "organic",
+            "rank": 6,
+            "organicRank": 5,
+            "title": "Inteligencia Artificial en Negocios",
+            "url": "https://google.com/goto?url=CAESjAEBxCJF19H1g_-voy9-fiPPOSzcVF-K1A6fJ1W8ax7EQcLwwIGuYgBcHjKstQ05UMW3IV_nIZT_qOc7TddWmYoavM8xknXFFhHLDSC_ue-A1dV3p8loSvUBvRenWkkXn7i2tnMoQfOqmO8gP1uEFyklb91uLAzOWINRELLV2BlfOYb2reyjugEqJ3W3DQ",
+            "domain": "aden.org",
+            "description": "18/03/2025 — La Inteligencia artificial (IA) en los negocios transforma la forma de trabajar y las operaciones de las organizaciones."
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 6,
+            "title": "Cómo usar la inteligencia artificial para potenciar tu empresa",
+            "url": "https://google.com/goto?url=CAESbgHEIkXXxntCI5MOzRg4XfvjERkgewiLgNnlFiKOcNfSHUPZM60hLT1Aq2sGyA8R-ENOdsoF2WSsZXP44-qqeCj4KPivlG5-ou6MqNYQPDdJXTmVyrEs1IVVtXCYtlRhsr7xMvq84PsIo8mpptk2",
+            "domain": "sage.com",
+            "description": "4/12/2025 — La automatización de procesos mediante IA optimiza el uso de recursos y reduce costos operativos. Desde la gestión de inventarios hasta la ..."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 7,
+            "title": "Herramientas de Gestión Empresarial con IA",
+            "url": "https://google.com/goto?url=CAESjgEBxCJF1xajqADdMD3oxy5fI6LARq7m3_gY-O9hPnrKrJzh7VWVx_49I8ODXSAF8I6N-xDbUy9xVJm9hWY4vQL-CjWC2t8ya6OPDu6j3zqcmiXgK0xakU3BNu93yy5a7S0ZP2wPFszejKwm5hTePIAm51z9xhgPXpTzAmTHz03roMzf5obpYdNhrxG_-D9E",
+            "domain": "poli.edu.co",
+            "description": "3/10/2024 — Los sistemas de gestión de relaciones con el cliente (CRM) también se han visto beneficiados por la IA. Plataformas como Salesforce, Zoho CRM y ..."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 8,
+            "title": "¿Qué es la IA empresarial?",
+            "url": "https://google.com/goto?url=CAEScQHEIkXXXBb1eM1xUWHGyX1AEBIdfmldM2WAjGO_MH59APkINPj29voj09bYWkWsiV1QwJ4q2yPG-Q-gI-h9nbCwy1gtnTrrawet3SZz6v_u9zc8-dAScLtrKHbYkdIlIk2eRccoGhGaJk26BQUNAzmL",
+            "domain": "ibm.com",
+            "description": "28/11/2023 — La inteligencia artificial (IA) empresarial es la integración de las tecnologías de IA en las operaciones del negocio, las aplicaciones y ..."
+          },
+          {
+            "type": "video",
+            "rank": 10,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "related_searches",
+            "rank": 11,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 12,
+            "organicRank": 9,
+            "title": "Inteligencia Artificial en las Empresas",
+            "url": "https://google.com/goto?url=CAEShQEBxCJF1-IGTqLc337YGGhdlOg0IWZ2ZzJtX_0eSi5KDUh9pnVdtLT-PbQgJr8pKRCDrXkCfLrge_LysnAmAE6Je8xEVdCgr6hIqGcI2l3PSFQxmw45PVn_wC_0aezgbBkCydyLmRsMU7Ihbyka3XpJ92j_vJfuOzLKOXfqdlBlY87WWM7E",
+            "domain": "heinsohn.co",
+            "description": "¿Para qué sirve la inteligencia artificial? · servicio al cliente · seguridad de los datos · desarrollo de productos · y marketing en finanzas, fabricación, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 10,
+            "title": "¿Qué es la IA empresarial? - AWS - Amazon.com",
+            "url": "https://google.com/goto?url=CAESbQHEIkXXSKbT4QAYObC6DoCdYM9rvSwvG46GqQVeXp49ahit-bEiIFAvcGduL_y1-lTx8j1eC-92J8PUs6HgYwWb31XyWRRHF8r_HMYt8Mmve-zrgBq0oVfJqKv7Ibmvmfs2UCPBiU9W8TBSv1Q",
+            "domain": "aws.amazon.com",
+            "description": "La inteligencia artificial (IA) empresarial es la adopción de tecnologías avanzadas de IA en las grandes organizaciones. Llevar los sistemas de IA del ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 11,
+            "title": "Inteligencia Artificial aplicada a Negocios y Empresas, para ...",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXllgNHueg05VGuEtXd09qzuXSffCLeB1UNNmviaYtyL_IlNsL5nQQNLN_f0siT9tbkUHHOZEwsHQxIhGlzHvN_l-1DzdJZnzkN9y3nAT3ndlmd2Hn8T8s5lEpxvD1c7vRxJ64",
+            "domain": null,
+            "description": "... para negocios, el último curso de IA para ... Inteligencia Artificial aplicada a Negocios y Empresas, para subir tu negocio al siguiente nivel."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 12,
+            "title": "18 herramientas de IA para negocios que impulsan la ... - Kimi.ai",
+            "url": "https://google.com/goto?url=CAESdwHEIkXXISUacF1KrsyPHmmZEwqMxQV0h4l6VLyh4hvj4eA8CPuqPFFubomhma6p-7cNrce4TAUX1vw4NgCUaGm69dudaZ43RPIpTjSfVDHWjt1vnC1Qm9v4l60wsqg8w87Si_L3Qsp1Cz4xQFvPmoA1El5uRR6m",
+            "domain": "kimi.ai",
+            "description": "25/08/2026 — Las herramientas de IA para empresas pueden ayudar a simplificar los flujos de trabajo, mejorar la productividad y apoyar mejores decisiones."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 13,
+            "title": "¿Qué es la IA empresarial? Una guía completa",
+            "url": "https://google.com/goto?url=CAESYgHEIkXXSqlTR9HuV6Bh0hxpVR2mZxNmnBsX9gEsBBWIkBd8y23WrY_v9KbkKMOtHF1ku6kpKwni167pcGWAj-7ByW6zYeLARyyErdsVTX0DDZCotDyyfthRHROp7i-y3v45",
+            "domain": "pega.com",
+            "description": "La IA empresarial es un término amplio que se refiere al uso de tecnologías de inteligencia artificial en aplicaciones empresariales para mejorar los procesos ..."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 14,
+            "title": "Inteligencia Artificial para Empresas en Colombia | Factor L",
+            "url": "https://google.com/goto?url=CAESgQEBxCJF13aTStDfPd1dkSfLPMXOVFtoLbeAJD1KNjwoZMsqoH4_HN8q79g5PmYjekmhy6-gIgU8uSp34-neGx4XQzVinKYFBssqEtjUdLzZAz3pLULp3HIfpjGx3JGeP42FQww1YlV5Qtk4TjYzDmZBvQlQBSWuSztSCFEe_EkJ2hE",
+            "domain": "factorlogico.com",
+            "description": "26/06/2026 — Cómo implementar IA en tu empresa: pasos, retos y recomendaciones · Diagnóstico y definición de objetivos · Selección de procesos y casos de uso"
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 15,
+            "title": "IA para empresas: estrategias para el éxito en el mercado ...",
+            "url": "https://google.com/goto?url=CAESjAEBxCJF11o-bx5E3FI6a8os9wDOZLcBAsixOw_2EYuFgMVWNOPz30uwjEB8-ywIl3DvFY0-xETpKjc2RRudH85xcTJLepJNpqG7j6Op9gDJA19OaDSzTcobtXmx_qHKYctcopxL-PwSCTsSLP1MARn2D3sEZP-xPkb_2iO6S2SlIkeKY-DaNjEc-5qVOw",
+            "domain": "databricks.com",
+            "description": "16/01/2026 — La IA aporta automatización e inteligencia a los flujos de trabajo principales, lo que ayuda a los equipos a delegar tareas repetitivas, extraer ..."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 16,
+            "title": "Cómo usar la inteligencia artificial en tu empresa",
+            "url": "https://google.com/goto?url=CAESmgEBxCJF13SuWO-aI8Oe8EVE7G-AJOrLSeNjd-rLUse6r-fALeAbHg6tyNUkOF2yjA9yYFthUtb4vOsWzuXdF72N2ZE-vmlvIv5Z7FBNJrEKjVHfvrNmuOp5GNz-6K1Fy-XmV7oxtBh7mZ0fe5PRJPOlYaNl-5pr_9Fpdv6Bl4MRZPm3-qpJyfVMJRL6JvUnyBl6Idf_UEmGRnDs",
+            "domain": "blog.bancolombia.com",
+            "description": "21/02/2025 — Con IA optimiza operaciones y crea interacciones personalizadas. Descubre su impacto en la eficiencia operativa y ahorro de costos."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 17,
+            "title": "20 Herramientas de IA para Automatizar tu Empresa",
+            "url": "https://google.com/goto?url=CAESjAEBxCJF19obsyMl2U1INS3HS_NuEZFxvVGDDtvX-oCR-6adVMnii4-c8Eh5z2ayqV2LbB8MAW6FhVnvZOyINqfMhp0EZQjJ6kcxFTwKDUNbYAgG8VX87tTxsPZNqveUsgYRE4an23paQ-6LdmvEjlOIgZzOdomtd6CJfI6oxQJqnIFKTqCiEM3WB01a7A",
+            "domain": "aypdigital.com",
+            "description": "11/01/2025 — Las 20 mejores herramientas de IA para empresas: automatización, productividad, documentos, ventas, marketing y atención al cliente."
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "soluciones de inteligencia artificial para empresas",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "Herramientas de IA para pequeñas empresas",
+            "url": "https://workspace.google.com/intl/es-419/resources/ai-for-small-business/",
+            "domain": "workspace.google.com",
+            "description": "La IA permite que las pequeñas empresas transformen datos sin procesar en una estrategia completa. Usa Gemini en Hojas de cálculo para depurar y preparar ..."
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 2,
+            "title": "Inteligencia Artificial - Automatización Empresarial",
+            "url": "https://google.com/goto?url=CAESbwHEIkXXuBtU7dxnRj6iAHwbd_f9FRH4vwZJkYE-p8gGt900RJKdZz7JIWQm1xp27SnsX7QTHj-CURVzNnDnof3I6MRfXBznwa6_jjUAEIlyDbWT1OYUNJ3wnJNSXFZpAUxXBK5_ANBvkn8mufpApA",
+            "domain": "cintel.co",
+            "description": "Nuestro propósito es acelerar el desarrollo y aplicación de la Inteligencia Artificial para optimizar y transformar procesos empresariales, transformando los ..."
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 3,
+            "title": "Inteligencia artificial: los 9 mejores software para empresas",
+            "url": "https://google.com/goto?url=CAESbAHEIkXXT121XDK90JJm8foHOJXNY5kFLsFNi9zcNyjmF3teKfKq1rUAMUFCtT287-U9_1kmqdZplvNwP1CESuOYYXib8SV3J1UXyTUbzJMuH-CGTG85uhbuT6JJPIbZqAUUsM9WSC4Hto_Liw",
+            "domain": "pipedrive.com",
+            "description": "30/09/2025 — Los mejores software de inteligencia artificial para empresas · 1. IA de Pipedrive · 2. Salesforce Einstein · 3. HubSpot · 4. ChatGPT · 5. IA de ..."
+          },
+          {
+            "type": "organic",
+            "rank": 5,
+            "organicRank": 4,
+            "title": "Inteligencia Artificial en las Empresas",
+            "url": "https://google.com/goto?url=CAEShAEBxCJF1yZXXWqXY28RMG_aI5Xj2T_jY1cKwVI-Cdx-dhk9_i6-MI-86SavdWpr4YOTIxBR9tpm96YKu9tYdlnrVjTwZitBa8GM8NQE2H67_Phgx3DF0vPmgOapwz6bgHGHH7_U65ZWNx3goBZZXvotTl0BMgqzD_JpBBuGrpWW5fUm69c",
+            "domain": "heinsohn.co",
+            "description": "¿Para qué sirve la inteligencia artificial? · servicio al cliente · seguridad de los datos · desarrollo de productos · y marketing en finanzas, fabricación, ..."
+          },
+          {
+            "type": "people_also_search",
+            "rank": 6,
+            "organicRank": null,
+            "title": "Busca productos y servicios relacionados",
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 5,
+            "title": "Soluciones de IA para empresas ¿cómo automatizar tu ...",
+            "url": "https://google.com/goto?url=CAESpgEBxCJF102BhnyhdC5c2jXY0isKoVFrvIg34QAFFGar5_AENYn_yMc3-OJkjePteHK_YlTPar5YirxyA0G0JBuR3AMWQ5BAw4jzwOSDQfQSDzY1_mvzdey_sP9aMaOfQWaYKcTNmeJ4WMRo1xooBt5-CXWK2ybnIEwedgYx25s2zVYoP7w8GRpspng1zDpHWWGN1NxgTjkm-oYZZHA5HdyLbREeX5Ik",
+            "domain": "quilsoft.com",
+            "description": "27/03/2026 — En Quilsoft no solo implementamos software ERP; desarrollamos soluciones de inteligencia artificial que se integran directamente con tus ..."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 6,
+            "title": "18 herramientas de IA para negocios que impulsan la ... - Kimi.ai",
+            "url": "https://google.com/goto?url=CAESdgHEIkXXQwNA6wJ-RpdDH38vEy-eJuE-VG1q1zA_A65veK2VeErXfa7YDOpOiAcZTcdfJFMnvQf-yO_iMVGyuGnwIfrYG5rNKlEtRl131RmGkXPUNmjW3RF6qCSqebPmuCRsbNS8tEX_3z2OHV-3mQqOJTnH89g",
+            "domain": "kimi.ai",
+            "description": "25/08/2026 — Las herramientas de IA para empresas pueden ayudar a simplificar los flujos de trabajo, mejorar la productividad y apoyar mejores decisiones."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 7,
+            "title": "Cómo Implementar Inteligencia Artificial en tu Empresa",
+            "url": "https://google.com/goto?url=CAESvwEBxCJF15GzkKOH7ci_szPiyBS3k8S1KsF0g4FcUKLxPSVbqtPYnmA74o_aKamUSF2nM46jxVkV5Rl7R7lc5G9mzEFwx5fkbycy5Cw3osNftaH6LjqUo2SzNflZSdB3RsqxV7aRb34a9aTj-x5_i8bBSCKp9giHZtjKBtH3N0ZuGJ4QDZbDv3swX08aeRuQljnxBR_7OhoJ6X87vOxUIGVNL7JARrC3ODl67U2eXnbS2prIJwqnXlDqW6y-RQb-NQ",
+            "domain": "cosmoconsult.com",
+            "description": "3/04/2025 — Aprende cómo integrar soluciones de IA en tu empresa con esta guía práctica en 6 pasos. Optimiza procesos, mejora la toma de decisiones y ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 8,
+            "title": "Inteligencia artificial en las empresas: aplicaciones y ...",
+            "url": "https://google.com/goto?url=CAESdQHEIkXXbgCbSlj-VgdRWnKf9Lbf6VTfXwhngtuL1mBldxt92MYVtGG8xwJRKRsIbgaWZ0BiKCEAxEqPvcMqEXYuctZeBXuVTk9KBZZKUr6lZ-ZoQMHyqYSRaDxP3O5EL1BIoSZfAeGHnlykrFUpL6z4vF-2eA",
+            "domain": "tableau.com",
+            "description": "Aplicaciones de la inteligencia artificial en las empresas · Automatización de procesos y servicios · Análisis de datos · Atención al cliente · Precios dinámicos."
+          },
+          {
+            "type": "video",
+            "rank": 11,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "related_searches",
+            "rank": 12,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 9,
+            "title": "IA para los negocios",
+            "url": "https://google.com/goto?url=CAESewHEIkXXJjiqn_tD8RTCP-joYUUg0_q2BQUdww94hcoDlLS0VMopJfbKO1RAIWsOgQ4zGtPnbQoH5AtHQXYn3XUuvLBBW3sFzv42BpF0LpW4seWt1oIQZHH9GIG5QTDGDqxQe0TD25Skj2xEpX4YDsPdCLzEqGlqL8Xj5w",
+            "domain": "salesforce.com",
+            "description": "La inteligencia artificial puede ayudar a las empresas a lograr un ahorro de los costes y un incremento de los ingresos al acelerar la toma de decisiones, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 10,
+            "title": "18 Aplicaciones de Inteligencia Artificial para Empresas",
+            "url": "https://google.com/goto?url=CAESeQHEIkXXhKosEdZIz6Fp6T4mooocUzq2ZWO9EAHa99qHK3ev2U5xhqzqA-2SFSkUeOgnQcHaY-3NZ2K-8Cb5iyvOApQQIOg4H_WBNJkmAdYglcin92uL7gHlFauCB-l4YjHo6OPjvVWV4-pB6rgr1JYgAvWNjBvKoVE",
+            "domain": "ringover.es",
+            "description": "25/04/2024 — 1. Empower, Facilidad de uso y personalización. · 2. Salesforce Einstein, Integración con el CRM líder en el mercado, Salesforce. · 3. IBM Watson ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 11,
+            "title": "Estrategias clave para integrar IA en las empresas",
+            "url": "https://google.com/goto?url=CAESgwEBxCJF14O44gzQWlKDuUcerNTB8KZpi8WvBHu2KptZQeFJ13m9730uGowybQCxwkv8QmZsQFE8wOMiq3vqYvOz2a3BfHtlCDTz0SDlvQiiJn_GW7kMTW5wCWT1PitysQ9U1luTvvKxj-DDtbvQPr-psR7xqZEiK0K9e7XwALZdNlb21w",
+            "domain": "pwc.com",
+            "description": "Empresas en México exploran la IA. Descubre estrategias clave para integrarla con éxito y aplicar prácticas globales para maximizar su impacto."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 12,
+            "title": "Soluciones de IA Personalizadas para Optimizar tu Empresa",
+            "url": "https://google.com/goto?url=CAESawHEIkXXJ8qmhrnRRH80FFhQQy4isJWIiYZX-G6fPdyJbDuI1OoQ6fKsHGK5WuZnSPQs0uPKQ7dkoLr4DEqb_fSKvXcsOGxksyeC9vGiD0Nl15LAtds8NwPzGw72qlwI3zl4uncZM6zjYcJu",
+            "domain": "lanmedia.com",
+            "description": "Optimización de procesos del negocio. · Mejora de los datos para la toma de decisiones. · Mejora en la experiencia del cliente interno y externo. · Desarrollo de ..."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 13,
+            "title": "Inteligencia Artificial para Empresas en Colombia | Factor L",
+            "url": "https://google.com/goto?url=CAESgAEBxCJF1-YRKx7qc1yZ00vOTn4fY0FRgKIr83LU_lVRNXNKHBMR8nixcPQogxrRJ_k0twZzmNPBjVKsJzTHKqFv94DxXrQBqiud5-f-rLn5CZhSmmbPsACqQfcHw9UGwW98-ZDRcNcU4TJlikSNPdNEsNrwPMrxrLQiSaTBaIhAsQ",
+            "domain": "factorlogico.com",
+            "description": "26/06/2026 — Principales aplicaciones y sistemas de IA para empresas · Automatización de procesos (RPA e hiperautomatización): · Análisis predictivo: · Chatbots ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 14,
+            "title": "Cómo usar la inteligencia artificial en tu empresa",
+            "url": "https://google.com/goto?url=CAESmQEBxCJF1wF9lV3xE0CFSJzk6ee4vxwoCdjZijtWs5deYDcfWp5ixm9d9X9Jo1tJfGGCYnMW0Rlvha6EwKwzPfCPdTFag1-DTGFBbvGzzHYclYczX1abq8ENLDljAkSXgfKa_5yyjxgdQyzNlupTg6PK-45hKHHZJghXiYNz3XEhPz_rIv4KxL1IxnW2KKJ96nvE51lDm9sfnx4",
+            "domain": "blog.bancolombia.com",
+            "description": "21/02/2025 — Con IA optimiza operaciones y crea interacciones personalizadas. Descubre su impacto en la eficiencia operativa y ahorro de costos."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 15,
+            "title": "Softwares inteligencia artificial para empresas",
+            "url": "https://google.com/goto?url=CAESrQEBxCJF17FmdDjEdWjQcJHpDhXw7wE6kjBseLeQd9Ffq_iRmkU-XE9Xs7jsXMKYnlyFCSG0dPUUB47DWXyBJ0aR9ToZmR43yYI5rXxMDjhrAm4hmzHYQCHrvZ1waBaKYh8ddQ5FUX4PniAzJdaG4kQ6JvxeI3AE9qKsWxONTan6BaXBEA_ePTdjPMYg-okT7xuUTRpcgzCHX5qRwLcAiuG4oaRCNuZZmpcjyGoVPA",
+            "domain": "beedigital.es",
+            "description": "10/10/2025 — Los mejores softwares de Inteligencia Artificial · 1) Productividad y oficina · 2) Ventas y atención al cliente (CRM) · 3) Colaboración y ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 16,
+            "title": "Soluciones de IA: Cuáles Son y Cómo Transforman tu Negocio",
+            "url": "https://google.com/goto?url=CAESZgHEIkXXxCbWge2TcD77JVT0Tqsz2-xSeg8Y9YYoMry0-mf7N3ZzrT6Gv8OjmmpdKttJ0wtK6_qa1GY-NnMx1jguzI77x8WS-a09TeD7JwZ78gYTdRqC8dFAKHwSkLSNPcqUu_trfA",
+            "domain": "blog.inmersys.com",
+            "description": "¿Qué son las soluciones de IA? Las soluciones de inteligencia artificial son sistemas o aplicaciones que utilizan algoritmos para imitar la inteligencia humana."
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "curso de inteligencia artificial",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "Inteligencia Artificial Aplicada - Gobierno digital - MinTIC",
+            "url": "https://google.com/goto?url=CAESfQHEIkXXNiYMAWAI0Bttc-6H3woMZk0FOdTQ-c88ZnJDj2qZFPTq4097vHk-jdMlCOo75eThR2HK9wl9eZdHWVip3t3i0gd9910tptCFCvF8Y0qgp7qK_IwH1TMBp6jQcVvkeR8Yh8Hyg68n7PyxwLcTlFJGONNII6KZXN2g",
+            "domain": "gobiernodigital.mintic.gov.co",
+            "description": "El propósito general de este curso es capacitar a los participantes en la comprensión del potencial de la IA para resolver problemas públicos y tomar ..."
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 2,
+            "title": "Dominando la IA más allá de ChatGPT | Educación Continua",
+            "url": "https://google.com/goto?url=CAESuwEBxCJF14t8VgM-wvQMfCLTqdwwiEcmfOFG1yxbmOFbWXJJL172bA0tI8GAtuFe7PDoLQze2gptY9teYs0KGkqauWBuVi0OnaNO3SRSblIPkgqaabezSx2qrsiGc9XF2e2rVjnVrFPPrnnoCn1wgIB0t9e7gq9xLTsw_nj0Sb3ptNzgZKdpBlx8dOwuK8W5pBV1Cb-lQGYCktp4mDiFNK9FXbD_bln6nYU-JWM31XFpWmUkFuIQbgexchSu",
+            "domain": "educacioncontinua.uniandes.edu.co",
+            "description": "A través de casos prácticos y reales, los estudiantes desarrollarán habilidades fundamentales en la creación de prompts efectivos, la automatización de tareas ..."
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 3,
+            "title": "Aprende sobre la IA con Cursos Desde Cero",
+            "url": "https://google.com/goto?url=CAESqQEBxCJF1z7o9b9gAVLPd1eDLkcqYEd1nN5wCigtI2CZhuu-OJio4q6Z7GQephEfbKedDWnZufrWkhGw24RKQIpODJppvAnZBXoTOGuJQitezofjEiHTbYYHOj6QUBe_1baL8MhFYslLp8JKAVTlk0Uf9ABm1vYiIPpJA4TEGOxeyZbDAFnGRFjvn-FMPlE-Uh3TWYGDav03xnLJIdNmmKy3jKAV7J4Azxuo",
+            "domain": "grow.google",
+            "description": "Aprende los fundamentos de la Inteligencia Artificial y cómo Gemini puede aumentar tu productividad, ayudándote a automatizar tareas, genera ideas y resolver ..."
+          },
+          {
+            "type": "organic",
+            "rank": 5,
+            "organicRank": 4,
+            "title": "Curso Gratis de Introducción a la Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESYAHEIkXXWxdTybUJIqFhN7dE0En0LC7tBoeIBo2-UVttGIxoi22VzR4Jm-e9ghkIAksfPbKdLbKYDi5qYfEnmWUYRztuQ-4TCyK3BGisKmnOmUOxqwF9nHcVZB45eIUu-A",
+            "domain": "platzi.com",
+            "description": "28/07/2026 — Aprende inteligencia artificial desde cero, gratis y en español. Sin requisitos previos y con certificado. Empieza hoy a aplicar mejor la IA ..."
+          },
+          {
+            "type": "people_also_search",
+            "rank": 6,
+            "organicRank": null,
+            "title": "Busca productos y servicios relacionados",
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 5,
+            "title": "Estudia Inteligencia Artificial | Cursos Gratis Online",
+            "url": "https://google.com/goto?url=CAESfAHEIkXXtJqvnFI_RarWKSml-abbPC_JjrWvP_MKGWnOZKVyNZPrlY2Sw50kF6XXiqTcwyXEaCOKcRAewVQ-hayjfVVfZ7p2pD3UjALm1HIPJ_S63Zyuw2_6ScAqFhYjnwHbNbTBXBxZCrZAiMxNJifNo-u_Vr2WTARRsZQ",
+            "domain": "polisura.edu.co",
+            "description": "En los cursos y diplomados en inteligencia artificial, obtendrás conocimientos sobre algoritmos de machine learning, procesamiento de lenguaje natural y ..."
+          },
+          {
+            "type": "video",
+            "rank": 8,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 6,
+            "title": "Curso manejo de inteligencia artificial",
+            "url": "https://google.com/goto?url=CAES1QEBxCJF18ecGkreUrqAxvCXbPhncAKq6FhFaXcY2TxI2BxR3O0fqtWJUTTQaQJeUIE-AWXUFvuk0IsVjJ4idHJY9YUpzS05kzfNVPUlgaZ0T_3oqS0J5KGlcnKjgBrx-VthhFn9tAlp-77GYhwxWz5Vuabs7Zo3fuX7VAIuzaM8ARBB36BIFcRwHTtm_QbyNqqQfBkPNoPsUeXLSnbPqqqawONVkTBb8FfgyiPde4ey57rC6YOYGB6dhqoHRHAjXB2Ik6ww1mZKsXSO-i9Ljv-RPv4oI4g",
+            "domain": "tiendacompensar.com",
+            "description": "Con este curso de inteligencia artificial en Bogot á y también en modalidad virtual, conocerás los fundamentos básicos de la IA y aprenderás a aplicarlos en ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 7,
+            "title": "Curso GRATIS de Inteligencia Artificial desde CERO",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXVmvIMVfiKYrv5QjM96_7T9YYN4raeQjry-UBIrjpeguf7IEHhUrO2GFhd2bRIduaHjgsArZFFkynIH7vgCYq_iRcZh8A5nQ7toxyDN6RSCaY2xsq_gVabQYkyrounzNLtJit",
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 11,
+            "organicRank": 8,
+            "title": "Cursos en inteligencia artificial para trabajo",
+            "url": "https://google.com/goto?url=CAEShwEBxCJF18cAjIY_hlj9aaOzJd-lyAdNAM91HtBkiJO3X7PT4d9Tzi3fiTx0f91F-EWEYgVVMhAZJnHrPbCijP5kGgmI1hmkD0sp-ekVvv4EzAE7QRC6nAOhhMqB8iHxRpRkvTfRVmjAAWm4awkD7M9UAg0wNxFsniHPmMIWoV-kB7IijCq4oFA",
+            "domain": "colsubsidio.com",
+            "description": "7/10/2026 — Cursos de inteligencia artificial para desarrollar habilidades útiles en el trabajo y la vida. Conoce cómo formarte con Colsubsidio."
+          },
+          {
+            "type": "related_searches",
+            "rank": 12,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 9,
+            "title": "Curso GRATIS de Inteligencia Artificial Paso a Paso para ...",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXeJNIVNPtH7L-lP0Gwop8V3Sw0vgsKv-tbh_MVThCrdj069i1xM5n7KLcDiHfk7rdb_dfN6DFoQvOSl9mQiNG9PUOts2mPB5pGOONGQKBa1fSi7B2D28HhIZuEBqPB5WND6id",
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 10,
+            "title": "Los mejores cursos de Inteligencia artificial (IA) en línea",
+            "url": "https://google.com/goto?url=CAEStQEBxCJF16Z3lYtIhy-S1wkW-kEmvyhzEGqN3LxS5v3DF09AscxbfIrfv2a8c1a6bPE0ydApCJ9DHfhH8DW9Eav5di76jzlZtKMIaA9ZVf_oPDBs6VPPEPSGB-1343WBCAxnU6w5IE_c-I3knaA9TnDT7IpS3AFb2uc-DycXSjxBD61Lt1nsLKEC8z_tB8tXFnBx7e-fpsyYJR-J5EBlm-zk0ErPOi8lFatTYSRjrizCq4deQKhZ",
+            "domain": "udemy.com",
+            "description": "The AI Engineer Course 2026: Complete AI Engineer Bootcamp · Lo más vendido · Curso · Calificación: 4,5 de 54,5 · 26.650 valoraciones. Precio actual$13.99."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 11,
+            "title": "La educación en tiempo de la inteligencia artificial",
+            "url": "https://google.com/goto?url=CAESnwEBxCJF1_0e6r3AbJbUBGIsb8DWydv2CQPX4fHFCYOoaKrIg2nE4R7whwQokIlhKXsS9DRVy4neR3DtUc6tA23hcV58KJzzo9pTUax5t5-6dLwxRClF1Z4cGLy3cWEEjqZIv5iblVJKdq3k1VZVjUtJSc4sniCamXXyB2trOpJk9jdoA5idDHqh6YHYIZ-6kvkzbhhTjr2O5Knu91ivT4c",
+            "domain": "estudios.unad.edu.co",
+            "description": "Introducción al curso ; Fecha de inicio 1 de febrero de 2026 ; Fecha de finalización 15 de diciembre de 2026 ; Duración del curso 48 horas ; Modalidad Virtual."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 12,
+            "title": "Cursos de aprendizaje y certificaciones de Cloud",
+            "url": "https://cloud.google.com/learn?hl=es-419",
+            "domain": "cloud.google.com",
+            "description": "Aprende las habilidades más recientes en la nube, desde los conceptos básicos de la IA generativa hasta el desarrollo avanzado de aplicaciones."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 13,
+            "title": "Academia de IA | Cursos de IA en Español con Clases en Vivo ...",
+            "url": "https://google.com/goto?url=CAESVgHEIkXXts6DrXlIuiR_hEmh6_B1yF9nxuu3xr1VY5J303zDwPCJp1wunHMw3JclctGeq90W3l4oFLhQ313XUoFYoO89n4XZbJO4gF8f9_eRaUeXIpeg",
+            "domain": "academiadeia.com",
+            "description": "Aprende la IA que puedes llevar a la práctica. Clases en vivo cada semana para resolver tareas reales de tu trabajo con IA: presentaciones, reportes, propuestas ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 14,
+            "title": "Cursos de inteligencia artificial y ciencia de datos en El ...",
+            "url": "https://google.com/goto?url=CAESqAEBxCJF12m77INN4gaMDRahjJEl0F4I1qGf2L25d59OB_wusSST5GGiRwFMXXWUN_SsN4CbKks1Mz5QKFMddBtrSIFbct6DPi3rZUEJZk3AbKmeKGeTg-GknIxsxTvjHPM5blU6t1bqIvwLxLjfpTLKB3suyxfPrJ1L3qzjSuKWZRQEu2I-tsq9tvXULpMtrgKnt_ubgQHU6zUm7dVaquqcBtiJfprap5I",
+            "domain": "unbosque.edu.co",
+            "description": "17/06/2025 — Aprende a aplicar IA y ciencia de datos en proyectos reales con el portafolio de AcademIA. Inscripciones abiertas hasta el 20 de julio de ..."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 15,
+            "title": "Estudia gratis inteligencia artificial en Bogotá: son 90.000 ...",
+            "url": "https://google.com/goto?url=CAESsgEBxCJF1_fk-LHVchYI1yAk3TnMkwE0kxyRELJ1Nu0daGKdPiqrTir5G6SzcQ-TdpXoM9djyoHpz2CYzocaC2hZmTjQFqsmWH5gzO3OGNIN5i5FZoW113LXvzF-Q1Iosh2dx2ZEl6SNFTpqaMg2X-BkSTD5OpWVLOUevveDB_DgI9vvws6kan4Jqv8_Unjumplju4NqJQQJNDQYoUSy7GrJ5TYJH_y25gH4HyAeZYBoEJbY",
+            "domain": "bogota.gov.co",
+            "description": "24/07/2026 — Los bogotanos mayores de 18 años podrán acceder a 8 módulos prácticos de IA gratuitos y en español."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 16,
+            "title": "Cursos de Inteligencia Artificial GRATIS 2026",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXV4N4WD5qrwiXg_VRSKp5Wgtla-0FVz0DAJK-kGho29UHD6nRT9dsbWVBGsukeFN_P4Ryyr_gGtj_IkG9X2iMfpn9NW1DmMXaPpeNl0IOGcfNQ54ZKC3bUBYqpmEuIMx5taVH",
+            "domain": null,
+            "description": null
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "programación con inteligencia artificial",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "video",
+            "rank": 2,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 1,
+            "title": "Curso: Programación desde cero con Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESYAHEIkXXIEsNHVbyYMznG9Gvr1TzLYwB9Hms9FMlpHAwCu9KZdh2fiHfFUrdo-XN4FNm0ViJ2zWGNuBcoOLOeBrAvyexUJDzbXOQMmU81ee1jAFZoGPgbUxObZs53GSPOA",
+            "domain": "ed.team",
+            "description": "En este curso aprenderás, a nivel básico, cómo programar con ayuda de la Inteligencia Artificial en todas las etapas del desarrollo de software. Al finalizar el ..."
+          },
+          {
+            "type": "people_also_ask",
+            "rank": 4,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 5,
+            "organicRank": 2,
+            "title": "Programación de Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESfQHEIkXXtlpa-if9C1_rC5tMlCsXWLsxBTrRE6hxZk9Yc5WyQvoYmdPBM5Y2UKggEzUAzhWZi3pds1eK5gEwQSKOE-wAAadXDKN7MhTWTojMZlV0bgD3YZHO3a1eRU25eKV5fpqPMVM8uKtefVE6smBHiKYj8zmy1xmOjzQZ",
+            "domain": "cev.com",
+            "description": "La programación de inteligencia artificial es el proceso de desarrollar algoritmos y sistemas que permiten a las máquinas aprender, razonar y tomar decisiones ..."
+          },
+          {
+            "type": "people_also_search",
+            "rank": 6,
+            "organicRank": null,
+            "title": "Busca productos y servicios relacionados",
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 3,
+            "title": "Cómo programar inteligencia artificial: lenguajes 2026",
+            "url": "https://google.com/goto?url=CAESfwHEIkXX3mZ-cLKUuytaG5cebM3uBnuj_Z2bibT-EyGzH76B1s7lF5gLeY8GDpZGDB5zxvRWObGBlYSmtBcXQnvGzOEF6MieOfI6D9fcI0WE65Tv67IXuoPjuH4MVHrGGJYTBV29Mbi4q_j4rZYq0ROg2GeaOYrQ2BuwjxeImlk",
+            "domain": "keepcoding.io",
+            "description": "2/09/2026 — Primeros pasos: por dónde empezar a programar IA · 1. Python, Fundamentos, NumPy, Pandas, visualización con Matplotlib · 2. ML clásico, scikit- ..."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 4,
+            "title": "Inteligencia artificial y programación: la revolución del ...",
+            "url": "https://google.com/goto?url=CAESvwEBxCJF1y-tWyleAPTkowCxGZHRYbbS1btjb02wssZwa436TWuhtfqBZ9sdU5g-xnMsf33RGWsI_AzjR-aon9XRFK7siQvyqFyen6yrGyVfyplmJHhRhxS04FUj5D9OC-lKT2ZFXQAmbG0OlzFfI9KXTaLl85s2xJqer6PmJUjfCY31CRjc8RcFnr7V7vK7xuy32yzr75SFo6UdC3GCBKXSeLZBNQnthCr6hcMFq4iwpqod5CThff-LwkubNHGQ6w",
+            "domain": "dks.digital",
+            "description": "21/01/2026 — La IA actúa como una herramienta de programación ya que cuenta con sistemas que son capaces de sugerir líneas de código, detectar errores y ser ..."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 5,
+            "title": "Generación de código con IA: definición, usos y herramientas",
+            "url": "https://cloud.google.com/use-cases/ai-code-generation?hl=es",
+            "domain": "cloud.google.com",
+            "description": "La generación de código con IA consiste en utilizar la inteligencia artificial (IA) y el aprendizaje automático (ML) para crear código basado en la petición ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 6,
+            "title": "IA para Programar",
+            "url": "https://google.com/goto?url=CAESdQHEIkXXVhbrm7tXOK6GDXcCgf6yfBdjw-qGtj5y-hcA0R0zWiyCMQOeQCKQZZnytlGHG8chZFUEsUzfJYoJRdZEp4Oy9EL_1PgE2_ixijKowUm2F6BRqkytn75M_6MKlKLolJTTLeU0qorkDYXM7CzBuLiGAQ",
+            "domain": "colombia.unir.net",
+            "description": "Aprende a aplicar la Inteligencia Artificial en todas las fases del desarrollo de software, mejorando eficiencia y programación con herramientas avanzadas."
+          },
+          {
+            "type": "organic",
+            "rank": 11,
+            "organicRank": 7,
+            "title": "Programación en la era de la Inteligencia Artificial - Henry",
+            "url": "https://google.com/goto?url=CAESjwEBxCJF161jPLw1ZA2v9kviqz8RDfKhlDlxzQZblN_p9eEvDr8GNGoRhlJu6Z-QBP6H4ASZZM3V2cuBc3MtHAEZNlZlrvE71lN1kBVrUiuxLNxRZpCtQSnF8-dR7ua_Lcmy61w7E8ntB98LyL2r6RU4W-ShBfsFTRowQCs2wgZsrWCFTPRz5W7xIlIdb04qJQ",
+            "domain": "soyhenry.com",
+            "description": "15/04/2025 — Lejos de ser una amenaza, la IA es una herramienta poderosa que permite a los programadores ser más eficientes, creativos y estratégicos. La ..."
+          },
+          {
+            "type": "organic",
+            "rank": 12,
+            "organicRank": 8,
+            "title": "19+1 herramientas de Inteligencia Artificial para programar",
+            "url": "https://google.com/goto?url=CAESiQEBxCJF14QVKmmBCcO0OKmiU1cN8PmZYK62x11feRgs6ZGkKXfiy8iWKmqDjqDL2WPz2vNih0ZxlUYxyIiisa5zzokELEi79YBAe_ubqhyqxo2cIUg8blmZmTEZO7IpFfKJL6lX4A1aG9t72FqwL7nKhlSVci6REi_16v1NTqHv08WxhqDsEjMrJg",
+            "domain": "vailos.com",
+            "description": "¿Quieres aplicar la IA al desarrollo de software de tu empresa? · ChatGPT (o GPT-4o) · Google Gemini · Cursor (IDE con IA) · Cody por Sourcegraph · Replit ..."
+          },
+          {
+            "type": "related_searches",
+            "rank": 13,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 9,
+            "title": "Programar inteligencia artificial: esto es lo que debes ...",
+            "url": "https://google.com/goto?url=CAESkQEBxCJF1032vxx4XIA568b8Ye5jb6r5wXRVuBpjnWeoJXayDjEdp-oR5xTOgZmkH_ieiM0AGXDLHzfqdR_d3MjOArHbRh_f7Jl9Ax1KKCQHGNYum9v0DY7tmClboNd28n0To_o5d8ju35dRONF4HfuqtI83YesSI1gKB-se0nGJDrpqHUQ2A1fYzCtR0EZbMyqe",
+            "domain": "educaciontrespuntocero.com",
+            "description": "2/09/2024 — Programar inteligencia artificial requiere una combinación de conocimientos en matemáticas, habilidades de programación, comprensión de la ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 10,
+            "title": "3 WAYS to use ARTIFICIAL INTELLIGENCE to LEARN ...",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXfJM46liRln84G3KDTm9Rk7Z2oRZF3FS4ke7xvzzQaG7yBbH1zrp-3fEtEKn_fBSBR4L74Xuun5ohM52UnEDjx4M-9lUMCOsJ4Zr4ZQ35gzcM82vkymwxDSnr7HSrExXqOk-s",
+            "domain": null,
+            "description": "Comments · Curso gratis: Programacion desde cero con Inteligencia Artificial · When A.I. · Every Processing Unit Explained in 20 Minutes · How To ..."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 11,
+            "title": "Tutoriales de cómo programar con Inteligencia Artificial (IA).",
+            "url": "https://google.com/goto?url=CAEShQEBxCJF14sEbi9C6ELNZvONbbtuqcLmQa6KjbKzhkTv-SMjAH5IukxG8sHWdSqsQahF9n5myCi_n8YNPF7_BGrCPzaR-WH0v27aKnhrYmYKAjlIQ8DZfGJTeA3yu16NT9gbyV7r1gQ7og1YLT4k1yuIvXfDQ5DokOLfeaI1vK7vJhKFbHRP",
+            "domain": null,
+            "description": "Colección de vídeos sobre cómo puedes usar diferentes herramientas de Inteligencia Artificial (AI) como programador o desarrollador de software. ...more"
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 12,
+            "title": "Cursos de IA para Programación",
+            "url": "https://google.com/goto?url=CAESkwEBxCJF19jRR7dCt4ihCa25ndSF-KQ2PrGKVawhxmByeBrvFXZ42k4uWNkTvMgSLAKJ6fmGF5RSF7kWEAN2pH0_Dga7Jw5uKvOTMynSoczeUWI9vJuhBePpf6pgURhPN3TQvE3rtgOtWJauOIzVCJsL6keY0hAF63-3op0bIsAfnf5XlHEp-1HSQPfcSHShqmZTyag",
+            "domain": "aluracursos.com",
+            "description": "Si deseas comenzar en Inteligencia Artificial aplicada a la programación, es fundamental tener una base en lenguajes como Python o JavaScript, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 13,
+            "title": "25 herramientas para programar con inteligencia artificial",
+            "url": "https://google.com/goto?url=CAESiwEBxCJF1059xiFKAkbLp9jXgLY0-39Ixfu_HoDDKCYhkdDcYEnkz3iBKsNaJdgwhs1iLneefF7_27RZjQ9lmFujOvUVOjXAFApK3IQYslABSF8uAEiRpn72ajJO9QCxvPLWJkzArtpjMx7Vldnoce9qxjGliYqEkvBtrdYEfZm3Hh8atfBTBrcEuPy9",
+            "domain": "hostinger.com",
+            "description": "2/10/2026 — Herramientas de IA para la creación de contenido · 1. Hostinger AI Assistant · 2. CopyAI · 3. Grammarly · 4. ContentBot · 5. WordLift · 6."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 14,
+            "title": "Cómo usar la IA para ser más productivo en programación",
+            "url": "https://google.com/goto?url=CAESmwEBxCJF13IY3iMLYNguJEzayTN7U6Stb83Og2rmKzg-VJkL1uue9DyAteDxkW6fhlHzlVad5jNVTNewpD5TQxuRxaudmA4qjCDGvN765Ox4aFW4EhdPnPf-2-fL_eH49O1ZHOxKGBle1KRW0C5z3vj42Cb0X4yGLetPwhWOpuONz5omxLqqbUHEk1kcZkSjoP4sVRZqAtmTrcE3jw",
+            "domain": "webreactiva.com",
+            "description": "Cómo usar la IA para ser más productivo en programación · Herramientas Open Source y APIs · Asistentes de código con inteligencia artificial · Codeium y Cursor."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 15,
+            "title": "La Inteligencia Artificial en la programación: El arma ...",
+            "url": "https://google.com/goto?url=CAESuQEBxCJF1zKF1ZLXekoRWi9ACeh2LJY48vMH-33JPH-TuW0Fm0wXkO8B2fxg3UgJf-rNHxOJKbsTyYr6wJM4WQ66r8g4C1vdyy_RI-eKA4e6TAF9hVefhqRQ6rzOh7P8omahgrcgcteKQAln3CtzjmzHWG5Js_AR94ccVCGTcODH-hRoaGOBLsyM5tcaKO5_eklwSA30PU1Ew-k5Z1lvuGwDdR2qoYPX99q0hY0j6VpLpsYQacIxiU7B8Q",
+            "domain": "iebschool.com",
+            "description": "14/09/2024 — Desde la automatización del testing hasta la optimización de algoritmos, la IA permite que los desarrolladores se concentren en tareas más ..."
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "laboratorio de inteligencia artificial",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "Laboratorio de Inteligencia Artificial – Hoy en la Javeriana",
+            "url": "https://google.com/goto?url=CAESpQEBxCJF1_0h9Fkix6OecFLkYe4No5kRl_YOmVtT-ygIj7WW2RRdTcciIE-3D0LamhOu2A3LQscJ5GexilQLeuBKtrytWY2StGCpXZcnBmDgGO3RlVZHOIeGLRn4gv_I_ud83G_TFZaB29fK82-Ce1p-rwOoxxIR04CzFr_Hg-68N9zljybSVJ_LYh0f8I83reYrl5i0W6LSQoNXtAH6D1F5XeoJQ90",
+            "domain": "javeriana.edu.co",
+            "description": "La Dirección de Asuntos Estudiantiles ha desarrollado una herramienta que monitorea las situaciones de riesgo académico de los estudiantes y brinda estrategias ..."
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 2,
+            "title": "Cómo construir un laboratorio de IA agéntica en tu empresa",
+            "url": "https://google.com/goto?url=CAESkAEBxCJF19XGbd7hmlY2jL_1tTqnWVPBsVXZi85nys8PsO3cvkZCdTeKsUW6SMU6KSHTJqiCeqZGlCeChUbXRgXgewsVLfH6sPnOj4twA6o5GZX-WtF_15rp50H6bXvL2cZ2WFunCLdilqm6_dHI31EdwCjer9mLmlgIYoKgyPekWzSITqjl6i31-z2BxlOIwHM",
+            "domain": "api-ux.com",
+            "description": "25/10/2025 — “Un laboratorio de IA no es un experimento tecnológico: es una estrategia de negocio. Permite aprender rápido, equivocarse barato y escalar con ..."
+          },
+          {
+            "type": "images",
+            "rank": 4,
+            "organicRank": null,
+            "title": "Imágenes",
+            "url": "https://www.google.com/search?sca_esv=6b0e606c2b1206da&hl=es&gl=CO&sxsrf=AKL5yDgzd2Dt55-4YvnCMOFrX1TT2vDXrQ:1793894123889&q=laboratorio+de+inteligencia+artificial&udm=2&source=univ&fir=rg_hNSXzl9j8EM%252CD7zXkEeIfSrjjM%252C_%253BnQhgM2M3JXu6dM%252CFhX2DN4srNWT4M%252C_%253Ba_hb4cS7ig1_rM%252CLUzeDVGAMD2T_M%252C_%253B5H0UqLYuCY5OdM%252CWtYHh3QY6GbALM%252C_%253BAHhoB4Z2SwekDM%252CyNiqnVXZj1W5yM%252C_%253BsY5eGbBZ-KimZM%252C1V9XRrOTTD58tM%252C_%253BrOUYA4u1kimseM%252CAEmIL2l-mWd5fM%252C_%253BFXJwmlS9yIb40M%252CR0l3WzyVwPfNcM%252C_%253BqX9l-VXuZDL8WM%252CwwSSknFMYstDEM%252C_%253BKr7kBAH7UBOeUM%252CpHk5rxHBBE6JWM%252C_%253BWrE8T6Fc6gksqM%252CbWP8cvoWlUz_SM%252C_%253B4YPJaRfwDkAwWM%252CUMbueIJ0XatgYM%252C_&usg=AI4_-kSdTLz9EWaeJnuEJflVgnFeXmK-mg&sa=X&ved=2ahUKEwjsi5OwmPGXAxVYY0EAHb7RHisQ7Al6BAgeEAU",
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 5,
+            "organicRank": 3,
+            "title": "Universidad EAFIT crea laboratorio para el aprendizaje de ...",
+            "url": "https://google.com/goto?url=CAEStAEBxCJF14_JZrLyHPycf9jptMi0U1JWJLyejBFoW7aOaxbNlachF7KZ8b9DAeuGY2VE8LrAF4vPnEo7SZGT8oC8_Gl9-sAOKGW8EjBL76Dcrj_2V3WZS5VbrqV0u1k-LrSiVsgMNboWy6ZN1X1UJqDiB_Qqi7ZGbKg6RkWGhPD9Ig14thuRE3boP55xRD5FL_59UUsqvpojsdLxYLuey-4WS9MyixAqC2pVTntYUFCYlofdtTw",
+            "domain": "noticiasuno.com",
+            "description": "18/05/2024 — Universidad EAFIT crea laboratorio para el aprendizaje de Inteligencia Artificial · MinTic lanza iniciativa para tecnificar el campo · IA para ..."
+          },
+          {
+            "type": "video",
+            "rank": 6,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 4,
+            "title": "Laboratorio de Inteligencia Artificial UNAM - Huawei - DSSI",
+            "url": "https://google.com/goto?url=CAESrQEBxCJF1zvPajVhF86YGlcGYpkmnV-35gBD9QVLbX0WAndP7viKQH1I2G_jhR4gsUJPxUgybu0bbrliUM1MCRpF9mydaSxyXXxIchC1gUtkaGH07o1P-96tZm36stcnr4nNaUxl2Aa1fMSx4N5ng3uApB1_3-CzGTTxtD5xhCHAXhygJtcXJJBcAdZeCvT07TiWNsdwzRQPiocnIEjosEcyE5bBHV1MzGIFHNmcEQ",
+            "domain": "sistemas.tic.unam.mx",
+            "description": "Laboratorio de Inteligencia Artificial. UNAM - Huawei. Enero de 2023. Ver 2.0. Revisión Mayo 2023. Elaborado por Fabián Romo Zamudio. Page 2. Confidencial DSSI ..."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 5,
+            "title": "El Laboratorio",
+            "url": "https://google.com/goto?url=CAESawHEIkXXe-TUgUwTC_gS1UaykqgFFAvOq2tRxTOmbYyiZ_ys3y2Xbf6Ku2ljy5pcsksDJ0_gXtRkya-7fbr9cYJRWtdYoFq7qgh8nqiUG5QOIpdBoAugxoAS1u1R0bwJPuyJ2CIyrJOfQWZv",
+            "domain": "aesia.digital.gob.es",
+            "description": "El Laboratorio de Ideas de la AESIA nace para fomentar la investigación, la innovación y el debate sobre el desarrollo y uso responsable de la IA."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 6,
+            "title": "Colombia tendrá laboratorio de inteligencia artificial | El Cronista",
+            "url": "https://google.com/goto?url=CAESlAEBxCJF10iPooZWwkPvE3IArYG12-XC47t1JEtKPTI8wY6FQrRELxEHBTHJ2BNAQTBOumZ4zUKEElxbM4x3PZpiMOc6qmoCVniB8gYFKq92hxxElqCwcm1-ED6l2DhkvH6feGOGmMi2EnUUDvGg9h4hFYhyVjuybRt7E-jcWFhCi_R3M0NcReCZGhLgO2Apqgbb6RFd",
+            "domain": "elcronista.co",
+            "description": "19/06/2023 — El Ministerio de Tecnologías de la Información y Comunicaciones anunció la creación de un laboratorio de inteligencia artificial, ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 7,
+            "title": "Así es el primer Laboratorio de IA de Microsoft en Colombia La ...",
+            "url": "https://google.com/goto?url=CAESzQEBxCJF1xcoY3MvP3AYh6FKtQnJX7GX0R3qqJ-PNtGOHkoEJmsSfcq_H40eNRWaYLCb5PrJ6qPYurqp0MWw_QcilQL-na18W7KtaRDk29MFi11-msWTW7TgY9YXeDbHH39A-6yacO0mlNg1YUJIE-CpB8s_ynnZk0j2G4dkYzyrt9trnWSv18MoD3Xh1k08GwNjYrhKiMQbE0Cbc82PJfjAfT0Bn7EzEKgRs599n1ibdmSN4mfmFBdRa39VwFjKUYoz77LDmRvITDfHXuyH",
+            "domain": null,
+            "description": "... laboratorio de inteligencia artificial que pretende llegar no solo a las industrias (pequeñas y medianas empresas), sino a los lugares más ..."
+          },
+          {
+            "type": "related_searches",
+            "rank": 11,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 12,
+            "organicRank": 8,
+            "title": "Laboratorio de Acción de IA para la Humanidad",
+            "url": "https://google.com/goto?url=CAESdgHEIkXX2tUl_2lr39ZRFBfRgaOkJiO4KAp_57wJEurpobVMBJWkvroyaAIzwz_m-3I5NTDVyhc8lqNT2RMHk5cy31dlzw1UhZvczedKD9mPo3WtmK5dTFxAQTnhJNLuIIx6PmcVQ-EJk5s9m8UQJe65dforRFQ",
+            "domain": "forward-global.org",
+            "description": "Únase a este Laboratorio de Acción para reducir el ruido sobre la inteligencia artificial, comprender mejor cómo la filantropía puede participar en la ..."
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 9,
+            "title": "Laboratorio de IA Cognitiva | Investigación y avances en IA",
+            "url": "https://google.com/goto?url=CAESYwHEIkXXfbYB1uqzqalUiw-VPqPA9KZbfZLymo0P2txDEkfM3Qv23dSLLE6x5PsYTD0t7DyCvbI9HJbKeuiKowjrl3xPY-QqZrsoStTEUcrbqs_SxsnVa5oEspN_T7c5cdYPYA",
+            "domain": "cognizant.com",
+            "description": "Cognizant AI Lab es un laboratorio global de investigación y desarrollo centrado en el avance de sistemas multiagente, IA evolutiva y sistemas de toma de ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 10,
+            "title": "Cómo crear un laboratorio de I+D en IA",
+            "url": "https://google.com/goto?url=CAESewHEIkXXBqEhe0h7UDf1lUSa4VY0azcjZP9qQNSXMb2prdJR4Xl9YwnhYt_MLlROGBawf-_ceMZJx9H4cajz7yssV36ljbjWPQscfgeuv2b-zDQXZdM8D2QCqCgeirSg_FEkBnlrPPkdktnhY49hfH6a1ACXS6sQwQcqGw",
+            "domain": "hbr.org",
+            "description": "20/11/2018 — Existe la idea errónea de que convertirse en una empresa de IA es tan sencillo como disponer de datos, infraestructura y análisis y datos ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 11,
+            "title": "Laboratorio de IA: una nueva forma de personalizar el ...",
+            "url": "https://google.com/goto?url=CAESnAEBxCJF11Ifm-VPWopsE2J_BZH3hXyc15Bv3cS3pHSu9POiOF122S3Epm2HwortYc8TMX8U-w_04y8k3a1V7es83AYjiawnyaYGqvdcacRymzs7u1-ULlqIWEU39Cxwo-h8T4GS402V9T2pRxtZ_Dq-zFAD1mytgvSuofrNi6ZqIqUeiFFdcUC2LHrf8LNtuTUxLHNLB8ymAxao6iI",
+            "domain": "degreed.com",
+            "description": "19/05/2026 — Y si pudieras elaborar cursos al instante adecuándolos a los aprendices? Conoce cómo el Laboratorio de IA crea cursos hipersonalizados ..."
+          },
+          {
+            "type": "images",
+            "rank": 16,
+            "organicRank": null,
+            "title": "Imágenes",
+            "url": "https://www.google.com/search?sa=N&hl=es&gl=CO&sca_esv=6b0e606c2b1206da&sxsrf=AKL5yDhLR4rOANk291RAdGNh3xqkpUOB2A:1793894125179&q=laboratorio+de+inteligencia+artificial&udm=2&source=univ&fir=Wz1xGRLAtCSNwM%252CpBHXfiJ7EERAUM%252C_%253B6d5pyVm7H1bH-M%252Cve56Iu0TLs0FEM%252C_%253BwF_TlQNYAKERMM%252C4ErdVMxDiF14AM%252C_%253BrlYpGTn5M42MOM%252CAIiCs0pfbfSkkM%252C_%253BNrNnNpgtNmL-yM%252CyNiqnVXZj1W5yM%252C_%253B_lZwi9-SfkMuDM%252C9ubRl-MX3JIZ9M%252C_%253B-zKIvlDxL70NwM%252C4FVFgExnW7SzBM%252C_%253BqldmK1Y_MgqpSM%252Cus2MZ9g7Glz1zM%252C_%253B_C8eE-Z_BxgCWM%252CTuOAxPnI9XPDnM%252C_%253BlXA0r15YrqRQIM%252CxbFnDWb40tEXlM%252C_%253BxjvH8LVJnAspiM%252CJF_Fz7nVr6r27M%252C_%253BD2yJZIYMWhJbFM%252CVyH7g1aDRWS-RM%252C_&usg=AI4_-kQLSqqVI2GGof1Qv7R1njdysT1-aA&ved=2ahUKEwi45-GwmPGXAxXVQkEAHeUDHEU4ChDsCXoECCYQBQ",
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 12,
+            "title": "Colombia tendrá su propio laboratorio de inteligencia ...",
+            "url": "https://google.com/goto?url=CAEStgEBxCJF194Wtc8pj7bFAGEGswUk5rdda7rCTPx9JTvN0gwLiJvXCiS_eP7S5dBPfSlP2KubhkHpF47hmdXFIXddcQYz7FYjHl6sdqnjD81MAjZe5lWMghR9mXipUiTC9l2Zxg_yhzurWRtCYXhGJ25CWp0GCOU9kmfwPz9-c_UAYQPbnrMxZoLgMxf4uukhyto9uqsHtrsCIIidOVhoOAJVIgq9nHlTVg8b2SOy48foGQjtjPS3AQ",
+            "domain": "bluradio.com",
+            "description": "30/11/2023 — El laboratorio no solo se centrará en la regulación de la inteligencia artificial, sino que también fomentará la colaboración con universidades ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 13,
+            "title": "Artificial Intelligence and High Technology Laboratory ...",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXdguMg7jhGSCoIx5xr3amCdu-rt1JgWM3FmCdqjQrGvCK-FT2J7mPMkvZx3cpwWRmcQXfs7jtg5pYzSiX7sFw6z0j5OAQQuSmeBDjyX5sbqcpKwgrvwOVcumm7zdjJjVKM3eL",
+            "domain": null,
+            "description": "... Laboratorio de Inteligencia Artificial y Alta Tecnología, con el apoyo de Huawei, el Gobierno de México y la Agencia de Cooperación Alemana ..."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 14,
+            "title": "Lab-IA | Laboratorio de Inteligencia Artificial",
+            "url": "https://google.com/goto?url=CAESWAHEIkXXJBy8dePbF6p3Dz5oNrQUWFX86PTTq_gpqg94Az5DqAJFvAuVYXeoGavIkRzr3BNoIQ5bYV1a4b1BBnCFdr7Kql7lZGyYXU6TOrrL2G2vsiKJnw4",
+            "domain": "lab-ia.lovable.app",
+            "description": "Expertos en inteligencia artificial para empresas. Transformamos tu negocio con IA de vanguardia para mayor productividad y competitividad."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 15,
+            "title": "MinTIC revela detalles de cómo será el Laboratorio de ...",
+            "url": "https://google.com/goto?url=CAESwwEBxCJF1y14drUCrPYxRMXt6L9LoNuERPL8LTs8CCp9IOVWwN8H3vzq0vbf7XhJqMoOF-fB8v8GvW0Fk49b2oIITqQO-SijPoj2shEgU5mt4XT7WU5zJ3H0LFVJPLHPft1rbfAz4fwawbORuXKXkOvciyRIaFTdwiDk5jk5Z0_02cVdKjsDhOAqWtxFHFFVx103lort8EqASl7BzRzYwKUrBDQJlf4Ye-3RXW8n-27fLtT-NEbauoobPCQifZb75fwqjaQ",
+            "domain": "noticiasrcn.com",
+            "description": "Mauricio Lizcano reveló que el laboratorio va a tener equipos de formación en IA para las empresas, y la unión de elementos nacionales e internacionales."
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      },
+      {
+        "keyword": "investigación en inteligencia artificial",
+        "ok": true,
+        "items": [
+          {
+            "type": "ai_overview",
+            "rank": 1,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 2,
+            "organicRank": 1,
+            "title": "La inteligencia artificial para la investigación científica",
+            "url": "https://google.com/goto?url=CAESkwEBxCJF1-n_7DunaJ44vsN8a-Vxs4QVqq8quZfSFpUORI5i1QXy-WUY9PRJp61hrGGoSVDfm0ldnaNmk-1EbrfYMEJnhMJ8PPV8R1vzKsZLqm-4gl1azfcTOqbSXkLGTJLZvR18NJq_Jstlbglb1lA0Nwkbs5SYFUUAV3flsWdQnqurBywDDiIyyUKYPYblg6GdqIY",
+            "domain": "consultoresia.com",
+            "description": "La inteligencia artificial es una herramienta de gran utilidad para la investigación científica tanto en el caso de las ciencias puras, como para las ..."
+          },
+          {
+            "type": "organic",
+            "rank": 3,
+            "organicRank": 2,
+            "title": "Liberar el poder de la IA en la investigación y el análisis",
+            "url": "https://google.com/goto?url=CAESlgEBxCJF1xQLIIuRES3LzGkqpDiIhvZjCnf5YyhlbHzHhgCqP0y3IU_22_5HWEXDiV8IPLi2VLocU_K2-4KPRkkvzJgdmgtK2oeCDUstZOKQ34fkOJV1HFFHtoSheeDXVyAz_rm-fRrG-ER64R6rWf2sFYFLUXjgxBeVO1nzRTMuoqotW13DHcBD22-IqEwvOjVSqJ0YhyU",
+            "domain": "atlasti.com",
+            "description": "La IA y el aprendizaje automático pueden ayudar a los investigadores en la organización y el análisis de los datos, sobre todo cuando la recopilación de datos ..."
+          },
+          {
+            "type": "organic",
+            "rank": 4,
+            "organicRank": 3,
+            "title": "Revolucionando la investigación: IA y el futuro de ...",
+            "url": "https://google.com/goto?url=CAESqwEBxCJF1_bKt_pBk4ED_kra9rjE7L8v81HY7Xs-aY2aOC0fGL3yQOYSZTBGVdOxO5jhUEP8lnG_82fQM__AqSS-j_-RQpDvDioWsMmQREzAfKFtAyZzR-bdDwA4srkzZIueiNHXNjkLt4S0uy-PRrp19YVBWIfRRouVse54iaalRwMgdlXGu2MeAf4TmKJNkE7Jej0q5HusSznRRmcvNZGRDsMFz1f8MOanEtw",
+            "domain": "nuevarevista.net",
+            "description": "15/01/2025 — La IA también permite combinar información de múltiples fuentes para descubrir nuevos conocimientos que aceleren la investigación. Por ejemplo, ..."
+          },
+          {
+            "type": "video",
+            "rank": 5,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 6,
+            "organicRank": 4,
+            "title": "Tipos de IA para la investigación científica",
+            "url": "https://google.com/goto?url=CAESowEBxCJF17BSlAHM1K8YFooUhhLdIfevdd7VDntbR6dwA3ytQ2EZc74UhlYGf5Qc7x3e5x6lWqJSWBewj_wu2c61mn35Ae8GndBTALM1zXG8lLGBLZRtrfb4RHjFxBlBla_ItIjrKw6-Fb-WzaGRcmkLEExGUu8UcTiA9mzlgqhI_Eol7HHHhFXtG-FCqX7xKW5aJ1BfdT0Sx60Q_ZGX2iXK-Wsj",
+            "domain": "guiasbib.upo.es",
+            "description": "31/07/2026 — Uso de la inteligencia artificial: Tipos de IA para la investigación científica · Creación de textos · Creación de vídeos · Voces artificiales ..."
+          },
+          {
+            "type": "organic",
+            "rank": 7,
+            "organicRank": 5,
+            "title": "Inteligencia artificial en investigación científica",
+            "url": "https://google.com/goto?url=CAESgwEBxCJF15YSdwH4tetYIeeH_2LSuqlT-0HE4can_N345P6dNeuQHVlLwqjF16tSddZco886qhnT_YZzg6ynmPxWaYVh5SWJWWl26_T5QL0KhrAcsStEpak6MPHae89lL0yWi5HLbsDhgZpZ4DbMa9mQxMQapJQS39vCBmx80txIOD7_rQ",
+            "domain": "revistas.uautonoma.cl",
+            "description": "por IS Galdames · 2023 · Mencionado por 46 — La IA tiene múltiples aplicaciones en el campo de la investigación científica, como el análisis de datos, el diagnóstico y la detección de enfermedades, el."
+          },
+          {
+            "type": "organic",
+            "rank": 8,
+            "organicRank": 6,
+            "title": "Inteligencia artificial en la investigación",
+            "url": "https://google.com/goto?url=CAEShwEBxCJF1wK7RVPJzZjcqhfEUIakGi0z4w4RZPQ6o7507RDApg5KVJbCTS_6_qneUDNAe3S1um_hEZt3GdW-_FIiuoyitWUT_CYNu6NvMSNpZwzRQjjv5Jxye4nXTDTDQXITPcONNcqc-zfn6USIcbuPw0osDDNDSl1ybBW1gy5s8hTKwRpyU6o",
+            "domain": "ucmconecta.edu.co",
+            "description": "La IA puede mejorar la calidad y los resultados de la investigación. Permite realizar análisis de grandes volúmenes de datos en horas lo que antes tomaba días o ..."
+          },
+          {
+            "type": "organic",
+            "rank": 9,
+            "organicRank": 7,
+            "title": "Pensar la inteligencia artificial",
+            "url": "https://google.com/goto?url=CAESegHEIkXXX9qqFXzquwXMAuuP8q5YDC2rpTF07hpOGbhyUtQNInUXZ7rH1gZbPsZJlE-S1efnAwpJnhaK1Dhx2yneTw9Om4Ji_ejnwsL3MTcIPfiS-tOXka1ZN2owrrJoXXWyx5hpmLVJfzvkQZV_K5DMQQzdCVlQtEtQ",
+            "domain": "conicet.gov.ar",
+            "description": "27/07/2023 — “Se trata de “programas informáticos diseñados para imitar la inteligencia humana y realizar tareas de manera autónoma”, define Vera, y ..."
+          },
+          {
+            "type": "organic",
+            "rank": 10,
+            "organicRank": 8,
+            "title": "El uso de la inteligencia artificial en la investigación científica",
+            "url": "https://google.com/goto?url=CAESxwEBxCJF12vk_nPew4iUBRG49NKuDWHOJdqcCtvEo-vwDzgm9DIGrRNbqS56b7EFkSPH1pqdBzUpYrzihs_PfHOSYSD13uQVYat9dQOk4X4krVZKvyWW4klTWy4IU48uhN5C0j0__WAMHcvIfdVljBCOvPUjFseHiVN909tWaqfO14DVsVdKoNA3kJqVn7aJ3QFCQts7CkHYOfNuMMYOzQVP-RCTwoS9k-wRLomzIuRHfmjFskjNniTPpHEyRtx7-IiGjBxPnLFc",
+            "domain": "nim.media",
+            "description": "6/05/2026 — La inteligencia artificial permite a los autores mejorar la calidad de los textos, verificando errores gramaticales, de puntuación, ortográficos ..."
+          },
+          {
+            "type": "related_searches",
+            "rank": 11,
+            "organicRank": null,
+            "title": null,
+            "url": null,
+            "domain": null,
+            "description": null
+          },
+          {
+            "type": "organic",
+            "rank": 12,
+            "organicRank": 9,
+            "title": "La inteligencia artificial en la investigación científica",
+            "url": "https://google.com/goto?url=CAESfgHEIkXXDrrK9xBEpkZJKffuu8DB3akCs2aJ2huO-RTci7wUh0ebosoW9imrD2xYvrBRzJHg2pfVomCFJwgdMUt8UKCmBKOeE8FhLrXNS9Dy6jtnicOvy0OtDm56OfEyJng6-Gk56oKKLkreCGeFuONiGFAaJQNYQizpmw8cAA",
+            "domain": "ve.scielo.org",
+            "description": "por G Heredia Pérez · 2026 · Mencionado por 9 — Los hallazgos evidencian que la IA potencia significativamente el quehacer de la investigación científica, resaltando el cuidado ético que deben ..."
+          },
+          {
+            "type": "organic",
+            "rank": 13,
+            "organicRank": 10,
+            "title": "Use of Artificial Intelligence (AI) in Scientific Research",
+            "url": "https://google.com/goto?url=CAESaAHEIkXXFrtWB7pLeT5BmefETFCnIgmR2DILWRsA39iN9--rJvDJx_XIU9Zu9FxMNTQq3mpM7fSKjk4h3FrjqsmN_IaiQdyHm-BwCpbJMQfKoViwAf2pTUwYRxcYZmqxtAuzEfdXOjm5",
+            "domain": null,
+            "description": "Comments · THESIS TITLE WITH ARTIFICIAL INTELLIGENCE (AI) · Curso gratis: Inteligencia Artificial para todos (2026) · ¿Cómo hacer investigación ..."
+          },
+          {
+            "type": "organic",
+            "rank": 14,
+            "organicRank": 11,
+            "title": "Recursos IA para investigadores - Biblioteca at Duoc UC",
+            "url": "https://google.com/goto?url=CAESagHEIkXX24Ttam0QHYi1GszdO6Hym7oinPwm-zsypxWAAMuvE3BLc8dXrX77VyRUnsTRCBX2JI3OlME2XFNzUYXGtrJE7Yl7L5-fZz4cpDYgfITDd8l16f8u2hAUXyDxISBQsWT4ImWeOpA",
+            "domain": "bibliotecas.duoc.cl",
+            "description": "23/06/2026 — Mediante la utilización de algoritmos avanzados y modelos de lenguaje natural, las IAs permiten una exploración más rápida y específica de datos ..."
+          },
+          {
+            "type": "organic",
+            "rank": 15,
+            "organicRank": 12,
+            "title": "Las 8 mejores herramientas de IA para la investigación en ...",
+            "url": "https://google.com/goto?url=CAESeAHEIkXXLar6uh7SXMG3OFOYpUvoYwEBdDTVtJTlHdSOzPo1ltxE85PyKo2VEoo-o5GQDaotWr1CQcIIBHOd0SyiX-WUdBRNqwW5T-_s8ob_XeVl805NuyeM2xxIjspRUDXMjS03bIS-CveRoyzPGRS3eY7cLKnjkQ",
+            "domain": "wordvice.ai",
+            "description": "Las 8 mejores herramientas de IA para la investigación en 2024 · 1. Wordvice AI - La mejor IA para investigadores · 2. ChatGPT - El chatbot popular original · 3 ..."
+          },
+          {
+            "type": "organic",
+            "rank": 16,
+            "organicRank": 13,
+            "title": "IA para la investigación académica: busca, analiza y ... - Kimi.ai",
+            "url": "https://google.com/goto?url=CAESegHEIkXXC2NIxlIiOoNOEwgEbsWtTIg_QFN5p30Yo5y9kNEU_71yVweV9ZAdtxadBUGc6_nf3s9tPuIh_op1d0UkWVHlQ-s6PaLoDmHhXpSF_Pq5dLDAnrVBfd7zOOViK-dBKDTs6NsJdLk_zWrMiPiYiCON4yRkp6mo",
+            "domain": "kimi.ai",
+            "description": "La IA permite a los investigadores estudiar tendencias del mercado, comportamiento del consumidor, estrategias organizacionales, finanzas y emprendimiento ..."
+          },
+          {
+            "type": "organic",
+            "rank": 17,
+            "organicRank": 14,
+            "title": "Cómo se usa la IA para investigaciones científicas | Blog",
+            "url": "https://google.com/goto?url=CAEShAEBxCJF11-Ya1BAEj4MnZYqy0UskT6VYjWwjkJ0O4HPPmaTU9R7r_Wie32k95ebz1UjudsQJ_XDJNnuzp3DP7iCt697geUmCs-eockFaOvOY9H9Ua7qdUQA-WsoBtFgZMM2QOvKSuGfqhtSyO9G3CWYgc6brIBFyUVL_3g7gaF9o3NRkjs",
+            "domain": "maximaformacion.es",
+            "description": "22/08/2025 — La IA permite automatizar búsquedas en bases de datos académicas, filtrando artículos relevantes, identificando literatura de alto impacto y ..."
+          },
+          {
+            "type": "organic",
+            "rank": 18,
+            "organicRank": 15,
+            "title": "De experimentar con IA a integrarla con criterio en la ...",
+            "url": "https://google.com/goto?url=CAESrgEBxCJF1-riyPDkjJQuwEQBD09a1IRfBFtWUd-F19i-5jwpnGAV8XrCSe70Ah9tFDLXLLIbk9NiR-QGDH8U3zE5P9hOQEjMOmIKNbxEt4E_lO65oaajLHofKctkwh7I-PrYbgrBhxHHnKxuBJG3w_m9VrabREVF2xmDHz1HyuLfp99ABVag3d5vpnlcCngy2XRjmtBkL5t5jYAV-PCyXdv9fBxmP8KmNJgcncOfYUI",
+            "domain": "aprende.csic.es",
+            "description": "14/01/2026 — La experiencia nos deja una idea clara: aplicar inteligencia artificial en investigación no consiste en ejecutar modelos, sino en tomar ..."
+          },
+          {
+            "type": "organic",
+            "rank": 19,
+            "organicRank": 16,
+            "title": "Las 5 mejores herramientas de IA para la investigación ...",
+            "url": "https://google.com/goto?url=CAESfQHEIkXXtRxubsLmVHrRRFpzLsx72fzx-NcxOh8oZt2lNOEbkEeX-P2Lpy_fupojgsatIVYde8OmqExG9z3FJh_8DiQ0l-BrF1iy_wQ03tUwqAwwZxN6GIHrNcJm-PI41HmSLQiULpnXxIuP2FW4zB6Gy5Stq6A23nRFXGjm",
+            "domain": "sonix.ai",
+            "description": "5/05/2026 — Las 5 mejores herramientas de IA para la investigación académica en 2026 · 1. Sonix · 2. Solicitar · 3. Semantic Scholar · 4. Scite · 5. Conejo ..."
+          },
+          {
+            "type": "organic",
+            "rank": 20,
+            "organicRank": 17,
+            "title": "IA para la búsqueda de información - Inteligencia Artificial en ...",
+            "url": "https://google.com/goto?url=CAESdQHEIkXXDVqfn5L7uYl_3_pB0HoR3XtFGL0OFJ_EQ7BCIGmWt0WpXimCR3aBlA2A_ZNtOR_gT9IIdK1gPsWePoXBdC3HD4NgHk66moIzzTIpDys-3D6xefMGLePpaAvgZYYTWNYI_9HirM3WGsYZeRJC6jjKLA",
+            "domain": "libguides.ulima.edu.pe",
+            "description": "30/01/2026 — Herramienta de descubrimiento e inteligencia de investigación que integra publicaciones, datos, subvenciones, patentes y ensayos clínicos, ..."
+          }
+        ],
+        "locationCode": 2170,
+        "languageCode": "es",
+        "device": "desktop"
+      }
+    ],
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/DEFAULT/keywords"
+    }
+  },
+  "at": "2026-11-05T15:58:47.234Z",
+  "reserve": 30,
+  "recovery": "Respuesta perdida ECONNRESET; recuperación con mismos parámetros según caché documentada, después de otras operaciones."
+}

@@ -1,0 +1,34 @@
+{
+  "id": "D02-MX",
+  "tool": "find_serp_competitors",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "keywords": [
+      "comunidad de inteligencia artificial",
+      "fundamentos de la inteligencia artificial",
+      "desarrollo de software con inteligencia artificial",
+      "inteligencia artificial en la investigación científica",
+      "inteligencia artificial en finanzas",
+      "herramientas de inteligencia artificial",
+      "proyectos de inteligencia artificial",
+      "inteligencia artificial para empresas"
+    ],
+    "locationCode": 2484,
+    "languageCode": "es",
+    "resultTypes": [
+      "organic"
+    ],
+    "limit": 15,
+    "sortBy": "keyword_count",
+    "includeSubdomains": true
+  },
+  "response": {
+    "competitors": [],
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/DEFAULT/domain"
+    }
+  },
+  "at": "2026-11-05T15:57:55.416Z",
+  "reserve": 18
+}

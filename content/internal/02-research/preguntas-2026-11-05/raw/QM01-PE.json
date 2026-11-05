@@ -1,0 +1,54 @@
+{
+  "id": "QM01-PE",
+  "tool": "get_keyword_metrics",
+  "at": "2026-11-05T16:29:28.742Z",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "keywords": [
+      "qué es AI PlayGrounds",
+      "qué es una comunidad de inteligencia artificial",
+      "cómo unirse a una comunidad de inteligencia artificial",
+      "dónde encontrar comunidades de inteligencia artificial",
+      "cómo empezar un proyecto de inteligencia artificial",
+      "qué datos se necesitan para un proyecto de inteligencia artificial",
+      "cómo evaluar un proyecto de inteligencia artificial",
+      "cómo elegir herramientas de inteligencia artificial",
+      "qué riesgos tiene usar herramientas de inteligencia artificial",
+      "cómo programar con inteligencia artificial",
+      "cómo revisar código generado por inteligencia artificial",
+      "cuál es la mejor ia para programar",
+      "se puede programar solo con inteligencia artificial",
+      "qué es ai engineering",
+      "qué hace un ingeniero de inteligencia artificial",
+      "qué diferencia hay entre ai engineering y machine learning",
+      "cómo usar inteligencia artificial en investigación científica",
+      "cómo verificar información generada por inteligencia artificial",
+      "es ético usar inteligencia artificial en investigación",
+      "cuál es la mejor ia para investigación científica",
+      "cómo buscar artículos científicos con inteligencia artificial",
+      "cómo se utiliza la inteligencia artificial en las finanzas",
+      "qué riesgos tiene la inteligencia artificial en finanzas",
+      "qué aplicaciones tiene la inteligencia artificial en finanzas",
+      "es necesario saber programar para aprender inteligencia artificial",
+      "cómo implementar inteligencia artificial en una empresa",
+      "cuánto cuesta implementar inteligencia artificial en una empresa",
+      "cómo proteger datos al usar inteligencia artificial",
+      "cómo elegir una solución de inteligencia artificial",
+      "cómo saber si un artículo científico es confiable",
+      "cómo analizar la calidad de un artículo científico",
+      "qué es un preprint"
+    ],
+    "locationCode": 2604,
+    "languageCode": "es",
+    "includeMonthlyTrends": true,
+    "includeClickstreamData": false
+  },
+  "response": {
+    "keywords": [],
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/Default (contenedor autorizado)/keywords"
+    }
+  },
+  "reserve": 21
+}

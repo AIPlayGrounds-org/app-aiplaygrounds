@@ -1,0 +1,653 @@
+[
+  {
+    "id": "OLD:C01-PE-Q01",
+    "pais": "PE",
+    "consulta": "comunidad de inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C01-PE-Q02",
+    "pais": "PE",
+    "consulta": "organizaciones de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:C01-PE-Q03",
+    "pais": "PE",
+    "consulta": "AI Engineering",
+    "paa": 0,
+    "related": 0
+  },
+  {
+    "id": "OLD:C01-PE-Q04",
+    "pais": "PE",
+    "consulta": "ingenieria de software con inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:C01-PE-Q05",
+    "pais": "PE",
+    "consulta": "desarrollo de software con inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C01-PE-Q06",
+    "pais": "PE",
+    "consulta": "inteligencia artificial en la investigación científica",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C01-PE-Q07",
+    "pais": "PE",
+    "consulta": "inteligencia artificial en finanzas",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C01-PE-Q08",
+    "pais": "PE",
+    "consulta": "fundamentos de la inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:C01-PE-Q09",
+    "pais": "PE",
+    "consulta": "herramientas de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:C01-PE-Q10",
+    "pais": "PE",
+    "consulta": "proyectos de inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C02-MX-Q01",
+    "pais": "MX",
+    "consulta": "comunidad de inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C02-MX-Q02",
+    "pais": "MX",
+    "consulta": "organizaciones de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:C02-MX-Q03",
+    "pais": "MX",
+    "consulta": "AI Engineering",
+    "paa": 0,
+    "related": 0
+  },
+  {
+    "id": "OLD:C02-MX-Q04",
+    "pais": "MX",
+    "consulta": "ingenieria de software con inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:C02-MX-Q05",
+    "pais": "MX",
+    "consulta": "desarrollo de software con inteligencia artificial",
+    "paa": 0,
+    "related": 0
+  },
+  {
+    "id": "OLD:C02-MX-Q06",
+    "pais": "MX",
+    "consulta": "inteligencia artificial en la investigación científica",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C02-MX-Q07",
+    "pais": "MX",
+    "consulta": "inteligencia artificial en finanzas",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C02-MX-Q08",
+    "pais": "MX",
+    "consulta": "fundamentos de la inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C02-MX-Q09",
+    "pais": "MX",
+    "consulta": "herramientas de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:C02-MX-Q10",
+    "pais": "MX",
+    "consulta": "proyectos de inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C03-CO-Q01",
+    "pais": "CO",
+    "consulta": "comunidad de inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C03-CO-Q02",
+    "pais": "CO",
+    "consulta": "organizaciones de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:C03-CO-Q03",
+    "pais": "CO",
+    "consulta": "AI Engineering",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C03-CO-Q04",
+    "pais": "CO",
+    "consulta": "ingenieria de software con inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:C03-CO-Q05",
+    "pais": "CO",
+    "consulta": "desarrollo de software con inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C03-CO-Q06",
+    "pais": "CO",
+    "consulta": "inteligencia artificial en la investigación científica",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C03-CO-Q07",
+    "pais": "CO",
+    "consulta": "inteligencia artificial en finanzas",
+    "paa": 0,
+    "related": 0
+  },
+  {
+    "id": "OLD:C03-CO-Q08",
+    "pais": "CO",
+    "consulta": "fundamentos de la inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:C03-CO-Q09",
+    "pais": "CO",
+    "consulta": "herramientas de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:C03-CO-Q10",
+    "pais": "CO",
+    "consulta": "proyectos de inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C04-PE-Q01",
+    "pais": "PE",
+    "consulta": "inteligencia artificial para empresas",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C04-PE-Q02",
+    "pais": "PE",
+    "consulta": "soluciones de inteligencia artificial para empresas",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C04-PE-Q03",
+    "pais": "PE",
+    "consulta": "curso de inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C04-PE-Q04",
+    "pais": "PE",
+    "consulta": "programación con inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C04-PE-Q05",
+    "pais": "PE",
+    "consulta": "laboratorio de inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C04-PE-Q06",
+    "pais": "PE",
+    "consulta": "investigación en inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C05-MX-Q01",
+    "pais": "MX",
+    "consulta": "inteligencia artificial para empresas",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C05-MX-Q02",
+    "pais": "MX",
+    "consulta": "soluciones de inteligencia artificial para empresas",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C05-MX-Q03",
+    "pais": "MX",
+    "consulta": "curso de inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C05-MX-Q04",
+    "pais": "MX",
+    "consulta": "programación con inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C05-MX-Q05",
+    "pais": "MX",
+    "consulta": "laboratorio de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:C05-MX-Q06",
+    "pais": "MX",
+    "consulta": "investigación en inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C06-CO-Q01",
+    "pais": "CO",
+    "consulta": "inteligencia artificial para empresas",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C06-CO-Q02",
+    "pais": "CO",
+    "consulta": "soluciones de inteligencia artificial para empresas",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C06-CO-Q03",
+    "pais": "CO",
+    "consulta": "curso de inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C06-CO-Q04",
+    "pais": "CO",
+    "consulta": "programación con inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:C06-CO-Q05",
+    "pais": "CO",
+    "consulta": "laboratorio de inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:C06-CO-Q06",
+    "pais": "CO",
+    "consulta": "investigación en inteligencia artificial",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:E02-PE-Q01",
+    "pais": "PE",
+    "consulta": "AI PlayGrounds",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:E02-PE-Q02",
+    "pais": "PE",
+    "consulta": "Software with AI",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:E02-PE-Q03",
+    "pais": "PE",
+    "consulta": "ingeniería de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:E02-PE-Q04",
+    "pais": "PE",
+    "consulta": "cómo aprender inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:E02-PE-Q05",
+    "pais": "PE",
+    "consulta": "herramientas de inteligencia artificial para investigación",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:E02-PE-Q06",
+    "pais": "PE",
+    "consulta": "aplicaciones de inteligencia artificial en finanzas",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:E03-MX-Q01",
+    "pais": "MX",
+    "consulta": "AI PlayGrounds",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:E03-MX-Q02",
+    "pais": "MX",
+    "consulta": "Software with AI",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:E03-MX-Q03",
+    "pais": "MX",
+    "consulta": "ingeniería de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:E03-MX-Q04",
+    "pais": "MX",
+    "consulta": "cómo aprender inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:E03-MX-Q05",
+    "pais": "MX",
+    "consulta": "herramientas de inteligencia artificial para investigación",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:E03-MX-Q06",
+    "pais": "MX",
+    "consulta": "aplicaciones de inteligencia artificial en finanzas",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:E04-CO-Q01",
+    "pais": "CO",
+    "consulta": "AI PlayGrounds",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:E04-CO-Q02",
+    "pais": "CO",
+    "consulta": "Software with AI",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:E04-CO-Q03",
+    "pais": "CO",
+    "consulta": "ingeniería de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:E04-CO-Q04",
+    "pais": "CO",
+    "consulta": "cómo aprender inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "OLD:E04-CO-Q05",
+    "pais": "CO",
+    "consulta": "herramientas de inteligencia artificial para investigación",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "OLD:E04-CO-Q06",
+    "pais": "CO",
+    "consulta": "aplicaciones de inteligencia artificial en finanzas",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "QS01-PE-Q01",
+    "pais": "PE",
+    "consulta": "qué es AI PlayGrounds",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "QS01-PE-Q02",
+    "pais": "PE",
+    "consulta": "cómo unirse a una comunidad de inteligencia artificial",
+    "paa": 1,
+    "related": 0
+  },
+  {
+    "id": "QS01-PE-Q03",
+    "pais": "PE",
+    "consulta": "cómo empezar un proyecto de inteligencia artificial",
+    "paa": 1,
+    "related": 0
+  },
+  {
+    "id": "QS01-PE-Q04",
+    "pais": "PE",
+    "consulta": "cómo usar IA para programar sin perder calidad",
+    "paa": 0,
+    "related": 0
+  },
+  {
+    "id": "QS01-PE-Q05",
+    "pais": "PE",
+    "consulta": "qué hace un ingeniero de inteligencia artificial",
+    "paa": 1,
+    "related": 0
+  },
+  {
+    "id": "QS01-PE-Q06",
+    "pais": "PE",
+    "consulta": "cómo usar inteligencia artificial en investigación científica",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "QS01-PE-Q07",
+    "pais": "PE",
+    "consulta": "cuál es la mejor IA para investigación científica",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "QS01-PE-Q08",
+    "pais": "PE",
+    "consulta": "cómo usar la inteligencia artificial en finanzas",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "QS01-PE-Q09",
+    "pais": "PE",
+    "consulta": "cómo implementar inteligencia artificial en una empresa",
+    "paa": 0,
+    "related": 0
+  },
+  {
+    "id": "QS01-PE-Q10",
+    "pais": "PE",
+    "consulta": "cómo saber si un artículo científico es confiable",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "QS02-MX-Q01",
+    "pais": "MX",
+    "consulta": "qué es AI PlayGrounds",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "QS02-MX-Q02",
+    "pais": "MX",
+    "consulta": "cómo unirse a una comunidad de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "QS02-MX-Q03",
+    "pais": "MX",
+    "consulta": "cómo empezar un proyecto de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "QS02-MX-Q05",
+    "pais": "MX",
+    "consulta": "qué hace un ingeniero de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "QS02-MX-Q07",
+    "pais": "MX",
+    "consulta": "cuál es la mejor IA para investigación científica",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "QS02-MX-Q08",
+    "pais": "MX",
+    "consulta": "cómo usar la inteligencia artificial en finanzas",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "QS02-MX-Q09",
+    "pais": "MX",
+    "consulta": "cómo implementar inteligencia artificial en una empresa",
+    "paa": 0,
+    "related": 0
+  },
+  {
+    "id": "QS02-MX-Q10",
+    "pais": "MX",
+    "consulta": "cómo saber si un artículo científico es confiable",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "QS03-CO-Q02",
+    "pais": "CO",
+    "consulta": "cómo unirse a una comunidad de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "QS03-CO-Q03",
+    "pais": "CO",
+    "consulta": "cómo empezar un proyecto de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "QS03-CO-Q04",
+    "pais": "CO",
+    "consulta": "cómo usar IA para programar sin perder calidad",
+    "paa": 0,
+    "related": 0
+  },
+  {
+    "id": "QS03-CO-Q05",
+    "pais": "CO",
+    "consulta": "qué hace un ingeniero de inteligencia artificial",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "QS03-CO-Q06",
+    "pais": "CO",
+    "consulta": "cómo usar inteligencia artificial en investigación científica",
+    "paa": 0,
+    "related": 0
+  },
+  {
+    "id": "QS03-CO-Q07",
+    "pais": "CO",
+    "consulta": "cuál es la mejor IA para investigación científica",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "QS03-CO-Q08",
+    "pais": "CO",
+    "consulta": "cómo usar la inteligencia artificial en finanzas",
+    "paa": 0,
+    "related": 1
+  },
+  {
+    "id": "QS03-CO-Q09",
+    "pais": "CO",
+    "consulta": "cómo implementar inteligencia artificial en una empresa",
+    "paa": 1,
+    "related": 1
+  },
+  {
+    "id": "QS03-CO-Q10",
+    "pais": "CO",
+    "consulta": "cómo saber si un artículo científico es confiable",
+    "paa": 1,
+    "related": 1
+  }
+]

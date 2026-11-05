@@ -1,0 +1,28 @@
+{
+  "id": "D04-overview-CO",
+  "tool": "get_domain_overview",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "domain": "datacamp.com",
+    "scope": "subdomains",
+    "locationCode": 2170,
+    "languageCode": "es"
+  },
+  "response": {
+    "domain": "datacamp.com",
+    "organicTraffic": 25116,
+    "organicKeywords": 3131,
+    "backlinks": null,
+    "referringDomains": null,
+    "hasData": true,
+    "fetchedAt": "2026-11-05T15:58:10.729Z",
+    "scope": "subdomains",
+    "displayTarget": "datacamp.com",
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/DEFAULT/domain?domain=datacamp.com"
+    }
+  },
+  "at": "2026-11-05T15:58:11.405Z",
+  "reserve": 300
+}

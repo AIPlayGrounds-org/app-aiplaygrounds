@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-05",
+  "paid_calls_returned": 27,
+  "paid_attempts": 28,
+  "lost_attempt": "C06-CO ECONNRESET; recuperada mediante caché documentada",
+  "mcp_calls_total": 46,
+  "mcp_readonly_account_context_location_calls": 18,
+  "research_calls": 8,
+  "seeds": 30,
+  "discovery_rows": 2838,
+  "overview_requested": 144,
+  "overview_rows": 81,
+  "serps_unique": 66,
+  "serps_ok": 66,
+  "ranked_rows": 300,
+  "clusters": 13,
+  "candidate_expressions": 69,
+  "balance_start": 9491,
+  "balance_final": 7820,
+  "balance_difference": 1671,
+  "credits_per_usd": 1000,
+  "paa_modules": 22,
+  "paa_questions_recovered": 0,
+  "related_search_modules": 62,
+  "related_search_texts_recovered": 0,
+  "by_country": {
+    "PE": {
+      "discovery_rows": 910,
+      "discovery_unique_keywords": 612,
+      "overview_rows": 23,
+      "unique_discovery_overview": 623,
+      "overview_metric_coverage": {
+        "volume": 23,
+        "kd": 9,
+        "cpc_usd": 14,
+        "ads_competition": 18,
+        "intent_auto": 23
+      },
+      "serps": 22,
+      "interrogative_keywords_unique": 9,
+      "selected_interrogative_keywords_unique": 5
+    },
+    "MX": {
+      "discovery_rows": 976,
+      "discovery_unique_keywords": 595,
+      "overview_rows": 31,
+      "unique_discovery_overview": 614,
+      "overview_metric_coverage": {
+        "volume": 31,
+        "kd": 12,
+        "cpc_usd": 17,
+        "ads_competition": 28,
+        "intent_auto": 31
+      },
+      "serps": 22,
+      "interrogative_keywords_unique": 43,
+      "selected_interrogative_keywords_unique": 13
+    },
+    "CO": {
+      "discovery_rows": 952,
+      "discovery_unique_keywords": 621,
+      "overview_rows": 27,
+      "unique_discovery_overview": 637,
+      "overview_metric_coverage": {
+        "volume": 27,
+        "kd": 10,
+        "cpc_usd": 18,
+        "ads_competition": 23,
+        "intent_auto": 27
+      },
+      "serps": 22,
+      "interrogative_keywords_unique": 27,
+      "selected_interrogative_keywords_unique": 13
+    }
+  }
+}

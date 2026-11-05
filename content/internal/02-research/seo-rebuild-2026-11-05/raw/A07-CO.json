@@ -1,0 +1,2528 @@
+{
+  "id": "A07-CO",
+  "tool": "research_keywords",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "seeds": [
+      {
+        "seed": "fundamentos de inteligencia artificial",
+        "locationCode": 2170,
+        "languageCode": "es"
+      },
+      {
+        "seed": "inteligencia artificial para empresas",
+        "locationCode": 2170,
+        "languageCode": "es"
+      },
+      {
+        "seed": "proyectos de inteligencia artificial",
+        "locationCode": 2170,
+        "languageCode": "es"
+      }
+    ],
+    "resultLimit": 150,
+    "includeClickstreamData": false,
+    "groupKeywords": false
+  },
+  "response": {
+    "results": [
+      {
+        "seed": "fundamentos de inteligencia artificial",
+        "ok": true,
+        "rowCount": 85,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "fundamentos de la inteligencia artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": 2.18,
+            "competition": 0.31,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria en inteligencia artificial",
+            "searchVolume": 2400,
+            "keywordDifficulty": 0,
+            "cpc": 10.38,
+            "competition": 0.78,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso fundamentos de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.28,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de programación",
+            "searchVolume": 590,
+            "keywordDifficulty": 0,
+            "cpc": 1.01,
+            "competition": 0.1,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso fundamentos de inteligencia artificial microsoft",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "diplomado en inteligencia artificial",
+            "searchVolume": 880,
+            "keywordDifficulty": 0,
+            "cpc": 1.47,
+            "competition": 0.76,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de inteligencia artificial generativa",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 2.67,
+            "competition": 0.79,
+            "intent": "informational"
+          },
+          {
+            "keyword": "especializacion en inteligencia artificial en colombia",
+            "searchVolume": 110,
+            "keywordDifficulty": null,
+            "cpc": 4.85,
+            "competition": 0.75,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "fundamentos de inteligencia artificial libro pdf",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "master en inteligencia artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": 13.16,
+            "competition": 0.8,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de inteligencia artificial pdf",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia v2 profesional",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": 1.76,
+            "competition": 0.2,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de inteligencia artificial generativa microsoft",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria en inteligencia de negocios",
+            "searchVolume": 320,
+            "keywordDifficulty": 0,
+            "cpc": 8.55,
+            "competition": 0.7,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de inteligencia artificial para docentes",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para directivos universidad de los andes",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.17,
+            "competition": 0.55,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "curso de fundamentos matemáticos para inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria en ciberseguridad e inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 10.17,
+            "competition": 0.83,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "curso de fundamentos de inteligencia artificial 2025 google",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "fundamentos de programación libro",
+            "searchVolume": 50,
+            "keywordDifficulty": 54,
+            "cpc": 0.03,
+            "competition": 0.39,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos en gestión integral unad",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "master en inteligencia de negocios",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 10.09,
+            "competition": 0.74,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de seguridad informática",
+            "searchVolume": 10,
+            "keywordDifficulty": 62,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de marketing kotler 13 edicion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de la lógica proposicional",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educacion superior",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educación superior",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "la inteligencia artificial en la educación universitaria",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria inteligencia artificial tec de monterrey",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 7.03,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "agente racional inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "pregrado en ciencia de datos e inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "fundamentos de programación luis joyanes aguilar",
+            "searchVolume": 40,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria en inteligencia artificial becas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "fundamentos de filosofía",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de matematicas unal",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de la formación por proyectos del sena",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "libro fundamentos de marketing",
+            "searchVolume": 30,
+            "keywordDifficulty": 59,
+            "cpc": 0.01,
+            "competition": 0.32,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de la educacion",
+            "searchVolume": 30,
+            "keywordDifficulty": 57,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia britanica",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de algebra lineal",
+            "searchVolume": 20,
+            "keywordDifficulty": 59,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia lingüística ejemplos",
+            "searchVolume": 20,
+            "keywordDifficulty": 15,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "vision artificial curso",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.35,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de operaciones unitarias",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de software",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.34,
+            "competition": 0.26,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de la formación profesional integral sena",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos psicopedagógicos de la educación inicial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos curriculares de la educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de diseño libro",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.21,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso fundamentos de ingenieria de software",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "escuela nacional de inteligencia",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "diplomado inteligencia de negocios eafit",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de la nutrición libro",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "posgrado en inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 8.41,
+            "competition": 0.79,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos pedagogicos",
+            "searchVolume": 90,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "libro fundamentos de la administracion",
+            "searchVolume": 70,
+            "keywordDifficulty": 52,
+            "cpc": 0.02,
+            "competition": 0.15,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de administración libro",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": 0.02,
+            "competition": 0.15,
+            "intent": "informational"
+          },
+          {
+            "keyword": "diplomado en inteligencia artificial colombia",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": 1.25,
+            "competition": 0.7,
+            "intent": "informational"
+          },
+          {
+            "keyword": "teacher inteligencia artificial",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": 0.02,
+            "competition": 0.25,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "maestría en inteligencia artificial aplicada",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": 8.49,
+            "competition": 0.71,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos conceptuales",
+            "searchVolume": 30,
+            "keywordDifficulty": 59,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos básicos",
+            "searchVolume": 50,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "diplomado en inteligencia de negocios",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": 1.59,
+            "competition": 0.71,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos en inglés",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de la educación inicial",
+            "searchVolume": 20,
+            "keywordDifficulty": 59,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de la pedagogia",
+            "searchVolume": 40,
+            "keywordDifficulty": 57,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos del diseño bi y tri-dimensional",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": 0.15,
+            "competition": 0.09,
+            "intent": "informational"
+          },
+          {
+            "keyword": "diplomado en inteligencia emocional",
+            "searchVolume": 40,
+            "keywordDifficulty": 55,
+            "cpc": 1.72,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "consultora inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 2.62,
+            "competition": 0.37,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "fundamentos de la educación",
+            "searchVolume": 30,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "artificial en inglés",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "técnico en asistencia para la inteligencia empresarial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.11,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "curso de inteligencia",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 1.47,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia de negocios curso",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 1.18,
+            "competition": 0.6,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cursos o diplomados de inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 1.76,
+            "competition": 0.82,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "guía inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.92,
+            "competition": 0.58,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria en inteligencia artificial unir",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 5.93,
+            "competition": 0.61,
+            "intent": "informational"
+          },
+          {
+            "keyword": "certificacion inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 2.95,
+            "competition": 0.44,
+            "intent": "informational"
+          },
+          {
+            "keyword": "especialización en inteligencia artificial eafit",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 2.18,
+            "competition": 0.57,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "maestria en inteligencia artificial icesi",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 1.64,
+            "competition": 0.47,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "fundamentos de enfermería libro",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos del currículo",
+            "searchVolume": 20,
+            "keywordDifficulty": 16,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fundamentos de mercadeo libro",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.09,
+            "competition": 0.26,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso de inteligencia artificial mexico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ética de la inteligencia artificial en la educación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria en inteligencia artificial universidad continental",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          }
+        ]
+      },
+      {
+        "seed": "inteligencia artificial para empresas",
+        "ok": true,
+        "rowCount": 118,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "inteligencia artificial para hacer logos de empresas gratis",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.85,
+            "competition": 0.57,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial",
+            "searchVolume": 110000,
+            "keywordDifficulty": 0,
+            "cpc": 0.29,
+            "competition": 0.24,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para crear nombres de empresas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.03,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "especialización en inteligencia artificial",
+            "searchVolume": 1900,
+            "keywordDifficulty": 0,
+            "cpc": 4.22,
+            "competition": 0.77,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para crear logos de empresas gratis",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial",
+            "searchVolume": 1300,
+            "keywordDifficulty": 18,
+            "cpc": 0.54,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "soluciones de inteligencia artificial para empresas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "imagenes de inteligencia artificial",
+            "searchVolume": 1600,
+            "keywordDifficulty": 0,
+            "cpc": 0.29,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para hacer nombres de empresas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia de la inteligencia artificial",
+            "searchVolume": 590,
+            "keywordDifficulty": 18,
+            "cpc": 0.33,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "herramientas de inteligencia artificial para empresas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "aplicaciones de inteligencia artificial",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": 0.45,
+            "competition": 0.49,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para nombres de empresas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empresas de desarrollo de software",
+            "searchVolume": 390,
+            "keywordDifficulty": 0,
+            "cpc": 2.14,
+            "competition": 0.72,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "cursos inteligencia artificial para empresas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.89,
+            "competition": 0.86,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial en la educación",
+            "searchVolume": 390,
+            "keywordDifficulty": 3,
+            "cpc": 1.42,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para buscar nombres de empresas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tecnologia en administracion de empresas",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": 1.94,
+            "competition": 0.75,
+            "intent": "informational"
+          },
+          {
+            "keyword": "empresas para invertir en inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "marco ético para la inteligencia artificial en colombia",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aplicaciones de inteligencia artificial para empresas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial para hacer tareas",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.45,
+            "competition": 0.6,
+            "intent": "informational"
+          },
+          {
+            "keyword": "para que sirve la inteligencia artificial en las empresas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ejemplos de inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 6,
+            "cpc": 0.25,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mejores empresas de inteligencia artificial para invertir",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "impacto de la inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": 0.17,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "formacion inteligencia artificial para empresas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "introduccion a la vision artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para generar nombres de empresas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alien isolation inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para crear nombres de empresas gratis",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial robots",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.04,
+            "competition": 0.42,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para criar nomes de empresas",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "mapa conceptual sobre la inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": 29,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "nombres para empresas de inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alan turing inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "master inteligencia artificial para empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "sinonimos de inteligencia artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para criar logos de empresas gratuito",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "programas de inteligencia artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 17,
+            "cpc": 0.68,
+            "competition": 0.67,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para gestion de empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "infografía sobre la inteligencia artificial",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para crear logotipos de empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "la verdad sobre la inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 1.98,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para empresas valencia",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial para directivos universidad de los andes",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.17,
+            "competition": 0.55,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial estrategia país y oportunidades para las empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "impacto de la inteligencia artificial en el desarrollo de software",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.2,
+            "competition": 0.43,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para avaliar empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "beneficios de la inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.07,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para empresas constructoras",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "concepto de inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 73,
+            "cpc": 1.97,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para empresas inteligentes",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "uso de la inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 40,
+            "cpc": 0.8,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para pequenas e medias empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "seleccion artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "programas de inteligencia artificial para empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "evolución de la inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": 0.28,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para as empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "gestion del conocimiento en las empresas",
+            "searchVolume": 20,
+            "keywordDifficulty": 0,
+            "cpc": 0.32,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cursos de inteligencia artificial para empresas en malaga",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "modelo de inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.67,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "servicios de inteligencia artificial para empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "historia de la inteligencia",
+            "searchVolume": 10,
+            "keywordDifficulty": 57,
+            "cpc": 0.5,
+            "competition": 0.17,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para pequenas empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "noticias sobre inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 49,
+            "cpc": 2.94,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso superior de inteligencia artificial para las empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial y aprendizaje automático",
+            "searchVolume": 50,
+            "keywordDifficulty": 20,
+            "cpc": null,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para pequeñas empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial y robótica",
+            "searchVolume": 50,
+            "keywordDifficulty": 12,
+            "cpc": 0.45,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "qual melhor inteligencia artificial para empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "fondos inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "curso inteligencia artificial para empresas fundamentos y posibilidades",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia humana vs inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 59,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial chatgpt práctico para empresas pdf",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "crear inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 1.16,
+            "competition": 0.61,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cursos de inteligencia artificial para empresas en marbella",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial ted",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "master en inteligencia artificial para direccion de empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "metodos de busqueda inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "rouhiainen l 2019 inteligencia artificial para empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "oratoria inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "software de inteligencia artificial para pequeñas empresas gratis",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "infografia de inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ejemplos de herramientas de inteligencia artificial para empresas",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "otra inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 0.21,
+            "competition": 0.49,
+            "intent": "informational"
+          },
+          {
+            "keyword": "robotica e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "política nacional de inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "robots e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": 3.32,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial debil",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "recomendación sobre la ética de la inteligencia artificial unesco",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial explicable",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyecto de ley inteligencia artificial colombia",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alan turing y la inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria en inteligencia artificial sergio arboleda",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.44,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia artificial russell",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curiosidades de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "las tic y la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y medio ambiente",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "desafios eticos de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial 1956",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "revisar uso de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.37,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y creatividad",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "conpes 4144 inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "comisión europea inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "vector inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tabla de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial 2011",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educacion superior",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "guía ética para el uso responsable de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para crear productos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial y derechos de autor",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sentencia corte constitucional inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia artificial ia ventajas y desventajas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial innovacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "política nacional de inteligencia artificial colombia",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ética y desafíos de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial existentes",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          }
+        ]
+      },
+      {
+        "seed": "proyectos de inteligencia artificial",
+        "ok": true,
+        "rowCount": 105,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "proyectos de inteligencia artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": 57,
+            "cpc": null,
+            "competition": 0.1,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial",
+            "searchVolume": 110000,
+            "keywordDifficulty": 0,
+            "cpc": 0.29,
+            "competition": 0.24,
+            "intent": "informational"
+          },
+          {
+            "keyword": "gestión de proyectos con inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 1.56,
+            "competition": 0.81,
+            "intent": "informational"
+          },
+          {
+            "keyword": "especialización en inteligencia artificial",
+            "searchVolume": 1900,
+            "keywordDifficulty": 0,
+            "cpc": 4.22,
+            "competition": 0.77,
+            "intent": "informational"
+          },
+          {
+            "keyword": "nuevos proyectos de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial",
+            "searchVolume": 1300,
+            "keywordDifficulty": 18,
+            "cpc": 0.54,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos cripto de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "imagenes de inteligencia artificial",
+            "searchVolume": 1600,
+            "keywordDifficulty": 0,
+            "cpc": 0.29,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial sencillos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia de la inteligencia artificial",
+            "searchVolume": 590,
+            "keywordDifficulty": 18,
+            "cpc": 0.33,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para proyectos de investigación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.8,
+            "competition": 0.83,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aplicaciones de inteligencia artificial",
+            "searchVolume": 1000,
+            "keywordDifficulty": 0,
+            "cpc": 0.45,
+            "competition": 0.49,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial con python",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educación",
+            "searchVolume": 390,
+            "keywordDifficulty": 3,
+            "cpc": 1.42,
+            "competition": 0.08,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos faciles de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "marco ético para la inteligencia artificial en colombia",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial para principiantes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para hacer tareas",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.45,
+            "competition": 0.6,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial para estudiantes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ejemplos de inteligencia artificial",
+            "searchVolume": 320,
+            "keywordDifficulty": 6,
+            "cpc": 0.25,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial en colombia",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de software",
+            "searchVolume": 70,
+            "keywordDifficulty": 16,
+            "cpc": null,
+            "competition": 0.12,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial pdf",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "impacto de la inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": 0.17,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial en universidades",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "introduccion a la vision artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial ejemplos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alien isolation inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ejemplos de proyectos de inteligencia artificial para estudiantes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial robots",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.04,
+            "competition": 0.42,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ideas para proyectos de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mapa conceptual sobre la inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": 29,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos innovadores de inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alan turing inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial en java",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sinonimos de inteligencia artificial",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos universitarios de inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "programas de inteligencia artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 17,
+            "cpc": 0.68,
+            "competition": 0.67,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mejores proyectos de inteligencia artificial",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "infografía sobre la inteligencia artificial",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial 2023",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "la verdad sobre la inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 1.98,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para hacer proyectos de investigacion",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para directivos universidad de los andes",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.17,
+            "competition": 0.55,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial con arduino",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "impacto de la inteligencia artificial en el desarrollo de software",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.2,
+            "competition": 0.43,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos básicos de inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "beneficios de la inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.07,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial en europa",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "concepto de inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 73,
+            "cpc": 1.97,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para gerencia de proyectos",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "uso de la inteligencia artificial",
+            "searchVolume": 170,
+            "keywordDifficulty": 40,
+            "cpc": 0.8,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial 2019",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "seleccion artificial",
+            "searchVolume": 210,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial en salud",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "evolución de la inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 0,
+            "cpc": 0.28,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial secundaria",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "modelo de inteligencia artificial",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.67,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de inteligencia artificial para mejorar la calidad de vida",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "historia de la inteligencia",
+            "searchVolume": 10,
+            "keywordDifficulty": 57,
+            "cpc": 0.5,
+            "competition": 0.17,
+            "intent": "informational"
+          },
+          {
+            "keyword": "noticias sobre inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": 49,
+            "cpc": 2.94,
+            "competition": 0.11,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y aprendizaje automático",
+            "searchVolume": 50,
+            "keywordDifficulty": 20,
+            "cpc": null,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y robótica",
+            "searchVolume": 50,
+            "keywordDifficulty": 12,
+            "cpc": 0.45,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fondos inteligencia artificial",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia humana vs inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 59,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "crear inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 1.16,
+            "competition": 0.61,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial ted",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "metodos de busqueda inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "oratoria inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "infografia de inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "otra inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": 0.21,
+            "competition": 0.49,
+            "intent": "informational"
+          },
+          {
+            "keyword": "robotica e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "política nacional de inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "robots e inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": 54,
+            "cpc": 3.32,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos de innovacion",
+            "searchVolume": 70,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial debil",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "recomendación sobre la ética de la inteligencia artificial unesco",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial explicable",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyecto de ley inteligencia artificial colombia",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "alan turing y la inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "maestria en inteligencia artificial sergio arboleda",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.44,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia artificial russell",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curiosidades de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "las tic y la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y medio ambiente",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "desafios eticos de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial 1956",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "revisar uso de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.37,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial y creatividad",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "conpes 4144 inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "comisión europea inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "vector inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tabla de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial 2011",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial en la educacion superior",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "guía ética para el uso responsable de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial para crear productos",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "inteligencia artificial y derechos de autor",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sentencia corte constitucional inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "inteligencia artificial ia ventajas y desventajas",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial innovacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "política nacional de inteligencia artificial colombia",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "navigational"
+          },
+          {
+            "keyword": "ética y desafíos de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "proyectos con mbot",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tipos de inteligencia artificial existentes",
+            "searchVolume": 0,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/DEFAULT/keywords"
+    }
+  },
+  "at": "2026-11-05T15:53:30.922Z",
+  "reserve": 282
+}

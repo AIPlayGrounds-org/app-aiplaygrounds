@@ -1,0 +1,1904 @@
+{
+  "id": "E01-questions",
+  "tool": "research_keywords",
+  "args": {
+    "projectId": "Default (contenedor autorizado)",
+    "seeds": [
+      {
+        "seed": "cómo aprender inteligencia artificial",
+        "locationCode": 2604,
+        "languageCode": "es"
+      },
+      {
+        "seed": "cómo aprender inteligencia artificial",
+        "locationCode": 2484,
+        "languageCode": "es"
+      },
+      {
+        "seed": "cómo aprender inteligencia artificial",
+        "locationCode": 2170,
+        "languageCode": "es"
+      }
+    ],
+    "resultLimit": 150,
+    "includeClickstreamData": false,
+    "groupKeywords": false
+  },
+  "response": {
+    "results": [
+      {
+        "seed": "cómo aprender inteligencia artificial",
+        "ok": true,
+        "rowCount": 75,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "juegos para aprender ingles",
+            "searchVolume": 590,
+            "keywordDifficulty": 4,
+            "cpc": 0.25,
+            "competition": 0.19,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender japones",
+            "searchVolume": 480,
+            "keywordDifficulty": 16,
+            "cpc": 0.5,
+            "competition": 0.28,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cual es el idioma mas dificil de aprender",
+            "searchVolume": 590,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es aprender",
+            "searchVolume": 390,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo aprender",
+            "searchVolume": 480,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mejores libros para aprender ingles",
+            "searchVolume": 50,
+            "keywordDifficulty": 50,
+            "cpc": 0.86,
+            "competition": 0.44,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender mas rapido",
+            "searchVolume": 40,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender ingles rapido y facil",
+            "searchVolume": 170,
+            "keywordDifficulty": 2,
+            "cpc": 0.85,
+            "competition": 0.57,
+            "intent": "informational"
+          },
+          {
+            "keyword": "sinonimos de aprender",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender la tabla de multiplicar",
+            "searchVolume": 260,
+            "keywordDifficulty": 0,
+            "cpc": 0.13,
+            "competition": 0.17,
+            "intent": "informational"
+          },
+          {
+            "keyword": "oraciones para aprender a leer",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": 0.03,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender a leer para niños de 5 a 6 años",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender chino",
+            "searchVolume": 110,
+            "keywordDifficulty": 43,
+            "cpc": 0.31,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender matematicas",
+            "searchVolume": 210,
+            "keywordDifficulty": 20,
+            "cpc": 0.17,
+            "competition": 0.12,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender los pronombres en inglés",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque aprender power bi",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es cnn en inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender a multiplicar facil",
+            "searchVolume": 70,
+            "keywordDifficulty": 50,
+            "cpc": 0.02,
+            "competition": 0.37,
+            "intent": "informational"
+          },
+          {
+            "keyword": "primaria actividades para aprender las horas del reloj",
+            "searchVolume": 70,
+            "keywordDifficulty": 2,
+            "cpc": 0.01,
+            "competition": 0.22,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender excel desde cero",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.68,
+            "competition": 0.45,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender inglés desde cero",
+            "searchVolume": 90,
+            "keywordDifficulty": 22,
+            "cpc": 0.55,
+            "competition": 0.61,
+            "intent": "informational"
+          },
+          {
+            "keyword": "metodos para aprender ingles",
+            "searchVolume": 50,
+            "keywordDifficulty": 50,
+            "cpc": 0.83,
+            "competition": 0.35,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender haciendo",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "caricaturas para aprender ingles",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender a dividir por 2 cifras",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "donde aprender japones",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.49,
+            "competition": 0.24,
+            "intent": "informational"
+          },
+          {
+            "keyword": "fichas para aprender las vocales",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "actividades para aprender a contar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "letras punteadas para aprender a escribir",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender inglés en casa",
+            "searchVolume": 40,
+            "keywordDifficulty": 38,
+            "cpc": 0.56,
+            "competition": 0.49,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender a dividir facil y rapido",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender ingles autodidacta",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.48,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender ingles escuchando",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.32,
+            "intent": "informational"
+          },
+          {
+            "keyword": "se puede aprender a conducir con un simulador",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "cómo aprender colores en inglés",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "actividades para aprender a leer",
+            "searchVolume": 70,
+            "keywordDifficulty": 56,
+            "cpc": 0.01,
+            "competition": 0.16,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender las tablas de multiplicar en 5 minutos",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender a sumar",
+            "searchVolume": 70,
+            "keywordDifficulty": 59,
+            "cpc": null,
+            "competition": 0.02,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender tablas de multiplicar",
+            "searchVolume": 70,
+            "keywordDifficulty": 65,
+            "cpc": 0.27,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "letras para aprender a leer",
+            "searchVolume": 70,
+            "keywordDifficulty": 56,
+            "cpc": 0.02,
+            "competition": 0.2,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender aleman",
+            "searchVolume": 70,
+            "keywordDifficulty": null,
+            "cpc": 0.65,
+            "competition": 0.41,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender chino mandarin",
+            "searchVolume": 70,
+            "keywordDifficulty": 35,
+            "cpc": 0.24,
+            "competition": 0.37,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender números en inglés para niños",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender quechua",
+            "searchVolume": 170,
+            "keywordDifficulty": 0,
+            "cpc": 0.12,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como utilizar la inteligencia artificial en la educacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender el abecedario para niños",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "transactional"
+          },
+          {
+            "keyword": "aprender a conducir sin saber nada",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender hablar portugues",
+            "searchVolume": 50,
+            "keywordDifficulty": null,
+            "cpc": 0.43,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "actividades para aprender los números del 1 al 10",
+            "searchVolume": 10,
+            "keywordDifficulty": 56,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tarjetas para aprender ingles",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.46,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que tan dificil es aprender japones",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.03,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender matematicas rapido",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.02,
+            "competition": 0.17,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender a leer facil",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.02,
+            "competition": 0.2,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender aleman desde cero",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.5,
+            "competition": 0.55,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como se dice aprender en quechua",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "primaria ejercicios para aprender a leer",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.01,
+            "competition": 0.72,
+            "intent": "informational"
+          },
+          {
+            "keyword": "diferencia entre estudiar y aprender",
+            "searchVolume": 20,
+            "keywordDifficulty": 46,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender los números del 1 al 20",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.33,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "libros para aprender japones desde cero",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.13,
+            "competition": 0.74,
+            "intent": "informational"
+          },
+          {
+            "keyword": "donde aprender aleman",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.7,
+            "competition": 0.45,
+            "intent": "informational"
+          },
+          {
+            "keyword": "esfuerzo que realizamos para aprender cada día",
+            "searchVolume": 140,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender ingles por tu cuenta",
+            "searchVolume": 10,
+            "keywordDifficulty": 52,
+            "cpc": null,
+            "competition": 0.64,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender japones basico",
+            "searchVolume": 10,
+            "keywordDifficulty": 55,
+            "cpc": null,
+            "competition": 0.1,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender japones en duolingo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender japones por tu cuenta",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender a multiplicar",
+            "searchVolume": 110,
+            "keywordDifficulty": 26,
+            "cpc": 0.06,
+            "competition": 0.15,
+            "intent": "informational"
+          },
+          {
+            "keyword": "top idiomas mas dificiles de aprender",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "juegos de enfermería para aprender",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender maquillaje profesional",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.18,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender a comprender un texto",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender cualquier cosa",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender japones de forma autodidacta",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender aleman rapido",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.78,
+            "competition": 0.44,
+            "intent": "informational"
+          },
+          {
+            "keyword": "consejos para aprender chino mandarin",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender a cantar en ingles",
+            "searchVolume": 10,
+            "keywordDifficulty": 65,
+            "cpc": null,
+            "competition": 0.06,
+            "intent": "informational"
+          }
+        ]
+      },
+      {
+        "seed": "cómo aprender inteligencia artificial",
+        "ok": true,
+        "rowCount": 78,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "cómo aprender inteligencia artificial gratis",
+            "searchVolume": 40,
+            "keywordDifficulty": null,
+            "cpc": 1.34,
+            "competition": 0.59,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo aprender computación",
+            "searchVolume": 140,
+            "keywordDifficulty": 0,
+            "cpc": 0.84,
+            "competition": 0.17,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo aprender inglés con inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 0.61,
+            "competition": 0.67,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como se entrena una inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo aprender inglés con inteligencia artificial gratis",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.78,
+            "competition": 0.55,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "para que sirve aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "donde aprender a programar",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 1.93,
+            "competition": 0.65,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender inteligencia artificial",
+            "searchVolume": 110,
+            "keywordDifficulty": null,
+            "cpc": 1.16,
+            "competition": 0.76,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo aprender excel básico",
+            "searchVolume": 110,
+            "keywordDifficulty": 27,
+            "cpc": 0.15,
+            "competition": 0.26,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender excel desde cero",
+            "searchVolume": 110,
+            "keywordDifficulty": null,
+            "cpc": 0.33,
+            "competition": 0.38,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como puedo aprender a programar",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 1.24,
+            "competition": 0.67,
+            "intent": "informational"
+          },
+          {
+            "keyword": "de que se trata la carrera de inteligencia artificial",
+            "searchVolume": 30,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.06,
+            "intent": "informational"
+          },
+          {
+            "keyword": "dónde aprender inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": 1.64,
+            "competition": 0.7,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es cnn en inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque aprender inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "la inteligencia artificial puede aprender sola",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "por qué es importante aprender inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial como aprender a usarla",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.65,
+            "competition": 0.71,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que se necesita para aprender inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.38,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que lenguaje de programacion aprender para inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el machine learning en la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "definición de inteligencia artificial en informática",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es un algoritmo en la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como usar la inteligencia artificial para estudiar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la carrera ciencia de datos e inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "de que se trata el curso de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 2.57,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como trabajar la inteligencia artificial en el aula",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como ser experto en inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.57,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que se ve en la carrera de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.36,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que necesita la inteligencia artificial para funcionar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.01,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el aprendizaje profundo en inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "donde hacer cursos de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "cuál es el subcampo de la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la inteligencia artificial computacional",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como se entrenan los modelos de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que materias lleva la carrera de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.85,
+            "competition": 0.46,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como se llama la carrera de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.19,
+            "competition": 0.17,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como preparar una clase con inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.64,
+            "intent": "informational"
+          },
+          {
+            "keyword": "machine learning es lo mismo que inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "dónde se estudia inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cual es el mejor curso de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 5.11,
+            "competition": 0.82,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "que se aprende en un curso de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es deep learning en inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "para que sirve la carrera de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.21,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el aprendizaje automático en inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso de inteligencia artificial para que sirve",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial explicada fácilmente para principiantes",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "diferencia entre inteligencia artificial y aprendizaje automático",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender a programar en cualquier lenguaje",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque es importante aprender computación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "por que aprender programacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque es importante aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": 53,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender a programar desde cero en java",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.79,
+            "competition": 0.6,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque aprender programacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que lenguaje backend aprender",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que tan dificil es aprender excel",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.04,
+            "intent": "informational"
+          },
+          {
+            "keyword": "razones para aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.71,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque hay que aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque es importante aprender computacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque es importante aprender informatica",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender lenguaje ensamblador",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.07,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender macros en excel",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.86,
+            "competition": 0.52,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ventajas de aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender power point paso a paso",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tiempo para aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender criptografía",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.75,
+            "competition": 0.55,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuanto se tarda en aprender un lenguaje de programación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender a leer codigo de programacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.05,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender a programar por tu cuenta",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que necesito para aprender php",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo nos puede ayudar aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender a hacer presentaciones power point",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.14,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que aprender primero en programacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "por qué es importante aprender computación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "vale la pena aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mejores libros para aprender excel",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.14,
+            "competition": 0.54,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que aprender primero para programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          }
+        ]
+      },
+      {
+        "seed": "cómo aprender inteligencia artificial",
+        "ok": true,
+        "rowCount": 77,
+        "source": "blended",
+        "usedFallback": false,
+        "rows": [
+          {
+            "keyword": "cómo aprender inglés con inteligencia artificial gratis",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.34,
+            "competition": 0.69,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "como aprender excel desde cero",
+            "searchVolume": 170,
+            "keywordDifficulty": 25,
+            "cpc": 0.42,
+            "competition": 0.45,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo aprender inglés con inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.97,
+            "competition": 0.8,
+            "intent": "informational"
+          },
+          {
+            "keyword": "machine learning es lo mismo que inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender inteligencia artificial",
+            "searchVolume": 90,
+            "keywordDifficulty": null,
+            "cpc": 0.95,
+            "competition": 0.75,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender un lenguaje de programacion",
+            "searchVolume": 10,
+            "keywordDifficulty": 68,
+            "cpc": null,
+            "competition": 0.54,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender lógica de programación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "donde aprender programacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.46,
+            "competition": 0.65,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo aprender excel básico",
+            "searchVolume": 30,
+            "keywordDifficulty": 60,
+            "cpc": 0.21,
+            "competition": 0.28,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo aprender computación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.17,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como puedo aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 14.49,
+            "competition": 0.59,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es cnn en inteligencia artificial",
+            "searchVolume": 20,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque es importante aprender a programar",
+            "searchVolume": 20,
+            "keywordDifficulty": 52,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "inteligencia artificial como aprender a usarla",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.59,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que se necesita para aprender inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.52,
+            "competition": 0.79,
+            "intent": "informational"
+          },
+          {
+            "keyword": "dónde aprender inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.31,
+            "competition": 0.82,
+            "intent": "informational"
+          },
+          {
+            "keyword": "por qué es importante aprender inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "curso de inteligencia artificial para que sirve",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "para que sirve la carrera de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es deep learning en inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es el machine learning en la inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como usar la inteligencia artificial para estudiar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "para que sirve estudiar inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.43,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que se aprende en un curso de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 0.7,
+            "competition": 0.79,
+            "intent": "informational"
+          },
+          {
+            "keyword": "donde se puede estudiar inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.2,
+            "competition": 0.77,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es la inteligencia artificial computacional",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "donde puedo hacer un curso de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 3.48,
+            "competition": 0.86,
+            "intent": "commercial"
+          },
+          {
+            "keyword": "como se entrena una inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "de que se trata el curso de inteligencia artificial",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.86,
+            "intent": "informational"
+          },
+          {
+            "keyword": "por qué es importante aprender programación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender a escribir a maquina sin mirar el teclado",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que me gustaría aprender de la informática",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es inteligencia logico matematica",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque es importante aprender a programar computadoras",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "se puede aprender a programar sólo",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mejores libros para aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque es importante aprender computación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "mejores libros para aprender a programar desde cero",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender a programar desde cero en java",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.48,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuanto se tarda en aprender un lenguaje de programacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cual es la mejor manera de aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.43,
+            "intent": "informational"
+          },
+          {
+            "keyword": "por qué es importante aprender computación",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que debo saber para aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.33,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque debemos aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "tiempo para aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que necesito para aprender java",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "donde aprender cobol",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.1,
+            "intent": "informational"
+          },
+          {
+            "keyword": "donde aprender programacion en argentina",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque es importante aprender informatica",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cual es la importancia de aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "beneficios de aprender excel",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cómo nos puede ayudar aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender power point paso a paso",
+            "searchVolume": 10,
+            "keywordDifficulty": 59,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "pasos para aprender excel basico",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque es importante aprender excel",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "cuanto se tarda en aprender java",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender criptografía",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 4.14,
+            "competition": 0.39,
+            "intent": "informational"
+          },
+          {
+            "keyword": "por que aprender programacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "consejos para aprender programacion",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que debo aprender de excel",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque hay que aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender power point paso a paso",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0.29,
+            "intent": "informational"
+          },
+          {
+            "keyword": "porque aprender excel",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que lenguaje backend aprender",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "actividades para aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender a programar y no morir en el intento",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "aprender macros en excel",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que es inteligencia computacional",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que lenguajes de programacion aprender para ciberseguridad",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender programacion rapido",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": 1.35,
+            "competition": 0.33,
+            "intent": "informational"
+          },
+          {
+            "keyword": "como aprender lenguaje ensamblador",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "consejos para aprender a programar en java",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "beneficios de aprender a programar",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": 0,
+            "intent": "informational"
+          },
+          {
+            "keyword": "ejercicios para aprender a escribir en el computador",
+            "searchVolume": 10,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "pasos para aprender inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "que necesito para aprender inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          },
+          {
+            "keyword": "para que sirve aprender inteligencia artificial",
+            "searchVolume": null,
+            "keywordDifficulty": null,
+            "cpc": null,
+            "competition": null,
+            "intent": "informational"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "projectId": "Default (contenedor autorizado)",
+      "url": "https://app.openseo.so/p/DEFAULT/keywords"
+    }
+  },
+  "at": "2026-11-05T15:59:05.153Z",
+  "reserve": 282
+}
