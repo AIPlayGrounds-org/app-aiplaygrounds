@@ -30,6 +30,12 @@ test('sitio permite solo fuentes aprobadas y rechaza archivos privados', () => {
       'font',
     );
     assert.equal(inspect(dir, 'site'), 2);
+    mkdirSync(join(dir, 'verticals'));
+    writeFileSync(join(dir, 'verticals', 'foundations.svg'), '<svg/>');
+    assert.equal(inspect(dir, 'site'), 3);
+    writeFileSync(join(dir, 'verticals', 'private.svg'), '<svg/>');
+    assert.throws(() => inspect(dir, 'site'));
+    rmSync(join(dir, 'verticals', 'private.svg'));
     writeFileSync(join(dir, '_astro', 'private.abc123.woff2'), 'private');
     assert.throws(() => inspect(dir, 'site'));
     rmSync(join(dir, '_astro', 'private.abc123.woff2'));

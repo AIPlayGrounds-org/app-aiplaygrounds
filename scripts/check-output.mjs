@@ -57,7 +57,7 @@ export function inspect(root, kind = root === 'dist' ? 'site' : 'bundle') {
     checked++;
     const allowed =
       kind === 'site'
-        ? /^(?:index\.html|_astro\/[a-zA-Z0-9._-]+\.(?:css|js)|_astro\/(?:space-grotesk-latin|inter-tight-latin|geist-mono-latin)\.[a-zA-Z0-9_-]+\.woff2)$/
+        ? /^(?:index\.html|verticals\/(?:foundations|software|science|finance)\.svg|_astro\/[a-zA-Z0-9._-]+\.(?:css|js)|_astro\/(?:space-grotesk-latin|inter-tight-latin|geist-mono-latin)\.[a-zA-Z0-9_-]+\.woff2)$/
         : /^[a-zA-Z0-9._/-]+\.(?:js|json|txt)$/;
     if (
       !allowed.test(name) ||

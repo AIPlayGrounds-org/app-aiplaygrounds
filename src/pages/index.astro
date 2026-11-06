@@ -1,6 +1,7 @@
 ---
 import { ArrowUpRight } from '@lucide/astro';
 import Button from '../components/starwind/button/Button.astro';
+import Card from '../components/starwind/card/Card.astro';
 import SiteHeader from '../components/site/SiteHeader.astro';
 import SiteFooter from '../components/site/SiteFooter.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -8,22 +9,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout
   title="AI PlayGrounds | Inteligencia artificial en comunidad"
-  description="Desde Lima, conectamos personas y conocimiento en inteligencia artificial. Encuentros, formación y cuatro campos para aprender, investigar y construir."
+  description="AI PlayGrounds es una organización enfocada en inteligencia artificial e impulsada por su comunidad. Conoce sus campos de trabajo, actividades e iniciativas."
 >
   <SiteHeader />
   <main id="contenido" tabindex="-1">
     <section id="I1" class="hero site-container">
       <div class="hero-main">
-        <h1>Aprendemos, investigamos y construimos con IA. En comunidad.</h1>
+        <h1>Aprendemos, investigamos, experimentamos y construimos con IA.</h1>
         <div class="hero-copy">
           <p>
             AI PlayGrounds es una organización enfocada en inteligencia
-            artificial e impulsada por su comunidad. Nacimos en Lima en enero de
-            2025 para conectar personas y conocimiento alrededor de la IA.
-          </p>
-          <p>
-            Compartimos lo que aprendemos y abrimos espacio para investigar,
-            experimentar y construir.
+            artificial, impulsada por su comunidad.
           </p>
           <div class="actions">
             <Button href="/comunidad/" variant="primary">
@@ -40,18 +36,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </section>
     <section id="I2" class="community section-space">
-      <div class="site-container split">
-        <h2>Aprender también es encontrarnos</h2>
+      <div class="site-container community-layout">
+        <h2>Una comunidad que impulsa lo que hacemos</h2>
         <div class="prose">
           <p>
-            Una pregunta sobre un modelo, una herramienta nueva o una idea que
-            merece ponerse a prueba: la IA nos da motivos para reunirnos y
-            compartir conocimiento.
-          </p>
-          <p>
-            Los encuentros, workshops y experiencias formativas son parte de ese
-            trabajo colectivo. La comunidad conecta a las personas; el equipo
-            sostiene la organización y sus cuatro campos de trabajo.
+            La comunidad comparte conocimiento, hace preguntas y participa en
+            las actividades que impulsan nuestro trabajo. El equipo sostiene la
+            organización y sus cuatro campos de trabajo.
           </p>
           <div class="link-group">
             <a class="text-link" href="/comunidad/#C3">
@@ -74,40 +65,72 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
       <div class="fields">
         <article>
-          <span aria-hidden="true">01</span>
-          <h3>AI Foundations</h3>
-          <p>
-            Cómo funcionan los modelos y métodos de inteligencia artificial,
-            cómo evaluarlos y cómo mejorarlos. AI Foundations se ocupa de los
-            fundamentos técnicos de la IA.
-          </p>
+          <Card class="field-card rounded-none ring-0 p-0 gap-0 bg-transparent">
+            <img
+              src="/verticals/foundations.svg"
+              alt=""
+              width="90"
+              height="90"
+              loading="lazy"
+            />
+            <h3>AI Foundations</h3>
+            <p>
+              Cómo funcionan los modelos y métodos de inteligencia artificial,
+              cómo evaluarlos y cómo mejorarlos. AI Foundations se ocupa de los
+              fundamentos técnicos de la IA.
+            </p>
+          </Card>
         </article>
         <article>
-          <span aria-hidden="true">02</span>
-          <h3>AI for Software</h3>
-          <p>
-            Inteligencia artificial aplicada al diseño, la construcción, las
-            pruebas y la mejora del software. El proceso de desarrollo y el
-            criterio para trabajar con IA están en el centro.
-          </p>
+          <Card class="field-card rounded-none ring-0 p-0 gap-0 bg-transparent">
+            <img
+              src="/verticals/software.svg"
+              alt=""
+              width="90"
+              height="90"
+              loading="lazy"
+            />
+            <h3>AI for Software</h3>
+            <p>
+              Inteligencia artificial aplicada al diseño, la construcción, las
+              pruebas y la mejora del software. El proceso de desarrollo y el
+              criterio para trabajar con IA están en el centro.
+            </p>
+          </Card>
         </article>
         <article>
-          <span aria-hidden="true">03</span>
-          <h3>AI for Science</h3>
-          <p>
-            Inteligencia artificial aplicada a preguntas y procesos científicos,
-            con atención a los datos, el método y la validación de los
-            resultados.
-          </p>
+          <Card class="field-card rounded-none ring-0 p-0 gap-0 bg-transparent">
+            <img
+              src="/verticals/science.svg"
+              alt=""
+              width="90"
+              height="90"
+              loading="lazy"
+            />
+            <h3>AI for Science</h3>
+            <p>
+              Inteligencia artificial aplicada a preguntas y procesos
+              científicos, con atención a los datos, el método y la validación
+              de los resultados.
+            </p>
+          </Card>
         </article>
         <article>
-          <span aria-hidden="true">04</span>
-          <h3>AI for Finance</h3>
-          <p>
-            Aplicaciones de inteligencia artificial a problemas y procesos
-            financieros: su utilidad, sus riesgos y las decisiones que requieren
-            criterio humano.
-          </p>
+          <Card class="field-card rounded-none ring-0 p-0 gap-0 bg-transparent">
+            <img
+              src="/verticals/finance.svg"
+              alt=""
+              width="90"
+              height="90"
+              loading="lazy"
+            />
+            <h3>AI for Finance</h3>
+            <p>
+              Aplicaciones de inteligencia artificial a problemas y procesos
+              financieros: su utilidad, sus riesgos y las decisiones que
+              requieren criterio humano.
+            </p>
+          </Card>
         </article>
       </div>
     </section>
@@ -120,6 +143,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             trayectoria incluye workshops de desarrollo asistido por IA, un
             bootcamp y la coorganización de encuentros y hackathons.
           </p>
+        </div>
+        <div class="trajectory-stat" aria-hidden="true">
+          <strong>+30</strong>
+          <span>
+            eventos de comunidad
+            <br />
+            desde 2025
+          </span>
         </div>
         <div class="events">
           <article>
@@ -141,6 +172,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div>
               <p class="date">mayo de 2026</p>
               <h3>hack@latam</h3>
+              <p class="event-metric" aria-hidden="true">
+                56 <small>equipos</small> · 36 <small>horas</small>
+              </p>
             </div>
             <div>
               <p>
@@ -156,6 +190,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div>
               <p class="date">2025</p>
               <h3>Bootcamp Gen AI Fundamentals</h3>
+              <p class="event-metric" aria-hidden="true">
+                +300 <small>inscritos</small> · 6 <small>semanas</small>
+              </p>
             </div>
             <div>
               <p>
@@ -389,6 +426,121 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   .closing h2 {
     font-size: clamp(2.2rem, 4.2vw, 4.2rem);
   }
+  .hero h1 {
+    max-width: 15ch;
+  }
+  .hero-copy {
+    margin-left: 0;
+    max-width: 36rem;
+  }
+  .hero-mark {
+    background: var(--brand-halo);
+    border: 0;
+    width: clamp(8rem, 18vw, 16rem);
+    right: 2%;
+    top: 30%;
+  }
+  .hero-mark::before,
+  .hero-mark::after {
+    border-color: var(--brand-black);
+  }
+  .hero-mark span {
+    background: var(--brand-black);
+  }
+  .community-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(2rem, 7vw, 7rem);
+    align-items: center;
+  }
+  .community h2 {
+    max-width: 15ch;
+    font-size: clamp(2.2rem, 4.5vw, 4.5rem);
+  }
+  .community .prose {
+    border-left: 0.5rem solid var(--brand-halo);
+    padding: clamp(1.5rem, 4vw, 3.5rem);
+    background: var(--surface-elevated);
+    margin-left: min(25%, 18rem);
+    max-width: 52rem;
+  }
+  .fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .fields article {
+    display: block;
+    padding: 0;
+    border: 0;
+  }
+  .fields :global(.field-card) {
+    display: grid;
+    grid-template-columns: clamp(6rem, 14vw, 12rem) 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0.6rem 1.5rem;
+    background: var(--surface-elevated);
+    padding: 1.5rem;
+    height: 100%;
+  }
+  .fields img {
+    grid-row: 1 / 3;
+    width: 100%;
+    height: auto;
+  }
+  .fields :global(.field-card > img:first-child) {
+    border-radius: 0;
+  }
+  .fields h3 {
+    align-self: end;
+  }
+  .trajectory-stat {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: var(--brand-black);
+    color: var(--brand-white);
+    padding: clamp(2rem, 4vw, 4rem);
+    margin-bottom: 2rem;
+  }
+  .trajectory-stat strong {
+    color: var(--brand-halo);
+    font-family: var(--font-heading);
+    font-size: clamp(5rem, 12vw, 11rem);
+    line-height: 0.85;
+    letter-spacing: -0.06em;
+  }
+  .trajectory-stat span {
+    font-family: var(--font-heading);
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    line-height: 1.2;
+  }
+  .events article {
+    padding: 2rem;
+    background: var(--background);
+    border-top: 0;
+    margin-bottom: 0.75rem;
+  }
+  .event-metric {
+    margin-top: 1rem;
+    font-family: var(--font-heading);
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+  }
+  .event-metric small {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+  .pathways article {
+    background: var(--surface-elevated);
+    padding: 2rem;
+  }
+  .pathways article:first-child {
+    background: var(--surface);
+    border-top-color: var(--brand-halo);
+  }
   @media (max-width: 60rem) {
     .hero-mark {
       opacity: 0.5;
@@ -400,6 +552,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     }
   }
   @media (max-width: 48rem) {
+    .community-layout,
+    .fields {
+      grid-template-columns: 1fr;
+    }
+    .community .prose {
+      margin-left: 0;
+    }
+    .fields :global(.field-card) {
+      grid-template-columns: 6rem 1fr;
+    }
+    .trajectory-stat {
+      gap: 1rem;
+    }
     .split,
     .events article {
       grid-template-columns: 1fr;
@@ -420,6 +585,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     }
     .hero-copy {
       margin-left: 0;
+    }
+  }
+  @media (max-width: 25rem) {
+    .hero h1 {
+      font-size: clamp(2rem, 10vw, 2.5rem);
+      overflow-wrap: anywhere;
     }
   }
 </style>

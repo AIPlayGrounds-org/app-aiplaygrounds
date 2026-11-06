@@ -87,6 +87,9 @@ const links = [
   .mobile-nav {
     display: none;
   }
+  .mobile-nav:not([open]) nav {
+    display: none;
+  }
   @media (max-width: 67rem) {
     .desktop-nav {
       display: none;
