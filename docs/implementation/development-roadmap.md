@@ -99,7 +99,7 @@ Los comandos concretos se fijan en los manifiestos durante P02/P03; los nombres 
 - **Alcance:** muestra de Inicio con secciones reales y navegación, más un fragmento representativo de comparación/datos de Formación o Empresas si hace falta para probar densidad/controles. No reescritura E2, personas retenidas, fichas ficticias ni nuevas rutas públicas de demo.
 - **Entregables:** composición implementada, capturas móviles/escritorio, inventario corto de decisiones visuales y límites de material.
 - **Validaciones:** 320/360/768/1440, zoom, teclado/foco, H1 y copy literal, presupuestos de bundle, claro/oscuro por intención y ausencia de clipping. ~75/25 global no cuota por página.
-- **Criterio de finalización:** evidencia funcional suficiente para **A2 · Dirección visual implementada**; iterar aquí hasta su aprobación. No extender como diseño definitivo al resto antes de A2.
+- **Criterio de finalización:** evidencia funcional implementada en `visual-review/p05/`; **A2 · Dirección visual implementada pendiente** de revisión humana; iterar aquí hasta su aprobación. No extender como diseño definitivo al resto antes de A2.
 
 ### P06 — Schemas, loaders e identidad · Etapa 4
 

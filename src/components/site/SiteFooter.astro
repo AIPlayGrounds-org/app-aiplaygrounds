@@ -1,0 +1,61 @@
+---
+const links = [
+  ['Formación', '/formacion/'],
+  ['Empresas', '/empresas/'],
+  ['Comunidad', '/comunidad/'],
+  ['AI Labs', '/ai-labs/'],
+  ['Productos', '/productos/'],
+  ['Investigación', '/investigacion/'],
+  ['Equipo', '/equipo/'],
+];
+---
+
+<footer class="footer" data-theme="dark">
+  <div class="site-container footer-inner">
+    <a class="footer-brand" href="/" translate="no">
+      AI PlayGrounds
+    </a>
+    <nav aria-label="Navegación del pie de página">
+      {links.map(([label, href]) => (
+        <a href={href}>{label}</a>
+      ))}
+    </nav>
+  </div>
+</footer>
+<style>
+  .footer {
+    background: var(--background);
+    color: var(--foreground);
+  }
+  .footer-inner {
+    border-top: 1px solid var(--brand-gray-2);
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-block: 3rem;
+  }
+  .footer-brand {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1rem 1.5rem;
+    max-width: 45rem;
+  }
+  nav a {
+    font-size: 0.9rem;
+  }
+  @media (max-width: 48rem) {
+    .footer-inner {
+      flex-direction: column;
+    }
+    nav {
+      justify-content: flex-start;
+    }
+  }
+</style>

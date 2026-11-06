@@ -1,0 +1,140 @@
+---
+const links = [
+  ['Formación', '/formacion/'],
+  ['Empresas', '/empresas/'],
+  ['Comunidad', '/comunidad/'],
+  ['AI Labs', '/ai-labs/'],
+  ['Productos', '/productos/'],
+  ['Investigación', '/investigacion/'],
+  ['Equipo', '/equipo/'],
+];
+---
+
+<header class="site-header">
+  <div class="site-container header-inner">
+    <a href="/" class="brand" translate="no">
+      AI PlayGrounds
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      {links.map(([label, href]) => (
+        <a href={href}>{label}</a>
+      ))}
+    </nav>
+    <details class="mobile-nav">
+      <summary>
+        Menú{' '}
+        <span aria-hidden="true" class="menu-icon">
+          +
+        </span>
+      </summary>
+      <nav aria-label="Navegación móvil">
+        {links.map(([label, href]) => (
+          <a href={href}>{label}</a>
+        ))}
+      </nav>
+    </details>
+  </div>
+</header>
+<script>
+  document
+    .querySelectorAll<HTMLDetailsElement>('.mobile-nav')
+    .forEach((menu) => {
+      menu.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && menu.open) {
+          menu.open = false;
+          menu.querySelector('summary')?.focus();
+        }
+      });
+    });
+</script>
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    z-index: 5;
+  }
+  .header-inner {
+    min-height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .brand {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1.125rem;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+    text-decoration: none !important;
+  }
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.35rem 1.4rem;
+  }
+  .desktop-nav a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding-block: 0.7rem;
+  }
+  .desktop-nav a:hover {
+    text-decoration: underline;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  @media (max-width: 67rem) {
+    .desktop-nav {
+      display: none;
+    }
+    .mobile-nav {
+      display: block;
+    }
+    .mobile-nav summary {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      min-height: 44px;
+      font-weight: 500;
+      list-style: none;
+    }
+    .mobile-nav summary::-webkit-details-marker {
+      display: none;
+    }
+    .menu-icon {
+      display: grid;
+      place-items: center;
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid var(--foreground);
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+    details[open] .menu-icon {
+      transform: rotate(45deg);
+    }
+    .mobile-nav nav {
+      position: absolute;
+      inset-inline: 0;
+      top: 100%;
+      display: grid;
+      background: var(--background);
+      padding: 1rem clamp(1rem, 4vw, 3rem) 1.5rem;
+      border-bottom: 1px solid var(--input);
+    }
+    .mobile-nav nav a {
+      display: block;
+      padding: 0.7rem 0;
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+    }
+    .mobile-nav nav a:last-child {
+      border-bottom: 0;
+    }
+  }
+</style>
