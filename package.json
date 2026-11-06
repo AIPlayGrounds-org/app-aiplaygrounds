@@ -1,0 +1,32 @@
+{
+  "name": "app-aiplaygrounds",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.22.2 <25"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "check": "astro check",
+    "types:worker": "wrangler types worker-configuration.d.ts",
+    "check:worker": "npm run types:worker && tsc --noEmit -p worker/tsconfig.json",
+    "build:worker": "wrangler deploy --dry-run --outdir .wrangler/build",
+    "dev:worker": "wrangler dev --local"
+  },
+  "dependencies": {
+    "@lucide/astro": "1.69.0",
+    "@starwind-ui/astro": "1.4.0",
+    "@tailwindcss/vite": "4.3.4",
+    "astro": "7.4.7",
+    "tailwind-variants": "3.3.1",
+    "tailwindcss": "4.3.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "starwind": "3.5.0",
+    "typescript": "6.0.3",
+    "wrangler": "4.158.0"
+  }
+}

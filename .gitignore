@@ -141,3 +141,13 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Astro, Workers y pruebas locales
+.astro/
+.wrangler/
+worker-configuration.d.ts
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+playwright-report/
+test-results/

@@ -1,7 +1,7 @@
 # AI PlayGrounds — Arquitectura técnica del website
 
 **Etapa 1 · especificación v1.0 · corte: 05/11/2026 (Perú).**
-**Estado: PROPUESTA PARA APROBACIÓN A1.** No autoriza implementación, alta de servicios, envío de correos, preview remoto ni producción. Las decisiones técnicas propuestas se convierten en baseline al aprobar A1; las condiciones editoriales y los permisos siguen siendo independientes.
+**Estado A1: APROBADA el 05/11/2026.** Se autoriza implementación local con Wrangler 4 y `wrangler.jsonc`; P02 no autoriza despliegues, servicios remotos, DNS ni producción. Condiciones editoriales y permisos siguen siendo independientes.
 
 Documento complementario: [roadmap de ocho etapas y catorce prompts](development-roadmap.md). No reemplaza [Content Handoff](content-handoff.md), E1 ni E2.
 
@@ -91,7 +91,7 @@ Documentación consultada en este corte; las URLs oficiales siguientes respaldan
 | T2 | [Astro Content Collections](https://docs.astro.build/en/guides/content-collections/), skill local Content Layer: loaders de build, referencias, `render` y `getStaticPaths` |
 | T3 | [HTML handling](https://developers.cloudflare.com/workers/static-assets/routing/advanced/html-handling/): barras finales y redirects; [Workers pricing](https://developers.cloudflare.com/workers/platform/pricing/): assets y cuotas |
 | T4 | [Previews vs Version URLs](https://developers.cloudflare.com/workers/previews/compare-workflows/) y [recursos/aislamiento](https://developers.cloudflare.com/workers/previews/resources/): elección y bindings compartidos frente a aislados; skill Wrangler requiere 4.135+ para Previews |
-| T5 | [cf proyectos](https://developers.cloudflare.com/cf/projects/), [configuración](https://developers.cloudflare.com/cf/projects/cloudflare-config/), [equivalencias](https://developers.cloudflare.com/cf/wrangler/reference/): CLI/config beta y diferencias de build |
+| T5 | [Configuración Wrangler](https://developers.cloudflare.com/workers/wrangler/configuration/) y [routing de assets/Worker](https://developers.cloudflare.com/workers/static-assets/routing/worker-script/): configuración única y orden de ejecución |
 | T6 | [Siteverify](https://developers.cloudflare.com/turnstile/get-started/server-side-validation/): 300 s, un uso, hostname/action, idempotencia de validación |
 | T7 | [Brevo envío](https://developers.brevo.com/reference/send-transac-email.md), [idempotencia](https://developers.brevo.com/docs/heterogenous-versions-batch-emails.md), [sandbox](https://developers.brevo.com/docs/using-sandbox-mode.md): respuesta, deduplicación y pruebas sin entrega |
 | T8 | [Rate Limiting binding](https://developers.cloudflare.com/workers/runtime-apis/bindings/rate-limit/): límites aproximados por ubicación, no contador global estricto |
@@ -120,15 +120,11 @@ Las páginas Brevo antiguas probadas (`your-first-email` e idempotency con otros
 | Worker de API separado | Dos despliegues/dominios o service bindings/CORS sin ganancia actual | Descartada; mantener mismo origen |
 | Pages / CMS / DB / funciones de otro proveedor | Se aparta del stack y añade mantenimiento | No adoptada |
 
-### 4.3 CLI: conclusión de la verificación, no migración ficticia
+### 4.3 CLI: decisión A1
 
-No existe configuración Wrangler que conservar. La instrucción de entorno `AGENTS.md` prioriza **`cf` para interactuar con Cloudflare cuando no hay configuración Wrangler**; no se ejecutó ningún comando Cloudflare en esta auditoría. El skill `wrangler` también deriva proyectos nuevos a `cf`.
+**Aprobado 05/11/2026:** Wrangler 4 es el CLI principal; `wrangler.jsonc` en la raíz es la única configuración de recursos Cloudflare. Un solo `package.json` y lockfile; Worker TypeScript en `worker/index.ts`, assets Astro SSG en `dist/`, sin adaptador Cloudflare ni SSR. `wrangler types` genera los tipos y Wrangler ejecuta las pruebas locales y empaquetado dry-run. En P02 no se autoriza despliegue ni configuración remota.
 
-**Recomendación operativa conforme a esa regla: `cf` y `cloudflare.config.ts` como configuración fuente futura**, manteniendo Workers/Static Assets y Wrangler como bundler compatible cuando sea necesario. No sustituye frontend ni proveedor. T5 confirma que `cf` soporta static sites con builder Wrangler ≥4.136 y `wrangler.config.ts` para ajustes de build; este último no es el archivo de recursos `wrangler.jsonc` ni una segunda fuente de entornos. No añadir dos configuraciones de recursos.
-
-Para evitar que la autodetección del frontend introduzca SSR, el empaquetado del Worker se define como **target independiente en `worker/`**, con su pequeño manifiesto de herramientas; `cf` se ejecutará allí después del build Astro. `worker/cloudflare.config.ts` define entrada `index.ts`, bindings y comportamiento de assets; `worker/wrangler.config.ts` define el origen `../dist` como `assetsDirectory` y opciones del bundler. La forma exacta exportada de ese archivo beta se verificará con la versión fijada y T5 en P02, sin ejecutar autoconfiguración en la raíz Astro. `cf workers types` genera tipos en ese target. No se requiere Cloudflare Vite plugin ni adaptador Astro para este diseño.
-
-**Alternativa documentada:** `wrangler.jsonc` raíz con `main: worker/index.ts`, `assets.directory: ./dist` y Wrangler directo es más madura y reduce un manifiesto. Sin embargo, adoptarla desde cero exceptuaría la regla local de CLI; no se impone silenciosamente. A1 debe aceptar la recomendación `cf` o autorizar expresamente esa excepción Wrangler. No se ha demostrado una incompatibilidad del stack aprobado con Workers: la diferencia es de herramienta/configuración, sujeta a la verificación pedida. Si el builder beta no permite la prueba local de P02, registrar incompatibilidad reproducible y resolver en A1 si aún está abierta, o como cambio material explícito; no desplegar ni instalar un sustituto por ensayo en producción.
+Se evaluó `cf` y su configuración beta en P01; A1 eligió Wrangler por estabilidad y sencillez. La instrucción local `AGENTS.md` que prioriza `cf` para proyectos sin configuración Wrangler tiene una excepción explícita para este proyecto en A1; no se modifican instrucciones globales. No usar `cloudflare.config.ts` ni `wrangler.config.ts` como configuraciones paralelas.
 
 ## 5. Diagramas técnicos
 
@@ -175,7 +171,7 @@ sequenceDiagram
 
 ## 6. Estructura de carpetas propuesta
 
-Solo se crean los dos Markdown de esta etapa. El árbol siguiente es futuro, no scaffolding ejecutado:
+Árbol objetivo; P02 implementa solo el subconjunto mínimo de raíz, layout, estilos, Starwind y Worker:
 
 ```text
 content/                           # Fuentes existentes; nunca directorio de publicación
@@ -219,24 +215,20 @@ public/
   fonts/                           # Solo WOFF2 y licencias autorizadas
   _headers                         # Seguridad de assets; no copiar documentos internos
 worker/
-  package.json                     # Target tooling cf + builder, sin aplicación duplicada
-  package-lock.json
-  cloudflare.config.ts             # Única fuente de recursos/entornos, propuesta cf
-  wrangler.config.ts               # Ajustes de build cf/Wrangler, no wrangler.jsonc
   index.ts
   contact/{schema,handler,brevo,turnstile}.ts
-  tsconfig.json
 scripts/{validate-content,check-output}.ts
 tests/{content,worker,e2e}/
 .github/workflows/{checks,preview,release,monitor}.yml
 astro.config.mjs
 tsconfig.json
+wrangler.jsonc
 starwind.config.json
 package.json
 package-lock.json
 ```
 
-No monorepo framework ni workspace manager: scripts raíz invocan target `worker/` con `npm --prefix worker ...`. Config compartida de formulario solo si hay duplicación real; los schemas de servidor no se importan accidentalmente en cliente. No directorio `public/content`, mirror de docs ni descarga automática del repo de marca.
+No monorepo framework ni workspace manager: scripts raíz usan el Wrangler local y un único manifiesto de aplicación. Config compartida de formulario solo si hay duplicación real; los schemas de servidor no se importan accidentalmente en cliente. No directorio `public/content`, mirror de docs ni descarga automática del repo de marca.
 
 ## 7. Arquitectura de contenido
 
@@ -424,7 +416,7 @@ Eventos previstos, allowlist sin texto libre: navegación/CTA institucional, sal
 
 ### 11.1 Configuración y builds
 
-Baseline propuesto, no configuración escrita: Astro estático raíz y target Worker §4.3, assets desde dist, binding `ASSETS`, `runWorkerFirst` limitado a `/api/*` (equivalente Wrangler `run_worker_first`); resto asset-first. `htmlHandling: force-trailing-slash` para HTML y `notFoundHandling` sin SPA, probar API exacta sin redirect de POST. Seguridad estática en `_headers`; respuestas del Worker fijan sus propios headers: las reglas de assets no cubren automáticamente API. No middleware Worker para cada página.
+P02: Astro estático raíz y Worker §4.3, assets desde dist, binding `ASSETS`, `run_worker_first` limitado a `/api/*`; resto asset-first. Cloudflare también invoca el Worker si no encuentra asset: este delega rutas no API al binding, que devuelve 404, sin SPA. `html_handling: force-trailing-slash` y `not_found_handling: none`; `/api/contact` no redirige. Seguridad estática en `_headers` queda para P03/P13; respuestas del Worker fijan sus propios headers. No middleware Worker para cada página existente.
 
 Fecha inicial de compatibilidad al implementar = fecha real de ese setup, no copiar fechas futuras de ejemplos; registrar y avanzar solo con tests. Sin `nodejs_compat` en runtime fetch nativo salvo necesidad probada. CDN assets normal, sin activar Workers Caching adicional (T3 advierte coste distinto). Hash assets con cache immutable, HTML revalidable y sin cache prolongada que impida rollback; API `Cache-Control: no-store`. Verificar headers reales en preview, no presumir que un archivo de config los aplicó.
 
@@ -459,16 +451,16 @@ flowchart LR
   S -->|"incidente"| B["Versión previa / redeploy artefacto"]
 ```
 
-Scripts futuros raíz: `dev` Astro; `dev:worker` target cf local; `build` Astro; `build:worker` empaquetado local después de dist; `check`, `lint`, `format:check`, `validate:content`, `test:unit`, `test:e2e`, `check:output`. CLI `cf` no ejecuta automáticamente scripts package.json (T5): pipeline invoca los checks explícitamente. Desarrollo del formulario usa mock de proveedor por defecto; prueba local integrada sirve dist y API desde runtime Worker mismo origen, no confundir dev de Astro sin API con E2E funcional.
+Scripts futuros raíz: `dev` Astro; `dev:worker` Wrangler local; `build` Astro; `build:worker` empaquetado local después de dist; `check`, `lint`, `format:check`, `validate:content`, `test:unit`, `test:e2e`, `check:output`. El pipeline invocará los checks explícitamente mediante npm. Desarrollo del formulario usa mock de proveedor por defecto; prueba local integrada sirve dist y API desde runtime Worker mismo origen, no confundir dev de Astro sin API con E2E funcional.
 
 Workflows propuestos:
 
-1. **checks:** `pull_request` y cambios a main, permisos `contents: read`, install con `npm ci` para ambos targets, Node fijado, caché npm (no secretos), tipos/Astro Check/lint/formato/contenido/unit/build/output/E2E. Actions fijadas por SHA verificable, no ejecutar scripts remotos por curl. Artefactos solo salida permitida y reportes redactados; no subir fuentes internas/.env ni trace de datos reales.
-2. **preview:** después de checks y solo código confiable del repositorio; nombre determinista `pr-<n>`, concurrencia por PR/cancelar obsoletos. T5 ofrece `cf previews deploy`; no usar Version URLs con recursos productivos (T4). Config `isPreview` devuelve valores completos separados, sin secrets live, correo real ni GA4/Clarity. CLI puede construir preview con `isPreview`; no reutilizar build producción como si fuera preview. Capturar URL y SHA para revisión.
+1. **checks:** `pull_request` y cambios a main, permisos `contents: read`, instalación única con `npm ci`, Node fijado, caché npm (no secretos), tipos/Astro Check/lint/formato/contenido/unit/build/output/E2E. Actions fijadas por SHA verificable, no ejecutar scripts remotos por curl. Artefactos solo salida permitida y reportes redactados; no subir fuentes internas/.env ni trace de datos reales.
+2. **preview:** después de checks y solo código confiable del repositorio; nombre determinista `pr-<n>`, concurrencia por PR/cancelar obsoletos. Usar Workers Previews con `wrangler preview`; no usar Version URLs con recursos productivos (T4). Configurar `previews` con valores separados, sin secrets live, correo real ni GA4/Clarity; verificar aislamiento y compatibilidad con la versión fijada. Capturar URL y SHA para revisión.
 3. PR externo/fork: checks sin secretos y artefacto para probar local; **no deploy automático de código no confiable con token**, tampoco `pull_request_target` que haga checkout del head externo. Incorporar contribución a contexto confiable antes de preview; no token administrativo expuesto a scripts de PR. Esto es control de seguridad, no nuevo gate de aprobación del proyecto.
 4. **Protección de preview:** URL pública por defecto no es privada. Exigir Access con allowlist de revisores antes de exponer datos retenidos o visuales no autorizados; preferir dominio wildcard dedicado de previews protegido y comprobar que no queda ruta workers.dev/version URL que evada Access. Noindex + `X-Robots-Tag: noindex, nofollow` + robots restrictivo + excluir sitemap: son señales SEO, **no autenticación**. Si no hay protección disponible, limitarse a local y artefactos sanitizados; no publicar material interno para cumplir preview.
 5. Tras PR cerrado/merge borrar únicamente su preview por nombre/ID verificados, sin afectar parent Worker; tarea de limpieza recupera huérfanos y controla cuotas. No staging perpetuo ni Worker por cada branch ajena al PR. Parent Worker puede existir sin dominio productivo activo, con acceso restringido; no llamar a ese provisioning «publicación final» ni ejecutarlo ahora.
-6. **release:** ningún push/merge publica por sí mismo. Workflow manual sobre SHA de main validado, permisos de deploy solo en job final; generar artefacto producción inmutable, checksum, toolchain, fecha/SHA, estado de funcionalidades y resultado QA. A3 ligada a ese artefacto/SHA, dominio y alcance. Desplegar exactamente Build Output aprobado, no reconstruir desde un HEAD posterior. `cf deploy --prebuilt --mode production` solo si el output registra ese modo (T5); no enviar output marcado preview. No secretos en artefacto: inyectarlos solo en operación segura del entorno.
+6. **release:** ningún push/merge publica por sí mismo. Workflow manual sobre SHA de main validado, permisos de deploy solo en job final; generar artefacto producción inmutable, checksum, toolchain, fecha/SHA, estado de funcionalidades y resultado QA. A3 ligada a ese artefacto/SHA, dominio y alcance. Promover exactamente la versión y assets aprobados, sin reconstruir desde un HEAD posterior; P03 deberá validar con Wrangler el flujo de versiones, subida y promoción sin tráfico antes de A3. No secretos en artefacto: inyectarlos solo en operación segura del entorno.
 
 Protección de main propuesta en etapa autorizada: PR obligatorio, checks requeridos, sin force push/borrado, revisión de CODEOWNERS para rutas sensibles/configuración, restricciones de bypass y resolución de conversaciones. Revisiones normales de código/CI no agregan aprobaciones de producto; A1/A2/A3 son las únicas planificadas. Evitar doble aprobación de publicación: aprobación humana A3 registrada en el Environment production, sin otra puerta manual de deploy. Verificar disponibilidad de protección/required reviewers en plan y visibilidad reales; no asumir que ya están activas.
 
@@ -511,7 +503,7 @@ Presupuestos iniciales propuestos sobre build de producción comprimido: **JS fi
 
 Objetivo CWV de campo p75 móvil/escritorio: LCP ≤2.5 s, INP ≤200 ms, CLS ≤0.1. Antes de tráfico suficiente solo resultados de laboratorio: Lighthouse móvil mediana de 3 corridas reproducibles, Performance ≥95 y SEO/Accessibility/Best Practices ≥95 como señales, no certificación; TBT como proxy no equivale a INP. Medir sin consentimiento y con categorías activas. Reportar entorno/red/CPU/versiones y causa de variación. Si se cambia presupuesto, justificar en registro técnico, no eliminar umbral para que CI pase.
 
-Monitorización proporcional: Workers Logs y Traces con muestreo explícito bajo cuota y redacción, métricas de requests/5xx/latencias/clases de error y 429; no PII ni log completo Brevo. Configuración cf propuesta: `worker.observability.enabled: true`, `logs.enabled: true`, `traces.enabled: true`, muestreo inicial 0.1 y `redactQueryString: true`; confirmar campos y cuota con la versión fijada. Habilitar observabilidad global no habilita traces por sí solo. Logs estructurados se redactan antes de emitirse, no después de almacenarse. Alertas de fallos de CI/deploy a notificaciones GitHub del responsable; smoke programado vía GitHub Actions sobre rutas públicas críticas/404/headers y aviso por fallo del workflow (programación no garantiza puntualidad). No envío periódico de formularios live que consuma cuota o genere consultas falsas. Actividad/errores/cuota Brevo y recepción en buzón con revisión operativa; acordar responsable antes de A3. Limitación: no hay monitor independiente 24/7 ni SLA gratuito garantizado.
+Monitorización proporcional: Workers Logs y Traces con muestreo explícito bajo cuota y redacción, métricas de requests/5xx/latencias/clases de error y 429; no PII ni log completo Brevo. Configuración Wrangler propuesta: `observability.enabled: true`, `logs.enabled: true`, `traces.enabled: true`, muestreo inicial 0.1 y redacción de query strings cuando sea compatible; confirmar campos y cuota con la versión fijada. Habilitar observabilidad global no habilita traces por sí solo. Logs estructurados se redactan antes de emitirse, no después de almacenarse. Alertas de fallos de CI/deploy a notificaciones GitHub del responsable; smoke programado vía GitHub Actions sobre rutas públicas críticas/404/headers y aviso por fallo del workflow (programación no garantiza puntualidad). No envío periódico de formularios live que consuma cuota o genere consultas falsas. Actividad/errores/cuota Brevo y recepción en buzón con revisión operativa; acordar responsable antes de A3. Limitación: no hay monitor independiente 24/7 ni SLA gratuito garantizado.
 
 ## 14. Estrategia de pruebas
 
@@ -552,19 +544,22 @@ Resultado documental precommit: enlaces relativos existentes, cercas/tablas/whit
 
 ### 15.1 Versiones y dependencias mínimas
 
-Consulta **solo metadatos npm**, sin instalación, en este corte:
+P01 consultó metadatos npm sin instalar. P02 instaló y verificó localmente:
 
 | Paquete | Versión publicada observada | Decisión propuesta |
 | --- | --- | --- |
-| `astro` | 7.4.7; Node ≥22.23.4 | Baseline candidato, no afirmar instalado/compatible por build aún |
+| `astro` | 7.4.7; Node ≥22.23.4 | SSG comprobado con Node 24.22.2 |
 | `tailwindcss`, `@tailwindcss/vite` | 4.3.4 | Misma versión y plugin Vite, sin integración Tailwind legacy |
-| `starwind` | 3.5.0; Node ≥22.12 | CLI/fuente gratuita Astro; dependencias runtime solo las exigidas por componentes usados |
+| `starwind` | 3.5.0; Node ≥22.12 | CLI gratuito y Button 3.0.2; adapter `@starwind-ui/astro` 1.4.0 y `tailwind-variants` 3.3.1 |
 | `@lucide/astro` | 1.69.0; peer Astro 4/5/6/7 | Candidato compatible por metadatos; SVG individual |
-| `cf` | 1.0.0-beta.28; Node ^22.23 / ^24.22 / ^26.12 | Target Worker CLI, pin exacto; formato beta riesgo explícito |
-| `wrangler` | 4.158.0; Node ≥22 | Builder de cf si se requiere; cumple mínimos T4/T5, no configuración de recursos paralela |
-| `@astrojs/check` | 0.9.12; TS 5/6 | Dev con TypeScript y checks separados |
+| `wrangler` | 4.158.0; Node ≥22 | CLI principal aprobado A1; versión exacta fijada en P02 |
+| `@astrojs/check` | 0.9.12; TS 5/6 | Verificado con TypeScript 6.0.3 y checks separados |
 
-**Node propuesto: rama 24 LTS ≥24.22**, patch exacto fijado con checks en P02; npm versionado con ella, lockfiles y `npm ci`. Node local observado por Playwright 26.8.2 **no satisface el rango observado de cf**: no usarlo como toolchain certificada; elegir runtime local/CI compatible durante setup. Confirmar existencia/distribución del patch seleccionado, engines/peer deps y compatibilidad real Astro–Vite–Tailwind–Starwind. No instalar `latest` en CI; matriz final exacta queda en lockfiles tras prueba, sin variar stack. Las APIs que un skill describe para Astro 6 deben verificarse en Astro 7 fijado; no migrar a API obsoleta por memoria.
+**Node seleccionado: 24.22.2 LTS**, fijado en `.nvmrc`, npm 11.19.1 y lockfile npm v3. Node inicial 26.8.2 no es LTS: las pruebas se ejecutaron con Node 24.22.2 instalado temporalmente fuera del repositorio. `npm ci`, `astro check`, build y runtime demuestran compatibilidad de las versiones fijadas; no garantizan compatibilidad de actualizaciones futuras. No instalar `latest` en CI. Las APIs Content Collections que un skill describe para Astro 6 deben verificarse en Astro 7 al llegar a P06.
+
+**Resultados P02:** `npm ci`, `npm run check`, `npm run check:worker`, `npm run build`, `npm run build:worker` y `npm run dev:worker` pasaron. El dry-run leyó `dist` y binding `ASSETS` sin subir nada. HTTP local: `/` y CSS 200, `POST /api/contact` 503 deshabilitado, `GET /api/contact` 405, API desconocida y URL inexistente 404. Chromium comprobó Button, CSS y Lucide accesible; la petición automática a `/favicon.ico` devuelve 404 porque aún no existe favicon autorizado. `npm audit --omit=dev` sin vulnerabilidades conocidas en ese momento. Wrangler recomienda instalar `@types/node` durante `wrangler types` por compatibilidad Node del runtime; los tipos del Worker compilaron sin ella y no se activó `nodejs_compat` en la configuración, por lo que se deja como observación y se reevalúa si se utiliza API Node.
+
+Starwind CLI se ensayó primero en un directorio temporal: su init por defecto añadía Tabler, forms, animaciones y configuración adicional. Se incorporó únicamente el Button Astro generado y sus dependencias reales, sin modificar configuración global por el asistente. `global.css` contiene solo aliases mínimos del Button de prueba; las restantes variantes, tokens y tema de marca se completan en P04. El enlace de salto es una comprobación accesible, no un componente de navegación institucional definitivo. No se han creado workflows, servicios, secretos ni despliegues.
 
 Dev adicional: TS, ESLint y soporte Astro/TS, Prettier/plugin Astro, Playwright, axe, Lighthouse para QA. `@astrojs/sitemap` solo si evita lógica duplicada y respeta filtro público; de otro modo un sitemap pequeño generado en build. Sin SDK Brevo, React, icon pack completo, date library, Zod duplicado en varias versiones sin necesidad o paquete de estado global. Si Worker necesita validar con Zod, dependencia directa en su target compatible; usar `astro/zod` solo en build, no importar Astro al Worker.
 
@@ -576,7 +571,7 @@ Dev adicional: TS, ESLint y soporte Astro/TS, Prettier/plugin Astro, Playwright,
 | Política/base legal/destinatario sin definir | Bloquea captación pública | Formulario disabled; no inventar URL legal, resolver datos en etapa 6/A3 |
 | URL WhatsApp ausente | Bloquea acceso directo | Omitir acción y microcopy dependiente; no inventar sustituto |
 | Colecciones sin inventario | No bloquea sitio institucional | Mantener modelos sin fichas, filtros ni demos |
-| CLI cf y build config beta | Riesgo de tooling/reproducibilidad | P02 local sin red, pin, target aislado, alternativa Wrangler explícita §4.3 |
+| Compatibilidad de Wrangler y toolchain | Riesgo de tooling/reproducibilidad | P02 local, versiones fijadas y configuración única según §4.3 |
 | Idempotencia de Brevo acotada/documentación cambiante | Duplicados o recepción incierta | Prueba single-message y concurrencia pendientes; ventana 30 min documentada por proveedor, sin garantía global ni DB añadida |
 | Brevo no habilitado/remitente/cuota | Captación no operativa | Sandbox no basta; prueba real/monitoreo, flag disabled en fallo, sin pago automático |
 | Repo público ya contiene internos | Privacidad fuera del bundle y del alcance de este build | No copiar más; propietario evalúa exposición Git separadamente, sin cambiar visibilidad/historial aquí |
@@ -589,7 +584,7 @@ No hay bloqueo crítico para entregar arquitectura ni para setup local después 
 
 ## 16. Decisiones arquitectónicas con justificación
 
-Todos los ADR están **propuestos para A1**, salvo el stack/editorial ya requerido; el documento no se declara aprobado a sí mismo.
+ADR aprobados en A1; la elección CLI queda precisada por ADR-07. Detalles operativos y permisos siguen sujetos a sus condiciones.
 
 | ADR | Decisión | Evidencia / por qué / consecuencia |
 | --- | --- | --- |
@@ -599,7 +594,7 @@ Todos los ADR están **propuestos para A1**, salvo el stack/editorial ya requeri
 | ADR-04 | Bootcamp histórico canónico en programs | Handoff §5.1: una entidad y proyecciones para cuatro páginas, sin cuatro copias |
 | ADR-05 | Astro/DOM + Starwind gratis, sin React inicial | Stack/skills: interactividad acotada no justifica framework hidratado; no librería propia |
 | ADR-06 | Tokens canónicos separados de extensión web clara | PDF pp.9–13/brand-spec §3/encargo: preservar marca oscura y explorar web light; A2 revisa aplicación |
-| ADR-07 | cf como CLI de proyecto nuevo; Wrangler solo builder compatible | Regla AGENTS/skills/T5; no configuración previa; target worker aislado evita SSR accidental; alternativa Wrangler requiere excepción expresa en A1 |
+| ADR-07 | **APROBADO A1:** Wrangler 4 con `wrangler.jsonc` único | Excepción expresa para este proyecto; `cf` evaluado y descartado por estabilidad/sencillez; SSG y Worker sin adaptador |
 | ADR-08 | Turnstile servidor + origen/schema/límites, Brevo fetch | T6–T8/EM6: protección real sin SDK/DB/servicio de formulario adicional; no envío antes de validación |
 | ADR-09 | Idempotencia de proveedor de alcance acotado | T7/no DB: UUID estable, rate limit no es lock, incertidumbre no éxito; aceptar límite o retener activación |
 | ADR-10 | Analítica directa opt-in, sin GTM, Clarity fuera de Empresas | T9/minimización: no cookieless antes de permiso ni grabación de PII; medir menos a cambio de seguridad |
@@ -610,7 +605,7 @@ Todos los ADR están **propuestos para A1**, salvo el stack/editorial ya requeri
 
 **Solo tres aprobaciones de proyecto:**
 
-1. **A1, ahora:** aceptar arquitectura y roadmap, incluida recomendación CLI cf (o excepción Wrangler), modo SSG/Worker, límites de idempotencia sin DB, estrategia de previews privados y consentimiento. Autoriza iniciar desarrollo local de etapa 2; no despliegues o producción por implicación.
+1. **A1, aprobada el 05/11/2026:** arquitectura y roadmap, con Wrangler 4 y `wrangler.jsonc` único. Autoriza desarrollo local; no despliegues, DNS o producción por implicación.
 2. **A2, al terminar etapa 3:** aprobar la dirección visual implementada con contenido real disponible, tokens/claros-oscuros, tipografía, logo autorizado y comportamiento responsive/accesible. No reaprobar E1/E2 ni exigir inventarios para llenar el diseño.
 3. **A3, al terminar etapa 8/prepublicación:** autorizar artefacto/SHA/dominio y alcance explícito de publicación, privacidad/canales/datos/permisos, servicios/costes efectivamente verificados y runbook. Si hay funciones retenidas se documentan y no se activan. No publicar antes de esta decisión.
 
@@ -620,12 +615,12 @@ Cuestiones irreversibles/materiales (nuevo pago, servicio, exposición de PII o 
 
 ## 18. Criterios de aceptación para comenzar implementación
 
-- [ ] A1 humana registrada sobre ambos documentos, resolviendo explícitamente la elección CLI de §4.3; sin aprobación implícita por commit.
+- [x] A1 humana registrada sobre ambos documentos: Wrangler 4 y excepción expresa de §4.3.
 - [ ] E1/E2/handoff accesibles y versiones/hashes coincidentes; 8 rutas, 2 plantillas y 52 IDs conservados; ningún contenido reabierto.
 - [ ] Entendido el límite de publicación: campos, permisos, canales y entradas retenidos no se vuelven públicos por aprobación editorial o build.
 - [ ] SSG, runtime mínimo, siete modelos, Bootcamp canónico, proyecciones públicas y condiciones de vacíos adoptados como contrato de desarrollo.
 - [ ] Sistema de tokens y dirección light identificados como aplicación propuesta, no nuevo manual canónico; A2 sigue pendiente.
-- [ ] Stack mínimo y verificación de engines/lockfiles planeados en P02; ninguna dependencia/configuración instalada por esta entrega.
+- [x] Stack mínimo y engines/lockfile verificados en P02 local; sin infraestructura remota.
 - [ ] P02–P14 y tres gates comprendidos; no producción, nuevas ramas o provisioning dentro de Etapa 1.
 
-**Conclusión:** especificación lista para revisión A1. Etapa 2 puede empezar **después de aprobar A1**, sin esperar inventarios, WhatsApp, permisos personales completos o credenciales de servicios. Esas dependencias impiden activar sus unidades, no diseñar y comprobar localmente el sistema.
+**Conclusión:** A1 aprobada; etapa 2 local autorizada, sin esperar inventarios, WhatsApp, permisos personales completos o credenciales de servicios. Esas dependencias impiden activar sus unidades, no diseñar y comprobar localmente el sistema.

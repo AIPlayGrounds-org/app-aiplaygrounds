@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+/* Mínimo para comprobar Button; el sistema de marca corresponde a P04. */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-outline: var(--outline);
+}
+
+:root {
+  --background: #fff;
+  --foreground: #000;
+  --outline: #000;
+}

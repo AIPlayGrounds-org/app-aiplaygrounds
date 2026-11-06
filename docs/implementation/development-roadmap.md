@@ -1,8 +1,8 @@
 # AI PlayGrounds — Roadmap de desarrollo
 
-**Etapa 1 · planificación v1.0 · 05/11/2026 · PROPUESTA PARA A1.**
+**Planificación v1.0 · A1 APROBADA el 05/11/2026 · Wrangler 4 como CLI principal.**
 
-Fuente técnica: [technical-architecture.md](technical-architecture.md). Contrato editorial: [Content Handoff](content-handoff.md) + E1/E2 allí enlazados. Este roadmap no autoriza empezar la aplicación o desplegar durante la etapa actual.
+Fuente técnica: [technical-architecture.md](technical-architecture.md). Contrato editorial: [Content Handoff](content-handoff.md) + E1/E2 allí enlazados. A1 autoriza desarrollo local; P02 no autoriza despliegues ni infraestructura remota.
 
 ## 1. Gobierno, alcance y secuencia
 
@@ -12,7 +12,7 @@ Solo tres aprobaciones humanas planificadas:
 
 | Gate | Momento | Autoriza | No autoriza |
 | --- | --- | --- | --- |
-| **A1 · Arquitectura técnica** | Cierre de etapa 1/P01 | Baseline técnico y roadmap; iniciar setup/implementación local; resolver cf o excepción Wrangler | Publicación, nuevos servicios pagos o exposición de datos retenidos |
+| **A1 · Arquitectura técnica** | Cierre de etapa 1/P01 | Baseline técnico y roadmap; iniciar setup/implementación local con Wrangler 4 | Publicación, nuevos servicios pagos o exposición de datos retenidos |
 | **A2 · Dirección visual implementada** | Cierre de etapa 3/P05 | Expandir diseño ya probado al resto del sitio | Cambiar copy aprobado, inventar activos/inventario o activar captación sin condiciones |
 | **A3 · Publicación final** | Etapa 8/P14, antes de producción | Desplegar artefacto/SHA revisado, dominio y alcance explícitos; operación inicial | Publicar después otro SHA no revisado, reactivar datos sin permisos o contratar planes no autorizados |
 
@@ -63,22 +63,22 @@ Los comandos concretos se fijan en los manifiestos durante P02/P03; los nombres 
 - **Alcance:** auditoría real; alternativas, modelos/52 IDs, tokens, formulario, CLI, seguridad, previews, QA y riesgos. No Astro, dependencias de aplicación, credenciales, provisioning ni deploy.
 - **Entregables:** `technical-architecture.md` y `development-roadmap.md`, commit documental en rama activa.
 - **Validaciones:** coherencia de enlaces/estructura/tablas, matriz de rutas/IDs, hashes y diff de fuentes, scan de secretos nuevos, estado Git.
-- **Criterio de finalización:** ambos documentos revisables y commit confirmado; detenerse. **A1 pendiente** hasta decisión humana expresa; no ejecutar P02 automáticamente.
+- **Criterio de finalización:** ambos documentos revisables y commit confirmado; detenerse. **A1 aprobada el 05/11/2026**, con Wrangler 4 y configuración única.
 
 ### P02 — Inicialización y compatibilidad local · Etapa 2
 
 - **Objetivo:** obtener el mínimo Astro SSG + Worker tipado empaquetable.
 - **Dependencias:** A1 con elección de CLI resuelta. Toolchain Node compatible; metadatos candidatos en arquitectura §15.1 no sustituyen build.
-- **Alcance:** setup Astro estático en raíz, strict TS, Tailwind v4, Starwind Astro gratuito y Lucide; target Worker aislado con cf/builder según §4.3, sin SSR/React/DB. Fijar versiones exactas/lockfiles y reglas ignore. No autoconfiguración cf sobre raíz Astro ni red live.
+- **Alcance:** setup Astro estático en raíz, strict TS, Tailwind v4, Starwind Astro gratuito y Lucide; Worker con Wrangler 4 y `wrangler.jsonc` único según §4.3, sin SSR/React/DB. Fijar versiones exactas/lockfile y reglas ignore. Sin autoconfiguración SSR ni red live.
 - **Entregables:** manifiestos/scripts/configs mínimos, ignore/env example inocuo, build estático mínimo sin contenido ficticio, Worker local sin captación activa, registro de compatibilidad efectiva.
-- **Validaciones:** engines/peers; `npm ci`, Astro Check/TS strict/build y runtime local; generar tipos; assets ../dist y ruta API; packaging dry-run sin red/credenciales. Si cf beta requiere forma distinta de build config, resolver con documentación de versión; no cambiar stack ni añadir adaptador de manera oculta.
-- **Criterio de finalización:** reproducción desde instalación limpia, ningún secreto/proveedor real necesario y configuración fuente única. Si empaquetado no funciona, registrar bloqueo reproducible antes de extender UI.
+- **Validaciones:** engines/peers; `npm ci`, Astro Check/TS strict/build y runtime local; generar tipos; assets `dist/` y ruta API; packaging Wrangler dry-run sin red/credenciales. Resolver incompatibilidades según documentación de versión, sin cambiar stack ni añadir adaptador.
+- **Criterio de finalización:** reproducción desde instalación limpia, ningún secreto/proveedor real necesario y configuración fuente única. **P02 completado localmente:** versiones, comandos y resultados registrados en arquitectura §15.1; no se desplegó ni se configuró infraestructura remota.
 
 ### P03 — CI, checks y estrategia preview · Etapa 2
 
 - **Objetivo:** hacer verificable cada PR sin confundir preview con producción.
 - **Dependencias:** P02; disponibilidad de GitHub/Cloudflare y controles Access solo para ejecución remota autorizada.
-- **Alcance:** scripts explícitos de lint/format/check/content/build/output y workflows checks/preview/cleanup. Selección segura de código confiable, no secretos para forks ni `pull_request_target` ejecutando head ajeno. Previews efímeros por PR, contexto separado, mock mail/analytics off y noindex.
+- **Alcance:** scripts explícitos de lint/format/check/content/build/output y workflows checks/preview/cleanup con Wrangler 4 y `wrangler.jsonc`. Selección segura de código confiable, no secretos para forks ni `pull_request_target` ejecutando head ajeno. Previews efímeros por PR, contexto separado, mock mail/analytics off y noindex.
 - **Entregables:** CI versionada, documentación de entornos/bindings/Secret names, lifecycle y contrato de protección main; definición de Access/no bypass antes de preview remoto. No producción ni staging permanente.
 - **Validaciones:** checks sin red a proveedores; pin Actions, permisos mínimos, concurrencia y cleanup por ID; output no contiene fuentes internas. Si se autoriza/configura preview, HTTP/headers/Access efectivos y sin ruta alternativa pública.
 - **Criterio de finalización:** pipeline local/PR reproducible; definición de despliegue segura. Sin destino/protección autorizados, resultado local y workflow remoto deshabilitado con dependencia explícita; no fingir URL preview creada. Esta limitación no bloquea P04 local.
@@ -198,4 +198,4 @@ Las condiciones institucionales/legales deben constar en el paquete A3; no se tr
 
 ## 6. Estado de salida de Etapa 1
 
-La entrega actual completa **P01 documental**. P02–P14 son trabajo futuro no ejecutado. No hay aplicación, preview, envío, monitor ni infraestructura configurados por esta tarea. El siguiente paso es revisar y aprobar **A1** (incluida elección CLI); después puede comenzar etapa 2 local. Etapa 1 se detiene aquí, sin merge, push o despliegue.
+P01 y P02 local completados; **A1 aprobada el 05/11/2026** con Wrangler 4. P03 puede comenzar directamente; previews, envío, monitor e infraestructura remota continúan pendientes. A2 y A3 siguen siendo las siguientes aprobaciones planificadas.

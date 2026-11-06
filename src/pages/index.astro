@@ -1,0 +1,18 @@
+---
+import { ArrowUpRight } from '@lucide/astro';
+import Button from '../components/starwind/button/Button.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="AI PlayGrounds | Inteligencia artificial en comunidad"
+  description="Desde Lima, conectamos personas y conocimiento en inteligencia artificial. Encuentros, formación y cuatro campos para aprender, investigar y construir."
+>
+  <Button href="#contenido" class="m-6">
+    Ir al contenido <ArrowUpRight aria-hidden="true" />
+  </Button>
+  <main id="contenido" class="mx-auto max-w-3xl p-6" tabindex="-1">
+    <h1 class="text-3xl font-semibold">Aprendemos, investigamos y construimos con IA. En comunidad.</h1>
+    <p class="mt-4">Compartimos lo que aprendemos y abrimos espacio para investigar, experimentar y construir.</p>
+  </main>
+</BaseLayout>
