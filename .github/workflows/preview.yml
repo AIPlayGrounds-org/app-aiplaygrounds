@@ -1,0 +1,12 @@
+name: Preview (inactivo)
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+permissions: {}
+jobs:
+  disabled:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Preview remoto no implementado ni autorizado.'

@@ -198,4 +198,4 @@ Las condiciones institucionales/legales deben constar en el paquete A3; no se tr
 
 ## 6. Estado de salida de Etapa 1
 
-P01 y P02 local completados; **A1 aprobada el 05/11/2026** con Wrangler 4. P03 puede comenzar directamente; previews, envío, monitor e infraestructura remota continúan pendientes. A2 y A3 siguen siendo las siguientes aprobaciones planificadas.
+P01, P02 y controles locales de P03 completados; workflows de preview son esqueletos inactivos y requieren implementación y verificación remota antes de su uso; **A1 aprobada el 05/11/2026** con Wrangler 4. P04 puede comenzar directamente; previews, envío, monitor e infraestructura remota continúan pendientes. A2 y A3 siguen siendo las siguientes aprobaciones planificadas.

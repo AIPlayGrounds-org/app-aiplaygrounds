@@ -1,0 +1,12 @@
+name: Preview cleanup (inactivo)
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+permissions: {}
+jobs:
+  disabled:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Limpieza remota no implementada ni autorizada.'
