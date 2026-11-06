@@ -90,7 +90,7 @@ Los comandos concretos se fijan en los manifiestos durante P02/P03; los nombres 
 - **Alcance:** capas de tokens canónicos/extensión propuesta/aliases, Tailwind CSS-first, fuentes locales licenciadas, contenedores/escala, themes por sección y estados de componentes Starwind estrictamente necesarios. No biblioteca propia ni componente por ID.
 - **Entregables:** tokens/global CSS, fuentes/maestros permitidos, base layout y controles nativos/Starwind; documentación breve de semántica y procedencia.
 - **Validaciones:** contraste real claro/oscuro, keyboard/focus, forced colors, reduced motion, font load y bundle; comprobar API de fuente instalada, sin props inventadas.
-- **Criterio de finalización:** base visual coherente y usable; no glow/serif ajenos, acentos ilegibles o assets copiados del deck sin permiso. Sin gate humano adicional; seguir a P05.
+- **Criterio de finalización:** base visual coherente y usable; no glow/serif ajenos, acentos ilegibles o assets copiados del deck sin permiso. **P04 implementado localmente:** fuentes OFL, tokens y controles comprobados; zoom real y lector de pantalla quedan para QA de P05. Sin gate humano adicional; seguir a P05.
 
 ### P05 — Dirección visual implementada y revisión · Etapa 3
 

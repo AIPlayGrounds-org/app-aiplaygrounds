@@ -1,5 +1,5 @@
 ---
-import { ArrowUpRight } from '@lucide/astro';
+import { ArrowDown } from '@lucide/astro';
 import Button from '../components/starwind/button/Button.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
@@ -8,16 +8,49 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   title="AI PlayGrounds | Inteligencia artificial en comunidad"
   description="Desde Lima, conectamos personas y conocimiento en inteligencia artificial. Encuentros, formación y cuatro campos para aprender, investigar y construir."
 >
-  <Button href="#contenido" class="m-6">
-    Ir al contenido <ArrowUpRight aria-hidden="true" />
-  </Button>
-  <main id="contenido" class="mx-auto max-w-3xl p-6" tabindex="-1">
-    <h1 class="text-3xl font-semibold">
-      Aprendemos, investigamos y construimos con IA. En comunidad.
-    </h1>
-    <p class="mt-4">
-      Compartimos lo que aprendemos y abrimos espacio para investigar,
-      experimentar y construir.
-    </p>
+  <main id="contenido" tabindex="-1">
+    <section class="site-container section-space">
+      <p class="brand-name" translate="no">
+        AI PlayGrounds
+      </p>
+      <h1 class="headline">
+        Aprendemos, investigamos y construimos con IA. En comunidad.
+      </h1>
+      <Button href="#comunidad" variant="primary" class="mt-10">
+        En comunidad <ArrowDown aria-hidden="true" />
+      </Button>
+    </section>
+    <section
+      id="comunidad"
+      data-theme="dark"
+      class="bg-background text-foreground"
+    >
+      <div class="site-container section-space">
+        <p class="statement">
+          Compartimos lo que aprendemos y abrimos espacio para investigar,
+          experimentar y construir.
+        </p>
+      </div>
+    </section>
   </main>
 </BaseLayout>
+
+<style>
+  .brand-name {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .headline {
+    max-width: 17ch;
+    margin-block: clamp(4rem, 10vw, 9rem) 0;
+  }
+  .statement {
+    max-width: 30ch;
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 1.05rem + 1.8vw, 2.5rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+  }
+</style>

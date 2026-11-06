@@ -2,7 +2,7 @@ import { readFileSync, readdirSync, lstatSync, existsSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
-export function inspect(root) {
+export function inspect(root, kind = root === 'dist' ? 'site' : 'bundle') {
   if (!existsSync(root)) throw new Error(`Falta artefacto: ${root}`);
   const files = [];
   function walk(dir) {
@@ -56,8 +56,8 @@ export function inspect(root) {
       continue;
     checked++;
     const allowed =
-      root === 'dist'
-        ? /^(?:index\.html|_astro\/[a-zA-Z0-9._-]+\.(?:css|js))$/
+      kind === 'site'
+        ? /^(?:index\.html|_astro\/[a-zA-Z0-9._-]+\.(?:css|js)|_astro\/(?:space-grotesk-latin|inter-tight-latin|geist-mono-latin)\.[a-zA-Z0-9_-]+\.woff2)$/
         : /^[a-zA-Z0-9._/-]+\.(?:js|json|txt)$/;
     if (
       !allowed.test(name) ||

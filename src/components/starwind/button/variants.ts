@@ -2,32 +2,32 @@ import { tv } from 'tailwind-variants';
 
 export const button = tv({
   base: [
-    'inline-flex items-center justify-center gap-1.5 rounded-md font-medium whitespace-nowrap',
+    'inline-flex items-center justify-center gap-1.5 rounded-sm font-medium text-center',
     '[&_svg]:pointer-events-none [&_svg]:shrink-0',
-    'transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:ring-3',
+    'transition-colors focus-visible:outline-3 focus-visible:outline-offset-4',
     'disabled:pointer-events-none disabled:opacity-50',
     'data-disabled:pointer-events-none data-disabled:opacity-50',
-    'aria-invalid:border-error aria-invalid:focus-visible:ring-error/40',
+    'aria-invalid:border-error aria-invalid:focus-visible:outline-error',
   ],
   variants: {
     variant: {
       default:
-        'bg-foreground text-background hover:bg-foreground/90 focus-visible:ring-outline/50',
+        'bg-foreground text-background hover:bg-foreground/90 focus-visible:outline-outline',
       primary:
-        'bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-primary/50',
+        'bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline-outline',
       secondary:
-        'bg-secondary text-secondary-foreground hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)] focus-visible:ring-secondary/50',
+        'border border-input bg-secondary text-secondary-foreground hover:bg-background focus-visible:outline-outline',
       outline:
-        'dark:border-input focus-visible:ring-outline/50 bg-background dark:bg-input/30 focus-visible:border-outline hover:bg-muted dark:hover:bg-input/50 hover:text-foreground border shadow-xs',
+        'border border-input bg-background text-foreground hover:bg-muted focus-visible:outline-outline',
       ghost:
-        'hover:bg-muted hover:text-foreground focus-visible:ring-outline/50',
-      info: 'bg-info text-info-foreground hover:bg-info/90 focus-visible:ring-info/50',
+        'hover:bg-muted hover:text-foreground focus-visible:outline-outline',
+      info: 'bg-info text-info-foreground hover:bg-info/90 focus-visible:outline-outline',
       success:
-        'bg-success text-success-foreground hover:bg-success/90 focus-visible:ring-success/50',
+        'bg-success text-success-foreground hover:bg-success/90 focus-visible:outline-outline',
       warning:
-        'bg-warning text-warning-foreground hover:bg-warning/90 focus-visible:ring-warning/50',
+        'bg-warning text-warning-foreground hover:bg-warning/90 focus-visible:outline-outline',
       error:
-        'bg-error text-error-foreground hover:bg-error/90 focus-visible:ring-error/50',
+        'bg-error text-error-foreground hover:bg-error/90 focus-visible:outline-outline',
     },
     size: {
       sm: "h-9 px-4 text-sm has-[>svg]:px-3 [&_svg:not([class*='size-'])]:size-3.5",

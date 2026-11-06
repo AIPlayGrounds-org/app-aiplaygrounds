@@ -1,0 +1,84 @@
+/* A. Marca canónica: manual de marca, páginas 9–10. */
+:root {
+  --brand-black: #000000;
+  --brand-white: #ffffff;
+  --brand-halo: #8e8eff;
+  --brand-mint: #49ff9e;
+  --brand-lime: #ceff5f;
+  --brand-gray-1: #1a1a1f;
+  --brand-gray-2: #6b6b73;
+  --brand-gray-3: #c7c7cc;
+
+  /* B. Extensión light propuesta, no añadida al manual. */
+  --web-light-bg: #f5f3ec;
+  --web-light-secondary: #eceae2;
+  --web-light-elevated: #faf9f4;
+  --web-light-contrast: #e3e2da;
+  --web-light-line: #cecec4;
+  --web-light-grid: #dedfd5;
+  --web-light-text: #191a18;
+  --web-light-secondary-text: #484a43;
+  --web-light-muted-text: #62645b;
+}
+
+/* C. Un único tema semántico compartido por Starwind y Tailwind. */
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+  --background: var(--web-light-bg);
+  --foreground: var(--web-light-text);
+  --surface: var(--web-light-secondary);
+  --surface-elevated: var(--web-light-elevated);
+  --surface-contrast: var(--web-light-contrast);
+  --muted: var(--web-light-secondary);
+  --muted-foreground: var(--web-light-muted-text);
+  --secondary-text: var(--web-light-secondary-text);
+  --border: var(--web-light-line);
+  --input: var(--web-light-secondary-text);
+  --primary: var(--brand-black);
+  --primary-foreground: var(--brand-white);
+  --secondary: var(--web-light-secondary);
+  --secondary-foreground: var(--web-light-text);
+  --accent: var(--brand-halo);
+  --outline: var(--brand-black);
+  --focus-ring: var(--outline);
+  --error: #9b2226;
+  --error-foreground: var(--brand-white);
+  --destructive: var(--error);
+  --success: #165a38;
+  --success-foreground: var(--brand-white);
+  --info: var(--brand-black);
+  --info-foreground: var(--brand-white);
+  --warning: var(--brand-black);
+  --warning-foreground: var(--brand-white);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --background: var(--brand-black);
+  --foreground: var(--brand-white);
+  --surface: var(--brand-gray-1);
+  --surface-elevated: var(--brand-gray-1);
+  --surface-contrast: var(--brand-gray-1);
+  --muted: var(--brand-gray-1);
+  --muted-foreground: var(--brand-gray-3);
+  --secondary-text: var(--brand-gray-3);
+  --border: var(--brand-gray-2);
+  --input: var(--brand-gray-3);
+  --primary: var(--brand-white);
+  --primary-foreground: var(--brand-black);
+  --secondary: var(--brand-gray-1);
+  --secondary-foreground: var(--brand-white);
+  --accent: var(--brand-halo);
+  --outline: var(--brand-white);
+  --focus-ring: var(--outline);
+  --error: #ffb4ab;
+  --error-foreground: var(--brand-black);
+  --destructive: var(--error);
+  --success: var(--brand-mint);
+  --success-foreground: var(--brand-black);
+  --info: var(--brand-white);
+  --info-foreground: var(--brand-black);
+  --warning: var(--brand-white);
+  --warning-foreground: var(--brand-black);
+}
