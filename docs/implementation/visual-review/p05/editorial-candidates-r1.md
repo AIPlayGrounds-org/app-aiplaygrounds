@@ -33,3 +33,5 @@ El título actual es acogedor, pero privilegia aprender y encontrarse; la primer
 El H1 expresa actividad, la bajada define la entidad, el title identifica la página y la descripción resume lo que se puede explorar. Keyword Map N01 asigna a Inicio la intención institucional y señala que la demanda de marca no está medida; no corresponde forzar keywords ni prometer mejora de ranking. No se realizó investigación nueva.
 
 Respecto de E2 v2.1 cambian deliberadamente H1, bajada I1, H2 y cuerpo I2 y meta description; se retira del hero la referencia a Lima/enero de 2025, sin negar el hecho. Los dos CTA y enlaces contextuales se mantienen; I3, I4, I5 e I8 no se reescriben. Las decisiones siguen pendientes de aprobación humana y no autorizan publicación.
+
+**Actualización R2:** el H2 preferido y el análisis del cuerpo se recogen en [editorial-candidate.md](../p05-r2/editorial-candidate.md); esta nota conserva el historial de R1. Todo sigue pendiente de aprobación humana.

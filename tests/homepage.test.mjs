@@ -19,6 +19,7 @@ test('Inicio conserva orden, textos y destinos esenciales', () => {
       'Aprendemos, investigamos, experimentamos y construimos con IA.',
     ),
   );
+  assert.ok(page.includes('El conocimiento crece cuando se comparte'));
   for (const text of [
     'Cómo funcionan los modelos y métodos de inteligencia artificial, cómo evaluarlos y cómo mejorarlos. AI Foundations se ocupa de los fundamentos técnicos de la IA.',
     'Inteligencia artificial aplicada al diseño, la construcción, las pruebas y la mejora del software. El proceso de desarrollo y el criterio para trabajar con IA están en el centro.',
