@@ -1,61 +1,134 @@
 ---
-const links = [
-  ['Formación', '/formacion/'],
-  ['Empresas', '/empresas/'],
-  ['Comunidad', '/comunidad/'],
-  ['AI Labs', '/ai-labs/'],
-  ['Productos', '/productos/'],
-  ['Investigación', '/investigacion/'],
-  ['Equipo', '/equipo/'],
+import { Image } from 'astro:assets';
+import { inicioImages } from '../../assets/inicio';
+
+const groups = [
+  {
+    title: 'Organización',
+    links: [
+      ['Comunidad', '/comunidad/'],
+      ['Equipo', '/equipo/'],
+      ['Empresas', '/empresas/'],
+    ],
+  },
+  {
+    title: 'Iniciativas',
+    links: [
+      ['Formación', '/formacion/'],
+      ['AI Labs', '/ai-labs/'],
+    ],
+  },
+  {
+    title: 'Explorar',
+    links: [['Investigación', '/investigacion/']],
+  },
 ];
 ---
 
-<footer class="footer" data-theme="dark">
+<footer class="footer">
   <div class="site-container footer-inner">
-    <a class="footer-brand" href="/" translate="no">
-      AI PlayGrounds
-    </a>
+    <div class="footer-intro">
+      <a class="footer-brand" href="/" translate="no">
+        AI PlayGrounds
+      </a>
+      <p>
+        AI PlayGrounds es una organización enfocada en inteligencia artificial,
+        impulsada por su comunidad.
+      </p>
+    </div>
     <nav aria-label="Navegación del pie de página">
-      {links.map(([label, href]) => (
-        <a href={href}>{label}</a>
+      {groups.map(({ title, links }) => (
+        <div>
+          <h2>{title}</h2>
+          {links.map(([label, href]) => (
+            <a href={href}>{label}</a>
+          ))}
+        </div>
       ))}
     </nav>
+  </div>
+  <div class="landscape-frame">
+    <Image
+      src={inicioImages.footer}
+      alt=""
+      format="webp"
+      widths={[480, 768, 1024, 1440, 2092]}
+      sizes="(max-width: 650px) 650px, 100vw"
+      loading="lazy"
+      class="landscape"
+    />
   </div>
 </footer>
 <style>
   .footer {
-    background: var(--background);
-    color: var(--foreground);
+    border-top: 1px solid var(--border);
+    background: var(--home-surface, var(--background));
+    overflow: hidden;
   }
   .footer-inner {
-    border-top: 1px solid var(--brand-gray-2);
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
-    padding-block: 3rem;
+    gap: 3rem;
+    padding-block: 3rem 0.5rem;
+  }
+  .footer-intro {
+    max-width: 24rem;
   }
   .footer-brand {
-    font-family: var(--font-heading);
-    font-weight: 600;
-    font-size: 1.25rem;
-    text-decoration: none;
+    font: 600 1.5rem var(--font-heading);
+    text-decoration: none !important;
+  }
+  .footer-intro p {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    color: var(--secondary-text);
   }
   nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 1rem 1.5rem;
-    max-width: 45rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(6rem, 1fr));
+    gap: clamp(2rem, 5vw, 6rem);
+  }
+  nav h2 {
+    font: 600 0.875rem var(--font-sans);
+    margin: 0 0 1rem;
   }
   nav a {
-    font-size: 0.9rem;
+    display: block;
+    font-size: 0.875rem;
+    margin-block: 0.75rem;
+    text-decoration: none;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .landscape-frame {
+    position: relative;
+    overflow: hidden;
+    height: clamp(8rem, 13vw, 13rem);
+    pointer-events: none;
+  }
+  .landscape {
+    position: absolute;
+    display: block;
+    width: max(100%, 650px);
+    max-width: none;
+    height: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
   @media (max-width: 48rem) {
     .footer-inner {
       flex-direction: column;
     }
     nav {
-      justify-content: flex-start;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  }
+  @media (max-width: 23rem) {
+    nav {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 </style>

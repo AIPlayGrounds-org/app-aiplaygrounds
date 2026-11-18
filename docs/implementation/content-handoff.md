@@ -12,7 +12,7 @@ Este documento traduce el contenido aprobado a unidades de implementación: ruta
 ### 1.1 Cómo usar el contrato
 
 1. Verificar versiones y aprobaciones de las fuentes; usar el registro de precedencia de §1.3, no la fecha aislada de un archivo.
-2. Preparar las ocho páginas y los dos tipos de ficha, conservando los IDs y orden de §3. Una sección condicional conserva su lugar en el modelo aunque no produzca HTML sin datos.
+2. Preparar las siete páginas y los dos tipos de ficha, conservando los IDs y orden vigentes de §3. Una sección condicional conserva su lugar en el modelo aunque no produzca HTML sin datos.
 3. Extraer de E2 únicamente copy público, metadatos, etiquetas y mensajes aplicables. No importar automáticamente el Markdown completo: también contiene instrucciones, modelos, pendientes y tablas documentales que no son contenido público.
 4. Trasladar datos repetibles a modelos validados. Preservar atribución, estado, fuentes y condiciones; comprobar visibilidad antes de generar listados, enlaces, rutas o datos estructurados.
 5. Implementar y probar con el stack de §1.4 solo después de autorización separada. Los criterios de este documento no certifican que exista infraestructura o funcionalidad.
@@ -77,7 +77,7 @@ No se detectó una contradicción material sin resolución que obligue a cambiar
 
 ## 2. Mapa de navegación y rutas
 
-**APROBADO:** ocho páginas, marca → Inicio y accesos Formación · Empresas · Comunidad · AI Labs · Productos · Investigación · Equipo; ambas colecciones y Equipo accesibles directamente, sin pasar por Labs. Orden visual, agrupación y menú responsive: PROPUESTO por diseño/desarrollo. Sin selector Personas/Empresas ni páginas nuevas de verticales, Academy, eventos, programas, integrantes, iniciativas, países o filtros. Fuente: E1 §4.1/§5 y E2 «Navegación y destinos».
+**Decisión vigente:** siete páginas, marca → Inicio y accesos Formación · Empresas · Comunidad · AI Labs · Investigación · Equipo. AI Labs es el directorio de productos; Investigación conserva acceso independiente. Esta decisión sustituye las referencias históricas a Productos como página independiente en este handoff. Sin selector Personas/Empresas ni páginas nuevas de verticales, Academy, eventos, programas, integrantes, iniciativas, países o filtros.
 
 Las siguientes son **rutas propuestas editorialmente en E2**, no URLs publicadas ni slugs técnicos definitivamente aprobados. Validar convención de barras finales, resolución y canonical conjuntamente; no cambiar nombres públicos o destinos funcionales al ajustarlas. Todas las páginas están **sin implementar** al corte.
 
@@ -87,18 +87,17 @@ Las siguientes son **rutas propuestas editorialmente en E2**, no URLs publicadas
 | Formación | `/formacion/` | Comparar líneas/estado; personas interesadas en aprendizaje | Ir a la comunidad; Formación para mi equipo | Comunidad; Empresas EM5, no enlace circular a su propia raíz |
 | Empresas | `/empresas/` | Examinar campos/evidencia; instituciones y empresas | Proponer una alianza / Cuéntanos tu necesidad; formación EM5 | Mismo formulario EM6, condicionado a §9; Labs/Equipo/Formación como navegación informativa |
 | Comunidad | `/comunidad/` | Historia y participación general; personas interesadas en IA | Unirme a la comunidad; contexto Inicio y Labs | Grupo WhatsApp, URL PENDIENTE; no formulario de ingreso |
-| AI Labs | `/ai-labs/` | Visibilidad de trabajo temprano; visitantes de iniciativas | Ir a la comunidad; criterios de Productos/Investigación | Comunidad y colecciones; B3 solo con entradas reales |
-| Productos | `/productos/` | Evaluar recursos; visitantes y creadores | Abrir producto real si existe; Conocer AI PlayGrounds | Ficha existente; Inicio. Postulación inactiva sin proceso |
+| AI Labs | `/ai-labs/` | Directorio de productos y contexto de iniciativas | Ir a la comunidad; criterios de productos e Investigación | Comunidad e Investigación; B3 solo con entradas reales |
 | Investigación | `/investigacion/` | Descubrir originales; lectores y autores | Abrir trabajo real si existe; Conocer AI PlayGrounds | Ficha existente; Inicio. Postulación inactiva sin proceso |
 | Equipo | `/equipo/` | Personas/relaciones; visitantes y organizaciones | Ir a la comunidad; Explorar AI Labs | Comunidad y Labs; datos personales solo autorizados |
-| Ficha de producto | `/productos/{identificador-confirmado}/` | Evaluar un recurso concreto | Acceder al producto o Consultar la fuente original | URL verificada según acceso; volver a Productos e Inicio. Sin instancia hasta completar registro |
+| Ficha de producto | Ruta pendiente de definición | Evaluar un recurso concreto | Acceder al producto o Consultar la fuente original | URL verificada según acceso; volver a AI Labs e Inicio. Sin instancia hasta completar registro |
 | Ficha de investigación | `/investigacion/{identificador-confirmado}/` | Pregunta/método/alcance del trabajo | Consultar el original | Fuente primaria verificada; volver a Investigación e Inicio. Sin instancia ficticia |
 
 **Anclas locales PROPUESTAS:** usar identificadores estables derivados de IDs editoriales (por ejemplo, el ID de EM6 como ancla del formulario). No son rutas nuevas ni copy público. Resolver enlaces semánticos de E2 a Inicio/I3, Comunidad/C3, Formación/F4 y Empresas/EM5/EM6; aplicar la misma convención a enlaces desde otra página. No convertir las anclas documentales de E2 en slugs públicos automáticamente.
 
 **Enlaces externos:** conservar los cuatro Luma canónicos de §7; fuentes/accesos de futuros registros requieren verificación. No importar parámetros de invitación/seguimiento, reuniones privadas o tokens editoriales como URL. WhatsApp usará solo la invitación real que aporte el responsable. Abrir en misma pestaña es una recomendación sencilla; si desarrollo elige otra pestaña, comunicarlo accesiblemente y proteger la navegación externa. No es requisito abrir todo externo en pestaña nueva. Usar `<a>` para navegación y botones para acciones; no `href="#"`, URLs de ejemplo o manejadores vacíos para aparentar disponibilidad.
 
-## 3. Matriz de implementación de las 52 secciones
+## 3. Matriz de implementación de las 48 secciones
 
 **Regla de lectura:** el encabezado de cada tabla fija la página/tipo para todas sus filas. La columna «Fuente» lleva exactamente al bloque E2 que aporta copy, datos y notas; E1 §4.3 es la base de orden. Títulos H2/H1 presentes se conservan literalmente; los títulos de modelos C se preparan, pero no aparecen solos sin registros. «H1 página» remite al H1 de §4, no añade otro. Todos los patrones de presentación son **PROPUESTOS**, no wireframes ni una biblioteca nueva. Priorizar composición HTML/Astro y primitives de Starwind UI; no un componente por ID ni un motor universal de secciones.
 
@@ -153,17 +152,8 @@ Naturaleza: estático = copy; estructurado = atributos comparables; repetible = 
 | B1 | Explicar Labs | H1 página | [B1][e2-b1] | Estático | Función/experimentación | Apertura | Sin salto a lista vacía | B3 solo si hay registros | Institucional aun sin iniciativas | A |
 | B2 | Relacionar campos e iniciativas | H2 La pregunta detrás de cada iniciativa | [B2][e2-b2] | Estático | Funciones y vínculos conceptuales | Contexto/enlace | Navegar | Inicio I3 | Sin objetos o relaciones inventadas | A |
 | B3 | Presentar iniciativas reales | H2 condicional Qué se está explorando y en qué estado | [B3][e2-b3] | Listado repetible | Modelo iniciativa §5 | Resumen con atributos/recurso | Abrir solo destino confirmado | Recurso/ficha existente; sin ficha Labs nueva | Cero HTML de listado/heading vacío sin registros publicables | C; DEP-05 |
-| B4 | Diferenciar colecciones | H2 Del recurso a su fuente | [B4][e2-b4] | Estático/estructurado | Dos descriptores/enlaces | Dos rutas informativas | Navegar | Productos; Investigación | Páginas institucionales aun sin corpus | A |
+| B4 | Diferenciar colecciones | H2 Del recurso a su fuente | [B4][e2-b4] | Estático/estructurado | Contexto de productos y enlace | Directorio AI Labs e Investigación | Navegar | Investigación | Información institucional aun sin corpus | A |
 | B5 | Conectar comunidad | H2 Conecta con la comunidad | [B5][e2-b5] | Estático | Copy/enlace | Continuidad | Navegar | Comunidad | No acceso a proyectos/vacantes | A |
-
-### Productos · 4 secciones
-
-| ID | Propósito | Título público / nivel | Fuente E2 | Naturaleza | Datos necesarios | Presentación sugerida | Interacción | Destinos | Visibilidad | Estado / dependencia |
-|---|---|---|---|---|---|---|---|---|---|---|
-| DP1 | Definir cobertura/criterios | H1 página corregido | [DP1][e2-dp1] | Estático | IA integrada/construcción y procedencias | Apertura con criterios | Lectura | Contexto de colección | Visible sin entradas; no catálogo lleno implícito | A |
-| DP2 | Encontrar por criterios | H2 condicional Encuentra recursos según lo que necesitas | [DP2][e2-dp2] | Estructurado/interacción condicional | Corpus, atributos y soporte | Criterios; controles solo útiles y soportados | Filtrar solo tras decisión técnica | DP3, sin páginas por faceta | Sin filtros u opciones vacías; no instrucciones ficticias | C; DEP-06/11 |
-| DP3 | Elegir producto | H2 condicional Conoce cada producto antes de elegir | [DP3][e2-dp3] | Listado repetible | Resumen derivado de producto completo | Entradas comparables | Abrir ficha por nombre | Ficha de producto real | Solo registros publicables; ningún listado vacío | C; DEP-06 |
-| DP4 | Continuidad institucional | H2 La organización detrás de la colección | [DP4][e2-dp4] | Estático/condicional | Copy Inicio; postulación interna no activa | Enlace integrado | Navegar; no captación hoy | Inicio; postulación sin destino, no mostrar | Institucional sí; propuesta de producto oculta sin proceso | A; DEP-12 si se habilita |
 
 ### Investigación · 4 secciones
 
@@ -187,7 +177,7 @@ Naturaleza: estático = copy; estructurado = atributos comparables; repetible = 
 
 | ID | Propósito | Título público / nivel | Fuente E2 | Naturaleza | Datos necesarios | Presentación sugerida | Interacción | Destinos | Visibilidad | Estado / dependencia |
 |---|---|---|---|---|---|---|---|---|---|---|
-| P1 | Identificar recurso | H1 nombre real | [P1][e2-p1] | Detalle de entidad | Nombre/resumen/fuente | Identificación/retorno | Volver | Productos | Ficha completa real, sin instancia hoy | C; DEP-06 |
+| P1 | Identificar recurso | H1 nombre real | [P1][e2-p1] | Detalle de entidad | Nombre/resumen/fuente | Identificación/retorno | Volver | AI Labs | Ficha completa real, sin instancia hoy | C; DEP-06 |
 | P2 | Evaluar utilidad/límites | H2 modelo Para qué sirve y qué conviene tener en cuenta | [P2][e2-p2] | Detalle narrativo | Necesidad/público/contexto/límites | Explicación proporcional | Lectura | Fuentes pertinentes | Datos requeridos según recurso | C; DEP-06 |
 | P3 | Explicar papel IA | H2 modelo Qué papel tiene la inteligencia artificial | [P3][e2-p3] | Atributos de entidad | Área/tipo/IA con fuente | Atributos y explicación | Lectura | Sin páginas de categoría | IA integrada/construcción diferenciadas | C; DEP-06 |
 | P5 | Atribuir creación/procedencia | H2 modelo Quién lo creó y cómo se relaciona con AI PlayGrounds | [P5][e2-p5] | Atributos/relaciones | Creador/original/relación; Labs separado | Atribución junto al objeto | Abrir referencia si existe | Fuente; vínculo acreditado | Nunca asumir propiedad o aval | C; DEP-06/04 |
@@ -223,7 +213,6 @@ La tabla siguiente especifica la primera versión implementable en entorno de de
 | Empresas | Contexto institucional/comercial para organizaciones; `/empresas/` | H1 «Conectemos tu organización con el trabajo en IA»; EM1 → EM2 → EM3 → EM4 → EM5 → EM6 | Cuatro campos; cuatro hitos; dos caminos y un formulario (§9) | Construir texto y contrato del formulario, no activar sin DEP-02/03; EM4 solo explicación + Labs; no servicios técnicos inferidos de eventos |
 | Comunidad | Participación general e historia; `/comunidad/` | H1 «La IA nos reúne. La comunidad está abierta.»; C1 → C3 → C4 → C6 → C7 | Cuatro Luma y otros hitos C3; WhatsApp reutilizado desde C1/C6; ningún futuro actual | Separar pasado/futuro sin encabezado futuro vacío; sin admisión general o reclutamiento; microcopy que presupone enlace activo solo cuando DEP-01 se resuelva |
 | AI Labs | Contextualizar iniciativas tempranas; `/ai-labs/` | H1 «AI Labs: las ideas en su etapa temprana»; B1 → B2 → B3 condicional → B4 → B5 | Modelo de iniciativas sin entradas; navegación Inicio I3, colecciones y Comunidad | B1/B2/B4/B5 permanecen; B3/heading/listado no se imprimen vacíos; nada de incubación, acceso a proyectos o fichas de iniciativas |
-| Productos | Explicar/evaluar recursos; `/productos/` | H1 final «Explora productos y herramientas de IA»; DP1 → DP2 condicional → DP3 condicional → DP4 | Criterios institucionales sí; productos/filtros cero; Inicio en DP4 | Sin fichas/listas/filtros vacíos o postulación no operativa; future cards y fichas reutilizan mismo registro; SEO title/meta description de E2 sin cambio |
 | Investigación | Explicar descubrimiento de originales; `/investigacion/` | H1 final «Investigaciones y trabajos relacionados con IA»; DI1 → DI2 condicional → DI3 condicional → DI4 | Explicación y enlace Inicio; cero originales/filtros actuales | No herramientas bibliográficas como trabajos, guía APA o revisión científica inferida; no postulación activa. Metadata de E2 sin cambio |
 | Equipo | Identificar estructura y personas; `/equipo/` | H1 «Las personas que impulsan AI PlayGrounds»; E1 → E2 → E3 condicionada por permisos → E4 | Roster lógico 15 con roles múltiples; datos autorizados progresivos | Preparar los 15 registros internos, publicar solo autorizados; no perfiles independientes, bios/fotos vacías o duplicación de Jhonatan; estructura colectiva no se omite por falta de fotos |
 
@@ -278,7 +267,7 @@ Los nombres de claves y enums técnicos siguientes son **PROPUESTOS**; represent
 
 | Campo | Tipo | Condición / relación |
 |---|---|---|
-| `pageKey`, `route` | string / ruta local | R; una de las ocho páginas; ruta técnica validada según §2 |
+| `pageKey`, `route` | string / ruta local | R; una de las siete páginas; ruta técnica validada según §2 |
 | `seoTitle`, `metaDescription`, `h1` | strings | R; literales de cabecera E2; no generar desde keyword principal |
 | `sectionIds` | lista ordenada de IDs | R; exactamente los de la página en §3; preservar saltos, no renumerar |
 | Copy por sección | Markdown específico de página | R donde existe copy; separar encabezados/cuerpo/acciones de notas documentales |
@@ -357,7 +346,7 @@ Presentación en B3, no página de iniciativa. Cero registros ahora. Fuente: E2 
 | `usageUrl`, `price`, restricciones | URL / objeto / texto | C según existencia y relevancia; precio material y destino verificados antes de anunciar acceso |
 | Metadata de ficha | SEO title/meta description/H1 | R para ruta publicable, según esquema E2; nombre real, no keyword automática |
 
-DP3 deriva nombre, utilidad/público, IA, creador/procedencia, estado/acceso y destino del mismo registro que P1–P9. Ningún objeto necesita duplicarse por vertical, pertenencia a Labs o alias. Fuente: E2 DP3, P1–P9 y condiciones del modelo P9.
+El directorio de AI Labs deriva nombre, utilidad/público, IA, creador/procedencia, estado/acceso y destino del mismo registro que P1–P9. Ningún objeto necesita duplicarse por vertical, pertenencia a Labs o alias. Fuente: E2 B3, P1–P9 y condiciones del modelo P9.
 
 ### 5.8 Investigaciones y trabajos originales
 
@@ -392,15 +381,15 @@ Fuente: E2 E3, EST roster. No exponer gobierno, remuneraciones o acuerdos intern
 
 **APROBADO · E2 apertura, notas por sección, cierre y EST §15:**
 
-- Ocho páginas institucionales conservan explicaciones y estructura. Listados, filtros, detalles y CTA dependientes de registros solo se muestran con datos suficientes, originales y permisos pertinentes. No renderizar su heading aislado o un contenedor vacío para conservar visualmente «52 secciones».
-- AI Labs: sin entradas elegibles, B1/B2/B4/B5 mantienen copy; B3 conserva modelo pero no produce listado vacío. Productos: DP1 y continuidad institucional DP4 permanecen; DP2/DP3 no producen controles/listado sin corpus. Investigación aplica la misma regla a DI1/DI4 frente a DI2/DI3. Conservar todas las funciones en la implementación/modelo, no eliminarlas de la arquitectura.
+- Siete páginas institucionales conservan explicaciones y estructura. Listados, filtros, detalles y CTA dependientes de registros solo se muestran con datos suficientes, originales y permisos pertinentes. No renderizar su heading aislado o un contenedor vacío.
+- AI Labs: sin entradas elegibles, B1/B2/B4/B5 mantienen copy; B3 conserva modelos de iniciativas y productos pero no produce listado vacío. Investigación aplica la misma regla a DI1/DI4 frente a DI2/DI3.
 - No mostrar «contenido pendiente», tokens, skeletons permanentes, registros demo, «próximamente» o placeholders editoriales. La ausencia deliberada de inventario no se soluciona inventándolo. Tampoco se promete una colección llena.
 - No crear fichas o enlaces de objetos no identificados. Si hay entradas retenidas o incompletas, no contarlas como publicadas ni incluirlas en sitemap, búsquedas, JSON cliente o datos estructurados. Retener la instancia, no bloquear las explicaciones institucionales del sitio.
 - No publicar eventos futuros sin confirmación; fechas pasadas/periodos históricos no son convocatorias actuales. No cursos actuales, matrícula, certificados, modalidad o listas de espera inferidos de 2025.
 - No atribuir producto/trabajo externo a AI PlayGrounds ni convertir un host, sede, enlace o logo en relación de organización/autoría/cliente. Conservar fuente y alcance cerca de la cifra o claim, incluso si un fragmento se lee aislado.
 - No transformar coorganización de hackathons en evidencia de software empresarial, implementación de IA, consultoría financiera, clientes o resultados económicos. Formación personalizada es una conversación evaluable de AI Academy, no oferta cerrada.
 - No duplicar personas; no publicar datos/materiales personales sin autorización pertinente. Material opcional ausente se omite, sin completar bios con IA ni buscar fotografías por iniciativa propia.
-- C7 no tiene captación interna; DP4/DI4 no tienen postulación activa. Aprobación editorial no activa procesos inexistentes ni significa permiso general de publicación.
+- C7 no tiene captación interna; las propuestas de productos y DI4 no tienen postulación activa. Aprobación editorial no activa procesos inexistentes ni significa permiso general de publicación.
 
 **PROPUESTO · filtro técnico de visibilidad:** obtener primero registros elegibles, luego proyectar resúmenes y, finalmente, calcular opciones de exploración útiles. La plantilla consume esa proyección, no todos los campos internos. Si el conjunto es cero, no renderizar listado/filtros/heading de resultados; mantener explicación/navegación institucional. No cambiar autoría, fechas o permisos desde la UI.
 
@@ -602,13 +591,13 @@ Los responsables siguientes son **roles de resolución**, no asignaciones person
 | DEP-03 | Bloquea funcionalidad / decisión técnica | Canal/envío/recepción del formulario PENDIENTES | Un formulario, selección, validaciones, estados preparados sin envío real | Envío/éxito hasta canal autorizado, recepción comprobada y errores/reintentos probados; sin backend supuesto | Desarrollo + responsable operativo, durante desarrollo autorizado |
 | DEP-04 | Bloquea dato/entrada personal | Autorizaciones de nombre/rol/material PENDIENTES cuando correspondan | Roster interno 15, estructura y modelo | Solo unidad/campo no autorizado en E3 o atribuciones; no la página institucional completa | Coordinación + persona, antes de publicar dato |
 | DEP-05 | Dato aún no aportado | Inventario Labs no confirmado | B1/B2/B4/B5 y modelo B3 | B3/recursos de iniciativas hasta registro real completo, vínculo/estado/permisos | Responsable de iniciativa/curación, por ingreso |
-| DEP-06 | Dato aún no aportado / entrada específica | Productos/originales/licencias/acceso sin registros | DP1/DP4 y modelos de listado/ficha | DP3/ficha/acción por producto hasta campos R y fuente/permiso; no llenar con herramientas de Luma automáticamente | Curación/creador, por ingreso |
+| DEP-06 | Dato aún no aportado / entrada específica | Productos/originales/licencias/acceso sin registros | AI Labs y modelos de listado/ficha | Ficha/acción por producto hasta campos R y fuente/permiso; no llenar con herramientas de Luma automáticamente | Curación/creador, por ingreso |
 | DEP-07 | Dato aún no aportado / entrada específica | Investigaciones/originales sin registros | DI1/DI4 y modelos | DI3/ficha por trabajo hasta original, autoría, método/situación de resultados y permisos | Curación/autores, por ingreso |
 | DEP-08 | Datos deliberadamente inexistentes hoy | Sin próximos eventos ni programas públicos vigentes | Historia C3/F4 y modelos futuros | Solo convocatorias nuevas hasta confirmación/condiciones/destino; no bloqueo de salida institucional | Comunidad/Academy, al decidir nueva actividad/oferta |
 | DEP-09 | Materiales opcionales | Fotos/bios/enlaces/portadas/logos/recursos gráficos no aportados/autorizados | Texto/atributos autorizados sin campos visuales vacíos | Material particular, no sección por simetría; permiso, procedencia y alt antes de incorporarlo | Fuente del material + contenido, por incorporación |
 | DEP-10 | Decisión técnica | Rutas finales/origen canónico/configuración Astro/Workers/CI/seguridad sin especificación detallada | Mapa editorial, schemas/plantillas y navegación de destino | Despliegue público, canonical absoluto y verificaciones de infraestructura hasta valores/configuración aprobados | Desarrollo + propietario/SEO, antes de lanzamiento |
 | DEP-11 | Decisión técnica dependiente de corpus | Filtros/valores/soporte no definidos | Campos comparables, sin controles vacíos | Interacciones de exploración hasta datos útiles/soporte/copy de estados pertinentes; no nueva página por filtro | Desarrollo + curación, con corpus real |
-| DEP-12 | Funcionalidad no habilitada | Proponer productos/trabajos sin proceso/canal confirmado | Continuidad institucional DP4/DI4 | Captación de propuestas, no listados ni navegación; requiere nueva confirmación operativa | Propietario/curación, si se habilita |
+| DEP-12 | Funcionalidad no habilitada | Proponer productos/trabajos sin proceso/canal confirmado | AI Labs y continuidad institucional DI4 | Captación de propuestas, no listados ni navegación; requiere nueva confirmación operativa | Propietario/curación, si se habilita |
 | DEP-13 | Estado de publicación | Aprobación editorial sí; autorización de publicación no | Desarrollo privado solo cuando se autorice aparte; QA de contenido | Lanzamiento público hasta autorización y revisión de funciones/datos aún retenidos | Responsable del proyecto, antes de publicar |
 
 **Resuelto, no pedir de nuevo:** tratamiento de colecciones sin entradas (EST §15/E221-C), dos H1 finales, cuatro verticales, 15 identidades y PR, comunidad abierta/equipo cerrado, formulario único/dos tipos y formación personalizada potencial. No reabrir Research/SEO/B2/E1 para completar inventarios o elegir colores/componentes.
@@ -620,7 +609,7 @@ Este checklist es para el futuro agente y la revisión humana. Las casillas no e
 ### 13.1 En desarrollo local/entorno privado autorizado
 
 - [ ] Ocho páginas base y dos plantillas de ficha, con las rutas editoriales de §2 o equivalencia técnica registrada. Cero páginas extra de eventos, verticales, programas, integrantes o iniciativas.
-- [ ] Registro de los 52 IDs y su orden por página coincide con §3/E1/E2. Las secciones condicionales no renderizadas sin datos están cubiertas en modelo/pruebas, no eliminadas o contadas como contenido público terminado.
+- [ ] Registro de los 48 IDs y su orden por página coincide con §3/E2 vigente. Las secciones condicionales no renderizadas sin datos están cubiertas en modelo/pruebas, no eliminadas o contadas como contenido público terminado.
 - [ ] Copy de E2, H1 y metadatos fieles; últimas correcciones de Productos/Investigación presentes. Diferenciar notas internas y texto visible, sin tokens, estados A–E o referencias de trabajo como copy público.
 - [ ] Navegación global, enlaces contextuales a I3/C3/F4/EM5/EM6, retornos de fichas y destinos externos resuelven correctamente; no autolink vacío a Formación o enlace a ficha inexistente.
 - [ ] Las cuatro verticales mantienen su orden/nombres y no se convierten en cursos/servicios; Academy/Labs/comunidad conservan funciones distintas.
@@ -634,7 +623,7 @@ Este checklist es para el futuro agente y la revisión humana. Las casillas no e
 - [ ] Cinco campos siempre obligatorios (tipo, nombre, organización, correo, contexto); cargo/país opcionales; consentimiento solo bajo condición legal. No campos adicionales exigidos.
 - [ ] Validaciones distinguen vacío/formato, preservan contexto al corregir y usan mensajes E2; éxito/error no se disparan por clic o timer. Hasta existir canal, no se confunde prueba privada de UI con recepción real.
 - [ ] Equipo lógico de 15 personas con PER02 una sola vez y dos responsabilidades; Appu Public Relations, Edhú Nuñez/Kevin Huaman exactos; sin datos/materiales no autorizados o bios inventadas.
-- [ ] Ninguna captación de equipo interno; DP4/DI4 no muestran postulaciones sin proceso.
+- [ ] Ninguna captación de equipo interno; AI Labs y DI4 no muestran postulaciones sin proceso.
 - [ ] Contenido/navegación/formulario operables por teclado y lector de pantalla, foco visible, ayudas/errores asociados, encabezados coherentes, imágenes con alt pertinente. Verificaciones manuales y automáticas disponibles registradas, no certificación por usar componentes.
 - [ ] Responsive en móvil/escritorio y zoom/reflow; no texto, comparación o acción esencial recortados. Lucide no sustituye labels; no interacción dependiente solo de hover/color.
 - [ ] Astro + TypeScript strict + Tailwind CSS 4 + Starwind UI + Lucide; React Islands solo con necesidad documentada. No motor universal, CMS, base de datos o servicios añadidos sin aprobación.
@@ -666,8 +655,7 @@ src/
     empresas.astro
     comunidad.astro
     ai-labs.astro
-    productos/index.astro
-    productos/[slug].astro                 # Solo genera instancias reales elegibles
+    # Ficha de producto: ruta pendiente de definición; solo instancias reales elegibles
     investigacion/index.astro
     investigacion/[slug].astro             # Solo genera instancias reales elegibles
     equipo.astro
@@ -765,10 +753,6 @@ No se ejecutaron build, pruebas de frontend o despliegue porque solo se ha cread
 [e2-b3]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#b3--iniciativas-y-productos-tempranos
 [e2-b4]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#b4--productos-e-investigación
 [e2-b5]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#b5--participación-y-continuidad
-[e2-dp1]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#dp1--universo-y-criterios
-[e2-dp2]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#dp2--exploración
-[e2-dp3]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#dp3--productos-de-la-colección
-[e2-dp4]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#dp4--conoce-ai-playgrounds-y-aporta-un-producto
 [e2-di1]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#di1--universo-y-tipos
 [e2-di2]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#di2--exploración
 [e2-di3]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#di3--trabajos-de-la-colección

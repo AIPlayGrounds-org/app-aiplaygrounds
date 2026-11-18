@@ -52,9 +52,9 @@ El wizard operativo de Turnstile no se ejecuta: no existe backend aún y el enca
 | Fuente | Prioridad y uso |
 | --- | --- |
 | Encargo de Etapa 1 | Stack, alcance técnico, límites y tres aprobaciones; Brevo/Turnstile/analítica previstos, detalles por concretar |
-| [E1](../../content/entregables-cliente/01-direccion-contenido-estructura/direccion-contenido-estructura-web.md) | Arquitectura editorial: ocho páginas, dos tipos, orden, voz y recorridos |
+| [E1](../../content/entregables-cliente/01-direccion-contenido-estructura/direccion-contenido-estructura-web.md) | Snapshot editorial y actualización posterior: siete páginas, dos tipos, orden, voz y recorridos |
 | [E2](../../content/entregables-cliente/02-contenido-web/contenido-web.md) | Copy público literal, H1/metadatos y modelos; prevalecen sus precisiones posteriores conforme al handoff §1.3 |
-| [Content Handoff](content-handoff.md) | Contrato de transición: §§2–6 rutas/52 IDs/modelos; §§7–10 canales/personas; §§11–13 SEO y aceptación |
+| [Content Handoff](content-handoff.md) | Contrato de transición: §§2–6 rutas/48 IDs/modelos; §§7–10 canales/personas; §§11–13 SEO y aceptación |
 | Esta arquitectura | Organización técnica propuesta; nunca habilita por sí sola una unidad editorial o personal retenida |
 | Skills/documentación oficial | APIs y restricciones técnicas; verificar contra versiones fijadas, no copiar ejemplos sin revisión |
 
@@ -208,7 +208,7 @@ src/
     empresas.astro
     comunidad.astro
     ai-labs.astro
-    productos/{index,[slug]}.astro
+    # Ficha de producto: ruta pendiente de definición
     investigacion/{index,[slug]}.astro
     equipo.astro
 public/
@@ -243,17 +243,16 @@ Adoptar las rutas del handoff, `trailingSlash: 'always'`, salida Astro `build.fo
 | Empresas | `/empresas/` | EM1 → EM2 → EM3 → EM4 → EM5 → EM6 |
 | Comunidad | `/comunidad/` | C1 → C3 → C4 → C6 → C7 |
 | AI Labs | `/ai-labs/` | B1 → B2 → B3 → B4 → B5 |
-| Productos | `/productos/` | DP1 → DP2 → DP3 → DP4 |
 | Investigación | `/investigacion/` | DI1 → DI2 → DI3 → DI4 |
 | Equipo | `/equipo/` | E1 → E2 → E3 → E4 |
-| Producto, plantilla | `/productos/{slug}/` | P1 → P2 → P3 → P5 → P6 → P7 → P9 |
+| Producto, plantilla | Pendiente de definición | P1 → P2 → P3 → P5 → P6 → P7 → P9 |
 | Investigación, plantilla | `/investigacion/{slug}/` | R1 → R2 → R4 → R5 → R6 → R7 |
 
-**39 bloques institucionales + 13 de plantillas = 52 IDs**, no 52 componentes ni 52 bloques visibles obligatoriamente. Enlaces contextuales: `/#I3`, `/comunidad/#C3`, `/formacion/#F4`, `/empresas/#EM5` y `/empresas/#EM6`. Los destinos condicionales no producen enlaces a secciones ausentes. La marca lleva a `/`; siete accesos globales y los dos tipos de detalle son independientes de Labs. No páginas de programas/eventos/personas/iniciativas/verticales/facetas. Una respuesta técnica 404 o POST API no cuenta como página editorial nueva. No se fija ruta legal adicional.
+**35 bloques institucionales + 13 de plantillas = 48 IDs**, no 48 componentes ni 48 bloques visibles obligatoriamente. Enlaces contextuales: `/#I3`, `/comunidad/#C3`, `/formacion/#F4`, `/empresas/#EM5` y `/empresas/#EM6`. Los destinos condicionales no producen enlaces a secciones ausentes. La marca lleva a `/`; seis accesos globales incluyen AI Labs como directorio de productos e Investigación como página independiente. No páginas de programas/eventos/personas/iniciativas/verticales/facetas. Una respuesta técnica 404 o POST API no cuenta como página editorial nueva. No se fija ruta legal adicional.
 
 ### 7.2 Collections, loaders e identidad
 
-Usar API Content Layer de build en `src/content.config.ts`, `defineCollection`, `file`/`glob`, Zod de Astro según versión fijada, `reference`, `getCollection/getEntry` y `render`. No API legacy ni colecciones live. `pages` se carga desde `src/data/pages.json` (ocho registros), con bloques narrativos Markdown específicos referidos por ruta permitida; esos fragmentos no son ocho páginas extra ni una octava collection lógica. Resolverlos solo durante build mediante imports Markdown compilados por Astro (`Content`), con mapa de `import.meta.glob` confinado a `src/content/pages/`; cada página compone sus bloques explícitos, no un motor genérico. Validar existencia, IDs, frontmatter mínimo de bloque y headings; rechazar HTML arbitrario y MDX. No escribir parser Markdown ni depender de imports privados de paquetes transitivos.
+Usar API Content Layer de build en `src/content.config.ts`, `defineCollection`, `file`/`glob`, Zod de Astro según versión fijada, `reference`, `getCollection/getEntry` y `render`. No API legacy ni colecciones live. `pages` se carga desde `src/data/pages.json` (siete registros), con bloques narrativos Markdown específicos referidos por ruta permitida; esos fragmentos no son páginas extra ni una collection lógica adicional. Resolverlos solo durante build mediante imports Markdown compilados por Astro (`Content`), con mapa de `import.meta.glob` confinado a `src/content/pages/`; cada página compone sus bloques explícitos, no un motor genérico. Validar existencia, IDs, frontmatter mínimo de bloque y headings; rechazar HTML arbitrario y MDX. No escribir parser Markdown ni depender de imports privados de paquetes transitivos.
 
 Las otras seis collections usan `glob` exclusivamente en su subcarpeta `src/content/`. JSON para actividades/personas; Markdown y frontmatter para programas/iniciativas/productos/investigación. Carpetas sin entradas son válidas: conservarlas mediante documentación fuera del patrón del loader o archivos ignorados por este, nunca un registro demo.
 
@@ -296,14 +295,14 @@ Permisos: guardar únicamente estado de autorización/alcance y referencia opaca
 | Conjunto vacío/retenido | Comportamiento verificable |
 | --- | --- |
 | Initiatives | B1/B2/B4/B5 visibles; B3 y su heading/listado ausentes |
-| Products | DP1/DP4 institucionales; DP2/DP3 sin controles, listados ni headings vacíos |
+| Products | Directorio integrado en AI Labs; sin controles, listados ni headings vacíos |
 | Research | DI1/DI4 institucionales; DI2/DI3 ausentes como interacción/listado vacío |
 | Programs vigentes / eventos futuros | Historia/estado actual de F4/C3 permanecen; ningún catálogo, próxima edición, inscripción o waitlist |
 | People sin permisos | Mantener estructura E1/E2/E4; no E3 aislado vacío ni retratos placeholders; publicar progresivamente solo campos permitidos |
 | Canal WhatsApp ausente | Sin enlace, token o instrucción que afirme enlace operativo; conservar copy institucional no dependiente del destino |
 | Formulario sin canal/política | Conservar caminos informativos EM5/EM6; sin controles de captación ni CTA que aparenten envío disponible |
 
-Filtros DP2/DI2 no se implementan en salida inicial sin corpus. Con corpus, evaluar utilidad, taxonomía y copy de estados antes de incorporarlos; solución preferida futura: filtros pequeños client-side sobre proyección pública, sin rutas por faceta, buscador externo o React por defecto. No agregar «sin resultados» no aprobado ni taxonomías de muestra.
+Filtros de productos y DI2 no se implementan en salida inicial sin corpus. Con corpus, evaluar utilidad, taxonomía y copy de estados antes de incorporarlos; solución preferida futura: filtros pequeños client-side sobre proyección pública, sin rutas por faceta, buscador externo o React por defecto. No agregar «sin resultados» no aprobado ni taxonomías de muestra.
 
 Detalle se genera solo para producto/research real elegible y con todos sus bloques requeridos. `getStaticPaths` puede devolver `[]`; desconocidos devuelven **404 real**, no SPA 200 ni ficha vacía. Al retirar una entrada, actualizar listados/relaciones/sitemap en el mismo build; conservar slug y, si se sustituye por objeto equivalente, redirect explícito. Sin sustituto, 404; 410 solo si el retiro permanente está confirmado y se justifica tratamiento adicional. Historia válida se conserva como pasado sin CTA de registro; no borrar por antigüedad.
 
@@ -513,7 +512,7 @@ Monitorización proporcional: Workers Logs y Traces con muestreo explícito bajo
 | --- | --- | --- |
 | Tipos | TypeScript strict, Astro Check, tipos Worker generados por CLI | Sin errores; incluye scripts/tests/config; `astro build` por sí solo no hace todo el typecheck |
 | Estilo | ESLint con soporte Astro/TS y Prettier + plugin Astro | Reglas proporcionales, sin autoformat de E1/E2/handoff; excluir fuentes históricas y tools |
-| Contenido | Schemas de build + validación transversal | Ocho pages, 52 IDs/orden, metadata literal, referencias/fechas/URLs/permisos coherentes; colecciones vacías admitidas, elegible incompleto bloqueado |
+| Contenido | Schemas de build + validación transversal | Siete pages, 48 IDs/orden, metadata literal, referencias/fechas/URLs/permisos coherentes; colecciones vacías admitidas, elegible incompleto bloqueado |
 | Publicación | Tests de proyecciones, rutas/sitemap/output | Sin withheld/PII privada/modelos/tokens; no enlaces a detalles ausentes ni heading/listado vacío |
 | Unit/runtime | Tests TS y runtime Workers local, `node:test` donde baste; mocks fetch | Validators, flags, timeouts, origen, body streaming acotado, escape, respuesta proveedor y rate limits; sin red live en CI común |
 | Navegación E2E | `@playwright/test`, Chromium por PR, Firefox/WebKit en release | Ocho rutas 200, 404 real de ficha inexistente, redirects sin bucles, siete accesos, anclas exactas, destino E2, responsive y sin errores propios de consola |
@@ -616,7 +615,7 @@ Cuestiones irreversibles/materiales (nuevo pago, servicio, exposición de PII o 
 ## 18. Criterios de aceptación para comenzar implementación
 
 - [x] A1 humana registrada sobre ambos documentos: Wrangler 4 y excepción expresa de §4.3.
-- [ ] E1/E2/handoff accesibles y versiones/hashes coincidentes; 8 rutas, 2 plantillas y 52 IDs conservados; ningún contenido reabierto.
+- [ ] E1/E2/handoff accesibles; 7 rutas principales, 2 plantillas y 48 IDs vigentes; verificar la actualización posterior de arquitectura.
 - [ ] Entendido el límite de publicación: campos, permisos, canales y entradas retenidos no se vuelven públicos por aprobación editorial o build.
 - [ ] SSG, runtime mínimo, siete modelos, Bootcamp canónico, proyecciones públicas y condiciones de vacíos adoptados como contrato de desarrollo.
 - [ ] Sistema de tokens y dirección light identificados como aplicación propuesta, no nuevo manual canónico; A2 sigue pendiente.

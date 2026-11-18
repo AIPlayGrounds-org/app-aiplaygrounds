@@ -1,0 +1,141 @@
+---
+import InteriorLayout from '../layouts/InteriorLayout.astro';
+import Button from '../components/starwind/button/Button.astro';
+const events = [
+  {
+    title: 'From Hack to Pilot: Perú Demo Day',
+    text: 'Un Demo Day de AI PlayGrounds y hack@latam dedicado a los proyectos de equipos peruanos que participaron en la hackathon. La convocatoria se centró en transparencia, riesgo climático y defensa, y en conectar proyectos con posibles usuarios y pilotos.',
+    detail:
+      '5 de junio de 2026, 19:00–21:00, hora de Perú (UTC−05:00). Presencial, UTEC Ventures, University of Engineering and Technology, Jr. Medrano Silva 165, Barranco, Lima. Responsables: AI PlayGrounds y hack@latam; anfitrión en Luma: AI PlayGrounds Community.',
+    url: 'https://luma.com/yzjagyu0',
+  },
+  {
+    title: 'Workshop Práctico de Claude Code',
+    text: 'Un workshop sobre el uso de Claude Code en el flujo de desarrollo: contexto del repositorio, modo agente, comandos e integraciones mediante MCP, con una demostración orientada a delegar tareas y mantener la revisión humana.',
+    detail:
+      '29 de abril de 2026, 19:00–21:00, hora de Perú (UTC−05:00). Virtual, Google Meet. Presentado por AI PlayGrounds; facilitador: Jhonatan Morgan. Anfitriones en Luma: AI PlayGrounds Community, Soledad Ñahui Sullca y Jhonatan Morgan.',
+    url: 'https://luma.com/gjk5qy7b',
+  },
+  {
+    title: 'Workshop Práctico de Cursor',
+    text: 'Una sesión práctica sobre capacidades de Cursor, tareas que conviene delegar y resultados que requieren validación. La propuesta incluyó una demo guiada y criterios para su adopción individual y en equipo, manteniendo el control del código.',
+    detail:
+      '22 de abril de 2026, 19:00–21:00, hora de Perú (UTC−05:00). Virtual, Google Meet; edición anunciada gratuita. Presentado por AI PlayGrounds; facilitador: Kevin Huaman. Anfitrión en Luma: AI PlayGrounds Community.',
+    url: 'https://luma.com/0bg0xu7s',
+  },
+  {
+    title: 'El mapa completo de asistentes de código con IA',
+    text: 'Una revisión del panorama de modelos, benchmarks, IDEs nativos de IA y agentes de terminal. La sesión planteó criterios de elección por perfil y riesgos de privacidad, dependencia y lock-in.',
+    detail:
+      '15 de abril de 2026, 19:00–21:00, hora de Perú (UTC−05:00). Virtual, Google Meet. Presentado por AI PlayGrounds; facilitador: Jhonatan Morgan. Anfitriones en Luma: AI PlayGrounds Community, Soledad Ñahui Sullca y Jhonatan Morgan.',
+    url: 'https://luma.com/0ott2q9m',
+  },
+];
+---
+
+<InteriorLayout
+  title="Comunidad de inteligencia artificial | AI PlayGrounds"
+  description="La comunidad de AI PlayGrounds está abierta. Recorre nuestros encuentros y workshops anteriores y conoce el grupo de WhatsApp."
+>
+  <section id="C1" class="page-hero">
+    <div class="site-container">
+      <h1>La IA nos reúne. La comunidad está abierta.</h1>
+      <div class="lead">
+        <p>
+          Nos reúne el interés por aprender, investigar, experimentar y
+          construir con inteligencia artificial. Los encuentros y workshops
+          forman parte de esa historia compartida.
+        </p>
+        <p>
+          Puedes sumarte a la comunidad general a través de nuestro grupo de
+          WhatsApp. Es un espacio para conectar con personas interesadas en IA y
+          compartir conocimiento.
+        </p>
+      </div>
+      <a class="interior-link" href="/#I3">
+        Nuestros cuatro campos de trabajo ↗
+      </a>
+    </div>
+  </section>
+  <section id="C3" class="interior-section">
+    <div class="site-container">
+      <h2>Encuentros que forman parte de nuestra historia</h2>
+      <p>
+        Desde 2025 organizamos encuentros y workshops alrededor de la
+        inteligencia artificial y coorganizamos actividades con otras
+        organizaciones. Aquí reunimos una selección de experiencias anteriores.
+      </p>
+      <div class="stack">
+        {events.map((event) => (
+          <article>
+            <h3>{event.title}</h3>
+            <p>{event.text}</p>
+            <p>{event.detail}</p>
+            <a class="interior-link" href={event.url}>
+              Ver {event.title} en Luma ↗
+            </a>
+          </article>
+        ))}
+        <article>
+          <h3>Otros hitos de la trayectoria</h3>
+          <p>
+            hack@latam · mayo de 2026: coorganizador; más de 1.200 postulantes,
+            56 equipos y 36 horas.
+          </p>
+          <p>
+            IA Hackathon · noviembre de 2025: coorganizador junto a The
+            Hackathon Company, Crafter Station y kebo; más de 800 postulantes y
+            22 equipos y proyectos.
+          </p>
+          <p>
+            The Real AI · julio de 2025: coorganizador junto a looper.ai y UTEC;
+            más de 150 participantes y 7 speakers.
+          </p>
+          <p>
+            Bootcamp Gen AI Fundamentals · 2025: organizador; edición práctica y
+            gratuita de seis semanas, con más de 300 inscritos y 16 speakers de
+            Perú, Colombia y Estados Unidos.
+          </p>
+          <p>
+            Los datos de los eventos coorganizados corresponden al evento
+            completo. El bootcamp es un antecedente formativo, sin inscripción
+            vigente.
+          </p>
+          <a class="interior-link" href="/formacion/#F4">
+            La trayectoria formativa del bootcamp ↗
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="C4" class="interior-section">
+    <div class="site-container split-section">
+      <h2>Un espacio abierto para conectar alrededor de la IA</h2>
+      <div class="prose">
+        <p>
+          El grupo es la vía de acceso a la comunidad general. Las actividades
+          tienen sus propias condiciones, que se consultan junto a cada
+          convocatoria.
+        </p>
+        <p>
+          Participar en la comunidad o en un encuentro es distinto de formar
+          parte del equipo organizador.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="C7" class="interior-section">
+    <div class="site-container">
+      <h2>Acércate también al trabajo de AI Labs</h2>
+      <p>
+        Si tu interés está en las ideas que se experimentan y construyen, AI
+        Labs presenta el contexto de nuestras iniciativas tempranas.
+      </p>
+      <div class="interior-actions">
+        <Button href="/ai-labs/" variant="primary">
+          Explorar AI Labs
+        </Button>
+      </div>
+    </div>
+  </section>
+</InteriorLayout>

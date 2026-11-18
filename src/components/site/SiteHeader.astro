@@ -1,13 +1,16 @@
 ---
 const links = [
-  ['Formación', '/formacion/'],
-  ['Empresas', '/empresas/'],
   ['Comunidad', '/comunidad/'],
+  ['Formación', '/formacion/'],
   ['AI Labs', '/ai-labs/'],
-  ['Productos', '/productos/'],
   ['Investigación', '/investigacion/'],
   ['Equipo', '/equipo/'],
 ];
+const audience = [
+  ['Personas', '/'],
+  ['Empresas', '/empresas/'],
+];
+const pathname = Astro.url.pathname;
 ---
 
 <header class="site-header">
@@ -15,9 +18,18 @@ const links = [
     <a href="/" class="brand" translate="no">
       AI PlayGrounds
     </a>
+    <nav class="audience-nav desktop-nav" aria-label="Recorridos">
+      {audience.map(([label, href]) => (
+        <a href={href} aria-current={pathname === href ? 'page' : undefined}>
+          {label}
+        </a>
+      ))}
+    </nav>
     <nav class="desktop-nav" aria-label="Navegación principal">
       {links.map(([label, href]) => (
-        <a href={href}>{label}</a>
+        <a href={href} aria-current={pathname === href ? 'page' : undefined}>
+          {label}
+        </a>
       ))}
     </nav>
     <details class="mobile-nav">
@@ -28,8 +40,20 @@ const links = [
         </span>
       </summary>
       <nav aria-label="Navegación móvil">
+        <div class="mobile-audience">
+          {audience.map(([label, href]) => (
+            <a
+              href={href}
+              aria-current={pathname === href ? 'page' : undefined}
+            >
+              {label}
+            </a>
+          ))}
+        </div>
         {links.map(([label, href]) => (
-          <a href={href}>{label}</a>
+          <a href={href} aria-current={pathname === href ? 'page' : undefined}>
+            {label}
+          </a>
         ))}
       </nav>
     </details>
@@ -49,12 +73,13 @@ const links = [
 </script>
 <style>
   .site-header {
-    border-bottom: 1px solid var(--border);
-    position: relative;
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
     z-index: 5;
   }
   .header-inner {
-    min-height: 5.5rem;
+    min-height: 4.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,6 +108,17 @@ const links = [
   }
   .desktop-nav a:hover {
     text-decoration: underline;
+  }
+  .desktop-nav a[aria-current='page'],
+  .mobile-nav a[aria-current='page'] {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.35em;
+  }
+  .audience-nav {
+    margin-right: auto;
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--foreground);
   }
   .mobile-nav {
     display: none;
@@ -129,6 +165,13 @@ const links = [
       background: var(--background);
       padding: 1rem clamp(1rem, 4vw, 3rem) 1.5rem;
       border-bottom: 1px solid var(--input);
+      max-height: calc(100dvh - 4.5rem);
+      overflow-y: auto;
+    }
+    .mobile-audience {
+      padding-bottom: 0.75rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 2px solid var(--foreground);
     }
     .mobile-nav nav a {
       display: block;

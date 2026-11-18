@@ -2,7 +2,9 @@
 
 **Vigencia E221-C · 05/11/2026:** E2 v2.1 **APROBADO EDITORIALMENTE** por el mensaje humano «Cierre editorial de E2 v2.1», tras los dos ajustes H1 y la decisión de colecciones sin entradas registrados en §15. No autoriza publicación ni implementación. E1 v2.2 permanece snapshot aprobado e intacto; B2, Gate B e investigación se conservan. §§1–14 mantienen los cortes anteriores y sus dependencias no sustituidas.
 
-**Fecha:** 05/11/2026. **Estado: dirección APROBADA mediante E1 v2.2 por E122 (Prompt4/4).**8 páginas,2 tipos y52 secciones vinculantes; E2 v2 se desarrolla como borrador para revisión. Gate A conservado y Gate B aprobado GB22; [B2](../01-brief-diagnostico/diagnostico-b2.md) conservada. Las menciones PROPUESTA de las tablas describen el corte de diseño aprobado,salvo condiciones factuales/operativas aún pendientes. No son permiso de publicación de datos. Contrato SEO/AEO/GEO v1:requisitos definidos,datos y ejecución pendientes. [Snapshot v2.1](revision-e1-v2.2/previous/estrategia-v2.1.md) histórico.
+**Decisión posterior del usuario:** la arquitectura vigente tiene siete páginas principales; AI Labs es el directorio de productos y Productos deja de ser una página independiente. Se conservan Investigación y los dos modelos de ficha, sin instancias ficticias; la ruta de las fichas de producto queda pendiente. Esta decisión sustituye las referencias anteriores a ocho páginas y a Productos como directorio independiente. La aprobación anterior no autoriza publicación.
+
+**Fecha histórica:** 05/11/2026. **Estado: dirección APROBADA mediante E1 v2.2 por E122 (Prompt4/4).**8 páginas,2 tipos y52 secciones vinculantes; E2 v2 se desarrolla como borrador para revisión. Gate A conservado y Gate B aprobado GB22; [B2](../01-brief-diagnostico/diagnostico-b2.md) conservada. Las menciones PROPUESTA de las tablas describen el corte de diseño aprobado,salvo condiciones factuales/operativas aún pendientes. No son permiso de publicación de datos. Contrato SEO/AEO/GEO v1:requisitos definidos,datos y ejecución pendientes. [Snapshot v2.1](revision-e1-v2.2/previous/estrategia-v2.1.md) histórico.
 
 ## 1. Estado y decisiones de partida
 

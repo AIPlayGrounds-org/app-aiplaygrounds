@@ -40,7 +40,7 @@ flowchart LR
 | **1 · Arquitectura — P01** | Auditar y fijar decisiones; depende de repo real y fuentes aprobadas | Dos documentos; especificación sin implementación, audit/ADR/riesgos/roadmap | Checks documentales, fuentes preservadas y commit; termina para ejecución al obtener A1 |
 | **2 · Base técnica — P02–P03** | Aplicación mínima y camino reproducible; depende de A1 y elección CLI | Setup tipado, target Worker, lockfiles/checks, CI y definición de previews seguros | Build/checks locales + empaquetado; CI sin secretos; preview protegido solo si autorizado y disponible; sin producción |
 | **3 · Dirección visual — P04–P05** | Probar identidad web antes de extenderla; depende de base y assets permitidos | Tokens/Starwind, layout y muestra implementada con copy real | Responsive/a11y/perf y capturas; A2 sobre dirección implementada, no mockup ficticio |
-| **4 · Contenido — P06–P07** | Preparar publicación controlada; depende de contrato técnico/editorial, no de inventario nuevo | Siete modelos, extracción pública explícita, selecciones/relaciones y validadores | 8 páginas/52 IDs, hashes/meta/copy, Bootcamp único, cero fichas demo; permiso ausente retiene dato |
+| **4 · Contenido — P06–P07** | Preparar publicación controlada; depende de contrato técnico/editorial, no de inventario nuevo | Siete modelos, extracción pública explícita, selecciones/relaciones y validadores | 7 páginas/48 IDs, hashes/meta/copy, Bootcamp único, cero fichas demo; permiso ausente retiene dato |
 | **5 · Website — P08–P09** | Completar composición institucional y plantillas; depende de A2/modelos | Ocho rutas reales y dos tipos condicionales, navegación/contexto/vacíos/404 | Matriz handoff cubierta, enlaces/anclas/estados correctos; sin inventar corpus ni activar captación |
 | **6 · Integraciones — P10–P11** | Contacto y medición seguros; depende de páginas, contrato API y datos legales/operativos para activación | EM6 único, Worker/Turnstile/Brevo, consentimiento, GA4/Clarity/Search Console preparados | Mocks/unit/E2E; live controlado solo autorizado, sin falsos éxitos; pendientes aislados no frenan resto |
 | **7 · QA integral — P12–P13** | Cerrar regresiones y riesgos; depende de sitio integrado | Evidencia automatizada/manual, correcciones, auditoría output, seguridad/perf/runbook | Criterios de arquitectura §14 y handoff §13 satisfechos o funciones retenidas explícitas; sin nuevo gate |
@@ -107,7 +107,7 @@ Los comandos concretos se fijan en los manifiestos durante P02/P03; los nombres 
 - **Dependencias:** A1, P02 y contrato handoff §§5–6; el orden principal sitúa esta etapa después de A2.
 - **Alcance:** siete modelos lógicos Content Layer, loaders acotados, pages y fragmentos Markdown específicos, IDs/slug estables, fechas de precisión variable, schemas de borrador/elegible y proyecciones allowlist. Tests fuera de contenido público.
 - **Entregables:** `src/content.config.ts`, utilidades mínimas de consulta/validación, mapa de rutas/IDs y tests de completitud/estado/permisos/referencias.
-- **Validaciones:** exactitud de ocho pages/52 IDs, IDs PER sin normalización accidental, schema inválido falla, vacío válido, relaciones inexistentes rechazadas, ninguna ruta de entidad sin elegibilidad.
+- **Validaciones:** exactitud de siete pages/48 IDs, IDs PER sin normalización accidental, schema inválido falla, vacío válido, relaciones inexistentes rechazadas, ninguna ruta de entidad sin elegibilidad.
 - **Criterio de finalización:** modelos permiten estado real sin inventarlo; no motor universal, lectura de `content/internal/` en loader, catálogo de muestra o serialización completa al cliente.
 
 ### P07 — Traslado público y datos compartidos · Etapa 4
@@ -123,17 +123,17 @@ Los comandos concretos se fijan en los manifiestos durante P02/P03; los nombres 
 
 - **Objetivo:** completar los recorridos y composición del website institucional.
 - **Dependencias:** A2, P06–P07, layouts/tokens de P04–P05.
-- **Alcance:** Inicio, Formación, Empresas, Comunidad, AI Labs, Productos, Investigación y Equipo. Navegación global, anclas exactas I3/C3/F4/EM5/EM6 y variantes por sección. Completar muestra P05 sin duplicar copy. EM6 informativo/desactivado hasta P10; WhatsApp solo si URL confirmada.
+- **Alcance:** Inicio, Formación, Empresas, Comunidad, AI Labs, Investigación y Equipo. AI Labs es el directorio de productos. Navegación global, anclas exactas I3/C3/F4/EM5/EM6 y variantes por sección. Completar muestra P05 sin duplicar copy. EM6 informativo/desactivado hasta P10; WhatsApp solo si URL confirmada.
 - **Entregables:** ocho rutas SSG y componentes de contenido con reutilización real, sin renderer genérico; responsive y empty states conforme al handoff.
 - **Validaciones:** rutas/anclas/orden/heading, contraste/teclado, sin headings/listados condicionales vacíos, sin CTA falsa, sin cursos/servicios/reclutamiento inferidos, datos personales retenidos fuera de HTML.
-- **Criterio de finalización:** ocho páginas completas en su **estado institucional permitido**, no ocho catálogos supuestamente poblados; accesos y continuidad institucional operables sin JS.
+- **Criterio de finalización:** siete páginas completas en su **estado institucional permitido**, sin catálogos supuestamente poblados; accesos y continuidad institucional operables sin JS.
 
 ### P09 — Plantillas condicionales y continuidad SEO · Etapa 5
 
 - **Objetivo:** soportar detalle futuro sin publicar entidades inexistentes.
 - **Dependencias:** P06–P08 y reglas P1/P2/P3/P5/P6/P7/P9 y R1/R2/R4/R5/R6/R7.
 - **Alcance:** dos plantillas SSG, `getStaticPaths` desde registros elegibles, resúmenes del mismo registro, retornos, 404 real y retiro de rutas. Canonical/metadatos base/sitemap elegible. No filtros operativos sin corpus ni páginas de facetas.
-- **Entregables:** `/productos/[slug].astro` y `/investigacion/[slug].astro`, funciones de URL/SEO/proyección compartidas y tests positivos de contrato/negativos de publicación. Sin registros ficticios.
+- **Entregables:** plantilla de producto con ruta pendiente de definición y `/investigacion/[slug].astro`, funciones de URL/SEO/proyección compartidas y tests positivos de contrato/negativos de publicación. Sin registros ficticios.
 - **Validaciones:** corpus cero → cero fichas y enlaces/sitemap/JSON-LD de instancias; 404 no soft-404; metadatos/retornos correctos para registro real cuando exista. Verificación visual de primera ficha pública queda ligada a entrada real y permisos, no datos inventados para QA.
 - **Criterio de finalización:** ambos tipos preparados con condiciones completas; ausencia de inventario no es fallo del sitio ni excusa para generar demos.
 

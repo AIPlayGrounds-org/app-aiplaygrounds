@@ -1,7 +1,9 @@
 # Dirección de Contenido y Estructura Web — Versión revisada
 
 **Proyecto / mercado / idioma:** AI PlayGrounds · Latinoamérica · español inicial.
-**Alcance contratado:** sitio multipágina, ocho páginas base y dos tipos de ficha. Se conservan nombres y accesos aprobados.
+**Actualización posterior de arquitectura:** por decisión del usuario, el sitio tiene siete páginas principales. AI Labs es el directorio de productos y Productos deja de ser una página independiente; Investigación y los dos tipos de ficha se conservan. Esta decisión sustituye las referencias del snapshot siguiente a ocho páginas y a Productos como acceso independiente. La ruta de una futura ficha de producto está pendiente.
+
+**Alcance histórico del snapshot:** sitio multipágina, ocho páginas base y dos tipos de ficha.
 **Versión / fecha / estado:** v2.2 · 05/11/2026 · **APROBADO por autorización humana Prompt4/4 (E122)**. Aprobación de dirección,52 secciones,recorridos y condiciones; no confirma inventarios,ofertas,canales,materiales o permisos pendientes. Snapshot vinculante para E2,no contenido listo para publicar.
 
 ## 1. Qué entendimos

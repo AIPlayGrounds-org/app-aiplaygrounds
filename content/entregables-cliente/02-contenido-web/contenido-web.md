@@ -2,11 +2,11 @@
 
 **Proyecto:** AI PlayGrounds · sitio multipágina · Latinoamérica · español.
 **Versión / fecha / estado:** v2.1 · 05/11/2026 · **APROBADO EDITORIALMENTE. No completamente publicable.** Aprobación humana mediante «Cierre editorial de E2 v2.1», después de aplicar los dos H1 y la decisión de colecciones sin entradas. No autoriza publicación o desarrollo ni completa los inventarios ausentes.
-**Base aprobada:** E1 v2.2, aprobado mediante Prompt4/4 el 05/11/2026: ocho páginas, dos tipos de ficha y 52 secciones. Las nuevas precisiones operativas fueron aprobadas en el feedback de esta revisión; no modifican el snapshot anterior ni aprueban automáticamente el copy.
+**Base histórica:** E1 v2.2 aprobado el 05/11/2026. La decisión posterior del usuario sustituye su arquitectura de ocho páginas: AI Labs es el directorio de productos y el sitio tiene siete páginas principales y dos tipos de ficha.
 
 ## Vista de conjunto
 
-La organización y su comunidad abren el recorrido. Las cuatro verticales explican los campos de trabajo; AI Academy presenta la formación y AI Labs, la experimentación e iniciativas tempranas. Productos e Investigación conservan funciones y procedencias diferentes. El tono es cercano y participativo, con explicaciones técnicas en español y condiciones junto a cada acción.
+La organización y su comunidad abren el recorrido. Las cuatro verticales explican los campos de trabajo; AI Academy presenta la formación y AI Labs es el directorio de productos. Investigación conserva su función y procedencias diferenciadas. El tono es cercano y participativo, con explicaciones técnicas en español y condiciones junto a cada acción.
 
 ### Cómo leer la revisión
 
@@ -20,17 +20,17 @@ La aprobación editorial comprende el contenido y los modelos preparados. Las ca
 
 Los rótulos de sección, estados, instrucciones, alternativas y tablas bajo **no publicable** pertenecen a este documento de trabajo. No se copian al website. Los párrafos bajo **Copy propuesto** son los textos a revisar; las condiciones necesarias para el visitante permanecen dentro de ellos cuando corresponde.
 
-Se conservan las 52 secciones aprobadas. Los identificadores permiten comprobar correspondencia, no son títulos públicos. Los subtítulos dentro de una sección no añaden secciones a la arquitectura. Las tablas representan contenido, no componentes visuales.
+Se conservan los identificadores vigentes de las 48 secciones tras retirar la página independiente Productos. Los identificadores permiten comprobar correspondencia, no son títulos públicos. Los subtítulos dentro de una sección no añaden secciones a la arquitectura. Las tablas representan contenido, no componentes visuales.
 
 ### Navegación y destinos
 
-**Textos de navegación:** Formación · Empresas · Comunidad · AI Labs · Productos · Investigación · Equipo. La marca AI PlayGrounds lleva a Inicio. No se fija aquí el orden visual del menú.
+**Textos de navegación:** Formación · Empresas · Comunidad · AI Labs · Investigación · Equipo. La marca AI PlayGrounds lleva a Inicio. No se fija aquí el orden visual del menú.
 
 Los destinos internos se nombran por página; las rutas son propuestas editoriales, no URLs implementadas. Luma conserva sus originales públicos canónicos. WhatsApp es el canal general confirmado, con enlace exacto pendiente. Empresas incluye un único formulario especificado para desarrollo, no implementado. Ningún placeholder debe convertirse en enlace público.
 
 **Fuentes de esta revisión:** E1 v2.2 e internos vigentes; datos de la presentación institucional de octubre de 2026 proporcionados y confirmados por el responsable (no se encontró ni inspeccionó su HTML); cuatro páginas Luma consultadas el 05/11/2026 y contrastadas con sus fechas estructuradas. Las condiciones actuales de comunidad, formación y contacto proceden de la decisión humana de esta revisión.
 
-**Decisión editorial aprobada para colecciones sin entradas:** AI Labs, Productos e Investigación conservarán sus explicaciones institucionales y estructuras aprobadas. Mientras no existan entradas reales, no mostrar listados vacíos, filtros sin opciones, fichas ficticias o placeholders editoriales al visitante; no inventar productos, iniciativas ni investigaciones. Los modelos quedan preparados para contenido futuro. No modifica E1 ni autoriza implementación o publicación.
+**Decisión editorial para colecciones sin entradas:** AI Labs e Investigación conservarán sus explicaciones y modelos. Mientras no existan entradas reales, no mostrar listados vacíos, filtros sin opciones, fichas ficticias o placeholders editoriales al visitante; no inventar productos, iniciativas ni investigaciones.
 
 ## Página: Inicio
 
@@ -38,8 +38,8 @@ Los destinos internos se nombran por página; las rutas son propuestas editorial
 **Estado de página:** copy institucional e histórico para revisión. **Correspondencia E1:** 6/6 secciones. **UI:** no aportada; extensión y tratamiento visual se ajustarán después sin perder información.
 
 **SEO title:** AI PlayGrounds | Inteligencia artificial en comunidad
-**Meta description:** Desde Lima, conectamos personas y conocimiento en inteligencia artificial. Encuentros, formación y cuatro campos para aprender, investigar y construir.
-**H1:** Aprendemos, investigamos y construimos con IA. En comunidad.
+**Meta description:** AI PlayGrounds es una organización enfocada en inteligencia artificial e impulsada por su comunidad. Conoce sus campos de trabajo, actividades e iniciativas.
+**H1:** Aprendemos, investigamos, experimentamos y construimos con IA.
 
 ### I1 · Presentación institucional
 
@@ -47,9 +47,7 @@ Los destinos internos se nombran por página; las rutas son propuestas editorial
 
 **Copy propuesto:**
 
-AI PlayGrounds es una organización enfocada en inteligencia artificial e impulsada por su comunidad. Nacimos en Lima en enero de 2025 para conectar personas y conocimiento alrededor de la IA.
-
-Compartimos lo que aprendemos y abrimos espacio para investigar, experimentar y construir.
+AI PlayGrounds es una organización enfocada en inteligencia artificial, impulsada por su comunidad.
 
 **CTA principal:** Ir a la comunidad → Comunidad.
 **Enlace secundario:** Explorar AI Labs → AI Labs. Navegación informativa, sin acceso a un proyecto implícito.
@@ -57,24 +55,22 @@ Compartimos lo que aprendemos y abrimos espacio para investigar, experimentar y 
 ### I2 · Propósito y comunidad
 
 **Estado:** A
-**H2:** Aprender también es encontrarnos
+**H2:** El conocimiento crece cuando se comparte
 
 **Copy propuesto:**
 
-Una pregunta sobre un modelo, una herramienta nueva o una idea que merece ponerse a prueba: la IA nos da motivos para reunirnos y compartir conocimiento.
-
-Los encuentros, workshops y experiencias formativas son parte de ese trabajo colectivo. La comunidad conecta a las personas; el equipo sostiene la organización y sus cuatro campos de trabajo.
+La comunidad comparte conocimiento, hace preguntas y participa en las actividades que impulsan nuestro trabajo. El equipo sostiene la organización y sus cuatro campos de trabajo.
 
 **Enlaces contextuales:** Actividades de la comunidad → Comunidad, Actividades y encuentros; Nuestro equipo → Equipo.
 
 ### I3 · Cuatro verticales
 
 **Estado:** A
-**H2:** Cuatro campos, preguntas diferentes
+**H2:** Cuatro verticales, preguntas diferentes
 
 **Copy propuesto:**
 
-Nuestros campos de trabajo van de los modelos y sus métodos a las aplicaciones en software, ciencia y finanzas.
+Nuestros verticales de trabajo van de los modelos y sus métodos a las aplicaciones en software, ciencia y finanzas.
 
 #### AI Foundations
 
@@ -82,7 +78,7 @@ Cómo funcionan los modelos y métodos de inteligencia artificial, cómo evaluar
 
 #### AI for Software
 
-Inteligencia artificial aplicada al diseño, la construcción, las pruebas y la mejora del software. El proceso de desarrollo y el criterio para trabajar con IA están en el centro.
+IA aplicada al diseño, la construcción, las pruebas y la mejora del software. El proceso de desarrollo y el criterio para trabajar con IA están en el centro.
 
 #### AI for Science
 
@@ -103,13 +99,27 @@ Aplicaciones de inteligencia artificial a problemas y procesos financieros: su u
 
 Desde 2025 hemos organizado más de 30 eventos de comunidad. Esa trayectoria incluye workshops de desarrollo asistido por IA, un bootcamp y la coorganización de encuentros y hackathons.
 
-| Experiencia anterior | Qué hicimos | Continuidad |
-|---|---|---|
-| Workshop Práctico de Claude Code · abril de 2026 | Actividad presentada por AI PlayGrounds, facilitada por Jhonatan Morgan, sobre agentes de código, integraciones y revisión humana | Ver el workshop en Luma → https://luma.com/gjk5qy7b |
-| hack@latam · mayo de 2026 | Coorganizamos el evento, que reunió 56 equipos durante 36 horas | Nuestra trayectoria de encuentros → Comunidad, Actividades y encuentros |
-| Bootcamp Gen AI Fundamentals · 2025 | Organizamos una edición práctica de seis semanas, con más de 300 inscritos | El antecedente del bootcamp → Formación, Oferta y condiciones actuales |
+**Eventos organizados desde 2025:** +30 eventos de comunidad.
 
-**Nota editorial — no publicable:** H00/H01/H04 confirmados por responsable; L03 consultado. Selección histórica, no agenda vigente. Los 56 equipos corresponden al evento coorganizado. Productos y trabajos podrán incorporarse aquí solo con inventario, autoría, estado, fuente y destino reales; no se crean ejemplos para ocupar ese lugar.
+#### hack@latam
+
+Coorganizado · 1,200+ postulantes · 56 equipos · 36 h.
+
+From Hack to Pilot: Perú Demo Day. UTEC.
+
+#### IA Hackathon
+
+Coorganizado · 800+ postulantes · 22 equipos y proyectos.
+
+The Hackathon Company · Crafter Station · kebo.
+
+#### The Real AI
+
+Coorganizado · +150 participantes · 7 speakers.
+
+looper.ai · UTEC.
+
+**Nota editorial — no publicable:** La referencia visual no muestra fechas individuales para estos eventos.
 
 ### I5 · Iniciativas y oportunidades
 
@@ -120,13 +130,13 @@ Desde 2025 hemos organizado más de 30 eventos de comunidad. Esa trayectoria inc
 
 #### AI Labs · experimentación e iniciativas tempranas
 
-AI Labs da visibilidad a iniciativas y productos tempranos relacionados con nuestro trabajo: qué idea abordan, quiénes la impulsan y en qué etapa están.
+Conoce nuestros experimentos y prototipos, quiénes los impulsan y en qué etapa están.
 
 **Enlace:** Explorar AI Labs → AI Labs.
 
 #### AI Academy · aprendizaje con dos enfoques
 
-AI Academy reúne nuestras dos líneas formativas: integrar IA en aplicaciones y sistemas con AI Engineering, y desarrollar software con su apoyo en Software with AI.
+Formación para integrar IA en aplicaciones y sistemas (AI Engineering) y desarrollar software con IA (Software with AI).
 
 **Enlace:** Ver las líneas de AI Academy → Formación.
 
@@ -569,12 +579,12 @@ Si tu interés está en las ideas que se experimentan y construyen, AI Labs pres
 
 ## Página: AI Labs
 
-**URL propuesta:** `/ai-labs/`. **Objetivo:** comprender el espacio de experimentación y explorar iniciativas con contexto. **Audiencia:** personas interesadas en trabajo temprano y su relación con la organización.
+**URL propuesta:** `/ai-labs/`. **Objetivo:** presentar el directorio de productos y su contexto. **Audiencia:** personas interesadas en productos, iniciativas y su relación con la organización.
 **Estado de página:** función redactada; iniciativas concretas pendientes. **Correspondencia E1:**5/5 secciones. **UI:** no aportada.
 
-**SEO title:** AI Labs: experimentación con IA | AI PlayGrounds
-**Meta description:** Conoce AI Labs, el espacio de AI PlayGrounds que da visibilidad a iniciativas y productos tempranos relacionados con el trabajo de la organización.
-**H1:** AI Labs: las ideas en su etapa temprana
+**SEO title:** AI Labs: directorio de productos | AI PlayGrounds
+**Meta description:** Conoce AI Labs, el directorio de productos de AI PlayGrounds, y el contexto de sus iniciativas y productos relacionados con inteligencia artificial.
+**H1:** AI Labs: directorio de productos
 
 ### B1 · AI Labs
 
@@ -582,7 +592,7 @@ Si tu interés está en las ideas que se experimentan y construyen, AI Labs pres
 
 **Copy propuesto:**
 
-Antes de que una idea se convierta en un producto, hay preguntas que resolver y decisiones que poner a prueba. AI Labs da visibilidad a iniciativas y productos tempranos relacionados con el trabajo de AI PlayGrounds.
+AI Labs es el directorio de productos de AI PlayGrounds. Da visibilidad a productos e iniciativas relacionados con inteligencia artificial y aporta contexto sobre su procedencia y estado.
 
 El contexto importa: qué necesidad aborda la iniciativa, quiénes la impulsan y en qué etapa se encuentra.
 
@@ -597,7 +607,7 @@ El contexto importa: qué necesidad aborda la iniciativa, quiénes la impulsan y
 
 En AI Labs, una iniciativa se describe por lo que intenta explorar o construir. Su relación con AI Foundations, AI for Software, AI for Science o AI for Finance se explica cuando está documentada, junto con sus responsables y estado.
 
-El detalle de un producto o un trabajo original pertenece a su colección: Productos o Investigación. AI Academy reúne la formación; la comunidad conecta a las personas.
+El detalle de cada producto forma parte de AI Labs; los trabajos originales se presentan en Investigación. AI Academy reúne la formación; la comunidad conecta a las personas.
 
 **Enlace contextual:** Conocer las cuatro verticales → Inicio, Cuatro verticales.
 
@@ -622,6 +632,8 @@ El detalle de un producto o un trabajo original pertenece a su colección: Produ
 
 **Datos pendientes — no publicable:** inventario, fuentes, estado y permisos por iniciativa. Modelo listo; ninguna entrada pública creada. Conservar fuente/fecha de comprobación por campo material. Si un objeto ya tiene ficha, enlazarla sin duplicar su detalle. Tratamiento sin inventario aprobado: conservar explicación/estructura/modelo, sin listas vacías, filtros sin opciones, fichas ficticias o placeholders públicos.
 
+**Modelo de producto del directorio — no publicable sin registros:** cada producto requiere nombre, utilidad y público, creador y fuente, relación con IA e institución, estado, acceso y permisos. El detalle conserva el modelo de ficha de producto; su ruta se definirá al existir entradas reales. No mostrar un listado vacío.
+
 ### B4 · Productos e Investigación
 
 **Estado:** A
@@ -633,7 +645,7 @@ El detalle de un producto o un trabajo original pertenece a su colección: Produ
 
 Utilidad, relación con IA, creación y condiciones de acceso: el contexto para evaluar un recurso.
 
-**Enlace:** Criterios de la colección de productos → Productos.
+AI Labs reúne el contexto de los productos de su directorio.
 
 #### Investigación
 
@@ -655,77 +667,6 @@ La comunidad de AI PlayGrounds está abierta. Puedes acercarte a su historia de 
 **CTA:** Ir a la comunidad → Comunidad.
 
 **Nota editorial — no publicable:** es continuidad informativa, no acceso a un proyecto. Solo añadir una solicitud vinculada a una iniciativa cuando su oportunidad y operación estén confirmadas.
-
-## Página: Productos
-
-**URL propuesta:** `/productos/`. **Objetivo:** descubrir recursos y evaluar qué ficha consultar. **Audiencia:** visitantes de productos y posibles creadores/remitentes.
-**Estado de página:** cobertura editorial redactada; corpus, filtros y postulación pendientes. **Correspondencia E1:**4/4 secciones. **UI:** no aportada; no se declara buscador o filtrado operativo.
-
-**SEO title:** Productos y herramientas de IA | AI PlayGrounds
-**Meta description:** Productos y herramientas relacionados con IA: criterios para evaluar su utilidad, procedencia, papel de la inteligencia artificial y condiciones de acceso.
-**H1:** Explora productos y herramientas de IA
-
-### DP1 · Universo y criterios
-
-**Estado:** A
-
-**Copy propuesto:**
-
-Un producto puede integrar IA en sus funciones, haberse construido con su apoyo o combinar ambas relaciones. Ese es el alcance de esta colección, que contempla recursos propios, de integrantes, vinculados y externos con su procedencia explícita.
-
-Para evaluar una herramienta, empieza por la tarea que necesitas resolver. Su utilidad, público, límites y condiciones de acceso deben ayudarte a decidir si merece una consulta más detallada. La fuente y la autoría permiten saber de quién es el trabajo.
-
-**Nota editorial — no publicable:** descripción de cobertura y modelo aprobados, no afirmación de que ya exista inventario completo, revisión de seguridad, ranking de mejores o evaluación de neutralidad.
-
-### DP2 · Exploración
-
-**Estado:** C
-**H2 propuesto:** Encuentra recursos según lo que necesitas
-
-**Modelo editorial preparado — no publicable; sin opciones actuales:** cada criterio tendrá nombre, significado, valor por producto y fuente. Definir los valores desde el corpus real y validar soporte antes de mostrar controles/instrucciones. No requiere inventar una taxonomía ahora.
-
-| Criterio editorial candidato | Información necesaria antes de usarlo |
-|---|---|
-| Necesidad o tarea | Descripción comparable de lo que permite hacer cada producto |
-| Área, tipo y categoría | Valores útiles sustentados por entradas reales, no etiquetas vacías |
-| Relación con IA | Integrada, usada en construcción o ambas, con fuente |
-| Procedencia, estado y acceso | Datos acreditados y significado consistente por producto |
-| Herramientas para programar o investigar | Solo si el corpus incluye recursos pertinentes; límites y comprobación según tarea |
-
-**Datos pendientes — no publicable:** inventario, valores de taxonomía y soporte. Criterios listos, opciones y comportamiento aún no. No categorías vacías, conteos, «sin resultados» o páginas por filtro. No ranking universal. Sin corpus, no instrucciones de buscador/filtrado ni colección llena implícita.
-
-### DP3 · Productos de la colección
-
-**Estado:** C
-**H2 propuesto:** Conoce cada producto antes de elegir
-
-**Modelo editorial preparado — no publicable; sin entradas:** el resumen reutiliza campos de una ficha validada, sin repetir su detalle. Requeridos por registro (R):
-
-- Nombre confirmado y descripción de utilidad/público.
-- Relación con IA y creador, con fuente.
-- Relación con AI PlayGrounds: propio, de integrante, vinculado o externo, solo acreditada.
-- Estado/fecha y situación de acceso.
-- Destino a una ficha de producto existente.
-
-**Acción por entrada, condicionada a instancia real:** Conocer el producto → ficha correspondiente. El nombre del enlace debe identificar el recurso al poblar el inventario, no repetir enlaces indistinguibles.
-
-**Datos pendientes — no publicable:** corpus, atributos, permisos y destinos. Imagen opcional autorizada (O); relaciones adicionales condicionales (C). Cada resumen tiene identidad/utilidad, creador y procedencia, relación IA, estado/acceso y enlace descriptivo. Destacar propio/vinculado solo con evidencia. No fijar cantidad para llenar diseño o mostrar tarjetas vacías.
-
-### DP4 · Conoce AI PlayGrounds y aporta un producto
-
-**Estado:** A
-**H2:** La organización detrás de la colección
-
-**Copy propuesto — continuidad institucional sustentada:**
-
-Desde Lima, AI PlayGrounds conecta personas y conocimiento en IA. Sus cuatro campos de trabajo dan contexto a esta colección y a su comunidad.
-
-**Enlace:** Conocer AI PlayGrounds → Inicio. Integrado en el cierre; no reemplaza abrir las fichas del listado.
-
-**Texto condicionado — no publicable hasta confirmar postulación y revisión:** «¿Tienes un producto para proponer? Revisa los criterios y comparte su fuente original, quién lo creó y qué relación tiene con la IA. Enviar una propuesta no confirma su publicación».
-
-**CTA condicionado:** Proponer un producto → canal por confirmar.
-**Esquema operativo — no publicable:** criterios, datos del objeto/original/autoría/relación IA, permisos, remitente separado de creador, canal, responsable y revisión/continuidad. No formulario ni plazo de respuesta asumidos.
 
 ## Página: Investigación
 
@@ -755,7 +696,7 @@ Autoría, tipo, fecha, método y límites ayudan a leer cada aporte en su contex
 
 **Modelo editorial preparado — no publicable; sin opciones actuales:** por criterio, registrar nombre, significado, valor por trabajo, fuente y fecha de revisión. Tema/pregunta permite buscar pertinencia; tipo distingue la naturaleza del original; fecha/estado sitúan su versión; relación institucional aclara procedencia. Valores y soporte de filtros dependen del corpus, sin nuevas páginas.
 
-Por criterio se requiere significado, entradas que lo sustenten y responsable de mantenerlo. No inventar una clasificación de publicaciones, conteos, buscador o estados interactivos. Las herramientas bibliográficas, si se incluyen, corresponden a Productos, no a una entrada de investigación por ese uso.
+Por criterio se requiere significado, entradas que lo sustenten y responsable de mantenerlo. No inventar una clasificación de publicaciones, conteos, buscador o estados interactivos. Las herramientas bibliográficas, si se incluyen, corresponden a AI Labs, no a una entrada de investigación por ese uso.
 
 ### DI3 · Trabajos de la colección
 
@@ -865,7 +806,7 @@ La comunidad general está abierta para conectar con personas interesadas en IA.
 
 ## Tipo de ficha: Ficha de producto
 
-**URL propuesta — patrón no publicable:** `/productos/{identificador-confirmado}/`, sujeto a inventario y validación de rutas. No es una instancia creada.
+**URL de ficha — pendiente de definición:** sujeta a inventario y validación de rutas. No es una instancia creada.
 **Objetivo:** evaluar un producto, atribuirlo correctamente y llegar a su destino real. **Audiencia:** personas que consultan un recurso específico.
 **Estado de plantilla:** 7/7 secciones con modelo preparado (C); cero instancias por ausencia de inventario. No se cuentan como copy público completo. R = requerido por registro; C = condicional acreditado; O = opcional autorizado. **UI:** no aportada.
 
@@ -883,7 +824,7 @@ La comunidad general está abierta para conectar con personas interesadas en IA.
 
 **Esquema por completar — no publicable:** nombre y descripción breve fiel al recurso, fuente que lo identifica y fecha de comprobación. H1 depende de ese nombre. No inventar marca, producto o número de usuarios.
 
-**Navegación común preparada, condicionada a ficha real:** Volver a Productos → Productos. No crear una URL de producto hasta tener registro y contenido suficientes.
+**Navegación común preparada, condicionada a ficha real:** Volver a AI Labs → AI Labs. No crear una URL de producto hasta tener registro y contenido suficientes.
 
 ### P2 · Problema, público y límites
 
@@ -961,7 +902,7 @@ La comunidad general está abierta para conectar con personas interesadas en IA.
 
 **Esquema por completar — no publicable:** relación documentada con una investigación, iniciativa o persona; tipo de vínculo, fuente y destino real. Omitir relaciones no acreditadas y evitar resúmenes repetidos; no borrar esta sección del modelo por falta de registros.
 
-**Acciones comunes preparadas para ficha real:** Conocer AI PlayGrounds → Inicio; Volver a Productos → Productos. La continuidad institucional no implica que AI PlayGrounds haya creado o implemente el recurso.
+**Acciones comunes preparadas para ficha real:** Conocer AI PlayGrounds → Inicio; Volver a AI Labs → AI Labs. La continuidad institucional no implica que AI PlayGrounds haya creado o implemente el recurso.
 
 **Condiciones del modelo — no publicable:** P1 nombre/descripción/fuente R; P2 necesidad, público, utilidad y límites pertinentes R; P3 descripción de área/tipo y relación IA con evidencia R, valores de filtros C; P5 creador/original/procedencia institucional R, vínculo Labs y remitente C; P6 estado/fecha R, uso documentado C; P7 situación de acceso/licencia/fuente R, destino de uso y precio C según existencia/relevancia; P9 navegación institucional R al crear la ficha, relaciones adicionales C. Imagen O autorizada. Un dato R ausente impide esa instancia, no significa que falte dirección del modelo. Presentar identificación/resumen, atributos y contexto según estas siete secciones; ninguna ficha o URL de ejemplo se crea sin objeto real.
 
@@ -1058,7 +999,7 @@ Los estados actuales de eventos, programas y acceso sí están confirmados por e
 | WhatsApp | Enlace exacto de invitación vigente; responsable comunitario | Activar «Unirme a la comunidad». Plataforma/acceso abierto definidos, URL aún no |
 | Formulario Empresas | Privacidad/política y destino legal, consentimiento si corresponde, implementación/recepción/error; propietario y desarrollo | Activar un único formulario, sus tres CTA y textos legales condicionados. Especificación editorial lista, no gestión interna definida |
 | Reglas y postulaciones | Normas propias si se incorporan; procesos/canales de propuesta de productos/trabajos aún no confirmados | No inventar reglas ni publicar acciones de postulación. Equipo interno cerrado: ninguna captación |
-| Productos | Identificación, utilidad, fuentes, creador, relación IA/institucional, estado, acceso/licencia y permisos; curación/creadores | DP2/DP3 y fichas reales; antes de poblar, enlazar o anunciar funciones de exploración |
+| Productos | Identificación, utilidad, fuentes, creador, relación IA/institucional, estado, acceso/licencia y permisos; curación/creadores | Directorio AI Labs y fichas reales; antes de poblar, enlazar o anunciar funciones de exploración |
 | Trabajos | Original, autores, tipo/fecha/estado, método/resultados/límites, vínculos y permisos; curación/autores | DI2/DI3 y fichas reales; no publicar originales ficticios o atribución automática |
 | Equipo | Autorizaciones por persona/dato; bio/aportes detallados, fotos y enlaces si se incluyen | E3 afectado; PR resuelto. La falta de materiales opcionales no exige inventarlos |
 | Colecciones sin entradas | Decisión editorial resuelta: conservar explicaciones/estructuras/modelos sin listados vacíos, filtros sin opciones, fichas ficticias, placeholders o entradas inventadas | No completa inventarios ni autoriza publicación. Las dependencias esenciales de los demás registros siguen vigentes |
@@ -1077,13 +1018,13 @@ No se ha diseñado UI ni implementado el website. Las rutas internas son propues
 | Política de acceso automatizado | Propietario decide finalidades/proveedores; desarrollo verifica controles vigentes para búsqueda/recuperación y entrenamiento cuando se distingan | Propietario + desarrollo, antes del lanzamiento; no configuración ni permiso/bloqueo automático en esta entrega |
 | Verificación posterior de utilidad | Consultas/páginas en Search Console si hay acceso; apertura de ficha/salida al original o acción pertinente como señales indirectas, no prueba de uso o calidad. Referidos de IA no miden todas las citas | SEO/analítica/operaciones, después de publicación estable y con periodos comparables; acceso/configuración pendientes, sin garantías o tracking contratado |
 
-Notas locales: sin enlaces a unidades no identificadas, personas/materiales sin permiso o fichas sin original. Verificar destinos WhatsApp y recepción real del formulario, selección modificable y fallback manual. No imprimir futuras entradas vacías ni estados «contenido pendiente». En AI Labs, Productos e Investigación sin entradas se conservarán explicaciones y estructuras/modelos, sin listados vacíos, filtros sin opciones, fichas ficticias o placeholders públicos, según decisión editorial aprobada. Pruebas técnicas y de accesibilidad pendientes sobre implementación real.
+Notas locales: sin enlaces a unidades no identificadas, personas/materiales sin permiso o fichas sin original. Verificar destinos WhatsApp y recepción real del formulario, selección modificable y fallback manual. No imprimir futuras entradas vacías ni estados «contenido pendiente». En AI Labs e Investigación sin entradas se conservarán explicaciones y estructuras/modelos, sin listados vacíos, filtros sin opciones, fichas ficticias o placeholders públicos. Pruebas técnicas y de accesibilidad pendientes sobre implementación real.
 
 ## QA y estado de la entrega
 
-Se conservan ocho páginas, dos tipos de ficha y las 52 secciones con nombres/orden de E1. No se agregan páginas de eventos, programas, personas o formularios. El formulario vive en EM6 y sus subdivisiones no son secciones nuevas.
+La arquitectura vigente comprende siete páginas principales, dos tipos de ficha y 48 secciones. La página independiente Productos se elimina y su directorio pasa a AI Labs. El formulario vive en EM6 y sus subdivisiones no son secciones nuevas.
 
-### Estados recalculados de las 52 secciones
+### Estados recalculados de las 48 secciones
 
 | Página o tipo | A · institucional | B · histórico | C · modelo sin entradas | D · acción pendiente | E · dato esencial | Total |
 |---|---:|---:|---:|---:|---:|---:|
@@ -1092,14 +1033,13 @@ Se conservan ocho páginas, dos tipos de ficha y las 52 secciones con nombres/or
 | Empresas | 3 | 1 | 0 | 2 | 0 | 6 |
 | Comunidad | 3 | 1 | 0 | 1 | 0 | 5 |
 | AI Labs | 4 | 0 | 1 | 0 | 0 | 5 |
-| Productos | 2 | 0 | 2 | 0 | 0 | 4 |
 | Investigación | 2 | 0 | 2 | 0 | 0 | 4 |
 | Equipo | 3 | 0 | 0 | 0 | 1 | 4 |
 | Ficha de producto | 0 | 0 | 7 | 0 | 0 | 7 |
 | Ficha de investigación | 0 | 0 | 6 | 0 | 0 | 6 |
-| **Total** | **26** | **4** | **18** | **3** | **1** | **52** |
+| **Total** | **24** | **4** | **16** | **3** | **1** | **48** |
 
-Son categorías principales, no porcentajes de publicación: 30 secciones de copy institucional/histórico para revisar; 18 modelos sin registros públicos; tres acciones preparadas editorialmente y una sección con autorización personal esencial pendiente. F4 y C3 incluyen además submodelos C para futuros programas/eventos sin entradas. E3 no depende de inventar bios o fotos; su E corresponde a permisos. C7 es A por su continuidad informativa, con estructura de incorporación solo interna e inactiva. DP4/DI4 tienen copy institucional A y propuesta de entradas inactiva, no captación confirmada.
+Son categorías principales, no porcentajes de publicación: 28 secciones de copy institucional/histórico para revisar; 16 modelos sin registros públicos; tres acciones preparadas editorialmente y una sección con autorización personal esencial pendiente. F4 y C3 incluyen además submodelos C para futuros programas/eventos sin entradas. E3 no depende de inventar bios o fotos; su E corresponde a permisos. C7 es A por su continuidad informativa, con estructura de incorporación solo interna e inactiva. DI4 conserva una propuesta de entradas inactiva, no captación confirmada.
 
 ### Resumen de la revisión v2.1
 
@@ -1112,9 +1052,9 @@ Son categorías principales, no porcentajes de publicación: 30 secciones de cop
 7. **Empresas:** las seis secciones cubren organización, cuatro ámbitos, trayectoria, AI Labs, formación personalizada y conversación institucional/comercial. Los hitos no se convierten en casos de implementación.
 8. **Formulario:** uno solo, ocho campos incluyendo privacidad condicional; tres CTA con tipo revisable/preseleccionable, ayudas, validación, recepción confirmada y error recuperable. Listo como especificación editorial, pendiente de privacidad y ejecución; sin gestión interna definida.
 9. **Equipo:** 15 registros únicos, Jhonatan con dos funciones, grafías conservadas y Appu Dávila en Public Relations (Relaciones Públicas). Sin bios, experiencia o fotos inventadas; permisos pendientes.
-10. **Colecciones:** AI Labs, Productos, Investigación y ambos tipos de ficha tienen modelos, atributos, condiciones y navegación preparados, sin objetos ficticios o catálogo lleno implícito.
+10. **Colecciones:** AI Labs, Investigación y ambos tipos de ficha tienen modelos, atributos, condiciones y navegación preparados, sin objetos ficticios o catálogo lleno implícito.
 11. **Estados:** 26 A / 4 B / 18 C / 3 D / 1 E. Modelo listo no equivale a contenido público completo; las dependencias permanecen junto a las secciones.
-12. **Pendientes:** WhatsApp exacto; privacidad/implementación del formulario; autorizaciones personales/materiales; inventarios futuros de iniciativas, productos e investigaciones. La presentación sin entradas de las tres colecciones queda resuelta por la decisión editorial aprobada, sin inventar registros.
+12. **Pendientes:** WhatsApp exacto; privacidad/implementación del formulario; autorizaciones personales/materiales; inventarios futuros de iniciativas, productos e investigaciones. AI Labs e Investigación conservan su presentación sin entradas, sin inventar registros.
 13. **Validación:** correspondencia de arquitectura/orden, roster, fuentes/atribución, destinos, metadatos, continuidad SEO y 48 preguntas, modelos y estados; enlaces/tablas/whitespace y controles de preservación. Sin nueva investigación SEO, créditos, implementación, commit o push.
 
 Las preguntas mejoran los bloques pertinentes sin convertirse en FAQs automáticas. Research → Keyword Map → E1 → E2 se conserva en la trazabilidad interna, con 13 clusters, 69 candidatas y 48 preguntas; los mercados siguen separados. La preparación editorial no garantiza rankings, tráfico o citación. Accesibilidad visual, funcionamiento del formulario, indexación y destinos finales se comprobarán sobre la implementación, no se certifican aquí.

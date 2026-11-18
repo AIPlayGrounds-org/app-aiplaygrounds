@@ -1,0 +1,226 @@
+---
+import InteriorLayout from '../layouts/InteriorLayout.astro';
+import Button from '../components/starwind/button/Button.astro';
+const fields = [
+  [
+    'AI Foundations · modelos, métodos y evaluación',
+    'El funcionamiento de los modelos, los métodos y su evaluación. Un ámbito para preguntas sobre qué puede hacer un modelo, cómo comprobarlo y qué límites tiene su desempeño.',
+  ],
+  [
+    'AI for Software · IA en el proceso de desarrollo',
+    'El diseño, la construcción, las pruebas y la mejora del software con IA. Abarca preguntas sobre el flujo de desarrollo y el criterio para delegar tareas y revisar sus resultados.',
+  ],
+  [
+    'AI for Science · preguntas y procesos científicos',
+    'La relación entre inteligencia artificial, datos y método científico. El contexto de una investigación permite plantear qué tareas podría apoyar la IA y cómo validar lo que produce.',
+  ],
+  [
+    'AI for Finance · problemas y procesos financieros',
+    'Los problemas y procesos financieros en los que puede intervenir la IA. Importan la calidad de los datos, los errores posibles y las decisiones que deben seguir bajo responsabilidad humana.',
+  ],
+];
+---
+
+<InteriorLayout
+  title="IA para empresas e instituciones | AI PlayGrounds"
+  description="Cuatro campos de IA, trayectoria en encuentros y formación, alianzas institucionales y oportunidades comerciales. Cuéntanos el contexto de tu organización."
+>
+  <section id="EM1" class="page-hero">
+    <div class="site-container">
+      <h1>Conectemos tu organización con el trabajo en IA</h1>
+      <div class="lead">
+        <p>
+          AI PlayGrounds reúne personas y conocimiento alrededor de la
+          inteligencia artificial. Trabajamos desde cuatro campos: los
+          fundamentos de la IA y sus aplicaciones en software, ciencia y
+          finanzas.
+        </p>
+        <p>
+          Nuestra trayectoria en encuentros, hackathons y formación es un punto
+          de partida para conversar con empresas, universidades, instituciones y
+          comunidades sobre posibles iniciativas conjuntas.
+        </p>
+      </div>
+      <a class="interior-link" href="/equipo/">
+        Las personas detrás de AI PlayGrounds ↗
+      </a>
+    </div>
+  </section>
+  <section id="EM2" class="interior-section">
+    <div class="site-container">
+      <h2>Cuatro campos para situar las necesidades de tu organización</h2>
+      <div class="interior-grid">
+        {fields.map(([title, text]) => (
+          <article class="interior-card">
+            <h3>{title}</h3>
+            <p>{text}</p>
+          </article>
+        ))}
+      </div>
+      <p>
+        Estos campos orientan nuestro trabajo y las conversaciones que podemos
+        abrir. El alcance de una colaboración se evalúa en cada contexto.
+      </p>
+    </div>
+  </section>
+  <section id="EM3" class="interior-section">
+    <div class="site-container split-section">
+      <h2>Trayectoria que se construye reuniendo a las personas</h2>
+      <div class="prose">
+        <p>
+          Desde nuestra fundación en Lima en enero de 2025, hemos organizado más
+          de 30 eventos de comunidad. También hemos coorganizado encuentros y
+          hackathons y desarrollado una experiencia formativa de seis semanas.
+        </p>
+        <p>
+          hack@latam · mayo de 2026: coorganizador; más de 1.200 postulantes, 56
+          equipos y 36 horas de hackathon.
+        </p>
+        <p>
+          IA Hackathon · noviembre de 2025: coorganizador con The Hackathon
+          Company, Crafter Station y kebo; más de 800 postulantes y 22 equipos y
+          proyectos.
+        </p>
+        <p>
+          The Real AI · julio de 2025: coorganizador con looper.ai y UTEC; más
+          de 150 participantes y 7 speakers.
+        </p>
+        <p>
+          Bootcamp Gen AI Fundamentals · 2025: organizador; más de 300
+          inscritos, seis semanas y 16 speakers de Perú, Colombia y Estados
+          Unidos; edición gratuita y práctica.
+        </p>
+        <p>
+          Las cifras de los eventos coorganizados corresponden al encuentro
+          completo y al trabajo conjunto de sus organizaciones. Esta trayectoria
+          refleja experiencia en articular comunidades, organizar actividades
+          tecnológicas y desarrollar espacios de aprendizaje.
+        </p>
+        <a class="interior-link" href="/comunidad/#C3">
+          Más actividades y sus fuentes ↗
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="EM4" class="interior-section">
+    <div class="site-container split-section">
+      <h2>AI Labs: una mirada al trabajo temprano</h2>
+      <div>
+        <p>
+          AI Labs es el espacio de visibilidad de iniciativas y productos
+          tempranos relacionados con AI PlayGrounds. Cada iniciativa se presenta
+          desde la necesidad que aborda, quiénes la impulsan y su estado de
+          desarrollo.
+        </p>
+        <a class="interior-link" href="/ai-labs/">
+          Explorar AI Labs ↗
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="EM5" class="interior-section">
+    <div class="site-container split-section">
+      <h2>Formación en IA para las necesidades de tu equipo</h2>
+      <div class="prose">
+        <p>
+          Los perfiles, las necesidades y los objetivos de tu equipo son el
+          punto de partida para evaluar una propuesta de formación personalizada
+          con AI Academy.
+        </p>
+        <p>
+          Podemos conversar sobre lo que tu organización busca aprender y
+          explorar una propuesta adaptada a ese contexto. AI Engineering y
+          Software with AI ofrecen dos referencias: integrar IA en aplicaciones
+          y desarrollar software con su apoyo.
+        </p>
+        <a class="interior-link" href="/formacion/">
+          Las dos líneas de AI Academy ↗
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="EM6" class="interior-section">
+    <div class="site-container">
+      <h2>Conversemos sobre lo que tienes en mente</h2>
+      <div class="interior-grid">
+        <article class="interior-card">
+          <h3>Alianzas institucionales</h3>
+          <p>
+            Para universidades, instituciones, comunidades y organizaciones
+            interesadas en actividades conjuntas, encuentros o iniciativas
+            compartidas relacionadas con nuestros campos de trabajo.
+          </p>
+        </article>
+        <article class="interior-card">
+          <h3>Oportunidades comerciales</h3>
+          <p>
+            Para empresas y equipos que quieren plantear una necesidad de IA,
+            consultar formación personalizada o evaluar una posible colaboración
+            comercial, proyecto o iniciativa conjunta.
+          </p>
+        </article>
+      </div>
+      <p>
+        Una consulta abre la conversación. No implica aceptación de la
+        propuesta, contratación ni compromiso de ejecución.
+      </p>
+      <form
+        class="contact-form"
+        action="/api/contact"
+        method="post"
+        aria-labelledby="contact-title"
+      >
+        <h3 id="contact-title">Cuéntanos tu propuesta o necesidad</h3>
+        <p>El formulario no está disponible por ahora.</p>
+        <fieldset disabled>
+          <label for="tipo">
+            Tipo de consulta *
+            <select id="tipo" name="tipo" required>
+              <option value="">Selecciona el tipo de consulta</option>
+              <option>Alianza institucional</option>
+              <option>Oportunidad comercial</option>
+            </select>
+          </label>
+          <label for="nombre">
+            Nombre y apellido *
+            <input id="nombre" name="nombre" autocomplete="name" required />
+          </label>
+          <label for="organizacion">
+            Organización o empresa *
+            <input
+              id="organizacion"
+              name="organizacion"
+              autocomplete="organization"
+              required
+            />
+          </label>
+          <label for="cargo">
+            Cargo o función (opcional)
+            <input id="cargo" name="cargo" autocomplete="organization-title" />
+          </label>
+          <label for="correo">
+            Correo electrónico *
+            <input
+              id="correo"
+              name="correo"
+              type="email"
+              autocomplete="email"
+              required
+            />
+          </label>
+          <label for="pais">
+            País (opcional)
+            <input id="pais" name="pais" autocomplete="country-name" />
+          </label>
+          <label for="mensaje">
+            Cuéntanos qué tienes en mente *
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </label>
+        </fieldset>
+        <Button type="submit" variant="primary" disabled>
+          Enviar consulta
+        </Button>
+      </form>
+    </div>
+  </section>
+</InteriorLayout>

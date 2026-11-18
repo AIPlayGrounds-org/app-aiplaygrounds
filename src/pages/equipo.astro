@@ -1,0 +1,68 @@
+---
+import InteriorLayout from '../layouts/InteriorLayout.astro';
+import Button from '../components/starwind/button/Button.astro';
+---
+
+<InteriorLayout
+  title="Equipo y organización | AI PlayGrounds"
+  description="Las 15 personas de AI PlayGrounds: Leadership Team, cuatro verticales y funciones transversales. Nombres y responsabilidades dentro de la organización."
+>
+  <section id="E1" class="page-hero">
+    <div class="site-container">
+      <h1>Las personas que impulsan AI PlayGrounds</h1>
+      <div class="lead">
+        <p>
+          AI PlayGrounds reúne a 15 personas en su equipo. Sus responsabilidades
+          se articulan entre el Leadership Team, las cuatro verticales y las
+          funciones transversales.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="E2" class="interior-section">
+    <div class="site-container">
+      <h2>Campos de trabajo y responsabilidades</h2>
+      <p>
+        El Leadership Team reúne las funciones de Strategy, AI y Product. Cada
+        vertical cuenta con un liderazgo confirmado; las funciones transversales
+        incluyen Relaciones Públicas y Product Specialist.
+      </p>
+      <div class="interior-grid three">
+        <article class="interior-card">
+          <h3>Leadership Team</h3>
+          <p>Head of Strategy, Head of AI y Head of Product.</p>
+        </article>
+        <article class="interior-card">
+          <h3>Cuatro verticales</h3>
+          <p>
+            AI Foundations, AI for Software, AI for Science y AI for Finance.
+          </p>
+        </article>
+        <article class="interior-card">
+          <h3>Funciones transversales</h3>
+          <p>Public Relations (Relaciones Públicas) y Product Specialist.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="E4" class="interior-section">
+    <div class="site-container split-section">
+      <h2>Acércate desde la comunidad</h2>
+      <div>
+        <p>
+          La comunidad general está abierta para conectar con personas
+          interesadas en IA. También puedes visitar AI Labs para situar el
+          trabajo de iniciativas tempranas.
+        </p>
+        <div class="interior-actions">
+          <Button href="/comunidad/" variant="primary">
+            Ir a la comunidad
+          </Button>
+          <Button href="/ai-labs/" variant="outline">
+            Explorar AI Labs
+          </Button>
+        </div>
+      </div>
+    </div>
+  </section>
+</InteriorLayout>

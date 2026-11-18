@@ -1,5 +1,7 @@
 # AI PlayGrounds · contenido web
 
+**Decisión vigente posterior:** siete páginas principales: Inicio, Formación, Empresas, Comunidad, AI Labs, Investigación y Equipo. AI Labs es el directorio de productos; Productos deja de ser una página independiente. Se conservan los dos modelos de ficha, sin entradas ficticias. Esta decisión sustituye el inventario histórico de ocho páginas descrito debajo; no supone autorización de publicación.
+
 **Vigencia E221-C, 05/11/2026:** [E2 v2.1](entregables-cliente/02-contenido-web/contenido-web.md) **APROBADO EDITORIALMENTE**, sin autorización de publicación o implementación. Aplicados únicamente los dos H1 solicitados y la decisión de colecciones sin entradas: conservar explicaciones/estructuras/modelos sin listados vacíos, filtros sin opciones, fichas ficticias o placeholders públicos. Estados de contenido/dependencias conservados: 26 A / 4 B / 18 C / 3 D / 1 E, 52 secciones. Pendientes: WhatsApp exacto, privacidad/implementación del formulario de Empresas, autorizaciones/materiales del equipo e inventarios futuros. [Evidencia histórica y Luma](internal/03-estrategia/evidencia-historica-e21.md), [aprobación y resoluciones](internal/04-feedback/feedback-e2.md), [QA](internal/04-feedback/validacion-e2.md). E1 v2.2 y Research/B2 intactos; 0 créditos.
 
 **Versión activa del proyecto: v2, iniciada el 04/11/2026.** Gate A conservado, Gate B aprobado GB22 y **E1 v2.2 APROBADO por E122 (Prompt4/4)**. Ocho páginas, dos tipos de ficha, 52 secciones vinculantes y 15 personas únicas. Copy E2 v2.1 posterior a feedback, no completamente publicable por datos/permisos/operación pendientes. Sin implementación.
@@ -58,7 +60,7 @@ content/
 - [Registro de reorganización](internal/registro-reorganizacion-v2.md): preservación, rutas y checks.
 - [Archivo v1](archive/v1-2026-10/README.md): documentación íntegra, sin valor de aprobación automática para v2.
 
-Se mantienen aprobados el formato multipágina, las ocho páginas y dos tipos de ficha, mapa/navegación y voz cercana y participativa. Las cuatro verticales y las dos líneas formativas conservan sus funciones diferenciadas. E122 aprueba la jerarquía, los recorridos y el desarrollo institucional de E1 v2.2; el copy E2 sigue en revisión. **Formación sigue siendo el nombre de la página; AI Academy es la iniciativa.** Equipo tampoco se renombra.
+Se mantienen el formato multipágina, los dos tipos de ficha y la voz cercana y participativa; la decisión posterior de siete páginas sustituye el mapa anterior. Las cuatro verticales y las dos líneas formativas conservan sus funciones diferenciadas. **Formación sigue siendo el nombre de la página; AI Academy es la iniciativa.** Equipo tampoco se renombra.
 
 ## Flujo y límites
 
