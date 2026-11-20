@@ -1,105 +1,459 @@
 ---
+import { Image } from 'astro:assets';
+import {
+  ArrowDown,
+  Braces,
+  Blocks,
+  Hammer,
+  ScanLine,
+  Shuffle,
+} from '@lucide/astro';
+import { inicioImages } from '../assets/inicio';
 import InteriorLayout from '../layouts/InteriorLayout.astro';
 import Button from '../components/starwind/button/Button.astro';
+
+const pillars = [
+  {
+    title: 'Aplicación práctica',
+    text: 'Construye una solución para un problema real de tu trabajo o de un proyecto propio.',
+    icon: Hammer,
+  },
+  {
+    title: 'Criterio técnico',
+    text: 'Entiende cómo funciona tu solución, comprueba el resultado y decide qué mejorar.',
+    icon: ScanLine,
+  },
+  {
+    title: 'Autonomía',
+    text: 'Aplica lo aprendido a un reto nuevo, aunque cambie la herramienta o el problema.',
+    icon: Shuffle,
+  },
+];
+const lines = [
+  {
+    id: 'software-with-ai',
+    title: 'Software with AI',
+    label: 'IA durante el desarrollo',
+    text: 'Usa IA para mejorar cómo desarrollas, pruebas y mantienes software.',
+    option: 'Usa IA para desarrollar mejor software.',
+    icon: Braces,
+  },
+  {
+    id: 'ai-engineering',
+    title: 'AI Engineering',
+    label: 'IA dentro de la aplicación',
+    text: 'Integra capacidades de IA en las aplicaciones y sistemas que construyes.',
+    option: 'Integra IA en tus aplicaciones y sistemas.',
+    icon: Blocks,
+  },
+];
+const formats = [
+  ['Workshop', 'Una sesión breve para trabajar una tarea concreta.'],
+  ['Full Day', 'Una jornada para desarrollar y revisar una solución.'],
+  [
+    'Curso corto',
+    'Varias sesiones para construir y mejorar una solución por etapas.',
+  ],
+];
 ---
 
 <InteriorLayout
-  title="AI Academy: formación en IA | AI PlayGrounds"
-  description="AI Engineering y Software with AI: dos líneas de AI Academy, con el antecedente del bootcamp de 2025. Sin convocatorias públicas activas actualmente."
+  title="AI Academy: formación en IA para desarrollar software | AI PlayGrounds"
+  description="Conoce Software with AI y AI Engineering, las dos líneas formativas de AI Academy."
 >
-  <section class="page-hero">
-    <div class="site-container">
-      <h1>AI Academy: aprender a integrar IA y a desarrollar con ella</h1>
-      <div class="lead">
+  <div class="academy">
+    <section
+      class="academy-hero site-container"
+      aria-labelledby="academy-title"
+    >
+      <div class="hero-copy">
+        <div class="identity">AI Academy</div>
+        <h1 id="academy-title">
+          Amplía lo que eres capaz de construir con IA.
+        </h1>
         <p>
-          AI Academy es la iniciativa formativa de AI PlayGrounds. Sus dos
-          líneas parten de tareas distintas: construir aplicaciones que integran
-          inteligencia artificial y desarrollar software con ayuda de IA.
+          Desarrolla las capacidades para crear software con IA e integrarla en
+          tus aplicaciones con criterio y autonomía.
         </p>
-        <p>
-          La diferencia está en el papel de la IA: dentro de lo que construyes o
-          como apoyo para construirlo.
-        </p>
+        <Button href="#F3" variant="primary" class="academy-button">
+          Ver enfoques <ArrowDown size={18} aria-hidden="true" />
+        </Button>
       </div>
-    </div>
-  </section>
-  <section id="F3" class="interior-section">
-    <div class="site-container">
-      <h2>¿Integrar IA o desarrollar con su apoyo?</h2>
-      <div class="interior-grid">
-        <article class="interior-card">
-          <h3>AI Engineering</h3>
-          <p>
-            Construir aplicaciones y sistemas que integran modelos o APIs de
-            inteligencia artificial. El foco está en cómo conectar esa capacidad
-            con una necesidad y evaluar su funcionamiento dentro de la
-            aplicación.
-          </p>
-        </article>
-        <article class="interior-card">
-          <h3>Software with AI</h3>
-          <p>
-            Diseñar, construir, probar y mejorar software con apoyo de
-            inteligencia artificial. El foco está en el proceso de desarrollo:
-            qué tareas puede asistir la IA y qué debe revisar la persona que
-            trabaja con ella.
-          </p>
-        </article>
+      <Image
+        class="hero-art"
+        src={inicioImages.finance}
+        alt=""
+        format="webp"
+        widths={[400, 640, 960, 1280]}
+        sizes="(max-width: 48rem) 92vw, (min-width: 87rem) 620px, 45vw"
+      />
+    </section>
+
+    <section class="approach" aria-labelledby="approach-title">
+      <div class="site-container">
+        <h2 id="approach-title">
+          Construye con IA. Entiende lo que construyes.
+        </h2>
+        <ul class="pillars" role="list">
+          {pillars.map(({ title, text, icon: Icon }) => (
+            <li>
+              <Icon size={25} stroke-width={1.5} aria-hidden="true" />
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </li>
+          ))}
+        </ul>
       </div>
-      <p>
-        La asistencia de IA no sustituye la revisión del código ni las pruebas.
-        Elegir una línea ayuda a situar tu interés; no supone un itinerario
-        obligatorio entre ambas.
+    </section>
+
+    <section id="F3" class="site-container lines" aria-labelledby="lines-title">
+      <h2 id="lines-title">Dos líneas formativas</h2>
+      <div class="comparison">
+        {lines.map(({ title, label, text, icon: Icon }) => (
+          <article>
+            <Icon size={30} stroke-width={1.5} aria-hidden="true" />
+            <h3>{title}</h3>
+            <p class="line-label">{label}</p>
+            <p>{text}</p>
+          </article>
+        ))}
+      </div>
+      <p class="lines-note">
+        Son enfoques independientes. Elige según lo que quieras construir.
       </p>
-    </div>
-  </section>
-  <section id="F4" class="interior-section">
-    <div class="site-container split-section">
-      <h2>Una experiencia formativa que empezó en 2025</h2>
-      <div class="prose">
-        <p>
-          En 2025 organizamos el <strong>Bootcamp Gen AI Fundamentals</strong>:
-          una edición gratuita y práctica de seis semanas, con más de 300
-          inscritos y 16 speakers de Perú, Colombia y Estados Unidos.
-        </p>
-        <p>
-          Es un antecedente de nuestra trayectoria formativa. Actualmente AI
-          Academy no tiene cursos ni programas públicos vigentes, ni
-          convocatorias activas.
-        </p>
-      </div>
-    </div>
-  </section>
-  <section id="F6" class="interior-section">
-    <div class="site-container split-section">
-      <h2>Formación a partir de lo que necesita tu equipo</h2>
+    </section>
+
+    <section class="site-container formats" aria-labelledby="formats-title">
       <div>
-        <p>
-          Podemos explorar una propuesta de formación personalizada mediante AI
-          Academy. Los perfiles, las necesidades y los objetivos de tu equipo
-          son el punto de partida para evaluar qué podría tener sentido.
-        </p>
-        <a class="interior-link" href="/empresas/#EM5">
-          Formación para mi equipo ↗
-        </a>
+        <h2 id="formats-title">Formatos</h2>
+        <p>Por ahora no hay convocatorias abiertas.</p>
       </div>
-    </div>
-  </section>
-  <section id="F5" class="interior-section">
-    <div class="site-container">
-      <h2>Sigue aprendiendo en comunidad</h2>
-      <p>
-        Mientras no hay convocatorias públicas activas, puedes acercarte a la
-        comunidad de AI PlayGrounds y recorrer sus actividades anteriores.
-      </p>
-      <div class="interior-actions">
-        <Button href="/comunidad/" variant="primary">
-          Ir a la comunidad
-        </Button>
-        <Button href="/empresas/#EM5" variant="outline">
-          Formación para mi equipo
-        </Button>
-      </div>
-    </div>
-  </section>
+      <dl>
+        {formats.map(([title, text]) => (
+          <div>
+            <dt>{title}</dt>
+            <dd>{text}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+
+    <section class="site-container waitlist" aria-labelledby="waitlist-title">
+      <article class="waitlist-card">
+        <div class="waitlist-intro">
+          <h2 id="waitlist-title">Lista de espera</h2>
+          <p>
+            Déjanos tus datos y te avisaremos cuando abramos una convocatoria en
+            la línea que elijas.
+          </p>
+          <p id="waitlist-availability" class="availability-note">
+            La lista de espera aún no está abierta.
+          </p>
+        </div>
+        <form
+          id="academy-form"
+          action="/api/academy-waitlist"
+          method="post"
+          aria-labelledby="waitlist-title"
+          aria-describedby="waitlist-availability"
+        >
+          <div class="field">
+            <label for="academy-name">Nombre</label>
+            <input
+              id="academy-name"
+              name="name"
+              autocomplete="name"
+              maxlength="120"
+              required
+              disabled
+            />
+          </div>
+          <div class="field">
+            <label for="academy-email">Correo electrónico</label>
+            <input
+              id="academy-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              maxlength="254"
+              required
+              disabled
+            />
+          </div>
+          <fieldset disabled>
+            <legend>Línea formativa</legend>
+            {lines.map(({ id, title, option }) => (
+              <label class="choice" for={id}>
+                <input type="radio" {id} name="line" value={id} required />
+                <span>
+                  <strong>{title}</strong> — {option}
+                </span>
+              </label>
+            ))}
+          </fieldset>
+          <div class="submit-area">
+            <Button
+              type="submit"
+              variant="primary"
+              class="academy-button"
+              disabled
+            >
+              Avisarme
+            </Button>
+          </div>
+        </form>
+      </article>
+    </section>
+  </div>
 </InteriorLayout>
+
+<style>
+  .academy h2 {
+    font-size: clamp(1.85rem, 1.35rem + 2vw, 3.25rem);
+  }
+  .academy p {
+    color: var(--secondary-text);
+  }
+  .academy-hero {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: clamp(1.25rem, 4vw, 3.5rem);
+    padding-block: clamp(6rem, 8vw, 7.5rem) clamp(2rem, 4.5vw, 4rem);
+  }
+  .hero-copy {
+    display: grid;
+    justify-items: start;
+    gap: 1rem;
+  }
+  .identity {
+    font: 600 1.15rem var(--font-heading);
+  }
+  .hero-copy h1 {
+    font-size: clamp(2.25rem, 1.5rem + 2.5vw, 3.5rem);
+    max-width: 21ch;
+  }
+  .hero-copy p {
+    max-width: 46ch;
+    font-size: clamp(1.05rem, 0.975rem + 0.4vw, 1.25rem);
+  }
+  .hero-art {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: right bottom;
+    border-radius: 0.5rem;
+  }
+  .academy :global(.academy-button) {
+    min-height: 3rem;
+    align-self: start;
+  }
+  .approach {
+    color: var(--foreground);
+    padding-block: clamp(2.75rem, 5vw, 5rem);
+  }
+  .approach h2 {
+    max-width: 24ch;
+    text-wrap: wrap;
+  }
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1.5rem, 4vw, 4rem);
+    margin-top: clamp(1.75rem, 4vw, 3rem);
+  }
+  .pillars :global(svg) {
+    color: var(--foreground);
+    margin-bottom: 0.9rem;
+  }
+  .pillars p,
+  .comparison p {
+    margin-top: 0.5rem;
+    max-width: 42ch;
+  }
+  .lines {
+    padding-block: clamp(3rem, 6vw, 6rem) clamp(2rem, 4vw, 4rem);
+  }
+  .comparison {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  .comparison article {
+    padding: clamp(1.25rem, 3vw, 2.5rem);
+    background: var(--home-card);
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+  }
+  .comparison :global(svg) {
+    margin-bottom: 1rem;
+  }
+  .comparison h3 {
+    font-size: clamp(1.45rem, 1.1rem + 1.1vw, 2rem);
+    text-wrap: wrap;
+  }
+  .academy .line-label {
+    color: var(--foreground);
+    font-weight: 500;
+  }
+  .lines-note {
+    margin-top: 1rem;
+  }
+  .formats {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: 1.5rem;
+    padding-block: clamp(1rem, 3vw, 2.5rem) clamp(2.75rem, 6vw, 5rem);
+  }
+  .formats h2 + p,
+  .waitlist h2 + p {
+    margin-top: 0.75rem;
+  }
+  .formats dl {
+    margin: 0;
+  }
+  .formats dl div {
+    display: grid;
+    grid-template-columns: 11ch 1fr;
+    gap: 1rem;
+    padding-block: 0.75rem;
+  }
+  .formats dl div + div {
+    border-top: 1px solid var(--border);
+  }
+  .formats dt {
+    font-weight: 600;
+  }
+  .formats dd {
+    color: var(--secondary-text);
+  }
+  .waitlist {
+    margin-bottom: clamp(2rem, 5vw, 5rem);
+  }
+  .waitlist-card {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: clamp(1.75rem, 6vw, 6rem);
+    padding: clamp(1.25rem, 5vw, 4.5rem);
+    background: var(--home-surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+  }
+  .waitlist-intro p {
+    max-width: 36ch;
+  }
+  .waitlist .availability-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  form,
+  .field {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    min-width: 0;
+  }
+  .field {
+    gap: 0.375rem;
+  }
+  .field label,
+  legend {
+    font-weight: 600;
+  }
+  .field input {
+    width: 100%;
+    min-height: 3rem;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid var(--input);
+    border-radius: 0.25rem;
+    background: var(--home-card);
+    font: inherit;
+  }
+  .field input:disabled {
+    background: var(--home-background);
+    cursor: not-allowed;
+  }
+  fieldset {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-inline-size: 0;
+  }
+  legend {
+    margin-bottom: 0.5rem;
+  }
+  .choice {
+    display: flex;
+    align-items: start;
+    gap: 0.7rem;
+    min-height: 3rem;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid var(--input);
+    border-radius: 0.25rem;
+    background: var(--home-card);
+    cursor: pointer;
+  }
+  .choice input {
+    flex: none;
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-top: 0.15rem;
+  }
+  .choice:has(:checked) {
+    background: var(--home-background);
+    border-color: var(--primary);
+  }
+  .choice:has(:disabled) {
+    background: var(--home-background);
+    cursor: not-allowed;
+  }
+  .submit-area {
+    display: grid;
+    justify-items: start;
+  }
+  @media (max-width: 48rem) {
+    .academy-hero,
+    .formats,
+    .waitlist-card {
+      grid-template-columns: 1fr;
+    }
+    .academy-hero {
+      padding-block: 5.5rem 2rem;
+    }
+    .hero-art {
+      aspect-ratio: 2 / 1;
+    }
+    .pillars {
+      grid-template-columns: 1fr;
+    }
+    .pillars li {
+      display: grid;
+      grid-template-columns: 1.6rem 1fr;
+      gap: 0.2rem 0.75rem;
+      align-items: center;
+    }
+    .pillars :global(svg) {
+      margin: 0;
+    }
+    .pillars p {
+      grid-column: 2;
+      margin: 0;
+    }
+  }
+  @media (max-width: 38rem) {
+    .comparison {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 23rem) {
+    .waitlist-card {
+      padding-inline: 0.75rem;
+    }
+  }
+</style>

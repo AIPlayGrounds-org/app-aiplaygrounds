@@ -13,7 +13,9 @@ const source = readFileSync(
 
 test('Inicio conserva orden, textos y destinos acordados', () => {
   assert.deepEqual(
-    [...page.matchAll(/<section\s+id="(I\d+)"/g)].map((m) => m[1]),
+    [...page.matchAll(/<(?:section|ClosingCTA)\s+id="(I\d+)"/g)].map(
+      (m) => m[1],
+    ),
     ['I1', 'I2', 'I3', 'I4', 'I5', 'I8'],
   );
   for (const text of [
@@ -23,7 +25,7 @@ test('Inicio conserva orden, textos y destinos acordados', () => {
     'De los encuentros a la práctica',
     'Ideas, aprendizaje y nuevas conversaciones',
     'Conoce nuestros experimentos y prototipos, quiénes los impulsan y en qué etapa están.',
-    'Formación para integrar IA en aplicaciones y sistemas (AI Engineering) y desarrollar software con IA (Software with AI).',
+    'Amplía lo que puedes construir: usa IA para desarrollar software (Software with AI) o incorpórala en tus aplicaciones y comprueba cómo funciona (AI Engineering).',
     'hack@latam',
     'IA Hackathon',
     'The Real AI',

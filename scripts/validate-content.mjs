@@ -15,7 +15,7 @@ for (const text of [
   'Cuatro verticales, preguntas diferentes',
   'De los encuentros a la práctica',
   'Conoce nuestros experimentos y prototipos, quiénes los impulsan y en qué etapa están.',
-  'Formación para integrar IA en aplicaciones y sistemas (AI Engineering) y desarrollar software con IA (Software with AI).',
+  'Amplía lo que puedes construir: usa IA para desarrollar software (Software with AI) o incorpórala en tus aplicaciones y comprueba cómo funciona (AI Engineering).',
   'IA Hackathon',
   'The Real AI',
 ]) {

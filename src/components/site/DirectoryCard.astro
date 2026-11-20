@@ -1,0 +1,60 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  details: string[];
+  demo?: boolean;
+  source?: string;
+}
+
+const { title, description, details, demo, source } = Astro.props;
+---
+
+<article class="interior-card directory-card">
+  <header>
+    <h3>{title}</h3>
+    {demo && <span class="demo-label">Demostración</span>}
+  </header>
+  <p>{description}</p>
+  {details.length > 0 && (
+    <ul class="entry-details" role="list">
+      {details.map((detail) => (
+        <li>{detail}</li>
+      ))}
+    </ul>
+  )}
+  {source && (
+    <a class="interior-link" href={source}>
+      Consultar fuente<span class="sr-only">: {title}</span>{' '}
+      <span aria-hidden="true">↗</span>
+    </a>
+  )}
+</article>
+
+<style>
+  .directory-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-wrap: anywhere;
+  }
+  .directory-card h3 {
+    font-size: clamp(1.3rem, 1.15rem + 0.5vw, 1.65rem);
+    text-wrap: pretty;
+  }
+  .demo-label {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.1rem 0.45rem;
+    border: 1px solid var(--border);
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+  }
+  .entry-details {
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    color: var(--secondary-text);
+    font-size: 0.875rem;
+  }
+</style>

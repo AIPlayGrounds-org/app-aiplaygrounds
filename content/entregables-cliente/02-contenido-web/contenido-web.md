@@ -38,7 +38,7 @@ Los destinos internos se nombran por página; las rutas son propuestas editorial
 **Estado de página:** copy institucional e histórico para revisión. **Correspondencia E1:** 6/6 secciones. **UI:** no aportada; extensión y tratamiento visual se ajustarán después sin perder información.
 
 **SEO title:** AI PlayGrounds | Inteligencia artificial en comunidad
-**Meta description:** AI PlayGrounds es una organización enfocada en inteligencia artificial e impulsada por su comunidad. Conoce sus campos de trabajo, actividades e iniciativas.
+**Meta description:** AI PlayGrounds es una organización enfocada en inteligencia artificial e impulsada por su comunidad. Conoce sus verticales de trabajo, actividades e iniciativas.
 **H1:** Aprendemos, investigamos, experimentamos y construimos con IA.
 
 ### I1 · Presentación institucional
@@ -59,7 +59,7 @@ AI PlayGrounds es una organización enfocada en inteligencia artificial, impulsa
 
 **Copy propuesto:**
 
-La comunidad comparte conocimiento, hace preguntas y participa en las actividades que impulsan nuestro trabajo. El equipo sostiene la organización y sus cuatro campos de trabajo.
+La comunidad comparte conocimiento, hace preguntas y participa en las actividades que impulsan nuestro trabajo. El equipo sostiene la organización y sus cuatro verticales de trabajo.
 
 **Enlaces contextuales:** Actividades de la comunidad → Comunidad, Actividades y encuentros; Nuestro equipo → Equipo.
 
@@ -136,7 +136,7 @@ Conoce nuestros experimentos y prototipos, quiénes los impulsan y en qué etapa
 
 #### AI Academy · aprendizaje con dos enfoques
 
-Formación para integrar IA en aplicaciones y sistemas (AI Engineering) y desarrollar software con IA (Software with AI).
+Amplía lo que puedes construir: usa IA para desarrollar software (Software with AI) o incorpórala en tus aplicaciones y comprueba cómo funciona (AI Engineering).
 
 **Enlace:** Ver las líneas de AI Academy → Formación.
 
@@ -164,12 +164,12 @@ Si la IA también te mueve a aprender y compartir, nuestra comunidad está abier
 
 ## Página: Formación
 
-**URL propuesta:** `/formacion/`. **Objetivo:** comprender AI Academy, distinguir sus líneas y decidir un siguiente paso fiel al estado real. **Audiencia:** personas interesadas en aprender con IA; ruta secundaria para organizaciones.
+**URL propuesta:** `/formacion/`. **Objetivo:** comprender AI Academy, distinguir sus líneas y decidir un siguiente paso fiel al estado real. **Audiencia:** personas que desarrollan software y quieren usar IA en su trabajo o sus proyectos; ruta secundaria para organizaciones.
 **Estado de página:** líneas, antecedente y estado actual redactados; modelo de futuros programas sin entradas. **Correspondencia E1:** 5/5 secciones. **UI:** no aportada.
 
-**SEO title:** AI Academy: formación en IA | AI PlayGrounds
-**Meta description:** AI Engineering y Software with AI: dos líneas de AI Academy, con el antecedente del bootcamp de 2025. Sin convocatorias públicas activas actualmente.
-**H1:** AI Academy: aprender a integrar IA y a desarrollar con ella
+**SEO title:** AI Academy: formación en IA para desarrollar software | AI PlayGrounds
+**Meta description:** Dos líneas de AI Academy para desarrollar software con ayuda de IA o integrar IA en tus aplicaciones y comprobar cómo funciona. Sin convocatorias abiertas.
+**H1:** Construye más con IA en tus proyectos de software
 
 ### F1 · AI Academy y punto de partida
 
@@ -177,26 +177,26 @@ Si la IA también te mueve a aprender y compartir, nuestra comunidad está abier
 
 **Copy propuesto:**
 
-AI Academy es la iniciativa formativa de AI PlayGrounds. Sus dos líneas parten de tareas distintas: construir aplicaciones que integran inteligencia artificial y desarrollar software con ayuda de IA.
+Aborda cambios que antes dejabas fuera de alcance o añade funciones que tu aplicación no podía ofrecer. AI Academy es la iniciativa de formación de AI PlayGrounds para quienes desarrollan software y quieren usar IA en su trabajo o en sus propios proyectos.
 
-La diferencia está en el papel de la IA: dentro de lo que construyes o como apoyo para construirlo.
+La práctica va más allá de generar código: revisas qué cambió, investigas por qué falla una prueba y decides qué corregir antes de incorporar el cambio. Así puedes aplicar lo aprendido a otro proyecto sin tener que repetir la misma demo.
 
 **Nota editorial — no publicable:** sin cursos o programas públicos vigentes, confirmado por responsable; no añadir inscripción o botón circular a Formación.
 
 ### F3 · Líneas de aprendizaje
 
 **Estado:** A
-**H2:** ¿Integrar IA o desarrollar con su apoyo?
+**H2:** Dos formas de trabajar con IA en software
 
 **Copy propuesto:**
 
 #### AI Engineering
 
-Construir aplicaciones y sistemas que integran modelos o APIs de inteligencia artificial. El foco está en cómo conectar esa capacidad con una necesidad y evaluar su funcionamiento dentro de la aplicación.
+Incorpora IA como parte de la aplicación mediante un modelo o una API y comprueba cómo se comporta dentro del sistema. Por ejemplo, añade una función que resume tickets de soporte y verifica que no invente datos cuando el ticket está incompleto.
 
 #### Software with AI
 
-Diseñar, construir, probar y mejorar software con apoyo de inteligencia artificial. El foco está en el proceso de desarrollo: qué tareas puede asistir la IA y qué debe revisar la persona que trabaja con ella.
+Usa IA durante el desarrollo sin ceder el control del código, las pruebas ni las decisiones. Por ejemplo, pídele a un asistente que proponga un filtro de búsqueda, revisa el cambio y comprueba con pruebas que la búsqueda anterior siga funcionando.
 
 | Criterio de comparación | AI Engineering | Software with AI |
 |---|---|---|
@@ -204,20 +204,20 @@ Diseñar, construir, probar y mejorar software con apoyo de inteligencia artific
 | Papel de la IA | Forma parte de la capacidad de la aplicación | Asiste el trabajo de desarrollo |
 | Criterio humano | Definir el uso y evaluar su funcionamiento y límites | Revisar el código, probarlo y comprender las decisiones antes de incorporarlo |
 
-La asistencia de IA no sustituye la revisión del código ni las pruebas. Elegir una línea ayuda a situar tu interés; no supone un itinerario obligatorio entre ambas.
+Son dos enfoques, no pasos de un itinerario. Empezar con IA no es lo mismo que empezar a programar: los conocimientos previos se indicarán en cada oferta.
 
 **Nota editorial — no publicable:** descriptores de líneas aprobadas, no temarios de cursos disponibles, título profesional o garantía de resultado. El punto de partida técnico depende del programa: no inventar niveles universales.
 
 ### F4 · Oferta y condiciones actuales
 
 **Estado:** B
-**H2:** Una experiencia formativa que empezó en 2025
+**H2:** El bootcamp de 2025: un antecedente
 
 **Copy propuesto:**
 
 En 2025 organizamos el **Bootcamp Gen AI Fundamentals**: una edición gratuita y práctica de seis semanas, con más de 300 inscritos y 16 speakers de Perú, Colombia y Estados Unidos.
 
-Es un antecedente de nuestra trayectoria formativa. Actualmente AI Academy no tiene cursos ni programas públicos vigentes, ni convocatorias activas.
+Esa edición ya terminó. Hoy AI Academy no tiene cursos ni programas públicos vigentes ni convocatorias abiertas.
 
 **Modelo de futuros programas — no publicable; sin registros actuales (C):** R = requerido antes de anunciar oferta abierta; C = condicional; O = opcional autorizado. Cada programa tendrá resumen breve y detalle dentro de esta sección, sin nueva página.
 
@@ -246,7 +246,7 @@ Es un antecedente de nuestra trayectoria formativa. Actualmente AI Academy no ti
 
 **Copy propuesto — parte institucional sustentada:**
 
-Podemos explorar una propuesta de formación personalizada mediante AI Academy. Los perfiles, las necesidades y los objetivos de tu equipo son el punto de partida para evaluar qué podría tener sentido.
+Si buscas formación para un equipo, AI Academy puede explorar una propuesta personalizada según lo que sus integrantes ya saben y lo que necesitan aprender para su trabajo.
 
 **Enlace:** Formación para mi equipo → Empresas, AI Academy para equipos.
 
@@ -255,14 +255,14 @@ Podemos explorar una propuesta de formación personalizada mediante AI Academy. 
 ### F5 · Estado y siguiente paso
 
 **Estado:** A
-**H2:** Sigue aprendiendo en comunidad
+**H2:** Qué puedes hacer hoy
 
 **Copy propuesto — continuidad segura con los datos actuales:**
 
-Mientras no hay convocatorias públicas activas, puedes acercarte a la comunidad de AI PlayGrounds y recorrer sus actividades anteriores.
+No hay convocatorias abiertas. Puedes consultar los encuentros y talleres anteriores de la comunidad o conocer cómo se plantea la formación para equipos.
 
-**CTA principal:** Ir a la comunidad → Comunidad.
-**CTA secundario:** Formación para mi equipo → Empresas, AI Academy para equipos.
+**CTA principal:** Ver comunidad → Comunidad.
+**CTA secundario:** Para equipos → Empresas, AI Academy para equipos.
 
 **Nota editorial — no publicable:** escenario C confirmado por responsable al corte 05/11/2026. No listas de espera, avisos, fechas o promesa de convocatorias próximas. Una futura oferta requiere completar F4 y su mecanismo antes de sustituir este estado. No CTA a la propia raíz Formación.
 
@@ -272,7 +272,7 @@ Mientras no hay convocatorias públicas activas, puedes acercarte a la comunidad
 **Estado de página:** seis secciones redactadas; formulario especificado editorialmente, pendiente de implementación y privacidad aplicable. **Correspondencia E1:** 6/6 secciones. No catálogo técnico de servicios. **UI:** no aportada.
 
 **SEO title:** IA para empresas e instituciones | AI PlayGrounds
-**Meta description:** Cuatro campos de IA, trayectoria en encuentros y formación, alianzas institucionales y oportunidades comerciales. Cuéntanos el contexto de tu organización.
+**Meta description:** Cuatro verticales de IA, trayectoria en encuentros y formación, alianzas institucionales y oportunidades comerciales. Cuéntanos el contexto de tu organización.
 **H1:** Conectemos tu organización con el trabajo en IA
 
 ### EM1 · AI PlayGrounds para organizaciones
@@ -281,7 +281,7 @@ Mientras no hay convocatorias públicas activas, puedes acercarte a la comunidad
 
 **Copy propuesto:**
 
-AI PlayGrounds reúne personas y conocimiento alrededor de la inteligencia artificial. Trabajamos desde cuatro campos: los fundamentos de la IA y sus aplicaciones en software, ciencia y finanzas.
+AI PlayGrounds reúne personas y conocimiento alrededor de la inteligencia artificial. Trabajamos desde cuatro verticales: los fundamentos de la IA y sus aplicaciones en software, ciencia y finanzas.
 
 Nuestra trayectoria en encuentros, hackathons y formación es un punto de partida para conversar con empresas, universidades, instituciones y comunidades sobre posibles iniciativas conjuntas.
 
@@ -290,27 +290,26 @@ Nuestra trayectoria en encuentros, hackathons y formación es un punto de partid
 ### EM2 · Cuatro verticales y ámbitos de aplicación
 
 **Estado:** A
-**H2:** Cuatro campos para situar las necesidades de tu organización
+**H2:** Cuatro verticales para situar las necesidades de tu organización
 
 **Copy propuesto:**
 
-#### AI Foundations · modelos, métodos y evaluación
+#### AI Foundations
 
 El funcionamiento de los modelos, los métodos y su evaluación. Un ámbito para preguntas sobre qué puede hacer un modelo, cómo comprobarlo y qué límites tiene su desempeño.
 
-#### AI for Software · IA en el proceso de desarrollo
+#### AI for Software
 
 El diseño, la construcción, las pruebas y la mejora del software con IA. Abarca preguntas sobre el flujo de desarrollo y el criterio para delegar tareas y revisar sus resultados.
 
-#### AI for Science · preguntas y procesos científicos
+#### AI for Science
 
 La relación entre inteligencia artificial, datos y método científico. El contexto de una investigación permite plantear qué tareas podría apoyar la IA y cómo validar lo que produce.
 
-#### AI for Finance · problemas y procesos financieros
+#### AI for Finance
 
 Los problemas y procesos financieros en los que puede intervenir la IA. Importan la calidad de los datos, los errores posibles y las decisiones que deben seguir bajo responsabilidad humana.
 
-Estos campos orientan nuestro trabajo y las conversaciones que podemos abrir. El alcance de una colaboración se evalúa en cada contexto.
 
 **Nota editorial — no publicable:** ámbitos y posibles contextos, no cuatro servicios disponibles. No asesoría financiera, rentabilidad o implementación prometidas. EM3 acredita actividades realizadas, no capacidad técnica por analogía.
 
@@ -330,7 +329,7 @@ Desde nuestra fundación en Lima en enero de 2025, hemos organizado más de 30 e
 | The Real AI · julio de 2025 | Coorganizador, en colaboración con looper.ai y UTEC | Más de 150 participantes y 7 speakers |
 | Bootcamp Gen AI Fundamentals · 2025 | Organizador | Más de 300 inscritos, seis semanas y 16 speakers de Perú, Colombia y Estados Unidos; edición gratuita y práctica |
 
-Las cifras de los eventos coorganizados corresponden al encuentro completo y al trabajo conjunto de sus organizaciones. Esta trayectoria refleja experiencia en articular comunidades, organizar actividades tecnológicas y desarrollar espacios de aprendizaje.
+Esta trayectoria refleja experiencia en articular comunidades, organizar actividades tecnológicas y desarrollar espacios de aprendizaje.
 
 **Enlace contextual:** Más actividades y sus fuentes → Comunidad, Actividades y encuentros.
 
@@ -356,11 +355,11 @@ AI Labs es el espacio de visibilidad de iniciativas y productos tempranos relaci
 
 **Copy propuesto — parte institucional sustentada:**
 
-Los perfiles, las necesidades y los objetivos de tu equipo son el punto de partida para evaluar una propuesta de formación personalizada con AI Academy.
+AI Academy puede explorar una propuesta de formación personalizada a partir de los perfiles de tu equipo, las tareas que necesita resolver y lo que espera aprender.
 
-Podemos conversar sobre lo que tu organización busca aprender y explorar una propuesta adaptada a ese contexto. AI Engineering y Software with AI ofrecen dos referencias: integrar IA en aplicaciones y desarrollar software con su apoyo.
+El punto de partida puede ser usar IA para apoyar el desarrollo de software o incorporar una capacidad de IA en una aplicación. El alcance se evalúa para cada equipo.
 
-**CTA principal:** Consultar formación para mi equipo → mismo formulario de EM6, tipo Oportunidad comercial.
+**CTA al activar el formulario:** Consultar formación para mi equipo → mismo formulario de EM6, tipo Oportunidad comercial. No se muestra mientras esté deshabilitado.
 **Enlace contextual:** Las dos líneas de AI Academy → Formación.
 
 **Notas para implementación — no publicable:** preselección comercial revisable si se soporta, elección manual en caso contrario. No formulario aparte ni parámetros/rutas ficticias. Posibilidad aprobada sujeta a conversación y evaluación; no catálogo fijo, temarios, docentes, certificados, fechas, precios, modalidad, resultados o plazos prometidos. Activación depende de implementación y privacidad EM6.
@@ -374,7 +373,7 @@ Podemos conversar sobre lo que tu organización busca aprender y explorar una pr
 
 #### Alianzas institucionales
 
-Para universidades, instituciones, comunidades y organizaciones interesadas en actividades conjuntas, encuentros o iniciativas compartidas relacionadas con nuestros campos de trabajo.
+Para universidades, instituciones, comunidades y organizaciones interesadas en actividades conjuntas, encuentros o iniciativas compartidas relacionadas con nuestras verticales de trabajo.
 
 **CTA:** Proponer una alianza → formulario de esta sección, tipo Alianza institucional.
 
@@ -448,7 +447,7 @@ Nos reúne el interés por aprender, investigar, experimentar y construir con in
 Puedes sumarte a la comunidad general a través de nuestro grupo de WhatsApp. Es un espacio para conectar con personas interesadas en IA y compartir conocimiento.
 
 **Acción principal de la página:** Unirme a la comunidad → grupo WhatsApp; destino pendiente especificado en C6. Puede aparecer aquí reutilizando la misma acción, sin segundo flujo.
-**Enlace contextual:** Nuestros cuatro campos de trabajo → Inicio, Cuatro verticales.
+**Enlace contextual:** Nuestras cuatro verticales de trabajo → Inicio, Cuatro verticales.
 
 ### C3 · Actividades y encuentros
 
@@ -550,6 +549,9 @@ Participar en la comunidad o en un encuentro es distinto de formar parte del equ
 
 **Nota editorial — no publicable:** no formulario de acceso, evaluación, entrevista o nivel avanzado universal. No inventar normas, moderadores, frecuencia, compromisos, privacidad o seguridad del grupo; incorporar reglas propias cuando se aporten. Esos datos no se convierten en un proceso de admisión. Aportes a iniciativas solo con oportunidad y condiciones confirmadas, sin anunciar convocatoria ahora.
 
+
+**CTA para revisión local:** Unirme → deshabilitado hasta contar con la invitación real de WhatsApp.
+
 ### C6 · Acceso a comunidad general
 
 **Estado:** D
@@ -598,23 +600,12 @@ El contexto importa: qué necesidad aborda la iniciativa, quiénes la impulsan y
 
 **Nota editorial — no publicable:** no se promete incubación, aceleración, infraestructura física o acceso directo a un proyecto. Un enlace a iniciativas se habilitará solo cuando B3 tenga registros reales; no botón a una lista vacía.
 
-### B2 · Qué se explora y cómo se relaciona
-
-**Estado:** A
-**H2:** La pregunta detrás de cada iniciativa
-
-**Copy propuesto:**
-
-En AI Labs, una iniciativa se describe por lo que intenta explorar o construir. Su relación con AI Foundations, AI for Software, AI for Science o AI for Finance se explica cuando está documentada, junto con sus responsables y estado.
-
-El detalle de cada producto forma parte de AI Labs; los trabajos originales se presentan en Investigación. AI Academy reúne la formación; la comunidad conecta a las personas.
-
-**Enlace contextual:** Conocer las cuatro verticales → Inicio, Cuatro verticales.
-
 ### B3 · Iniciativas y productos tempranos
 
 **Estado:** C
-**H2 propuesto:** Qué se está explorando y en qué estado
+**H2:** Directorio de productos
+
+**Estado sin entradas para revisión local:** Aún no hay productos en el directorio.
 
 **Modelo editorial preparado — no publicable; sin registros confirmados:** cada entrada será un resumen de la necesidad, enfoque, responsables, vínculo y estado, con acceso al recurso o ficha existente cuando corresponda. No nueva ficha de iniciativa, tutorial o producto ilustrativo. R = requerido por entrada; C = condicional acreditado; O = opcional autorizado.
 
@@ -630,30 +621,9 @@ El detalle de cada producto forma parte de AI Labs; los trabajos originales se p
 | Aporte posible · C | Solo con oportunidad, requisitos, canal y responsable reales; hoy no anunciarlo |
 | Imagen · O | Material disponible y autorizado; alt según función |
 
-**Datos pendientes — no publicable:** inventario, fuentes, estado y permisos por iniciativa. Modelo listo; ninguna entrada pública creada. Conservar fuente/fecha de comprobación por campo material. Si un objeto ya tiene ficha, enlazarla sin duplicar su detalle. Tratamiento sin inventario aprobado: conservar explicación/estructura/modelo, sin listas vacías, filtros sin opciones, fichas ficticias o placeholders públicos.
+**Datos pendientes — no publicable:** inventario, fuentes, estado y permisos por iniciativa. Modelo listo; ninguna entrada pública creada. Conservar fuente/fecha de comprobación por campo material. Si un objeto ya tiene ficha, enlazarla sin duplicar su detalle. Para revisión local, mostrar el estado sin entradas; no crear filtros sin opciones ni fichas ficticias.
 
-**Modelo de producto del directorio — no publicable sin registros:** cada producto requiere nombre, utilidad y público, creador y fuente, relación con IA e institución, estado, acceso y permisos. El detalle conserva el modelo de ficha de producto; su ruta se definirá al existir entradas reales. No mostrar un listado vacío.
-
-### B4 · Productos e Investigación
-
-**Estado:** A
-**H2:** Del recurso a su fuente
-
-**Copy propuesto:**
-
-#### Productos
-
-Utilidad, relación con IA, creación y condiciones de acceso: el contexto para evaluar un recurso.
-
-AI Labs reúne el contexto de los productos de su directorio.
-
-#### Investigación
-
-Pregunta, método, autoría y límites: el contexto para consultar un trabajo original.
-
-**Enlace:** Criterios de la colección de investigación → Investigación.
-
-Las colecciones pueden reunir objetos con distintas procedencias. Estar incluido no significa haber nacido en AI Labs ni ser propiedad de AI PlayGrounds.
+**Modelo de producto del directorio — no publicable sin registros:** cada producto requiere nombre, utilidad y público, creador y fuente, relación con IA e institución, estado, acceso y permisos. El detalle conserva el modelo de ficha de producto; su ruta se definirá al existir entradas reales. Mostrar el estado sin entradas para revisión local.
 
 ### B5 · Participación y continuidad
 
@@ -692,7 +662,9 @@ Autoría, tipo, fecha, método y límites ayudan a leer cada aporte en su contex
 ### DI2 · Exploración
 
 **Estado:** C
-**H2 propuesto:** Busca una pregunta que quieras comprender
+**H2:** Directorio de investigaciones
+
+**Estado sin entradas para revisión local:** Aún no hay investigaciones en el directorio.
 
 **Modelo editorial preparado — no publicable; sin opciones actuales:** por criterio, registrar nombre, significado, valor por trabajo, fuente y fecha de revisión. Tema/pregunta permite buscar pertinencia; tipo distingue la naturaleza del original; fecha/estado sitúan su versión; relación institucional aclara procedencia. Valores y soporte de filtros dependen del corpus, sin nuevas páginas.
 
@@ -743,23 +715,6 @@ AI Foundations, AI for Science, AI for Software y AI for Finance abren preguntas
 **Copy propuesto:**
 
 AI PlayGrounds reúne a 15 personas en su equipo. Sus responsabilidades se articulan entre el Leadership Team, las cuatro verticales y las funciones transversales.
-
-### E2 · Cómo nos organizamos para trabajar
-
-**Estado:** A
-**H2:** Campos de trabajo y responsabilidades
-
-**Copy propuesto:**
-
-El Leadership Team reúne las funciones de Strategy, AI y Product. Cada vertical cuenta con un liderazgo confirmado; las funciones transversales incluyen Relaciones Públicas y Product Specialist.
-
-| Parte de la estructura | Composición confirmada |
-|---|---|
-| Leadership Team | Head of Strategy, Head of AI y Head of Product |
-| Cuatro verticales | AI Foundations, AI for Software, AI for Science y AI for Finance |
-| Funciones transversales | Public Relations (Relaciones Públicas) y Product Specialist |
-
-**Nota editorial — no publicable:** no añadir responsabilidades detalladas, procesos de gobierno o acuerdos confidenciales. Los nombres se reúnen una sola vez por persona en la sección siguiente; una función adicional no crea otro registro personal.
 
 ### E3 · Personas y aportes
 

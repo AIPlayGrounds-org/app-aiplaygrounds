@@ -1,6 +1,33 @@
 ---
+import type { ImageMetadata } from 'astro';
 import InteriorLayout from '../layouts/InteriorLayout.astro';
-import Button from '../components/starwind/button/Button.astro';
+import ClosingCTA from '../components/site/ClosingCTA.astro';
+interface Person {
+  name: string;
+  role: string;
+  group?: string;
+  photo?: ImageMetadata;
+}
+const leadership: Person[] = [
+  { name: 'Soledad Ñahui', role: 'Head of Strategy' },
+  { name: 'Jhonatan Morgan', role: 'Head of AI; líder de AI Foundations' },
+  { name: 'Edhú Nuñez', role: 'Head of Product' },
+];
+const team: Person[] = [
+  { name: 'Joseph Robles', role: 'Líder', group: 'AI for Software' },
+  { name: 'Julio Montreul', role: 'Integrante', group: 'AI for Software' },
+  { name: 'Max Veramendi', role: 'Integrante', group: 'AI for Software' },
+  { name: 'Jheslyn Lagos', role: 'Integrante', group: 'AI for Software' },
+  { name: 'Ricardo Quispe', role: 'Líder', group: 'AI for Science' },
+  { name: 'David Durán', role: 'Integrante', group: 'AI for Science' },
+  { name: 'Pedro Rojas', role: 'Integrante', group: 'AI for Science' },
+  { name: 'Kevin Huaman', role: 'Integrante', group: 'AI for Science' },
+  { name: 'Edith Canelo', role: 'Líder', group: 'AI for Finance' },
+  { name: 'Rocio Laura', role: 'Integrante', group: 'AI for Finance' },
+  { name: 'Appu Dávila', role: 'Public Relations (Relaciones Públicas)' },
+  { name: 'Milagros Dimas', role: 'Product Specialist' },
+];
+const groups = [...new Set(team.map(({ group }) => group))];
 ---
 
 <InteriorLayout
@@ -19,50 +46,97 @@ import Button from '../components/starwind/button/Button.astro';
       </div>
     </div>
   </section>
-  <section id="E2" class="interior-section">
+  <section id="E3" class="interior-section">
     <div class="site-container">
-      <h2>Campos de trabajo y responsabilidades</h2>
-      <p>
-        El Leadership Team reúne las funciones de Strategy, AI y Product. Cada
-        vertical cuenta con un liderazgo confirmado; las funciones transversales
-        incluyen Relaciones Públicas y Product Specialist.
-      </p>
+      <h2>Dirección</h2>
       <div class="interior-grid three">
-        <article class="interior-card">
-          <h3>Leadership Team</h3>
-          <p>Head of Strategy, Head of AI y Head of Product.</p>
-        </article>
-        <article class="interior-card">
-          <h3>Cuatro verticales</h3>
-          <p>
-            AI Foundations, AI for Software, AI for Science y AI for Finance.
-          </p>
-        </article>
-        <article class="interior-card">
-          <h3>Funciones transversales</h3>
-          <p>Public Relations (Relaciones Públicas) y Product Specialist.</p>
-        </article>
+        {leadership.map((person) => (
+          <article class="interior-card">
+            <h3>{person.name}</h3>
+            <p>{person.role}</p>
+            {person.photo && (
+              <img
+                src={person.photo.src}
+                alt={person.name}
+                width={person.photo.width}
+                height={person.photo.height}
+              />
+            )}
+          </article>
+        ))}
+      </div>
+      <h2 class="team-heading">Equipo</h2>
+      <div class="team-groups">
+        {groups.map((group) => (
+          <div class="team-group">
+            <h3>{group ?? 'Funciones transversales'}</h3>
+            <ul role="list">
+              {team
+                .filter((person) => person.group === group)
+                .map((person) => (
+                  <li>
+                    <strong>{person.name}</strong>
+                    <span>{person.role}</span>
+                    {person.photo && (
+                      <img
+                        src={person.photo.src}
+                        alt={person.name}
+                        width={person.photo.width}
+                        height={person.photo.height}
+                      />
+                    )}
+                  </li>
+                ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </div>
   </section>
-  <section id="E4" class="interior-section">
-    <div class="site-container split-section">
-      <h2>Acércate desde la comunidad</h2>
-      <div>
-        <p>
-          La comunidad general está abierta para conectar con personas
-          interesadas en IA. También puedes visitar AI Labs para situar el
-          trabajo de iniciativas tempranas.
-        </p>
-        <div class="interior-actions">
-          <Button href="/comunidad/" variant="primary">
-            Ir a la comunidad
-          </Button>
-          <Button href="/ai-labs/" variant="outline">
-            Explorar AI Labs
-          </Button>
-        </div>
-      </div>
-    </div>
-  </section>
+  <ClosingCTA
+    id="E4"
+    title="Acércate desde la comunidad"
+    paragraphs={[
+      'La comunidad general está abierta para conectar con personas interesadas en IA. También puedes visitar AI Labs para situar el trabajo de iniciativas tempranas.',
+    ]}
+    buttons={[
+      { label: 'Ir a la comunidad', href: '/comunidad/', variant: 'primary' },
+      { label: 'Explorar AI Labs', href: '/ai-labs/', variant: 'outline' },
+    ]}
+  />
 </InteriorLayout>
+
+<style>
+  .team-heading {
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+  }
+  .team-groups {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.75rem clamp(1.5rem, 5vw, 4rem);
+    margin-top: 1.5rem;
+  }
+  .team-group {
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+  }
+  .team-group ul {
+    margin-top: 0.75rem;
+  }
+  .team-group li {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.15rem 1rem;
+    padding-block: 0.4rem;
+  }
+  .team-group span {
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+  }
+  @media (max-width: 48rem) {
+    .team-groups {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

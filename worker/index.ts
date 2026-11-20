@@ -1,5 +1,9 @@
+import { academyWaitlist, type AcademyBindings } from './academy-waitlist.ts';
+
+type Env = Cloudflare.Env & AcademyBindings;
+
 export default {
-  async fetch(request: Request, env: Cloudflare.Env): Promise<Response> {
+  async fetch(request: Request, env: Env): Promise<Response> {
     const { pathname } = new URL(request.url);
 
     if (pathname === '/api/contact') {
@@ -19,6 +23,9 @@ export default {
       );
     }
 
+    if (pathname === '/api/academy-waitlist')
+      return academyWaitlist(request, env);
+
     if (pathname === '/api' || pathname.startsWith('/api/')) {
       return Response.json(
         { error: 'not_found' },
@@ -31,4 +38,4 @@ export default {
 
     return env.ASSETS.fetch(request);
   },
-} satisfies ExportedHandler<Cloudflare.Env>;
+} satisfies ExportedHandler<Env>;

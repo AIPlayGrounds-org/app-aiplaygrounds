@@ -1,13 +1,19 @@
 ---
+import { products } from '../data/directories';
 import InteriorLayout from '../layouts/InteriorLayout.astro';
-import Button from '../components/starwind/button/Button.astro';
+import ClosingCTA from '../components/site/ClosingCTA.astro';
+import DirectoryCard from '../components/site/DirectoryCard.astro';
+
+const entries = import.meta.env.DEV
+  ? [...products, ...(await import('../data/directories.demo')).demoProducts]
+  : products;
 ---
 
 <InteriorLayout
   title="AI Labs: directorio de productos | AI PlayGrounds"
   description="Conoce AI Labs, el directorio de productos de AI PlayGrounds, y el contexto de sus iniciativas y productos relacionados con inteligencia artificial."
 >
-  <section id="B1" class="page-hero">
+  <section id="B1" class="page-hero labs-hero">
     <div class="site-container">
       <h1>AI Labs: directorio de productos</h1>
       <div class="lead">
@@ -21,72 +27,48 @@ import Button from '../components/starwind/button/Button.astro';
           impulsan y en qué etapa se encuentra.
         </p>
       </div>
+      <a class="interior-link" href="#B3">
+        Ver productos ↓
+      </a>
     </div>
   </section>
-  <section id="B2" class="interior-section">
-    <div class="site-container split-section">
-      <h2>La pregunta detrás de cada iniciativa</h2>
-      <div class="prose">
-        <p>
-          En AI Labs, una iniciativa se describe por lo que intenta explorar o
-          construir. Su relación con AI Foundations, AI for Software, AI for
-          Science o AI for Finance se explica cuando está documentada, junto con
-          sus responsables y estado.
-        </p>
-        <p>
-          El detalle de cada producto forma parte de AI Labs; los trabajos
-          originales se presentan en Investigación. AI Academy reúne la
-          formación; la comunidad conecta a las personas.
-        </p>
-        <a class="interior-link" href="/#I3">
-          Conocer las cuatro verticales ↗
-        </a>
-      </div>
-    </div>
-  </section>
-  <section id="B4" class="interior-section">
+  <section id="B3" class="interior-section">
     <div class="site-container">
-      <h2>Del recurso a su fuente</h2>
-      <div class="interior-grid">
-        <article class="interior-card">
-          <h3>Productos</h3>
-          <p>
-            Utilidad, relación con IA, creación y condiciones de acceso: el
-            contexto para evaluar un recurso.
-          </p>
-          <p>AI Labs reúne el contexto de los productos de su directorio.</p>
-        </article>
-        <article class="interior-card">
-          <h3>Investigación</h3>
-          <p>
-            Pregunta, método, autoría y límites: el contexto para consultar un
-            trabajo original.
-          </p>
-          <a class="interior-link" href="/investigacion/">
-            Criterios de la colección de investigación ↗
-          </a>
-        </article>
-      </div>
-      <p>
-        Las colecciones pueden reunir objetos con distintas procedencias. Estar
-        incluido no significa haber nacido en AI Labs ni ser propiedad de AI
-        PlayGrounds.
-      </p>
+      <h2>Directorio de productos</h2>
+      {entries.length === 0 ? (
+        <p class="directory-empty">Aún no hay productos en el directorio.</p>
+      ) : (
+        <div class="interior-grid">
+          {entries.map((product) => (
+            <DirectoryCard
+              title={product.name}
+              description={product.utility}
+              details={[
+                product.audience,
+                [product.creator, product.status].filter(Boolean).join(' · '),
+              ]}
+              demo={'demo' in product}
+              source={product.source}
+            />
+          ))}
+        </div>
+      )}
     </div>
   </section>
-  <section id="B5" class="interior-section">
-    <div class="site-container">
-      <h2>Conecta con la comunidad</h2>
-      <p>
-        La comunidad de AI PlayGrounds está abierta. Puedes acercarte a su
-        historia de encuentros y al grupo de WhatsApp para compartir
-        conocimiento sobre IA.
-      </p>
-      <div class="interior-actions">
-        <Button href="/comunidad/" variant="primary">
-          Ir a la comunidad
-        </Button>
-      </div>
-    </div>
-  </section>
+  <ClosingCTA
+    id="B5"
+    title="Conecta con la comunidad"
+    paragraphs={[
+      'La comunidad de AI PlayGrounds está abierta. Puedes acercarte a su historia de encuentros y al grupo de WhatsApp para compartir conocimiento sobre IA.',
+    ]}
+    buttons={[
+      { label: 'Ir a la comunidad', href: '/comunidad/', variant: 'primary' },
+    ]}
+  />
 </InteriorLayout>
+
+<style>
+  .labs-hero {
+    padding-bottom: clamp(2rem, 4vw, 3rem);
+  }
+</style>

@@ -9,16 +9,15 @@ body.interior :is(a, button, input, select, textarea, summary):focus-visible {
   outline-offset: 4px;
 }
 .page-hero {
-  padding: clamp(9rem, 14vw, 13rem) 0 clamp(4rem, 7vw, 7rem);
-  border-bottom: 1px solid var(--border);
+  padding: clamp(7rem, 9vw, 9rem) 0 clamp(2.5rem, 4vw, 4rem);
 }
 .page-hero h1 {
-  max-width: 19ch;
-  font-size: clamp(2.7rem, 2rem + 3vw, 5rem);
+  max-width: 21ch;
+  font-size: clamp(2.35rem, 1.75rem + 2.6vw, 4.25rem);
 }
 .page-hero .lead {
   max-width: 58ch;
-  margin-top: 2rem;
+  margin-top: 1.25rem;
   font-size: clamp(1.15rem, 1rem + 0.45vw, 1.45rem);
   color: var(--secondary-text);
 }
@@ -27,10 +26,7 @@ body.interior :is(a, button, input, select, textarea, summary):focus-visible {
   margin-top: 1rem;
 }
 .interior-section {
-  padding-block: clamp(3.5rem, 6vw, 6rem);
-}
-.interior-section + .interior-section {
-  border-top: 1px solid var(--border);
+  padding-block: clamp(2rem, 4vw, 4rem);
 }
 .interior-section h2 {
   max-width: 24ch;
@@ -55,6 +51,11 @@ body.interior :is(a, button, input, select, textarea, summary):focus-visible {
 .interior-grid.three {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.directory-empty {
+  padding: 1rem 1.25rem;
+  background: var(--home-card);
+  border-radius: 0.4rem;
+}
 .interior-card {
   background: var(--home-surface);
   border: 1px solid var(--border);
@@ -71,11 +72,14 @@ body.interior :is(a, button, input, select, textarea, summary):focus-visible {
 }
 .stack {
   display: grid;
-  gap: 1.5rem;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  margin-top: 2rem;
 }
 .stack article {
-  border-top: 1px solid var(--border);
-  padding-top: 1.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 1rem clamp(1.5rem, 5vw, 4rem);
+  align-items: start;
 }
 .stack article p {
   margin-top: 0.6rem;
@@ -94,8 +98,7 @@ body.interior :is(a, button, input, select, textarea, summary):focus-visible {
   margin-top: 1.5rem;
 }
 .contact-form {
-  max-width: 46rem;
-  margin-top: 2rem;
+  min-width: 0;
   padding: clamp(1.5rem, 3vw, 2.5rem);
   background: var(--home-card);
   border: 1px solid var(--border);
@@ -123,6 +126,11 @@ body.interior :is(a, button, input, select, textarea, summary):focus-visible {
   border: 1px solid var(--input);
   border-radius: 0.25rem;
 }
+.contact-form :is(input, select, textarea):disabled {
+  background: var(--home-surface);
+  color: var(--secondary-text);
+  cursor: not-allowed;
+}
 .contact-form textarea {
   min-height: 8rem;
   resize: vertical;
@@ -132,11 +140,15 @@ body.interior :is(a, button, input, select, textarea, summary):focus-visible {
 }
 @media (max-width: 48rem) {
   .page-hero {
-    padding-top: 8rem;
+    padding-top: 6.5rem;
   }
   .interior-grid,
   .interior-grid.three,
-  .split-section {
+  .split-section,
+  .stack article {
     grid-template-columns: 1fr;
+  }
+  .split-section {
+    gap: 1.25rem;
   }
 }

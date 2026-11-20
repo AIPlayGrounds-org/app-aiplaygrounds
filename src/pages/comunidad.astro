@@ -1,5 +1,6 @@
 ---
 import InteriorLayout from '../layouts/InteriorLayout.astro';
+import ClosingCTA from '../components/site/ClosingCTA.astro';
 import Button from '../components/starwind/button/Button.astro';
 const events = [
   {
@@ -53,7 +54,7 @@ const events = [
         </p>
       </div>
       <a class="interior-link" href="/#I3">
-        Nuestros cuatro campos de trabajo ↗
+        Nuestras cuatro verticales de trabajo ↗
       </a>
     </div>
   </section>
@@ -69,41 +70,45 @@ const events = [
         {events.map((event) => (
           <article>
             <h3>{event.title}</h3>
-            <p>{event.text}</p>
-            <p>{event.detail}</p>
-            <a class="interior-link" href={event.url}>
-              Ver {event.title} en Luma ↗
-            </a>
+            <div>
+              <p>{event.text}</p>
+              <p class="event-detail">{event.detail}</p>
+              <a class="interior-link" href={event.url}>
+                Ver en Luma<span class="sr-only">: {event.title}</span> ↗
+              </a>
+            </div>
           </article>
         ))}
         <article>
           <h3>Otros hitos de la trayectoria</h3>
-          <p>
-            hack@latam · mayo de 2026: coorganizador; más de 1.200 postulantes,
-            56 equipos y 36 horas.
-          </p>
-          <p>
-            IA Hackathon · noviembre de 2025: coorganizador junto a The
-            Hackathon Company, Crafter Station y kebo; más de 800 postulantes y
-            22 equipos y proyectos.
-          </p>
-          <p>
-            The Real AI · julio de 2025: coorganizador junto a looper.ai y UTEC;
-            más de 150 participantes y 7 speakers.
-          </p>
-          <p>
-            Bootcamp Gen AI Fundamentals · 2025: organizador; edición práctica y
-            gratuita de seis semanas, con más de 300 inscritos y 16 speakers de
-            Perú, Colombia y Estados Unidos.
-          </p>
-          <p>
-            Los datos de los eventos coorganizados corresponden al evento
-            completo. El bootcamp es un antecedente formativo, sin inscripción
-            vigente.
-          </p>
-          <a class="interior-link" href="/formacion/#F4">
-            La trayectoria formativa del bootcamp ↗
-          </a>
+          <div>
+            <p>
+              hack@latam · mayo de 2026: coorganizador; más de 1.200
+              postulantes, 56 equipos y 36 horas.
+            </p>
+            <p>
+              IA Hackathon · noviembre de 2025: coorganizador junto a The
+              Hackathon Company, Crafter Station y kebo; más de 800 postulantes
+              y 22 equipos y proyectos.
+            </p>
+            <p>
+              The Real AI · julio de 2025: coorganizador junto a looper.ai y
+              UTEC; más de 150 participantes y 7 speakers.
+            </p>
+            <p>
+              Bootcamp Gen AI Fundamentals · 2025: organizador; edición práctica
+              y gratuita de seis semanas, con más de 300 inscritos y 16 speakers
+              de Perú, Colombia y Estados Unidos.
+            </p>
+            <p>
+              Los datos de los eventos coorganizados corresponden al evento
+              completo. El bootcamp es un antecedente formativo, sin inscripción
+              vigente.
+            </p>
+            <a class="interior-link" href="/formacion/">
+              Conocer la formación de AI Academy ↗
+            </a>
+          </div>
         </article>
       </div>
     </div>
@@ -121,21 +126,44 @@ const events = [
           Participar en la comunidad o en un encuentro es distinto de formar
           parte del equipo organizador.
         </p>
+        <div class="interior-actions">
+          <p>La invitación al grupo de WhatsApp aún no está disponible.</p>
+          <Button variant="primary" disabled>
+            Unirme
+          </Button>
+        </div>
       </div>
     </div>
   </section>
-  <section id="C7" class="interior-section">
-    <div class="site-container">
-      <h2>Acércate también al trabajo de AI Labs</h2>
-      <p>
-        Si tu interés está en las ideas que se experimentan y construyen, AI
-        Labs presenta el contexto de nuestras iniciativas tempranas.
-      </p>
-      <div class="interior-actions">
-        <Button href="/ai-labs/" variant="primary">
-          Explorar AI Labs
-        </Button>
-      </div>
-    </div>
-  </section>
+  <ClosingCTA
+    id="C7"
+    title="Acércate también al trabajo de AI Labs"
+    paragraphs={[
+      'Si tu interés está en las ideas que se experimentan y construyen, AI Labs presenta el contexto de nuestras iniciativas tempranas.',
+    ]}
+    buttons={[
+      { label: 'Explorar AI Labs', href: '/ai-labs/', variant: 'primary' },
+    ]}
+  />
 </InteriorLayout>
+
+<style>
+  .stack article {
+    border-top: 1px solid var(--border);
+    padding-top: 1.25rem;
+  }
+  .stack article div > p:first-child {
+    margin-top: 0;
+  }
+  .stack .event-detail {
+    font-size: 0.9rem;
+  }
+  #C4 .interior-actions {
+    display: grid;
+    justify-items: start;
+    gap: 0.75rem;
+  }
+  #C4 .interior-actions p {
+    margin: 0;
+  }
+</style>

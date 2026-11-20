@@ -1,6 +1,12 @@
 ---
+import { research } from '../data/directories';
 import InteriorLayout from '../layouts/InteriorLayout.astro';
-import Button from '../components/starwind/button/Button.astro';
+import ClosingCTA from '../components/site/ClosingCTA.astro';
+import DirectoryCard from '../components/site/DirectoryCard.astro';
+
+const entries = import.meta.env.DEV
+  ? [...research, ...(await import('../data/directories.demo')).demoResearch]
+  : research;
 ---
 
 <InteriorLayout
@@ -24,23 +30,44 @@ import Button from '../components/starwind/button/Button.astro';
           pares solo se señala cuando está documentada.
         </p>
       </div>
+      <a class="interior-link" href="#DI2">
+        Ver investigaciones ↓
+      </a>
     </div>
   </section>
-  <section id="DI4" class="interior-section">
-    <div class="site-container split-section">
-      <h2>La investigación dentro de AI PlayGrounds</h2>
-      <div>
-        <p>
-          AI Foundations, AI for Science, AI for Software y AI for Finance abren
-          preguntas distintas sobre la IA. En Inicio puedes situarlas dentro del
-          propósito de AI PlayGrounds.
+  <section id="DI2" class="interior-section">
+    <div class="site-container">
+      <h2>Directorio de investigaciones</h2>
+      {entries.length === 0 ? (
+        <p class="directory-empty">
+          Aún no hay investigaciones en el directorio.
         </p>
-        <div class="interior-actions">
-          <Button href="/" variant="primary">
-            Conocer AI PlayGrounds
-          </Button>
+      ) : (
+        <div class="interior-grid">
+          {entries.map((item) => (
+            <DirectoryCard
+              title={item.title}
+              description={item.question}
+              details={[
+                [item.authors, item.date].filter(Boolean).join(' · '),
+                item.type,
+              ].filter(Boolean)}
+              demo={'demo' in item}
+              source={item.source}
+            />
+          ))}
         </div>
-      </div>
+      )}
     </div>
   </section>
+  <ClosingCTA
+    id="DI4"
+    title="La investigación dentro de AI PlayGrounds"
+    paragraphs={[
+      'AI Foundations, AI for Science, AI for Software y AI for Finance abren preguntas distintas sobre la IA. En Inicio puedes situarlas dentro del propósito de AI PlayGrounds.',
+    ]}
+    buttons={[
+      { label: 'Conocer AI PlayGrounds', href: '/', variant: 'primary' },
+    ]}
+  />
 </InteriorLayout>
