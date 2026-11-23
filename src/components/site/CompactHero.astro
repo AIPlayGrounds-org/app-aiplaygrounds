@@ -1,0 +1,63 @@
+---
+interface Props {
+  id: string;
+  title: string;
+  variant?: 'directory' | 'page';
+}
+const { id, title, variant = 'page' } = Astro.props;
+---
+
+{variant === 'directory' ? (
+  <header {id} class="directory-intro">
+    <h1>{title}</h1>
+    <slot />
+  </header>
+) : (
+  <section {id} class="page-hero">
+    <div class="site-container">
+      <h1>{title}</h1>
+      <div class="lead">
+        <slot />
+      </div>
+      <slot name="actions" />
+    </div>
+  </section>
+)}
+
+<style>
+  .page-hero {
+    padding: clamp(7rem, 9vw, 9rem) 0 clamp(2.5rem, 4vw, 4rem);
+  }
+  .page-hero h1 {
+    max-width: 21ch;
+    font-size: clamp(2.35rem, 1.75rem + 2.6vw, 4.25rem);
+  }
+  .lead {
+    max-width: 58ch;
+    margin-top: 1.25rem;
+    font-size: clamp(1.15rem, 1rem + 0.45vw, 1.45rem);
+    color: var(--secondary-text);
+  }
+  .lead > :global(p + p) {
+    margin-top: 1rem;
+  }
+  .directory-intro {
+    margin-block-end: clamp(1.75rem, 4vw, 3rem);
+  }
+  .directory-intro h1 {
+    font-size: clamp(2.45rem, 1.75rem + 2.6vw, 4.25rem);
+    max-inline-size: 27ch;
+    text-wrap: pretty;
+  }
+  .directory-intro > :global(p) {
+    max-inline-size: 60ch;
+    margin-block-start: 0.65rem;
+    color: var(--secondary-text);
+    font-size: clamp(1.1rem, 1rem + 0.4vw, 1.35rem);
+  }
+  @media (max-width: 48rem) {
+    .page-hero {
+      padding-top: 6.5rem;
+    }
+  }
+</style>

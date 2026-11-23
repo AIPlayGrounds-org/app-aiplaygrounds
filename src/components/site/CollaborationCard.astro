@@ -1,0 +1,133 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import TextLink from './TextLink.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  image: ImageMetadata;
+  tone: 'grove' | 'sand';
+  href: string;
+  label: string;
+  ctaId: string;
+  inquiryType: 'institutional' | 'commercial';
+}
+const { title, description, image, tone, href, label, ctaId, inquiryType } =
+  Astro.props;
+---
+
+<article class:list={['collaboration', tone]} data-reveal="card">
+  <Image
+    src={image}
+    alt=""
+    format="webp"
+    width={1280}
+    widths={[384, 640, 960, 1280]}
+    sizes="(min-width: 80rem) 550px, (min-width: 60rem) 42vw, (min-width: 48rem) 65vw, 95vw"
+    loading="lazy"
+    class="art"
+  />
+  <div class="copy">
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <TextLink {href} data-cta={ctaId} data-inquiry-type={inquiryType}>
+      {label}
+    </TextLink>
+  </div>
+</article>
+
+<style>
+  .collaboration {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    min-height: 21rem;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    background: var(--editorial-surface);
+    transition: border-color 180ms ease-out;
+  }
+  .collaboration:focus-within {
+    border-color: var(--input);
+  }
+  .grove {
+    background: color-mix(
+      in srgb,
+      var(--editorial-grove) 42%,
+      var(--editorial-card)
+    );
+    --art-width: 89%;
+  }
+  .sand {
+    background: var(--editorial-surface);
+    --art-width: 84%;
+  }
+  .art {
+    position: absolute;
+    inset: auto 0 0 auto;
+    width: var(--art-width);
+    height: auto;
+    pointer-events: none;
+    transform-origin: bottom right;
+  }
+  .copy {
+    position: relative;
+    max-width: min(61%, 28ch);
+  }
+  h3 {
+    font-size: clamp(1.35rem, 1rem + 1vw, 1.8rem);
+    text-wrap: pretty;
+  }
+  p {
+    color: var(--secondary-text);
+    margin-block: 0.55rem 0.65rem;
+  }
+  @media (min-width: 60rem) {
+    .collaboration:nth-child(2) {
+      --editorial-delay: 110ms;
+    }
+  }
+  @media (min-width: 48rem) and (max-width: 59.99rem) {
+    .grove {
+      --art-width: min(76%, 34rem);
+    }
+    .sand {
+      --art-width: min(68%, 32rem);
+    }
+  }
+  @media (max-width: 47.99rem) {
+    .collaboration {
+      min-height: 0;
+      padding-bottom: clamp(7rem, 30vw, 12rem);
+    }
+    .copy {
+      max-width: 35ch;
+    }
+    .grove {
+      --art-width: min(96%, 30rem);
+    }
+    .sand {
+      --art-width: min(90%, 29rem);
+    }
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .collaboration:hover {
+      border-color: var(--input);
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .art {
+      transition: scale 280ms var(--editorial-ease-out);
+    }
+    .collaboration:focus-within .art {
+      scale: 1.035;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .collaboration:hover .art {
+        scale: 1.035;
+      }
+    }
+  }
+</style>

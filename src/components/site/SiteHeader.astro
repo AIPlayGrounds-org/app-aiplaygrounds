@@ -12,10 +12,10 @@ const audience = [
   ['Empresas', '/empresas/'],
 ];
 const pathname = Astro.url.pathname;
-const cta =
-  pathname === '/empresas/'
-    ? { label: 'Ver opciones', href: '/empresas/#EM6' }
-    : { label: 'Ver comunidad', href: '/comunidad/#C4' };
+const organizations = pathname === '/empresas/';
+const cta = organizations
+  ? { label: 'Ver opciones', href: '#EM2' }
+  : { label: 'Ver comunidad', href: '/comunidad/#C4' };
 ---
 
 <header class="site-header">
@@ -38,7 +38,11 @@ const cta =
       ))}
     </nav>
     <div class="desktop-cta">
-      <Button href={cta.href} variant="primary">
+      <Button
+        href={cta.href}
+        variant="primary"
+        data-cta={organizations ? 'header_opportunities' : undefined}
+      >
         {cta.label}
       </Button>
     </div>
@@ -66,7 +70,11 @@ const cta =
           </a>
         ))}
         <div class="mobile-cta">
-          <Button href={cta.href} variant="primary">
+          <Button
+            href={cta.href}
+            variant="primary"
+            data-cta={organizations ? 'header_opportunities' : undefined}
+          >
             {cta.label}
           </Button>
         </div>

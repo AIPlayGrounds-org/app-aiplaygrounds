@@ -97,7 +97,7 @@ Esta es una fotografía de la implementación actual, no una aprobación de las 
 
 Negro y blanco sostienen las acciones principales. Halo, Menta y Lima conservan sus nombres de marca. Los tokens web definen el papel cálido, superficies, texto y bordes; Inicio y las interiores observadas añaden superficies editoriales locales más cálidas. No son dos paletas intercambiables: comprobar qué capa gobierna la superficie que se está documentando.
 
-[`tokens.css`](src/styles/tokens.css) es la fuente de colores de marca y roles semánticos; las superficies editoriales se observan en [`index.astro`](src/pages/index.astro) e [`interior.css`](src/styles/interior.css). El alcance oscuro invierte las acciones principales y adapta borde, texto y estados. No implica un selector de tema del sitio.
+[`tokens.css`](src/styles/tokens.css) es la fuente de colores de marca, roles semánticos y superficies editoriales compartidas. El alcance oscuro invierte las acciones principales y adapta borde, texto y estados. No implica un selector de tema del sitio.
 
 **The Contextual Contrast Rule.** Evaluar el contraste sobre el fondo real; no usar Halo, Menta o Lima como texto pequeño sobre superficies claras ni depender solo del color para indicar estados.
 
@@ -126,6 +126,9 @@ Botones y campos tienen esquinas pequeñas; las tarjetas interiores repiten un r
 - **Campos.** En Empresas, etiquetas encima, borde visible, fondo cálido y foco por contorno. El aspecto deshabilitado es un estado visual; esta documentación no habilita captación.
 - **Navegación.** [`SiteHeader`](src/components/site/SiteHeader.astro) muestra marca y enlaces, señala la página actual y expone un menú compacto en pantallas estrechas. El patrón observado no aprueba cambios en los destinos ni agrupaciones editoriales.
 - **Cierre ilustrado.** [`ClosingCTA`](src/components/site/ClosingCTA.astro) combina texto, una o dos acciones y paisaje de apoyo. Su presencia en varias rutas no lo convierte en el acabado obligatorio para todos los cierres.
+- **Aperturas.** [`ImmersiveHero`](src/components/site/ImmersiveHero.astro) conserva el centro en Inicio y admite texto a la izquierda y foco responsive en Empresas; Formación puede adoptarlo cuando se revise su propia composición. [`CompactHero`](src/components/site/CompactHero.astro) conserva los encabezados por contenido de Comunidad, AI Labs, Investigación y Equipo.
+- **Composición editorial.** `Section` y `SectionHeading` aportan contenedor y escala compartida. `InitiativeCard` y `InitiativeGrid` mantienen la composición I5 en Inicio y Empresas. `CollaborationCard` adopta el principio del cierre ilustrado: fondo, arte transparente y texto con área segura. No usa una foto rectangular.
+- **Movimiento.** `EditorialMotion` permite revelar contenido visible por defecto con `data-reveal`, escalonar cards y omitir movimiento según preferencia. `TextLink` conserva la flecha y sus estados interactivos. No necesita biblioteca adicional.
 
 ## Do's and Don'ts
 

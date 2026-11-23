@@ -1,5 +1,7 @@
 # AI PlayGrounds · Normalización de categorías de secciones
 
+**Nota E222-EM:** las filas de Empresas pertenecen a la exploración histórica. La [composición implementada](../implementation/empresas.md) reemplaza esas clasificaciones para esta ruta.
+
 **Propuesta para revisión.** La categoría indica **dónde buscar**; la función editorial indica **qué debe resolver** la referencia. El [inventario](inventario-secciones.md) y el [catálogo de 26 variantes](catalogo-familias-secciones.md) siguen siendo las fuentes para el alcance, las condiciones y los patrones previos. Este documento no los sustituye ni altera el sitio.
 
 ## A. Matriz de categorías entre bibliotecas

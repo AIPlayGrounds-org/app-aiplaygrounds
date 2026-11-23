@@ -1,5 +1,7 @@
 # Empresas · Exploración visual
 
+**Archivo histórico.** Las maquetas y seis bloques explorados más abajo no son el diseño vigente. La revisión E222-EM del 23/11/2026 autorizó la [composición implementada](../implementation/empresas.md), sin abrir otra ronda visual.
+
 **Exploración:** se probó la dirección Dos puertas de entrada y luego se restauró el diseño anterior de `/empresas/` a petición del usuario.
 
 [Tablero local de Impeccable](http://127.0.0.1:37813/) · Tres maquetas de la apertura, no páginas implementadas. El contenido y la forma de presentar cada sección se continuarán con la dirección que se elija.

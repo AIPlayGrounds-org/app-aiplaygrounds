@@ -165,6 +165,8 @@ Modalidad, convocatoria, docentes, precios y certificados no se recuperan como a
 
 #### Empresas
 
+> **Nota de vigencia · E222-EM · 23/11/2026:** este apartado conserva la estructura del corte E1 v2.2 para trazabilidad. El responsable autorizó posteriormente las cinco secciones y el recorrido de colaboración de [E2 · Empresas](../02-contenido-web/contenido-web.md#página-empresas). Las referencias a los seis bloques en este corte no son instrucciones de implementación.
+
 **Función:** ayudar a las organizaciones a comprender dónde concentra su trabajo AI PlayGrounds, examinar evidencia y evaluar una posible relación institucional o comercial. La formación es una posibilidad, no el marco exclusivo.
 
 | Orden | Sección | Objetivo | Contenido / elementos clave |

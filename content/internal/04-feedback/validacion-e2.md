@@ -1,5 +1,9 @@
 # E2 · QA y trazabilidad interna
 
+## E222-EM · Revisión localizada de Empresas · 23/11/2026
+
+**APROBADA para Empresas** por el encargo de implementación del responsable. E2 reemplaza el copy de la ruta y documenta el paso de seis a cinco secciones; EM5 persiste como ancla de la card AI Academy. E1, la matriz de preguntas, la trazabilidad E221 y los cortes inferiores se conservan como evidencia histórica. El envío real sigue condicionado a privacidad, antiabuso y verificación de recepción; no se autorizó publicar.
+
 ## E221-C · Cierre editorial E2 v2.1 · 05/11/2026
 
 **Estado: APROBADO EDITORIALMENTE**, según mensaje humano «Cierre editorial de E2 v2.1», tras aplicar exclusivamente los H1 de Productos e Investigación y registrar la decisión sobre colecciones sin entradas. No autorización de publicación/implementación; se mantiene v2.1. Los cortes E221/E122 inferiores conservan su carácter histórico.

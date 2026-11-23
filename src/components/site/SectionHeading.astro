@@ -1,0 +1,15 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = HTMLAttributes<'h2'>;
+---
+
+<h2 {...Astro.props}>
+  <slot />
+</h2>
+
+<style>
+  h2 {
+    font-size: clamp(2rem, 1.5rem + 1.5vw, 3rem);
+  }
+</style>

@@ -57,7 +57,7 @@ APROBADO: E1 conserva arquitectura; E2 + EST §§14–15 + DEC E221-C contienen 
 | Antecedente que puede inducir a error | Fuente vigente / instrucción |
 |---|---|
 | E1 deja canal general, colaboración y WhatsApp por confirmar | E2 C1/C4/C6/C7, EST §14: comunidad abierta por WhatsApp, URL exacta pendiente; equipo interno cerrado; C7 solo continuidad a Labs |
-| E1 no decide un formulario; captura empresarial pendiente | E2 EM5/EM6 y DEC E221: uno solo, dos tipos, tres CTA. La recepción técnica y privacidad siguen pendientes |
+| E1 no decide un formulario; captura empresarial pendiente | E222-EM: uno solo, dos tipos, cuatro CTA. La recepción real y privacidad siguen pendientes |
 | E1 no confirma personalización, estado de Academy o trayectoria | E2 F4/F6/EM3/EM5: bootcamp histórico, sin programas públicos actuales, formación personalizada potencial sujeta a evaluación |
 | E1/EST anteriores dejan PR pendiente | E2 E3 y EST roster/§14: Public Relations (Relaciones Públicas), sin títulos adicionales |
 | EST §14 y notas antiguas dejan vacío sin corpus pendiente | EST §15, DEC E221-C y apertura E2: conservar explicación/modelo sin listados vacíos, filtros sin opciones, fichas ficticias o placeholders |
@@ -85,7 +85,7 @@ Las siguientes son **rutas propuestas editorialmente en E2**, no URLs publicadas
 |---|---|---|---|---|
 | Inicio | `/` | Identidad/orientación; personas y organizaciones nuevas | Ir a la comunidad; acceso contextual Labs, Equipo, Formación, Empresas | Comunidad; secundaria Empresas, sin formulario propio |
 | Formación | `/formacion/` | Comparar líneas/estado; personas interesadas en aprendizaje | Ir a la comunidad; Formación para mi equipo | Comunidad; Empresas EM5, no enlace circular a su propia raíz |
-| Empresas | `/empresas/` | Examinar campos/evidencia; instituciones y empresas | Proponer una alianza / Cuéntanos tu necesidad; formación EM5 | Mismo formulario EM6, condicionado a §9; Labs/Equipo/Formación como navegación informativa |
+| Empresas | `/empresas/` | Explorar colaboración; instituciones y empresas | Conversemos / Proponer una alianza / Plantear una necesidad / Consultar formación | Mismo formulario EM6, condicionado a §9; trayectoria I4, Labs e Investigación |
 | Comunidad | `/comunidad/` | Historia y participación general; personas interesadas en IA | Unirme a la comunidad; contexto Inicio y Labs | Grupo WhatsApp, URL PENDIENTE; no formulario de ingreso |
 | AI Labs | `/ai-labs/` | Directorio de productos y contexto de iniciativas | Ir a la comunidad; criterios de productos e Investigación | Comunidad e Investigación; B3 solo con entradas reales |
 | Investigación | `/investigacion/` | Descubrir originales; lectores y autores | Abrir trabajo real si existe; Conocer AI PlayGrounds | Ficha existente; Inicio. Postulación inactiva sin proceso |
@@ -97,7 +97,7 @@ Las siguientes son **rutas propuestas editorialmente en E2**, no URLs publicadas
 
 **Enlaces externos:** conservar los cuatro Luma canónicos de §7; fuentes/accesos de futuros registros requieren verificación. No importar parámetros de invitación/seguimiento, reuniones privadas o tokens editoriales como URL. WhatsApp usará solo la invitación real que aporte el responsable. Abrir en misma pestaña es una recomendación sencilla; si desarrollo elige otra pestaña, comunicarlo accesiblemente y proteger la navegación externa. No es requisito abrir todo externo en pestaña nueva. Usar `<a>` para navegación y botones para acciones; no `href="#"`, URLs de ejemplo o manejadores vacíos para aparentar disponibilidad.
 
-## 3. Matriz de implementación de las 48 secciones
+## 3. Matriz de implementación de las 47 secciones
 
 **Regla de lectura:** el encabezado de cada tabla fija la página/tipo para todas sus filas. La columna «Fuente» lleva exactamente al bloque E2 que aporta copy, datos y notas; E1 §4.3 es la base de orden. Títulos H2/H1 presentes se conservan literalmente; los títulos de modelos C se preparan, pero no aparecen solos sin registros. «H1 página» remite al H1 de §4, no añade otro. Todos los patrones de presentación son **PROPUESTOS**, no wireframes ni una biblioteca nueva. Priorizar composición HTML/Astro y primitives de Starwind UI; no un componente por ID ni un motor universal de secciones.
 
@@ -124,16 +124,17 @@ Naturaleza: estático = copy; estructurado = atributos comparables; repetible = 
 | F6 | Orientar necesidad de equipo | H2 Formación a partir de lo que necesita tu equipo | [F6][e2-f6] | Estático | Posibilidad personalizada evaluable | Texto/enlace | Navegar | Empresas EM5 | No promete condiciones de programa | A; DEP-10 |
 | F5 | Siguiente paso fiel al estado | H2 Sigue aprendiendo en comunidad | [F5][e2-f5] | Estático | Estado sin convocatorias y CTA | Continuidad integrada | Navegar | Comunidad; Empresas EM5 | Sin espera/avisos o CTA a raíz Formación | A; DEP-08 si cambia oferta |
 
-### Empresas · 6 secciones
+### Empresas · 5 secciones
 
-| ID | Propósito | Título público / nivel | Fuente E2 | Naturaleza | Datos necesarios | Presentación sugerida | Interacción | Destinos | Visibilidad | Estado / dependencia |
-|---|---|---|---|---|---|---|---|---|---|---|
-| EM1 | Relevancia institucional | H1 página | [EM1][e2-em1] | Estático | Identidad/campos/trayectoria | Apertura | Navegar | Equipo | No proveedor exclusivo de capacitación | A; DEP-10 |
-| EM2 | Situar necesidad en cuatro campos | H2 Cuatro campos para situar las necesidades de tu organización | [EM2][e2-em2] | Estructurado | Cuatro ámbitos/límites | Cuatro descriptores | Lectura | No servicios o páginas nuevas | Cuatro campos en orden aprobado | A |
-| EM3 | Acreditar trayectoria | H2 Trayectoria que se construye reuniendo a las personas | [EM3][e2-em3] | Histórico/estructurado | Hitos H00–H04, papeles y cifras colectivas | Evidencia con atribución junto a cada dato | Navegar | Comunidad C3 | Sin claims de implementación empresarial | B; DEP-09 logos/materiales |
-| EM4 | Orientar a Labs | H2 AI Labs: una mirada al trabajo temprano | [EM4][e2-em4] | Estático | Explicación Labs | Texto/acción | Explorar AI Labs | AI Labs | Sin inventario duplicado | A; DEP-10 |
-| EM5 | Recibir interés en formación potencial | H2 Formación en IA para las necesidades de tu equipo | [EM5][e2-em5] | Estático + interacción condicional | Copy, líneas, selección comercial | Texto/CTA hacia EM6 | Preseleccionar comercial, editable | EM6; Formación contextual | Copy sí; CTA operativo solo con formulario habilitado | D; DEP-02/03 |
-| EM6 | Diferenciar relaciones y consultar | H2 Conversemos sobre lo que tienes en mente | [EM6][e2-em6] | Formulario/estructurado/condicional | Dos caminos; ocho campos y mensajes §9 | Dos opciones y un formulario | Preselección/manual, validación, envío/estados | Mismo formulario, canal aún pendiente | Caminos informativos; captación solo tras privacidad/recepción reales | D; DEP-02/03 |
+**E222-EM · 23/11/2026.** La [fuente editorial E2](../../content/entregables-cliente/02-contenido-web/contenido-web.md#página-empresas) sustituye el recorrido de seis bloques solo para esta página.
+
+| ID | Implementación | Destinos |
+|---|---|---|
+| [EM1][e2-em1] | Hero inmersivo, alineado a la izquierda | EM6 sin preselección, EM2 |
+| [EM2][e2-em2] | Dos cards ilustradas, no verticales | EM6 institucional o comercial |
+| [EM3][e2-em3] | Respaldo editorial, sin cifras duplicadas | `/#I4` |
+| [EM4][e2-em4] | Tres cards del patrón I5 | AI Labs, EM6 comercial desde la card EM5, Investigación |
+| [EM6][e2-em6] | Un formulario y cinco campos obligatorios | Envío retenido hasta validar la activación |
 
 ### Comunidad · 5 secciones
 
@@ -210,7 +211,7 @@ La tabla siguiente especifica la primera versión implementable en entorno de de
 |---|---|---|---|---|
 | Inicio | Presentar/orientar a nuevos visitantes; `/` | H1 «Aprendemos, investigamos y construimos con IA. En comunidad.»; I1 → I2 → I3 → I4 → I5 → I8 | Cuatro verticales en orden; tres selecciones I4 ya redactadas; rutas de §2 | No duplicar roster ni inventario Labs; I4 preserva cifras/roles y original Claude; el cierre dirige a Comunidad y Empresas, no exclusivamente Academy |
 | Formación | Evaluar dos enfoques de aprendizaje; `/formacion/` | H1 «AI Academy: aprender a integrar IA y a desarrollar con ella»; F1 → F3 → F4 → F6 → F5 | Comparación por tarea; bootcamp 2025 y estado sin programas públicos vigentes; futuros registros en F4, cero actuales | No enlaces de matrícula/espera/aviso, no CTA a su propia raíz; F6/F5 llegan a Empresas EM5; requisitos/condiciones futuros no heredados del bootcamp |
-| Empresas | Contexto institucional/comercial para organizaciones; `/empresas/` | H1 «Conectemos tu organización con el trabajo en IA»; EM1 → EM2 → EM3 → EM4 → EM5 → EM6 | Cuatro campos; cuatro hitos; dos caminos y un formulario (§9) | Construir texto y contrato del formulario, no activar sin DEP-02/03; EM4 solo explicación + Labs; no servicios técnicos inferidos de eventos |
+| Empresas | Contexto institucional/comercial para organizaciones; `/empresas/` | H1 «Conecta tu organización con nuevas oportunidades en IA.»; EM1 → EM2 → EM3 → EM4 → EM6 | Dos caminos, respaldo enlazado, tres iniciativas y un formulario (§9) | No activar sin DEP-02/03; EM5 es un ancla de EM4; no inferir servicios de los eventos |
 | Comunidad | Participación general e historia; `/comunidad/` | H1 «La IA nos reúne. La comunidad está abierta.»; C1 → C3 → C4 → C6 → C7 | Cuatro Luma y otros hitos C3; WhatsApp reutilizado desde C1/C6; ningún futuro actual | Separar pasado/futuro sin encabezado futuro vacío; sin admisión general o reclutamiento; microcopy que presupone enlace activo solo cuando DEP-01 se resuelva |
 | AI Labs | Contextualizar iniciativas tempranas; `/ai-labs/` | H1 «AI Labs: las ideas en su etapa temprana»; B1 → B2 → B3 condicional → B4 → B5 | Modelo de iniciativas sin entradas; navegación Inicio I3, colecciones y Comunidad | B1/B2/B4/B5 permanecen; B3/heading/listado no se imprimen vacíos; nada de incubación, acceso a proyectos o fichas de iniciativas |
 | Investigación | Explicar descubrimiento de originales; `/investigacion/` | H1 final «Investigaciones y trabajos relacionados con IA»; DI1 → DI2 condicional → DI3 condicional → DI4 | Explicación y enlace Inicio; cero originales/filtros actuales | No herramientas bibliográficas como trabajos, guía APA o revisión científica inferida; no postulación activa. Metadata de E2 sin cambio |
@@ -231,7 +232,7 @@ La tabla siguiente especifica la primera versión implementable en entorno de de
 
 **APROBADO:** campos/relaciones editoriales de E2 y EST §5/§14, contenido versionado en Git, Markdown/JSON y Content Collections (T0). **PROPUESTO:** siete modelos lógicos; páginas institucionales y cinco familias repetibles más personas. No se exige una colección por tabla pequeña: cuatro verticales y dos líneas pueden ser datos compartidos; hitos históricos pueden ser proyecciones/referencias a eventos o datos institucionales. El bootcamp se registra una sola vez como antecedente, sin duplicarlo como programa vigente.
 
-**Registro canónico compartido:** el Bootcamp Gen AI Fundamentals de 2025 debe tener un único registro canónico de contenido. Comunidad, Formación, Empresas e Inicio deben reutilizar sus datos mediante referencias o proyecciones de ese mismo registro; no generar registros independientes que dupliquen fechas, cifras, organizadores o información histórica. El modelo técnico concreto se decidirá durante desarrollo, pero debe garantizar una única fuente de verdad para los datos del bootcamp. Aplicar este principio también a otros eventos y entidades reutilizados en varias páginas.
+**Registro canónico compartido:** el Bootcamp Gen AI Fundamentals de 2025 debe tener un único registro canónico de contenido. Comunidad, Formación e Inicio deben reutilizar sus datos mediante referencias o proyecciones de ese mismo registro; no generar registros independientes que dupliquen fechas, cifras, organizadores o información histórica. El modelo técnico concreto se decidirá durante desarrollo, pero debe garantizar una única fuente de verdad para los datos del bootcamp. Aplicar este principio también a otros eventos y entidades reutilizados en varias páginas.
 
 | Modelo lógico | Representación PROPUESTA | Fuente editorial | Estado de inventario / rutas |
 |---|---|---|---|
@@ -273,7 +274,7 @@ Los nombres de claves y enums técnicos siguientes son **PROPUESTOS**; represent
 | Copy por sección | Markdown específico de página | R donde existe copy; separar encabezados/cuerpo/acciones de notas documentales |
 | Referencias a entidades | listas de IDs y relación de selección | C en I4, C3, EM3, listados, programas y equipo; evitar duplicar entidad al resumirla |
 | Acciones | etiqueta + destino semántico + condición | C; resolver destino desde rutas/estado, sin placeholders públicos |
-| Datos comunes | objetos/listas JSON | R para cuatro verticales y dos líneas; nombre canónico, descriptor contextual por página y orden. Mismo campo técnico no fuerza copy idéntico en Inicio/Empresas |
+| Datos comunes | objetos/listas JSON | R para cuatro verticales y dos líneas; nombre canónico, descriptor contextual por página y orden. Empresas no reproduce las verticales |
 | Canales/estado operativo | URL opcional + disponibilidad confirmada | C; WhatsApp ausente = no enlace; formulario no habilitado = no captación. No flags que inventen programas/eventos |
 
 Fuente: E2 cabeceras/I3/F3/EM2 y EST §§5–8. Markdown puede organizar bloques específicos sin convertir `sectionIds` en un renderizador genérico de cualquier página.
@@ -437,78 +438,13 @@ Actualmente no hay cursos/programas públicos vigentes ni convocatorias activas.
 
 Preparar `programs` y su presentación dentro de F4, sin crear páginas de programa ni lista vacía. Un futuro programa requiere campos de §5.5 y aprobación de estado; antes de una nueva inscripción revisar F4/F5/metadatos que afirman ausencia de convocatorias. No añadir waitlist, avisos o próximas fechas. No completar catálogo ahora.
 
-La formación personalizada para organizaciones se explora desde perfiles, necesidades y objetivos del equipo. F6/F5 apuntan a Empresas EM5; **«Consultar formación para mi equipo»** allí conduce al único formulario EM6 con **Oportunidad comercial**. No formulario adicional de Academy ni formación bajo AI Labs. Temarios, docentes, disponibilidad, precios, certificados, resultados, modalidades y plazos se evalúan por propuesta; no prometerlos desde el frontend.
+La formación personalizada para organizaciones se explora desde perfiles, necesidades y objetivos del equipo. F6/F5 apuntan a Empresas EM5; **«Consultar formación»** en la card EM5 conduce al único formulario EM6 con **Oportunidad comercial**. No formulario adicional de Academy ni formación bajo AI Labs. Temarios, docentes, disponibilidad, precios, certificados, resultados, modalidades y plazos se evalúan por propuesta; no prometerlos desde el frontend.
 
 ## 9. Empresas y formulario único
 
-### 9.1 Alcance y navegación
+La revisión E222-EM mantiene un destino `#EM6`: Conversemos no modifica el tipo; Proponer una alianza selecciona institucional; Plantear una necesidad y Consultar formación seleccionan comercial. Enlaces nativos con mejora progresiva; no se borra ningún dato al cambiar de CTA. `#EM5` se conserva como ancla de la card de AI Academy, incluida en EM4.
 
-**APROBADO · E2 EM1–EM6:** seis secciones de §3; organización → cuatro ámbitos → experiencia → Labs → Academy para equipos → conversación. EM3 acredita organización/coorganización de actividades y formación, no ejecución técnica empresarial. EM4 debe usar **«Explorar AI Labs»** hacia Labs, sin clonar su inventario.
-
-En EM6 distinguir visual y semánticamente los caminos siguientes, sin decidir un layout preciso:
-
-| Camino / origen | CTA literal | Tipo inicial en el mismo formulario |
-|---|---|---|
-| Alianzas institucionales (EM6) | Proponer una alianza | Alianza institucional |
-| Oportunidades comerciales (EM6) | Cuéntanos tu necesidad | Oportunidad comercial |
-| Formación personalizada AI Academy (EM5) | Consultar formación para mi equipo | Oportunidad comercial |
-
-El primer camino incluye universidades, instituciones, comunidades/organizaciones para actividades, encuentros e iniciativas compartidas. El segundo incluye necesidades de IA y posibles colaboraciones comerciales, proyectos o formación evaluables. Usar el copy de E2 EM6; no presentar la consulta como aceptación, contratación, cotización automática o compromiso de ejecución. No prometer tiempo de respuesta, agenda o reunión.
-
-**Comportamiento aprobado:** tres CTA, un solo formulario en Empresas; selección visible y siempre modificable. Preseleccionar según origen cuando sea posible. Si no se soporta preselección, dejar selección manual obligatoria; no suponer comercial sin elección del visitante. Cambio posterior prevalece al enviar. Llegada directa al formulario debe permitir elegir tipo; no depender de una URL de campaña. No crear páginas, formularios o sistemas separados para alianzas/comercial/formación.
-
-**PROPUESTO:** ancla de EM6 y mejora progresiva mínima para actualizar el control desde los CTA; foco perceptible al llegar sin perder contexto. Evitar query params como sustituto de la verdad del campo. No se exige React: solo considerar una isla si la interacción real lo justifica dentro del stack. Probar teclado y navegador sin mejora JavaScript: al menos navegación/elección manual deben funcionar; nunca enviar por el mero clic de un CTA de navegación.
-
-### 9.2 Contenido exacto y campos
-
-Fuente normativa para todas las etiquetas/ayudas/mensajes: [E2 EM6][e2-em6]. Se reproduce el microcopy mínimo aquí porque determina el contrato funcional, no para crear otra versión editable.
-
-- **Título:** Cuéntanos tu propuesta o necesidad
-- **Descripción:** Comparte el contexto de tu organización y lo que te gustaría conversar con AI PlayGrounds. No necesitas preparar un brief técnico.
-- **Instrucción:** Los campos marcados con * son obligatorios.
-- **Botón:** Enviar consulta
-
-| Etiqueta aprobada | Tipo de entrada | Obligación | Ayuda / validación |
-|---|---|---|---|
-| Tipo de consulta * | Selección única | Sí | Opciones exactas Alianza institucional / Oportunidad comercial; estado inicial sin valor: Selecciona el tipo de consulta |
-| Nombre y apellido * | Texto | Sí | No restringir a ASCII ni imponer cantidad fija de palabras |
-| Organización o empresa * | Texto | Sí | Sin placeholder obligatorio o identificador fiscal |
-| Cargo o función (opcional) | Texto | No | Vacío válido; no bloquea envío |
-| Correo electrónico * | Email | Sí | Ejemplo de formato nombre@organizacion.com; no exigir dominio corporativo |
-| País (opcional) | Selector o texto estructurado | No | Si selector: Selecciona un país; sin país preasignado. Modo de control técnico por decidir |
-| Cuéntanos qué tienes en mente * | Área de texto | Sí | Ayuda persistente: Puedes contarnos tu propuesta, una necesidad de tu equipo o el contexto que quieres evaluar. Sin mínimo arbitrario o brief técnico |
-| Consentimiento de privacidad | Casilla | Solo cuando legalmente necesaria | Texto/obligatoriedad condicionados a revisión legal y política aplicable; no casilla premarcada |
-
-No añadir presupuesto, teléfono, tamaño, RUC, empleados, adjuntos o agenda como requisitos. Validar vacío y formato por separado; controles opcionales no generan error por ausencia. Límites técnicos de tamaño y protección se decidirán después de documentar la necesidad; no imponer requisitos editoriales nuevos por conveniencia.
-
-### 9.3 Estados, mensajes y criterios funcionales
-
-| Estado | Mensaje literal E2 | Criterio de implementación |
-|---|---|---|
-| Tipo ausente | Selecciona el tipo de consulta. | Error junto al control, elección corregible |
-| Nombre vacío | Escribe tu nombre y apellido. | No deducir nombre incompleto por una sola palabra |
-| Organización vacía | Indica tu organización o empresa. | Corregir campo, no pedir RUC |
-| Correo vacío | Escribe tu correo electrónico. | Distinto de formato inválido |
-| Correo inválido | Revisa el formato de tu correo electrónico. | Permitir corrección sin borrar otros campos |
-| Contexto vacío | Cuéntanos brevemente qué tienes en mente. | No exigir un brief o extensión arbitraria |
-| Consentimiento requerido ausente | Para enviar, acepta el tratamiento de datos indicado en la política de privacidad. | Solo si obligación/texto legal/destino están validados |
-| Resumen de errores | Revisa los campos señalados para enviar tu consulta. | Identificar controles, enlaces/foco a errores y ayudas asociadas |
-| Recepción confirmada | Hemos recibido tu consulta. Gracias por compartir el contexto de tu organización. | Solo tras confirmación real de recepción del canal; no por clic, temporizador, validación cliente o respuesta técnica no concluyente |
-| Error recuperable o recepción incierta | No pudimos confirmar la recepción de tu consulta. Inténtalo de nuevo. | Permitir reintento; no afirmar que se guardaron datos o que nadie recibió nada si no puede saberse |
-
-**Criterios aprobados:** éxito no equivale a contratación; error no inventa almacenamiento; no plazos. **PROPUESTO técnico:** estado de envío en curso perceptible y prevención de envíos accidentales repetidos; texto adicional de progreso, estrategia de reintento/idempotencia y criterios de respuesta del canal por resolver en desarrollo sin cambiar mensajes de E2. No mostrar éxito de prueba en producción. No escoger un backend, endpoint, proveedor de email o protocolo de recepción en este handoff.
-
-Validación accesible: etiquetas persistentes, relación ayuda/error con control, obligatoriedad expuesta, resumen de errores anunciado y enfocable, señal de error no solo color, estado final anunciado sin ocultar el formulario prematuramente. Usar componentes Starwind pertinentes cuando existan y HTML nativo; no se presupone nombre/API de componente o integración aún no instalada.
-
-### 9.4 Privacidad, activación y límite del canal
-
-PENDIENTE: política aplicable, responsable/tratamiento real y URL válida; cuándo es legalmente necesaria la casilla; revisión del texto condicionado de E2; mecanismo de envío/recepción y pruebas. **No inventar ruta `/privacidad/`, página legal, servicio, jurisdicción, duración de conservación o automatizaciones.** La ubicación legal se decidirá, sin ampliar silenciosamente las ocho páginas editoriales.
-
-Texto condicionado E2: «Antes de enviar, revisa la política de privacidad». Casilla condicionada: «He leído la política de privacidad y acepto el tratamiento de mis datos en los términos que allí se indican». Vincular «política de privacidad» al documento real cuando exista, no al token `POLITICA_PRIVACIDAD_PENDIENTE`. No afirmar tratamiento implementado antes de resolverlo.
-
-Se pueden construir y probar estructura/mensajes en entorno privado posteriormente autorizado. Sin privacidad/canal verificados, no activar envío ni publicar aceptación legal o un CTA que aparente captación operativa. **PROPUESTO:** mantener los dos caminos como información y omitir controles de captación en una eventual versión pública incompleta; requiere validar el lanzamiento, no borrar EM6 del contrato. No sustituir con correo, WhatsApp empresarial, booking o formulario de terceros no aprobados.
-
-No CRM, distribución interna, notificaciones, almacenamiento de consultas en Git o base de datos inferida del stack. El proceso de desarrollo deberá resolver seguridad/abuso/validación del canal con la decisión legal y operativa pertinente; WAF/Workers no prueban por sí solos recepción, protección suficiente o autorización de tratamientos. §12 DEP-02/03 bloquea solo captación, no todo el contenido institucional.
+El formulario solicita tipo, nombre completo, organización, correo y descripción. Cualquier aviso o consentimiento legal depende de la validación pendiente. La interfaz no confirma recepciones sin respuesta aceptada y conserva los datos ante error. Véase [arquitectura técnica §10](technical-architecture.md#10-integraciones-y-flujos-de-datos) para configuración, analítica y verificación del buzón.
 
 ## 10. Equipo y autorizaciones
 
@@ -549,7 +485,7 @@ Fuentes: E1 §4.2, E2 cabeceras/notas transversales, EST §§8.1–8.10/14/15, R
 | Inicio / Equipo | N01; Inicio contextualiza N05/N06/N08/N10 | Identidad y campos, no guía genérica de IA o captación de empleos |
 | Comunidad | N02 | Actividad real y acceso claro, no volumen de proyectos como demanda de incorporación |
 | Formación | N11 y facetas N06/N07 | Diferenciar integración/asistencia, estado actual y condiciones; no carrera universitaria |
-| Empresas | N12, contexto de cuatro campos | Relación institucional/comercial y evidencia, no catálogo de implementación inventado |
+| Empresas | N12, contexto de colaboración | Relación institucional/comercial y evidencia, no catálogo de implementación inventado |
 | AI Labs | N03, faceta institucional | Iniciativas/estado; no tutorial de gestión ni laboratorio físico inferido |
 | Productos / ficha | N04; N09 y campos según objeto | Utilidad/procedencia/acceso; herramienta para investigar no trabajo científico |
 | Investigación / ficha | N13; N08 según original | Pregunta/enfoque/autor/límites/fuente; no guía APA o autoría propia automática |
@@ -609,7 +545,7 @@ Este checklist es para el futuro agente y la revisión humana. Las casillas no e
 ### 13.1 En desarrollo local/entorno privado autorizado
 
 - [ ] Ocho páginas base y dos plantillas de ficha, con las rutas editoriales de §2 o equivalencia técnica registrada. Cero páginas extra de eventos, verticales, programas, integrantes o iniciativas.
-- [ ] Registro de los 48 IDs y su orden por página coincide con §3/E2 vigente. Las secciones condicionales no renderizadas sin datos están cubiertas en modelo/pruebas, no eliminadas o contadas como contenido público terminado.
+- [ ] Registro de las 47 secciones y su orden por página coincide con §3/E2 vigente. EM5 se conserva como ancla de card; las secciones condicionales sin datos no se cuentan como contenido público terminado.
 - [ ] Copy de E2, H1 y metadatos fieles; últimas correcciones de Productos/Investigación presentes. Diferenciar notas internas y texto visible, sin tokens, estados A–E o referencias de trabajo como copy público.
 - [ ] Navegación global, enlaces contextuales a I3/C3/F4/EM5/EM6, retornos de fichas y destinos externos resuelven correctamente; no autolink vacío a Formación o enlace a ficha inexistente.
 - [ ] Las cuatro verticales mantienen su orden/nombres y no se convierten en cursos/servicios; Academy/Labs/comunidad conservan funciones distintas.
@@ -619,7 +555,7 @@ Este checklist es para el futuro agente y la revisión humana. Las casillas no e
 - [ ] Colecciones sin entradas conservan explicación, sin listados/filtros/heading de resultados vacíos, cards demo, placeholders, fichas o sitemap de objetos inventados.
 - [ ] Con un registro real aprobado disponible, el resumen y detalle proceden de una sola entidad; relaciones opcionales ausentes se omiten, no se infieren. No se debe inventar un registro para esta entrega o para publicación de pruebas.
 - [ ] Acción WhatsApp definida con etiqueta exacta, sin formulario general o fake href; ausencia de URL bloquea activación y copy dependiente, no todo el contenido comunitario.
-- [ ] EM6 tiene exactamente un formulario para ambos caminos y formación; los tres CTA usan tipo correcto y modificable. Llegada directa/fallback manual permiten elegir. Cambiar tipo no crea otro formulario.
+- [ ] EM6 tiene exactamente un formulario y cuatro entradas; los CTA con preselección asignan el tipo previsto y «Conversemos» mantiene el valor existente. Llegada directa/fallback manual permiten elegir.
 - [ ] Cinco campos siempre obligatorios (tipo, nombre, organización, correo, contexto); cargo/país opcionales; consentimiento solo bajo condición legal. No campos adicionales exigidos.
 - [ ] Validaciones distinguen vacío/formato, preservan contexto al corregir y usan mensajes E2; éxito/error no se disparan por clic o timer. Hasta existir canal, no se confunde prueba privada de UI con recepción real.
 - [ ] Equipo lógico de 15 personas con PER02 una sola vez y dos responsabilidades; Appu Public Relations, Edhú Nuñez/Kevin Huaman exactos; sin datos/materiales no autorizados o bios inventadas.
@@ -737,12 +673,11 @@ No se ejecutaron build, pruebas de frontend o despliegue porque solo se ha cread
 [e2-f4]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#f4--oferta-y-condiciones-actuales
 [e2-f6]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#f6--formación-para-equipos
 [e2-f5]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#f5--estado-y-siguiente-paso
-[e2-em1]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#em1--ai-playgrounds-para-organizaciones
-[e2-em2]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#em2--cuatro-verticales-y-ámbitos-de-aplicación
-[e2-em3]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#em3--capacidades-y-experiencia-acreditadas
-[e2-em4]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#em4--productos-iniciativas-y-oportunidades
-[e2-em5]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#em5--ai-academy-para-equipos
-[e2-em6]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#em6--conversemos-sobre-tu-contexto
+[e2-em1]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#em1--hero-inmersivo
+[e2-em2]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#em2--oportunidades-de-colaboración
+[e2-em3]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#em3--respaldo-institucional
+[e2-em4]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#em4--iniciativas
+[e2-em6]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#em6--contacto
 [e2-c1]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#c1--propósito-y-participación
 [e2-c3]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#c3--actividades-y-encuentros
 [e2-c4]: ../../content/entregables-cliente/02-contenido-web/contenido-web.md#c4--vías-y-condiciones-de-participación

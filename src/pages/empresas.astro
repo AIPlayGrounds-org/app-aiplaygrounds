@@ -1,279 +1,221 @@
 ---
-import { Image } from 'astro:assets';
-import type { ImageMetadata } from 'astro';
-import { inicioImages } from '../assets/inicio';
-import InteriorLayout from '../layouts/InteriorLayout.astro';
+import { empresasImages } from '../assets/empresas';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/site/SiteHeader.astro';
+import SiteFooter from '../components/site/SiteFooter.astro';
+import ImmersiveHero from '../components/site/ImmersiveHero.astro';
+import Section from '../components/site/Section.astro';
+import SectionHeading from '../components/site/SectionHeading.astro';
 import Button from '../components/starwind/button/Button.astro';
-const fields: [string, ImageMetadata, string][] = [
-  [
-    'AI Foundations',
-    inicioImages.foundations,
-    'El funcionamiento de los modelos, los métodos y su evaluación. Un ámbito para preguntas sobre qué puede hacer un modelo, cómo comprobarlo y qué límites tiene su desempeño.',
-  ],
-  [
-    'AI for Software',
-    inicioImages.software,
-    'El diseño, la construcción, las pruebas y la mejora del software con IA. Abarca preguntas sobre el flujo de desarrollo y el criterio para delegar tareas y revisar sus resultados.',
-  ],
-  [
-    'AI for Science',
-    inicioImages.science,
-    'La relación entre inteligencia artificial, datos y método científico. El contexto de una investigación permite plantear qué tareas podría apoyar la IA y cómo validar lo que produce.',
-  ],
-  [
-    'AI for Finance',
-    inicioImages.finance,
-    'Los problemas y procesos financieros en los que puede intervenir la IA. Importan la calidad de los datos, los errores posibles y las decisiones que deben seguir bajo responsabilidad humana.',
-  ],
-];
+import TextLink from '../components/site/TextLink.astro';
+import CollaborationCard from '../components/site/CollaborationCard.astro';
+import InitiativeCard from '../components/site/InitiativeCard.astro';
+import InitiativeGrid from '../components/site/InitiativeGrid.astro';
+import EditorialMotion from '../components/site/EditorialMotion.astro';
+import OrganizationContactForm from '../components/site/OrganizationContactForm.astro';
 ---
 
-<InteriorLayout
-  title="IA para empresas e instituciones | AI PlayGrounds"
-  description="Cuatro verticales de IA, trayectoria en encuentros y formación, alianzas institucionales y oportunidades comerciales. Cuéntanos el contexto de tu organización."
+<BaseLayout
+  title="Alianzas y oportunidades de IA para organizaciones | AI PlayGrounds"
+  description="Explora alianzas institucionales, proyectos de IA y formación para equipos. Conversemos sobre las necesidades de tu organización."
+  bodyClass="organizations"
 >
-  <section id="EM1" class="page-hero">
-    <div class="site-container">
-      <h1>Conectemos tu organización con el trabajo en IA</h1>
-      <div class="lead">
+  <SiteHeader />
+  <main id="contenido" tabindex="-1">
+    <ImmersiveHero
+      id="EM1"
+      image={empresasImages.hero}
+      title="Conecta tu organización con nuevas oportunidades en IA."
+      description="Explora alianzas, proyectos y oportunidades de colaboración en inteligencia artificial a partir de las necesidades de tu organización."
+      align="start"
+      position="center 52%"
+      mobilePosition="49% center"
+    >
+      <Button href="#EM6" variant="primary" data-cta="hero_contact">
+        Conversemos
+      </Button>
+      <Button href="#EM2" variant="outline" data-cta="hero_opportunities">
+        Explorar oportunidades
+      </Button>
+    </ImmersiveHero>
+
+    <Section id="EM2" tabindex="-1" aria-labelledby="opportunities-title">
+      <div class="section-intro" data-reveal>
+        <SectionHeading id="opportunities-title">
+          Exploremos qué podemos hacer juntos
+        </SectionHeading>
         <p>
-          AI PlayGrounds reúne personas y conocimiento alrededor de la
-          inteligencia artificial. Trabajamos desde cuatro verticales: los
-          fundamentos de la IA y sus aplicaciones en software, ciencia y
-          finanzas.
-        </p>
-        <p>
-          Nuestra trayectoria en encuentros, hackathons y formación es un punto
-          de partida para conversar con empresas, universidades, instituciones y
-          comunidades sobre posibles iniciativas conjuntas.
-        </p>
-      </div>
-      <a class="interior-link" href="/equipo/">
-        Las personas detrás de AI PlayGrounds ↗
-      </a>
-    </div>
-  </section>
-  <section id="EM2" class="interior-section">
-    <div class="site-container">
-      <h2>Cuatro verticales para situar las necesidades de tu organización</h2>
-      <div class="interior-grid">
-        {fields.map(([title, image, text]) => (
-          <article class="interior-card vertical-card">
-            <Image
-              src={image}
-              alt=""
-              format="webp"
-              widths={[320, 480, 640]}
-              sizes="(min-width: 48rem) 22vw, 100vw"
-              loading="lazy"
-            />
-            <div>
-              <h3>{title}</h3>
-              <p>{text}</p>
-            </div>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
-  <section id="EM3" class="interior-section">
-    <div class="site-container split-section">
-      <h2>Trayectoria que se construye reuniendo a las personas</h2>
-      <div class="prose">
-        <p>
-          Desde nuestra fundación en Lima en enero de 2025, hemos organizado más
-          de 30 eventos de comunidad. También hemos coorganizado encuentros y
-          hackathons y desarrollado una experiencia formativa de seis semanas.
-        </p>
-        <p>
-          hack@latam · mayo de 2026: coorganizador; más de 1.200 postulantes, 56
-          equipos y 36 horas de hackathon.
-        </p>
-        <p>
-          IA Hackathon · noviembre de 2025: coorganizador con The Hackathon
-          Company, Crafter Station y kebo; más de 800 postulantes y 22 equipos y
-          proyectos.
-        </p>
-        <p>
-          The Real AI · julio de 2025: coorganizador con looper.ai y UTEC; más
-          de 150 participantes y 7 speakers.
-        </p>
-        <p>
-          Bootcamp Gen AI Fundamentals · 2025: organizador; más de 300
-          inscritos, seis semanas y 16 speakers de Perú, Colombia y Estados
-          Unidos; edición gratuita y práctica.
-        </p>
-        <p>
-          Esta trayectoria refleja experiencia en articular comunidades,
-          organizar actividades tecnológicas y desarrollar espacios de
-          aprendizaje.
-        </p>
-        <a class="interior-link" href="/comunidad/#C3">
-          Más actividades y sus fuentes ↗
-        </a>
-      </div>
-    </div>
-  </section>
-  <section id="EM4" class="interior-section">
-    <div class="site-container split-section">
-      <h2>AI Labs: una mirada al trabajo temprano</h2>
-      <div>
-        <p>
-          AI Labs es el espacio de visibilidad de iniciativas y productos
-          tempranos relacionados con AI PlayGrounds. Cada iniciativa se presenta
-          desde la necesidad que aborda, quiénes la impulsan y su estado de
-          desarrollo.
-        </p>
-        <a class="interior-link" href="/ai-labs/">
-          Explorar AI Labs ↗
-        </a>
-      </div>
-    </div>
-  </section>
-  <section id="EM5" class="interior-section">
-    <div class="site-container split-section">
-      <h2>Formación en IA para las necesidades de tu equipo</h2>
-      <div class="prose">
-        <p>
-          AI Academy puede explorar una propuesta de formación personalizada a
-          partir de los perfiles de tu equipo, las tareas que necesita resolver
-          y lo que espera aprender.
-        </p>
-        <p>
-          El punto de partida puede ser usar IA para apoyar el desarrollo de
-          software o incorporar una capacidad de IA en una aplicación. El
-          alcance se evalúa para cada equipo.
-        </p>
-        <a class="interior-link" href="/formacion/">
-          Las dos líneas de AI Academy ↗
-        </a>
-      </div>
-    </div>
-  </section>
-  <section id="EM6" class="interior-section">
-    <div class="site-container split-section">
-      <div class="collaboration-options">
-        <h2>Conversemos sobre lo que tienes en mente</h2>
-        <div class="options">
-          <article>
-            <h3>Alianzas institucionales</h3>
-            <p>
-              Para universidades, instituciones, comunidades y organizaciones
-              interesadas en actividades conjuntas, encuentros o iniciativas
-              compartidas relacionadas con nuestras verticales de trabajo.
-            </p>
-          </article>
-          <article>
-            <h3>Oportunidades comerciales</h3>
-            <p>
-              Para empresas y equipos que quieren plantear una necesidad de IA,
-              consultar formación personalizada o evaluar una posible
-              colaboración comercial, proyecto o iniciativa conjunta.
-            </p>
-          </article>
-        </div>
-        <p>
-          Una consulta abre la conversación. No implica aceptación de la
-          propuesta, contratación ni compromiso de ejecución.
+          Cada organización llega con necesidades diferentes. Estas son dos
+          maneras de iniciar una colaboración con AI PlayGrounds.
         </p>
       </div>
-      <form
-        class="contact-form"
-        action="/api/contact"
-        method="post"
-        aria-labelledby="contact-title"
-        aria-describedby="contact-state"
-      >
-        <h3 id="contact-title">Cuéntanos tu propuesta o necesidad</h3>
-        <p id="contact-state">El formulario no está disponible por ahora.</p>
-        <fieldset disabled>
-          <label for="tipo">
-            Tipo de consulta *
-            <select id="tipo" name="tipo" required>
-              <option value="">Selecciona el tipo de consulta</option>
-              <option>Alianza institucional</option>
-              <option>Oportunidad comercial</option>
-            </select>
-          </label>
-          <label for="nombre">
-            Nombre y apellido *
-            <input id="nombre" name="nombre" autocomplete="name" required />
-          </label>
-          <label for="organizacion">
-            Organización o empresa *
-            <input
-              id="organizacion"
-              name="organizacion"
-              autocomplete="organization"
-              required
-            />
-          </label>
-          <label for="cargo">
-            Cargo o función (opcional)
-            <input id="cargo" name="cargo" autocomplete="organization-title" />
-          </label>
-          <label for="correo">
-            Correo electrónico *
-            <input
-              id="correo"
-              name="correo"
-              type="email"
-              autocomplete="email"
-              required
-            />
-          </label>
-          <label for="pais">
-            País (opcional)
-            <input id="pais" name="pais" autocomplete="country-name" />
-          </label>
-          <label for="mensaje">
-            Cuéntanos qué tienes en mente *
-            <textarea id="mensaje" name="mensaje" required></textarea>
-          </label>
-        </fieldset>
-        <Button type="submit" variant="primary" disabled>
-          Enviar consulta
-        </Button>
-      </form>
-    </div>
-  </section>
-</InteriorLayout>
+      <div class="collaborations">
+        <CollaborationCard
+          title="Alianzas institucionales"
+          description="Actividades conjuntas, colaboración entre comunidades, universidades e instituciones e iniciativas vinculadas con IA."
+          image={empresasImages.bridge}
+          tone="grove"
+          href="#EM6"
+          label="Proponer una alianza"
+          ctaId="propose_alliance"
+          inquiryType="institutional"
+        />
+        <CollaborationCard
+          title="Oportunidades comerciales"
+          description="Necesidades de IA, proyectos e iniciativas que requieran explorar capacidades técnicas o formación para equipos."
+          image={empresasImages.terraces}
+          tone="sand"
+          href="#EM6"
+          label="Plantear una necesidad"
+          ctaId="propose_need"
+          inquiryType="commercial"
+        />
+      </div>
+    </Section>
+
+    <Section id="EM3" class="trajectory" aria-labelledby="trajectory-title">
+      <SectionHeading id="trajectory-title" data-reveal>
+        Una trayectoria construida en colaboración
+      </SectionHeading>
+      <div class="section-intro" data-reveal>
+        <p>
+          Hemos coorganizado hackathons y encuentros junto a organizaciones del
+          ecosistema tecnológico, además de impulsar experiencias formativas que
+          reúnen a personas alrededor de la IA.
+        </p>
+        <TextLink href="/#I4" data-cta="view_trajectory">
+          Conoce nuestra trayectoria
+        </TextLink>
+      </div>
+    </Section>
+
+    <Section id="EM4" aria-labelledby="initiatives-title">
+      <SectionHeading id="initiatives-title" data-reveal>
+        Conoce nuestras iniciativas
+      </SectionHeading>
+      <InitiativeGrid>
+        <InitiativeCard
+          illustration="labs"
+          title="AI Labs"
+          description="Iniciativas y productos tempranos que exploran ideas y aplicaciones de inteligencia artificial."
+          href="/ai-labs/"
+          label="Explorar AI Labs"
+          ctaId="explore_labs"
+        />
+        <InitiativeCard
+          id="EM5"
+          illustration="academy"
+          title="AI Academy"
+          description="Aprendizaje en IA y posibilidad de explorar propuestas formativas para equipos."
+          href="#EM6"
+          label="Consultar formación"
+          ctaId="ask_training"
+          inquiryType="commercial"
+        />
+        <InitiativeCard
+          illustration="research"
+          title="Investigación"
+          description="Preguntas, líneas y trabajos de investigación relacionados con inteligencia artificial y sus aplicaciones."
+          href="/investigacion/"
+          label="Explorar investigación"
+          ctaId="explore_research"
+        />
+      </InitiativeGrid>
+    </Section>
+
+    <Section
+      id="EM6"
+      class="contact-section"
+      tabindex="-1"
+      aria-labelledby="contact-title"
+    >
+      <div class="section-intro" data-reveal>
+        <SectionHeading id="contact-title">
+          Conversemos sobre tu organización
+        </SectionHeading>
+        <p>
+          Cuéntanos qué tienes en mente. No necesitas tener un proyecto
+          completamente definido para iniciar una conversación.
+        </p>
+      </div>
+      <OrganizationContactForm />
+    </Section>
+  </main>
+  <SiteFooter />
+  <EditorialMotion />
+</BaseLayout>
+
+<script>
+  import { trackLinks } from '../scripts/analytics';
+  import { wireSectionLinks } from '../scripts/section-links';
+
+  wireSectionLinks(document);
+  trackLinks(document, '/empresas/');
+</script>
 
 <style>
-  .options {
-    display: grid;
-    gap: 1.25rem;
-    margin-block: 1.5rem;
+  :global(body.organizations) {
+    --home-background: var(--editorial-background);
+    --home-surface: var(--editorial-surface);
+    --home-card: var(--editorial-card);
+    background: var(--editorial-background);
   }
-  .options h3 + p {
-    margin-top: 0.4rem;
-  }
-  .collaboration-options > p {
-    font-size: 0.9rem;
-  }
-  .contact-form {
-    align-self: start;
-  }
-  .vertical-card {
-    display: grid;
-    grid-template-columns: 35% minmax(0, 1fr);
-    padding: 0;
-    overflow: hidden;
-  }
-  .vertical-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .vertical-card div {
-    padding: clamp(1.5rem, 3vw, 2.5rem);
-  }
-  @media (max-width: 35rem) {
-    .vertical-card {
-      grid-template-columns: 1fr;
+  @media (prefers-reduced-motion: no-preference) {
+    :global(html:has(body.organizations)) {
+      scroll-behavior: smooth;
     }
-    .vertical-card img {
-      aspect-ratio: 2 / 1;
+  }
+  :global(body.organizations main [id]) {
+    scroll-margin-top: 5rem;
+  }
+  .section-intro p {
+    max-width: 60ch;
+    color: var(--secondary-text);
+  }
+  .section-intro > :global(h2) + p {
+    margin-top: 0.75rem;
+  }
+  .collaborations {
+    display: grid;
+    gap: clamp(1rem, 2vw, 1.5rem);
+    margin-top: 2rem;
+  }
+  .trajectory {
+    border-block: 1px solid var(--border);
+    padding-block: clamp(2.25rem, 4.5vw, 4rem);
+  }
+  .trajectory > :global(h2) {
+    max-width: 20ch;
+  }
+  .trajectory :global(.text-link) {
+    margin-top: 0.5rem;
+  }
+  .trajectory,
+  .contact-section {
+    display: grid;
+    align-items: start;
+    gap: 1rem;
+  }
+  .contact-section {
+    padding-top: clamp(0.75rem, 3vw, 2.5rem);
+    gap: 1.5rem;
+  }
+  @media (min-width: 48rem) {
+    .trajectory,
+    .contact-section {
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+      gap: clamp(2rem, 6vw, 6rem);
+    }
+    .trajectory .section-intro {
+      --editorial-delay: 95ms;
+    }
+    .contact-section .section-intro p {
+      max-width: 40ch;
+    }
+  }
+  @media (min-width: 60rem) {
+    .collaborations {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 </style>

@@ -1,0 +1,159 @@
+---
+import FormField from './FormField.astro';
+import Button from '../starwind/button/Button.astro';
+import { contactLimits } from '../../data/organization-contact';
+
+const sitekey = import.meta.env.PUBLIC_CONTACT_TURNSTILE_SITE_KEY?.trim();
+const policy = import.meta.env.PUBLIC_CONTACT_POLICY_VERSION?.trim();
+const privacyUrl = import.meta.env.PUBLIC_CONTACT_PRIVACY_URL?.trim();
+const enabled =
+  import.meta.env.PUBLIC_CONTACT_ENABLED === 'true' &&
+  Boolean(
+    sitekey && policy && privacyUrl && /^\/(?![/\\])[^\\\s]*$/.test(privacyUrl),
+  );
+---
+
+<form
+  id="organization-contact"
+  class="contact-form"
+  action="/api/contact"
+  method="post"
+  aria-labelledby="contact-title"
+  aria-describedby={enabled ? 'contact-privacy' : 'contact-availability'}
+  data-cta-origin="direct"
+  data-inquiry-field="inquiryType"
+  data-sitekey={enabled ? sitekey : undefined}
+  data-policy-version={enabled ? policy : undefined}
+>
+  {!enabled && (
+    <p id="contact-availability">El formulario no está disponible por ahora.</p>
+  )}
+  <fieldset class="contact-fields">
+    <legend class="sr-only">Datos de la consulta</legend>
+    <FormField
+      id="contact-type"
+      name="inquiryType"
+      kind="select"
+      label="Tipo de consulta"
+      error="Selecciona el tipo de consulta."
+    >
+      <option value="">Selecciona el tipo de consulta</option>
+      <option value="institutional">Alianza institucional</option>
+      <option value="commercial">Oportunidad comercial</option>
+    </FormField>
+    <div class="contact-pair">
+      <FormField
+        id="contact-name"
+        name="name"
+        label="Nombre completo"
+        autocomplete="name"
+        maxLength={contactLimits.name}
+        error="Escribe tu nombre completo."
+      />
+      <FormField
+        id="contact-organization"
+        name="organization"
+        label="Organización o empresa"
+        autocomplete="organization"
+        maxLength={contactLimits.organization}
+        error="Indica tu organización o empresa."
+      />
+    </div>
+    <FormField
+      id="contact-email"
+      name="email"
+      kind="email"
+      label="Correo electrónico"
+      autocomplete="email"
+      maxLength={contactLimits.email}
+      error="Escribe tu correo electrónico."
+    />
+    <FormField
+      id="contact-message"
+      name="message"
+      kind="textarea"
+      label="¿Qué te gustaría conversar?"
+      placeholder="Cuéntanos brevemente tu propuesta o necesidad."
+      maxLength={contactLimits.message}
+      error="Cuéntanos brevemente qué tienes en mente."
+    />
+  </fieldset>
+  <p class="contact-note">* Campos obligatorios.</p>
+  {enabled && (
+    <>
+      <p id="contact-privacy">
+        Antes de enviar, revisa la{' '}
+        <a href={privacyUrl}>política de privacidad</a>.
+      </p>
+      <div data-turnstile></div>
+      <noscript>
+        <p>Activa JavaScript para verificar y enviar la consulta.</p>
+      </noscript>
+    </>
+  )}
+  <Button type="submit" variant="primary" disabled>
+    Enviar consulta
+  </Button>
+  <p class="sr-only" role="status" data-validation-status></p>
+  <p role="status" class="submission-status"></p>
+</form>
+
+<script>
+  import { wireOrganizationContact } from '../../scripts/organization-contact';
+
+  const form = document.querySelector<HTMLFormElement>('#organization-contact');
+  if (form) wireOrganizationContact(form);
+</script>
+
+<style>
+  .contact-form {
+    min-width: 0;
+    padding: clamp(1.25rem, 3vw, 2.5rem);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    background: var(--editorial-card);
+  }
+  #contact-availability,
+  .contact-note,
+  #contact-privacy {
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+  }
+  #contact-availability {
+    margin-bottom: 1.25rem;
+  }
+  .contact-fields,
+  .contact-pair {
+    display: grid;
+    gap: 1rem;
+    min-width: 0;
+  }
+  .contact-note,
+  #contact-privacy,
+  [data-turnstile]:not(:empty),
+  .contact-form > :global(button),
+  .submission-status:not(:empty) {
+    margin-top: 1rem;
+  }
+  form[data-state='error'] .submission-status {
+    color: var(--error);
+  }
+  form[data-state='success'] .submission-status {
+    color: var(--success);
+  }
+  @media (min-width: 60rem) {
+    .contact-pair {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .submission-status:not(:empty) {
+      animation: status-arrive 180ms ease-out;
+    }
+  }
+  @keyframes status-arrive {
+    from {
+      opacity: 0;
+    }
+  }
+</style>

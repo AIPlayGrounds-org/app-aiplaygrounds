@@ -1,7 +1,8 @@
 # Contenido Web — Versión Final
 
 **Proyecto:** AI PlayGrounds · sitio multipágina · Latinoamérica · español.
-**Versión / fecha / estado:** v2.1 · 05/11/2026 · **APROBADO EDITORIALMENTE. No completamente publicable.** Aprobación humana mediante «Cierre editorial de E2 v2.1», después de aplicar los dos H1 y la decisión de colecciones sin entradas. No autoriza publicación o desarrollo ni completa los inventarios ausentes.
+**Revisión localizada E222-EM:** v2.2 · 23/11/2026 · Empresas autorizada por el responsable; sin autorización de publicación. Las demás páginas conservan su copy aprobado en v2.1.
+**Versión / fecha / estado de la base:** v2.1 · 05/11/2026 · **APROBADO EDITORIALMENTE. No completamente publicable.** Aprobación humana mediante «Cierre editorial de E2 v2.1», después de aplicar los dos H1 y la decisión de colecciones sin entradas. No autoriza publicación o desarrollo ni completa los inventarios ausentes.
 **Base histórica:** E1 v2.2 aprobado el 05/11/2026. La decisión posterior del usuario sustituye su arquitectura de ocho páginas: AI Labs es el directorio de productos y el sitio tiene siete páginas principales y dos tipos de ficha.
 
 ## Vista de conjunto
@@ -20,13 +21,13 @@ La aprobación editorial comprende el contenido y los modelos preparados. Las ca
 
 Los rótulos de sección, estados, instrucciones, alternativas y tablas bajo **no publicable** pertenecen a este documento de trabajo. No se copian al website. Los párrafos bajo **Copy propuesto** son los textos a revisar; las condiciones necesarias para el visitante permanecen dentro de ellos cuando corresponde.
 
-Se conservan los identificadores vigentes de las 48 secciones tras retirar la página independiente Productos. Los identificadores permiten comprobar correspondencia, no son títulos públicos. Los subtítulos dentro de una sección no añaden secciones a la arquitectura. Las tablas representan contenido, no componentes visuales.
+Se conservan los identificadores editoriales; hay 47 secciones tras integrar EM5 en EM4. EM5 sigue disponible como ancla de la card AI Academy. Los identificadores permiten comprobar correspondencia, no son títulos públicos. Los subtítulos dentro de una sección no añaden secciones a la arquitectura. Las tablas representan contenido, no componentes visuales.
 
 ### Navegación y destinos
 
 **Textos de navegación:** Formación · Empresas · Comunidad · AI Labs · Investigación · Equipo. La marca AI PlayGrounds lleva a Inicio. No se fija aquí el orden visual del menú.
 
-Los destinos internos se nombran por página; las rutas son propuestas editoriales, no URLs implementadas. Luma conserva sus originales públicos canónicos. WhatsApp es el canal general confirmado, con enlace exacto pendiente. Empresas incluye un único formulario especificado para desarrollo, no implementado. Ningún placeholder debe convertirse en enlace público.
+Los destinos internos se nombran por página; las rutas son propuestas editoriales, no URLs implementadas. Luma conserva sus originales públicos canónicos. WhatsApp es el canal general confirmado, con enlace exacto pendiente. Empresas incluye un único formulario implementado con envío deshabilitado hasta validar su activación. Ningún placeholder debe convertirse en enlace público.
 
 **Fuentes de esta revisión:** E1 v2.2 e internos vigentes; datos de la presentación institucional de octubre de 2026 proporcionados y confirmados por el responsable (no se encontró ni inspeccionó su HTML); cuatro páginas Luma consultadas el 05/11/2026 y contrastadas con sus fechas estructuradas. Las condiciones actuales de comunidad, formación y contacto proceden de la decisión humana de esta revisión.
 
@@ -268,164 +269,117 @@ No hay convocatorias abiertas. Puedes consultar los encuentros y talleres anteri
 
 ## Página: Empresas
 
-**URL propuesta:** `/empresas/`. **Objetivo:** comprender relevancia institucional y evaluar una posible relación con respaldo. **Audiencia:** organizaciones y equipos.
-**Estado de página:** seis secciones redactadas; formulario especificado editorialmente, pendiente de implementación y privacidad aplicable. **Correspondencia E1:** 6/6 secciones. No catálogo técnico de servicios. **UI:** no aportada.
+**URL:** `/empresas/`. **Objetivo:** presentar formas de colaboración, aportar respaldo institucional y facilitar una consulta sobre las necesidades de una organización. **Audiencia:** empresas, equipos, universidades, comunidades e instituciones.
+**Estado de página:** cinco secciones autorizadas por el responsable el 23/11/2026. Captación real pendiente de privacidad y validación operativa.
 
-**SEO title:** IA para empresas e instituciones | AI PlayGrounds
-**Meta description:** Cuatro verticales de IA, trayectoria en encuentros y formación, alianzas institucionales y oportunidades comerciales. Cuéntanos el contexto de tu organización.
-**H1:** Conectemos tu organización con el trabajo en IA
+**SEO title:** Alianzas y oportunidades de IA para organizaciones | AI PlayGrounds
+**Meta description:** Explora alianzas institucionales, proyectos de IA y formación para equipos. Conversemos sobre las necesidades de tu organización.
 
-### EM1 · AI PlayGrounds para organizaciones
+### EM1 · Hero inmersivo
+
+**Estado:** A
+
+**H1:** Conecta tu organización con nuevas oportunidades en IA.
+
+Explora alianzas, proyectos y oportunidades de colaboración en inteligencia artificial a partir de las necesidades de tu organización.
+
+**CTA principal:** Conversemos → `#EM6`, sin preselección.
+**CTA secundario:** Explorar oportunidades → `#EM2`.
+
+### EM2 · Oportunidades de colaboración
 
 **Estado:** A
 
-**Copy propuesto:**
+**H2:** Exploremos qué podemos hacer juntos
 
-AI PlayGrounds reúne personas y conocimiento alrededor de la inteligencia artificial. Trabajamos desde cuatro verticales: los fundamentos de la IA y sus aplicaciones en software, ciencia y finanzas.
+Cada organización llega con necesidades diferentes. Estas son dos maneras de iniciar una colaboración con AI PlayGrounds.
 
-Nuestra trayectoria en encuentros, hackathons y formación es un punto de partida para conversar con empresas, universidades, instituciones y comunidades sobre posibles iniciativas conjuntas.
+**H3:** Alianzas institucionales
 
-**Enlace contextual:** Las personas detrás de AI PlayGrounds → Equipo.
+Actividades conjuntas, colaboración entre comunidades, universidades e instituciones e iniciativas vinculadas con IA.
 
-### EM2 · Cuatro verticales y ámbitos de aplicación
+**CTA:** Proponer una alianza → `#EM6`, preselecciona Alianza institucional.
 
-**Estado:** A
-**H2:** Cuatro verticales para situar las necesidades de tu organización
+**H3:** Oportunidades comerciales
 
-**Copy propuesto:**
+Necesidades de IA, proyectos e iniciativas que requieran explorar capacidades técnicas o formación para equipos.
 
-#### AI Foundations
+**CTA:** Plantear una necesidad → `#EM6`, preselecciona Oportunidad comercial.
 
-El funcionamiento de los modelos, los métodos y su evaluación. Un ámbito para preguntas sobre qué puede hacer un modelo, cómo comprobarlo y qué límites tiene su desempeño.
-
-#### AI for Software
-
-El diseño, la construcción, las pruebas y la mejora del software con IA. Abarca preguntas sobre el flujo de desarrollo y el criterio para delegar tareas y revisar sus resultados.
-
-#### AI for Science
-
-La relación entre inteligencia artificial, datos y método científico. El contexto de una investigación permite plantear qué tareas podría apoyar la IA y cómo validar lo que produce.
-
-#### AI for Finance
-
-Los problemas y procesos financieros en los que puede intervenir la IA. Importan la calidad de los datos, los errores posibles y las decisiones que deben seguir bajo responsabilidad humana.
-
-
-**Nota editorial — no publicable:** ámbitos y posibles contextos, no cuatro servicios disponibles. No asesoría financiera, rentabilidad o implementación prometidas. EM3 acredita actividades realizadas, no capacidad técnica por analogía.
-
-### EM3 · Capacidades y experiencia acreditadas
+### EM3 · Respaldo institucional
 
 **Estado:** B
-**H2:** Trayectoria que se construye reuniendo a las personas
 
-**Copy propuesto:**
+**H2:** Una trayectoria construida en colaboración
 
-Desde nuestra fundación en Lima en enero de 2025, hemos organizado más de 30 eventos de comunidad. También hemos coorganizado encuentros y hackathons y desarrollado una experiencia formativa de seis semanas.
+Hemos coorganizado hackathons y encuentros junto a organizaciones del ecosistema tecnológico, además de impulsar experiencias formativas que reúnen a personas alrededor de la IA.
 
-| Experiencia | Papel de AI PlayGrounds | Datos del evento o programa |
-|---|---|---|
-| hack@latam · mayo de 2026 | Coorganizador | Más de 1.200 postulantes, 56 equipos y 36 horas de hackathon |
-| IA Hackathon · noviembre de 2025 | Coorganizador, en colaboración con The Hackathon Company, Crafter Station y kebo | Más de 800 postulantes; 22 equipos y proyectos |
-| The Real AI · julio de 2025 | Coorganizador, en colaboración con looper.ai y UTEC | Más de 150 participantes y 7 speakers |
-| Bootcamp Gen AI Fundamentals · 2025 | Organizador | Más de 300 inscritos, seis semanas y 16 speakers de Perú, Colombia y Estados Unidos; edición gratuita y práctica |
+**Enlace:** Conoce nuestra trayectoria → Inicio, «De los encuentros a la práctica» (`/#I4`).
 
-Esta trayectoria refleja experiencia en articular comunidades, organizar actividades tecnológicas y desarrollar espacios de aprendizaje.
-
-**Enlace contextual:** Más actividades y sus fuentes → Comunidad, Actividades y encuentros.
-
-**Notas editoriales — no publicable:** H00–H04 confirmados por responsable a partir del deck; no inspección original ni URLs públicas de esos cuatro hitos aportadas. No usar logos sin permiso. Esta evidencia no prueba desarrollo empresarial, sistemas implementados, consultoría financiera, clientes o resultados económicos. Cualquier futura capacidad técnica requiere tarea/contexto/evidencia/fuente/fecha/permiso y límites propios, además de disponibilidad comercial confirmada por separado.
-
-### EM4 · Productos, iniciativas y oportunidades
+### EM4 · Iniciativas
 
 **Estado:** A
-**H2:** AI Labs: una mirada al trabajo temprano
 
-**Copy propuesto:**
+**H2:** Conoce nuestras iniciativas
 
-AI Labs es el espacio de visibilidad de iniciativas y productos tempranos relacionados con AI PlayGrounds. Cada iniciativa se presenta desde la necesidad que aborda, quiénes la impulsan y su estado de desarrollo.
+**H3:** AI Labs
 
-**CTA principal:** Explorar AI Labs → AI Labs.
+Iniciativas y productos tempranos que exploran ideas y aplicaciones de inteligencia artificial.
 
-**Nota editorial — no publicable:** presentación institucional, no catálogo de productos existentes. El inventario se incorpora en AI Labs cuando esté confirmado, sin duplicarlo aquí. No Producto A/B/C, casos hipotéticos o proyectos del Demo Day como propios. Una oportunidad potencial no equivale a una oferta disponible.
+**CTA:** Explorar AI Labs → `/ai-labs/`.
 
-### EM5 · AI Academy para equipos
+**H3:** AI Academy
 
-**Estado:** D
-**H2:** Formación en IA para las necesidades de tu equipo
+Aprendizaje en IA y posibilidad de explorar propuestas formativas para equipos.
 
-**Copy propuesto — parte institucional sustentada:**
+**CTA:** Consultar formación → `#EM6`, preselecciona Oportunidad comercial.
 
-AI Academy puede explorar una propuesta de formación personalizada a partir de los perfiles de tu equipo, las tareas que necesita resolver y lo que espera aprender.
+**H3:** Investigación
 
-El punto de partida puede ser usar IA para apoyar el desarrollo de software o incorporar una capacidad de IA en una aplicación. El alcance se evalúa para cada equipo.
+Preguntas, líneas y trabajos de investigación relacionados con inteligencia artificial y sus aplicaciones.
 
-**CTA al activar el formulario:** Consultar formación para mi equipo → mismo formulario de EM6, tipo Oportunidad comercial. No se muestra mientras esté deshabilitado.
-**Enlace contextual:** Las dos líneas de AI Academy → Formación.
+**CTA:** Explorar investigación → `/investigacion/`.
 
-**Notas para implementación — no publicable:** preselección comercial revisable si se soporta, elección manual en caso contrario. No formulario aparte ni parámetros/rutas ficticias. Posibilidad aprobada sujeta a conversación y evaluación; no catálogo fijo, temarios, docentes, certificados, fechas, precios, modalidad, resultados o plazos prometidos. Activación depende de implementación y privacidad EM6.
+**Nota de navegación — no publicable:** la card de AI Academy conserva `#EM5` como destino contextual de Formación; no es una sección autónoma.
 
-### EM6 · Conversemos sobre tu contexto
+### EM6 · Contacto
 
-**Estado:** D
-**H2:** Conversemos sobre lo que tienes en mente
+**Estado:** D · interfaz implementada; envío deshabilitado hasta validar la activación.
 
-**Copy propuesto:**
+**H2:** Conversemos sobre tu organización
 
-#### Alianzas institucionales
+Cuéntanos qué tienes en mente. No necesitas tener un proyecto completamente definido para iniciar una conversación.
 
-Para universidades, instituciones, comunidades y organizaciones interesadas en actividades conjuntas, encuentros o iniciativas compartidas relacionadas con nuestras verticales de trabajo.
-
-**CTA:** Proponer una alianza → formulario de esta sección, tipo Alianza institucional.
-
-#### Oportunidades comerciales
-
-Para empresas y equipos que quieren plantear una necesidad de IA, consultar formación personalizada o evaluar una posible colaboración comercial, proyecto o iniciativa conjunta.
-
-**CTA:** Cuéntanos tu necesidad → mismo formulario, tipo Oportunidad comercial.
-
-Una consulta abre la conversación. No implica aceptación de la propuesta, contratación ni compromiso de ejecución.
-
-#### Formulario único · contenido preparado para desarrollo
-
-**Título:** Cuéntanos tu propuesta o necesidad
-**Descripción:** Comparte el contexto de tu organización y lo que te gustaría conversar con AI PlayGrounds. No necesitas preparar un brief técnico.
-**Instrucción:** Los campos marcados con * son obligatorios.
-
-| Etiqueta | Control / condición | Ayuda o placeholder, solo si aporta |
+| Etiqueta | Control | Estado inicial o placeholder |
 |---|---|---|
-| Tipo de consulta * | Selección única obligatoria: Alianza institucional / Oportunidad comercial | Estado sin selección: Selecciona el tipo de consulta |
-| Nombre y apellido * | Texto obligatorio | Sin placeholder; no restringir nombres a caracteres ASCII |
+| Tipo de consulta * | Selección obligatoria: Alianza institucional / Oportunidad comercial | Selecciona el tipo de consulta |
+| Nombre completo * | Texto obligatorio | Sin placeholder |
 | Organización o empresa * | Texto obligatorio | Sin placeholder |
-| Cargo o función (opcional) | Texto opcional | Sin placeholder |
-| Correo electrónico * | Email obligatorio | Ejemplo de formato: nombre@organizacion.com; no exigir correo corporativo |
-| País (opcional) | Selector o texto estructurado | Si selector: Selecciona un país; sin país preasignado |
-| Cuéntanos qué tienes en mente * | Área de texto obligatoria | Ayuda persistente: Puedes contarnos tu propuesta, una necesidad de tu equipo o el contexto que quieres evaluar. |
-| Consentimiento de privacidad | Casilla solo cuando sea legalmente necesaria | Texto condicionado: He leído la política de privacidad y acepto el tratamiento de mis datos en los términos que allí se indican. |
+| Correo electrónico * | Email obligatorio | Sin placeholder |
+| ¿Qué te gustaría conversar? * | Área de texto obligatoria | Cuéntanos brevemente tu propuesta o necesidad. |
 
-**Botón de envío:** Enviar consulta.
-**Privacidad mínima, texto condicionado:** Antes de enviar, revisa la política de privacidad.
+**Botón:** Enviar consulta
 
-**Comportamiento esperado — no publicable como instrucciones al visitante:**
+\* Campos obligatorios.
 
-- Los tres CTA de alianzas, necesidades y formación llegan al mismo formulario dentro de Empresas, no a páginas o formularios separados.
-- Preseleccionar Alianza institucional para «Proponer una alianza» y Oportunidad comercial para los otros dos cuando sea posible. El visitante siempre puede revisar/modificar el valor; sin soporte, selección manual obligatoria, nunca tipo oculto o irreversible.
-- Un solo contenido/formulario. No se requieren dos endpoints o dos sistemas de captación; esta entrega no define ninguno, ni almacenamiento, asignaciones, notificaciones, CRM o gestión interna.
-- Validación distingue vacío de formato inválido. No exigir presupuesto, teléfono, RUC, tamaño de empresa, empleados, adjuntos o agenda. País/cargo opcionales nunca bloquean envío.
+| Estado | Mensaje |
+|---|---|
+| Envío no habilitado | El formulario no está disponible por ahora. |
+| Tipo vacío | Selecciona el tipo de consulta. |
+| Nombre vacío | Escribe tu nombre completo. |
+| Organización vacía | Indica tu organización o empresa. |
+| Correo vacío | Escribe tu correo electrónico. |
+| Correo inválido | Revisa el formato de tu correo electrónico. |
+| Mensaje vacío | Cuéntanos brevemente qué tienes en mente. |
+| Envío en curso | Enviando… |
+| Recepción confirmada | Hemos recibido tu consulta. Gracias por compartir el contexto de tu organización. |
+| Error recuperable | No pudimos confirmar la recepción de tu consulta. Inténtalo de nuevo. |
 
-| Estado | Mensaje preparado | Condición y recuperación |
-|---|---|---|
-| Tipo sin seleccionar | Selecciona el tipo de consulta. | Junto al campo; permitir elegir una opción |
-| Nombre vacío | Escribe tu nombre y apellido. | No imponer número fijo de palabras |
-| Organización vacía | Indica tu organización o empresa. | Junto al campo |
-| Correo vacío | Escribe tu correo electrónico. | Junto al campo |
-| Correo con formato inválido | Revisa el formato de tu correo electrónico. | Permitir corregirlo sin borrar otros campos |
-| Contexto vacío | Cuéntanos brevemente qué tienes en mente. | No exigir extensión o detalle técnico arbitrarios |
-| Consentimiento requerido sin marcar | Para enviar, acepta el tratamiento de datos indicado en la política de privacidad. | Solo si obligación y texto legal están validados |
-| Resumen de validación | Revisa los campos señalados para enviar tu consulta. | Asociar errores a campos y ofrecer recorrido por ellos |
-| Recepción confirmada | Hemos recibido tu consulta. Gracias por compartir el contexto de tu organización. | Mostrar solo cuando el sistema confirme recepción; no por clic, validación local o inicio de envío |
-| Error recuperable | No pudimos confirmar la recepción de tu consulta. Inténtalo de nuevo. | Permitir reintentar cuando sea posible; no afirmar que se recibió o se guardaron datos |
+**Comportamiento — no publicable:** cuatro CTA llegan al único `#EM6`. La selección permanece visible, obligatoria y editable. «Conversemos» nunca cambia el tipo; los otros tres CTA actualizan solo el tipo, no los demás datos. Llegada directa sin selección; enlace nativo como fallback. No se piden teléfono, país, cargo, presupuesto, RUC, tamaño de empresa, adjuntos o disponibilidad. Preservar datos ante error, anunciar estados y confirmar solo tras la aceptación del sistema.
 
-**Pendientes de activación — no publicable:** política aplicable y destino real `POLITICA_PRIVACIDAD_PENDIENTE`, determinación legal de consentimiento y validación de ambos textos condicionados; implementación y prueba de recepción/error/preselección/manual. No inventar política, URL legal ni afirmar tratamiento no implementado. Sin esos requisitos no activar envío ni publicar aceptación legal. Solicitar solo datos autorizados; no prometer respuesta, reuniones, diagnóstico o plazos. Ayudas/errores deben ser legibles y asociados a campos, sin depender solo del color; la prueba de accesibilidad queda para el formulario real.
+**Privacidad — no publicable sin validación:** solo con política aplicable, aprobada y accesible se puede mostrar «Antes de enviar, revisa la política de privacidad.». Si requiere consentimiento expreso, no habilitar el envío hasta implementar y aprobar el control y su texto. No hay URL legal provisional. Verificar entrega en el buzón institucional antes de habilitar.
+
+**Trazabilidad de la revisión E222-EM — no publicable:** EM1 conserva la apertura; EM2 deja de duplicar verticales y recibe los dos caminos antes ubicados en EM6; EM3 conserva el respaldo, remitiendo a I4 en lugar de repetir hitos; EM4 agrupa AI Labs, el antiguo EM5 (AI Academy) e Investigación; EM6 conserva el formulario, sin repetir las dos oportunidades. La navegación global «Ver opciones» lleva a `#EM2`.
 
 ## Página: Comunidad
 
@@ -952,7 +906,7 @@ Los estados actuales de eventos, programas y acceso sí están confirmados por e
 | Programas futuros | Todos los campos del modelo F4 por oferta; responsable Academy | Hoy sin programas públicos vigentes, no faltante a rellenar artificialmente. Necesario antes de anunciar una nueva oferta |
 | Nuevas capacidades técnicas | Evidencia propia, contexto, fuente/permiso y disponibilidad si se ofrece; responsable institucional | No impide EM3 histórico o consulta potencial; sí claims de implementación, desarrollo por encargo o consultoría no acreditados |
 | WhatsApp | Enlace exacto de invitación vigente; responsable comunitario | Activar «Unirme a la comunidad». Plataforma/acceso abierto definidos, URL aún no |
-| Formulario Empresas | Privacidad/política y destino legal, consentimiento si corresponde, implementación/recepción/error; propietario y desarrollo | Activar un único formulario, sus tres CTA y textos legales condicionados. Especificación editorial lista, no gestión interna definida |
+| Formulario Empresas | Privacidad/política y destino legal, consentimiento si corresponde, implementación/recepción/error; propietario y desarrollo | Activar la recepción del único formulario y los textos legales condicionados. Los cuatro CTA internos ya apuntan a EM6 |
 | Reglas y postulaciones | Normas propias si se incorporan; procesos/canales de propuesta de productos/trabajos aún no confirmados | No inventar reglas ni publicar acciones de postulación. Equipo interno cerrado: ninguna captación |
 | Productos | Identificación, utilidad, fuentes, creador, relación IA/institucional, estado, acceso/licencia y permisos; curación/creadores | Directorio AI Labs y fichas reales; antes de poblar, enlazar o anunciar funciones de exploración |
 | Trabajos | Original, autores, tipo/fecha/estado, método/resultados/límites, vínculos y permisos; curación/autores | DI2/DI3 y fichas reales; no publicar originales ficticios o atribución automática |
@@ -977,26 +931,28 @@ Notas locales: sin enlaces a unidades no identificadas, personas/materiales sin 
 
 ## QA y estado de la entrega
 
-La arquitectura vigente comprende siete páginas principales, dos tipos de ficha y 48 secciones. La página independiente Productos se elimina y su directorio pasa a AI Labs. El formulario vive en EM6 y sus subdivisiones no son secciones nuevas.
+La arquitectura vigente comprende siete páginas principales, dos tipos de ficha y 47 secciones. La página independiente Productos se elimina y su directorio pasa a AI Labs. El formulario vive en EM6 y sus subdivisiones no son secciones nuevas.
 
-### Estados recalculados de las 48 secciones
+### Estados de las 47 secciones tras E222-EM
 
 | Página o tipo | A · institucional | B · histórico | C · modelo sin entradas | D · acción pendiente | E · dato esencial | Total |
 |---|---:|---:|---:|---:|---:|---:|
 | Inicio | 5 | 1 | 0 | 0 | 0 | 6 |
 | Formación | 4 | 1 | 0 | 0 | 0 | 5 |
-| Empresas | 3 | 1 | 0 | 2 | 0 | 6 |
+| Empresas | 3 | 1 | 0 | 1 | 0 | 5 |
 | Comunidad | 3 | 1 | 0 | 1 | 0 | 5 |
 | AI Labs | 4 | 0 | 1 | 0 | 0 | 5 |
 | Investigación | 2 | 0 | 2 | 0 | 0 | 4 |
 | Equipo | 3 | 0 | 0 | 0 | 1 | 4 |
 | Ficha de producto | 0 | 0 | 7 | 0 | 0 | 7 |
 | Ficha de investigación | 0 | 0 | 6 | 0 | 0 | 6 |
-| **Total** | **24** | **4** | **16** | **3** | **1** | **48** |
+| **Total** | **24** | **4** | **16** | **2** | **1** | **47** |
 
-Son categorías principales, no porcentajes de publicación: 28 secciones de copy institucional/histórico para revisar; 16 modelos sin registros públicos; tres acciones preparadas editorialmente y una sección con autorización personal esencial pendiente. F4 y C3 incluyen además submodelos C para futuros programas/eventos sin entradas. E3 no depende de inventar bios o fotos; su E corresponde a permisos. C7 es A por su continuidad informativa, con estructura de incorporación solo interna e inactiva. DI4 conserva una propuesta de entradas inactiva, no captación confirmada.
+Son categorías principales, no porcentajes de publicación: 28 secciones de copy institucional/histórico para revisar; 16 modelos sin registros públicos; dos acciones preparadas editorialmente y una sección con autorización personal esencial pendiente. F4 y C3 incluyen además submodelos C para futuros programas/eventos sin entradas. E3 no depende de inventar bios o fotos; su E corresponde a permisos. C7 es A por su continuidad informativa, con estructura de incorporación solo interna e inactiva. DI4 conserva una propuesta de entradas inactiva, no captación confirmada.
 
-### Resumen de la revisión v2.1
+### Resumen histórico de la revisión v2.1
+
+Los puntos 7–8 describen el corte histórico y quedaron sustituidos exclusivamente para Empresas por E222-EM.
 
 1. **Copy:** titulares más específicos, menos definiciones repetidas y CTA por tarea; páginas diferenciadas por identidad, participación, aprendizaje, relación institucional y evaluación de objetos.
 2. **Deck:** origen enero de 2025 en Lima, más de 30 eventos, tres coorganizaciones y bootcamp. Datos confirmados por responsable, sin afirmar inspección del HTML original. Cifras colectivas e inscritos conservan su unidad/alcance.
@@ -1020,4 +976,4 @@ Las preguntas mejoran los bloques pertinentes sin convertirse en FAQs automátic
 
 Cierre autorizado por el responsable mediante «AI PlayGrounds — Cierre editorial de E2 v2.1», tras aplicar los dos H1 solicitados y registrar la decisión sobre colecciones sin entradas. Se mantiene la versión v2.1 y el resto del contenido aprobado.
 
-**Esta aprobación no autoriza publicación ni implementación.** Permanecen pendientes el enlace del WhatsApp general, privacidad e implementación del formulario de Empresas, autorizaciones y materiales del equipo e inventarios futuros de iniciativas, productos e investigaciones.
+**Esta aprobación no autoriza publicación ni implementación.** Permanecen pendientes el enlace del WhatsApp general, privacidad y activación operativa del formulario de Empresas, autorizaciones y materiales del equipo e inventarios futuros de iniciativas, productos e investigaciones.

@@ -14,7 +14,7 @@ const home = id === 'I8' && Astro.url.pathname === '/';
 ---
 
 <section {id} class="site-container section-space closing-section">
-  <div class="closing">
+  <div class="closing" data-reveal={home ? 'card' : undefined}>
     <div class="closing-copy">
       <h2>{title}</h2>
       {paragraphs.map((paragraph) => (
@@ -92,6 +92,24 @@ const home = id === 'I8' && Astro.url.pathname === '/';
     min-height: 0;
     object-fit: cover;
     object-position: right bottom;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    :global(body.home) .closing-image {
+      transition:
+        scale 180ms ease-out,
+        translate 180ms ease-out;
+      transform-origin: top left;
+    }
+    :global(body.home) .closing:focus-within .closing-image {
+      scale: 1.04;
+      transition: scale 260ms var(--editorial-ease-out);
+    }
+    @media (hover: hover) and (pointer: fine) {
+      :global(body.home) .closing:has(:global(a:hover)) .closing-image {
+        scale: 1.04;
+        transition: scale 260ms var(--editorial-ease-out);
+      }
+    }
   }
   :global(body.home) .closing-section {
     padding-bottom: clamp(2rem, 4vw, 3.25rem);

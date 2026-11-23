@@ -24,4 +24,42 @@ for (const text of [
 }
 if (existsSync('src/content.config.ts') || existsSync('src/content'))
   throw new Error('Las colecciones requieren validación de publicación P06.');
-console.log('Contenido de Inicio contrastado; colecciones pendientes.');
+
+const empresa = e2
+  .split('## Página: Empresas')[1]
+  .split('## Página: Comunidad')[0];
+const companySources = [
+  'src/pages/empresas.astro',
+  'src/components/site/OrganizationContactForm.astro',
+  'src/scripts/organization-contact.ts',
+]
+  .map((path) => readFileSync(path, 'utf8'))
+  .join('\n');
+const required = [
+  ...empresa.matchAll(
+    /^\*\*(?:SEO title|Meta description|H[123]|Botón):\*\* (.+)$/gm,
+  ),
+].map((match) => match[1]);
+required.push(
+  ...[
+    ...empresa.matchAll(/^\*\*CTA(?: principal| secundario)?:\*\* (.+?) →/gm),
+  ].map((match) => match[1]),
+  ...[
+    ...empresa.matchAll(
+      /^(?:Cada organización|Explora alianzas|Actividades conjuntas|Necesidades de IA|Hemos coorganizado|Iniciativas y productos|Aprendizaje en IA|Preguntas, líneas|Cuéntanos qué tienes).*$/gm,
+    ),
+  ].map((match) => match[0]),
+  ...[
+    ...empresa.matchAll(
+      /^\| (?:Recepción confirmada|Error recuperable) \| (.+) \|$/gm,
+    ),
+  ].map((match) => match[1]),
+);
+for (const text of required) {
+  if (!companySources.replace(/\s+/g, ' ').includes(text)) {
+    throw new Error(`Empresas no coincide con E2: ${text}`);
+  }
+}
+console.log(
+  'Contenido de Inicio y Empresas contrastado; colecciones pendientes.',
+);

@@ -2,6 +2,11 @@
 import { Image } from 'astro:assets';
 import { inicioImages } from '../../assets/inicio';
 
+interface Props {
+  reveal?: boolean;
+}
+const { reveal = false } = Astro.props;
+
 const groups = [
   {
     title: 'Organización',
@@ -29,7 +34,10 @@ const groups = [
 ---
 
 <footer class="footer">
-  <div class="site-container footer-inner">
+  <div
+    class="site-container footer-inner"
+    data-reveal={reveal ? '' : undefined}
+  >
     <div class="footer-intro">
       <a class="footer-brand" href="/" translate="no">
         AI PlayGrounds
@@ -50,7 +58,7 @@ const groups = [
       ))}
     </nav>
   </div>
-  <div class="landscape-frame">
+  <div class="landscape-frame" data-reveal={reveal ? 'ink' : undefined}>
     <Image
       src={inicioImages.footer}
       alt=""

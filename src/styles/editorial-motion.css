@@ -1,0 +1,33 @@
+@media (prefers-reduced-motion: no-preference) {
+  [data-entering]:not(:focus-within) {
+    animation: var(--editorial-entry, editorial-reveal-rise) 760ms
+      var(--editorial-entrance-ease) var(--editorial-delay, 0ms) backwards;
+  }
+}
+
+[data-reveal='card'] {
+  --editorial-entry: editorial-reveal-card;
+}
+[data-reveal='ink'] {
+  --editorial-entry: editorial-reveal-ink;
+}
+
+@keyframes editorial-reveal-rise {
+  from {
+    opacity: 0.16;
+    translate: 0 34px;
+  }
+}
+@keyframes editorial-reveal-card {
+  from {
+    opacity: 0.12;
+    translate: 0 40px;
+    scale: 0.972;
+  }
+}
+@keyframes editorial-reveal-ink {
+  from {
+    opacity: 0.14;
+    translate: 0 16px;
+  }
+}

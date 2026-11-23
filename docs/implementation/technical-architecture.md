@@ -11,7 +11,7 @@ Recomendación: **Astro estático y un único Worker pequeño de contacto, dentr
 
 Contenido público preparado explícitamente desde E2 en Content Collections de build. Las fuentes editoriales completas, archivos históricos, pruebas de autorización y herramientas quedan fuera de los assets. No CMS, base de datos, KV, Durable Objects, colas, API de catálogo ni búsqueda remota.
 
-Empresas tendrá un formulario y un endpoint; Turnstile se valida en servidor y Brevo recibe una notificación a un destinatario institucional fijo. Idempotencia acotada en Brevo, no promesa de entrega exactamente una vez. Sin política de privacidad y recepción verificadas no se activa la captación.
+Empresas implementa un formulario y un endpoint en el Worker compartido. Su activación requiere Turnstile validado en servidor, Brevo con destinatario institucional fijo, controles antiabuso y validación legal y operativa. Idempotencia acotada en Brevo, no promesa de entrega exactamente una vez.
 
 Dirección visual web: superficies mayormente claras (~75 %) y cortes oscuros (~25 %) como orientación global, no cuota por página. La marca canónica sigue siendo predominantemente oscura; la extensión light es una propuesta de aplicación, no una modificación del manual.
 
@@ -240,7 +240,7 @@ Adoptar las rutas del handoff, `trailingSlash: 'always'`, salida Astro `build.fo
 | --- | --- | --- |
 | Inicio | `/` | I1 → I2 → I3 → I4 → I5 → I8 |
 | Formación | `/formacion/` | F1 → F3 → F4 → F6 → F5 |
-| Empresas | `/empresas/` | EM1 → EM2 → EM3 → EM4 → EM5 → EM6 |
+| Empresas | `/empresas/` | EM1 → EM2 → EM3 → EM4 → EM6; EM5 ancla de la card AI Academy en EM4 |
 | Comunidad | `/comunidad/` | C1 → C3 → C4 → C6 → C7 |
 | AI Labs | `/ai-labs/` | B1 → B2 → B3 → B4 → B5 |
 | Investigación | `/investigacion/` | DI1 → DI2 → DI3 → DI4 |
@@ -248,7 +248,7 @@ Adoptar las rutas del handoff, `trailingSlash: 'always'`, salida Astro `build.fo
 | Producto, plantilla | Pendiente de definición | P1 → P2 → P3 → P5 → P6 → P7 → P9 |
 | Investigación, plantilla | `/investigacion/{slug}/` | R1 → R2 → R4 → R5 → R6 → R7 |
 
-**35 bloques institucionales + 13 de plantillas = 48 IDs**, no 48 componentes ni 48 bloques visibles obligatoriamente. Enlaces contextuales: `/#I3`, `/comunidad/#C3`, `/formacion/#F4`, `/empresas/#EM5` y `/empresas/#EM6`. Los destinos condicionales no producen enlaces a secciones ausentes. La marca lleva a `/`; seis accesos globales incluyen AI Labs como directorio de productos e Investigación como página independiente. No páginas de programas/eventos/personas/iniciativas/verticales/facetas. Una respuesta técnica 404 o POST API no cuenta como página editorial nueva. No se fija ruta legal adicional.
+**34 bloques institucionales + 13 de plantillas = 47 secciones de referencia**, no 47 componentes ni bloques visibles obligatoriamente. Enlaces contextuales: `/#I3`, `/#I4`, `/comunidad/#C3`, `/formacion/#F4`, `/empresas/#EM2`, `/empresas/#EM5` y `/empresas/#EM6`. Los destinos condicionales no producen enlaces a secciones ausentes. La marca lleva a `/`; seis accesos globales incluyen AI Labs como directorio de productos e Investigación como página independiente. No páginas de programas/eventos/personas/iniciativas/verticales/facetas. Una respuesta técnica 404 o POST API no cuenta como página editorial nueva. No se fija ruta legal adicional.
 
 ### 7.2 Collections, loaders e identidad
 
@@ -279,9 +279,9 @@ Fechas: unión discriminada `{ precision: year, value: YYYY }`, `{ precision: mo
 
 ### 7.4 Relaciones y reutilización
 
-- Un registro canónico del **Bootcamp Gen AI Fundamentals 2025 en `programs` con perfil histórico**. Inicio I4, Formación F4, Empresas EM3 y Comunidad C3 referencian ese ID. No crear copia en `activities`; listas mixtas aceptan referencias discriminadas a activity o program.
+- Un registro canónico del **Bootcamp Gen AI Fundamentals 2025 en `programs` con perfil histórico**. Inicio I4, Formación F4 y Comunidad C3 pueden referenciar ese ID. Empresas EM3 remite a I4 sin listar hitos. No crear copia en `activities`; listas mixtas aceptan referencias discriminadas a activity o program.
 - Cuatro actividades Luma y otros tres hitos de eventos en `activities` según E2; más de 30 eventos es un dato institucional sustentado, no 30 registros inventados. No se crean entradas en esta etapa.
-- Verticales y líneas en datos compartidos con nombres/orden canónicos; descriptores contextuales de Inicio/Empresas siguen su copy E2, no se fuerzan a ser idénticos.
+- Verticales y líneas en datos compartidos con nombres/orden canónicos. Empresas no reproduce la sección de verticales.
 - Un PER02, varios roles; referencias en grupos no duplican persona ni conteo. Al crear los 15 registros internos se mantienen retenidos hasta permiso; no generar JSON de roster al cliente.
 - Relaciones usan `reference` cuando el tipo es fijo; uniones discriminadas para destinos mixtos y validación transversal de existencia, naturaleza y evidencia. Una relación a entidad retenida no genera link, texto personal no autorizado ni nodo JSON-LD. Referencia inexistente o autoría inferida falla validación.
 - `publicProductSummary`, `publicResearchSummary` y equivalentes proyectan solo campos permitidos del mismo registro que la ficha. No serializar `entry.data` completo. Metadata SEO, cards, sitemap y datos estructurados comparten selector de elegibilidad, no filtros divergentes.
@@ -356,15 +356,15 @@ Movimiento no necesario por defecto; transiciones breves de propiedades concreta
 
 ## 10. Integraciones y flujos de datos
 
-### 10.1 Empresas: un formulario, dos tipos, tres accesos
+### 10.1 Empresas: un formulario, dos tipos, cuatro accesos
 
-`Proponer una alianza` → Alianza institucional; `Cuéntanos tu necesidad` y `Consultar formación para mi equipo` → Oportunidad comercial. Los tres llevan a `#EM6`; JS mejora el selector visible, editable y obligatorio. Entrada directa sin selección. País como texto opcional (evita catálogo de países/dependencia), cargo opcional. Cinco campos siempre requeridos: tipo, nombre, organización, email y contexto. Consentimiento solo si la política/base legal determinan que es necesario. No teléfono, adjuntos, presupuesto ni otros requisitos.
+`Proponer una alianza` → Alianza institucional; `Plantear una necesidad` y `Consultar formación` → Oportunidad comercial; `Conversemos` no modifica el tipo. Los cuatro llevan a `#EM6`; JS mejora el selector visible, editable y obligatorio. Entrada directa sin selección. Cinco campos requeridos: tipo, nombre, organización, email y contexto. Consentimiento solo si lo determina la validación legal; si exige casilla, implementar y aprobar antes de activar. No país, cargo, teléfono, adjuntos ni presupuesto.
 
-Contrato propuesto: `POST /api/contact`, body JSON UTF-8 desde el controlador del formulario; rechazar otros content types salvo que se implemente explícitamente fallback `application/x-www-form-urlencoded`. Sin CORS público, credenciales de usuario o GET con datos. Campos: `inquiryType` enum `institutional/commercial`, `name`, `organization`, `email`, `message`; opcionales `role`, `country`; `privacyConsent` condicionado; técnicos `turnstileToken`, `submissionId` UUID y `policyVersion` esperada. La política/versionado del servidor es la verdad; el cliente no elige destinatario, modo de envío ni aceptación legal.
+Contrato: `POST /api/contact`, JSON UTF-8 desde el controlador; otros content types se rechazan. Sin JavaScript se conserva la navegación a la sección, no se puede enviar un contacto que requiere verificación. Sin CORS público, credenciales de usuario o GET con datos. Campos: `inquiryType` enum `institutional/commercial`, `name`, `organization`, `email`, `message` y técnicos `turnstileToken`, `submissionId` UUID y `policyVersion`. La versión del servidor es la verdad; el cliente no elige destinatario, modo de envío ni aceptación legal.
 
-Validación cliente HTML + schema ligero equivalente; servidor autoritativo y objeto estricto (claves no permitidas, arrays, campos repetidos o tipos inesperados se rechazan). Trim y normalización segura Unicode, sin solo ASCII, no imponer dos palabras, no dominio corporativo ni mínimo de caracteres del mensaje distinto de no vacío. Máximos técnicos propuestos: nombre/organización/cargo 200, país 100, correo 254 y mensaje 8.000 caracteres; body máximo **32 KiB reales durante lectura**, incluso sin Content-Length. Límites protegen recursos y caben en interfaz con ayuda accesible de longitud, no son nuevos requisitos comerciales; nunca truncar silenciosamente. Token ≤2048 caracteres, UUID validado. No HTML aportado por usuario; escape al interpolar correo, asunto fijo por tipo y `replyTo` validado sin CR/LF, sin nombre de usuario en headers de email.
+Validación cliente HTML + controles accesibles; servidor autoritativo con claves y tipos esperados. Trim, nombres Unicode, sin imponer dos palabras, dominio corporativo ni mínimo distinto de no vacío. Máximos: nombre/organización 200, correo 254 y mensaje 8.000 caracteres; body máximo **32 KiB reales durante lectura**, incluso sin Content-Length. Token ≤2048 caracteres y UUID validado. Correo en texto plano; asunto fijo por tipo y `replyTo` validado, sin nombre de usuario en headers.
 
-Estados UI: idle → validación → submitting (`disabled` solo mientras hay solicitud, `aria-busy`) → accepted o recoverable/invalid. Mensajes literales del handoff §9.3/E2 EM6, resumen enfocable con enlaces a errores, campos preservados en memoria al corregir, `aria-describedby`/`aria-invalid`, estado anunciado. No localStorage/sessionStorage de PII ni URL con datos. No vaciar campos antes de accepted. Propuesta de texto técnico de carga a validar en implementación: «Enviando…», sin promesa de recepción.
+Estados UI: envío deshabilitado por defecto; con configuración aprobada, edición → validación → «Enviando…» → recepción o error recuperable. Mensajes de E2 EM6, foco en el primer campo inválido, `aria-describedby`/`aria-invalid`, estado anunciado. No localStorage/sessionStorage de PII ni URL con datos. No vaciar campos antes de accepted.
 
 ### 10.2 Validación servidor y antiabuso
 
@@ -378,7 +378,7 @@ Orden: feature flag/configuración completa → método/content type → origen 
 
 ### 10.3 Brevo, confirmación e idempotencia sin base de datos
 
-Usar `fetch` nativo a `https://api.brevo.com/v3/smtp/email` con `api-key` secreto, timeout propuesto 8 s y tamaño de respuesta limitado. Notificación única a buzón fijo del responsable; remitente validado del dominio autorizado, `replyTo` email del visitante. No crear contactos, marketing, newsletter, CRM, automatizaciones o correo de acuse al visitante. HTML fijo escapado + texto plano; incluir campos y versión de política/base aplicable sin tracking publicitario voluntario.
+Se usa `fetch` nativo a `https://api.brevo.com/v3/smtp/email` con `api-key` secreto, timeout de 9 s y respuesta acotada. Notificación única a buzón fijo del responsable; remitente validado del dominio autorizado, `replyTo` email del visitante. No crear contactos, marketing, newsletter, CRM, automatizaciones o acuse al visitante. Mensaje de texto plano con los campos y la versión de política; revisar métricas de seguimiento del proveedor antes de activar.
 
 Prevenir doble clic en cliente y mantener **UUID de intento estable para mismo payload** en memoria; cambiar tipo/campo crea nuevo UUID. En petición repetida tras resultado incierto, conservar UUID y datos, obtener token Turnstile nuevo. `headers.idempotencyKey` en el JSON Brevo (no confundir con header HTTP) usa ese UUID. T7 documenta ventana de **30 minutos** y error `duplicate_parameter`; referencia del endpoint también menciona `IdempotencyKey`. Verificar capitalización aceptada, single-message, concurrencia y ventana efectiva en integración controlada de P10; no asumir TTL histórico de 15 min ni que sandbox pruebe deduplicación de entregas reales.
 
@@ -409,7 +409,7 @@ Consentimiento de analítica independiente de privacidad de contacto: rechazar G
 
 Retirada: detener emisiones propias, actualizar denegación de SDKs ya cargados, limpiar cookies propias identificadas que sea posible y recargar la página para descargar SDKs; siguientes páginas sin tags. No se puede retirar información ya transmitida: política debe explicarlo. Pruebas de red antes/aceptar/rechazar/retirar y ausencia de terceros en preview. IDs ausentes = integración deshabilitada, no ID ficticio.
 
-Eventos previstos, allowlist sin texto libre: navegación/CTA institucional, salida a original usando ID público/ruta saneada, apertura de ficha; `contact_accepted` solo tras resultado real y consentimiento GA4, sin submissionId ni correo. Desactivar autodetección de formulario de GA4. Clic WhatsApp no mide incorporación; clic producto no uso; consulta no venta. Search Console mediante verificación DNS de dominio aprobado y sitemap después de A3; sin script cliente ni dependencia del banner. No se reclama propiedad ni acceso hoy.
+Empresas publica solo el evento DOM `site:analytics` con `cta_click`, `form_start`, `form_error` y `generate_lead` (solo si el Worker confirma la recepción). No hay suscriptor externo activo, cookies ni persistencia. Usar UTM solo en adquisición externa; los destinos analíticos internos omiten query strings. Ver [contrato y activación](empresas.md). Desactivar autodetección de formularios si se adopta GA4. Clic WhatsApp no mide incorporación; clic producto no uso; consulta no venta. Search Console mediante verificación DNS de dominio aprobado y sitemap después de A3; sin script cliente ni dependencia del banner.
 
 ## 11. Infraestructura y despliegue
 
@@ -424,15 +424,14 @@ Fuera de Git: secretos locales en archivo ignorado con permisos restringidos, nu
 | Variable / binding propuesto | Ubicación y regla |
 | --- | --- |
 | `SITE_URL`, `DEPLOY_CONTEXT` | Build/config por entorno; origen productivo confirmado antes de release; preview siempre noindex |
-| `PUBLIC_TURNSTILE_SITE_KEY` | Cliente, solo cuando formulario habilitado; llave de prueba distinta de live |
+| `PUBLIC_CONTACT_TURNSTILE_SITE_KEY` | Cliente, solo cuando formulario habilitado; llave por entorno |
 | `PUBLIC_GA4_ID`, `PUBLIC_CLARITY_ID` | Build públicos opcionales; solo producción consentida; no secretos |
 | `CONTACT_ENABLED`, `PUBLIC_CONTACT_ENABLED` | Runtime y proyección de build; deben coincidir; runtime manda y falla cerrado |
-| `CONTACT_MODE` | `disabled/mock/sandbox/live`; configuración del servidor, nunca body del cliente |
-| `ALLOWED_ORIGINS`, `TURNSTILE_HOSTNAMES` | Allowlist exacta por entorno; nunca localhost en live |
-| `PRIVACY_POLICY_URL`, `PRIVACY_POLICY_VERSION`, `PRIVACY_CONSENT_REQUIRED` | Política real revisada, no token de E2 ni URL inventada |
-| `BREVO_SENDER`, `BREVO_RECIPIENT` | Config de servidor; destinatario operativo confirmado, no correo arbitrario del cliente |
-| `TURNSTILE_SECRET`, `BREVO_API_KEY`, `RATE_LIMIT_HMAC_KEY` | Secret bindings separados por entorno, rotación y acceso mínimo; jamás impresos |
-| `ASSETS`, bindings de rate limit | Nativos Cloudflare, configuración explícita; namespaces separados preview/live |
+| `CONTACT_ORIGIN` | Origen HTTPS exacto; su hostname debe coincidir con el de Siteverify |
+| `PUBLIC_CONTACT_PRIVACY_URL`, `PUBLIC_CONTACT_POLICY_VERSION`, `CONTACT_POLICY_VERSION` | Ruta interna y versión aprobadas; versiones de build y servidor coincidentes. No habilitar si falta implementar consentimiento obligatorio |
+| `CONTACT_FROM`, `CONTACT_TO` | Remitente validado y buzón fijo en el servidor |
+| `CONTACT_TURNSTILE_SECRET`, `CONTACT_BREVO_API_KEY`, `CONTACT_RATE_HMAC` | Secretos por entorno; nunca públicos |
+| `ASSETS`, `CONTACT_IP_LIMIT`, `CONTACT_EMAIL_LIMIT` | Bindings nativos; los dos límites se provisionan y prueban antes de activar; sin modo simulado en Worker |
 | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` | Solo job de deploy confiable/GitHub Environment; token mínimo para operación/recurso; no exposición a código de PR no confiable |
 
 Canales públicos en `channels.json` sin secretos; URL WhatsApp es pública cuando autorizada, pero no imprimir invitaciones privadas de evidencia. Esquema env falla si se solicita live con configuración incompleta. `.env.example` solo nombres/valores inocuos o vacíos, nunca credenciales de prueba reales. No solicitar credenciales en esta etapa.

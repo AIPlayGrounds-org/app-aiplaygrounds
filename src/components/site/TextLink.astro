@@ -1,0 +1,48 @@
+---
+import { ArrowUpRight } from '@lucide/astro';
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = HTMLAttributes<'a'>;
+const { class: className, ...attributes } = Astro.props;
+---
+
+<a class:list={['text-link', className]} {...attributes}>
+  <slot /> <ArrowUpRight aria-hidden="true" />
+</a>
+
+<style>
+  .text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    min-height: 44px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  .text-link :global(svg) {
+    width: 1rem;
+    height: 1rem;
+    flex: none;
+  }
+  .text-link:is(:focus-visible, :active) {
+    text-decoration-thickness: 0.14em;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .text-link :global(svg) {
+      transition: translate var(--editorial-response) ease-out;
+    }
+    .text-link:focus-visible :global(svg) {
+      translate: 4px -3px;
+      transition-timing-function: var(--editorial-ease-out);
+    }
+    .text-link:active :global(svg) {
+      translate: 1px -1px;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .text-link:hover:not(:active) :global(svg) {
+        translate: 4px -3px;
+        transition-timing-function: var(--editorial-ease-out);
+      }
+    }
+  }
+</style>

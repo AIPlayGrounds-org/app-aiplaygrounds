@@ -13,9 +13,9 @@ const source = readFileSync(
 
 test('Inicio conserva orden, textos y destinos acordados', () => {
   assert.deepEqual(
-    [...page.matchAll(/<(?:section|ClosingCTA)\s+id="(I\d+)"/g)].map(
-      (m) => m[1],
-    ),
+    [
+      ...page.matchAll(/<(?:Section|ImmersiveHero|ClosingCTA)\s+id="(I\d+)"/g),
+    ].map((m) => m[1]),
     ['I1', 'I2', 'I3', 'I4', 'I5', 'I8'],
   );
   for (const text of [
@@ -66,8 +66,14 @@ test('ilustraciones locales, WebP y variantes limitadas', () => {
   assert.doesNotMatch(assets, /inicio-referencia/);
   assert.match(page, /format="webp"/);
   assert.match(page, /width=\{960\}/);
-  for (const icon of ['Blocks', 'BookOpen', 'Handshake'])
-    assert.ok(page.includes(`<${icon} `));
+  const initiative = readFileSync(
+    'src/components/site/InitiativeCard.astro',
+    'utf8',
+  );
+  for (const illustration of ['labs', 'academy', 'organizations']) {
+    assert.ok(page.includes(`illustration="${illustration}"`));
+    assert.ok(initiative.includes(`illustration === '${illustration}'`));
+  }
 });
 
 test('menú nativo conserva seis destinos y cierre con Escape', () => {

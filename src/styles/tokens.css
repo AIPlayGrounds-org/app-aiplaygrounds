@@ -19,6 +19,20 @@
   --web-light-text: #191a18;
   --web-light-secondary-text: #484a43;
   --web-light-muted-text: #62645b;
+
+  --editorial-background: #fbf6ec;
+  --editorial-surface: #fbf3e6;
+  --editorial-card: #fff9f0;
+  --editorial-grove: #dce5d1;
+  --editorial-sand: #eae0c8;
+  --editorial-lilac: #e3e2ee;
+  --editorial-grove-ink: #49684c;
+  --editorial-sand-ink: #685936;
+  --editorial-lilac-ink: #54536d;
+  --editorial-radius: 0.4rem;
+  --editorial-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --editorial-entrance-ease: cubic-bezier(0.23, 0.65, 0.25, 1);
+  --editorial-response: 140ms;
 }
 
 /* C. Un único tema semántico compartido por Starwind y Tailwind. */

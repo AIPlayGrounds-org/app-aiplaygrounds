@@ -1,27 +1,13 @@
 body.interior {
-  --home-background: #fbf6ec;
-  --home-surface: #fbf3e6;
-  --home-card: #fff9f0;
+  --home-background: var(--editorial-background);
+  --home-surface: var(--editorial-surface);
+  --home-card: var(--editorial-card);
   background: var(--home-background);
 }
 body.interior :is(a, button, input, select, textarea, summary):focus-visible {
   outline: 3px solid var(--focus-ring);
   outline-offset: 4px;
 }
-.page-hero {
-  padding: clamp(7rem, 9vw, 9rem) 0 clamp(2.5rem, 4vw, 4rem);
-}
-.page-hero h1 {
-  max-width: 21ch;
-  font-size: clamp(2.35rem, 1.75rem + 2.6vw, 4.25rem);
-}
-.page-hero .lead {
-  max-width: 58ch;
-  margin-top: 1.25rem;
-  font-size: clamp(1.15rem, 1rem + 0.45vw, 1.45rem);
-  color: var(--secondary-text);
-}
-.page-hero .lead p + p,
 .prose p + p {
   margin-top: 1rem;
 }
@@ -97,51 +83,7 @@ body.interior :is(a, button, input, select, textarea, summary):focus-visible {
   gap: 1rem;
   margin-top: 1.5rem;
 }
-.contact-form {
-  min-width: 0;
-  padding: clamp(1.5rem, 3vw, 2.5rem);
-  background: var(--home-card);
-  border: 1px solid var(--border);
-  border-radius: 0.4rem;
-}
-.contact-form fieldset {
-  border: 0;
-  padding: 0;
-  margin: 1.5rem 0 0;
-  display: grid;
-  gap: 1rem;
-}
-.contact-form label {
-  display: grid;
-  gap: 0.35rem;
-  font-weight: 500;
-}
-.contact-form :is(input, select, textarea) {
-  width: 100%;
-  min-height: 3rem;
-  padding: 0.75rem;
-  font: inherit;
-  color: var(--foreground);
-  background: var(--home-background);
-  border: 1px solid var(--input);
-  border-radius: 0.25rem;
-}
-.contact-form :is(input, select, textarea):disabled {
-  background: var(--home-surface);
-  color: var(--secondary-text);
-  cursor: not-allowed;
-}
-.contact-form textarea {
-  min-height: 8rem;
-  resize: vertical;
-}
-.contact-form button {
-  margin-top: 1.5rem;
-}
 @media (max-width: 48rem) {
-  .page-hero {
-    padding-top: 6.5rem;
-  }
   .interior-grid,
   .interior-grid.three,
   .split-section,

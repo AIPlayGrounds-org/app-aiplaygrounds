@@ -16,6 +16,8 @@ Fuentes vigentes: [B1](../01-brief-diagnostico/diagnostico-b1.md), B2, [Research
 
 **Precedencia:** GB22 > decisiones anteriores compatibles e internos aprobados B1/B2 > esta propuesta > Research/inferencias > v1 histórico. GB22 sustituye el sesgo exclusivamente formativo de Empresas, completa estructura humana y exige CTA contextual; no confirma inventarios, bios, permisos o canales. El [archivo](../../archive/v1-2026-10/README.md) permanece íntegro. No se comunica estructura jurídica futura, remuneración, comisiones o mecanismos internos.
 
+**Vigencia localizada · E222-EM:** para `/empresas/` prevalecen el bloque vigente de Empresas de este documento y su [proyección E2](../../entregables-cliente/02-contenido-web/contenido-web.md#página-empresas). Las referencias de cortes anteriores a las cuatro verticales, seis secciones o campos adicionales explican el estado anterior; no rigen esta implementación ni cambian otras páginas.
+
 ## 2. Resultado que debe conseguir la web
 
 **Organización:** reconocimiento institucional y oportunidades de participación/comerciales compatibles con capacidad real. La formación aporta una conversión específica; no define la promesa global.
@@ -214,14 +216,15 @@ Dudas de nivel/modalidad/disponibilidad se resuelven en F1/F3/F4/F5. Se conserva
 
 ### Empresas · encaje y conversación (EM)
 
-| Orden / ID | Sección | Objetivo | Qué comunica / contenido esperado | Evidencia/condición | Dependencia |
-|---|---|---|---|---|---|
-| 1 EM1 | AI PlayGrounds para organizaciones | Reconocer identidad y relevancia | Organización impulsada por comunidad; propósito,campos y posibilidades de relación. No presentación exclusiva de proveedor formativo | C01/GB22 | Sin claim de experiencia genérico |
-| 2 EM2 | Cuatro verticales y ámbitos de aplicación | Situar una necesidad en un campo | Cuatro unidades V en orden confirmado:Foundations modelos/métodos y evaluación; Software procesos de desarrollo; Science preguntas/procesos científicos; Finance problemas/procesos financieros. Por campo:ámbito y límites,conexión a evidencia si existe. Aplicación temática no es servicio ofrecido | C02; C06/C07 para ejemplos propios | No catálogo de consultoría/implementación |
-| 3 EM3 | Capacidades y experiencia acreditadas | Evaluar qué se puede sostener | Registros CAP:tarea,contexto/persona/objeto que acredita,fuente/fecha/permiso,límites. Cargo o nombre de vertical no acreditan delivery; diferenciar capacidad de disponibilidad comercial | C03/C06/C07 | Evidencia requerida; no logos/casos ficticios |
-| 4 EM4 | Productos, iniciativas y oportunidades | Explorar trabajo y posibles relaciones | Selección de D/N/W relevantes con procedencia/estado y destino a ficha,Labs o colección; OP separa oportunidad potencial de oferta disponible confirmada. Priorizar propio/vinculado acreditado. Sin inventar convocatoria o trabajo por encargo | C06/C07/C08 | Inventario y condiciones de oportunidad |
-| 5 EM5 | AI Academy para equipos | Reconocer la posibilidad formativa | Formación como una relación posible; líneas/tareas y alcance acreditado,detalle de programas en Formación para no duplicar catálogo. Sin personalización,fechas o certificados asumidos | C02/C05/C06 | Oferta y alcance vigentes |
-| 6 EM6 | Conversemos sobre tu contexto | Facilitar conversación institucional o comercial | X con necesidad/contexto/contacto mínimos propuestos,canal/responsable/privacidad y siguiente paso reales. No enviar solicitud de servicio inexistente. Mientras falte operación,esquema no publicable y rutas a Equipo/Formación para explorar | C06/C08 | Canal/atención/proceso; sin compromiso de respuesta |
+**E222-EM · 23/11/2026 · APROBADO para Empresas:** el recorrido identifica formas de colaboración, aporta evidencia sin duplicar hitos y conduce a una consulta mínima. Sustituye el esquema E221 para esta página; el research histórico no se recalcula.
+
+| ID | Bloque | Decisión |
+|---|---|---|
+| EM1 | Hero inmersivo | Posicionamiento y acceso a EM6 (sin elegir tipo) o EM2. |
+| EM2 | Colaboración | Dos vías, institucional y comercial, desde las tarjetas. Retira las cuatro verticales duplicadas. |
+| EM3 | Respaldo | Evidencia institucional y formativa ya acreditada; remite a I4 sin repetir hitos. |
+| EM4 | Iniciativas | AI Labs, AI Academy e Investigación. EM5 se conserva como ancla de la card Academy, que preselecciona comercial en EM6. |
+| EM6 | Contacto | Un formulario, cinco campos requeridos, cuatro entradas; selección modificable. Activación pendiente de privacidad y recepción. |
 
 ### AI Labs · iniciativas y experimentación (B)
 

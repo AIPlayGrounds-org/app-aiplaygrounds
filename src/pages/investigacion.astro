@@ -1,4 +1,5 @@
 ---
+import CompactHero from '../components/site/CompactHero.astro';
 import { getResearch } from '../data/directories';
 import InteriorLayout from '../layouts/InteriorLayout.astro';
 import DirectoryLink from '../components/site/DirectoryLink.astro';
@@ -12,13 +13,12 @@ const entries = await getResearch();
   description="Trabajos originales sobre inteligencia artificial o realizados con su apoyo: qué preguntas plantean, cómo las abordan y qué límites tienen."
 >
   <div class="site-container directory">
-    <header id="DI1" class="directory-intro">
-      <h1>Investigación</h1>
+    <CompactHero id="DI1" title="Investigación" variant="directory">
       <p>
         Trabajos originales sobre IA o realizados con su apoyo. Cada ficha reúne
         la pregunta, el enfoque y los límites del trabajo.
       </p>
-    </header>
+    </CompactHero>
 
     <section id="DI2">
       <h2 class="directory-section-title">Directorio de investigaciones</h2>

@@ -1,6 +1,12 @@
 ---
 import { Image } from 'astro:assets';
-import { ArrowUpRight } from '@lucide/astro';
+import ImmersiveHero from '../components/site/ImmersiveHero.astro';
+import Section from '../components/site/Section.astro';
+import SectionHeading from '../components/site/SectionHeading.astro';
+import TextLink from '../components/site/TextLink.astro';
+import InitiativeCard from '../components/site/InitiativeCard.astro';
+import InitiativeGrid from '../components/site/InitiativeGrid.astro';
+import EditorialMotion from '../components/site/EditorialMotion.astro';
 import { inicioImages } from '../assets/inicio';
 import Button from '../components/starwind/button/Button.astro';
 import Card from '../components/starwind/card/Card.astro';
@@ -40,62 +46,48 @@ const fields = [
 >
   <SiteHeader />
   <main id="contenido" tabindex="-1">
-    <section id="I1" class="hero">
-      <Image
-        src={inicioImages.hero}
-        alt=""
-        format="webp"
-        widths={[480, 768, 1024, 1440]}
-        sizes="100vw"
-        loading="eager"
-        fetchpriority="high"
-        class="hero-image"
-      />
-      <div class="site-container hero-content">
-        <h1>Aprendemos, investigamos, experimentamos y construimos con IA.</h1>
-        <p>
-          AI PlayGrounds es una organización enfocada en inteligencia
-          artificial, impulsada por su comunidad.
-        </p>
-        <div class="actions">
-          <Button href="/comunidad/" variant="primary">
-            Ir a la comunidad
-          </Button>
-          <Button href="/ai-labs/" variant="outline">
-            Explorar AI Labs
-          </Button>
-        </div>
-      </div>
-    </section>
+    <ImmersiveHero
+      id="I1"
+      image={inicioImages.hero}
+      title="Aprendemos, investigamos, experimentamos y construimos con IA."
+      description="AI PlayGrounds es una organización enfocada en inteligencia artificial, impulsada por su comunidad."
+    >
+      <Button href="/comunidad/" variant="primary">
+        Ir a la comunidad
+      </Button>
+      <Button href="/ai-labs/" variant="outline">
+        Explorar AI Labs
+      </Button>
+    </ImmersiveHero>
 
-    <section id="I2" class="site-container section-space community">
-      <h2>El conocimiento crece cuando se comparte</h2>
-      <div class="community-copy">
+    <Section id="I2" class="community">
+      <SectionHeading data-reveal>
+        El conocimiento crece cuando se comparte
+      </SectionHeading>
+      <div class="community-copy" data-reveal>
         <p>
           La comunidad comparte conocimiento, hace preguntas y participa en las
           actividades que impulsan nuestro trabajo. El equipo sostiene la
           organización y sus cuatro verticales de trabajo.
         </p>
         <div class="links">
-          <a class="text-link" href="/comunidad/#C3">
-            Actividades de la comunidad <ArrowUpRight aria-hidden="true" />
-          </a>
-          <a class="text-link" href="/equipo/">
-            Nuestro equipo <ArrowUpRight aria-hidden="true" />
-          </a>
+          <TextLink href="/comunidad/#C3">Actividades de la comunidad</TextLink>
+          <TextLink href="/equipo/">Nuestro equipo</TextLink>
         </div>
       </div>
-    </section>
+    </Section>
 
-    <section id="I3" class="site-container section-space">
-      <h2>Cuatro verticales, preguntas diferentes</h2>
-      <p class="section-intro">
+    <Section id="I3">
+      <SectionHeading data-reveal>
+        Cuatro verticales, preguntas diferentes
+      </SectionHeading>
+      <p class="section-intro" data-reveal>
         Nuestras verticales de trabajo van de los modelos y sus métodos a las
         aplicaciones en software, ciencia y finanzas.
       </p>
       <div class="fields">
         {fields.map((field) => (
-          <article>
+          <article data-reveal="card">
             <Card class="field-card gap-0 p-0">
               <div class="field-copy">
                 <h3>{field.title}</h3>
@@ -114,11 +106,11 @@ const fields = [
           </article>
         ))}
       </div>
-    </section>
+    </Section>
 
-    <section id="I4" class="site-container section-space history">
-      <div class="history-heading">
-        <h2>De los encuentros a la práctica</h2>
+    <Section id="I4" class="history">
+      <div class="history-heading" data-reveal>
+        <SectionHeading>De los encuentros a la práctica</SectionHeading>
         <p>
           Desde 2025 hemos organizado más de 30 eventos de comunidad. Esa
           trayectoria incluye workshops de desarrollo asistido por IA, un
@@ -126,13 +118,13 @@ const fields = [
         </p>
       </div>
       <div class="history-grid">
-        <div class="stat">
+        <div class="stat" data-reveal="ink">
           <p class="eyebrow">Eventos organizados desde 2025</p>
           <strong>+30</strong>
           <p>eventos de comunidad</p>
         </div>
         <div class="events">
-          <article class="event featured">
+          <article class="event featured" data-reveal>
             <p class="eyebrow">Coorganizado</p>
             <h3>hack@latam</h3>
             <p class="metrics">
@@ -151,7 +143,7 @@ const fields = [
               <span>UTEC</span>
             </p>
           </article>
-          <article class="event">
+          <article class="event" data-reveal>
             <p class="eyebrow">Coorganizado</p>
             <h3>IA Hackathon</h3>
             <p class="metrics">
@@ -167,7 +159,7 @@ const fields = [
               <span>kebo</span>
             </p>
           </article>
-          <article class="event">
+          <article class="event" data-reveal>
             <p class="eyebrow">Coorganizado</p>
             <h3>The Real AI</h3>
             <p class="metrics">
@@ -184,75 +176,36 @@ const fields = [
           </article>
         </div>
       </div>
-    </section>
+    </Section>
 
-    <section id="I5" class="site-container section-space">
-      <h2>Ideas, aprendizaje y nuevas conversaciones</h2>
-      <div class="pathways">
-        <article class="path-card path-labs">
-          <div class="path-illustration" aria-hidden="true">
-            <svg viewBox="0 0 310 140" fill="none">
-              <path d="M16 102C70 33 114 31 155 72s75 67 142 10M18 118C75 68 118 58 155 82s82 51 132 15M23 128c64-34 101-37 132-35s77 35 119 16M57 58c38-45 82-38 110-13s64 70 112 22M88 27c27-23 62-16 88 8s59 60 84 20" />
-              <path class="path-guide" d="M28 108 84 65 148 73 206 50 273 74" />
-              <circle cx="28" cy="108" r="4" />
-              <circle cx="84" cy="65" r="4" />
-              <circle cx="148" cy="73" r="4" />
-              <circle cx="206" cy="50" r="4" />
-              <circle cx="273" cy="74" r="4" />
-            </svg>
-          </div>
-          <h3>AI Labs · experimentación e iniciativas tempranas</h3>
-          <p>
-            Conoce nuestros experimentos y prototipos, quiénes los impulsan y en
-            qué etapa están.
-          </p>
-          <a class="text-link" href="/ai-labs/">
-            Explorar AI Labs <ArrowUpRight aria-hidden="true" />
-          </a>
-        </article>
-        <article class="path-card path-academy">
-          <div class="path-illustration" aria-hidden="true">
-            <svg viewBox="0 0 310 140" fill="none">
-              <path d="M155 119V41M155 48C127 22 86 18 47 26v71c38-5 72-4 108 22 36-26 70-27 108-22V26c-39-8-80-4-108 22ZM47 40l-15 5v71c44-9 84-5 123 10 39-15 79-19 123-10V45l-15-5" />
-              <path
-                class="path-guide"
-                d="M64 49c29-5 53 1 74 13M64 65c28-4 52 2 74 13M64 81c23-3 44 1 62 9M172 63c21-12 45-18 74-13M172 79c22-11 46-17 74-13M184 91c18-8 39-12 62-9"
-              />
-            </svg>
-          </div>
-          <h3>AI Academy · aprendizaje con dos enfoques</h3>
-          <p>
-            Amplía lo que puedes construir: usa IA para desarrollar software
-            (Software with AI) o incorpórala en tus aplicaciones y comprueba
-            cómo funciona (AI Engineering).
-          </p>
-          <a class="text-link" href="/formacion/">
-            Ver las líneas de AI Academy <ArrowUpRight aria-hidden="true" />
-          </a>
-        </article>
-        <article class="path-card path-organizations">
-          <div class="path-illustration" aria-hidden="true">
-            <svg viewBox="0 0 310 140" fill="none">
-              <path d="M27 103h256M42 103V89h53v14m120 0V89h53v14M74 89c15-48 48-72 81-72s66 24 81 72M95 89c14-34 35-52 60-52s46 18 60 52M112 62v41m43-66v66m43-41v41M54 118h202" />
-              <path class="path-guide" d="M45 72h220" />
-              <circle cx="74" cy="89" r="4" />
-              <circle cx="155" cy="37" r="4" />
-              <circle cx="236" cy="89" r="4" />
-            </svg>
-          </div>
-          <h3>Para organizaciones</h3>
-          <p>
-            Alianzas institucionales, oportunidades comerciales y formación
-            personalizada para equipos. Una conversación permite situar cada
-            posibilidad en el contexto de tu organización.
-          </p>
-          <a class="text-link" href="/empresas/">
-            AI PlayGrounds para organizaciones{' '}
-            <ArrowUpRight aria-hidden="true" />
-          </a>
-        </article>
-      </div>
-    </section>
+    <Section id="I5">
+      <SectionHeading data-reveal>
+        Ideas, aprendizaje y nuevas conversaciones
+      </SectionHeading>
+      <InitiativeGrid>
+        <InitiativeCard
+          illustration="labs"
+          title="AI Labs · experimentación e iniciativas tempranas"
+          description="Conoce nuestros experimentos y prototipos, quiénes los impulsan y en qué etapa están."
+          href="/ai-labs/"
+          label="Explorar AI Labs"
+        />
+        <InitiativeCard
+          illustration="academy"
+          title="AI Academy · aprendizaje con dos enfoques"
+          description="Amplía lo que puedes construir: usa IA para desarrollar software (Software with AI) o incorpórala en tus aplicaciones y comprueba cómo funciona (AI Engineering)."
+          href="/formacion/"
+          label="Ver las líneas de AI Academy"
+        />
+        <InitiativeCard
+          illustration="organizations"
+          title="Para organizaciones"
+          description="Alianzas institucionales, oportunidades comerciales y formación personalizada para equipos. Una conversación permite situar cada posibilidad en el contexto de tu organización."
+          href="/empresas/"
+          label="AI PlayGrounds para organizaciones"
+        />
+      </InitiativeGrid>
+    </Section>
 
     <ClosingCTA
       id="I8"
@@ -271,63 +224,15 @@ const fields = [
       ]}
     />
   </main>
-  <SiteFooter />
+  <SiteFooter reveal />
+  <EditorialMotion />
 </BaseLayout>
-
-<script>
-  const motion = matchMedia('(prefers-reduced-motion: no-preference)');
-
-  if ('IntersectionObserver' in window && motion.matches) {
-    const targets = document.querySelectorAll<HTMLElement>(
-      '#I2 h2, #I2 .community-copy, #I3 h2, #I3 .section-intro, #I3 article, #I4 .history-heading, #I4 .stat, #I4 .event, #I5 h2, #I5 .path-card, #I8 .closing, body.home .footer-inner, body.home .landscape-frame',
-    );
-    let remaining = targets.length;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const { target, isIntersecting } of entries) {
-          if (!isIntersecting) continue;
-          observer.unobserve(target);
-          remaining -= 1;
-          if (motion.matches && !target.matches(':focus-within')) {
-            target.setAttribute('data-home-entering', '');
-          }
-        }
-        if (remaining === 0) observer.disconnect();
-      },
-      { rootMargin: '0px 0px -112px' },
-    );
-    targets.forEach((target) => {
-      observer.observe(target);
-      const finish = (event: AnimationEvent) => {
-        if (
-          event.target === target &&
-          event.animationName.startsWith('home-reveal')
-        ) {
-          target.removeAttribute('data-home-entering');
-        }
-      };
-      target.addEventListener('animationend', finish);
-      target.addEventListener('animationcancel', finish);
-      target.addEventListener('focusin', () =>
-        target.removeAttribute('data-home-entering'),
-      );
-    });
-    motion.addEventListener('change', () => {
-      if (motion.matches) return;
-      observer.disconnect();
-      targets.forEach((target) => target.removeAttribute('data-home-entering'));
-    });
-  }
-</script>
 
 <style>
   :global(body.home) {
-    --home-background: #fbf6ec;
-    --home-surface: #fbf3e6;
-    --home-card: #fff9f0;
-    --home-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-    --home-entrance-ease: cubic-bezier(0.23, 0.65, 0.25, 1);
-    --home-response: 140ms;
+    --home-background: var(--editorial-background);
+    --home-surface: var(--editorial-surface);
+    --home-card: var(--editorial-card);
     background: var(--home-background);
   }
   :global(body.home :is(a, summary):focus) {
@@ -339,62 +244,11 @@ const fields = [
       outline-color: Highlight;
     }
   }
-  .hero {
-    min-height: 48rem;
-    position: relative;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-  }
-  .hero-image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  .hero-content {
-    position: relative;
-    text-align: center;
-    padding-block: 8rem 6rem;
-  }
-  .hero h1 {
-    max-width: 34ch;
-    margin-inline: auto;
-    font-size: clamp(2.25rem, 1.5rem + 2.5vw, 3.5rem);
-  }
-  .hero p {
-    max-width: 38rem;
-    font-size: clamp(1.15rem, 1rem + 0.45vw, 1.4rem);
-    margin: 1.5rem auto 0;
-  }
-  .actions,
   .links {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 0.75rem 1.5rem;
-  }
-  .hero .actions {
-    justify-content: center;
-    margin-top: 1.5rem;
-  }
-  .text-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    min-height: 44px;
-    font-size: 0.875rem;
-    font-weight: 500;
-  }
-  .text-link :global(svg) {
-    width: 1rem;
-    height: 1rem;
-    flex: none;
-  }
-  h2 {
-    font-size: clamp(2rem, 1.5rem + 1.5vw, 3rem);
   }
   h3 {
     font-size: 1.25rem;
@@ -405,8 +259,8 @@ const fields = [
     grid-template-columns: 1fr 1fr;
     gap: clamp(2rem, 6vw, 6rem);
   }
-  .community h2,
-  .history-heading h2 {
+  .community > :global(h2),
+  .history-heading > :global(h2) {
     max-width: 18ch;
   }
   .community-copy {
@@ -518,72 +372,6 @@ const fields = [
     font-size: 0.7rem;
     color: var(--secondary-text);
   }
-  .pathways {
-    display: grid;
-    gap: clamp(1rem, 2vw, 1.5rem);
-    margin-top: 2rem;
-  }
-  .path-card {
-    --path-inset: clamp(1.125rem, 2vw, 1.625rem);
-    --path-wash: #dce5d1;
-    --path-ink: #49684c;
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    min-inline-size: 0;
-    border: 1px solid var(--border);
-    border-radius: 0.4rem;
-    background: var(--home-card);
-  }
-  .path-academy {
-    --path-wash: #eae0c8;
-    --path-ink: #685936;
-  }
-  .path-organizations {
-    --path-wash: #e3e2ee;
-    --path-ink: #54536d;
-  }
-  .path-illustration {
-    display: grid;
-    place-items: center;
-    block-size: clamp(8rem, 13vw, 11rem);
-    border-radius: 0.35rem 0.35rem 0 0;
-    border-block-end: 1px solid var(--border);
-    background: var(--path-wash);
-    color: var(--path-ink);
-  }
-  .path-illustration svg {
-    inline-size: min(80%, 17rem);
-    block-size: 86%;
-    stroke: currentColor;
-    stroke-width: 1.25;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-  .path-guide {
-    stroke-dasharray: 3 4;
-  }
-  .path-illustration circle {
-    fill: var(--path-wash);
-    stroke-width: 1.55;
-  }
-  .path-card > :is(h3, p, a) {
-    margin-inline: var(--path-inset);
-  }
-  .path-card h3 {
-    margin-block-start: var(--path-inset);
-    text-wrap: pretty;
-  }
-  .path-card p {
-    margin-block-start: 0.55rem;
-    color: var(--secondary-text);
-  }
-  .path-card .text-link {
-    justify-self: start;
-    margin-block: 0.65rem 0.75rem;
-  }
-  .text-link:is(:focus-visible, :active) {
-    text-decoration-thickness: 0.14em;
-  }
   :global(body.home a[data-slot='button']:active) {
     background-color: color-mix(in srgb, currentColor 18%, var(--primary));
   }
@@ -602,144 +390,36 @@ const fields = [
     text-decoration-line: underline;
     text-decoration-thickness: 0.14em;
   }
-  .path-card:focus-within .path-guide {
-    stroke-width: 1.85;
-  }
-  @media (hover: hover) and (pointer: fine) {
-    .path-card:has(.text-link:hover) .path-guide {
-      stroke-width: 1.85;
-    }
-  }
   @media (prefers-reduced-motion: no-preference) {
-    .hero-content > :is(h1, p, .actions) {
-      animation: home-hero-arrive 720ms var(--home-entrance-ease)
-        var(--home-hero-delay, 0ms) backwards;
-    }
-    .hero-content > p {
-      --home-hero-delay: 170ms;
-    }
-    .hero-content > .actions {
-      --home-hero-delay: 320ms;
-    }
-    .hero-content > .actions:focus-within {
-      animation: none;
-    }
-    /* Only the observer adds this attribute. Offscreen content is never hidden. */
-    :global(body.home [data-home-entering]:not(:focus-within)) {
-      animation: var(--home-entry, home-reveal-rise) 760ms
-        var(--home-entrance-ease) var(--home-entry-delay, 0ms) backwards;
-    }
     .community-copy,
     .section-intro {
-      --home-entry-delay: 95ms;
-    }
-    .history .stat,
-    :global(body.home .landscape-frame) {
-      --home-entry: home-reveal-ink;
-    }
-    .fields article,
-    .path-card,
-    :global(body.home #I8 .closing) {
-      --home-entry: home-reveal-card;
+      --editorial-delay: 95ms;
     }
     @media (min-width: 52rem) {
-      :is(.fields, .pathways) > article:nth-child(2n),
+      .fields > article:nth-child(2n),
       .event:not(.featured) {
-        --home-entry-delay: 110ms;
+        --editorial-delay: 110ms;
       }
-      :is(.fields, .pathways) > article:nth-child(3) {
-        --home-entry-delay: 195ms;
+      .fields > article:nth-child(3) {
+        --editorial-delay: 195ms;
       }
     }
     @media (min-width: 60rem) {
       .fields > article:nth-child(4) {
-        --home-entry-delay: 280ms;
+        --editorial-delay: 280ms;
       }
-    }
-    .text-link :global(svg) {
-      transition: translate var(--home-response) ease-out;
-    }
-    .text-link:focus-visible :global(svg) {
-      translate: 4px -3px;
-      transition-timing-function: var(--home-ease-out);
-    }
-    .text-link:active :global(svg) {
-      translate: 1px -1px;
-    }
-    .fields img,
-    .path-illustration svg,
-    :global(body.home #I8 .closing-image) {
-      transition:
-        scale 180ms ease-out,
-        translate 180ms ease-out;
     }
     .fields img {
+      transition: scale 180ms ease-out;
       transform-origin: top center;
     }
-    :global(body.home #I8 .closing-image) {
-      transform-origin: top left;
-    }
-    .path-card:focus-within .path-illustration svg {
-      translate: 0 -6px;
-      transition: translate 240ms var(--home-ease-out);
-    }
-    :global(body.home #I8 .closing:focus-within .closing-image) {
-      scale: 1.04;
-      transition: scale 260ms var(--home-ease-out);
-    }
     :global(body.home .mobile-nav .menu-icon) {
-      transition: transform var(--home-response) var(--home-ease-out);
+      transition: transform var(--editorial-response) var(--editorial-ease-out);
     }
     @media (hover: hover) and (pointer: fine) {
-      .text-link:hover:not(:active) :global(svg) {
-        translate: 4px -3px;
-        transition-timing-function: var(--home-ease-out);
-      }
-      .fields article:hover img,
-      :global(body.home #I8 .closing:has(a:hover) .closing-image) {
+      .fields article:hover img {
         scale: 1.04;
-        transition: scale 260ms var(--home-ease-out);
-      }
-      .path-card:has(.text-link:hover) .path-illustration svg {
-        translate: 0 -6px;
-        transition: translate 240ms var(--home-ease-out);
-      }
-    }
-  }
-  @keyframes home-hero-arrive {
-    from {
-      opacity: 0;
-      translate: 0 23px;
-    }
-  }
-  @keyframes home-reveal-rise {
-    from {
-      opacity: 0.16;
-      translate: 0 34px;
-    }
-  }
-  @keyframes home-reveal-card {
-    from {
-      opacity: 0.12;
-      translate: 0 40px;
-      scale: 0.972;
-    }
-  }
-  @keyframes home-reveal-ink {
-    from {
-      opacity: 0.14;
-      translate: 0 16px;
-    }
-  }
-  @media (min-width: 52rem) {
-    .pathways {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      row-gap: 0;
-    }
-    @supports (grid-template-rows: subgrid) {
-      .path-card {
-        grid-row: span 4;
-        grid-template-rows: subgrid;
+        transition: scale 260ms var(--editorial-ease-out);
       }
     }
   }
@@ -757,12 +437,6 @@ const fields = [
     }
   }
   @media (max-width: 40rem) {
-    .hero {
-      min-height: 37rem;
-    }
-    .hero-content {
-      padding-block: 6.5rem 4rem;
-    }
     .field-copy {
       padding-top: 2rem;
     }

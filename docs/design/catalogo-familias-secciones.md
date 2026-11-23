@@ -1,6 +1,6 @@
 # AI PlayGrounds · Familias y variantes de secciones
 
-Propuesta para revisar antes de explorar referencias. No define layouts finales, componentes ni cambios de copy. Fuente de los totales: [matriz del inventario](inventario-secciones.md#a-matriz-editorial).
+Propuesta histórica para revisar antes de explorar referencias. Sus totales y variantes de Empresas corresponden al corte de seis secciones, sustituido por [E222-EM](../implementation/empresas.md). Véase el [inventario vigente](inventario-secciones.md#a-matriz-editorial).
 
 ## D. Resumen ejecutivo
 
