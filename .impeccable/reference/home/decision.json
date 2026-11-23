@@ -1,0 +1,147 @@
+{
+  "title": "AI PlayGrounds · Tres direcciones para Inicio",
+  "question": "¿Qué dirección expresa mejor que somos una organización de IA impulsada por su comunidad? La elección no cambia la home actual.",
+  "options": [
+    {
+      "id": "mesa",
+      "kind": "assigned",
+      "label": "Mesa abierta",
+      "lineage": "Mesas de trabajo compartido y sistemas de montaje de exposiciones",
+      "thesis": "La portada muestra el trabajo que toma forma cuando distintas personas aportan a una misma mesa.",
+      "palette": ["#182A49", "#EDEFF1", "#C6CFED", "#DFEF89"],
+      "materials": ["Aluminio mate", "acetato técnico", "puntos de anclaje"],
+      "viewport": "El mensaje abre una mesa azul con un ensamblaje que atraviesa la cuadrícula; los enlaces aparecen en su borde, no sobre la ilustración.",
+      "risk": "Demasiada notación lo haría parecer una herramienta para especialistas.",
+      "raised": [
+        {
+          "from": "night-flight",
+          "raise": "Una sola pista visual lleva del propósito a la acción; las demás piezas se leen como apoyo."
+        },
+        {
+          "from": "hypercard",
+          "raise": "Los enlaces se ven como enlaces desde el reposo; no hay recorridos ocultos."
+        },
+        {
+          "from": "cloud",
+          "raise": "El movimiento está confinado al borde de las piezas; la lectura permanece inmóvil."
+        },
+        {
+          "from": "miura",
+          "raise": "Las piezas cierran juntas en una sola composición y se apilan sin perder orden en móvil."
+        },
+        {
+          "from": "pixorama",
+          "raise": "Una sola retícula vincula el dibujo con las guías de alineación de los módulos."
+        }
+      ],
+      "comp": ".impeccable/mocks/decision/mesa.png"
+    },
+    {
+      "id": "atlas",
+      "kind": "pick",
+      "label": "Atlas de lo posible",
+      "lineage": "Atlas de campo y cuadernos de expedición latinoamericanos",
+      "thesis": "El paisaje abre una manera de recorrer el trabajo de la organización, sin convertirlo en decoración.",
+      "palette": ["#F1F0E4", "#253D31", "#889374", "#B28B51"],
+      "materials": ["Papel de atlas", "paisaje pintado", "trazo topográfico"],
+      "viewport": "Una lámina panorámica anotada ocupa el ancho; el texto vive en el margen editorial que comparte con la leyenda del paisaje.",
+      "risk": "Es la opción más cercana a la home vigente; la trayectoria y las rutas deben hacer más que acompañar la imagen.",
+      "comp": ".impeccable/mocks/decision/atlas.png"
+    },
+    {
+      "id": "trama",
+      "kind": "challenger",
+      "catalogId": "ink-pigment-printmaking-screenprint-transparent-overlap",
+      "label": "Trama colectiva",
+      "verdict": "competitive",
+      "lineage": "Serigrafía de talleres gráficos, con tintas impresas en capas",
+      "thesis": "El trabajo colectivo se hace visible cuando aportes distintos se superponen y forman una sola imagen.",
+      "palette": ["#F4EFE1", "#136A7D", "#AA372D", "#D9912B", "#433154"],
+      "materials": [
+        "Papel fibroso",
+        "tintas translúcidas",
+        "marcas de registro"
+      ],
+      "viewport": "La ilustración de una mesa compartida cruza una retícula editorial; la navegación y la acción principal ocupan el margen de imprenta.",
+      "case": "Es la más expresiva para mostrar colaboración; necesita más disciplina que Mesa abierta para mantener la jerarquía.",
+      "risk": "Si el color y la textura compiten con el mensaje, parecerá un afiche de un solo evento.",
+      "comp": ".impeccable/mocks/decision/trama.png",
+      "hero": ".impeccable/reference/home/overprint-hero.webp",
+      "board": ".impeccable/reference/home/overprint-board.webp"
+    },
+    {
+      "id": "night-flight",
+      "kind": "challenger",
+      "catalogId": "signals-instruments-night-flight-six-pack",
+      "label": "Instrumentos nocturnos",
+      "verdict": "declined",
+      "thesis": "La trayectoria se lee comparando instrumentos.",
+      "palette": ["#171A18", "#E2EEE4", "#8DD79B"],
+      "materials": ["Panel mate", "escalas"],
+      "viewport": "Constelación fija de indicadores.",
+      "case": "Sugiere un tablero de métricas antes que una organización abierta.",
+      "kept": "Una prioridad clara entre piezas.",
+      "risk": "La institución se confundiría con el instrumento."
+    },
+    {
+      "id": "hypercard",
+      "kind": "challenger",
+      "catalogId": "medium-native-hypercard-stack-shoebox",
+      "label": "Archivo enlazado",
+      "verdict": "declined",
+      "thesis": "Las rutas se recorren mediante fichas enlazadas.",
+      "palette": ["#161616", "#F7F6F2", "#A8A7A0"],
+      "materials": ["Grano de un bit", "marco dibujado"],
+      "viewport": "Una ficha principal con botones impresos.",
+      "case": "La exploración por fichas retrasa la explicación de quién impulsa el trabajo.",
+      "kept": "Destinos explícitos desde el primer vistazo.",
+      "risk": "El gesto retro se llevaría la atención."
+    },
+    {
+      "id": "cloud",
+      "kind": "challenger",
+      "catalogId": "clouds-storms-auroras-iridescent-cloud-edge",
+      "label": "Borde iridiscente",
+      "verdict": "declined",
+      "thesis": "La colaboración aparece como un cambio sutil en el borde.",
+      "palette": ["#F7F7F4", "#515763", "#AB9BD3"],
+      "materials": ["Blanco mate", "franja espectral"],
+      "viewport": "Campo claro y un borde cromático.",
+      "case": "El efecto no distingue el trabajo comunitario de otras iniciativas de IA.",
+      "kept": "Movimiento periférico y lectura estable.",
+      "risk": "Se recordaría el halo pero no lo que hace la organización."
+    },
+    {
+      "id": "miura",
+      "kind": "challenger",
+      "catalogId": "paper-folds-pleats-deployable-miura-orbit-sheet",
+      "label": "Pliegue continuo",
+      "verdict": "declined",
+      "thesis": "Una superficie desplegable reúne las rutas.",
+      "palette": ["#F5F2EA", "#BD913A", "#9DAFBE"],
+      "materials": ["Papel marcado", "lámina dorada"],
+      "viewport": "Una hoja pasa de cerrada a desplegada.",
+      "case": "Inspeccionar un pliegue compite con la lectura y no aclara el rol de la comunidad.",
+      "kept": "La relación entre partes sobrevive al cambio de escala.",
+      "risk": "Los destinos quedarían escondidos en el gesto."
+    },
+    {
+      "id": "pixorama",
+      "kind": "challenger",
+      "catalogId": "eboy-pixorama-metropolis",
+      "label": "Barrio pixelado",
+      "verdict": "declined",
+      "thesis": "La actividad se distribuye en manzanas explorables.",
+      "palette": ["#29B8D3", "#D53B33", "#F5D24D"],
+      "materials": ["Píxel duro", "trama"],
+      "viewport": "Un barrio isométrico articulado en celdas.",
+      "case": "El descubrimiento por zoom resta visibilidad a los destinos y confunde el tono institucional.",
+      "kept": "Una retícula común gobierna dibujo y componentes.",
+      "risk": "Podría leerse como juego antes que como organización."
+    }
+  ],
+  "buildPath": { "value": "comp", "toggle": true },
+  "reroll": { "registers": ["safer", "bolder"] },
+  "canon": true,
+  "steer": true
+}

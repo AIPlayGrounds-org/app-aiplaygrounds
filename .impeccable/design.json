@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T17:45:45-05:00",
+  "title": "Design System: AI PlayGrounds",
+  "extensions": {
+    "colorMeta": {
+      "brand-black": { "role": "primary", "displayName": "Negro de marca", "tonalRamp": ["oklch(15% 0 0)", "oklch(27% 0 0)", "oklch(39% 0 0)", "oklch(51% 0 0)", "oklch(63% 0 0)", "oklch(75% 0 0)", "oklch(87% 0 0)", "oklch(95% 0 0)"] },
+      "brand-white": { "role": "neutral", "displayName": "Blanco de marca", "tonalRamp": ["oklch(15% 0 0)", "oklch(27% 0 0)", "oklch(39% 0 0)", "oklch(51% 0 0)", "oklch(63% 0 0)", "oklch(75% 0 0)", "oklch(87% 0 0)", "oklch(95% 0 0)"] },
+      "halo": { "role": "secondary", "displayName": "Halo", "tonalRamp": ["oklch(15% .042 281)", "oklch(27% .09 281)", "oklch(39% .133 281)", "oklch(51% .163 281)", "oklch(63% .163 281)", "oklch(75% .14 281)", "oklch(87% .07 281)", "oklch(95% .023 281)"] },
+      "mint": { "role": "tertiary", "displayName": "Menta", "tonalRamp": ["oklch(15% .028 155)", "oklch(27% .055 155)", "oklch(39% .084 155)", "oklch(51% .115 155)", "oklch(63% .15 155)", "oklch(75% .17 155)", "oklch(87% .119 155)", "oklch(95% .045 155)"] },
+      "lime": { "role": "tertiary", "displayName": "Lima", "tonalRamp": ["oklch(15% .03 125)", "oklch(27% .056 125)", "oklch(39% .084 125)", "oklch(51% .115 125)", "oklch(63% .145 125)", "oklch(75% .165 125)", "oklch(87% .115 125)", "oklch(95% .05 125)"] },
+      "web-background": { "role": "neutral", "displayName": "Papel cálido", "tonalRamp": ["oklch(15% .003 94)", "oklch(27% .006 94)", "oklch(39% .008 94)", "oklch(51% .01 94)", "oklch(63% .01 94)", "oklch(75% .008 94)", "oklch(87% .006 94)", "oklch(95% .002 94)"] },
+      "web-surface": { "role": "neutral", "displayName": "Superficie base", "tonalRamp": ["oklch(15% .003 95)", "oklch(27% .007 95)", "oklch(39% .009 95)", "oklch(51% .011 95)", "oklch(63% .011 95)", "oklch(75% .009 95)", "oklch(87% .007 95)", "oklch(95% .003 95)"] },
+      "web-elevated": { "role": "neutral", "displayName": "Superficie elevada", "tonalRamp": ["oklch(15% .002 97)", "oklch(27% .004 97)", "oklch(39% .005 97)", "oklch(51% .007 97)", "oklch(63% .007 97)", "oklch(75% .006 97)", "oklch(87% .004 97)", "oklch(95% .002 97)"] },
+      "web-text": { "role": "neutral", "displayName": "Texto web", "tonalRamp": ["oklch(15% .001 129)", "oklch(27% .003 129)", "oklch(39% .003 129)", "oklch(51% .004 129)", "oklch(63% .004 129)", "oklch(75% .004 129)", "oklch(87% .002 129)", "oklch(95% .001 129)"] },
+      "web-border": { "role": "neutral", "displayName": "Borde web", "tonalRamp": ["oklch(15% .004 107)", "oklch(27% .008 107)", "oklch(39% .011 107)", "oklch(51% .014 107)", "oklch(63% .014 107)", "oklch(75% .012 107)", "oklch(87% .008 107)", "oklch(95% .004 107)"] },
+      "editorial-background": { "role": "neutral", "displayName": "Papel editorial", "tonalRamp": ["oklch(15% .005 85)", "oklch(27% .009 85)", "oklch(39% .012 85)", "oklch(51% .014 85)", "oklch(63% .014 85)", "oklch(75% .012 85)", "oklch(87% .009 85)", "oklch(95% .004 85)"] },
+      "editorial-surface": { "role": "neutral", "displayName": "Capa editorial", "tonalRamp": ["oklch(15% .006 80)", "oklch(27% .012 80)", "oklch(39% .016 80)", "oklch(51% .019 80)", "oklch(63% .019 80)", "oklch(75% .017 80)", "oklch(87% .012 80)", "oklch(95% .005 80)"] },
+      "editorial-card": { "role": "neutral", "displayName": "Tarjeta editorial", "tonalRamp": ["oklch(15% .004 78)", "oklch(27% .008 78)", "oklch(39% .011 78)", "oklch(51% .014 78)", "oklch(63% .014 78)", "oklch(75% .012 78)", "oklch(87% .008 78)", "oklch(95% .004 78)"] }
+    },
+    "breakpoints": [
+      { "name": "interior-stack", "value": "48rem" },
+      { "name": "header-compact", "value": "67rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón primario",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Acción principal sólida en tamaño medio.",
+      "html": "<button class=\"ds-primary\" type=\"button\">Ir a la comunidad</button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;height:2.75rem;padding:0 1.25rem;border:0;border-radius:.25rem;font:500 1rem/1.5 var(--font-sans,Arial);background:var(--primary,#000);color:var(--primary-foreground,#fff);transition:background-color .15s}.ds-primary:hover{background:color-mix(in oklab,var(--primary,#000) 90%,transparent)}.ds-primary:focus-visible{outline:3px solid var(--focus-ring,#000);outline-offset:4px}.ds-primary:disabled{opacity:.5;pointer-events:none}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Botón de contorno",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Acción secundaria en tamaño medio.",
+      "html": "<button class=\"ds-outline\" type=\"button\">Explorar AI Labs</button>",
+      "css": ".ds-outline{display:inline-flex;align-items:center;justify-content:center;height:2.75rem;padding:0 1.25rem;border:1px solid var(--input,#484a43);border-radius:.25rem;font:500 1rem/1.5 var(--font-sans,Arial);background:var(--background,#f5f3ec);color:var(--foreground,#191a18);transition:background-color .15s}.ds-outline:hover{background:var(--muted,#eceae2)}.ds-outline:focus-visible{outline:3px solid var(--focus-ring,#000);outline-offset:4px}.ds-outline:disabled{opacity:.5;pointer-events:none}@media(prefers-reduced-motion:reduce){.ds-outline{transition:none}}"
+    },
+    {
+      "name": "Tarjeta Starwind",
+      "kind": "card",
+      "refersTo": "starwind-card",
+      "description": "Unidad con título y cuerpo, en superficie elevada con anillo fino.",
+      "html": "<article class=\"ds-card\"><h3 class=\"ds-card-title\">AI Foundations</h3><p class=\"ds-card-body\">Fundamentos de inteligencia artificial</p></article>",
+      "css": ".ds-card{display:flex;flex-direction:column;gap:1.25rem;padding:1.25rem;border-radius:.75rem;box-shadow:0 0 0 1px var(--border,#cecec4);background:var(--surface-elevated,#faf9f4);color:var(--foreground,#191a18)}.ds-card-title{margin:0;font:500 1.25rem/1.375 var(--font-heading,Arial)}.ds-card-body{margin:0;color:var(--muted-foreground,#62645b);font:1rem/1.5 var(--font-sans,Arial)}"
+    },
+    {
+      "name": "Tarjeta interior",
+      "kind": "card",
+      "refersTo": "interior-card",
+      "description": "Panel editorial de borde fino y fondo cálido.",
+      "html": "<article class=\"ds-interior-card\"><h3 class=\"ds-interior-title\">Proponer una alianza</h3><p class=\"ds-interior-body\">Ejemplo de tarjeta interior</p></article>",
+      "css": ".ds-interior-card{padding:clamp(1.5rem,3vw,2.5rem);border:1px solid var(--border,#cecec4);border-radius:.4rem;background:var(--home-surface,#fbf3e6);color:var(--foreground,#191a18)}.ds-interior-title{margin:0;font:600 1.25rem/1.2 var(--font-heading,Arial);letter-spacing:-.03em}.ds-interior-body{margin:1rem 0 0;color:var(--secondary-text,#484a43);font:1rem/1.5 var(--font-sans,Arial)}"
+    },
+    {
+      "name": "Campo de consulta",
+      "kind": "input",
+      "refersTo": "contact-input",
+      "description": "Campo de texto con etiqueta superior y foco por contorno; muestra sin envío de datos.",
+      "html": "<label class=\"ds-field\">Nombre y apellido<input class=\"ds-input\" type=\"text\"></label>",
+      "css": ".ds-field{display:grid;gap:.35rem;color:var(--foreground,#191a18);font:500 1rem/1.5 var(--font-sans,Arial)}.ds-input{box-sizing:border-box;width:100%;min-height:3rem;padding:.75rem;font:inherit;background:var(--home-background,#fbf6ec);color:var(--foreground,#191a18);border:1px solid var(--input,#484a43);border-radius:.25rem}.ds-input:focus-visible{outline:3px solid var(--focus-ring,#000);outline-offset:4px}.ds-input:disabled{background:var(--home-surface,#fbf3e6);color:var(--secondary-text,#484a43);cursor:not-allowed}"
+    },
+    {
+      "name": "Enlaces de navegación",
+      "kind": "nav",
+      "description": "Muestra de marca, enlace activo y foco en la cabecera.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Muestra de navegación\"><span class=\"ds-nav-brand\">AI PlayGrounds</span><a class=\"ds-nav-link\" href=\"#\" aria-current=\"page\">Comunidad</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;flex-wrap:wrap;gap:1.25rem;color:var(--foreground,#191a18)}.ds-nav-brand{font:600 1.125rem/1.15 var(--font-heading,Arial)}.ds-nav-link{color:inherit;font:500 .9rem/1.5 var(--font-sans,Arial);text-decoration:none;text-underline-offset:.2em}.ds-nav-link:hover,.ds-nav-link[aria-current]{text-decoration:underline}.ds-nav-link:focus-visible{outline:3px solid var(--focus-ring,#000);outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Paisaje de aprendizaje",
+    "overview": "El sitio se lee como una publicación clara, cálida y modular. En Inicio, el paisaje marca la entrada y el cierre, y las ilustraciones conectan las verticales sin sustituir sus explicaciones. En las interiores, la jerarquía tipográfica y el espacio organizan la lectura sin exigir una escena por sección.",
+    "keyCharacteristics": [
+      "Superficies cálidas con capas discretas.",
+      "Composición editorial; módulos donde el contenido se puede comparar o agrupar.",
+      "Componentes sobrios y legibles; la ilustración expresa el carácter donde ya forma parte del sitio."
+    ],
+    "rules": [
+      { "name": "The Contextual Contrast Rule.", "body": "Evaluar el contraste sobre el fondo real; no usar Halo, Menta o Lima como texto pequeño sobre superficies claras ni depender solo del color para indicar estados.", "section": "colors" }
+    ],
+    "dos": [
+      "Mantener una jerarquía legible también donde no haya ilustración.",
+      "Usar el token semántico correspondiente y comprobar su contraste bajo la superficie efectiva.",
+      "Conservar el foco visible y respetar la preferencia de movimiento reducido, como prevén los estilos compartidos."
+    ],
+    "donts": [
+      "Extender los paisajes de Inicio a todo el catálogo por defecto ni confundir una ilustración con el logotipo.",
+      "Convertir ejemplos, capturas históricas o variantes de exploración en reglas del sistema."
+    ]
+  }
+}

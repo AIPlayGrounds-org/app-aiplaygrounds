@@ -1,74 +1,107 @@
 ---
-import { products } from '../data/directories';
+import { getProducts } from '../data/directories';
 import InteriorLayout from '../layouts/InteriorLayout.astro';
-import ClosingCTA from '../components/site/ClosingCTA.astro';
-import DirectoryCard from '../components/site/DirectoryCard.astro';
+import DirectoryLink from '../components/site/DirectoryLink.astro';
+import '../styles/directories.css';
 
-const entries = import.meta.env.DEV
-  ? [...products, ...(await import('../data/directories.demo')).demoProducts]
-  : products;
+const entries = await getProducts();
 ---
 
 <InteriorLayout
   title="AI Labs: directorio de productos | AI PlayGrounds"
-  description="Conoce AI Labs, el directorio de productos de AI PlayGrounds, y el contexto de sus iniciativas y productos relacionados con inteligencia artificial."
+  description="Explora productos e iniciativas de inteligencia artificial por su utilidad, público y estado."
 >
-  <section id="B1" class="page-hero labs-hero">
-    <div class="site-container">
-      <h1>AI Labs: directorio de productos</h1>
-      <div class="lead">
-        <p>
-          AI Labs es el directorio de productos de AI PlayGrounds. Da
-          visibilidad a productos e iniciativas relacionados con inteligencia
-          artificial y aporta contexto sobre su procedencia y estado.
-        </p>
-        <p>
-          El contexto importa: qué necesidad aborda la iniciativa, quiénes la
-          impulsan y en qué etapa se encuentra.
-        </p>
-      </div>
-      <a class="interior-link" href="#B3">
-        Ver productos ↓
-      </a>
-    </div>
-  </section>
-  <section id="B3" class="interior-section">
-    <div class="site-container">
-      <h2>Directorio de productos</h2>
+  <div class="site-container directory">
+    <header id="B1" class="directory-intro">
+      <h1>AI Labs</h1>
+      <p>
+        Productos e iniciativas de inteligencia artificial: para qué sirven, a
+        quién se dirigen y en qué etapa están.
+      </p>
+    </header>
+
+    <section id="B3">
+      <h2 class="directory-section-title">Directorio de productos</h2>
       {entries.length === 0 ? (
-        <p class="directory-empty">Aún no hay productos en el directorio.</p>
+        <p class="directory-empty">Aún no hay productos publicados.</p>
       ) : (
-        <div class="interior-grid">
+        <ul class="product-grid" role="list">
           {entries.map((product) => (
-            <DirectoryCard
-              title={product.name}
-              description={product.utility}
-              details={[
-                product.audience,
-                [product.creator, product.status].filter(Boolean).join(' · '),
-              ]}
-              demo={'demo' in product}
-              source={product.source}
-            />
+            <li class="product-card">
+              <h3>{product.name}</h3>
+              <p>{product.utility}</p>
+              <dl class="product-meta">
+                <div>
+                  <dt>Público</dt>
+                  <dd>{product.audience}</dd>
+                </div>
+                <div>
+                  <dt>Estado</dt>
+                  <dd>{product.status}</dd>
+                </div>
+              </dl>
+              <div class="product-actions">
+                <DirectoryLink
+                  href={`/ai-labs/${product.slug}/`}
+                  title={product.name}
+                />
+                {product.demo && (
+                  <span class="directory-demo">Demostración</span>
+                )}
+              </div>
+            </li>
           ))}
-        </div>
+        </ul>
       )}
-    </div>
-  </section>
-  <ClosingCTA
-    id="B5"
-    title="Conecta con la comunidad"
-    paragraphs={[
-      'La comunidad de AI PlayGrounds está abierta. Puedes acercarte a su historia de encuentros y al grupo de WhatsApp para compartir conocimiento sobre IA.',
-    ]}
-    buttons={[
-      { label: 'Ir a la comunidad', href: '/comunidad/', variant: 'primary' },
-    ]}
-  />
+    </section>
+  </div>
 </InteriorLayout>
 
 <style>
-  .labs-hero {
-    padding-bottom: clamp(2rem, 4vw, 3rem);
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 28rem), 1fr));
+    gap: 1rem;
+  }
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    padding: clamp(1rem, 3vw, 2rem);
+    background: var(--home-surface);
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+  }
+  .product-card h3 {
+    font-size: clamp(1.35rem, 1.18rem + 0.6vw, 1.75rem);
+    text-wrap: pretty;
+  }
+  .product-card p {
+    color: var(--secondary-text);
+    max-inline-size: 55ch;
+    margin-block-end: 1rem;
+  }
+  .product-meta {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 0.75rem;
+    margin-block-start: auto;
+    padding-block-start: 0.9rem;
+    border-block-start: 1px solid var(--border);
+  }
+  .product-meta dt {
+    margin-block-end: 0.2rem;
+    color: var(--secondary-text);
+    font-size: 0.875rem;
+  }
+  .product-meta dd {
+    font-weight: 500;
+  }
+  .product-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.25rem 1rem;
   }
 </style>

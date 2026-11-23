@@ -1,0 +1,45 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getResearch } from '../../data/directories';
+import DirectoryDetail from '../../layouts/DirectoryDetail.astro';
+
+export const getStaticPaths = (async () => {
+  const entries = await getResearch();
+  return entries.map((item) => ({
+    params: { slug: item.slug },
+    props: { item },
+  }));
+}) satisfies GetStaticPaths;
+
+const { item } = Astro.props;
+---
+
+<DirectoryDetail
+  title={item.title}
+  description={item.question}
+  directory={{ title: 'Investigación', href: '/investigacion/' }}
+  demo={item.demo}
+  source={item.source}
+  metadata={[
+    { label: 'Tipo', value: item.type },
+    { label: 'Autoría', value: item.authors },
+    { label: 'Fecha', value: item.date },
+    { label: 'Relación con AI PlayGrounds', value: item.organizationRelation },
+    { label: 'Revisión por pares', value: item.peerReview },
+  ]}
+>
+  <section>
+    <h2>Enfoque</h2>
+    <p>{item.method}</p>
+  </section>
+  {item.results && (
+    <section>
+      <h2>Resultados</h2>
+      <p>{item.results}</p>
+    </section>
+  )}
+  <section>
+    <h2>Límites</h2>
+    <p>{item.limitations}</p>
+  </section>
+</DirectoryDetail>

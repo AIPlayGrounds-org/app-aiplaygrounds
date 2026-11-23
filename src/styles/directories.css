@@ -1,0 +1,36 @@
+.directory {
+  padding-block: clamp(5.75rem, 8vw, 7.75rem) clamp(3rem, 7vw, 6rem);
+  overflow-wrap: anywhere;
+}
+
+.directory-intro {
+  margin-block-end: clamp(1.75rem, 4vw, 3rem);
+}
+
+.directory-intro h1 {
+  font-size: clamp(2.45rem, 1.75rem + 2.6vw, 4.25rem);
+  max-inline-size: 27ch;
+  text-wrap: pretty;
+}
+
+.directory-intro > p {
+  max-inline-size: 60ch;
+  margin-block-start: 0.65rem;
+  color: var(--secondary-text);
+  font-size: clamp(1.1rem, 1rem + 0.4vw, 1.35rem);
+}
+
+.directory-section-title {
+  margin-block-end: 0.75rem;
+  font-size: clamp(1.3rem, 1.1rem + 0.65vw, 1.7rem);
+}
+
+.directory-demo {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.25rem;
+  background: var(--home-card);
+  color: var(--secondary-text);
+  font-size: 0.875rem;
+}

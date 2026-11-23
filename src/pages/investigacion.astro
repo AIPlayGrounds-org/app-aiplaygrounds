@@ -1,73 +1,121 @@
 ---
-import { research } from '../data/directories';
+import { getResearch } from '../data/directories';
 import InteriorLayout from '../layouts/InteriorLayout.astro';
-import ClosingCTA from '../components/site/ClosingCTA.astro';
-import DirectoryCard from '../components/site/DirectoryCard.astro';
+import DirectoryLink from '../components/site/DirectoryLink.astro';
+import '../styles/directories.css';
 
-const entries = import.meta.env.DEV
-  ? [...research, ...(await import('../data/directories.demo')).demoResearch]
-  : research;
+const entries = await getResearch();
 ---
 
 <InteriorLayout
   title="Investigación en IA y trabajos originales | AI PlayGrounds"
-  description="Trabajos originales sobre IA o realizados con su apoyo: criterios de autoría, método, resultados y límites para seguir cada pregunta hasta su fuente."
+  description="Trabajos originales sobre inteligencia artificial o realizados con su apoyo: qué preguntas plantean, cómo las abordan y qué límites tienen."
 >
-  <section id="DI1" class="page-hero">
-    <div class="site-container">
-      <h1>Investigaciones y trabajos relacionados con IA</h1>
-      <div class="lead">
-        <p>
-          Esta colección está dedicada a trabajos originales sobre inteligencia
-          artificial o realizados con su apoyo. Su punto de partida es la
-          pregunta: qué intenta responder el trabajo, cómo la aborda y qué
-          sostiene su fuente.
-        </p>
-        <p>
-          Autoría, tipo, fecha, método y límites ayudan a leer cada aporte en su
-          contexto. La relación con AI PlayGrounds se indica por separado, tanto
-          en trabajos propios o vinculados como en externos. La revisión por
-          pares solo se señala cuando está documentada.
-        </p>
-      </div>
-      <a class="interior-link" href="#DI2">
-        Ver investigaciones ↓
-      </a>
-    </div>
-  </section>
-  <section id="DI2" class="interior-section">
-    <div class="site-container">
-      <h2>Directorio de investigaciones</h2>
+  <div class="site-container directory">
+    <header id="DI1" class="directory-intro">
+      <h1>Investigación</h1>
+      <p>
+        Trabajos originales sobre IA o realizados con su apoyo. Cada ficha reúne
+        la pregunta, el enfoque y los límites del trabajo.
+      </p>
+    </header>
+
+    <section id="DI2">
+      <h2 class="directory-section-title">Directorio de investigaciones</h2>
       {entries.length === 0 ? (
-        <p class="directory-empty">
-          Aún no hay investigaciones en el directorio.
-        </p>
+        <p class="directory-empty">Aún no hay investigaciones publicadas.</p>
       ) : (
-        <div class="interior-grid">
+        <ul class="research-list" role="list">
           {entries.map((item) => (
-            <DirectoryCard
-              title={item.title}
-              description={item.question}
-              details={[
-                [item.authors, item.date].filter(Boolean).join(' · '),
-                item.type,
-              ].filter(Boolean)}
-              demo={'demo' in item}
-              source={item.source}
-            />
+            <li class="research-row">
+              <div class="research-summary">
+                <h3>{item.title}</h3>
+                <p>{item.question}</p>
+              </div>
+              <div class="research-context">
+                <dl class="research-meta">
+                  <div>
+                    <dt class="sr-only">Tipo</dt>
+                    <dd>{item.type}</dd>
+                  </div>
+                  {item.authors && (
+                    <div>
+                      <dt class="sr-only">Autoría</dt>
+                      <dd>{item.authors}</dd>
+                    </div>
+                  )}
+                  {item.date && (
+                    <div>
+                      <dt class="sr-only">Fecha</dt>
+                      <dd>{item.date}</dd>
+                    </div>
+                  )}
+                  {item.organizationRelation && (
+                    <div>
+                      <dt class="sr-only">Relación con AI PlayGrounds</dt>
+                      <dd>{item.organizationRelation}</dd>
+                    </div>
+                  )}
+                  {item.peerReview && (
+                    <div>
+                      <dt class="sr-only">Revisión por pares</dt>
+                      <dd>{item.peerReview}</dd>
+                    </div>
+                  )}
+                </dl>
+                {item.demo && <span class="directory-demo">Demostración</span>}
+              </div>
+              <div class="research-action">
+                <DirectoryLink
+                  href={`/investigacion/${item.slug}/`}
+                  title={item.title}
+                />
+              </div>
+            </li>
           ))}
-        </div>
+        </ul>
       )}
-    </div>
-  </section>
-  <ClosingCTA
-    id="DI4"
-    title="La investigación dentro de AI PlayGrounds"
-    paragraphs={[
-      'AI Foundations, AI for Science, AI for Software y AI for Finance abren preguntas distintas sobre la IA. En Inicio puedes situarlas dentro del propósito de AI PlayGrounds.',
-    ]}
-    buttons={[
-      { label: 'Conocer AI PlayGrounds', href: '/', variant: 'primary' },
-    ]}
-  />
+    </section>
+  </div>
 </InteriorLayout>
+
+<style>
+  .research-list {
+    border-block-start: 1px solid var(--outline);
+  }
+  .research-row {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1.3fr) max-content;
+    gap: 0.75rem clamp(1rem, 3vw, 2.5rem);
+    align-items: start;
+    padding-block: clamp(1.25rem, 3vw, 2rem);
+    border-block-end: 1px solid var(--border);
+  }
+  .research-summary h3 {
+    font-size: clamp(1.3rem, 1.12rem + 0.65vw, 1.75rem);
+    text-wrap: pretty;
+  }
+  .research-summary p {
+    margin-block-start: 0.5rem;
+    max-inline-size: 65ch;
+    color: var(--secondary-text);
+  }
+  .research-context {
+    display: grid;
+    justify-items: start;
+    gap: 0.45rem;
+  }
+  .research-meta {
+    font-size: 0.95rem;
+    color: var(--secondary-text);
+  }
+  .research-meta div + div {
+    margin-block-start: 0.2rem;
+  }
+  @media (max-width: 42rem) {
+    .research-row {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.65rem;
+    }
+  }
+</style>

@@ -1,0 +1,36 @@
+{
+  "title": "AI PlayGrounds · Tres propuestas visuales para Empresas",
+  "question": "¿Qué apertura sirve mejor a quien llega desde una empresa, universidad o institución?",
+  "options": [
+    {
+      "id": "empresas-puertas",
+      "kind": "assigned",
+      "label": "Dos puertas de entrada",
+      "thesis": "Identifica el tipo de colaboración antes de pedirle al visitante que lea toda la página.",
+      "viewport": "Dos paneles ilustrados en una misma superficie, con enlaces a trayectoria y formación.",
+      "risk": "Las dos rutas deben orientar, no parecer solicitudes habilitadas.",
+      "comp": ".impeccable/mocks/decision/empresas-puertas.png"
+    },
+    {
+      "id": "empresas-trayectoria",
+      "kind": "dealt",
+      "label": "La trayectoria primero",
+      "thesis": "Un hito de comunidad, bien atribuido, responde primero por qué vale la pena conocer a la organización.",
+      "viewport": "Una pieza editorial sobre hack@latam abre el recorrido; el registro de otros hitos empieza justo debajo.",
+      "risk": "La experiencia comunitaria no debe confundirse con trabajos para clientes.",
+      "comp": ".impeccable/mocks/decision/empresas-trayectoria.png"
+    },
+    {
+      "id": "empresas-preguntas",
+      "kind": "dealt",
+      "label": "Mapa de preguntas",
+      "thesis": "Las preguntas ayudan a reconocer el ámbito de trabajo antes de introducir términos o iniciativas.",
+      "viewport": "Cuatro franjas ilustradas funcionan como índice: fundamentos, software, ciencia y finanzas.",
+      "risk": "Las preguntas orientan; las verticales no son cuatro servicios contratables.",
+      "comp": ".impeccable/mocks/decision/empresas-preguntas.png"
+    }
+  ],
+  "buildPath": { "value": "comp", "toggle": true },
+  "reroll": true,
+  "steer": true
+}

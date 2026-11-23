@@ -1,0 +1,40 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getProducts } from '../../data/directories';
+import DirectoryDetail from '../../layouts/DirectoryDetail.astro';
+
+export const getStaticPaths = (async () => {
+  const entries = await getProducts();
+  return entries.map((product) => ({
+    params: { slug: product.slug },
+    props: { product },
+  }));
+}) satisfies GetStaticPaths;
+
+const { product } = Astro.props;
+---
+
+<DirectoryDetail
+  title={product.name}
+  description={product.utility}
+  directory={{ title: 'AI Labs', href: '/ai-labs/' }}
+  demo={product.demo}
+  source={product.source}
+  metadata={[
+    { label: 'Público', value: product.audience },
+    { label: 'Estado', value: product.status },
+    { label: 'Creador', value: product.creator },
+    { label: 'Procedencia', value: product.organizationRelation },
+    { label: 'Acceso', value: product.access },
+  ]}
+>
+  <section>
+    <h2>Qué problema resuelve</h2>
+    <p>{product.problem}</p>
+  </section>
+  <section>
+    <h2>Cómo usa la IA</h2>
+    <p>{product.aiRelation}</p>
+    {product.usageNotes && <p>{product.usageNotes}</p>}
+  </section>
+</DirectoryDetail>

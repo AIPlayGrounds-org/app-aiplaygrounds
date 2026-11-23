@@ -1,0 +1,112 @@
+---
+import InteriorLayout from './InteriorLayout.astro';
+import DirectoryLink from '../components/site/DirectoryLink.astro';
+import '../styles/directories.css';
+
+interface Props {
+  title: string;
+  description: string;
+  directory: { title: string; href: string };
+  metadata: { label: string; value: string | undefined }[];
+  demo?: boolean;
+  source?: string;
+}
+const { title, description, directory, metadata, demo, source } = Astro.props;
+---
+
+<InteriorLayout
+  title={`${title} | ${directory.title} | AI PlayGrounds`}
+  description={description}
+>
+  <article class="site-container directory detail">
+    <DirectoryLink href={directory.href} title={directory.title} back />
+    <header class="directory-intro detail-intro">
+      <h1>{title}</h1>
+      {demo && <span class="directory-demo">Demostración</span>}
+      <p>{description}</p>
+    </header>
+    <div class="detail-grid">
+      <div class="detail-body">
+        <slot />
+      </div>
+      <section class="detail-context">
+        <h2>Datos de la ficha</h2>
+        <dl>
+          {metadata.map(
+            ({ label, value }) =>
+              value && (
+                <div>
+                  <dt>{label}</dt>
+                  <dd>{value}</dd>
+                </div>
+              ),
+          )}
+          {source && (
+            <div>
+              <dt>Fuente</dt>
+              <dd>
+                <a href={source}>Consultar fuente</a>
+              </dd>
+            </div>
+          )}
+        </dl>
+      </section>
+    </div>
+  </article>
+</InteriorLayout>
+
+<style>
+  .detail-intro {
+    margin-block-end: 0;
+    padding-block-end: clamp(1.5rem, 3vw, 2.25rem);
+    border-block-end: 1px solid var(--outline);
+  }
+  .detail-intro .directory-demo {
+    margin-block-start: 0.8rem;
+  }
+  .detail-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(15rem, 1fr);
+    gap: 1.75rem clamp(2rem, 6vw, 6rem);
+    align-items: start;
+    margin-block-start: clamp(1.5rem, 3vw, 2.25rem);
+  }
+  .detail-body {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .detail-body :global(h2) {
+    font-size: clamp(1.3rem, 1.1rem + 0.65vw, 1.7rem);
+  }
+  .detail-body :global(p) {
+    max-inline-size: 68ch;
+    margin-block-start: 0.45rem;
+    color: var(--secondary-text);
+  }
+  .detail-context {
+    padding: clamp(1rem, 2.5vw, 1.75rem);
+    background: var(--home-surface);
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+  }
+  .detail-context h2 {
+    font-size: 1.25rem;
+    margin-block-end: 1rem;
+  }
+  .detail-context dl {
+    display: grid;
+    gap: 0.75rem;
+  }
+  .detail-context dt {
+    font-size: 0.875rem;
+    color: var(--secondary-text);
+  }
+  .detail-context dd {
+    font-weight: 500;
+  }
+  @media (max-width: 42rem) {
+    .detail-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

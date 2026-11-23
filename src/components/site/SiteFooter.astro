@@ -20,7 +20,10 @@ const groups = [
   },
   {
     title: 'Explorar',
-    links: [['Investigación', '/investigacion/']],
+    links: [
+      ['Productos', '/ai-labs/#B3'],
+      ['Investigación', '/investigacion/'],
+    ],
   },
 ];
 ---
@@ -62,6 +65,7 @@ const groups = [
 <style>
   .footer {
     background: var(--home-surface, var(--background));
+    border-block-start: 1px solid var(--border);
     overflow: hidden;
   }
   .footer-inner {
@@ -74,7 +78,8 @@ const groups = [
     max-width: 24rem;
   }
   .footer-brand {
-    font: 600 1.5rem var(--font-heading);
+    font: 600 clamp(1.5rem, 2.1vw, 1.9rem)/1.15 var(--font-heading);
+    letter-spacing: -0.03em;
     text-decoration: none !important;
   }
   .footer-intro p {
@@ -95,6 +100,7 @@ const groups = [
     display: block;
     font-size: 0.875rem;
     margin-block: 0.75rem;
+    color: var(--secondary-text);
     text-decoration: none;
   }
   nav a:hover {
@@ -115,6 +121,18 @@ const groups = [
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+  @media (min-width: 48.01rem) {
+    .footer-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+      gap: clamp(1.5rem, 4vw, 3rem);
+      padding-top: clamp(3rem, 4vw, 3.75rem);
+    }
+    nav {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: clamp(1rem, 3vw, 3rem);
+    }
   }
   @media (max-width: 48rem) {
     .footer-inner {

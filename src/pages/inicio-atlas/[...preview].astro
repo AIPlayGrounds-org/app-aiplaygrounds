@@ -1,0 +1,324 @@
+---
+import { Image } from 'astro:assets';
+import { ArrowDown, ArrowRight, ArrowUpRight, Mountain } from '@lucide/astro';
+import { inicioImages } from '../../assets/inicio';
+import ClosingCTA from '../../components/site/ClosingCTA.astro';
+import SiteFooter from '../../components/site/SiteFooter.astro';
+import SiteHeader from '../../components/site/SiteHeader.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/atlas-preview.css';
+
+// This comparison view must never become a public route in the static build.
+export function getStaticPaths() {
+  return import.meta.env.DEV ? [{ params: { preview: undefined } }] : [];
+}
+
+// Preview copy mirrors Inicio. The live page remains the editorial source.
+const fields = [
+  {
+    title: 'AI Foundations',
+    image: inicioImages.foundations,
+    text: 'Cómo funcionan los modelos y métodos de inteligencia artificial, cómo evaluarlos y cómo mejorarlos. AI Foundations se ocupa de los fundamentos técnicos de la IA.',
+  },
+  {
+    title: 'AI for Software',
+    image: inicioImages.software,
+    text: 'IA aplicada al diseño, la construcción, las pruebas y la mejora del software. El proceso de desarrollo y el criterio para trabajar con IA están en el centro.',
+  },
+  {
+    title: 'AI for Science',
+    image: inicioImages.science,
+    text: 'Inteligencia artificial aplicada a preguntas y procesos científicos, con atención a los datos, el método y la validación de los resultados.',
+  },
+  {
+    title: 'AI for Finance',
+    image: inicioImages.finance,
+    text: 'Aplicaciones de inteligencia artificial a problemas y procesos financieros: su utilidad, sus riesgos y las decisiones que requieren criterio humano.',
+  },
+];
+const events = [
+  {
+    name: 'hack@latam',
+    stats: [
+      ['1,200+', 'postulantes'],
+      ['56', 'equipos'],
+      ['36 h', ''],
+    ],
+    note: 'From Hack to Pilot: Perú Demo Day',
+    partners: 'UTEC',
+  },
+  {
+    name: 'IA Hackathon',
+    stats: [
+      ['800+', 'postulantes'],
+      ['22', 'equipos y proyectos'],
+    ],
+    partners: 'The Hackathon Company · Crafter Station · kebo',
+  },
+  {
+    name: 'The Real AI',
+    stats: [
+      ['+150', 'participantes'],
+      ['7', 'speakers'],
+    ],
+    partners: 'looper.ai · UTEC',
+  },
+];
+const trail =
+  'M0 174 C95 172 132 128 215 129 S343 168 421 162 S534 103 614 96 S704 118 789 98 S896 47 972 52 S1122 88 1200 24';
+---
+
+<BaseLayout
+  title="Atlas de lo posible | Vista previa de AI PlayGrounds"
+  description="Prototipo visual de Inicio de AI PlayGrounds."
+  bodyClass="atlas-preview"
+>
+  <style is:inline>
+    @font-face {
+      font-family: 'Source Serif 4';
+      src: url('/src/assets/fonts/source-serif-4-latin.woff2') format('woff2');
+      font-style: normal;
+      font-weight: 400 600;
+      font-display: swap;
+    }
+  </style>
+  <SiteHeader />
+  <main id="contenido" tabindex="-1">
+    <section id="I1" class="atlas-opening">
+      <div class="site-container atlas-lead">
+        <h1>Aprendemos, investigamos, experimentamos y construimos con IA.</h1>
+        <p>
+          AI PlayGrounds es una organización enfocada en inteligencia
+          artificial, impulsada por su comunidad.
+        </p>
+        <div class="atlas-actions">
+          <a class="atlas-primary" href="/comunidad/">
+            Ir a la comunidad <ArrowRight aria-hidden="true" />
+          </a>
+          <a class="atlas-link" href="/ai-labs/">
+            Explorar AI Labs <ArrowUpRight aria-hidden="true" />
+          </a>
+        </div>
+      </div>
+      <figure class="atlas-figure">
+        <div class="atlas-plate">
+          <Image
+            src={inicioImages.hero}
+            alt=""
+            widths={[480, 768, 1024, 1440]}
+            sizes="100vw"
+            format="webp"
+            loading="eager"
+            fetchpriority="high"
+          />
+          <svg
+            class="atlas-trail"
+            viewBox="0 0 1200 220"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <defs>
+              <mask id="atlas-trail-mask">
+                <path class="atlas-trail-sweep" d={trail} pathLength="1" />
+              </mask>
+            </defs>
+            <path class="atlas-trail-halo" d={trail} />
+            <path
+              class="atlas-trail-dots"
+              d={trail}
+              mask="url(#atlas-trail-mask)"
+            />
+          </svg>
+        </div>
+        <figcaption class="site-container atlas-legend">
+          <span>
+            <Mountain aria-hidden="true" /> Atlas de lo posible{' '}
+            <span class="atlas-caption-detail">/ Ilustración de paisaje</span>
+          </span>
+          <a class="atlas-link" href="#I2">
+            Seguir el recorrido <ArrowDown aria-hidden="true" />
+          </a>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="I2" class="site-container atlas-community atlas-section">
+      <h2>El conocimiento crece cuando se comparte</h2>
+      <p>
+        La comunidad comparte conocimiento, hace preguntas y participa en las
+        actividades que impulsan nuestro trabajo. El equipo sostiene la
+        organización y sus cuatro verticales de trabajo.
+      </p>
+      <div class="atlas-community-links">
+        <a class="atlas-link" href="/comunidad/#C3">
+          Actividades de la comunidad <ArrowUpRight aria-hidden="true" />
+        </a>
+        <a class="atlas-link" href="/equipo/">
+          Nuestro equipo <ArrowUpRight aria-hidden="true" />
+        </a>
+      </div>
+    </section>
+
+    <section id="I3" class="atlas-incumbent atlas-verticals">
+      <div class="site-container atlas-section">
+        <h2>Cuatro verticales, preguntas diferentes</h2>
+        <p class="atlas-fields-intro">
+          Nuestras verticales de trabajo van de los modelos y sus métodos a las
+          aplicaciones en software, ciencia y finanzas.
+        </p>
+        <div class="atlas-fields">
+          {fields.map(({ title, text, image }) => (
+            <article class="atlas-field">
+              <div>
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </div>
+              <Image
+                src={image}
+                alt=""
+                format="webp"
+                width={960}
+                widths={[320, 480, 640, 800, 960]}
+                sizes="(min-width: 80rem) 308px, (min-width: 60rem) 23vw, (min-width: 40rem) 44vw, 92vw"
+                loading="lazy"
+              />
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="I4" class="atlas-history">
+      <div class="site-container atlas-section">
+        <div class="atlas-section-head">
+          <h2>De los encuentros a la práctica</h2>
+          <p>
+            Desde 2025 hemos organizado más de 30 eventos de comunidad. Esa
+            trayectoria incluye workshops de desarrollo asistido por IA, un
+            bootcamp y la coorganización de encuentros y hackathons.
+          </p>
+        </div>
+        <div class="atlas-register">
+          <aside class="atlas-total" aria-label="Total de eventos">
+            <strong>+30</strong>
+            <p>
+              Eventos de comunidad
+              <br />
+              organizados desde 2025
+            </p>
+          </aside>
+          <ul class="atlas-events">
+            {events.map(({ name, stats, note, partners }) => (
+              <li class="atlas-event">
+                <div>
+                  <h3>{name}</h3>
+                  <p class="atlas-event-role">Coorganizado · {partners}</p>
+                  {note && <p>{note}</p>}
+                </div>
+                <div class="atlas-event-stats">
+                  {stats.map(([value, label]) => (
+                    <span>
+                      <b>{value}</b>
+                      {label && ` ${label}`}
+                    </span>
+                  ))}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="I5" class="site-container atlas-section atlas-pathways">
+      <h2>Ideas, aprendizaje y nuevas conversaciones</h2>
+      <div class="atlas-routes">
+        <article class="atlas-route atlas-route-labs">
+          <div class="atlas-route-diagram" aria-hidden="true">
+            <svg viewBox="0 0 310 140" fill="none">
+              <path d="M16 102C70 33 114 31 155 72s75 67 142 10M18 118C75 68 118 58 155 82s82 51 132 15M23 128c64-34 101-37 132-35s77 35 119 16M57 58c38-45 82-38 110-13s64 70 112 22M88 27c27-23 62-16 88 8s59 60 84 20" />
+              <path
+                class="atlas-diagram-accent"
+                d="M28 108 84 65 148 73 206 50 273 74"
+              />
+              <circle cx="28" cy="108" r="4" />
+              <circle cx="84" cy="65" r="4" />
+              <circle cx="148" cy="73" r="4" />
+              <circle cx="206" cy="50" r="4" />
+              <circle cx="273" cy="74" r="4" />
+            </svg>
+          </div>
+          <div class="atlas-route-copy">
+            <h3>AI Labs · experimentación e iniciativas tempranas</h3>
+            <p>
+              Conoce nuestros experimentos y prototipos, quiénes los impulsan y
+              en qué etapa están.
+            </p>
+            <a class="atlas-link" href="/ai-labs/">
+              Explorar AI Labs <ArrowUpRight aria-hidden="true" />
+            </a>
+          </div>
+        </article>
+        <article class="atlas-route atlas-route-academy">
+          <div class="atlas-route-diagram" aria-hidden="true">
+            <svg viewBox="0 0 310 140" fill="none">
+              <path d="M155 119V41M155 48C127 22 86 18 47 26v71c38-5 72-4 108 22 36-26 70-27 108-22V26c-39-8-80-4-108 22ZM47 40l-15 5v71c44-9 84-5 123 10 39-15 79-19 123-10V45l-15-5" />
+              <path
+                class="atlas-diagram-accent"
+                d="M64 49c29-5 53 1 74 13M64 65c28-4 52 2 74 13M64 81c23-3 44 1 62 9M172 63c21-12 45-18 74-13M172 79c22-11 46-17 74-13M184 91c18-8 39-12 62-9"
+              />
+            </svg>
+          </div>
+          <div class="atlas-route-copy">
+            <h3>AI Academy · aprendizaje con dos enfoques</h3>
+            <p>
+              Amplía lo que puedes construir: usa IA para desarrollar software
+              (Software with AI) o incorpórala en tus aplicaciones y comprueba
+              cómo funciona (AI Engineering).
+            </p>
+            <a class="atlas-link" href="/formacion/">
+              Ver las líneas de AI Academy <ArrowUpRight aria-hidden="true" />
+            </a>
+          </div>
+        </article>
+      </div>
+      <article class="atlas-organizations">
+        <h3>Para organizaciones</h3>
+        <p>
+          Alianzas institucionales, oportunidades comerciales y formación
+          personalizada para equipos. Una conversación permite situar cada
+          posibilidad en el contexto de tu organización.
+        </p>
+        <a class="atlas-link" href="/empresas/">
+          AI PlayGrounds para organizaciones <ArrowUpRight aria-hidden="true" />
+        </a>
+      </article>
+    </section>
+
+    <div class="atlas-incumbent atlas-closing">
+      <ClosingCTA
+        id="I8"
+        title="La próxima conversación puede empezar contigo"
+        paragraphs={[
+          'Si la IA también te mueve a aprender y compartir, nuestra comunidad está abierta. Acércate a sus actividades y al grupo de WhatsApp.',
+          '¿Vienes desde una empresa o institución? Cuéntanos qué te gustaría trabajar en conjunto o qué necesita tu equipo.',
+        ]}
+        buttons={[
+          {
+            label: 'Ir a la comunidad',
+            href: '/comunidad/',
+            variant: 'primary',
+          },
+          {
+            label: 'AI PlayGrounds para mi organización',
+            href: '/empresas/',
+            variant: 'outline',
+          },
+        ]}
+      />
+    </div>
+  </main>
+  <div class="atlas-incumbent">
+    <SiteFooter />
+  </div>
+</BaseLayout>

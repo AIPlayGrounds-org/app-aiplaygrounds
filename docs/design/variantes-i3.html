@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuatro verticales · Comparación de composiciones</title>
+  <style>
+    @font-face{font-family:Space Grotesk;src:url("../../src/assets/fonts/space-grotesk-latin.woff2");font-weight:500 600;font-display:swap}
+    @font-face{font-family:Inter Tight;src:url("../../src/assets/fonts/inter-tight-latin.woff2");font-weight:400 500;font-display:swap}
+    :root{--paper:#fbf6ec;--panel:#fff9f0;--quiet:#fbf3e6;--ink:#191a18;--muted:#484a43;--line:#cecec4;--halo:#8e8eff}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.5 "Inter Tight",Arial,sans-serif}
+    h1,h2,h3,h4{margin:0;font:600 1.25rem/1.13 "Space Grotesk",Arial,sans-serif;letter-spacing:-.03em;text-wrap:balance}
+    p{margin:0;color:var(--muted)}
+    a{color:inherit;text-underline-offset:.2em}
+    :focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+    ::selection{background:var(--halo);color:var(--ink)}
+    .wrap{inline-size:min(100% - 2 * clamp(1rem,4vw,3rem),76rem);margin-inline:auto}
+    .intro{padding-block:clamp(2.5rem,6vw,5rem) 2rem}
+    h1{font-size:clamp(2.2rem,1.5rem + 3vw,4rem)}
+    .intro p{max-inline-size:66ch;margin-block:.75rem 1.25rem}
+    nav{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem}
+    nav a{min-block-size:2.75rem;display:inline-flex;align-items:center;font-weight:500}
+    .proposal{border-block-start:1px solid var(--line);padding-block:clamp(2rem,5vw,4rem)}
+    .caption{display:flex;align-items:baseline;flex-wrap:wrap;gap:.5rem 1rem;margin-block-end:1.3rem}
+    .caption h2{font-size:1.25rem}
+    .caption p{font-size:.95rem}
+    .sample{container:sample / inline-size;background:var(--panel);border:1px solid var(--line);border-radius:.75rem;padding:clamp(.9rem,3vw,2.5rem)}
+    .copy{margin-block-end:1.3rem}
+    .copy h3{font-size:clamp(1.75rem,1.4rem + 1.6vw,3rem);margin-block-end:.45rem}
+    .copy p{max-inline-size:60ch}
+    .items,.panorama{display:grid;gap:.8rem}
+    article{min-inline-size:0}
+    article p{margin-block-start:.45rem;font-size:.95rem}
+    img{display:block;inline-size:100%;block-size:auto;object-fit:cover;aspect-ratio:var(--ratio, 3 / 2)}
+    .a article{display:grid;grid-template-rows:1fr auto;border:1px solid var(--line);border-radius:.4rem;background:var(--quiet)}
+    .a .words{padding:1rem}
+    .a img{--ratio:4 / 1;border-end-start-radius:.35rem;border-end-end-radius:.35rem;object-position:50% 57%}
+    .b article{container:row / inline-size;padding-block:.85rem;border-block-start:1px solid var(--line)}
+    .b .row{display:grid;gap:.75rem;align-items:start}
+    .b img{--ratio:4 / 1;border-radius:.4rem}
+    .c .panorama{grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;margin-block-end:1.25rem}
+    .panorama img{--ratio:1 / 1}
+    .panorama img:first-child{border-start-start-radius:.4rem;border-end-start-radius:.4rem}
+    .panorama img:last-child{border-start-end-radius:.4rem;border-end-end-radius:.4rem}
+    .c article{border-block-start:1px solid var(--line);padding-block:.75rem}
+    .end{padding-block:1rem 3rem}
+    @container row (min-width: 16rem){
+      .b .row{grid-template-columns:minmax(0,1fr) minmax(4.5rem,26%)}
+      .b img{--ratio:1 / 1}
+    }
+    @container sample (min-width: 34rem){
+      .items{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .a img{--ratio:2.4 / 1}
+      .panorama img{--ratio:1.5 / 1}
+    }
+    @container sample (min-width: 57rem){
+      :is(.a,.c) .items{grid-template-columns:repeat(4,minmax(0,1fr))}
+      .b .items{column-gap:1.5rem}
+    }
+  </style>
+</head>
+<body>
+  <header class="intro wrap" id="comparacion">
+    <h1>Tres composiciones para las cuatro verticales</h1>
+    <p>La misma sección de Inicio, con el texto y las ilustraciones actuales. Compara cómo cambia la lectura al estrechar la ventana.</p>
+    <nav aria-label="Ir a una alternativa">
+      <a href="#a">A · Franjas ilustradas</a>
+      <a href="#b">B · Filas con miniatura</a>
+      <a href="#c">C · Panorama editorial</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="proposal a" id="a" aria-labelledby="title-a">
+      <header class="caption"><h2 id="title-a">A · Franjas ilustradas</h2><p>Una escena al pie de cada tarjeta, más baja en móvil.</p></header>
+      <div class="sample">
+        <header class="copy"><h3>Cuatro verticales, preguntas diferentes</h3><p>Nuestras verticales de trabajo van de los modelos y sus métodos a las aplicaciones en software, ciencia y finanzas.</p></header>
+        <div class="items">
+          <article><div class="words"><h4>AI Foundations</h4><p>Cómo funcionan los modelos y métodos de inteligencia artificial, cómo evaluarlos y cómo mejorarlos. AI Foundations se ocupa de los fundamentos técnicos de la IA.</p></div><img src="../../referencias/inicio/ai-foundations.png" alt=""></article>
+          <article><div class="words"><h4>AI for Software</h4><p>IA aplicada al diseño, la construcción, las pruebas y la mejora del software. El proceso de desarrollo y el criterio para trabajar con IA están en el centro.</p></div><img src="../../referencias/inicio/ai-for-software.png" alt=""></article>
+          <article><div class="words"><h4>AI for Science</h4><p>Inteligencia artificial aplicada a preguntas y procesos científicos, con atención a los datos, el método y la validación de los resultados.</p></div><img src="../../referencias/inicio/ai-for-science.png" alt=""></article>
+          <article><div class="words"><h4>AI for Finance</h4><p>Aplicaciones de inteligencia artificial a problemas y procesos financieros: su utilidad, sus riesgos y las decisiones que requieren criterio humano.</p></div><img src="../../referencias/inicio/ai-for-finance.png" alt=""></article>
+        </div>
+      </div>
+    </section>
+    <section class="proposal b" id="b" aria-labelledby="title-b">
+      <header class="caption"><h2 id="title-b">B · Filas con miniatura</h2><p>El texto guía la lectura; cada imagen acompaña desde un lateral si cabe.</p></header>
+      <div class="sample">
+        <header class="copy"><h3>Cuatro verticales, preguntas diferentes</h3><p>Nuestras verticales de trabajo van de los modelos y sus métodos a las aplicaciones en software, ciencia y finanzas.</p></header>
+        <div class="items">
+          <article><div class="row"><div><h4>AI Foundations</h4><p>Cómo funcionan los modelos y métodos de inteligencia artificial, cómo evaluarlos y cómo mejorarlos. AI Foundations se ocupa de los fundamentos técnicos de la IA.</p></div><img src="../../referencias/inicio/ai-foundations.png" alt=""></div></article>
+          <article><div class="row"><div><h4>AI for Software</h4><p>IA aplicada al diseño, la construcción, las pruebas y la mejora del software. El proceso de desarrollo y el criterio para trabajar con IA están en el centro.</p></div><img src="../../referencias/inicio/ai-for-software.png" alt=""></div></article>
+          <article><div class="row"><div><h4>AI for Science</h4><p>Inteligencia artificial aplicada a preguntas y procesos científicos, con atención a los datos, el método y la validación de los resultados.</p></div><img src="../../referencias/inicio/ai-for-science.png" alt=""></div></article>
+          <article><div class="row"><div><h4>AI for Finance</h4><p>Aplicaciones de inteligencia artificial a problemas y procesos financieros: su utilidad, sus riesgos y las decisiones que requieren criterio humano.</p></div><img src="../../referencias/inicio/ai-for-finance.png" alt=""></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="proposal c" id="c" aria-labelledby="title-c">
+      <header class="caption"><h2 id="title-c">C · Panorama editorial</h2><p>Una banda reúne las cuatro escenas; el contenido se lee debajo sin tarjetas.</p></header>
+      <div class="sample">
+        <header class="copy"><h3>Cuatro verticales, preguntas diferentes</h3><p>Nuestras verticales de trabajo van de los modelos y sus métodos a las aplicaciones en software, ciencia y finanzas.</p></header>
+        <div class="panorama">
+          <img src="../../referencias/inicio/ai-foundations.png" alt="">
+          <img src="../../referencias/inicio/ai-for-software.png" alt="">
+          <img src="../../referencias/inicio/ai-for-science.png" alt="">
+          <img src="../../referencias/inicio/ai-for-finance.png" alt="">
+        </div>
+        <div class="items">
+          <article><h4>AI Foundations</h4><p>Cómo funcionan los modelos y métodos de inteligencia artificial, cómo evaluarlos y cómo mejorarlos. AI Foundations se ocupa de los fundamentos técnicos de la IA.</p></article>
+          <article><h4>AI for Software</h4><p>IA aplicada al diseño, la construcción, las pruebas y la mejora del software. El proceso de desarrollo y el criterio para trabajar con IA están en el centro.</p></article>
+          <article><h4>AI for Science</h4><p>Inteligencia artificial aplicada a preguntas y procesos científicos, con atención a los datos, el método y la validación de los resultados.</p></article>
+          <article><h4>AI for Finance</h4><p>Aplicaciones de inteligencia artificial a problemas y procesos financieros: su utilidad, sus riesgos y las decisiones que requieren criterio humano.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="end wrap"><a href="#comparacion">Volver a las alternativas</a></footer>
+</body>
+</html>

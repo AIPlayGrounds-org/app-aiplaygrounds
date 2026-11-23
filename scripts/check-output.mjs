@@ -1,6 +1,35 @@
 import { readFileSync, readdirSync, lstatSync, existsSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { demoProducts, demoResearch } from '../src/data/directories.demo.ts';
+import { products, research } from '../src/data/directories.ts';
+
+const approvedDetailPaths = new Set(
+  [
+    ...products.map(({ slug }) => ['ai-labs', slug]),
+    ...research.map(({ slug }) => ['investigacion', slug]),
+  ]
+    .filter(([, slug]) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))
+    .map(([directory, slug]) => `${directory}/${slug}/index.html`),
+);
+
+// Los slugs también detectan enlaces sin el título visible del registro.
+const demoMarkers = [
+  ...demoProducts.flatMap(({ slug, name, utility, problem, aiRelation }) => [
+    slug,
+    name,
+    utility,
+    problem,
+    aiRelation,
+  ]),
+  ...demoResearch.flatMap(({ slug, title, question, method, limitations }) => [
+    slug,
+    title,
+    question,
+    method,
+    limitations,
+  ]),
+];
 
 export function inspect(root, kind = root === 'dist' ? 'site' : 'bundle') {
   if (!existsSync(root)) throw new Error(`Falta artefacto: ${root}`);
@@ -57,7 +86,8 @@ export function inspect(root, kind = root === 'dist' ? 'site' : 'bundle') {
     checked++;
     const allowed =
       kind === 'site'
-        ? /^(?:(?:index|(?:empresas|comunidad|formacion|ai-labs|investigacion|equipo)\/index)\.html|verticals\/(?:foundations|software|science|finance)\.svg|_astro\/[a-zA-Z0-9._-]+\.(?:css|js)|_astro\/(?:hero-laguna|ai-foundations|ai-for-software|ai-for-science|ai-for-finance|cta-plazoleta|footer-lomas)\.[a-zA-Z0-9_-]+_[a-zA-Z0-9_-]+\.webp|_astro\/(?:space-grotesk-latin|inter-tight-latin|geist-mono-latin)\.[a-zA-Z0-9_-]+\.woff2)$/
+        ? approvedDetailPaths.has(name) ||
+          /^(?:(?:index|(?:empresas|comunidad|formacion|ai-labs|investigacion|equipo)\/index)\.html|verticals\/(?:foundations|software|science|finance)\.svg|_astro\/[a-zA-Z0-9._-]+\.(?:css|js)|_astro\/(?:hero-laguna|ai-foundations|ai-for-software|ai-for-science|ai-for-finance|cta-plazoleta|footer-lomas)\.[a-zA-Z0-9_-]+_[a-zA-Z0-9_-]+\.webp|_astro\/(?:space-grotesk-latin|inter-tight-latin|geist-mono-latin)\.[a-zA-Z0-9_-]+\.woff2)$/
         : /^[a-zA-Z0-9._/-]+\.(?:js|json|txt)$/;
     if (
       !allowed.test(name) ||
@@ -67,9 +97,16 @@ export function inspect(root, kind = root === 'dist' ? 'site' : 'bundle') {
     )
       throw new Error(`Ruta no permitida: ${name}`);
     const data = readFileSync(file);
+    const text = data.toString('utf8');
+    if (
+      demoMarkers.some(
+        (marker) => name.includes(marker) || text.includes(marker),
+      )
+    )
+      throw new Error(`Datos o enlaces de demostración en ${name}`);
     if (fingerprints.some((source) => data.includes(source)))
       throw new Error(`Fuente interna completa en ${name}`);
-    if (secrets.some((pattern) => pattern.test(data.toString('utf8'))))
+    if (secrets.some((pattern) => pattern.test(text)))
       throw new Error(`Posible secreto en ${name}`);
   }
   return checked;

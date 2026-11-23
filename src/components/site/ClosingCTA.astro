@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import { ArrowUpRight } from '@lucide/astro';
 import { inicioImages } from '../../assets/inicio';
 import Button from '../starwind/button/Button.astro';
 interface Props {
@@ -9,6 +10,7 @@ interface Props {
   buttons: { label: string; href: string; variant: 'primary' | 'outline' }[];
 }
 const { id, title, paragraphs, buttons } = Astro.props;
+const home = id === 'I8' && Astro.url.pathname === '/';
 ---
 
 <section {id} class="site-container section-space closing-section">
@@ -22,6 +24,7 @@ const { id, title, paragraphs, buttons } = Astro.props;
         {buttons.map((button) => (
           <Button href={button.href} variant={button.variant}>
             {button.label}
+            {home && <ArrowUpRight aria-hidden="true" size={14} />}
           </Button>
         ))}
       </div>
@@ -89,6 +92,30 @@ const { id, title, paragraphs, buttons } = Astro.props;
     min-height: 0;
     object-fit: cover;
     object-position: right bottom;
+  }
+  :global(body.home) .closing-section {
+    padding-bottom: clamp(2rem, 4vw, 3.25rem);
+  }
+  :global(body.home) .actions :global(a) {
+    border-radius: 0.5rem;
+  }
+  @media (min-width: 60rem) {
+    :global(body.home) .closing {
+      grid-template-columns: minmax(0, 55%) 1fr;
+      min-height: clamp(21rem, 28vw, 24.5rem);
+    }
+    :global(body.home) .closing-copy {
+      position: relative;
+      z-index: 1;
+      padding-inline-end: clamp(1.5rem, 3vw, 2.5rem);
+    }
+    :global(body.home) .closing-image {
+      position: absolute;
+      inset: auto 0 0 auto;
+      width: 91%;
+      height: auto;
+      pointer-events: none;
+    }
   }
   @media (min-width: 60rem) {
     .closing-section {

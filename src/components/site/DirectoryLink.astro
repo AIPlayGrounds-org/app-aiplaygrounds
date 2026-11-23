@@ -1,0 +1,43 @@
+---
+import { ArrowLeft, ArrowRight } from '@lucide/astro';
+
+interface Props {
+  href: string;
+  title: string;
+  back?: boolean;
+}
+const { href, title, back = false } = Astro.props;
+---
+
+<a
+  class:list={['directory-link', { 'directory-back': back }]}
+  href={href}
+  aria-label={back ? undefined : `Ver ficha: ${title}`}
+>
+  {back ? (
+    <>
+      <ArrowLeft size={18} aria-hidden="true" /> Volver a {title}
+    </>
+  ) : (
+    <>
+      Ver ficha
+      <ArrowRight size={18} aria-hidden="true" />
+    </>
+  )}
+</a>
+
+<style>
+  .directory-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    min-block-size: 44px;
+    font-weight: 500;
+  }
+  .directory-link :global(svg) {
+    flex: none;
+  }
+  .directory-back {
+    margin-block-end: 1.25rem;
+  }
+</style>
