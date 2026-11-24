@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 import { ArrowUpRight } from '@lucide/astro';
 import { inicioImages } from '../../assets/inicio';
 import Button from '../starwind/button/Button.astro';
@@ -8,13 +9,18 @@ interface Props {
   title: string;
   paragraphs: string[];
   buttons: { label: string; href: string; variant: 'primary' | 'outline' }[];
+  illustration?: ImageMetadata;
 }
-const { id, title, paragraphs, buttons } = Astro.props;
+const { id, title, paragraphs, buttons, illustration } = Astro.props;
 const home = id === 'I8' && Astro.url.pathname === '/';
 ---
 
 <section {id} class="site-container section-space closing-section">
-  <div class="closing" data-reveal={home ? 'card' : undefined}>
+  <div
+    class:list={['closing', { 'closing-cutout': illustration }]}
+    data-reveal={home || illustration ? 'card' : undefined}
+    data-surface-motion={Boolean(illustration) || undefined}
+  >
     <div class="closing-copy">
       <h2>{title}</h2>
       {paragraphs.map((paragraph) => (
@@ -24,17 +30,31 @@ const home = id === 'I8' && Astro.url.pathname === '/';
         {buttons.map((button) => (
           <Button href={button.href} variant={button.variant}>
             {button.label}
-            {home && <ArrowUpRight aria-hidden="true" size={14} />}
+            {(home || illustration) && (
+              <ArrowUpRight
+                aria-hidden="true"
+                size={14}
+                data-card-arrow={illustration ? true : undefined}
+              />
+            )}
           </Button>
         ))}
       </div>
     </div>
     <Image
-      src={inicioImages.closing}
+      src={illustration ?? inicioImages.closing}
       alt=""
       format="webp"
-      widths={[480, 768, 1024, 1440, 1920, 2172]}
-      sizes="(min-width: 80rem) 1280px, 100vw"
+      widths={
+        illustration
+          ? [480, 768, 1024, 1440]
+          : [480, 768, 1024, 1440, 1920, 2172]
+      }
+      sizes={
+        illustration
+          ? '(max-width: 48rem) 88vw, (min-width: 86rem) 700px, 56vw'
+          : '(min-width: 80rem) 1280px, 100vw'
+      }
       loading="lazy"
       class="closing-image"
     />
@@ -93,6 +113,26 @@ const home = id === 'I8' && Astro.url.pathname === '/';
     object-fit: cover;
     object-position: right bottom;
   }
+  .closing-cutout .closing-copy {
+    z-index: 1;
+    position: relative;
+  }
+  .closing-cutout .closing-image {
+    display: block;
+    align-self: end;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    pointer-events: none;
+  }
+  @media (min-width: 60rem) {
+    .closing-cutout .closing-image {
+      position: absolute;
+      inset: auto 0 0 auto;
+      width: 56%;
+      max-height: 100%;
+    }
+  }
   @media (prefers-reduced-motion: no-preference) {
     :global(body.home) .closing-image {
       transition:
@@ -109,6 +149,11 @@ const home = id === 'I8' && Astro.url.pathname === '/';
         scale: 1.04;
         transition: scale 260ms var(--editorial-ease-out);
       }
+    }
+    .closing-cutout[data-surface-motion] .closing-image {
+      scale: calc(1 + var(--surface-motion, 0) * 0.04);
+      transition: scale 260ms var(--editorial-ease-out);
+      transform-origin: bottom right;
     }
   }
   :global(body.home) .closing-section {
@@ -158,6 +203,10 @@ const home = id === 'I8' && Astro.url.pathname === '/';
       display: block;
       height: auto;
       aspect-ratio: 2.8 / 1;
+    }
+    .closing-cutout .closing-image {
+      width: min(100%, 34rem);
+      margin-inline-start: auto;
     }
   }
 </style>

@@ -15,7 +15,7 @@
 }
 
 .atlas-preview .site-header {
-  position: relative;
+  margin-block-end: 0;
 }
 
 .atlas-preview .header-inner {

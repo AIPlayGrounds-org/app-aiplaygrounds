@@ -46,6 +46,9 @@ const groups = [
         AI PlayGrounds es una organización enfocada en inteligencia artificial,
         impulsada por su comunidad.
       </p>
+      <p class="copyright">
+        © 2026 Fundación AI PlayGrounds. Todos los derechos reservados.
+      </p>
     </div>
     <nav aria-label="Navegación del pie de página">
       {groups.map(({ title, links }) => (
@@ -94,6 +97,11 @@ const groups = [
     font-size: 0.875rem;
     margin-top: 1rem;
     color: var(--secondary-text);
+  }
+  .footer-intro .copyright {
+    margin-block-start: 0.75rem;
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
   }
   nav {
     display: grid;

@@ -87,7 +87,7 @@ export function inspect(root, kind = root === 'dist' ? 'site' : 'bundle') {
     const allowed =
       kind === 'site'
         ? approvedDetailPaths.has(name) ||
-          /^(?:(?:index|(?:empresas|comunidad|formacion|ai-labs|investigacion|equipo)\/index)\.html|verticals\/(?:foundations|software|science|finance)\.svg|_astro\/[a-zA-Z0-9._-]+\.(?:css|js)|_astro\/(?:hero-laguna|ai-foundations|ai-for-software|ai-for-science|ai-for-finance|cta-plazoleta|footer-lomas|Empresa_hero|Andenes Peruanos en Flor|Puente de piedra sobre arroyo floral)\.[a-zA-Z0-9_-]+_[a-zA-Z0-9_-]+\.webp|_astro\/(?:space-grotesk-latin|inter-tight-latin|geist-mono-latin)\.[a-zA-Z0-9_-]+\.woff2)$/
+          /^(?:(?:index|(?:empresas|comunidad|formacion|ai-labs|investigacion|equipo)\/index)\.html|verticals\/(?:foundations|software|science|finance)\.svg|_astro\/[a-zA-Z0-9._-]+\.(?:css|js)|_astro\/(?:hero-laguna|ai-foundations|ai-for-software|ai-for-science|ai-for-finance|cta-plazoleta|footer-lomas|Empresa_hero|Andenes Peruanos en Flor|Puente de piedra sobre arroyo floral|academy-(?:hero-v2|software-with-ai|ai-engineering|team-training|waitlist-cta))\.[a-zA-Z0-9_-]+_[a-zA-Z0-9_-]+\.webp|_astro\/(?:space-grotesk-latin|inter-tight-latin|geist-mono-latin)\.[a-zA-Z0-9_-]+\.woff2)$/
         : /^[a-zA-Z0-9._/-]+\.(?:js|json|txt)$/;
     if (
       !allowed.test(name) ||

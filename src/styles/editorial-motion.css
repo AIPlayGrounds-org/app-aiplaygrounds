@@ -11,6 +11,9 @@
 [data-reveal='ink'] {
   --editorial-entry: editorial-reveal-ink;
 }
+[data-reveal='fade'] {
+  --editorial-entry: editorial-reveal-fade;
+}
 
 @keyframes editorial-reveal-rise {
   from {
@@ -29,5 +32,10 @@
   from {
     opacity: 0.14;
     translate: 0 16px;
+  }
+}
+@keyframes editorial-reveal-fade {
+  from {
+    opacity: 0.18;
   }
 }

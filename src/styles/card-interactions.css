@@ -1,0 +1,46 @@
+/* Share the edge state without making informational surfaces interactive. */
+:is([data-card-interactive], [data-card-outline]) {
+  --card-edge: var(--card-edge-rest, var(--border));
+}
+
+[data-card-interactive] {
+  transition: border-color 200ms var(--editorial-ease-out);
+}
+
+[data-card-outline] {
+  outline: 1px solid var(--card-edge);
+  transition: outline-color 200ms var(--editorial-ease-out);
+}
+
+[data-card-interactive]:is(:focus-visible, :has(:focus-visible)) {
+  --card-edge: var(--foreground);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :is([data-card-interactive], [data-card-outline]):hover {
+    --card-edge: var(--card-edge-active, var(--foreground));
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :is([data-card-interactive], [data-surface-motion]) {
+    --surface-motion: 0;
+  }
+
+  :is([data-card-interactive], [data-surface-motion]):focus-within {
+    --surface-motion: 1;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    :is([data-card-interactive], [data-surface-motion]):hover {
+      --surface-motion: 1;
+    }
+  }
+
+  [data-card-arrow] {
+    display: inline-block;
+    translate: calc(var(--surface-motion, 0) * var(--arrow-x, 4px))
+      calc(var(--surface-motion, 0) * var(--arrow-y, -3px));
+    transition: translate var(--editorial-response) var(--editorial-ease-out);
+  }
+}

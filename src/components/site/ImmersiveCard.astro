@@ -1,0 +1,102 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import Card from '../starwind/card/Card.astro';
+
+interface Props {
+  title: string;
+  eyebrow: string;
+  description: string;
+  image: ImageMetadata;
+  sizes: string;
+}
+const { title, eyebrow, description, image, sizes } = Astro.props;
+---
+
+<Card class="immersive-card gap-0 p-0 ring-0" data-card-outline>
+  <Image
+    src={image}
+    alt=""
+    format="webp"
+    widths={[384, 640, 960, 1254]}
+    {sizes}
+    loading="lazy"
+    class="scene"
+  />
+  <div class="overlay">
+    <div class="panel">
+      <p class="eyebrow">{eyebrow}</p>
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+  </div>
+</Card>
+
+<style>
+  .immersive-card {
+    --inset: clamp(0.5rem, 1.4vw, 1rem);
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: grid;
+    grid-template: 'scene' 1fr / minmax(0, 1fr);
+    min-width: 0;
+    border-radius: var(--radius-xl);
+    /* Only the edge below the square artwork is visible if the panel needs more height. */
+    background: var(--scene-matte, var(--editorial-sand));
+  }
+  .immersive-card::before {
+    content: '';
+    grid-area: scene;
+    width: 100%;
+    aspect-ratio: 1;
+  }
+  .scene {
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center top;
+  }
+  .overlay {
+    grid-area: scene;
+    align-self: end;
+    min-width: 0;
+    padding: 59% var(--inset) var(--inset);
+  }
+  .panel {
+    padding: clamp(1rem, 2.4vw, 2rem);
+    border: 1px solid var(--border);
+    border-radius: var(--editorial-radius);
+    background: var(--editorial-card);
+  }
+  h3 {
+    font-size: clamp(1.5rem, 1.1rem + 1.5vw, 2.25rem);
+  }
+  p {
+    color: var(--secondary-text);
+  }
+  .eyebrow {
+    margin-bottom: 0.3rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--editorial-sand-ink);
+  }
+  h3 + p {
+    margin-top: 0.55rem;
+    max-width: 50ch;
+  }
+  @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    .scene {
+      transform-origin: center top;
+      transition: scale 360ms var(--editorial-ease-out);
+    }
+    .immersive-card:hover .scene {
+      scale: 1.032;
+    }
+  }
+</style>

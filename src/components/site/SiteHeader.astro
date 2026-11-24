@@ -1,5 +1,10 @@
 ---
 import Button from '../starwind/button/Button.astro';
+
+interface Props {
+  immersive?: boolean;
+}
+const { immersive = false } = Astro.props;
 const links = [
   ['Comunidad', '/comunidad/'],
   ['Formación', '/formacion/'],
@@ -18,6 +23,9 @@ const cta = organizations
   : { label: 'Ver comunidad', href: '/comunidad/#C4' };
 ---
 
+{immersive && (
+  <span class="header-sentinel" data-header-sentinel aria-hidden="true"></span>
+)}
 <header class="site-header">
   <div class="site-container header-inner">
     <a href="/" class="brand" translate="no">
@@ -83,6 +91,16 @@ const cta = organizations
   </div>
 </header>
 <script>
+  const sentinel = document.querySelector('[data-header-sentinel]');
+  const header = document.querySelector('.site-header');
+  if (sentinel && header && 'IntersectionObserver' in window) {
+    const update = () =>
+      header.toggleAttribute('data-at-top', window.scrollY === 0);
+    update();
+    new IntersectionObserver(update, { threshold: 1 }).observe(sentinel);
+    window.addEventListener('pageshow', update);
+  }
+
   document
     .querySelectorAll<HTMLDetailsElement>('.mobile-nav')
     .forEach((menu) => {
@@ -103,13 +121,32 @@ const cta = organizations
 </script>
 <style>
   .site-header {
-    position: absolute;
+    position: sticky;
     inset-inline: 0;
-    top: 0;
+    inset-block-start: 0;
     z-index: 5;
+    margin-block-end: calc(-1 * var(--site-header-height));
+    color: var(--brand-black);
+    background: var(--editorial-background);
+  }
+  .site-header[data-at-top] {
+    background: transparent;
+  }
+  .header-sentinel {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    block-size: 1px;
+    inline-size: 1px;
+    pointer-events: none;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .site-header {
+      transition: background-color 180ms ease-out;
+    }
   }
   .header-inner {
-    min-height: 4.5rem;
+    min-height: var(--site-header-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -196,7 +233,7 @@ const cta = organizations
       background: var(--home-background, var(--background));
       padding: 1rem clamp(1rem, 4vw, 3rem) 1.5rem;
       border-bottom: 1px solid var(--input);
-      max-height: calc(100dvh - 4.5rem);
+      max-height: calc(100dvh - var(--site-header-height));
       overflow-y: auto;
     }
     .mobile-audience {

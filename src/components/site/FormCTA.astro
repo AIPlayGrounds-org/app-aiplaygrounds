@@ -1,0 +1,165 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import Section from './Section.astro';
+import SectionHeading from './SectionHeading.astro';
+
+interface Props {
+  id: string;
+  headingId?: string;
+  title: string;
+  description: string;
+  illustration?: ImageMetadata;
+  illustrationSide?: 'start' | 'end';
+  illustrationBleed?: string;
+  density?: 'standard' | 'compact';
+  animate?: boolean;
+}
+
+const {
+  id,
+  headingId = `${id}-title`,
+  title,
+  description,
+  illustration,
+  illustrationSide = 'start',
+  illustrationBleed = '0%',
+  density = 'standard',
+  animate = true,
+} = Astro.props;
+---
+
+<Section {id} class="form-cta" tabindex="-1" aria-labelledby={headingId}>
+  <div
+    class:list={[
+      'conversion-surface',
+      `art-${illustrationSide}`,
+      { compact: density === 'compact' },
+    ]}
+  >
+    <div class="intro" data-reveal={animate ? 'ink' : undefined}>
+      <SectionHeading id={headingId}>{title}</SectionHeading>
+      <p>{description}</p>
+    </div>
+    <div class="form-slot" data-reveal={animate ? 'fade' : undefined}>
+      <slot />
+    </div>
+    {illustration && (
+      <div class="art" data-reveal={animate ? 'fade' : undefined}>
+        <Image
+          src={illustration}
+          alt=""
+          width={1280}
+          widths={[384, 640, 960, 1280]}
+          sizes={
+            density === 'compact'
+              ? '(min-width: 86rem) 780px, (min-width: 48rem) 55vw, (min-width: 32rem) 420px, 88vw'
+              : '(min-width: 86rem) 690px, (min-width: 48rem) 50vw, (min-width: 32rem) 420px, 88vw'
+          }
+          format="webp"
+          loading="lazy"
+          style={{ translate: `0 ${illustrationBleed}` }}
+        />
+      </div>
+    )}
+  </div>
+</Section>
+
+<style>
+  .form-cta {
+    padding-block-start: clamp(0.75rem, 3vw, 2.5rem);
+  }
+  .conversion-surface {
+    --inset: clamp(1.125rem, 4vw, 3.5rem);
+    --block-inset: var(--inset);
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 1.5rem;
+    padding: var(--block-inset) var(--inset);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    background: var(--editorial-surface);
+  }
+  .compact {
+    --block-inset: clamp(1.125rem, 3vw, 2.5rem);
+  }
+  .intro > :global(h2) {
+    max-width: 20ch;
+  }
+  .intro p {
+    margin-top: 0.75rem;
+    max-width: 40ch;
+    color: var(--secondary-text);
+  }
+  .conversion-surface:focus-within .intro[data-entering] {
+    animation: none;
+  }
+  .form-slot {
+    min-width: 0;
+    --editorial-delay: 75ms;
+  }
+  .art {
+    pointer-events: none;
+    width: min(420px, calc(100% + var(--inset)));
+    margin-inline-start: calc(-1 * var(--inset));
+    margin-block-end: calc(-1 * var(--block-inset));
+    align-self: end;
+    --editorial-delay: 135ms;
+  }
+  .art-end .art {
+    justify-self: end;
+    margin-inline: 0 calc(-1 * var(--inset));
+  }
+  .art img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  @media (min-width: 48rem) {
+    .conversion-surface {
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: clamp(2rem, 5vw, 5rem);
+    }
+    .conversion-surface:has(.art) .intro {
+      padding-block-end: clamp(12rem, 26vw, 20rem);
+    }
+    .art {
+      position: absolute;
+      inset: auto auto 0 0;
+      margin: 0;
+      width: min(53%, 42rem);
+    }
+    .art-end .art {
+      inset-inline: auto 0;
+      margin: 0;
+    }
+    .art-end .intro {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .art-end .form-slot {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .compact {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .compact:has(.art) .intro {
+      padding-block-end: clamp(12rem, 27vw, 23rem);
+    }
+    .compact .art {
+      width: min(59%, 49rem);
+    }
+  }
+  @media (min-width: 68rem) {
+    .art {
+      width: min(55%, 43rem);
+    }
+    .compact .art {
+      width: min(61%, 49rem);
+    }
+  }
+</style>

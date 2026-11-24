@@ -27,6 +27,8 @@ Se conservan los identificadores editoriales; hay 47 secciones tras integrar EM5
 
 **Textos de navegación:** Formación · Empresas · Comunidad · AI Labs · Investigación · Equipo. La marca AI PlayGrounds lleva a Inicio. No se fija aquí el orden visual del menú.
 
+**Pie de página global:** debajo de la descripción institucional, en todas las páginas: «© 2026 Fundación AI PlayGrounds. Todos los derechos reservados.»
+
 Los destinos internos se nombran por página; las rutas son propuestas editoriales, no URLs implementadas. Luma conserva sus originales públicos canónicos. WhatsApp es el canal general confirmado, con enlace exacto pendiente. Empresas incluye un único formulario implementado con envío deshabilitado hasta validar su activación. Ningún placeholder debe convertirse en enlace público.
 
 **Fuentes de esta revisión:** E1 v2.2 e internos vigentes; datos de la presentación institucional de octubre de 2026 proporcionados y confirmados por el responsable (no se encontró ni inspeccionó su HTML); cuatro páginas Luma consultadas el 05/11/2026 y contrastadas con sus fechas estructuradas. Las condiciones actuales de comunidad, formación y contacto proceden de la decisión humana de esta revisión.
@@ -165,62 +167,108 @@ Si la IA también te mueve a aprender y compartir, nuestra comunidad está abier
 
 ## Página: Formación
 
-**URL propuesta:** `/formacion/`. **Objetivo:** comprender AI Academy, distinguir sus líneas y decidir un siguiente paso fiel al estado real. **Audiencia:** personas que desarrollan software y quieren usar IA en su trabajo o sus proyectos; ruta secundaria para organizaciones.
-**Estado de página:** líneas, antecedente y estado actual redactados; modelo de futuros programas sin entradas. **Correspondencia E1:** 5/5 secciones. **UI:** no aportada.
+**URL:** `/formacion/`. **Objetivo:** comprender AI Academy, distinguir sus líneas y decidir un siguiente paso fiel al estado real. **Audiencia:** personas que desarrollan software y quieren usar IA en su trabajo o sus proyectos; ruta secundaria para organizaciones.
+**Estado de página:** siete secciones; no hay convocatorias abiertas y el registro todavía no está habilitado.
 
 **SEO title:** AI Academy: formación en IA para desarrollar software | AI PlayGrounds
-**Meta description:** Dos líneas de AI Academy para desarrollar software con ayuda de IA o integrar IA en tus aplicaciones y comprobar cómo funciona. Sin convocatorias abiertas.
-**H1:** Construye más con IA en tus proyectos de software
+**Meta description:** Conoce Software with AI y AI Engineering, las dos líneas formativas de AI Academy. No hay convocatorias abiertas.
 
-### F1 · AI Academy y punto de partida
+### F1 · Hero inmersivo
 
-**Estado:** A
+**H1:** Amplía lo que eres capaz de construir con IA.
 
-**Copy propuesto:**
+Desarrolla capacidades para crear software con IA e integrarla en tus aplicaciones con criterio y autonomía.
 
-Aborda cambios que antes dejabas fuera de alcance o añade funciones que tu aplicación no podía ofrecer. AI Academy es la iniciativa de formación de AI PlayGrounds para quienes desarrollan software y quieren usar IA en su trabajo o en sus propios proyectos.
+**CTA:** Explorar enfoques → `#F3`.
 
-La práctica va más allá de generar código: revisas qué cambió, investigas por qué falla una prueba y decides qué corregir antes de incorporar el cambio. Así puedes aplicar lo aprendido a otro proyecto sin tener que repetir la misma demo.
+### F2 · Diferencial formativo
 
-**Nota editorial — no publicable:** sin cursos o programas públicos vigentes, confirmado por responsable; no añadir inscripción o botón circular a Formación.
+**H2:** Construye con IA. Entiende lo que construyes.
 
-### F3 · Líneas de aprendizaje
+Aprender con IA va más allá de utilizar herramientas. Buscamos que desarrolles capacidades que puedas aplicar a distintos proyectos, problemas y tecnologías.
 
-**Estado:** A
-**H2:** Dos formas de trabajar con IA en software
+- **Aplicación práctica:** Construye soluciones para problemas reales de tu trabajo o de tus propios proyectos.
+- **Criterio técnico:** Comprende cómo funcionan tus soluciones, evalúa sus resultados y decide qué mejorar.
+- **Autonomía:** Aplica lo aprendido a nuevos desafíos, aunque cambien las herramientas.
 
-**Copy propuesto:**
+### F3 · Líneas formativas
 
-#### AI Engineering
+**H2:** Dos formas de construir con IA
 
-Incorpora IA como parte de la aplicación mediante un modelo o una API y comprueba cómo se comporta dentro del sistema. Por ejemplo, añade una función que resume tickets de soporte y verifica que no invente datos cuando el ticket está incompleto.
+Explora nuestras dos líneas de aprendizaje según lo que quieras desarrollar y las capacidades que quieras adquirir.
 
-#### Software with AI
+**IA durante el desarrollo · Software with AI**
 
-Usa IA durante el desarrollo sin ceder el control del código, las pruebas ni las decisiones. Por ejemplo, pídele a un asistente que proponga un filtro de búsqueda, revisa el cambio y comprueba con pruebas que la búsqueda anterior siga funcionando.
+Aprende a utilizar IA para mejorar cómo desarrollas, pruebas y mantienes software, conservando el control sobre tus decisiones técnicas.
 
-| Criterio de comparación | AI Engineering | Software with AI |
-|---|---|---|
-| Tarea central | Integrar IA en aplicaciones o sistemas | Desarrollar software con apoyo de IA |
-| Papel de la IA | Forma parte de la capacidad de la aplicación | Asiste el trabajo de desarrollo |
-| Criterio humano | Definir el uso y evaluar su funcionamiento y límites | Revisar el código, probarlo y comprender las decisiones antes de incorporarlo |
+**IA dentro de la aplicación · AI Engineering**
 
-Son dos enfoques, no pasos de un itinerario. Empezar con IA no es lo mismo que empezar a programar: los conocimientos previos se indicarán en cada oferta.
+Aprende a integrar capacidades de inteligencia artificial en aplicaciones y sistemas, comprendiendo su funcionamiento, evaluación y límites.
 
-**Nota editorial — no publicable:** descriptores de líneas aprobadas, no temarios de cursos disponibles, título profesional o garantía de resultado. El punto de partida técnico depende del programa: no inventar niveles universales.
+### F4 · Formatos de aprendizaje
 
-### F4 · Oferta y condiciones actuales
+**H2:** Diferentes maneras de aprender y construir
 
-**Estado:** B
-**H2:** El bootcamp de 2025: un antecedente
+Experiencias de aprendizaje adaptadas a distintos objetivos y niveles de profundidad.
 
-**Copy propuesto:**
+- **Workshop:** Sesiones prácticas enfocadas en una tarea o desafío concreto.
+- **Full Day:** Una jornada intensiva de aprendizaje y construcción.
+- **Cursos:** Varias sesiones para desarrollar capacidades y construir soluciones por etapas.
 
-En 2025 organizamos el **Bootcamp Gen AI Fundamentals**: una edición gratuita y práctica de seis semanas, con más de 300 inscritos y 16 speakers de Perú, Colombia y Estados Unidos.
+### F5 · Trayectoria formativa
 
-Esa edición ya terminó. Hoy AI Academy no tiene cursos ni programas públicos vigentes ni convocatorias abiertas.
+**H2:** Aprendemos construyendo en comunidad
 
-**Modelo de futuros programas — no publicable; sin registros actuales (C):** R = requerido antes de anunciar oferta abierta; C = condicional; O = opcional autorizado. Cada programa tendrá resumen breve y detalle dentro de esta sección, sin nueva página.
+Nuestra experiencia creando espacios de aprendizaje práctico es el punto de partida de AI Academy.
+
+**Etiqueta:** Edición finalizada
+
+**H3:** Bootcamp Gen AI Fundamentals
+
+Una experiencia de formación práctica con especialistas de Perú, Colombia y Estados Unidos.
+
+**Métricas:** 300+ inscritos · 16 speakers · 6 semanas.
+
+**CTA:** Conoce nuestra trayectoria → `/comunidad/#C3`.
+
+**Nota editorial — no publicable:** H04 es fuente humana confirmada, sin URL original aportada. Inscritos no equivale a graduados o asistentes. No asignar retroactivamente el bootcamp a una línea actual ni trasladar las condiciones de esa edición a programas futuros.
+
+### F6 · Formación para equipos
+
+**H2:** Desarrolla las capacidades de tu equipo en IA
+
+Exploremos una propuesta de formación adaptada a los perfiles, necesidades y desafíos de tu organización.
+
+**CTA:** Explorar formación para equipos → `/empresas/#EM5`. Esa tarjeta lleva al formulario existente (`#EM6`) y selecciona el motivo comercial cuando el formulario está habilitado.
+
+### F7 · Lista de espera
+
+**H2:** Lo próximo que construyas empieza aquí.
+
+Registra tu interés en AI Academy y recibe información sobre futuras convocatorias en nuestras líneas formativas.
+
+| Campo | Placeholder u opciones |
+|---|---|
+| Nombre | Tu nombre |
+| Correo electrónico | Tu correo electrónico |
+| ¿Qué línea te interesa? | Software with AI; AI Engineering |
+
+**Botón:** Avisarme de próximas convocatorias (deshabilitado).
+
+**Estado visible:** No hay convocatorias abiertas y la lista de espera aún no está habilitada.
+
+### Implementación y recursos — no publicable
+
+- **F1:** `ImmersiveHero`, variante `open-sky`, con la misma altura que Inicio y Empresas. H1, descripción y CTA centrados en el cielo bajo la navegación. Usa `referencias/Academy/academy-hero-v2.png` sin modificar el original. El header global permanece visible al desplazar la página: transparente al inicio de los tres heroes y con fondo sólido al hacer scroll.
+- **F2 y F4:** cards informativas de nivel 3, con seis motivos lineales propios. Tres columnas con espacio suficiente; una en móvil. F2 apila icono y texto; F4 los alinea.
+- **F3:** cards protagonistas de nivel 1C (`ImmersiveCard`). Ilustración a sangre y panel crema inferior superpuesto. Dos columnas desde 48 rem y una por debajo; la proporción cuadrada puede ceder si el texto necesita altura. `academy-software-with-ai.webp` deriva de `Espacio de trabajo con asistente IA-1.png`; `academy-ai-engineering.webp`, de `Espacio de trabajo con diagrama de IA-2.png`. El nivel 2 sigue reservado a navegación e iniciativas; F3 no enlaza a cursos.
+- **F5:** composición editorial y métricas con separadores verticales, sin líneas horizontales alrededor del bloque ni foto hasta contar con una imagen verificable y autorizada del bootcamp. No se presenta como convocatoria.
+- **F6:** `ClosingCTA` de Inicio con la mesa compartida y pizarra, desde la esquina inferior derecha. `academy-team-training.webp` deriva de `Espacio de trabajo rústico con flores.png`.
+- **F7:** `FormCTA` de Empresas con el escritorio individual en la esquina inferior izquierda. `academy-waitlist-cta.webp` deriva de `Espacio de trabajo andino al aire libre.png`. El bloque se apila en móvil y lleva el arte al final; ambos CTA conservan el canal alfa. Los originales permanecen en `referencias/Academy/`.
+- **Movimiento:** entrada del hero y ajuste sutil de escala; reveal y stagger con las utilidades existentes; microdesplazamiento de iconos y zoom de la escena sin mover el panel; scroll suave hacia F3. Todo respeta `prefers-reduced-motion`; el contenido se muestra sin JavaScript.
+- **Activación de F7:** campos y envío deshabilitados, sin widget ni confirmación simulada. Se conservan `POST /api/academy-waitlist` y el contrato de datos. Ver las [condiciones de activación](../../../docs/implementation/academy-review.md).
+
+**Modelo de futuros programas — no publicable; sin registros actuales (C):** R = requerido antes de anunciar oferta abierta; C = condicional; O = opcional autorizado. No se incorpora un catálogo ni se crean nuevas rutas en esta revisión.
 
 | Campo | Condición | Contenido requerido |
 |---|---|---|
@@ -237,35 +285,6 @@ Esa edición ya terminó. Hoy AI Academy no tiene cursos ni programas públicos 
 | Mecanismo de inscripción | R para oferta abierta | Destino verificado, requisitos y qué confirma cada acción |
 | Evaluación/certificado | C | Solo si existen y con alcance confirmado |
 | Imagen/material | O | Recurso disponible y autorizado |
-
-**Notas editoriales — no publicable:** H04 es fuente humana confirmada, sin URL original aportada. Inscritos no equivale a graduados o asistentes. No asignar retroactivamente el bootcamp a una línea actual sin fuente. No trasladar gratuidad, duración, docentes o enfoque de esa edición a programas futuros. Publicar solo el antecedente/estado actual; no catálogo vacío, waitlist o avisos.
-
-### F6 · Formación para equipos
-
-**Estado:** A
-**H2:** Formación a partir de lo que necesita tu equipo
-
-**Copy propuesto — parte institucional sustentada:**
-
-Si buscas formación para un equipo, AI Academy puede explorar una propuesta personalizada según lo que sus integrantes ya saben y lo que necesitan aprender para su trabajo.
-
-**Enlace:** Formación para mi equipo → Empresas, AI Academy para equipos.
-
-**Nota editorial — no publicable:** posibilidad confirmada, propuesta sujeta a evaluación, no catálogo corporativo fijo. Condiciones de cada propuesta por definir; no prometer docentes, temarios, fechas, precios, modalidades, certificados, resultados o plazos. AI Academy, nunca AI Labs.
-
-### F5 · Estado y siguiente paso
-
-**Estado:** A
-**H2:** Qué puedes hacer hoy
-
-**Copy propuesto — continuidad segura con los datos actuales:**
-
-No hay convocatorias abiertas. Puedes consultar los encuentros y talleres anteriores de la comunidad o conocer cómo se plantea la formación para equipos.
-
-**CTA principal:** Ver comunidad → Comunidad.
-**CTA secundario:** Para equipos → Empresas, AI Academy para equipos.
-
-**Nota editorial — no publicable:** escenario C confirmado por responsable al corte 05/11/2026. No listas de espera, avisos, fechas o promesa de convocatorias próximas. Una futura oferta requiere completar F4 y su mecanismo antes de sustituir este estado. No CTA a la propia raíz Formación.
 
 ## Página: Empresas
 
@@ -466,7 +485,7 @@ Una revisión del panorama de modelos, benchmarks, IDEs nativos de IA y agentes 
 
 Los datos de los eventos coorganizados corresponden al evento completo. El bootcamp es un antecedente formativo, sin inscripción vigente.
 
-**Enlace contextual:** La trayectoria formativa del bootcamp → Formación, Oferta y condiciones actuales.
+**Enlace contextual:** La trayectoria formativa del bootcamp → Formación (F5, Trayectoria formativa).
 
 **Notas editoriales — no publicable:** L01–L04 originales consultados; H01–H04 datos confirmados por responsable, sin originales públicos aportados. No duplicar estos hitos como ocho fichas nuevas: son registros de esta sección. Los temas sintetizan la convocatoria; no verifican resultados de proyectos. Went (108/55/138/45 según página) se conserva solo en evidencia interna, nunca como asistencia efectiva. El botón Register del Demo Day y sus datos estructurados no autorizan inscripción actual. No descargar/reutilizar portadas sin permiso. No hay grabaciones, slides o repositorios identificados; no enlaces de recurso ficticios. Ponentes del Demo Day y datos no recibidos de los hitos del deck quedan pendientes, omitidos del público.
 
@@ -903,7 +922,8 @@ Los estados actuales de eventos, programas y acceso sí están confirmados por e
 |---|---|---|
 | Actividad histórica | Originales públicos H01–H04 si existen y materiales autorizados; responsable de organización | No bloquea el copy sustentado en declaración confirmada; sí agregar enlaces/imágenes no recibidos. Ponentes del Demo Day no identificados se omiten |
 | Iniciativas de Labs | Pregunta, enfoque, responsables, relación, estado, recursos y permisos; responsables de iniciativas | B3 y selecciones relacionadas; no afirmar iniciativas activas sin fuente |
-| Programas futuros | Todos los campos del modelo F4 por oferta; responsable Academy | Hoy sin programas públicos vigentes, no faltante a rellenar artificialmente. Necesario antes de anunciar una nueva oferta |
+| Programas futuros | Todos los campos del modelo de Formación por oferta; responsable Academy | Hoy sin programas públicos vigentes. Necesario antes de anunciar una nueva oferta |
+| Lista de espera de Academy | Configuración real de Turnstile y Brevo, privacidad, responsables y pruebas de extremo a extremo | Activar F7; mientras tanto no se reciben datos |
 | Nuevas capacidades técnicas | Evidencia propia, contexto, fuente/permiso y disponibilidad si se ofrece; responsable institucional | No impide EM3 histórico o consulta potencial; sí claims de implementación, desarrollo por encargo o consultoría no acreditados |
 | WhatsApp | Enlace exacto de invitación vigente; responsable comunitario | Activar «Unirme a la comunidad». Plataforma/acceso abierto definidos, URL aún no |
 | Formulario Empresas | Privacidad/política y destino legal, consentimiento si corresponde, implementación/recepción/error; propietario y desarrollo | Activar la recepción del único formulario y los textos legales condicionados. Los cuatro CTA internos ya apuntan a EM6 |
@@ -931,14 +951,14 @@ Notas locales: sin enlaces a unidades no identificadas, personas/materiales sin 
 
 ## QA y estado de la entrega
 
-La arquitectura vigente comprende siete páginas principales, dos tipos de ficha y 47 secciones. La página independiente Productos se elimina y su directorio pasa a AI Labs. El formulario vive en EM6 y sus subdivisiones no son secciones nuevas.
+La arquitectura vigente comprende siete páginas principales, dos tipos de ficha y 49 secciones. La página independiente Productos se elimina y su directorio pasa a AI Labs. El formulario de Empresas vive en EM6; el de Academy en F7, inactivo.
 
-### Estados de las 47 secciones tras E222-EM
+### Estados de las 49 secciones tras E222-EM y la revisión de Formación
 
 | Página o tipo | A · institucional | B · histórico | C · modelo sin entradas | D · acción pendiente | E · dato esencial | Total |
 |---|---:|---:|---:|---:|---:|---:|
 | Inicio | 5 | 1 | 0 | 0 | 0 | 6 |
-| Formación | 4 | 1 | 0 | 0 | 0 | 5 |
+| Formación | 5 | 1 | 0 | 1 | 0 | 7 |
 | Empresas | 3 | 1 | 0 | 1 | 0 | 5 |
 | Comunidad | 3 | 1 | 0 | 1 | 0 | 5 |
 | AI Labs | 4 | 0 | 1 | 0 | 0 | 5 |
@@ -946,13 +966,13 @@ La arquitectura vigente comprende siete páginas principales, dos tipos de ficha
 | Equipo | 3 | 0 | 0 | 0 | 1 | 4 |
 | Ficha de producto | 0 | 0 | 7 | 0 | 0 | 7 |
 | Ficha de investigación | 0 | 0 | 6 | 0 | 0 | 6 |
-| **Total** | **24** | **4** | **16** | **2** | **1** | **47** |
+| **Total** | **25** | **4** | **16** | **3** | **1** | **49** |
 
-Son categorías principales, no porcentajes de publicación: 28 secciones de copy institucional/histórico para revisar; 16 modelos sin registros públicos; dos acciones preparadas editorialmente y una sección con autorización personal esencial pendiente. F4 y C3 incluyen además submodelos C para futuros programas/eventos sin entradas. E3 no depende de inventar bios o fotos; su E corresponde a permisos. C7 es A por su continuidad informativa, con estructura de incorporación solo interna e inactiva. DI4 conserva una propuesta de entradas inactiva, no captación confirmada.
+Son categorías principales, no porcentajes de publicación: 29 secciones de copy institucional/histórico; 16 modelos sin registros públicos; tres acciones pendientes y una sección con autorización personal esencial pendiente. Formación y C3 incluyen además submodelos C para futuros programas/eventos sin entradas. E3 no depende de inventar bios o fotos; su E corresponde a permisos. C7 es A por su continuidad informativa, con estructura de incorporación solo interna e inactiva. DI4 conserva una propuesta de entradas inactiva, no captación confirmada.
 
 ### Resumen histórico de la revisión v2.1
 
-Los puntos 7–8 describen el corte histórico y quedaron sustituidos exclusivamente para Empresas por E222-EM.
+El punto 6 quedó actualizado en la sección Formación de este documento; los puntos 7–8 describen el corte histórico y quedaron sustituidos para Empresas por E222-EM.
 
 1. **Copy:** titulares más específicos, menos definiciones repetidas y CTA por tarea; páginas diferenciadas por identidad, participación, aprendizaje, relación institucional y evaluación de objetos.
 2. **Deck:** origen enero de 2025 en Lima, más de 30 eventos, tres coorganizaciones y bootcamp. Datos confirmados por responsable, sin afirmar inspección del HTML original. Cifras colectivas e inscritos conservan su unidad/alcance.

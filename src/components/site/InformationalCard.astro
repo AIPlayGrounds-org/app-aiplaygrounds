@@ -1,0 +1,73 @@
+---
+import Card from '../starwind/card/Card.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  layout?: 'stacked' | 'inline';
+  tone?: 'warm' | 'grove' | 'sand' | 'lilac';
+}
+const { title, description, layout = 'stacked', tone = 'warm' } = Astro.props;
+---
+
+<Card
+  class:list={['info-card gap-0 p-0 ring-0', layout, `tone-${tone}`]}
+  data-card-outline
+>
+  <div class="motif">
+    <slot name="icon" />
+  </div>
+  <div>
+    <h3>{title}</h3>
+    <p>{description}</p>
+  </div>
+</Card>
+
+<style>
+  .info-card {
+    --info-surface: var(--editorial-surface);
+    --info-ink: var(--editorial-grove-ink);
+    --card-edge-active: var(--info-ink);
+    display: grid;
+    align-content: start;
+    gap: 0.85rem;
+    height: 100%;
+    padding: clamp(1.125rem, 2.5vw, 2rem);
+    border-radius: var(--editorial-radius);
+    background: var(--info-surface);
+  }
+  .info-card.inline {
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: start;
+    gap: 1rem;
+  }
+  .info-card:not(.tone-warm) {
+    --card-edge-rest: color-mix(
+      in srgb,
+      var(--info-ink) 32%,
+      var(--info-surface)
+    );
+  }
+  .tone-grove {
+    --info-surface: var(--editorial-grove);
+  }
+  .tone-sand {
+    --info-surface: var(--editorial-sand);
+    --info-ink: var(--editorial-sand-ink);
+  }
+  .tone-lilac {
+    --info-surface: var(--editorial-lilac);
+    --info-ink: var(--editorial-lilac-ink);
+  }
+  .motif {
+    color: var(--info-ink);
+  }
+  h3 {
+    font-size: clamp(1.2rem, 1.12rem + 0.35vw, 1.45rem);
+  }
+  p {
+    margin-top: 0.4rem;
+    max-width: 42ch;
+    color: var(--secondary-text);
+  }
+</style>

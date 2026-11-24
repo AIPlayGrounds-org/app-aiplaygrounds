@@ -8,8 +8,10 @@ interface Props {
   title: string;
   description: string;
   align?: 'center' | 'start';
+  composition?: 'standard' | 'open-sky';
   position?: string;
   mobilePosition?: string;
+  imageSizes?: string;
   animate?: boolean;
 }
 const {
@@ -18,15 +20,21 @@ const {
   title,
   description,
   align = 'center',
+  composition = 'standard',
   position = 'center',
   mobilePosition = position,
+  imageSizes = '100vw',
   animate = true,
 } = Astro.props;
 ---
 
 <section
   {id}
-  class:list={['hero', `align-${align}`]}
+  class:list={[
+    'hero',
+    `align-${align}`,
+    { 'open-sky': composition === 'open-sky' },
+  ]}
   data-hero-entrance={animate || undefined}
   style={{
     '--hero-position': position,
@@ -38,7 +46,7 @@ const {
     alt=""
     format="webp"
     widths={[480, 768, 1024, 1440]}
-    sizes="100vw"
+    sizes={imageSizes}
     loading="eager"
     fetchpriority="high"
     class="hero-image"
@@ -110,6 +118,28 @@ const {
     justify-content: flex-start;
     gap: 0.75rem;
   }
+  .hero.open-sky {
+    /* Centra el texto en el cielo entre la navegación y el horizonte. */
+    grid-template-rows:
+      var(--site-header-height) minmax(max-content, 3fr)
+      minmax(0, 1fr);
+  }
+  .hero.open-sky .hero-content {
+    grid-row: 2;
+    place-self: center;
+    padding-block: 0;
+  }
+  .open-sky h1 {
+    max-width: 20ch;
+    text-wrap: balance;
+  }
+  .open-sky p {
+    max-width: 42ch;
+    margin-top: 1rem;
+  }
+  .open-sky .actions {
+    margin-top: 1.15rem;
+  }
   @media (max-width: 60rem) {
     .align-start {
       align-items: start;
@@ -149,11 +179,21 @@ const {
     .align-start .hero-content {
       z-index: 1;
     }
+    .open-sky h1 {
+      font-size: clamp(1.875rem, 1.45rem + 2vw, 2.25rem);
+    }
+    .open-sky p {
+      font-size: 1.0625rem;
+    }
   }
   @media (prefers-reduced-motion: no-preference) {
     [data-hero-entrance] .hero-content > :is(h1, p, .actions) {
       animation: hero-arrive 720ms var(--editorial-entrance-ease)
         var(--hero-delay, 0ms) backwards;
+    }
+    .open-sky[data-hero-entrance] .hero-image {
+      transform-origin: center bottom;
+      animation: sky-settle 2.8s var(--editorial-ease-out) both;
     }
     .hero-content > p {
       --hero-delay: 170ms;
@@ -163,6 +203,11 @@ const {
     }
     [data-hero-entrance] .actions:focus-within {
       animation: none;
+    }
+  }
+  @keyframes sky-settle {
+    from {
+      scale: 1.018;
     }
   }
   @keyframes hero-arrive {

@@ -1,0 +1,33 @@
+---
+const paths = {
+  practice:
+    'M4 23h24v-7H4z M7 16V9h19v7 M11 9V5h11v4 M11 16v7m10-7v7M16 9v7 M8 27h16',
+  judgment:
+    'M5 4h15v4M5 4v24h15m-11-8h4m-4-5h3M9 9h4 M26 21l4 5 M27 15a6 6 0 1 1-12 0 6 6 0 0 1 12 0Z M19 15l1.5 1.5L23 13',
+  autonomy:
+    'M16 3a13 13 0 1 0 0 26 13 13 0 0 0 0-26Z M21 11l-3 7-7 3 3-7 7-3Z M16 6v2m0 16v2M6 16h2m16 0h2',
+  workshop:
+    'M12 5H5v7m15-7h7v7M5 20v7h7m15-7v7h-7 M16 9v3m0 8v3m-7-7h3m8 0h3 M19 16a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z',
+  day: 'M4 24h24M7 28h18 M8 24a8 8 0 0 1 16 0 M16 6v4m-9 2 2.5 3m15.5-3-2.5 3 M3 18l3 1m23-1-3 1',
+  courses: 'M4 26h7v-6h8v-6h8V7 M21 7h6v6M4 29h24 M4 20h3m5-6h3m5-6h3',
+};
+interface Props {
+  name: keyof typeof paths;
+}
+const { name } = Astro.props;
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="36"
+  height="36"
+  viewBox="0 0 32 32"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.45"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+>
+  <path d={paths[name]} />
+</svg>

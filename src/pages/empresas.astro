@@ -20,7 +20,7 @@ import OrganizationContactForm from '../components/site/OrganizationContactForm.
   description="Explora alianzas institucionales, proyectos de IA y formación para equipos. Conversemos sobre las necesidades de tu organización."
   bodyClass="organizations"
 >
-  <SiteHeader />
+  <SiteHeader immersive />
   <main id="contenido" tabindex="-1">
     <ImmersiveHero
       id="EM1"
@@ -166,7 +166,7 @@ import OrganizationContactForm from '../components/site/OrganizationContactForm.
     }
   }
   :global(body.organizations main [id]) {
-    scroll-margin-top: 5rem;
+    scroll-margin-top: 0.5rem;
   }
   .section-intro p {
     max-width: 60ch;
