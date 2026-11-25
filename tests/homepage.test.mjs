@@ -52,7 +52,7 @@ test('Inicio conserva orden, textos y destinos acordados', () => {
 test('ilustraciones locales, WebP y variantes limitadas', () => {
   const assets = readFileSync('src/assets/inicio.ts', 'utf8');
   for (const name of [
-    'hero-laguna',
+    'inicio-hero-v2',
     'ai-foundations',
     'ai-for-software',
     'ai-for-science',
@@ -64,6 +64,7 @@ test('ilustraciones locales, WebP y variantes limitadas', () => {
     assert.ok(existsSync(`referencias/inicio/${name}.png`));
   }
   assert.doesNotMatch(assets, /inicio-referencia/);
+  assert.match(page, /image=\{inicioImages\.hero\}/);
   assert.match(page, /format="webp"/);
   assert.match(page, /width=\{960\}/);
   const initiative = readFileSync(
