@@ -19,7 +19,7 @@ const home = id === 'I8' && Astro.url.pathname === '/';
   <div
     class:list={['closing', { 'closing-cutout': illustration }]}
     data-reveal={home || illustration ? 'card' : undefined}
-    data-surface-motion={Boolean(illustration) || undefined}
+    data-surface-motion={home || Boolean(illustration) || undefined}
   >
     <div class="closing-copy">
       <h2>{title}</h2>
@@ -31,11 +31,7 @@ const home = id === 'I8' && Astro.url.pathname === '/';
           <Button href={button.href} variant={button.variant}>
             {button.label}
             {(home || illustration) && (
-              <ArrowUpRight
-                aria-hidden="true"
-                size={14}
-                data-card-arrow={illustration ? true : undefined}
-              />
+              <ArrowUpRight aria-hidden="true" size={14} data-card-arrow />
             )}
           </Button>
         ))}
@@ -134,23 +130,7 @@ const home = id === 'I8' && Astro.url.pathname === '/';
     }
   }
   @media (prefers-reduced-motion: no-preference) {
-    :global(body.home) .closing-image {
-      transition:
-        scale 180ms ease-out,
-        translate 180ms ease-out;
-      transform-origin: top left;
-    }
-    :global(body.home) .closing:focus-within .closing-image {
-      scale: 1.04;
-      transition: scale 260ms var(--editorial-ease-out);
-    }
-    @media (hover: hover) and (pointer: fine) {
-      :global(body.home) .closing:has(:global(a:hover)) .closing-image {
-        scale: 1.04;
-        transition: scale 260ms var(--editorial-ease-out);
-      }
-    }
-    .closing-cutout[data-surface-motion] .closing-image {
+    [data-surface-motion] .closing-image {
       scale: calc(1 + var(--surface-motion, 0) * 0.04);
       transition: scale 260ms var(--editorial-ease-out);
       transform-origin: bottom right;

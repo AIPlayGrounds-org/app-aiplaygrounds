@@ -17,7 +17,11 @@ const { title, description, image, tone, href, label, ctaId, inquiryType } =
   Astro.props;
 ---
 
-<article class:list={['collaboration', tone]} data-reveal="card">
+<article
+  class:list={['collaboration', tone]}
+  data-reveal="card"
+  data-card-interactive
+>
   <Image
     src={image}
     alt=""
@@ -42,15 +46,11 @@ const { title, description, image, tone, href, label, ctaId, inquiryType } =
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    border: 1px solid var(--border);
+    border: 1px solid var(--card-edge);
     border-radius: var(--radius-xl);
     min-height: 21rem;
     padding: clamp(1.5rem, 3vw, 2.5rem);
     background: var(--editorial-surface);
-    transition: border-color 180ms ease-out;
-  }
-  .collaboration:focus-within {
-    border-color: var(--input);
   }
   .grove {
     background: color-mix(
@@ -112,22 +112,10 @@ const { title, description, image, tone, href, label, ctaId, inquiryType } =
       --art-width: min(90%, 29rem);
     }
   }
-  @media (hover: hover) and (pointer: fine) {
-    .collaboration:hover {
-      border-color: var(--input);
-    }
-  }
   @media (prefers-reduced-motion: no-preference) {
     .art {
+      scale: calc(1 + var(--surface-motion, 0) * 0.035);
       transition: scale 280ms var(--editorial-ease-out);
-    }
-    .collaboration:focus-within .art {
-      scale: 1.035;
-    }
-    @media (hover: hover) and (pointer: fine) {
-      .collaboration:hover .art {
-        scale: 1.035;
-      }
     }
   }
 </style>

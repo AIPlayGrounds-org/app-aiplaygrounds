@@ -29,6 +29,8 @@ const { class: className, ...attributes } = Astro.props;
   }
   @media (prefers-reduced-motion: no-preference) {
     .text-link :global(svg) {
+      translate: calc(var(--surface-motion, 0) * 4px)
+        calc(var(--surface-motion, 0) * -3px);
       transition: translate var(--editorial-response) ease-out;
     }
     .text-link:focus-visible :global(svg) {

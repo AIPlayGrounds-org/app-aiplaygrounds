@@ -27,7 +27,7 @@ const entries = await getProducts();
       ) : (
         <ul class="product-grid" role="list">
           {entries.map((product) => (
-            <li class="product-card">
+            <li class="product-card" data-card-interactive>
               <h3>{product.name}</h3>
               <p>{product.utility}</p>
               <dl class="product-meta">
@@ -69,7 +69,7 @@ const entries = await getProducts();
     gap: 0.65rem;
     padding: clamp(1rem, 3vw, 2rem);
     background: var(--home-surface);
-    border: 1px solid var(--border);
+    border: 1px solid var(--card-edge);
     border-radius: 0.4rem;
   }
   .product-card h3 {

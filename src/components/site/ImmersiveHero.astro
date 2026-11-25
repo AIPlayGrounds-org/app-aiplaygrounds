@@ -165,20 +165,6 @@ const {
       font-size: clamp(2rem, 8.3vw, 2.4rem);
       text-wrap: balance;
     }
-    .align-start::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(
-        ellipse 95% 35% at 7% 50%,
-        color-mix(in srgb, var(--editorial-background) 46%, transparent),
-        transparent
-      );
-      pointer-events: none;
-    }
-    .align-start .hero-content {
-      z-index: 1;
-    }
     .open-sky h1 {
       font-size: clamp(1.875rem, 1.45rem + 2vw, 2.25rem);
     }

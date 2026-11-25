@@ -21,13 +21,14 @@ const { href, title, back = false } = Astro.props;
   ) : (
     <>
       Ver ficha
-      <ArrowRight size={18} aria-hidden="true" />
+      <ArrowRight size={18} aria-hidden="true" data-card-arrow />
     </>
   )}
 </a>
 
 <style>
   .directory-link {
+    --arrow-y: 0px;
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;

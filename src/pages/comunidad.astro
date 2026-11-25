@@ -64,13 +64,16 @@ const events = [
       </p>
       <div class="stack">
         {events.map((event) => (
-          <article>
+          <article data-card-interactive>
             <h3>{event.title}</h3>
             <div>
               <p>{event.text}</p>
               <p class="event-detail">{event.detail}</p>
               <a class="interior-link" href={event.url}>
-                Ver en Luma<span class="sr-only">: {event.title}</span> ↗
+                Ver en Luma<span class="sr-only">: {event.title}</span>
+                <span aria-hidden="true" data-card-arrow>
+                  ↗
+                </span>
               </a>
             </div>
           </article>
@@ -145,7 +148,7 @@ const events = [
 
 <style>
   .stack article {
-    border-top: 1px solid var(--border);
+    border-top: 1px solid var(--card-edge, var(--border));
     padding-top: 1.25rem;
   }
   .stack article div > p:first-child {
@@ -153,6 +156,9 @@ const events = [
   }
   .stack .event-detail {
     font-size: 0.9rem;
+  }
+  .stack [data-card-arrow] {
+    display: inline-block;
   }
   #C4 .interior-actions {
     display: grid;

@@ -27,7 +27,7 @@ const entries = await getResearch();
       ) : (
         <ul class="research-list" role="list">
           {entries.map((item) => (
-            <li class="research-row">
+            <li class="research-row" data-card-interactive>
               <div class="research-summary">
                 <h3>{item.title}</h3>
                 <p>{item.question}</p>
@@ -89,7 +89,7 @@ const entries = await getResearch();
     gap: 0.75rem clamp(1rem, 3vw, 2.5rem);
     align-items: start;
     padding-block: clamp(1.25rem, 3vw, 2rem);
-    border-block-end: 1px solid var(--border);
+    border-block-end: 1px solid var(--card-edge);
   }
   .research-summary h3 {
     font-size: clamp(1.3rem, 1.12rem + 0.65vw, 1.75rem);

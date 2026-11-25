@@ -7,14 +7,20 @@
 | Bloque | Patrón |
 |---|---|
 | `EM1` | `ImmersiveHero`: texto a la izquierda y paisaje a la derecha, foco propio en móvil. Inicio conserva su composición centrada; Formación puede adoptar la misma primitiva sin cambiar su diseño actual. |
-| `EM2` | `CollaborationCard`: superficie, arte transparente absoluto y contenido sobre un área segura; adopta el principio de `ClosingCTA`, sin sustituirlo. |
-| `EM3` | `Section` + `SectionHeading` + `TextLink`; remite a `/#I4`, sin estadísticas ni hitos duplicados. |
+| `EM2` | `CollaborationCard`: las ilustraciones v2 de puente y andenes tienen píxeles opacos hasta los bordes inferior y derecho. El contenedor las recorta en su radio y escala desde la misma esquina para no abrir franjas durante el hover. |
+| `EM3` | `Section` + `SectionHeading` + `TextLink`; remite a `/#I4`, sin estadísticas ni hitos duplicados. Separa el bloque con espacio en blanco, sin líneas. |
 | `EM4` | `InitiativeGrid` e `InitiativeCard`, los mismos que en `I5`. `#EM5` se conserva como ancla de la card de Academy. Investigación usa un SVG nuevo de la misma familia. |
-| `EM6` | `OrganizationContactForm` y `FormField`: cinco controles nativos, errores asociados, estados anunciados y foco en el primer error. |
+| `EM6` | `FormCTA` reúne introducción, patio anclado abajo a la izquierda y formulario en una sola superficie. En móvil el arte queda debajo de los controles. `OrganizationContactForm` y `FormField` mantienen los cinco controles nativos, errores asociados y foco en el primer error. |
 
 La cabecera, el pie y Starwind `Button` son compartidos. `CompactHero` conserva las presentaciones de Comunidad, AI Labs, Investigación y Equipo. `EditorialMotion` observa una vez `[data-reveal]` y añade `data-entering` solo al entrar; admite entradas `card`, `ink`, normal y retraso `--editorial-delay`. El contenido parte visible, sin JavaScript o en movimiento reducido. Los enlaces combinan navegación nativa, margen de ancla y mejora de preselección sin borrar otros valores.
 
-**Procedencia:** los tres PNG son los originales entregados en `referencias/Empresa/`: `Empresa_hero.png`, `Puente de piedra sobre arroyo floral.png` y `Andenes Peruanos en Flor.png`. `src/assets/empresas.ts` los registra sin modificar; `astro:assets` genera WebP con tamaños responsivos, alfa para ambas cards, y carga diferida salvo el hero.
+**Procedencia, iteración 2:** `src/assets/empresas.ts` importa los PNG entregados en `referencias/Empresa/`: `empresa-hero-v2.png`, `empresa-colaboracion-puente-v2.png`, `empresa-colaboracion-andenes-v2.png` y `Patio andino entre flores y piedra.png`. Los tres PNG anteriores permanecen como referencias históricas. `astro:assets` genera WebP responsivos, con alfa para las tres ilustraciones y carga diferida salvo el hero. El patio compensa la transparencia de sus últimas filas con un desplazamiento del 1,65% recortado por la card, sin editar el PNG.
+
+**Refinamiento final (EM1 y EM6).** El hero usa `empresa-hero-v5.png`; las versiones anteriores siguen como referencia. El foco es `center 40%` en escritorio y `34% center` en móvil, con tamaños de recurso que tienen en cuenta el recorte de `object-fit: cover`. El titular y la descripción conservan sus medidas, sin filtros ni sombras.
+
+Empresas usa `FormCTA density="compact"`: menos padding vertical, dos columnas equilibradas en escritorio y el patio de mayor tamaño, sin sustituirlo ni alterar sus proporciones. El formulario reduce a `0.75rem` el espacio entre grupos y a tres filas la altura inicial del mensaje. Conserva controles de al menos `3rem`, su capacidad de crecer y los mensajes accesibles; el estado de envío vacío no reserva altura. El `translate` del 1,65% sigue siendo una compensación fija del alfa inferior, no parallax ni movimiento de entrada. En móvil, el patio conserva su tamaño y aparece después de los controles.
+
+Las microinteracciones globales siguen el [sistema de diseño](../../DESIGN.md#components). Las verticales de Inicio conservan el movimiento de sus imágenes, pero no pasan a ser clicables. Las fichas de Equipo, los formatos de Formación y las métricas de Inicio no reciben un borde interactivo porque no tienen una acción propia.
 
 ## Analítica
 
@@ -60,3 +66,22 @@ playwright-cli -s=empresas run-code "$(node --input-type=module -e \
 ```
 
 La ruta `/fixture-only/` es un marcador exclusivo del build de prueba ignorado, no una página legal ni una configuración de publicación.
+
+### Segunda iteración visual
+
+| Ancho | Antes (`5c1f62f`) | Después |
+|---|---|---|
+| Escritorio · 1440 px | [captura](visual-review/empresas-v2/antes-1440.webp) | [captura](visual-review/empresas-v2/despues-1440.webp) |
+| Tablet · 768 px | [captura](visual-review/empresas-v2/antes-768.webp) | [captura](visual-review/empresas-v2/despues-768.webp) |
+| Móvil · 390 px | [captura](visual-review/empresas-v2/antes-390.webp) | [captura](visual-review/empresas-v2/despues-390.webp) |
+
+Filmstrips de Playwright: [hover desde el título](visual-review/empresas-v2/hover.webp) y [misma interacción con movimiento reducido](visual-review/empresas-v2/hover-reducido.webp), con entrada arriba y salida abajo. En [contacto](visual-review/empresas-v2/contacto-foco.webp), el foco asienta la entrada del título y muestra el formulario a opacidad completa. La superficie y la ilustración no se desplazan durante la escritura.
+
+`scripts/review-empresas-v2.js` comprueba el anclaje de las ilustraciones, el borde único de contacto, los separadores, el hover desde fuera del enlace, el foco, el puntero táctil, el movimiento reducido y el desbordamiento a 1440, 1024, 768, 390 y 320 px. Revisa las siete rutas y prueba las tarjetas de directorio con los registros de demostración de Astro dev (`localhost:4321`), no publicados. Se volvió a ejecutar `scripts/review-empresas.js` para preselección, validación y recepción controlada. La comparación de reposo de Inicio y Formación con el corte anterior no mostró cambios de composición; Formación fue idéntica píxel a píxel en los tres anchos comparados.
+
+### Refinamiento final del hero y el contacto (capturas con v3-b)
+
+- [Comparativa del hero](visual-review/empresas-v3/comparativa-hero.webp) y [comparativa del contacto](visual-review/empresas-v3/comparativa-contacto.webp): antes a la izquierda, después a la derecha; filas de 1920, 1440, 1280, 1024, 768 y 390 px.
+- A 1440 px, la card pasó de 705 a 644 px, el ancho de la ilustración de 688 a 780 px y el espacio entre la descripción y el inicio del tejado de 115 a 25 px. En una columna conserva el arte debajo de los controles.
+- [Contacto disponible y error de envío en escritorio](visual-review/empresas-v3/estados-escritorio.webp) y [validación y error de envío en móvil](visual-review/empresas-v3/estados-movil.webp): capturas de un fixture local. Turnstile y las peticiones de envío se interceptaron; la operación real sigue deshabilitada.
+- `npm run ci:check` y ambas suites Playwright pasaron. Inicio y Formación coinciden píxel a píxel antes y después a 1440 y 390 px. Se mantuvieron la preselección, el foco, el tracking, el movimiento reducido y los mensajes de estado.

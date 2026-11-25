@@ -13,6 +13,7 @@ import InitiativeCard from '../components/site/InitiativeCard.astro';
 import InitiativeGrid from '../components/site/InitiativeGrid.astro';
 import EditorialMotion from '../components/site/EditorialMotion.astro';
 import OrganizationContactForm from '../components/site/OrganizationContactForm.astro';
+import FormCTA from '../components/site/FormCTA.astro';
 ---
 
 <BaseLayout
@@ -28,8 +29,9 @@ import OrganizationContactForm from '../components/site/OrganizationContactForm.
       title="Conecta tu organización con nuevas oportunidades en IA."
       description="Explora alianzas, proyectos y oportunidades de colaboración en inteligencia artificial a partir de las necesidades de tu organización."
       align="start"
-      position="center 52%"
-      mobilePosition="49% center"
+      position="center 40%"
+      mobilePosition="34% center"
+      imageSizes="(max-width: 40rem) 768px, (max-width: 60rem) 1024px, 100vw"
     >
       <Button href="#EM6" variant="primary" data-cta="hero_contact">
         Conversemos
@@ -123,23 +125,17 @@ import OrganizationContactForm from '../components/site/OrganizationContactForm.
       </InitiativeGrid>
     </Section>
 
-    <Section
+    <FormCTA
       id="EM6"
-      class="contact-section"
-      tabindex="-1"
-      aria-labelledby="contact-title"
+      headingId="contact-title"
+      title="Conversemos sobre tu organización"
+      description="Cuéntanos qué tienes en mente. No necesitas tener un proyecto completamente definido para iniciar una conversación."
+      illustration={empresasImages.patio}
+      illustrationBleed="1.65%"
+      density="compact"
     >
-      <div class="section-intro" data-reveal>
-        <SectionHeading id="contact-title">
-          Conversemos sobre tu organización
-        </SectionHeading>
-        <p>
-          Cuéntanos qué tienes en mente. No necesitas tener un proyecto
-          completamente definido para iniciar una conversación.
-        </p>
-      </div>
       <OrganizationContactForm />
-    </Section>
+    </FormCTA>
   </main>
   <SiteFooter />
   <EditorialMotion />
@@ -181,8 +177,10 @@ import OrganizationContactForm from '../components/site/OrganizationContactForm.
     margin-top: 2rem;
   }
   .trajectory {
-    border-block: 1px solid var(--border);
-    padding-block: clamp(2.25rem, 4.5vw, 4rem);
+    padding-block: clamp(1.5rem, 3vw, 3rem);
+    display: grid;
+    align-items: start;
+    gap: 1rem;
   }
   .trajectory > :global(h2) {
     max-width: 20ch;
@@ -190,27 +188,13 @@ import OrganizationContactForm from '../components/site/OrganizationContactForm.
   .trajectory :global(.text-link) {
     margin-top: 0.5rem;
   }
-  .trajectory,
-  .contact-section {
-    display: grid;
-    align-items: start;
-    gap: 1rem;
-  }
-  .contact-section {
-    padding-top: clamp(0.75rem, 3vw, 2.5rem);
-    gap: 1.5rem;
-  }
   @media (min-width: 48rem) {
-    .trajectory,
-    .contact-section {
+    .trajectory {
       grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
       gap: clamp(2rem, 6vw, 6rem);
     }
     .trajectory .section-intro {
       --editorial-delay: 95ms;
-    }
-    .contact-section .section-intro p {
-      max-width: 40ch;
     }
   }
   @media (min-width: 60rem) {

@@ -9,6 +9,9 @@ export default async function reviewCompanies(page) {
   const enabled = 'http://127.0.0.1:4372';
   const dir = '/tmp/opencode/empresas';
   const errors = [];
+  await page
+    .context()
+    .route('**/favicon.ico', (route) => route.fulfill({ status: 204 }));
   page.on('pageerror', (error) => errors.push(error.message));
   page.on('console', (message) => {
     if (

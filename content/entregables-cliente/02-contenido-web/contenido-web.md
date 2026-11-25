@@ -400,6 +400,8 @@ Cuéntanos qué tienes en mente. No necesitas tener un proyecto completamente de
 
 **Trazabilidad de la revisión E222-EM — no publicable:** EM1 conserva la apertura; EM2 deja de duplicar verticales y recibe los dos caminos antes ubicados en EM6; EM3 conserva el respaldo, remitiendo a I4 en lugar de repetir hitos; EM4 agrupa AI Labs, el antiguo EM5 (AI Academy) e Investigación; EM6 conserva el formulario, sin repetir las dos oportunidades. La navegación global «Ver opciones» lleva a `#EM2`.
 
+**Refinamiento visual E222-EM — no publicable:** EM1 usa la variante seleccionada `empresa-hero-v5.png`; EM2 conserva las ilustraciones v2; EM3 se separa con espacio, sin líneas; EM6 reúne el texto, la ilustración del patio y el mismo formulario en una sola superficie. Véase la [implementación visual](../../../docs/implementation/empresas.md). No cambian el copy, las secciones, los destinos ni las condiciones de envío.
+
 ## Página: Comunidad
 
 **URL propuesta:** `/comunidad/`. **Objetivo:** comprender el propósito comunitario y distinguir formas de acercarse. **Audiencia:** personas interesadas en IA, intercambio y colaboración.

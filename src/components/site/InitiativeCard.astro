@@ -27,6 +27,7 @@ const {
   {id}
   class={`path-card path-${illustration}`}
   data-reveal="card"
+  data-card-interactive
   tabindex={id ? -1 : undefined}
 >
   <div class="path-illustration" aria-hidden="true">
@@ -89,7 +90,7 @@ const {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     min-inline-size: 0;
-    border: 1px solid var(--border);
+    border: 1px solid var(--card-edge);
     border-radius: var(--editorial-radius);
     background: var(--editorial-card);
   }
@@ -105,6 +106,7 @@ const {
   .path-illustration {
     display: grid;
     place-items: center;
+    overflow: hidden;
     block-size: clamp(8rem, 13vw, 11rem);
     border-radius: 0.35rem 0.35rem 0 0;
     border-block-end: 1px solid var(--border);
@@ -144,27 +146,13 @@ const {
   .path-card h3 {
     font-size: 1.25rem;
   }
-  .path-card:focus-within .path-guide {
-    stroke-width: 1.85;
-  }
-  @media (hover: hover) and (pointer: fine) {
-    .path-card:has(:global(.text-link:hover)) .path-guide {
-      stroke-width: 1.85;
-    }
-  }
   @media (prefers-reduced-motion: no-preference) {
+    .path-guide {
+      stroke-width: calc(1.25 + var(--surface-motion, 0) * 0.6);
+    }
     .path-illustration svg {
-      transition: translate 180ms ease-out;
-    }
-    .path-card:focus-within .path-illustration svg {
-      translate: 0 -6px;
+      translate: 0 calc(var(--surface-motion, 0) * -6px);
       transition: translate 240ms var(--editorial-ease-out);
-    }
-    @media (hover: hover) and (pointer: fine) {
-      .path-card:has(:global(.text-link:hover)) .path-illustration svg {
-        translate: 0 -6px;
-        transition: translate 240ms var(--editorial-ease-out);
-      }
     }
   }
   @media (min-width: 52rem) {
