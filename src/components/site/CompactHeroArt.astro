@@ -1,0 +1,240 @@
+---
+import { compactHeroArt, type CompactHeroVariant } from './compact-hero-art';
+
+interface Props {
+  id: string;
+  variant: CompactHeroVariant;
+}
+const { id, variant } = Astro.props;
+const {
+  palette: [ink, mid, paper],
+  land,
+  contours,
+  routes,
+  nodes,
+} = compactHeroArt[variant];
+const grid = `${id}-grid`;
+const dots = `${id}-dots`;
+const step = (index: number) => ({ '--step': index });
+---
+
+<svg
+  viewBox="0 0 640 324"
+  preserveAspectRatio="xMidYMid slice"
+  aria-hidden="true"
+  focusable="false"
+  style={{ '--art-ink': ink, '--art-mid': mid, '--art-paper': paper }}
+>
+  <defs>
+    <pattern id={grid} width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M0 25V0H25" fill="none" stroke="currentColor" stroke-width="1" />
+    </pattern>
+    <pattern id={dots} width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.9" fill="currentColor" />
+    </pattern>
+  </defs>
+
+  <g class="land">
+    {land.map((path, index) => (
+      <path d={path} style={step(index)} />
+    ))}
+  </g>
+
+  <g class="field">
+    <rect
+      class="grid"
+      x="75"
+      y="50"
+      width="500"
+      height="225"
+      fill={`url(#${grid})`}
+    />
+    <rect
+      class="dots"
+      x="453"
+      y="61"
+      width="111"
+      height="64"
+      fill={`url(#${dots})`}
+    />
+    <rect
+      class="dots"
+      x="111"
+      y="198"
+      width="120"
+      height="58"
+      fill={`url(#${dots})`}
+    />
+  </g>
+
+  <g class="contours">
+    {contours.map(({ path, origin: [x, y], scales }, family) =>
+      scales.map((scale, index) => (
+        <path
+          d={path}
+          pathLength="1"
+          transform={`translate(${x} ${y}) scale(${scale}) translate(${-x} ${-y})`}
+          style={step(index + family * 2)}
+          vector-effect="non-scaling-stroke"
+        />
+      )),
+    )}
+  </g>
+
+  <g class="routes">
+    {routes.map((path, index) => (
+      <path
+        d={path}
+        pathLength="1"
+        style={step(index)}
+        vector-effect="non-scaling-stroke"
+      />
+    ))}
+    <path
+      class="registration"
+      d="M75 69V50H94 M556 50H575V69 M75 256V275H94 M556 275H575V256"
+      pathLength="1"
+      vector-effect="non-scaling-stroke"
+    />
+  </g>
+
+  <g class="nodes">
+    {nodes.map(([x, y], index) => (
+      <g style={step(index)}>
+        <circle cx={x} cy={y} r={index % 3 === 1 ? 6 : 3.25} />
+        {index % 3 === 1 && <circle class="pin" cx={x} cy={y} r="2" />}
+      </g>
+    ))}
+  </g>
+</svg>
+
+<style>
+  svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: var(--art-ink);
+  }
+  .land path {
+    fill: var(--art-paper);
+    opacity: 0.82;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  .land path:nth-child(2) {
+    fill: var(--art-mid);
+    opacity: 0.52;
+  }
+  .land path:nth-child(3) {
+    fill: var(--art-mid);
+    opacity: 0.75;
+  }
+  .grid {
+    opacity: 0.21;
+  }
+  .dots {
+    opacity: 0.47;
+  }
+  .contours,
+  .routes {
+    fill: none;
+    stroke: currentColor;
+  }
+  .contours {
+    stroke-width: 0.85;
+    opacity: 0.62;
+  }
+  .routes {
+    stroke-width: 1.1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.82;
+  }
+  .registration {
+    --step: 3;
+    opacity: 0.45;
+  }
+  .nodes circle {
+    fill: var(--editorial-background);
+    stroke: currentColor;
+    stroke-width: 1.2;
+  }
+  .nodes .pin {
+    fill: currentColor;
+    stroke: none;
+  }
+  @media (max-width: 46rem) {
+    .grid {
+      opacity: 0.14;
+    }
+    .dots,
+    .registration,
+    .contours path:nth-child(even),
+    .nodes > g:nth-child(even) {
+      display: none;
+    }
+    svg {
+      /* Keep the drawing large and crop to its central band, rather than
+         shrinking the entire desktop plate into the space below the copy. */
+      min-inline-size: 24rem;
+      mask-image: linear-gradient(transparent, #000 23% 75%, transparent);
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .land path {
+      animation: land-reveal 1.15s var(--editorial-ease-out) both;
+      animation-delay: calc(105ms * var(--step));
+    }
+    .contours path,
+    .routes path {
+      animation: line-draw 1.05s var(--editorial-entrance-ease) both;
+      animation-delay: calc(360ms + 55ms * var(--step));
+    }
+    .routes path {
+      animation-delay: calc(700ms + 95ms * var(--step));
+    }
+    .field rect,
+    .nodes > g {
+      animation: mark-arrive 400ms ease-out both;
+    }
+    .field rect {
+      animation-delay: 1.25s;
+    }
+    .field rect:nth-child(2) {
+      animation-delay: 1.44s;
+    }
+    .field rect:nth-child(3) {
+      animation-delay: 1.56s;
+    }
+    .nodes > g {
+      animation-delay: calc(1.25s + 95ms * var(--step));
+    }
+  }
+  @keyframes land-reveal {
+    from {
+      opacity: 0;
+      clip-path: ellipse(0% 0% at 58% 54%);
+      scale: 0.95;
+    }
+    to {
+      clip-path: ellipse(85% 85% at 58% 54%);
+      scale: 1;
+    }
+  }
+  @keyframes line-draw {
+    from {
+      stroke-dasharray: 1 1;
+      stroke-dashoffset: 1;
+    }
+    to {
+      stroke-dasharray: 1 1;
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes mark-arrive {
+    from {
+      opacity: 0;
+    }
+  }
+</style>

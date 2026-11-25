@@ -1,7 +1,8 @@
 # Contenido Web — Versión Final
 
 **Proyecto:** AI PlayGrounds · sitio multipágina · Latinoamérica · español.
-**Revisión localizada E222-EM:** v2.2 · 23/11/2026 · Empresas autorizada por el responsable; sin autorización de publicación. Las demás páginas conservan su copy aprobado en v2.1.
+**Revisión localizada de heroes de acceso:** 25/11/2026 · H1 y descripciones aprobados para E1, B1, DI1 y C1; metadescripciones sincronizadas y C1 sin acciones. No cambia el estado de publicación. Se aplican los [criterios editoriales para heroes de acceso](../../internal/03-estrategia/estrategia-contenido.md#criterios-editoriales-para-heroes-de-acceso).
+**Revisión localizada E222-EM:** v2.2 · 23/11/2026 · Empresas autorizada por el responsable; sin autorización de publicación. En ese corte, las demás páginas conservaron su copy aprobado en v2.1.
 **Versión / fecha / estado de la base:** v2.1 · 05/11/2026 · **APROBADO EDITORIALMENTE. No completamente publicable.** Aprobación humana mediante «Cierre editorial de E2 v2.1», después de aplicar los dos H1 y la decisión de colecciones sin entradas. No autoriza publicación o desarrollo ni completa los inventarios ausentes.
 **Base histórica:** E1 v2.2 aprobado el 05/11/2026. La decisión posterior del usuario sustituye su arquitectura de ocho páginas: AI Labs es el directorio de productos y el sitio tiene siete páginas principales y dos tipos de ficha.
 
@@ -408,8 +409,8 @@ Cuéntanos qué tienes en mente. No necesitas tener un proyecto completamente de
 **Estado de página:** comunidad abierta, historia documentada y modelo futuro preparado; CTA WhatsApp pendiente de URL exacta. Sin incorporación al equipo interno. **Correspondencia E1:** 5/5 secciones; C7 conserva su slot interno sin reclutamiento público. **UI:** no aportada.
 
 **SEO title:** Comunidad de inteligencia artificial | AI PlayGrounds
-**Meta description:** La comunidad de AI PlayGrounds está abierta. Recorre nuestros encuentros y workshops anteriores y únete al grupo de WhatsApp para conectar alrededor de la IA.
-**H1:** La IA nos reúne. La comunidad está abierta.
+**Meta description:** Conoce la comunidad de AI PlayGrounds, sus encuentros y talleres sobre inteligencia artificial y cómo participar.
+**H1:** Conecta con personas que comparten tu interés por la IA.
 
 ### C1 · Propósito y participación
 
@@ -417,12 +418,9 @@ Cuéntanos qué tienes en mente. No necesitas tener un proyecto completamente de
 
 **Copy propuesto:**
 
-Nos reúne el interés por aprender, investigar, experimentar y construir con inteligencia artificial. Los encuentros y workshops forman parte de esa historia compartida.
+Un espacio abierto para compartir experiencias, aprender de otras personas y participar en encuentros alrededor de la inteligencia artificial.
 
-Puedes sumarte a la comunidad general a través de nuestro grupo de WhatsApp. Es un espacio para conectar con personas interesadas en IA y compartir conocimiento.
-
-**Acción principal de la página:** Unirme a la comunidad → grupo WhatsApp; destino pendiente especificado en C6. Puede aparecer aquí reutilizando la misma acción, sin segundo flujo.
-**Enlace contextual:** Nuestras cuatro verticales de trabajo → Inicio, Cuatro verticales.
+**Acciones del hero:** ninguna. Las acciones de participación se mantienen en sus secciones inferiores; el destino de WhatsApp sigue pendiente según C6.
 
 ### C3 · Actividades y encuentros
 
@@ -560,8 +558,8 @@ Si tu interés está en las ideas que se experimentan y construyen, AI Labs pres
 **Estado de página:** función redactada; iniciativas concretas pendientes. **Correspondencia E1:**5/5 secciones. **UI:** no aportada.
 
 **SEO title:** AI Labs: directorio de productos | AI PlayGrounds
-**Meta description:** Conoce AI Labs, el directorio de productos de AI PlayGrounds, y el contexto de sus iniciativas y productos relacionados con inteligencia artificial.
-**H1:** AI Labs: directorio de productos
+**Meta description:** Conoce AI Labs, donde AI PlayGrounds experimenta con nuevas tecnologías y desarrolla iniciativas y productos con inteligencia artificial.
+**H1:** Transformamos ideas en soluciones con IA.
 
 ### B1 · AI Labs
 
@@ -569,9 +567,7 @@ Si tu interés está en las ideas que se experimentan y construyen, AI Labs pres
 
 **Copy propuesto:**
 
-AI Labs es el directorio de productos de AI PlayGrounds. Da visibilidad a productos e iniciativas relacionados con inteligencia artificial y aporta contexto sobre su procedencia y estado.
-
-El contexto importa: qué necesidad aborda la iniciativa, quiénes la impulsan y en qué etapa se encuentra.
+Explora las iniciativas y productos que estamos desarrollando para experimentar con nuevas tecnologías y responder a problemas reales.
 
 **Nota editorial — no publicable:** no se promete incubación, aceleración, infraestructura física o acceso directo a un proyecto. Un enlace a iniciativas se habilitará solo cuando B3 tenga registros reales; no botón a una lista vacía.
 
@@ -619,8 +615,8 @@ La comunidad de AI PlayGrounds está abierta. Puedes acercarte a su historia de 
 **Estado de página:** función redactada; corpus, filtros y postulación pendientes. **Correspondencia E1:**4/4 secciones. **UI:** no aportada.
 
 **SEO title:** Investigación en IA y trabajos originales | AI PlayGrounds
-**Meta description:** Trabajos originales sobre IA o realizados con su apoyo: criterios de autoría, método, resultados y límites para seguir cada pregunta hasta su fuente.
-**H1:** Investigaciones y trabajos relacionados con IA
+**Meta description:** Conoce la investigación de AI PlayGrounds y su colección de trabajos originales sobre inteligencia artificial o realizados con su apoyo.
+**H1:** Exploramos nuevas preguntas con inteligencia artificial.
 
 ### DI1 · Universo y tipos
 
@@ -628,9 +624,7 @@ La comunidad de AI PlayGrounds está abierta. Puedes acercarte a su historia de 
 
 **Copy propuesto:**
 
-Esta colección está dedicada a trabajos originales sobre inteligencia artificial o realizados con su apoyo. Su punto de partida es la pregunta: qué intenta responder el trabajo, cómo la aborda y qué sostiene su fuente.
-
-Autoría, tipo, fecha, método y límites ayudan a leer cada aporte en su contexto. La relación con AI PlayGrounds se indica por separado, tanto en trabajos propios o vinculados como en externos. La revisión por pares solo se señala cuando está documentada.
+Desarrollamos y compartimos trabajos de investigación para comprender la IA, explorar sus aplicaciones y generar conocimiento.
 
 **Nota editorial — no publicable:** tipos y entradas concretas pendientes de corpus. No dar por propio todo el trabajo ni añadir una guía de citación de IA o de evaluación de artículos.
 
@@ -680,8 +674,8 @@ AI Foundations, AI for Science, AI for Software y AI for Finance abren preguntas
 **Estado de página:** estructura y nombres confirmados; presentación personal provisional por permisos/materiales. **Correspondencia E1:**4/4 secciones. **UI:** no aportada; no perfiles individuales nuevos.
 
 **SEO title:** Equipo y organización | AI PlayGrounds
-**Meta description:** Las 15 personas de AI PlayGrounds: Leadership Team, cuatro verticales y funciones transversales. Nombres y responsabilidades dentro de la organización.
-**H1:** Las personas que impulsan AI PlayGrounds
+**Meta description:** Conoce al equipo de AI PlayGrounds y a las personas que aprenden, investigan, experimentan y construyen con inteligencia artificial.
+**H1:** Las personas que impulsan AI PlayGrounds.
 
 ### E1 · Quiénes sostienen AI PlayGrounds
 
@@ -689,7 +683,7 @@ AI Foundations, AI for Science, AI for Software y AI for Finance abren preguntas
 
 **Copy propuesto:**
 
-AI PlayGrounds reúne a 15 personas en su equipo. Sus responsabilidades se articulan entre el Leadership Team, las cuatro verticales y las funciones transversales.
+Somos un equipo que reúne distintas experiencias y conocimientos para aprender, investigar, experimentar y construir con inteligencia artificial.
 
 ### E3 · Personas y aportes
 

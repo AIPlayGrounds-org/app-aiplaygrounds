@@ -1,63 +1,108 @@
 ---
+import CompactHeroArt from './CompactHeroArt.astro';
+import { type CompactHeroVariant } from './compact-hero-art';
+
 interface Props {
   id: string;
   title: string;
-  variant?: 'directory' | 'page';
+  description: string;
+  variant: CompactHeroVariant;
 }
-const { id, title, variant = 'page' } = Astro.props;
+const { id, title, description, variant } = Astro.props;
 ---
 
-{variant === 'directory' ? (
-  <header {id} class="directory-intro">
-    <h1>{title}</h1>
-    <slot />
-  </header>
-) : (
-  <section {id} class="page-hero">
-    <div class="site-container">
+<section {id} class="compact-hero" data-variant={variant}>
+  <div class="site-container hero-layout">
+    <div class="hero-copy">
       <h1>{title}</h1>
-      <div class="lead">
-        <slot />
-      </div>
-      <slot name="actions" />
+      <p>{description}</p>
     </div>
-  </section>
-)}
+    <div class="hero-art" aria-hidden="true">
+      <CompactHeroArt {id} {variant} />
+    </div>
+  </div>
+</section>
 
 <style>
-  .page-hero {
-    padding: clamp(7rem, 9vw, 9rem) 0 clamp(2.5rem, 4vw, 4rem);
+  /* The sticky header's negative margin is intentional for immersive pages.
+     Reserve its height only in layouts that use this opening. */
+  :global(main#contenido):has(> .compact-hero) {
+    padding-block-start: var(--site-header-height);
   }
-  .page-hero h1 {
-    max-width: 21ch;
-    font-size: clamp(2.35rem, 1.75rem + 2.6vw, 4.25rem);
+  .compact-hero {
+    background: var(--editorial-background);
+    border-block-end: 1px solid
+      color-mix(in srgb, var(--border) 55%, var(--editorial-background));
   }
-  .lead {
-    max-width: 58ch;
-    margin-top: 1.25rem;
-    font-size: clamp(1.15rem, 1rem + 0.45vw, 1.45rem);
+  .hero-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.13fr) minmax(0, 1fr);
+    align-items: center;
+    min-block-size: clamp(17.5rem, 24vw, 21.25rem);
+    position: relative;
+  }
+  .hero-copy {
+    padding-block: 2rem;
+  }
+  h1 {
+    max-inline-size: 24ch;
+    font-size: clamp(2.125rem, 1.2rem + 2.35vw, 3.5rem);
+    overflow-wrap: break-word;
+  }
+  p {
+    max-inline-size: 49ch;
+    margin-block-start: 1rem;
     color: var(--secondary-text);
+    font-size: clamp(1.0625rem, 0.96rem + 0.33vw, 1.25rem);
   }
-  .lead > :global(p + p) {
-    margin-top: 1rem;
+  .hero-art {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 53% 0;
+    pointer-events: none;
+    overflow: clip;
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 13%,
+      #000 93%,
+      transparent
+    );
   }
-  .directory-intro {
-    margin-block-end: clamp(1.75rem, 4vw, 3rem);
-  }
-  .directory-intro h1 {
-    font-size: clamp(2.45rem, 1.75rem + 2.6vw, 4.25rem);
-    max-inline-size: 27ch;
-    text-wrap: pretty;
-  }
-  .directory-intro > :global(p) {
-    max-inline-size: 60ch;
-    margin-block-start: 0.65rem;
-    color: var(--secondary-text);
-    font-size: clamp(1.1rem, 1rem + 0.4vw, 1.35rem);
-  }
-  @media (max-width: 48rem) {
-    .page-hero {
-      padding-top: 6.5rem;
+  @media (max-width: 46rem) {
+    .hero-layout {
+      grid-template-columns: minmax(0, 1fr);
+      min-block-size: auto;
+    }
+    .hero-copy {
+      padding-block: clamp(1.5rem, 5vw, 2.25rem) 0.45rem;
+    }
+    .hero-art {
+      position: relative;
+      inset: auto;
+      block-size: clamp(5.75rem, 20vw, 8rem);
+      mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 32%,
+        #000 93%,
+        transparent
+      );
     }
   }
 </style>
+
+<script>
+  // A normal visit creates new CSS animations. A back/forward cache restore
+  // keeps the same document, including already finished animations.
+  window.addEventListener('pageshow', ({ persisted }) => {
+    if (!persisted) return;
+
+    for (const art of document.querySelectorAll('.compact-hero .hero-art')) {
+      for (const animation of art.getAnimations({ subtree: true })) {
+        animation.currentTime = 0;
+        animation.play();
+      }
+    }
+  });
+</script>

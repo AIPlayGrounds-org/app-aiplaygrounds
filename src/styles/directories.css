@@ -1,23 +1,6 @@
 .directory {
-  padding-block: clamp(5.75rem, 8vw, 7.75rem) clamp(3rem, 7vw, 6rem);
+  padding-block: clamp(2rem, 4vw, 4rem) clamp(3rem, 7vw, 6rem);
   overflow-wrap: anywhere;
-}
-
-.directory-intro {
-  margin-block-end: clamp(1.75rem, 4vw, 3rem);
-}
-
-.directory-intro h1 {
-  font-size: clamp(2.45rem, 1.75rem + 2.6vw, 4.25rem);
-  max-inline-size: 27ch;
-  text-wrap: pretty;
-}
-
-.directory-intro > p {
-  max-inline-size: 60ch;
-  margin-block-start: 0.65rem;
-  color: var(--secondary-text);
-  font-size: clamp(1.1rem, 1rem + 0.4vw, 1.35rem);
 }
 
 .directory-section-title {

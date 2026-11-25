@@ -10,16 +10,15 @@ const entries = await getProducts();
 
 <InteriorLayout
   title="AI Labs: directorio de productos | AI PlayGrounds"
-  description="Explora productos e iniciativas de inteligencia artificial por su utilidad, público y estado."
+  description="Conoce AI Labs, donde AI PlayGrounds experimenta con nuevas tecnologías y desarrolla iniciativas y productos con inteligencia artificial."
 >
+  <CompactHero
+    id="B1"
+    variant="construction"
+    title="Transformamos ideas en soluciones con IA."
+    description="Explora las iniciativas y productos que estamos desarrollando para experimentar con nuevas tecnologías y responder a problemas reales."
+  />
   <div class="site-container directory">
-    <CompactHero id="B1" title="AI Labs" variant="directory">
-      <p>
-        Productos e iniciativas de inteligencia artificial: para qué sirven, a
-        quién se dirigen y en qué etapa están.
-      </p>
-    </CompactHero>
-
     <section id="B3">
       <h2 class="directory-section-title">Directorio de productos</h2>
       {entries.length === 0 ? (

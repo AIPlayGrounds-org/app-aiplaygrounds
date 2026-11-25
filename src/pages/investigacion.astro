@@ -10,16 +10,15 @@ const entries = await getResearch();
 
 <InteriorLayout
   title="Investigación en IA y trabajos originales | AI PlayGrounds"
-  description="Trabajos originales sobre inteligencia artificial o realizados con su apoyo: qué preguntas plantean, cómo las abordan y qué límites tienen."
+  description="Conoce la investigación de AI PlayGrounds y su colección de trabajos originales sobre inteligencia artificial o realizados con su apoyo."
 >
+  <CompactHero
+    id="DI1"
+    variant="exploration"
+    title="Exploramos nuevas preguntas con inteligencia artificial."
+    description="Desarrollamos y compartimos trabajos de investigación para comprender la IA, explorar sus aplicaciones y generar conocimiento."
+  />
   <div class="site-container directory">
-    <CompactHero id="DI1" title="Investigación" variant="directory">
-      <p>
-        Trabajos originales sobre IA o realizados con su apoyo. Cada ficha reúne
-        la pregunta, el enfoque y los límites del trabajo.
-      </p>
-    </CompactHero>
-
     <section id="DI2">
       <h2 class="directory-section-title">Directorio de investigaciones</h2>
       {entries.length === 0 ? (

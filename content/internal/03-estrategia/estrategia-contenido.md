@@ -504,6 +504,19 @@ Muestras de aplicación, **no copy definitivo de E2**:
 | Investigación | «Explora la pregunta, el enfoque y los límites del trabajo antes de ir al original». No avala hallazgos |
 | Estado de acción | «Enviar una solicitud no confirma tu incorporación». Usar solo si existe proceso de solicitud |
 
+### Criterios editoriales para heroes de acceso
+
+Aplican a Equipo (E1), AI Labs (B1), Investigación (DI1) y Comunidad (C1).
+
+- El H1 comunica el propósito o la propuesta de valor de la página.
+- La descripción complementa el título en un único párrafo breve.
+- Usar un lenguaje cercano, claro y participativo.
+- Evitar cifras variables, estructuras organizacionales y detalles operativos innecesarios.
+- No describir cómo se organiza la página ni qué campos contienen sus fichas.
+- Evitar frases filosóficas, metafóricas o poéticas que no aporten claridad.
+- Los heroes de acceso no contienen botones ni llamadas a la acción.
+- Los copys aprobados se implementan literalmente, sin reformularlos durante el diseño visual.
+
 ## 10. Dependencias y pendientes
 
 | ID / pendiente | Fuente/responsable requerido | Impacto / bloqueo | Momento y estado |
