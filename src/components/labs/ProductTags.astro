@@ -7,6 +7,7 @@ import {
   UsersRound,
 } from '@lucide/astro';
 import type { Product } from '../../data/labs';
+import { compactHeroArt } from '../site/compact-hero-art';
 
 interface Props {
   product: Product;
@@ -26,6 +27,12 @@ const scopeIcons = {
   Team: UsersRound,
   Organization: Building,
   Enterprise: BuildingComplex,
+};
+const scopeColors = {
+  Individual: compactHeroArt.convergence.palette[2],
+  Team: compactHeroArt.construction.palette[2],
+  Organization: compactHeroArt.exploration.palette[2],
+  Enterprise: compactHeroArt.connection.palette[2],
 };
 ---
 
@@ -54,7 +61,11 @@ const scopeIcons = {
     {product.scopes.map((scope) => {
       const Icon = scopeIcons[scope];
       return (
-        <li class="scope" lang="en">
+        <li
+          class="scope"
+          lang="en"
+          style={{ '--scope-background': scopeColors[scope] }}
+        >
           <Icon size={14} aria-hidden="true" />
           {scope}
         </li>
@@ -87,10 +98,10 @@ const scopeIcons = {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    border-radius: 2rem;
-    padding: 0.19rem 0.58rem;
+    border-radius: 0.25rem;
+    padding: 0.2rem 0.5rem;
     font-size: 0.8125rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.25;
   }
   svg {
@@ -133,8 +144,9 @@ const scopeIcons = {
     color: var(--editorial-sand-ink);
   }
   .scope {
-    background: var(--surface);
-    color: var(--foreground);
+    padding-block: 0.3rem;
+    background: var(--scope-background);
+    color: var(--web-light-text);
   }
   @media (min-width: 45rem) {
     :global([data-view='list']) .overlay :is(.vertical, .maturity) {

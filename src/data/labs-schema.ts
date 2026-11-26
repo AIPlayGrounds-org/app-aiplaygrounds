@@ -49,28 +49,38 @@ const image = z.object({
   width: z.number().int().positive(),
   height: z.number().int().positive(),
 });
+const scope = z.enum(scopes);
+const scopeDescriptions = z.partialRecord(scope, text);
+const productScopes = z.union([
+  z
+    .array(scope)
+    .min(1)
+    .refine((values) => new Set(values).size === values.length),
+  z
+    .partialRecord(scope, text.nullable())
+    .refine((values) => Object.keys(values).length > 0, {
+      message: 'Declara al menos un alcance.',
+    }),
+]);
 
 export const productSchema = z
   .object({
-    id: slug,
+    id: slug.optional(),
     slug,
     name: text,
     summary: text,
-    description: text,
+    description: text.optional(),
     cover: image.optional(),
     media: z.array(image.extend({ alt: text })).default([]),
     category: text,
-    application: text,
+    application: text.optional(),
     type: text,
     keywords: z.array(text).default([]),
     technologies: z.array(text).default([]),
     verticals: z.array(z.enum(verticals)).default([]),
     maturity: z.enum(maturities),
     development: z.enum(developmentStates),
-    scopes: z
-      .array(z.enum(scopes))
-      .min(1)
-      .refine((values) => new Set(values).size === values.length),
+    scopes: productScopes,
     evidence: text.optional(),
     authors: z.array(z.object({ name: text, avatar: image.optional() })).min(1),
     team: text.optional(),
@@ -89,7 +99,7 @@ export const productSchema = z
       )
       .default([]),
     audience: text.optional(),
-    audienceByScope: z.partialRecord(z.enum(scopes), text).default({}),
+    audienceByScope: scopeDescriptions.optional(),
     aiRelationship: z.enum(aiRelationships),
     technicalDetails: text.optional(),
     limitations: text.optional(),
@@ -119,13 +129,41 @@ export const productSchema = z
         message: 'Indica la vertical responsable.',
       });
     }
-    for (const scope of Object.keys(product.audienceByScope)) {
-      if (!product.scopes.some((value) => value === scope)) {
+    if (Array.isArray(product.scopes)) {
+      const declaredScopes = product.scopes;
+      for (const scope of Object.keys(product.audienceByScope ?? {})) {
+        if (declaredScopes.some((value) => value === scope)) continue;
         context.addIssue({
           code: 'custom',
           path: ['audienceByScope', scope],
           message: 'El alcance debe estar declarado en scopes.',
         });
       }
+    } else if (product.audienceByScope) {
+      context.addIssue({
+        code: 'custom',
+        path: ['audienceByScope'],
+        message: 'Incluye las descripciones en scopes.',
+      });
     }
+  })
+  .transform(({ scopes, audienceByScope, ...product }) => {
+    // Keep tags, filters and detail pages on the same shape for both formats.
+    const declaredScopes = Array.isArray(scopes)
+      ? scopes
+      : (Object.keys(scopes) as z.infer<typeof scope>[]);
+    const descriptions = audienceByScope ?? {};
+    if (!Array.isArray(scopes)) {
+      for (const scope of declaredScopes) {
+        const description = scopes[scope];
+        if (description != null) descriptions[scope] = description;
+      }
+    }
+    return {
+      ...product,
+      id: product.id ?? product.slug,
+      description: product.description ?? product.summary,
+      scopes: declaredScopes,
+      audienceByScope: descriptions,
+    };
   });

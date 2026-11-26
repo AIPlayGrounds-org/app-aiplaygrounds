@@ -24,7 +24,7 @@ const { product, eager } = Astro.props;
     <p class="card-summary">{product.summary}</p>
     <footer>
       <p>
-        Por <strong>{productAuthors(product)}</strong>
+        Por {productAuthors(product)}
         {product.demo && <small class="card-demo">Demostración</small>}
       </p>
       <a
@@ -59,12 +59,15 @@ const { product, eager } = Astro.props;
     flex-direction: column;
     align-items: start;
     min-inline-size: 0;
-    gap: 0.38rem;
-    padding: 0.7rem clamp(0.75rem, 1.4vw, 1.125rem) 0;
+    gap: 0.55rem;
+    padding: 1.15rem 1.15rem 1rem;
   }
   h3 {
-    font-size: clamp(1.35rem, 1.04rem + 0.9vw, 1.8rem);
+    font-size: 1.3rem;
     text-wrap: pretty;
+  }
+  .card-body > :global(.product-tags) {
+    margin-block: 0.1rem;
   }
   .card-category,
   .card-demo,
@@ -81,11 +84,13 @@ const { product, eager } = Astro.props;
   }
   .card-summary {
     display: -webkit-box;
-    overflow: hidden;
+    overflow: clip;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
     font-size: 0.96rem;
-    margin-block: 0.12rem 0.4rem;
+    line-height: 1.5;
+    margin-block: 0.15rem 0.65rem;
   }
   footer {
     display: flex;
@@ -94,19 +99,16 @@ const { product, eager } = Astro.props;
     gap: 0.5rem;
     inline-size: 100%;
     margin-block-start: auto;
-    border-block-start: 1px solid var(--border);
     font-size: 0.875rem;
-  }
-  strong {
-    color: var(--foreground);
+    align-items: end;
   }
   footer a {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
     min-block-size: 44px;
-    font-weight: 600;
-    color: var(--success);
+    font-weight: 500;
+    color: var(--foreground);
     white-space: nowrap;
   }
   @media (min-width: 45rem) {

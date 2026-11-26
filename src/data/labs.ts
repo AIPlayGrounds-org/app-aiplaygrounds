@@ -43,7 +43,8 @@ export async function getProducts(): Promise<Product[]> {
   return records.map((product) => ({
     ...product,
     category: canonical('category', product.category),
-    application: canonical('application', product.application),
+    application:
+      product.application && canonical('application', product.application),
     type: canonical('type', product.type),
     technologies: [
       ...new Set(

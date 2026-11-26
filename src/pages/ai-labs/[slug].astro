@@ -19,7 +19,6 @@ import {
 import { getProducts, productAuthors, type Product } from '../../data/labs';
 import ProductCard from '../../components/labs/ProductCard.astro';
 import ProductCover from '../../components/labs/ProductCover.astro';
-import ProductTags from '../../components/labs/ProductTags.astro';
 import DirectoryLink from '../../components/site/DirectoryLink.astro';
 import EditorialMotion from '../../components/site/EditorialMotion.astro';
 import Button from '../../components/starwind/button/Button.astro';
@@ -69,7 +68,6 @@ const metadata = [
   ['Estado de desarrollo', product.development, 'en'],
   ['Alcance de uso', product.scopes.join(', '), 'en'],
   ['Relación con IA', product.aiRelationship],
-  ['Modalidad de acceso', product.access],
   ['Licencia', product.license],
   ['Precio', product.price],
 ];
@@ -99,46 +97,18 @@ const accessText = {
       <DirectoryLink href="/ai-labs/#B3" title="AI Labs" back />
     </div>
     <ProductCover {product} detail />
-    <header class="product-intro">
-      <ProductTags {product} kind="cover" />
-      <p class="product-category">{product.category}</p>
-      <h1>{product.name}</h1>
-      <ProductTags {product} kind="scopes" />
-      <p class="product-summary">{product.summary}</p>
-      <div class="product-byline">
-        <p>
-          Por <strong>{productAuthors(product)}</strong>
-          {product.demo && <small>Demostración</small>}
-        </p>
-        <button type="button" data-share hidden>
-          <Share2 size={18} aria-hidden="true" />
-          Compartir
-        </button>
-      </div>
-      <div class="share-result">
-        <p role="status" data-share-status></p>
-        <input
-          aria-label="Enlace a la ficha"
-          type="url"
-          readonly
-          data-share-url
-          hidden
-        />
-      </div>
-      {product.url ? (
-        <Button href={product.url} variant="primary">
-          Acceder al producto <ArrowUpRight size={18} aria-hidden="true" />
-        </Button>
-      ) : (
-        <p class="access-note">
-          <Info size={17} aria-hidden="true" />
-          {product.accessNote ?? accessText[product.access]}
-        </p>
-      )}
-    </header>
-
     <div class="product-layout">
       <div class="product-content">
+        <header class="product-intro">
+          <h1>{product.name}</h1>
+          <p class="product-summary">{product.summary}</p>
+          <div class="product-byline">
+            <p>
+              Por {productAuthors(product)}
+              {product.demo && <small>Demostración</small>}
+            </p>
+          </div>
+        </header>
         <section>
           <h2>Sobre el producto</h2>
           <p class="product-prose">{product.description}</p>
@@ -190,28 +160,25 @@ const accessText = {
             </ul>
           </section>
         )}
-        {(product.audience ||
-          Object.keys(product.audienceByScope).length > 0) && (
+        {(product.audience || product.scopes.length > 0) && (
           <section>
             <h2>¿A quién está dirigido?</h2>
             {product.audience && (
               <p class="product-prose">{product.audience}</p>
             )}
-            {Object.keys(product.audienceByScope).length > 0 && (
+            {product.scopes.length > 0 && (
               <ul class="audience-list" role="list">
                 {product.scopes.map((scope) => {
                   const Icon = scopeIcons[scope];
                   const description = product.audienceByScope[scope];
                   return (
-                    description && (
-                      <li>
-                        <h3 lang="en">
-                          <Icon size={18} aria-hidden="true" />
-                          {scope}
-                        </h3>
-                        <p>{description}</p>
-                      </li>
-                    )
+                    <li>
+                      <h3 lang="en">
+                        <Icon size={18} aria-hidden="true" />
+                        {scope}
+                      </h3>
+                      {description && <p>{description}</p>}
+                    </li>
                   );
                 })}
               </ul>
@@ -262,6 +229,32 @@ const accessText = {
       </div>
 
       <aside class="product-sidebar" aria-label="Metadatos y autoría">
+        <section class="detail-panel access-panel">
+          <h2>Modalidad de acceso</h2>
+          <p class="access-mode">{product.access}</p>
+          {product.url ? (
+            <Button href={product.url} variant="primary">
+              Acceder al producto <ArrowUpRight size={18} aria-hidden="true" />
+            </Button>
+          ) : (
+            <p class="access-note">
+              {product.accessNote ?? accessText[product.access]}
+            </p>
+          )}
+          <button type="button" class="share-button" data-share hidden>
+            <Share2 size={18} aria-hidden="true" /> Compartir
+          </button>
+          <div class="share-result">
+            <p role="status" data-share-status></p>
+            <input
+              aria-label="Enlace a la ficha"
+              type="url"
+              readonly
+              data-share-url
+              hidden
+            />
+          </div>
+        </section>
         <section class="detail-panel">
           <h2>
             <Info size={21} aria-hidden="true" />

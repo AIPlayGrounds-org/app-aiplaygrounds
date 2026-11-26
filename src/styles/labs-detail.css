@@ -6,7 +6,7 @@ main#contenido:has(> .labs-detail) {
   overflow-wrap: anywhere;
 }
 .product-back {
-  color: var(--success);
+  color: var(--editorial-lilac-ink);
 }
 .product-back .directory-back {
   margin-block-end: 0.5rem;
@@ -14,21 +14,17 @@ main#contenido:has(> .labs-detail) {
 .product-intro {
   display: grid;
   justify-items: start;
-  gap: 0.6rem;
-  padding-block: 1rem 1.3rem;
+  gap: 0.7rem;
+  padding-block: 0 1.75rem;
   border-block-end: 1px solid var(--border);
 }
 .product-intro h1 {
-  font-size: clamp(2.35rem, 1.85rem + 2.8vw, 4rem);
+  font-size: clamp(2.125rem, 1.7rem + 1.8vw, 3rem);
   text-wrap: pretty;
 }
-.product-category,
 .product-summary,
 .access-note {
   color: var(--secondary-text);
-}
-.product-category {
-  font-size: 0.94rem;
 }
 .product-summary {
   max-inline-size: 68ch;
@@ -40,7 +36,8 @@ main#contenido:has(> .labs-detail) {
   align-items: center;
   gap: 0.15rem 1rem;
   inline-size: 100%;
-  min-block-size: 44px;
+  margin-block-start: 0.15rem;
+  color: var(--secondary-text);
   font-size: 0.98rem;
 }
 .product-byline small {
@@ -50,12 +47,12 @@ main#contenido:has(> .labs-detail) {
   border-radius: var(--editorial-radius);
   color: var(--secondary-text);
 }
-.product-byline button:not([hidden]) {
+.share-button:not([hidden]) {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   min-block-size: 44px;
-  color: var(--success);
+  color: var(--foreground);
   cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 0.2em;
@@ -70,34 +67,49 @@ main#contenido:has(> .labs-detail) {
   padding-inline: 0.5rem;
 }
 .access-note {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
+  line-height: 1.5;
   font-size: 0.95rem;
 }
-.access-note svg {
-  flex: none;
-  color: var(--success);
+.access-panel {
+  display: grid;
+  justify-items: start;
+  gap: 0.55rem;
+}
+.access-panel h2 {
+  padding-block-end: 0;
+}
+.access-mode {
+  font-size: 0.95rem;
+  color: var(--secondary-text);
+}
+.access-panel :is([data-slot='button'], .share-button) {
+  margin-block-start: 0.25rem;
 }
 .product-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 1.5rem clamp(1.5rem, 4vw, 3.5rem);
   align-items: start;
-  margin-block-start: 1.35rem;
+  margin-block-start: clamp(1.5rem, 3vw, 2.25rem);
 }
-.product-content,
+.product-content {
+  display: grid;
+  gap: clamp(1.75rem, 3vw, 2.5rem);
+}
 .product-sidebar {
   display: grid;
-  gap: 1.4rem;
+  gap: 1rem;
 }
 .product-content section {
   display: grid;
-  gap: 0.45rem;
+  gap: 0.65rem;
+}
+.product-content section > h2 + * {
+  margin-block-start: 0.35rem;
 }
 .product-content h2,
 .related-products h2 {
-  font-size: clamp(1.25rem, 1.02rem + 0.8vw, 1.75rem);
+  font-size: clamp(1.25rem, 1.1rem + 0.45vw, 1.5rem);
   text-wrap: pretty;
 }
 .product-content h3 {
@@ -109,6 +121,7 @@ main#contenido:has(> .labs-detail) {
 .product-content p {
   color: var(--secondary-text);
   max-inline-size: 72ch;
+  line-height: 1.6;
 }
 .product-prose {
   white-space: pre-line;
@@ -119,7 +132,10 @@ main#contenido:has(> .labs-detail) {
   gap: 0.7rem;
 }
 .capabilities li + li {
-  margin-block-start: 0.45rem;
+  margin-block-start: 1rem;
+}
+.capabilities .icon-row {
+  gap: 1rem;
 }
 .detail-icon {
   display: grid;
@@ -127,8 +143,9 @@ main#contenido:has(> .labs-detail) {
   block-size: 2.6rem;
   place-items: center;
   border-radius: var(--editorial-radius);
-  color: var(--success);
-  background: var(--editorial-grove);
+  color: var(--editorial-lilac-ink);
+  background: var(--home-card);
+  border: 1px solid var(--border);
 }
 .audience-list,
 .product-media {
@@ -137,21 +154,22 @@ main#contenido:has(> .labs-detail) {
   gap: 0.6rem;
 }
 .audience-list li {
-  padding: 0.65rem;
+  padding: 1rem 0.75rem;
   border-radius: var(--editorial-radius);
-  background: color-mix(in oklab, var(--editorial-grove) 55%, var(--home-card));
+  background: var(--home-card);
+  border: 1px solid var(--border);
 }
 .audience-list h3 {
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  margin-block-end: 0.2rem;
+  margin-block-end: 0.5rem;
 }
 .audience-list svg,
 .detail-panel svg,
 .related-products h2 svg {
   flex: none;
-  color: var(--success);
+  color: var(--editorial-lilac-ink);
 }
 .technology-list {
   display: flex;
@@ -170,7 +188,7 @@ main#contenido:has(> .labs-detail) {
   border-radius: var(--editorial-radius);
 }
 .detail-panel {
-  padding: 0.8rem 0.95rem;
+  padding: 1.5rem 1.25rem;
   border: 1px solid var(--border);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
@@ -180,8 +198,8 @@ main#contenido:has(> .labs-detail) {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding-block-end: 0.5rem;
-  font-size: 1.13rem;
+  padding-block-end: 1rem;
+  font-size: 1.0625rem;
   text-wrap: pretty;
 }
 .detail-panel dl > div {
@@ -189,19 +207,22 @@ main#contenido:has(> .labs-detail) {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
   gap: 0.5rem;
   border-block-start: 1px solid var(--border);
-  padding-block: 0.4rem;
+  padding-block: 0.75rem;
 }
 .detail-panel dt,
 .author-context {
   color: var(--secondary-text);
 }
 .detail-panel dd {
-  font-weight: 600;
+  font-weight: 400;
+}
+.author-list strong {
+  font-weight: 500;
 }
 .author-list {
   display: grid;
   gap: 0.5rem;
-  margin-block: 0.15rem 0.55rem;
+  margin-block: 0.25rem 0.75rem;
 }
 .author-list img {
   inline-size: 2.5rem;
@@ -210,18 +231,18 @@ main#contenido:has(> .labs-detail) {
   border-radius: var(--editorial-radius);
 }
 .author-context {
-  margin-block-start: 0.5rem;
+  margin-block-start: 0.75rem;
 }
 .related-products {
   border-block-start: 1px solid var(--border);
   margin-block-start: 1.75rem;
-  padding-block-start: 1rem;
+  padding-block-start: clamp(1.75rem, 3vw, 2.5rem);
 }
 .related-products h2 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-block-end: 0.75rem;
+  margin-block-end: 1.25rem;
 }
 .related-products > ul {
   display: grid;
@@ -229,7 +250,7 @@ main#contenido:has(> .labs-detail) {
 }
 @media (min-width: 52rem) {
   .product-layout {
-    grid-template-columns: minmax(0, 7fr) minmax(17rem, 3fr);
+    grid-template-columns: minmax(0, 2fr) minmax(17rem, 1fr);
   }
 }
 @media (min-width: 71rem) {

@@ -5,26 +5,54 @@ import type { buildFacets } from '../../data/labs-directory';
 interface Props {
   group: ReturnType<typeof buildFacets>[number];
   dropdown?: boolean;
+  advanced?: boolean;
 }
-const { group, dropdown } = Astro.props;
+const { group, dropdown, advanced = false } = Astro.props;
 ---
 
-<details class="facet" data-dropdown={dropdown || undefined}>
-  <summary class:list={[{ control: dropdown }]}>
-    {group.label}
-    <ChevronDown size={16} aria-hidden="true" />
-  </summary>
-  <fieldset class="facet-options">
-    <legend class="sr-only">{group.label}</legend>
-    {group.options.map(([value, label]) => (
-      <label>
-        <input type="checkbox" name={group.key} {value} data-facet />
-        <span data-option-label>{label}</span>
-        <span class="option-count" data-option-count>
-          <span aria-hidden="true">0</span>
-          <span class="sr-only">0 productos</span>
+<div
+  class:list={['facet-wrap', { 'advanced-facet': advanced }]}
+  data-facet-wrap
+>
+  {advanced && (
+    <span class="facet-label" id={`label-${group.key}`}>
+      {group.label}
+    </span>
+  )}
+  <details class="facet" data-dropdown={dropdown || advanced || undefined}>
+    <summary
+      class:list={[{ control: dropdown || advanced }]}
+      aria-labelledby={
+        advanced ? `label-${group.key} value-${group.key}` : undefined
+      }
+    >
+      {advanced ? (
+        <span id={`value-${group.key}`} data-facet-summary>
+          Todas
         </span>
-      </label>
-    ))}
-  </fieldset>
-</details>
+      ) : (
+        group.label
+      )}
+      <ChevronDown size={16} aria-hidden="true" />
+    </summary>
+    <fieldset class="facet-options">
+      <legend class="sr-only">{group.label}</legend>
+      {group.options.map(([value, label]) => (
+        <label>
+          <input
+            type="checkbox"
+            name={group.key}
+            {value}
+            data-facet
+            data-advanced={advanced || undefined}
+          />
+          <span data-option-label>{label}</span>
+          <span class="option-count" data-option-count>
+            <span aria-hidden="true">0</span>
+            <span class="sr-only">0 productos</span>
+          </span>
+        </label>
+      ))}
+    </fieldset>
+  </details>
+</div>

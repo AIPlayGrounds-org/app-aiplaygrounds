@@ -56,7 +56,7 @@ const demoMarkers = [
     method,
     limitations,
   ]),
-];
+].filter((marker) => typeof marker === 'string' && marker.length > 0);
 
 export function inspect(root, kind = root === 'dist' ? 'site' : 'bundle') {
   if (!existsSync(root)) throw new Error(`Falta artefacto: ${root}`);

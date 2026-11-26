@@ -13,7 +13,11 @@
     "verticals": ["AI for Software"],
     "maturity": "Beta",
     "development": "In Development",
-    "scopes": ["Individual", "Team", "Organization"],
+    "scopes": {
+      "Individual": "Personas que desarrollan y revisan código en proyectos propios.",
+      "Team": "Equipos que colaboran en repositorios de software.",
+      "Organization": "Organizaciones con equipos internos de desarrollo."
+    },
     "authors": [{ "name": "AI PlayGrounds" }],
     "organizationRelation": "Ejemplo de un producto desarrollado dentro de la vertical AI for Software.",
     "origin": "Vertical",
@@ -35,11 +39,6 @@
         "icon": "message"
       }
     ],
-    "audienceByScope": {
-      "Individual": "Personas que desarrollan y revisan código en proyectos propios.",
-      "Team": "Equipos que colaboran en repositorios de software.",
-      "Organization": "Organizaciones con equipos internos de desarrollo."
-    },
     "aiRelationship": "IA integrada",
     "technicalDetails": "Usa modelos de lenguaje y recuperación de contexto (RAG) para interpretar código y generar sugerencias de revisión.",
     "limitations": "Las sugerencias requieren revisión humana y no reemplazan los controles de calidad del equipo.",
@@ -64,7 +63,11 @@
     "verticals": ["AI Foundations"],
     "maturity": "Prototype",
     "development": "In Development",
-    "scopes": ["Team", "Organization"],
+    "scopes": {
+      "Team": "Equipos que mantienen documentación.",
+      "Organization": "Organizaciones que necesitan consultar colecciones internas.",
+      "Enterprise": "Empresas que necesitan consultar documentación y conocimiento interno."
+    },
     "authors": [{ "name": "AI PlayGrounds" }],
     "origin": "Vertical",
     "problem": "La búsqueda literal puede pasar por alto documentos cuando los términos de la consulta no coinciden exactamente.",
@@ -75,10 +78,6 @@
         "icon": "search"
       }
     ],
-    "audienceByScope": {
-      "Team": "Equipos que mantienen documentación.",
-      "Organization": "Organizaciones que necesitan consultar colecciones internas."
-    },
     "aiRelationship": "IA integrada",
     "technicalDetails": "Compara representaciones vectoriales de la consulta y los pasajes indexados.",
     "access": "No disponible",
@@ -99,15 +98,14 @@
     "technologies": ["TypeScript"],
     "maturity": "Stable",
     "development": "Maintained",
-    "scopes": ["Individual", "Team"],
+    "scopes": {
+      "Individual": "Personas que quieren sistematizar tareas recurrentes.",
+      "Team": "Equipos que comparten secuencias de trabajo."
+    },
     "authors": [{ "name": "Alex Rivera" }],
     "organizationRelation": "Ejemplo de un proyecto personal de un integrante de AI PlayGrounds.",
     "origin": "Proyecto personal",
     "problem": "Evita repetir manualmente la misma secuencia de tareas en cada ejecución.",
-    "audienceByScope": {
-      "Individual": "Personas que quieren sistematizar tareas recurrentes.",
-      "Team": "Equipos que comparten secuencias de trabajo."
-    },
     "aiRelationship": "IA utilizada en el desarrollo",
     "technicalDetails": "La IA se utilizó como apoyo durante la construcción. Los pasos del editor se ejecutan mediante reglas definidas por el usuario.",
     "access": "No disponible",
