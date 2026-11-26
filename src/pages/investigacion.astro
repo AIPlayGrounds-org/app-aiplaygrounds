@@ -26,7 +26,7 @@ const entries = await getResearch();
       ) : (
         <ul class="research-list" role="list">
           {entries.map((item) => (
-            <li class="research-row" data-card-interactive>
+            <li class="research-row" data-card-interactive data-card-hit-area>
               <div class="research-summary">
                 <h3>{item.title}</h3>
                 <p>{item.question}</p>

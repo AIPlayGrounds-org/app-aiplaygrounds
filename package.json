@@ -17,6 +17,7 @@
     "lint": "eslint src worker scripts tests *.mjs",
     "format:check": "prettier --check src worker scripts tests *.mjs *.json .github/workflows/*.yml",
     "validate:content": "node scripts/validate-content.mjs",
+    "sync:events": "node scripts/sync-luma-events.mjs",
     "test:unit": "node --test tests/*.test.mjs",
     "check:output": "node scripts/check-output.mjs",
     "ci:check": "npm run lint && npm run format:check && npm run check && npm run check:worker && npm run validate:content && npm run test:unit && npm run build && npm run build:worker && npm run check:output"

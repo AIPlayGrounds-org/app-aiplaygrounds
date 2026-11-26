@@ -12,6 +12,7 @@ const { href, title, back = false } = Astro.props;
 <a
   class:list={['directory-link', { 'directory-back': back }]}
   href={href}
+  data-card-link={!back || undefined}
   aria-label={back ? undefined : `Ver ficha: ${title}`}
 >
   {back ? (

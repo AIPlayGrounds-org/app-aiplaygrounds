@@ -13,12 +13,31 @@
 }
 
 [data-card-interactive]:is(:focus-visible, :has(:focus-visible)) {
-  --card-edge: var(--foreground);
+  --card-edge: var(--interaction-accent);
 }
 
 @media (hover: hover) and (pointer: fine) {
   :is([data-card-interactive], [data-card-outline]):hover {
-    --card-edge: var(--card-edge-active, var(--foreground));
+    --card-edge: var(--card-edge-active, var(--interaction-accent));
+  }
+}
+
+/* Opt in only when the surface has one destination and no other controls. */
+[data-card-hit-area] {
+  position: relative;
+}
+[data-card-hit-area] [data-card-link]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+[data-card-hit-area]:focus-within [data-card-link] {
+  text-decoration-thickness: 0.14em;
+}
+@media (hover: hover) and (pointer: fine) {
+  [data-card-hit-area]:hover [data-card-link] {
+    text-decoration-thickness: 0.14em;
   }
 }
 

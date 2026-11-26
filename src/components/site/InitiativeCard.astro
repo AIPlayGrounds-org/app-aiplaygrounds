@@ -28,6 +28,7 @@ const {
   class={`path-card path-${illustration}`}
   data-reveal="card"
   data-card-interactive
+  data-card-hit-area
   tabindex={id ? -1 : undefined}
 >
   <div class="path-illustration" aria-hidden="true">
@@ -77,7 +78,12 @@ const {
   </div>
   <h3>{title}</h3>
   <p>{description}</p>
-  <TextLink {href} data-cta={ctaId} data-inquiry-type={inquiryType}>
+  <TextLink
+    {href}
+    data-cta={ctaId}
+    data-inquiry-type={inquiryType}
+    data-card-link
+  >
     {label}
   </TextLink>
 </article>

@@ -22,8 +22,25 @@ for (const text of [
   if (!page.includes(text) || !inicio.includes(text))
     throw new Error(`Inicio no coincide con contenido: ${text}`);
 }
-if (existsSync('src/content.config.ts') || existsSync('src/content'))
-  throw new Error('Las colecciones requieren validación de publicación P06.');
+const events = JSON.parse(
+  readFileSync('src/data/community-events.json', 'utf8'),
+);
+const ids = new Set();
+for (const event of events) {
+  if (ids.has(event.id)) throw new Error(`Evento Luma duplicado: ${event.id}`);
+  ids.add(event.id);
+  if (Boolean(event.cover) !== Boolean(event.thumb)) {
+    throw new Error(`Portada incompleta: ${event.id}`);
+  }
+  for (const asset of [event.cover, event.thumb].filter(Boolean)) {
+    if (
+      !/^\/images\/community\/evt-[\w-]+\.webp$/.test(asset) ||
+      !existsSync(`public${asset}`)
+    ) {
+      throw new Error(`Portada local ausente o inválida: ${asset}`);
+    }
+  }
+}
 
 const empresa = e2
   .split('## Página: Empresas')[1]
@@ -61,5 +78,5 @@ for (const text of required) {
   }
 }
 console.log(
-  'Contenido de Inicio y Empresas contrastado; colecciones pendientes.',
+  `Contenido de Inicio y Empresas contrastado; ${events.length} IDs de Luma validados.`,
 );

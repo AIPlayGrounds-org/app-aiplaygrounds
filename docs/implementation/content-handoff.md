@@ -398,6 +398,8 @@ Si después se implementan filtros con un corpus real, la elección de controles
 
 ## 7. Comunidad y eventos
 
+> El [calendario sincronizado de Comunidad](community-events.md) sustituye los cuatro registros manuales y la distribución de esta sección histórica. Para el copy y las anclas vigentes, usar la matriz E2 actualizada. Se mantiene la distinción entre participar en el grupo y formar parte del equipo.
+
 ### 7.1 Acceso general y equipo interno
 
 **APROBADO · E2 C1/C4/C6/C7, EST §14:** comunidad general abierta; CTA literal **«Unirme a la comunidad»**; recorrido visitante → CTA → invitación del grupo de WhatsApp. No formulario, presupuesto, solicitud, entrevista o evaluación de acceso. La URL `WHATSAPP_INVITACION_PENDIENTE` es un token interno de E2, nunca un href o texto visible.

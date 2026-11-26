@@ -1,0 +1,463 @@
+---
+import { getCollection } from 'astro:content';
+import { ChevronDown, Search } from '@lucide/astro';
+import CommunityEvent from './CommunityEvent.astro';
+
+const now = Date.now();
+const events = (
+  await getCollection('communityEvents', ({ data }) => data.status === 'listed')
+).map(({ data }) => data);
+const previous = events
+  .filter((event) => Date.parse(event.endAt ?? event.startAt) <= now)
+  .sort(
+    (a, b) => b.startAt.localeCompare(a.startAt) || a.id.localeCompare(b.id),
+  );
+// Editorial pin: Workshop Práctico de Claude Code. Retain a chronological fallback.
+const featuredId = 'evt-ZXii0cJ5FuANudM';
+const featured =
+  previous.find((event) => event.id === featuredId) ??
+  previous.find((event) => event.ownedCalendar);
+const getYear = (event: (typeof events)[number]) =>
+  new Intl.DateTimeFormat('es-PE', {
+    year: 'numeric',
+    timeZone: event.timezone ?? 'UTC',
+  }).format(new Date(event.startAt));
+const years = [...new Set(previous.map(getYear))].sort().reverse();
+const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
+  previous.some((event) => event.modality === mode),
+);
+---
+
+<section id="C3" class="site-container calendar">
+  <div class="calendar-heading">
+    <h2>Nuestros encuentros</h2>
+  </div>
+  {featured && (
+    <div data-featured>
+      <CommunityEvent event={featured} featured />
+    </div>
+  )}
+  <section id="C4" class="history">
+    <div class="history-heading">
+      <h3>Encuentros anteriores</h3>
+      {previous.length > 0 && (
+        <search data-filter-controls hidden>
+          <form aria-label="Filtrar encuentros anteriores">
+            <div class="search-field">
+              <label class="sr-only" for="event-search">
+                Buscar encuentros
+              </label>
+              <Search size={17} aria-hidden="true" />
+              <input
+                id="event-search"
+                type="search"
+                name="q"
+                placeholder="Buscar encuentros..."
+                autocomplete="off"
+                spellcheck="false"
+              />
+            </div>
+            <label class="filter-field filter-year">
+              <span class="sr-only">Año</span>
+              <select name="year">
+                <option value="">Todos los años</option>
+                {years.map((year) => (
+                  <option value={year}>{year}</option>
+                ))}
+              </select>
+              <ChevronDown
+                class="filter-chevron"
+                size={16}
+                aria-hidden="true"
+              />
+            </label>
+            {modalities.length > 0 && (
+              <label class="filter-field filter-modality">
+                <span class="sr-only">Modalidad</span>
+                <select name="modality">
+                  <option value="">Todas las modalidades</option>
+                  {modalities.map((mode) => (
+                    <option value={mode}>{mode}</option>
+                  ))}
+                </select>
+                <ChevronDown
+                  class="filter-chevron"
+                  size={16}
+                  aria-hidden="true"
+                />
+              </label>
+            )}
+          </form>
+        </search>
+      )}
+    </div>
+    <div class="filter-feedback" data-feedback hidden>
+      <p class="note" data-no-results hidden>
+        No encontramos encuentros que coincidan con tu búsqueda.
+      </p>
+      <button type="button" class="text-button" data-clear>
+        Limpiar filtros
+      </button>
+    </div>
+    <p class="sr-only" role="status" data-results-status></p>
+    {previous.length > 0 ? (
+      <ol class="event-list" role="list">
+        {previous.map((event) => (
+          <li
+            hidden={event.id === featured?.id}
+            data-history-row
+            data-is-featured={event.id === featured?.id ? '' : undefined}
+            data-search={[
+              event.title,
+              event.description,
+              ...event.organizers,
+              event.city,
+              event.modality,
+            ]
+              .filter(Boolean)
+              .join(' ')}
+            data-year={getYear(event)}
+            data-modality={event.modality ?? ''}
+          >
+            <CommunityEvent {event} inHistory />
+          </li>
+        ))}
+      </ol>
+    ) : (
+      <p class="note">Aún no hay encuentros anteriores en el calendario.</p>
+    )}
+    <button type="button" class="more" data-more hidden>
+      Ver más encuentros
+    </button>
+  </section>
+</section>
+
+<script>
+  const root = document.querySelector<HTMLElement>('.calendar');
+  const form = root?.querySelector<HTMLFormElement>(
+    '[data-filter-controls] form',
+  );
+  const search = form?.querySelector<HTMLInputElement>('input[type="search"]');
+  const year = form?.querySelector<HTMLSelectElement>('[name="year"]');
+  const modality = form?.querySelector<HTMLSelectElement>('[name="modality"]');
+  const feature = root?.querySelector<HTMLElement>('[data-featured]');
+  const rows = [
+    ...(root?.querySelectorAll<HTMLElement>('[data-history-row]') ?? []),
+  ];
+  const status = root?.querySelector<HTMLElement>('[data-results-status]');
+  const more = root?.querySelector<HTMLButtonElement>('[data-more]');
+  const feedback = root?.querySelector<HTMLElement>('[data-feedback]');
+  const noResults = root?.querySelector<HTMLElement>('[data-no-results]');
+  const clear = root?.querySelector<HTMLButtonElement>('[data-clear]');
+  const fold = (text: string) =>
+    text.toLocaleLowerCase('es').normalize('NFD').replace(/\p{M}/gu, '');
+  const index = rows.map((row) => ({
+    row,
+    text: fold(row.dataset.search ?? ''),
+  }));
+  const pageSize = 6;
+  let limit = pageSize;
+  let announcement = 0;
+
+  function render(announce = false) {
+    const terms = fold(search?.value.trim() ?? '')
+      .split(/\s+/)
+      .filter(Boolean);
+    const active = Boolean(terms.length || year?.value || modality?.value);
+    let count = 0;
+    const shown: HTMLElement[] = [];
+    if (feature) feature.hidden = active;
+    for (const { row, text } of index) {
+      const matches =
+        (active || !row.hasAttribute('data-is-featured')) &&
+        (!year?.value || row.dataset.year === year.value) &&
+        (!modality?.value || row.dataset.modality === modality.value) &&
+        terms.every((term) => text.includes(term));
+      row.hidden = !(matches && ++count <= limit);
+      if (!row.hidden) shown.push(row);
+    }
+    if (more) more.hidden = count <= limit;
+    if (feedback) feedback.hidden = !active;
+    if (noResults) noResults.hidden = count !== 0;
+    if (status) {
+      window.clearTimeout(announcement);
+      if (announce)
+        announcement = window.setTimeout(() => {
+          status.textContent =
+            count === 0
+              ? 'No encontramos coincidencias.'
+              : count === 1
+                ? '1 encuentro encontrado.'
+                : `${shown.length} de ${count} encuentros.`;
+        }, 250);
+    }
+    return shown;
+  }
+
+  if (form && search && clear && more) {
+    function filter() {
+      limit = pageSize;
+      render(true);
+    }
+    form.addEventListener('submit', (event) => event.preventDefault());
+    search.addEventListener('input', filter);
+    form.addEventListener('change', (event) => {
+      if (event.target instanceof HTMLSelectElement) filter();
+    });
+    clear.addEventListener('click', () => {
+      form.reset();
+      filter();
+      search.focus();
+    });
+    more.addEventListener('click', () => {
+      const before = limit;
+      limit += pageSize;
+      render(true)[before]?.querySelector('a')?.focus();
+    });
+    const controls = root?.querySelector<HTMLElement>('[data-filter-controls]');
+    if (controls) controls.hidden = false;
+    render();
+  }
+</script>
+
+<style>
+  .calendar {
+    --community-accent: var(--interaction-accent);
+    --community-control-edge: #8a7975;
+    --community-filter-hover: color-mix(
+      in oklab,
+      var(--home-surface) 92%,
+      var(--foreground)
+    );
+    padding-block: clamp(2rem, 4vw, 3.5rem);
+  }
+  .calendar-heading,
+  .history-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.85rem 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-block-end: 1rem;
+  }
+  .calendar-heading h2 {
+    font-size: clamp(2rem, 1.45rem + 2vw, 3rem);
+  }
+  .history {
+    margin-block-start: clamp(2rem, 5vw, 3.5rem);
+  }
+  .history-heading h3 {
+    font-size: clamp(1.6rem, 1.32rem + 1.15vw, 2.35rem);
+  }
+  .more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-block-size: 2.75rem;
+    min-inline-size: 7.5rem;
+    padding-inline: 0.95rem;
+    border: 1px solid var(--community-control-edge);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: border-color 180ms var(--editorial-ease-out);
+  }
+  search {
+    min-width: 0;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+  }
+  form :is(input, select) {
+    background: var(--home-surface);
+    border: 1px solid var(--community-control-edge);
+    border-radius: 0.4rem;
+    min-height: 2.75rem;
+    width: 100%;
+    font: inherit;
+    padding-inline: 0.75rem;
+    transition: border-color 180ms var(--editorial-ease-out);
+  }
+  .filter-field {
+    position: relative;
+  }
+  .filter-year {
+    min-inline-size: 10rem;
+  }
+  .filter-modality {
+    min-inline-size: 13rem;
+  }
+  .filter-field select {
+    appearance: none;
+    cursor: pointer;
+    padding-inline-start: 0.95rem;
+    padding-inline-end: 2.4rem;
+    transition:
+      border-color 160ms var(--editorial-ease-out),
+      background-color 160ms var(--editorial-ease-out);
+  }
+  .filter-chevron {
+    position: absolute;
+    inset-inline-end: 0.8rem;
+    inset-block-start: 50%;
+    translate: 0 -50%;
+    color: var(--secondary-text);
+    pointer-events: none;
+  }
+  .filter-field select:is(:hover, :active) {
+    background-color: var(--community-filter-hover);
+  }
+  @supports (appearance: base-select) and selector(select::picker(select)) {
+    .filter-field select,
+    .filter-field select::picker(select) {
+      appearance: base-select;
+    }
+    .filter-field select::picker-icon {
+      display: none;
+    }
+    .filter-field select {
+      display: flex;
+      align-items: center;
+    }
+    .filter-field select:open {
+      border-color: var(--community-accent);
+      background-color: var(--community-filter-hover);
+    }
+    .filter-field select:open + .filter-chevron {
+      rotate: 180deg;
+    }
+    .filter-field select::picker(select) {
+      margin-block: 0.35rem;
+      padding: 0.25rem;
+      font: inherit;
+      color: var(--foreground);
+      background: var(--home-surface);
+      border: 1px solid var(--community-control-edge);
+      border-radius: 0.4rem;
+      box-shadow: 0 0.5rem 1.25rem rgb(25 26 24 / 0.12);
+    }
+    .filter-field option {
+      align-items: center;
+      min-block-size: 2.5rem;
+      padding: 0.45rem 0.65rem;
+      border-radius: 0.25rem;
+    }
+    .filter-field option:checked {
+      font-weight: 600;
+      background: color-mix(
+        in oklab,
+        var(--home-surface) 96%,
+        var(--foreground)
+      );
+    }
+    .filter-field option:is(:hover, :focus-visible) {
+      background: var(--community-filter-hover);
+    }
+    .filter-field option::checkmark {
+      color: var(--community-accent);
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .filter-chevron {
+        transition: rotate 160ms var(--editorial-ease-out);
+      }
+      .filter-field select::picker(select) {
+        opacity: 0;
+        transition:
+          opacity 160ms var(--editorial-ease-out),
+          display 160ms,
+          overlay 160ms;
+        transition-behavior: allow-discrete;
+      }
+      .filter-field select:open::picker(select) {
+        opacity: 1;
+      }
+      @starting-style {
+        .filter-field select:open::picker(select) {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  form input {
+    padding-inline-start: 2.4rem;
+    min-width: 0;
+  }
+  form input::placeholder {
+    color: var(--secondary-text);
+  }
+  .search-field {
+    position: relative;
+    flex: 1 1 13.5rem;
+    min-inline-size: 0;
+  }
+  .search-field svg {
+    position: absolute;
+    inset-inline-start: 0.85rem;
+    inset-block-start: 50%;
+    translate: 0 -50%;
+    pointer-events: none;
+  }
+  form :is(input, select):hover,
+  .more:hover {
+    border-color: var(--community-accent);
+  }
+  .note {
+    margin-block: 1rem;
+    color: var(--secondary-text);
+  }
+  .more {
+    margin-block-start: 1.3rem;
+    font-weight: 600;
+  }
+  .filter-feedback {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+  }
+  .text-button {
+    min-height: 2.75rem;
+    color: var(--community-accent);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    cursor: pointer;
+  }
+  [hidden] {
+    display: none;
+  }
+  @media (max-width: 39rem) {
+    search {
+      width: 100%;
+    }
+    form {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    }
+    .search-field {
+      grid-column: 1 / -1;
+    }
+    .filter-field {
+      min-inline-size: 0;
+    }
+  }
+  @media (max-width: 22rem) {
+    form {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+  @media (pointer: coarse) {
+    .more,
+    form :is(input, select) {
+      min-block-size: 3rem;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .filter-field select,
+    form :is(input, select),
+    .more {
+      transition: none;
+    }
+  }
+</style>

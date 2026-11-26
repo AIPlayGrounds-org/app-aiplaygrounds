@@ -405,8 +405,8 @@ Cuéntanos qué tienes en mente. No necesitas tener un proyecto completamente de
 
 ## Página: Comunidad
 
-**URL propuesta:** `/comunidad/`. **Objetivo:** comprender el propósito comunitario y distinguir formas de acercarse. **Audiencia:** personas interesadas en IA, intercambio y colaboración.
-**Estado de página:** comunidad abierta, historia documentada y modelo futuro preparado; CTA WhatsApp pendiente de URL exacta. Sin incorporación al equipo interno. **Correspondencia E1:** 5/5 secciones; C7 conserva su slot interno sin reclutamiento público. **UI:** no aportada.
+**URL:** `/comunidad/`. **Objetivo:** explorar los encuentros de AI PlayGrounds y encontrar cómo participar en la comunidad general.
+**Estructura:** hero de acceso → Nuestros encuentros → encuentro destacado → historial → CTA de WhatsApp → footer global.
 
 **SEO title:** Comunidad de inteligencia artificial | AI PlayGrounds
 **Meta description:** Conoce la comunidad de AI PlayGrounds, sus encuentros y talleres sobre inteligencia artificial y cómo participar.
@@ -420,137 +420,32 @@ Cuéntanos qué tienes en mente. No necesitas tener un proyecto completamente de
 
 Un espacio abierto para compartir experiencias, aprender de otras personas y participar en encuentros alrededor de la inteligencia artificial.
 
-**Acciones del hero:** ninguna. Las acciones de participación se mantienen en sus secciones inferiores; el destino de WhatsApp sigue pendiente según C6.
+**Acciones del hero:** ninguna. Se conserva el hero aprobado sin cambios.
 
-### C3 · Actividades y encuentros
+### C3 · Nuestros encuentros
 
-**Estado:** B
-**H2:** Encuentros que forman parte de nuestra historia
+**H2:** Nuestros encuentros
 
-**Copy propuesto:**
+**Encuentro destacado:** Workshop Práctico de Claude Code, fijado por decisión editorial. Si deja de estar disponible, se destaca el último evento propio realizado, excluidos los cancelados. La ficha muestra nombre, fecha y hora en la zona del evento, modalidad, ciudad cuando corresponda, anfitriones públicos, extracto fiel, portada autorizada y «Ver evento en Luma». Por ahora no se muestra un selector de período.
 
-Desde 2025 organizamos encuentros y workshops alrededor de la inteligencia artificial y coorganizamos actividades con otras organizaciones. Aquí reunimos una selección de experiencias anteriores.
+### C4 · Encuentros anteriores
 
-#### From Hack to Pilot: Perú Demo Day
+Filas del evento más reciente al más antiguo: mes y día, miniatura cuadrada si está autorizada, nombre, fecha y hora, modalidad, ciudad cuando corresponda, anfitriones públicos y «Ver evento en Luma».
 
-Un Demo Day de AI PlayGrounds y hack@latam dedicado a los proyectos de equipos peruanos que participaron en la hackathon. La convocatoria se centró en transparencia, riesgo climático y defensa, y en conectar proyectos con posibles usuarios y pilotos.
+**Controles:** «Buscar encuentros...» busca por nombre, descripción, anfitriones, ciudad y modalidad, sin distinguir tildes ni mayúsculas. Se combina con «Todos los años» y «Todas las modalidades»; las opciones provienen de los registros. El destacado no se repite en la vista inicial, pero aparece si coincide con la búsqueda o los filtros.
 
-- **Tipo:** Demo Day. **Estado:** pasado.
-- **Fecha y hora anunciadas:** 5 de junio de 2026, 19:00–21:00, hora de Perú (UTC−05:00).
-- **Modalidad y lugar:** presencial, UTEC Ventures, en University of Engineering and Technology, Jr. Medrano Silva 165, Barranco, Lima.
-- **Responsables según la publicación:** AI PlayGrounds y hack@latam; anfitrión en Luma: AI PlayGrounds Community.
-- **Enlace:** Ver From Hack to Pilot: Perú Demo Day en Luma → https://luma.com/yzjagyu0
+**Acciones y estados:** «Ver más encuentros», «Limpiar filtros» y «No encontramos encuentros que coincidan con tu búsqueda.»
 
-#### Workshop Práctico de Claude Code
-
-Un workshop sobre el uso de Claude Code en el flujo de desarrollo: contexto del repositorio, modo agente, comandos e integraciones mediante MCP, con una demostración orientada a delegar tareas y mantener la revisión humana.
-
-- **Tipo:** workshop. **Estado:** pasado.
-- **Fecha y hora anunciadas:** 29 de abril de 2026, 19:00–21:00, hora de Perú (UTC−05:00).
-- **Modalidad y plataforma:** virtual, Google Meet.
-- **Presentado por:** AI PlayGrounds. **Anfitriones en Luma:** AI PlayGrounds Community, Soledad Ñahui Sullca y Jhonatan Morgan.
-- **Facilitador:** Jhonatan Morgan.
-- **Enlace:** Ver Workshop Práctico de Claude Code en Luma → https://luma.com/gjk5qy7b
-
-#### Workshop Práctico de Cursor
-
-Una sesión práctica sobre capacidades de Cursor, tareas que conviene delegar y resultados que requieren validación. La propuesta incluyó una demo guiada y criterios para su adopción individual y en equipo, manteniendo el control del código.
-
-- **Tipo:** workshop. **Estado:** pasado.
-- **Fecha y hora anunciadas:** 22 de abril de 2026, 19:00–21:00, hora de Perú (UTC−05:00).
-- **Modalidad y plataforma:** virtual, Google Meet; edición anunciada gratuita.
-- **Presentado por:** AI PlayGrounds. **Anfitrión en Luma:** AI PlayGrounds Community.
-- **Facilitador:** Kevin Huaman.
-- **Enlace:** Ver Workshop Práctico de Cursor en Luma → https://luma.com/0bg0xu7s
-
-#### El mapa completo de asistentes de código con IA
-
-Una revisión del panorama de modelos, benchmarks, IDEs nativos de IA y agentes de terminal. La sesión planteó criterios de elección por perfil y riesgos de privacidad, dependencia y lock-in.
-
-- **Tipo:** encuentro técnico. **Estado:** pasado.
-- **Fecha y hora anunciadas:** 15 de abril de 2026, 19:00–21:00, hora de Perú (UTC−05:00).
-- **Modalidad y plataforma:** virtual, Google Meet.
-- **Presentado por:** AI PlayGrounds. **Anfitriones en Luma:** AI PlayGrounds Community, Soledad Ñahui Sullca y Jhonatan Morgan.
-- **Facilitador:** Jhonatan Morgan.
-- **Enlace:** Ver El mapa completo de asistentes de código con IA en Luma → https://luma.com/0ott2q9m
-
-#### Otros hitos de la trayectoria
-
-| Actividad anterior | Fecha | Participación de AI PlayGrounds y contexto |
-|---|---|---|
-| hack@latam | Mayo de 2026 | Coorganizador. El evento recibió más de 1.200 postulantes y reunió 56 equipos durante 36 horas |
-| IA Hackathon | Noviembre de 2025 | Coorganizador, en colaboración con The Hackathon Company, Crafter Station y kebo. El evento registró más de 800 postulantes y 22 equipos y proyectos |
-| The Real AI | Julio de 2025 | Coorganizador, en colaboración con looper.ai y UTEC. El encuentro reunió más de 150 participantes y 7 speakers |
-| Bootcamp Gen AI Fundamentals | 2025 | Organizador. Edición práctica y gratuita de seis semanas, con más de 300 inscritos y 16 speakers de Perú, Colombia y Estados Unidos |
-
-Los datos de los eventos coorganizados corresponden al evento completo. El bootcamp es un antecedente formativo, sin inscripción vigente.
-
-**Enlace contextual:** La trayectoria formativa del bootcamp → Formación (F5, Trayectoria formativa).
-
-**Notas editoriales — no publicable:** L01–L04 originales consultados; H01–H04 datos confirmados por responsable, sin originales públicos aportados. No duplicar estos hitos como ocho fichas nuevas: son registros de esta sección. Los temas sintetizan la convocatoria; no verifican resultados de proyectos. Went (108/55/138/45 según página) se conserva solo en evidencia interna, nunca como asistencia efectiva. El botón Register del Demo Day y sus datos estructurados no autorizan inscripción actual. No descargar/reutilizar portadas sin permiso. No hay grabaciones, slides o repositorios identificados; no enlaces de recurso ficticios. Ponentes del Demo Day y datos no recibidos de los hitos del deck quedan pendientes, omitidos del público.
-
-**Modelo repetible de actividades — no publicable; preparado también para futuras entradas (C):**
-
-| Campo | Condición editorial | Presentación |
-|---|---|---|
-| Nombre | R | Denominación oficial; sin título ficticio |
-| Descripción | R | Propósito, público y temas con respaldo; pasado en pasado |
-| Tipo de actividad | R | Encuentro, workshop, hackathon u otro tipo acreditado |
-| Fecha y hora | R fecha; hora/zona R en convocatoria | Distinguir fecha anunciada y estado; hora histórica solo si se conoce |
-| Modalidad | R para convocatoria | Presencial, virtual o híbrida, solo confirmada |
-| Lugar o plataforma | R según modalidad | Sede/plataforma confirmada; no URL privada de reunión |
-| Organizadores y papel de AI PlayGrounds | R responsabilidad atribuida | Organizado, coorganizado o participación según fuente; hosts separados cuando corresponda |
-| Ponentes o facilitadores | C según actividad | Nombres/relaciones acreditados, sin bios inferidas |
-| Estado | R | Pasado, futuro u otro estado verificado y fecha de revisión |
-| Enlace original | R cuando existe | URL pública canónica, etiqueta descriptiva y destino externo |
-| Inscripción | C | Solo si existe y está vigente, con destino/condiciones reales |
-| Imagen | O | Disponible y autorizada; alt por función real |
-| Recursos | O | Grabación, material o código solo verificados y autorizados |
-
-**Próximos eventos — estado interno:** no hay eventos próximos o vigentes que anunciar al 05/11/2026, confirmado por responsable. La colección futura queda sin entradas; no mostrar un encabezado vacío, tarjetas, fechas o «próximamente». Conservar estructura para incorporar entradas reales y separarlas del pasado. No nueva página por evento. Falta de datos opcionales históricos no obliga a inventarlos ni impide usar el registro sustentado.
-
-### C4 · Vías y condiciones de participación
-
-**Estado:** A
-**H2:** Un espacio abierto para conectar alrededor de la IA
-
-**Copy propuesto — explicación sustentada:**
-
-El grupo es la vía de acceso a la comunidad general. Las actividades tienen sus propias condiciones, que se consultan junto a cada convocatoria.
-
-Participar en la comunidad o en un encuentro es distinto de formar parte del equipo organizador.
-
-**Nota editorial — no publicable:** no formulario de acceso, evaluación, entrevista o nivel avanzado universal. No inventar normas, moderadores, frecuencia, compromisos, privacidad o seguridad del grupo; incorporar reglas propias cuando se aporten. Esos datos no se convierten en un proceso de admisión. Aportes a iniciativas solo con oportunidad y condiciones confirmadas, sin anunciar convocatoria ahora.
-
-
-**CTA para revisión local:** Unirme → deshabilitado hasta contar con la invitación real de WhatsApp.
+**Fuente:** [calendario oficial de AI PlayGrounds en Luma](https://luma.com/calendar/cal-87ZACs1cXmaGKLg). Los registros provienen de la colección Astro `communityEvents`, sincronizada con Luma. No se mantiene un segundo historial en esta matriz ni se agregan hitos como si fueran fichas del calendario. Los antecedentes institucionales y formativos siguen en sus páginas respectivas. No se infiere asistencia a partir del número de inscritos. Ver [procedimiento y límites](../../../docs/implementation/community-events.md).
 
 ### C6 · Acceso a comunidad general
 
-**Estado:** D
 **H2:** Súmate al grupo de WhatsApp
 
-**Copy propuesto:**
+El grupo es la vía de acceso a la comunidad general. Las actividades tienen sus propias condiciones, que se consultan junto a cada convocatoria.
 
-La comunidad general está abierta. El enlace te lleva a la invitación de nuestro grupo de WhatsApp.
-
-**CTA principal:** Unirme a la comunidad → `WHATSAPP_INVITACION_PENDIENTE`.
-**Microcopy:** Abrirás WhatsApp para unirte al grupo.
-
-**Pendiente de destino — no publicable:** responsable debe proporcionar el enlace exacto de invitación vigente. El token anterior no es URL ni texto público, no crear href de ejemplo. Desarrollo comprobará destino antes de activar el CTA. No formulario web, solicitud de evaluación, confirmación propia o alta en el equipo interno. Recorrido esperado: visitante → CTA → grupo de WhatsApp.
-
-### C7 · Interés en colaborar
-
-**Estado:** A
-**H2 público:** Acércate también al trabajo de AI Labs
-
-**Copy propuesto:**
-
-Si tu interés está en las ideas que se experimentan y construyen, AI Labs presenta el contexto de nuestras iniciativas tempranas.
-
-**Enlace informativo:** Explorar AI Labs → AI Labs.
-
-**Estructura interna inactiva — no publicable:** incorporación al equipo CERRADA, no buscando integrantes. Se conserva el ID y su continuidad institucional; ninguna convocatoria, solicitud, entrevista, aplicación a vertical o CTA de incorporación se expone. Futuro modelo solo si hay nueva decisión: oportunidad real, alcance, requisitos, responsable, destino y continuidad. No activar por existir este slot ni confundir el grupo de WhatsApp con el equipo. Su presentación pública actual solo es informativa, no reclutamiento.
+**Sin enlace configurado:** La invitación al grupo de WhatsApp aún no está disponible.
+**Con invitación vigente verificada:** «Unirme a la comunidad» enlaza al grupo. Participar en la comunidad o en un encuentro es distinto de formar parte del equipo organizador. No hay formulario, evaluación ni alta en el equipo interno.
 
 ## Página: AI Labs
 
@@ -932,7 +827,7 @@ Los estados actuales de eventos, programas y acceso sí están confirmados por e
 
 ## Notas transversales para implementación posterior
 
-No se ha diseñado UI ni implementado el website. Las rutas internas son propuestas; Luma conserva originales externos verificables. WhatsApp espera URL exacta y el formulario, privacidad/ejecución. No copiar rótulos, modelos o tokens al website. Ajustar longitud al componente real, preservando datos/condiciones/voz; las tablas documentales no prescriben UI.
+Las notas y conteos siguientes corresponden al corte editorial original. Para la implementación vigente de Comunidad, consultar C1–C6 y su documentación técnica. Luma conserva los originales externos verificables. WhatsApp espera URL exacta y el formulario, privacidad/ejecución. No copiar rótulos, modelos o tokens al website. Ajustar longitud al componente real, preservando datos/condiciones/voz; las tablas documentales no prescriben UI.
 
 | Requisito pertinente | Afecta a / qué comprobar | Responsable propuesto / momento |
 |---|---|---|
@@ -974,7 +869,7 @@ El punto 6 quedó actualizado en la sección Formación de este documento; los p
 2. **Deck:** origen enero de 2025 en Lima, más de 30 eventos, tres coorganizaciones y bootcamp. Datos confirmados por responsable, sin afirmar inspección del HTML original. Cifras colectivas e inscritos conservan su unidad/alcance.
 3. **Luma:** recuperados los cuatro eventos, con fechas de abril/junio de 2026, modalidad, responsables, facilitadores disponibles, temática y originales canónicos. Went no se publica como asistencia ni se reabre el Demo Day por su botón de registro residual.
 4. **Inicio:** nuevo title/H1/propuesta, propósito más breve, cuatro verticales protagonistas, selección real de actividad, iniciativas con funciones distintas y cierre Comunidad/Empresas sin sesgo exclusivo a formación.
-5. **Comunidad:** acceso general abierto por WhatsApp, CTA «Unirme a la comunidad» con URL exacta pendiente. Historia separada de futuros; sin eventos próximos ni reclutamiento interno público.
+5. **Comunidad:** historial sincronizado con Luma, con el Workshop Práctico de Claude Code como destacado editorial. La vista de próximos queda fuera de la página por ahora. El CTA «Unirme a la comunidad» espera la URL de WhatsApp. No hay reclutamiento interno público.
 6. **Formación:** AI Engineering y Software with AI mantienen tareas distintas. Bootcamp 2025 histórico; no cursos o convocatorias públicas vigentes, waitlists o próximas ediciones inventadas. Modelo futuro completo.
 7. **Empresas:** las seis secciones cubren organización, cuatro ámbitos, trayectoria, AI Labs, formación personalizada y conversación institucional/comercial. Los hitos no se convierten en casos de implementación.
 8. **Formulario:** uno solo, ocho campos incluyendo privacidad condicional; tres CTA con tipo revisable/preseleccionable, ayudas, validación, recepción confirmada y error recuperable. Listo como especificación editorial, pendiente de privacidad y ejecución; sin gestión interna definida.

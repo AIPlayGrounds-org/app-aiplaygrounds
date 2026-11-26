@@ -26,7 +26,7 @@ const entries = await getProducts();
       ) : (
         <ul class="product-grid" role="list">
           {entries.map((product) => (
-            <li class="product-card" data-card-interactive>
+            <li class="product-card" data-card-interactive data-card-hit-area>
               <h3>{product.name}</h3>
               <p>{product.utility}</p>
               <dl class="product-meta">

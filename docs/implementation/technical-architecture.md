@@ -241,7 +241,7 @@ Adoptar las rutas del handoff, `trailingSlash: 'always'`, salida Astro `build.fo
 | Inicio | `/` | I1 → I2 → I3 → I4 → I5 → I8 |
 | Formación | `/formacion/` | F1 → F3 → F4 → F6 → F5 |
 | Empresas | `/empresas/` | EM1 → EM2 → EM3 → EM4 → EM6; EM5 ancla de la card AI Academy en EM4 |
-| Comunidad | `/comunidad/` | C1 → C3 → C4 → C6 → C7 |
+| Comunidad | `/comunidad/` | C1 → C3 (destacado) → C4 (historial) → C6 (WhatsApp) |
 | AI Labs | `/ai-labs/` | B1 → B2 → B3 → B4 → B5 |
 | Investigación | `/investigacion/` | DI1 → DI2 → DI3 → DI4 |
 | Equipo | `/equipo/` | E1 → E2 → E3 → E4 |
@@ -280,7 +280,7 @@ Fechas: unión discriminada `{ precision: year, value: YYYY }`, `{ precision: mo
 ### 7.4 Relaciones y reutilización
 
 - Un registro canónico del **Bootcamp Gen AI Fundamentals 2025 en `programs` con perfil histórico**. Inicio I4, Formación F4 y Comunidad C3 pueden referenciar ese ID. Empresas EM3 remite a I4 sin listar hitos. No crear copia en `activities`; listas mixtas aceptan referencias discriminadas a activity o program.
-- Cuatro actividades Luma y otros tres hitos de eventos en `activities` según E2; más de 30 eventos es un dato institucional sustentado, no 30 registros inventados. No se crean entradas en esta etapa.
+- Comunidad usa la colección Astro `communityEvents` alimentada por una sincronización local con el calendario público de Luma. No convierte hitos institucionales en fichas de Luma ni consulta el calendario desde el navegador. Ver [operación y contrato](community-events.md).
 - Verticales y líneas en datos compartidos con nombres/orden canónicos. Empresas no reproduce la sección de verticales.
 - Un PER02, varios roles; referencias en grupos no duplican persona ni conteo. Al crear los 15 registros internos se mantienen retenidos hasta permiso; no generar JSON de roster al cliente.
 - Relaciones usan `reference` cuando el tipo es fijo; uniones discriminadas para destinos mixtos y validación transversal de existencia, naturaleza y evidencia. Una relación a entidad retenida no genera link, texto personal no autorizado ni nodo JSON-LD. Referencia inexistente o autoría inferida falla validación.
@@ -401,7 +401,7 @@ Recepción operativa se comprueba extremo a extremo a buzón controlado y tambi�
 
 ### 10.4 WhatsApp, analítica y Search Console
 
-WhatsApp solo URL vigente aportada/verificada, acción única compartida C1/C6; no SDK, pixel, embed, perfil investigado o invitación deducida. Luma solo cuatro originales de handoff §7.2, historial sin registro vigente.
+WhatsApp solo URL vigente aportada y verificada, acción única en C6; no SDK, pixel, embed, perfil investigado o invitación deducida. Los enlaces a los originales de Luma proceden de la [colección sincronizada](community-events.md).
 
 Consentimiento de analítica independiente de privacidad de contacto: rechazar GA4/Clarity no bloquea navegación ni formulario. Solución mínima propia de preferencias (no CMP comercial ni framework): necesarias siempre; analítica GA4 y análisis de comportamiento Clarity con selección independiente, rechazadas inicialmente, aceptar/rechazar/personalizar con prominencia equivalente, sin premarcados; enlace persistente en footer para cambiar decisión. Guardar solo elecciones/versionado/expiración en almacenamiento first-party; propuesta 180 días sujeta a política, no hecho legal. Storage inaccesible/corrupto = denegado. Un cambio de política invalida preferencias antiguas; no geolocalización comercial para decidir si preguntar.
 

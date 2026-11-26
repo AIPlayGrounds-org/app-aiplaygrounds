@@ -54,6 +54,7 @@
   --secondary: var(--web-light-secondary);
   --secondary-foreground: var(--web-light-text);
   --accent: var(--brand-halo);
+  --interaction-accent: #79629f;
   --outline: var(--brand-black);
   --focus-ring: var(--outline);
   --error: #9b2226;
@@ -84,6 +85,7 @@
   --secondary: var(--brand-gray-1);
   --secondary-foreground: var(--brand-white);
   --accent: var(--brand-halo);
+  --interaction-accent: var(--brand-halo);
   --outline: var(--brand-white);
   --focus-ring: var(--outline);
   --error: #ffb4ab;

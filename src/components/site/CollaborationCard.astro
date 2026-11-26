@@ -21,6 +21,7 @@ const { title, description, image, tone, href, label, ctaId, inquiryType } =
   class:list={['collaboration', tone]}
   data-reveal="card"
   data-card-interactive
+  data-card-hit-area
 >
   <Image
     src={image}
@@ -35,7 +36,12 @@ const { title, description, image, tone, href, label, ctaId, inquiryType } =
   <div class="copy">
     <h3>{title}</h3>
     <p>{description}</p>
-    <TextLink {href} data-cta={ctaId} data-inquiry-type={inquiryType}>
+    <TextLink
+      {href}
+      data-cta={ctaId}
+      data-inquiry-type={inquiryType}
+      data-card-link
+    >
       {label}
     </TextLink>
   </div>
@@ -73,7 +79,7 @@ const { title, description, image, tone, href, label, ctaId, inquiryType } =
     transform-origin: bottom right;
   }
   .copy {
-    position: relative;
+    isolation: isolate;
     max-width: min(61%, 28ch);
   }
   h3 {

@@ -12,6 +12,16 @@ const approvedDetailPaths = new Set(
     .filter(([, slug]) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))
     .map(([directory, slug]) => `${directory}/${slug}/index.html`),
 );
+const approvedEventImages = new Set(
+  JSON.parse(readFileSync('src/data/community-events.json', 'utf8'))
+    .flatMap(({ cover, thumb }) => [cover, thumb])
+    .filter((path) =>
+      /^\/images\/community\/evt-[A-Za-z0-9]+-[a-f0-9]{12}-(?:cover|thumb)\.webp$/.test(
+        path ?? '',
+      ),
+    )
+    .map((path) => path.slice(1)),
+);
 
 // Los slugs también detectan enlaces sin el título visible del registro.
 const demoMarkers = [
@@ -87,10 +97,13 @@ export function inspect(root, kind = root === 'dist' ? 'site' : 'bundle') {
     const allowed =
       kind === 'site'
         ? approvedDetailPaths.has(name) ||
-          /^(?:(?:index|(?:empresas|comunidad|formacion|ai-labs|investigacion|equipo)\/index)\.html|verticals\/(?:foundations|software|science|finance)\.svg|_astro\/[a-zA-Z0-9._-]+\.(?:css|js)|_astro\/(?:hero-laguna|inicio-hero-v2|ai-foundations|ai-for-software|ai-for-science|ai-for-finance|cta-plazoleta|footer-lomas|empresa-hero-v5|empresa-colaboracion-puente-v2|empresa-colaboracion-andenes-v2|Patio andino entre flores y piedra|academy-(?:hero-v2|software-with-ai|ai-engineering|team-training|waitlist-cta))\.[a-zA-Z0-9_-]+_[a-zA-Z0-9_-]+\.webp|_astro\/(?:space-grotesk-latin|inter-tight-latin|geist-mono-latin)\.[a-zA-Z0-9_-]+\.woff2)$/
-        : /^[a-zA-Z0-9._/-]+\.(?:js|json|txt)$/;
+          approvedEventImages.has(name) ||
+          /^(?:(?:index|(?:empresas|comunidad|formacion|ai-labs|investigacion|equipo)\/index)\.html|verticals\/(?:foundations|software|science|finance)\.svg|_astro\/[a-zA-Z0-9._-]+\.(?:css|js)|_astro\/(?:hero-laguna|inicio-hero-v2|ai-foundations|ai-for-software|ai-for-science|ai-for-finance|cta-plazoleta|footer-lomas|empresa-hero-v5|empresa-colaboracion-puente-v2|empresa-colaboracion-andenes-v2|Patio andino entre flores y piedra|academy-(?:hero-v2|software-with-ai|ai-engineering|team-training|waitlist-cta))\.[a-zA-Z0-9_-]+_[a-zA-Z0-9_-]+\.webp|_astro\/(?:space-grotesk-latin|inter-tight-latin|geist-mono-latin)\.[a-zA-Z0-9_-]+\.woff2)$/.test(
+            name,
+          )
+        : /^[a-zA-Z0-9._/-]+\.(?:js|json|txt)$/.test(name);
     if (
-      !allowed.test(name) ||
+      !allowed ||
       /(?:^|\/)(?:\.env[^/]*|\.dev\.vars[^/]*|\.git|\.opencode|\.agents|skills?)(?:\/|$)|\.map$/i.test(
         name,
       )
