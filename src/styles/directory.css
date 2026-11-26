@@ -29,6 +29,13 @@
 .catalog-search form:focus-within {
   border-color: var(--interaction-accent);
 }
+.catalog-search form:has(input:focus-visible) {
+  outline: 2px solid var(--interaction-accent);
+  outline-offset: 2px;
+}
+.catalog-search input:focus-visible {
+  outline: none;
+}
 .catalog-search input {
   inline-size: 100%;
   min-inline-size: 0;
@@ -98,7 +105,8 @@
   align-items: center;
   gap: 0.5rem;
 }
-.catalog-filters .control {
+.catalog-filters .control,
+.catalog .sort-field select {
   min-block-size: 46px;
 }
 .facet,
@@ -114,8 +122,28 @@
   min-block-size: 44px;
   cursor: pointer;
   list-style: none;
+}
+.facet summary,
+.catalog .control.dropdown-trigger {
   font-size: 0.95rem;
   font-weight: 500;
+}
+.sort-field {
+  position: relative;
+  max-inline-size: 100%;
+  color: var(--foreground);
+}
+.catalog .sort-field select {
+  appearance: none;
+  inline-size: 100%;
+  padding-inline-end: calc(0.7rem + 16px + 0.4rem);
+}
+.sort-field > svg {
+  position: absolute;
+  inset-inline-end: 0.7rem;
+  inset-block-start: 50%;
+  translate: 0 -50%;
+  pointer-events: none;
 }
 .catalog summary::-webkit-details-marker {
   display: none;
@@ -191,6 +219,7 @@
   font-size: 0.86rem;
   text-align: start;
   cursor: pointer;
+  overflow-wrap: anywhere;
 }
 .active-filters svg {
   flex: none;
@@ -241,13 +270,18 @@
   position: absolute;
   z-index: 5;
   inset-block-start: calc(100% + 0.3rem);
-  min-inline-size: max(100%, 13rem);
-  max-inline-size: min(20rem, 85vw);
+  left: var(--dropdown-offset, 0px);
+  inline-size: clamp(13rem, 100%, 20rem);
+  max-inline-size: calc(100dvw - 1rem);
+  max-block-size: min(19rem, var(--dropdown-room, 19rem));
   padding: 0.45rem 0.65rem;
   border: 1px solid var(--border);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
   box-shadow: 0 0.4rem 1rem #191a1814;
+}
+.facet[data-flip] > .facet-options {
+  inset-block: auto calc(100% + 0.3rem);
 }
 .catalog .more-toggle {
   display: inline-flex;
@@ -345,7 +379,14 @@
   border: 0;
   background: var(--home-card);
   color: var(--foreground);
-  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.filter-dialog[open] {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+}
+.filter-dialog [data-drawer-content] {
+  overflow: auto;
   overscroll-behavior: contain;
 }
 .filter-dialog::backdrop {
@@ -390,7 +431,7 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
-@media (max-width: 39.99rem) {
+@media (width < 40rem) {
   .catalog .mobile-filter {
     display: inline-flex;
     justify-self: start;
@@ -407,6 +448,12 @@
   .filter-dialog .catalog-filters .facet summary {
     inline-size: 100%;
     justify-content: space-between;
+  }
+  .filter-dialog .facet[data-dropdown] > .facet-options {
+    position: static;
+    inline-size: 100%;
+    max-block-size: 19rem;
+    margin-block-start: 0.3rem;
   }
   .filter-dialog .more-toggle {
     display: none;

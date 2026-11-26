@@ -57,6 +57,9 @@ main#contenido:has(> .labs-detail) {
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
+.share-button:hover {
+  color: var(--interaction-accent);
+}
 .share-result:has(p:empty) {
   position: absolute;
 }
@@ -100,14 +103,14 @@ main#contenido:has(> .labs-detail) {
   display: grid;
   gap: 1rem;
 }
-.product-content section {
+.product-content section:not(.access-panel) {
   display: grid;
   gap: 0.65rem;
 }
-.product-content section > h2 + * {
+.product-content section:not(.access-panel) > h2 + * {
   margin-block-start: 0.35rem;
 }
-.product-content h2,
+.product-content section:not(.access-panel) h2,
 .related-products h2 {
   font-size: clamp(1.25rem, 1.1rem + 0.45vw, 1.5rem);
   text-wrap: pretty;
@@ -118,7 +121,7 @@ main#contenido:has(> .labs-detail) {
   letter-spacing: 0;
   text-wrap: pretty;
 }
-.product-content p {
+.product-content p:not(.access-panel p) {
   color: var(--secondary-text);
   max-inline-size: 72ch;
   line-height: 1.6;
@@ -170,6 +173,9 @@ main#contenido:has(> .labs-detail) {
 .related-products h2 svg {
   flex: none;
   color: var(--editorial-lilac-ink);
+}
+.access-panel [data-slot='button'] svg {
+  color: currentColor;
 }
 .technology-list {
   display: flex;
@@ -247,6 +253,9 @@ main#contenido:has(> .labs-detail) {
 .related-products > ul {
   display: grid;
   gap: 0.85rem;
+}
+.related-products li {
+  min-inline-size: 0;
 }
 @media (min-width: 52rem) {
   .product-layout {

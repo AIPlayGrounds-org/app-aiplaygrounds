@@ -1,0 +1,26 @@
+---
+import type { DirectoryItem } from '../../data/directory';
+
+interface Props {
+  index: DirectoryItem;
+  reveal?: boolean;
+}
+const {
+  index: { id, name, publishedAt, updatedAt, text, values },
+  reveal,
+} = Astro.props;
+---
+
+<li
+  data-entry={JSON.stringify({
+    id,
+    name,
+    publishedAt,
+    updatedAt,
+    text,
+    values,
+  })}
+  data-reveal={reveal || undefined}
+>
+  <slot />
+</li>

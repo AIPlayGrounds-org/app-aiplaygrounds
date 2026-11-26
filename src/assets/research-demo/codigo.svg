@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400">
+  <path fill="#dce5d6" d="M0 0h960v400H0z"/>
+  <path fill="#c9d6c4" d="M0 322q191 61 443-16t517-16v110H0z"/>
+  <path fill="#b5c6b4" d="M0 367q193 42 422-16t538-22v71H0z"/>
+  <g transform="translate(240 84) rotate(-6 196 113)">
+    <rect width="392" height="225" rx="15" fill="#29423a"/>
+    <path d="M0 45h392M93 45v180" fill="none" stroke="#527364" stroke-width="2"/>
+    <path d="M24 23h1m19 0h1m19 0h1" stroke="#c6e0cb" stroke-linecap="round" stroke-width="8"/>
+    <path d="M27 75h39M27 99h32m-32 24h39m-39 24h19" stroke="#87a796" stroke-linecap="round" stroke-width="5"/>
+    <path d="m163 109-25 22 25 22m69-44 25 22-25 22m-39 12 18-68" fill="none" stroke="#c6e0cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+  </g>
+  <g transform="translate(579 138) rotate(10 70 83)">
+    <rect width="141" height="166" rx="11" fill="#f8f3ee" stroke="#527364" stroke-width="3"/>
+    <path d="m24 41 7 7 14-14m-21 49 7 7 14-14m-21 49 7 7 14-14" fill="none" stroke="#527364" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+    <path d="M60 42h55M60 84h55m-55 42h40" stroke="#87a796" stroke-linecap="round" stroke-width="5"/>
+  </g>
+</svg>

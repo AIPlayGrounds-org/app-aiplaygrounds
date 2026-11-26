@@ -1,0 +1,30 @@
+---
+interface Props {
+  image: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+    focalPoint?: [number, number];
+  };
+  decorative?: boolean;
+  eager?: boolean;
+  priority?: boolean;
+}
+const { image, decorative, eager, priority } = Astro.props;
+---
+
+<img
+  src={image.src}
+  alt={decorative ? '' : image.alt}
+  width={image.width}
+  height={image.height}
+  style={
+    image.focalPoint && {
+      'object-position': `${image.focalPoint[0]}% ${image.focalPoint[1]}%`,
+    }
+  }
+  loading={priority || eager ? 'eager' : 'lazy'}
+  fetchpriority={priority ? 'high' : undefined}
+  decoding="async"
+/>

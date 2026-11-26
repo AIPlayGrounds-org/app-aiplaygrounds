@@ -1,0 +1,143 @@
+[
+  {
+    "id": "demo-busqueda-documental",
+    "slug": "comparar-metodos-de-busqueda-documental",
+    "title": "Comparar métodos de búsqueda documental",
+    "summary": "Un protocolo para comparar qué documentos recuperan la búsqueda por palabras clave y la búsqueda por significado ante las mismas consultas.",
+    "question": "¿Cuándo recupera documentos más pertinentes la búsqueda por palabras clave y cuándo conviene buscar por significado?",
+    "cover": {
+      "src": "/src/assets/research-demo/busqueda.svg",
+      "alt": "Ilustración editorial: un índice de documentos y una lupa.",
+      "width": 960,
+      "height": 400
+    },
+    "type": "Estudio comparativo",
+    "area": "Recuperación de información",
+    "topics": ["Búsqueda semántica", "Evaluación de modelos"],
+    "verticals": ["AI Foundations"],
+    "authors": [
+      { "name": "Lucía Marín (ficticia)" },
+      { "name": "Nicolás Vega (ficticio)" }
+    ],
+    "origin": "Propuesta de la comunidad",
+    "overview": "Este ejemplo plantea una comparación entre dos formas de recuperar documentos de una colección. La intención es distinguir en qué consultas aporta valor cada método y qué errores conviene revisar manualmente.",
+    "objectives": [
+      "Identificar consultas en las que ambos métodos ordenarían de forma distinta los mismos documentos.",
+      "Diseñar un criterio de pertinencia que se pueda aplicar antes de conocer el método utilizado."
+    ],
+    "context": "La propuesta se limita a consultas en español sobre una colección documental de prueba.",
+    "methodology": "Se propone utilizar las mismas consultas y documentos para ambos métodos. Las personas que califican la pertinencia no sabrían qué método recuperó cada documento.",
+    "data": "El protocolo prevé usar documentos de prueba autorizados antes de iniciar la comparación.",
+    "methods": ["BM25", "Búsqueda vectorial"],
+    "technologies": ["Embeddings"],
+    "keywords": ["pertinencia", "recuperación documental"],
+    "aiRelationship": "IA como objeto de estudio",
+    "aiRole": "Los embeddings representarían consultas y documentos por su significado.",
+    "limitations": "El alcance se limitaría al conjunto documental y al idioma de la prueba.",
+    "researchStatus": "En desarrollo",
+    "editorialStatus": "Protocolo",
+    "access": "Abierto",
+    "publishedAt": "2026-10-01",
+    "updatedAt": "2026-10-12",
+    "version": "0.1 (demostración)",
+    "relatedResearch": [
+      "demo-documentos-financieros",
+      "demo-revision-evaluacion"
+    ],
+    "relatedProducts": ["demo-semantic-search"],
+    "publication": "published"
+  },
+  {
+    "id": "demo-asistentes-codigo",
+    "slug": "evaluacion-de-asistentes-de-codigo-en-tareas-de-mantenimiento",
+    "title": "Evaluación de asistentes de código en tareas de mantenimiento",
+    "question": "¿Cómo cambia la revisión de un parche sugerido por IA si hay pruebas existentes, documentación incompleta o varios archivos relacionados?",
+    "cover": {
+      "src": "/src/assets/research-demo/codigo.svg",
+      "alt": "Ilustración editorial: una ventana de código junto a notas de revisión.",
+      "width": 960,
+      "height": 400
+    },
+    "type": "Trabajo experimental",
+    "area": "Ingeniería de software",
+    "topics": ["Asistentes de código", "Evaluación de modelos"],
+    "verticals": ["AI for Software"],
+    "authors": [
+      { "name": "Camila Rojas (ficticia)" },
+      { "name": "Mateo Salazar (ficticio)" },
+      { "name": "Elena Castillo (ficticia)" }
+    ],
+    "origin": "Colaboración de demostración",
+    "methodology": "El protocolo propone usar tareas equivalentes y contrastar cada parche con sus pruebas. La comparación se centraría en qué puede comprobar la persona que revisa el cambio.",
+    "methods": ["Evaluación controlada"],
+    "technologies": ["Modelos de lenguaje"],
+    "limitations": "El diseño no permitiría generalizar a repositorios fuera de la muestra.",
+    "researchStatus": "En desarrollo",
+    "editorialStatus": "Protocolo",
+    "access": "Restringido",
+    "publishedAt": "2026-09-22",
+    "relatedResearch": ["demo-revision-evaluacion"],
+    "relatedProducts": ["demo-codeassist"],
+    "publication": "published"
+  },
+  {
+    "id": "demo-revision-evaluacion",
+    "slug": "demo-revision-evaluacion-de-modelos",
+    "title": "Cómo se evalúan los modelos de lenguaje en tareas de lectura",
+    "summary": "Una revisión de literatura de ejemplo sobre criterios de evaluación: fidelidad al texto, trazabilidad de las citas y tratamiento de la incertidumbre.",
+    "cover": {
+      "src": "/src/assets/research-demo/lectura.svg",
+      "alt": "Ilustración editorial de un libro abierto con notas de lectura.",
+      "width": 960,
+      "height": 400
+    },
+    "type": "Revisión de literatura",
+    "area": "Procesamiento del lenguaje",
+    "topics": ["Lectura asistida", "Evaluación de modelos"],
+    "verticals": ["AI Foundations"],
+    "authors": [{ "name": "Pilar Andrade (ficticia)" }],
+    "origin": "Proyecto independiente",
+    "methodology": "El diseño prevé definir criterios de inclusión antes de seleccionar documentos y registrar qué aspectos mide cada enfoque.",
+    "methods": ["Revisión bibliográfica"],
+    "technologies": ["Modelos de lenguaje"],
+    "researchStatus": "Diseño concluido",
+    "editorialStatus": "Informe de trabajo",
+    "access": "Abierto",
+    "publishedAt": "2025-11-14",
+    "relatedResearch": ["demo-busqueda-documental", "demo-asistentes-codigo"],
+    "publication": "published"
+  },
+  {
+    "id": "demo-documentos-financieros",
+    "slug": "demo-trazabilidad-documentos-financieros",
+    "title": "Trazabilidad de respuestas generadas a partir de documentos financieros extensos",
+    "summary": "Un protocolo de extracción de citas para que cada respuesta pueda contrastarse con el pasaje del documento que la sustenta.",
+    "cover": {
+      "src": "/src/assets/research-demo/trazabilidad.svg",
+      "alt": "Ilustración editorial de dos documentos unidos por un marcador de referencia.",
+      "width": 960,
+      "height": 400
+    },
+    "type": "Investigación aplicada",
+    "area": "Procesamiento del lenguaje",
+    "topics": ["Trazabilidad", "Lectura asistida"],
+    "verticals": ["AI for Finance"],
+    "authors": [
+      { "name": "Alejandra Robles de la Fuente (ficticia)" },
+      { "name": "Mónica del Rosario Villanueva (ficticia)" },
+      { "name": "Sebastián Ferrer Montenegro (ficticio)" },
+      { "name": "Andrés Zamora Cifuentes (ficticio)" }
+    ],
+    "origin": "Proyecto independiente",
+    "methods": ["Búsqueda vectorial", "Evaluación cualitativa"],
+    "technologies": ["Embeddings", "Modelos de lenguaje"],
+    "researchStatus": "En desarrollo",
+    "editorialStatus": "Protocolo",
+    "access": "Abierto",
+    "publishedAt": "2025-12-03",
+    "updatedAt": "2026-08-12",
+    "relatedResearch": ["demo-busqueda-documental"],
+    "relatedProducts": ["demo-semantic-search"],
+    "publication": "published"
+  }
+]

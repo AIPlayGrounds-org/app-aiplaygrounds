@@ -1,12 +1,15 @@
 import { readFileSync, readdirSync, lstatSync, existsSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { demoResearch } from '../src/data/directories.demo.ts';
-import { research } from '../src/data/directories.ts';
+import demoResearch from '../src/data/research.demo.json' with { type: 'json' };
+import researchRecords from '../src/data/research.json' with { type: 'json' };
 import demoProducts from '../src/data/labs-products.demo.json' with { type: 'json' };
 import productRecords from '../src/data/labs-products.json' with { type: 'json' };
 
 const products = productRecords.filter(
+  ({ publication }) => publication === 'published',
+);
+const research = researchRecords.filter(
   ({ publication }) => publication === 'published',
 );
 const approvedDetailPaths = new Set(
@@ -26,6 +29,18 @@ const approvedProductImages = new Set(
     ])
     .filter((image) =>
       /^\/images\/labs\/[a-z0-9-]+\.(webp|avif)$/.test(image?.src ?? ''),
+    )
+    .map(({ src }) => src.slice(1)),
+);
+const approvedResearchImages = new Set(
+  research
+    .flatMap(({ cover, materials, authors }) => [
+      cover,
+      ...(materials ?? []).filter(({ kind }) => kind === 'image'),
+      ...authors.map(({ avatar }) => avatar),
+    ])
+    .filter((image) =>
+      /^\/images\/research\/[a-z0-9-]+\.(webp|avif)$/.test(image?.src ?? ''),
     )
     .map(({ src }) => src.slice(1)),
 );
@@ -49,13 +64,17 @@ const demoMarkers = [
     summary,
     problem,
   ]),
-  ...demoResearch.flatMap(({ slug, title, question, method, limitations }) => [
-    slug,
-    title,
-    question,
-    method,
-    limitations,
-  ]),
+  ...demoResearch.flatMap(
+    ({ id, slug, title, summary, question, methodology, cover }) => [
+      id,
+      slug,
+      title,
+      summary,
+      question,
+      methodology,
+      cover?.src,
+    ],
+  ),
 ].filter((marker) => typeof marker === 'string' && marker.length > 0);
 
 export function inspect(root, kind = root === 'dist' ? 'site' : 'bundle') {
@@ -116,6 +135,7 @@ export function inspect(root, kind = root === 'dist' ? 'site' : 'bundle') {
         ? approvedDetailPaths.has(name) ||
           approvedEventImages.has(name) ||
           approvedProductImages.has(name) ||
+          approvedResearchImages.has(name) ||
           /^(?:(?:index|(?:empresas|comunidad|formacion|ai-labs|investigacion|equipo)\/index)\.html|verticals\/(?:foundations|software|science|finance)\.svg|_astro\/[a-zA-Z0-9._-]+\.(?:css|js)|_astro\/(?:hero-laguna|inicio-hero-v2|ai-foundations|ai-for-software|ai-for-science|ai-for-finance|cta-plazoleta|footer-lomas|empresa-hero-v5|empresa-colaboracion-puente-v2|empresa-colaboracion-andenes-v2|Patio andino entre flores y piedra|academy-(?:hero-v2|software-with-ai|ai-engineering|team-training|waitlist-cta))\.[a-zA-Z0-9_-]+_[a-zA-Z0-9_-]+\.webp|_astro\/(?:space-grotesk-latin|inter-tight-latin|geist-mono-latin)\.[a-zA-Z0-9_-]+\.woff2)$/.test(
             name,
           )

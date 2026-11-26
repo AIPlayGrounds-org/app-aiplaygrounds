@@ -70,7 +70,13 @@ export const productSchema = z
     name: text,
     summary: text,
     description: text.optional(),
-    cover: image.optional(),
+    cover: image
+      .extend({
+        focalPoint: z
+          .tuple([z.number().min(0).max(100), z.number().min(0).max(100)])
+          .optional(),
+      })
+      .optional(),
     media: z.array(image.extend({ alt: text })).default([]),
     category: text,
     application: text.optional(),

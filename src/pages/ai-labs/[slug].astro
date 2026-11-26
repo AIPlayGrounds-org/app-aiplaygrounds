@@ -10,7 +10,6 @@ import {
   Layers,
   MessageSquare,
   Search,
-  Share2,
   TrendingUp,
   UserRound,
   UsersRound,
@@ -19,7 +18,9 @@ import {
 import { getProducts, productAuthors, type Product } from '../../data/labs';
 import ProductCard from '../../components/labs/ProductCard.astro';
 import ProductCover from '../../components/labs/ProductCover.astro';
-import DirectoryLink from '../../components/site/DirectoryLink.astro';
+import DirectoryBack from '../../components/directory/DirectoryBack.astro';
+import MetadataPanel from '../../components/directory/MetadataPanel.astro';
+import ShareEntry from '../../components/directory/ShareEntry.astro';
 import EditorialMotion from '../../components/site/EditorialMotion.astro';
 import Button from '../../components/starwind/button/Button.astro';
 import InteriorLayout from '../../layouts/InteriorLayout.astro';
@@ -60,7 +61,7 @@ const scopeIcons = {
   Organization: Building,
   Enterprise: BuildingComplex,
 };
-const metadata = [
+const metadata: [string, string | undefined, string?][] = [
   ['Categoría', product.category],
   ['Área de aplicación', product.application],
   ['Tipo de producto', product.type],
@@ -93,13 +94,11 @@ const accessText = {
   description={product.summary}
 >
   <article class="site-container labs-detail">
-    <div class="product-back" data-labs-back>
-      <DirectoryLink href="/ai-labs/#B3" title="AI Labs" back />
-    </div>
+    <DirectoryBack href="/ai-labs/#B3" title="AI Labs" />
     <ProductCover {product} detail />
     <div class="product-layout">
       <div class="product-content">
-        <header class="product-intro">
+        <header class="product-intro" data-product-intro>
           <h1>{product.name}</h1>
           <p class="product-summary">{product.summary}</p>
           <div class="product-byline">
@@ -109,6 +108,20 @@ const accessText = {
             </p>
           </div>
         </header>
+        <section class="detail-panel access-panel" data-product-access>
+          <h2>Modalidad de acceso</h2>
+          <p class="access-mode">{product.access}</p>
+          {product.url ? (
+            <Button href={product.url} variant="primary">
+              Acceder al producto <ArrowUpRight size={18} aria-hidden="true" />
+            </Button>
+          ) : (
+            <p class="access-note">
+              {product.accessNote ?? accessText[product.access]}
+            </p>
+          )}
+          <ShareEntry />
+        </section>
         <section>
           <h2>Sobre el producto</h2>
           <p class="product-prose">{product.description}</p>
@@ -228,50 +241,16 @@ const accessText = {
         )}
       </div>
 
-      <aside class="product-sidebar" aria-label="Metadatos y autoría">
-        <section class="detail-panel access-panel">
-          <h2>Modalidad de acceso</h2>
-          <p class="access-mode">{product.access}</p>
-          {product.url ? (
-            <Button href={product.url} variant="primary">
-              Acceder al producto <ArrowUpRight size={18} aria-hidden="true" />
-            </Button>
-          ) : (
-            <p class="access-note">
-              {product.accessNote ?? accessText[product.access]}
-            </p>
-          )}
-          <button type="button" class="share-button" data-share hidden>
-            <Share2 size={18} aria-hidden="true" /> Compartir
-          </button>
-          <div class="share-result">
-            <p role="status" data-share-status></p>
-            <input
-              aria-label="Enlace a la ficha"
-              type="url"
-              readonly
-              data-share-url
-              hidden
-            />
-          </div>
-        </section>
-        <section class="detail-panel">
-          <h2>
-            <Info size={21} aria-hidden="true" />
-            Información del producto
-          </h2>
-          <dl>
-            {metadata.map(
-              ([label, value, lang]) =>
-                value && (
-                  <div>
-                    <dt>{label}</dt>
-                    <dd lang={lang}>{value}</dd>
-                  </div>
-                ),
-            )}
-          </dl>
-        </section>
+      <aside
+        class="product-sidebar"
+        aria-label="Metadatos y autoría"
+        data-product-sidebar
+      >
+        <MetadataPanel
+          title="Información del producto"
+          icon={Info}
+          fields={metadata}
+        />
         <section class="detail-panel">
           <h2>
             <UsersRound size={21} aria-hidden="true" />
@@ -344,6 +323,7 @@ const accessText = {
       <section
         class="related-products"
         aria-labelledby="related-products-title"
+        data-related-directory
         data-reveal
       >
         <h2 id="related-products-title">
@@ -364,46 +344,19 @@ const accessText = {
 </InteriorLayout>
 
 <script>
-  const from = new URLSearchParams(location.search).get('from');
-  const back = document.querySelector<HTMLAnchorElement>('[data-labs-back] a');
-  if (from && back) {
-    const params = new URLSearchParams(from);
-    back.href = `/ai-labs/?${params}#B3`;
-    document
-      .querySelectorAll<HTMLAnchorElement>('.related-products [data-card-link]')
-      .forEach((link) => {
-        const url = new URL(link.href);
-        url.searchParams.set('from', params.toString());
-        link.href = url.pathname + url.search;
-      });
+  const intro = document.querySelector<HTMLElement>('[data-product-intro]')!;
+  const access = document.querySelector<HTMLElement>('[data-product-access]')!;
+  const sidebar = document.querySelector<HTMLElement>(
+    '[data-product-sidebar]',
+  )!;
+  const twoColumns = matchMedia('(min-width: 52rem)');
+  function placeAccess() {
+    const focused = document.activeElement;
+    if (twoColumns.matches) sidebar.prepend(access);
+    else intro.after(access);
+    if (focused instanceof HTMLElement && access.contains(focused))
+      focused.focus({ preventScroll: true });
   }
-  const share = document.querySelector<HTMLButtonElement>('[data-share]');
-  if (share) {
-    const status = document.querySelector<HTMLElement>('[data-share-status]')!;
-    const field = document.querySelector<HTMLInputElement>('[data-share-url]')!;
-    share.hidden = false;
-    share.addEventListener('click', async () => {
-      const url = new URL(location.pathname, location.origin).href;
-      if (navigator.share) {
-        try {
-          await navigator.share({ title: document.title, url });
-          return;
-        } catch (error) {
-          if (error instanceof DOMException && error.name === 'AbortError')
-            return;
-        }
-      }
-      try {
-        await navigator.clipboard.writeText(url);
-        status.textContent = 'Enlace copiado.';
-        field.hidden = true;
-      } catch {
-        status.textContent = 'Copia el enlace de esta ficha.';
-        field.hidden = false;
-        field.value = url;
-        field.focus();
-        field.select();
-      }
-    });
-  }
+  if (twoColumns.matches) placeAccess();
+  twoColumns.addEventListener('change', placeAccess);
 </script>

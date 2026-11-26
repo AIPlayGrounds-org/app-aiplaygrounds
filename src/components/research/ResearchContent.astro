@@ -1,0 +1,108 @@
+---
+import DirectoryImage from '../directory/DirectoryImage.astro';
+import type { Research } from '../../data/research';
+
+interface Props {
+  entry: Research;
+}
+const { entry } = Astro.props;
+const sections = [
+  {
+    key: 'overview',
+    title: 'Resumen de la investigación',
+    paragraphs: [entry.overview ?? entry.summary],
+  },
+  {
+    key: 'question',
+    title: 'Pregunta y objetivos',
+    paragraphs: [entry.question, entry.problem],
+    items: entry.objectives,
+  },
+  { key: 'context', title: 'Contexto y alcance', paragraphs: [entry.context] },
+  { key: 'methodology', title: 'Metodología', paragraphs: [entry.methodology] },
+  {
+    key: 'technical',
+    title: 'Métodos, datos e inteligencia artificial',
+    paragraphs: [entry.data, entry.aiRole],
+    items: [...new Set([...entry.methods, ...entry.technologies])],
+  },
+  {
+    key: 'results',
+    title: 'Resultados y hallazgos',
+    paragraphs: [entry.results],
+  },
+  {
+    key: 'limitations',
+    title: 'Limitaciones',
+    paragraphs: [entry.limitations],
+  },
+  {
+    key: 'conclusions',
+    title: 'Conclusiones',
+    paragraphs: [entry.conclusions],
+  },
+];
+---
+
+<div class="product-content research-content">
+  {sections.map(({ key, title, paragraphs, items }) => {
+    const prose = paragraphs.filter(Boolean);
+    const materials = entry.materials.filter(({ section }) => section === key);
+    if (!(prose.length || items?.length || materials.length)) return null;
+    return (
+      <section>
+        <h2>{title}</h2>
+        {prose.map((paragraph) => (
+          <p class="product-prose">{paragraph}</p>
+        ))}
+        {items && items.length > 0 && (
+          <ul
+            class:list={[
+              key === 'technical' ? 'technology-list' : 'research-objectives',
+            ]}
+            role="list"
+          >
+            {items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        )}
+        {materials.map((material) =>
+          material.kind === 'image' ? (
+            <figure>
+              <DirectoryImage image={material} />
+              {material.caption && <figcaption>{material.caption}</figcaption>}
+            </figure>
+          ) : (
+            <div
+              class="research-table"
+              role="region"
+              aria-label={material.caption}
+              tabindex="0"
+            >
+              <table>
+                <caption>{material.caption}</caption>
+                <thead>
+                  <tr>
+                    {material.columns.map((column) => (
+                      <th scope="col">{column}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {material.rows.map((row) => (
+                    <tr>
+                      {row.map((cell) => (
+                        <td>{cell}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ),
+        )}
+      </section>
+    );
+  })}
+</div>

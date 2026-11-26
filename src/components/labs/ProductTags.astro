@@ -2,11 +2,11 @@
 import {
   BuildingComplex,
   Building,
-  Layers,
   UserRound,
   UsersRound,
 } from '@lucide/astro';
 import type { Product } from '../../data/labs';
+import VerticalTag from '../directory/VerticalTag.astro';
 import { compactHeroArt } from '../site/compact-hero-art';
 
 interface Props {
@@ -16,12 +16,6 @@ interface Props {
 }
 
 const { product, kind, overlay } = Astro.props;
-const verticalColors = {
-  'AI Foundations': 'foundations',
-  'AI for Software': 'software',
-  'AI for Science': 'science',
-  'AI for Finance': 'finance',
-};
 const scopeIcons = {
   Individual: UserRound,
   Team: UsersRound,
@@ -41,14 +35,7 @@ const scopeColors = {
     {product.verticals.length > 0 && (
       <div class="verticals">
         {product.verticals.map((vertical) => (
-          <span
-            class="vertical"
-            data-vertical={verticalColors[vertical]}
-            lang="en"
-          >
-            <Layers size={14} aria-hidden="true" />
-            {vertical}
-          </span>
+          <VerticalTag {vertical} />
         ))}
       </div>
     )}
@@ -84,18 +71,19 @@ const scopeColors = {
   }
   .verticals {
     min-inline-size: 0;
+    flex: 1 1 7rem;
   }
   .overlay {
     position: absolute;
     inset: 0.65rem 0.65rem auto;
-    flex-wrap: nowrap;
     pointer-events: none;
   }
   .overlay .maturity {
     margin-inline-start: auto;
   }
-  .product-tags :is(.vertical, .maturity, .scope) {
+  .product-tags :is(.maturity, .scope) {
     display: inline-flex;
+    max-inline-size: 100%;
     align-items: center;
     gap: 0.35rem;
     border-radius: 0.25rem;
@@ -106,23 +94,6 @@ const scopeColors = {
   }
   svg {
     flex: none;
-  }
-  .vertical {
-    color: var(--brand-white);
-    background: var(--editorial-grove-ink);
-    white-space: nowrap;
-  }
-  .vertical[data-vertical='foundations'] {
-    background: var(--editorial-lilac-ink);
-  }
-  .vertical[data-vertical='software'] {
-    background: var(--success);
-  }
-  .vertical[data-vertical='science'] {
-    background: var(--editorial-grove-ink);
-  }
-  .vertical[data-vertical='finance'] {
-    background: var(--editorial-sand-ink);
   }
   .maturity {
     background: var(--home-card);
@@ -149,7 +120,8 @@ const scopeColors = {
     color: var(--web-light-text);
   }
   @media (min-width: 45rem) {
-    :global([data-view='list']) .overlay :is(.vertical, .maturity) {
+    :global([data-view='list']) .overlay :global(.vertical),
+    :global([data-view='list']) .overlay .maturity {
       padding-inline: 0.42rem;
       font-size: 0.75rem;
     }

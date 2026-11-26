@@ -19,7 +19,7 @@ const { product, eager } = Astro.props;
   </div>
   <div class="card-body">
     <p class="card-category">{product.category}</p>
-    <h3>{product.name}</h3>
+    <h3 class="directory-card-title">{product.name}</h3>
     <ProductTags {product} kind="scopes" />
     <p class="card-summary">{product.summary}</p>
     <footer>
@@ -62,10 +62,6 @@ const { product, eager } = Astro.props;
     gap: 0.55rem;
     padding: 1.15rem 1.15rem 1rem;
   }
-  h3 {
-    font-size: 1.3rem;
-    text-wrap: pretty;
-  }
   .card-body > :global(.product-tags) {
     margin-block: 0.1rem;
   }
@@ -94,13 +90,17 @@ const { product, eager } = Astro.props;
   }
   footer {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 0.5rem;
     inline-size: 100%;
     margin-block-start: auto;
     font-size: 0.875rem;
     align-items: end;
+  }
+  footer p {
+    min-inline-size: 0;
+    flex: 1 1 8rem;
   }
   footer a {
     display: inline-flex;
@@ -117,11 +117,15 @@ const { product, eager } = Astro.props;
       grid-template-columns: minmax(14rem, 2fr) minmax(0, 3fr);
     }
     :global([data-view='list']) .card-cover {
-      position: relative;
-      border-radius: calc(var(--editorial-radius) - 1px) 0 0
-        calc(var(--editorial-radius) - 1px);
+      align-self: start;
+      border-radius: calc(var(--editorial-radius) - 1px) 0 0 0;
     }
-    :global([data-view='list']) .card-cover > :global(.product-cover) {
+    :global(.related-products) .card-cover {
+      position: relative;
+      align-self: stretch;
+      border-end-start-radius: calc(var(--editorial-radius) - 1px);
+    }
+    :global(.related-products) .card-cover > :global(.product-cover) {
       position: absolute;
       inset: 0;
       block-size: 100%;

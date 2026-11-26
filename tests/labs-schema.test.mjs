@@ -63,3 +63,26 @@ test('las entradas anteriores conservan sus datos y validan los alcances', () =>
     false,
   );
 });
+
+test('la portada admite un punto focal opcional en porcentajes', () => {
+  const cover = {
+    src: '/images/labs/portada.webp',
+    alt: 'Portada de prueba',
+    width: 300,
+    height: 600,
+  };
+  const entry = { ...required, scopes: { Team: null } };
+  assert.deepEqual(productSchema.parse({ ...entry, cover }).cover, cover);
+  assert.deepEqual(
+    productSchema.parse({ ...entry, cover: { ...cover, focalPoint: [25, 80] } })
+      .cover.focalPoint,
+    [25, 80],
+  );
+  assert.equal(
+    productSchema.safeParse({
+      ...entry,
+      cover: { ...cover, focalPoint: [25, 120] },
+    }).success,
+    false,
+  );
+});

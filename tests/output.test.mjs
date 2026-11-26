@@ -4,7 +4,7 @@ import { mkdtempSync, writeFileSync, rmSync, mkdirSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { inspect } from '../scripts/check-output.mjs';
-import { demoResearch } from '../src/data/directories.demo.ts';
+import demoResearch from '../src/data/research.demo.json' with { type: 'json' };
 import demoProducts from '../src/data/labs-products.demo.json' with { type: 'json' };
 
 test('bundle permitido y rutas o secretos rechazados', () => {

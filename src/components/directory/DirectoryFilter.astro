@@ -1,13 +1,15 @@
 ---
 import { ChevronDown } from '@lucide/astro';
-import type { buildFacets } from '../../data/labs-directory';
+import type { DirectoryFacet } from '../../data/directory';
 
 interface Props {
-  group: ReturnType<typeof buildFacets>[number];
+  group: DirectoryFacet;
+  directory: string;
+  plural: string;
   dropdown?: boolean;
   advanced?: boolean;
 }
-const { group, dropdown, advanced = false } = Astro.props;
+const { group, directory, plural, dropdown, advanced = false } = Astro.props;
 ---
 
 <div
@@ -15,19 +17,25 @@ const { group, dropdown, advanced = false } = Astro.props;
   data-facet-wrap
 >
   {advanced && (
-    <span class="facet-label" id={`label-${group.key}`}>
+    <span class="facet-label" id={`${directory}-label-${group.key}`}>
       {group.label}
     </span>
   )}
-  <details class="facet" data-dropdown={dropdown || advanced || undefined}>
+  <details
+    class="facet"
+    name={`${directory}-facets`}
+    data-dropdown={dropdown || advanced || undefined}
+  >
     <summary
-      class:list={[{ control: dropdown || advanced }]}
+      class:list={[{ 'control dropdown-trigger': dropdown || advanced }]}
       aria-labelledby={
-        advanced ? `label-${group.key} value-${group.key}` : undefined
+        advanced
+          ? `${directory}-label-${group.key} ${directory}-value-${group.key}`
+          : undefined
       }
     >
       {advanced ? (
-        <span id={`value-${group.key}`} data-facet-summary>
+        <span id={`${directory}-value-${group.key}`} data-facet-summary>
           Todas
         </span>
       ) : (
@@ -49,7 +57,7 @@ const { group, dropdown, advanced = false } = Astro.props;
           <span data-option-label>{label}</span>
           <span class="option-count" data-option-count>
             <span aria-hidden="true">0</span>
-            <span class="sr-only">0 productos</span>
+            <span class="sr-only">0 {plural}</span>
           </span>
         </label>
       ))}

@@ -1,45 +1,191 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import { getResearch } from '../../data/directories';
-import DirectoryDetail from '../../layouts/DirectoryDetail.astro';
+import { CalendarDays, Info, Layers, UsersRound } from '@lucide/astro';
+import DirectoryBack from '../../components/directory/DirectoryBack.astro';
+import DirectoryImage from '../../components/directory/DirectoryImage.astro';
+import MetadataPanel from '../../components/directory/MetadataPanel.astro';
+import ProductCard from '../../components/labs/ProductCard.astro';
+import ResearchCard from '../../components/research/ResearchCard.astro';
+import ResearchContent from '../../components/research/ResearchContent.astro';
+import ResearchResources from '../../components/research/ResearchResources.astro';
+import EditorialMotion from '../../components/site/EditorialMotion.astro';
+import { getProducts } from '../../data/labs';
+import {
+  getResearch,
+  researchAuthors,
+  researchDate,
+  researchSection,
+} from '../../data/research';
+import InteriorLayout from '../../layouts/InteriorLayout.astro';
+import '../../styles/labs-detail.css';
+import '../../styles/research-detail.css';
 
 export const getStaticPaths = (async () => {
   const entries = await getResearch();
-  return entries.map((item) => ({
-    params: { slug: item.slug },
-    props: { item },
+  const byId = new Map(entries.map((entry) => [entry.id, entry]));
+  const products = entries.some(({ relatedProducts }) => relatedProducts.length)
+    ? await getProducts()
+    : [];
+  const byProduct = new Map(products.map((product) => [product.id, product]));
+
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: {
+      entry,
+      related: [...new Set(entry.relatedResearch)].flatMap((id) => {
+        const target = byId.get(id);
+        return target && target !== entry && target.demo === entry.demo
+          ? [target]
+          : [];
+      }),
+      products: [...new Set(entry.relatedProducts)].flatMap((id) => {
+        const target = byProduct.get(id);
+        return target && target.demo === entry.demo ? [target] : [];
+      }),
+    },
   }));
 }) satisfies GetStaticPaths;
 
-const { item } = Astro.props;
+const { entry, related, products } = Astro.props;
+const description = entry.summary ?? entry.question!;
+const dates = [
+  ['Fecha de publicación', entry.publishedAt],
+  ['Última actualización', entry.updatedAt],
+  ['Información verificada', entry.verifiedAt],
+] as const;
 ---
 
-<DirectoryDetail
-  title={item.title}
-  description={item.question}
-  directory={{ title: 'Investigación', href: '/investigacion/' }}
-  demo={item.demo}
-  source={item.source}
-  metadata={[
-    { label: 'Tipo', value: item.type },
-    { label: 'Autoría', value: item.authors },
-    { label: 'Fecha', value: item.date },
-    { label: 'Relación con AI PlayGrounds', value: item.organizationRelation },
-    { label: 'Revisión por pares', value: item.peerReview },
-  ]}
+<InteriorLayout
+  title={`${entry.title} | Investigación | AI PlayGrounds`}
+  {description}
 >
-  <section>
-    <h2>Enfoque</h2>
-    <p>{item.method}</p>
-  </section>
-  {item.results && (
-    <section>
-      <h2>Resultados</h2>
-      <p>{item.results}</p>
-    </section>
-  )}
-  <section>
-    <h2>Límites</h2>
-    <p>{item.limitations}</p>
-  </section>
-</DirectoryDetail>
+  <article class="site-container labs-detail research-detail">
+    <DirectoryBack
+      href={`/investigacion/#${researchSection}`}
+      title="Investigación"
+    />
+    {entry.cover && (
+      <div class="research-detail-cover">
+        <DirectoryImage image={entry.cover} priority />
+      </div>
+    )}
+    <header class="product-intro">
+      <p class="research-type">{entry.type}</p>
+      <h1>{entry.title}</h1>
+      <p class="product-summary">{description}</p>
+      <div class="product-byline">
+        <p>
+          Por {researchAuthors(entry)}{' '}
+          {entry.demo && <small>Demostración</small>}
+        </p>
+      </div>
+    </header>
+
+    <div class="product-layout research-layout">
+      <ResearchResources {entry} />
+      <ResearchContent {entry} />
+      <aside class="product-sidebar" aria-label="Metadatos y autoría">
+        <MetadataPanel
+          title="Información de la investigación"
+          icon={Info}
+          fields={[
+            ['Tipo de investigación', entry.type],
+            ['Área de investigación', entry.area],
+            ['Temas', entry.topics.join(', ')],
+            ['Estado de la investigación', entry.researchStatus],
+            ['Estado de publicación', entry.editorialStatus],
+            ['Revisión por pares', entry.peerReview],
+            ['Vertical asociada', entry.verticals.join(', '), 'en'],
+            ['Relación con inteligencia artificial', entry.aiRelationship],
+          ]}
+        />
+        <MetadataPanel
+          title="Autoría y procedencia"
+          icon={UsersRound}
+          fields={[
+            ['Equipo responsable', entry.team],
+            ['Procedencia', entry.origin],
+            ['Relación con AI PlayGrounds', entry.organizationRelation],
+          ]}
+        >
+          <ul slot="before" class="author-list" role="list">
+            {entry.authors.map(({ name, avatar, affiliations }) => (
+              <li class="icon-row">
+                {avatar && <DirectoryImage image={avatar} decorative />}
+                <div>
+                  <strong>{name}</strong>
+                  {affiliations.length > 0 && <p>{affiliations.join('; ')}</p>}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </MetadataPanel>
+        {(dates.some(([, value]) => value) || entry.version) && (
+          <MetadataPanel title="Fechas" icon={CalendarDays}>
+            <dl>
+              {dates.map(
+                ([label, value]) =>
+                  value && (
+                    <div>
+                      <dt>{label}</dt>
+                      <dd>
+                        <time datetime={value}>
+                          {researchDate.format(new Date(value))}
+                        </time>
+                      </dd>
+                    </div>
+                  ),
+              )}
+              {entry.version && (
+                <div>
+                  <dt>Versión</dt>
+                  <dd>{entry.version}</dd>
+                </div>
+              )}
+            </dl>
+          </MetadataPanel>
+        )}
+      </aside>
+    </div>
+
+    {related.length > 0 && (
+      <section
+        class="related-products"
+        aria-labelledby="related-research-title"
+        data-related-directory
+        data-reveal
+      >
+        <h2 id="related-research-title">
+          <Layers size={24} aria-hidden="true" /> Investigaciones relacionadas
+        </h2>
+        <ul role="list">
+          {related.map((target) => (
+            <li>
+              <ResearchCard entry={target} />
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+    {products.length > 0 && (
+      <section
+        class="related-products"
+        aria-labelledby="related-product-title"
+        data-reveal
+      >
+        <h2 id="related-product-title">
+          <Layers size={24} aria-hidden="true" /> Productos relacionados de AI
+          Labs
+        </h2>
+        <ul data-view="list" role="list">
+          {products.map((product) => (
+            <li>
+              <ProductCard {product} />
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </article>
+  <EditorialMotion />
+</InteriorLayout>

@@ -1,0 +1,156 @@
+---
+import { ArrowRight } from '@lucide/astro';
+import DirectoryImage from '../directory/DirectoryImage.astro';
+import VerticalTag from '../directory/VerticalTag.astro';
+import {
+  researchAuthors,
+  researchDate,
+  researchPath,
+  type Research,
+} from '../../data/research';
+
+interface Props {
+  entry: Research;
+  eager?: boolean;
+}
+const { entry, eager } = Astro.props;
+---
+
+<article class="research-card" data-card-interactive data-card-hit-area>
+  {entry.cover && (
+    <div class="research-cover">
+      <DirectoryImage image={entry.cover} decorative {eager} />
+    </div>
+  )}
+  <div class="research-card-body">
+    <ul class="research-tags" role="list" aria-label="Clasificación">
+      {entry.verticals.map((vertical) => (
+        <VerticalTag as="li" {vertical} />
+      ))}
+      <li class="research-status">{entry.researchStatus}</li>
+      {entry.demo && <li class="research-demo">Demostración</li>}
+    </ul>
+    <div class="research-card-heading">
+      <p>{entry.type}</p>
+      <h3 class="directory-card-title">{entry.title}</h3>
+    </div>
+    <p class="research-card-summary">{entry.summary ?? entry.question}</p>
+    <footer class="research-card-footer">
+      <div>
+        <p>Por {researchAuthors(entry)}</p>
+        {entry.publishedAt && (
+          <time datetime={entry.publishedAt}>
+            {researchDate.format(new Date(entry.publishedAt))}
+          </time>
+        )}
+      </div>
+      <a
+        href={researchPath(entry.slug)}
+        data-card-link
+        aria-label={`Ver investigación: ${entry.title}`}
+      >
+        Ver investigación{' '}
+        <ArrowRight size={18} aria-hidden="true" data-card-arrow />
+      </a>
+    </footer>
+  </div>
+</article>
+
+<style>
+  .research-card {
+    display: grid;
+    align-content: start;
+    min-block-size: 100%;
+    border: 1px solid var(--border);
+    border-radius: var(--editorial-radius);
+    background: var(--home-card);
+    overflow: clip;
+    overflow-wrap: anywhere;
+  }
+  .research-cover {
+    overflow: clip;
+    background: var(--muted);
+    min-inline-size: 0;
+    aspect-ratio: 2.2;
+    position: relative;
+  }
+  .research-cover :global(img) {
+    position: absolute;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+  .research-card-body {
+    display: grid;
+    gap: 0.75rem;
+    min-inline-size: 0;
+    padding: clamp(1rem, 2.4vw, 1.85rem);
+  }
+  .research-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+  }
+  .research-tags :is(.research-status, .research-demo) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--editorial-radius);
+    color: var(--editorial-lilac-ink);
+    border: 1px solid var(--border);
+  }
+  .research-tags .research-demo,
+  .research-card-heading p,
+  .research-card-summary,
+  .research-card-footer {
+    color: var(--secondary-text);
+  }
+  .research-card-heading p,
+  .research-card-footer {
+    font-size: 0.9rem;
+  }
+  .research-card-heading h3 {
+    margin-block-start: 0.25rem;
+  }
+  .research-card-summary {
+    max-inline-size: 70ch;
+  }
+  .research-card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: 0.15rem 1.25rem;
+    margin-block-start: 0.25rem;
+  }
+  .research-card-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-block-size: 44px;
+    color: var(--foreground);
+    font-weight: 500;
+  }
+  .research-card-footer svg {
+    flex: none;
+  }
+  @media (min-width: 40rem) {
+    :global([data-view='list']) .research-card:has(.research-cover) {
+      grid-template-columns: minmax(0, 23fr) minmax(0, 77fr);
+    }
+    :global([data-view='list']) .research-cover {
+      aspect-ratio: auto;
+    }
+  }
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .research-cover :global(img) {
+      transition: transform 300ms ease;
+    }
+    .research-card:hover .research-cover :global(img) {
+      transform: scale(1.04);
+    }
+  }
+</style>

@@ -1,4 +1,5 @@
 ---
+import DirectoryImage from '../directory/DirectoryImage.astro';
 import type { Product } from '../../data/labs';
 
 interface Props {
@@ -23,14 +24,11 @@ const artwork =
 >
   <div class="cover-art">
     {cover ? (
-      <img
-        src={cover.src}
-        alt={detail ? cover.alt : ''}
-        width={cover.width}
-        height={cover.height}
-        loading={detail || eager ? 'eager' : 'lazy'}
-        fetchpriority={detail ? 'high' : undefined}
-        decoding="async"
+      <DirectoryImage
+        image={cover}
+        decorative={!detail}
+        {eager}
+        priority={detail}
       />
     ) : (
       <svg
@@ -201,23 +199,22 @@ const artwork =
     color: var(--editorial-grove-ink);
     background: var(--editorial-grove);
   }
-  .product-cover:has(:global(.vertical:nth-child(4))) {
-    min-block-size: 7.5rem;
-  }
   .product-cover.detail {
-    aspect-ratio: 3;
-    max-block-size: 22rem;
-    min-block-size: 8rem;
+    aspect-ratio: 3 / 1;
     border-radius: var(--editorial-radius);
   }
   .cover-art,
-  img,
+  .cover-art :global(img),
   svg {
     display: block;
     inline-size: 100%;
     block-size: 100%;
   }
-  img {
+  .cover-art {
+    position: absolute;
+    inset: 0;
+  }
+  .cover-art :global(img) {
     object-fit: cover;
   }
   .wave {

@@ -1,0 +1,80 @@
+.research-detail-cover {
+  overflow: clip;
+  margin-block-end: clamp(1.5rem, 3vw, 2.25rem);
+  border: 1px solid var(--border);
+  border-radius: var(--editorial-radius);
+}
+.research-detail-cover img {
+  inline-size: 100%;
+  block-size: auto;
+  max-block-size: clamp(12rem, 27vw, 23rem);
+  object-fit: cover;
+}
+.research-type,
+.research-detail figcaption {
+  color: var(--secondary-text);
+  font-size: 0.95rem;
+}
+.research-layout .research-content:empty {
+  display: none;
+}
+.research-objectives {
+  display: grid;
+  gap: 1rem;
+  list-style: disc;
+  padding-inline-start: 1.25rem;
+  color: var(--secondary-text);
+}
+.research-content figure img {
+  block-size: auto;
+  max-inline-size: 100%;
+  border-radius: var(--editorial-radius);
+}
+.research-content figcaption {
+  margin-block-start: 0.5rem;
+}
+.research-table {
+  overflow-x: auto;
+}
+.research-table table {
+  inline-size: 100%;
+  border-collapse: collapse;
+}
+.research-table caption {
+  text-align: start;
+  padding-block-end: 0.5rem;
+}
+.research-table :is(th, td) {
+  border: 1px solid var(--border);
+  padding: 0.55rem 0.75rem;
+  text-align: start;
+}
+.research-table th {
+  background: var(--home-card);
+}
+.research-resource-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-block-size: 44px;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.research-resource-links a:hover {
+  color: var(--interaction-accent);
+}
+@media (min-width: 52rem) {
+  .research-layout {
+    grid-template-rows: auto 1fr;
+    row-gap: 1rem;
+  }
+  .research-layout .research-content {
+    grid-area: 1 / 1 / span 2 / 2;
+  }
+  .research-layout .research-resources {
+    grid-area: 1 / 2;
+  }
+  .research-layout .product-sidebar {
+    grid-area: 2 / 2;
+  }
+}

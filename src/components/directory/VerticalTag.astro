@@ -1,0 +1,49 @@
+---
+import { Layers } from '@lucide/astro';
+import type { verticals } from '../../data/labs-schema';
+
+interface Props {
+  vertical: (typeof verticals)[number];
+  as?: 'span' | 'li';
+}
+const { vertical, as: Tag = 'span' } = Astro.props;
+const verticalColors = {
+  'AI Foundations': 'foundations',
+  'AI for Software': 'software',
+  'AI for Science': 'science',
+  'AI for Finance': 'finance',
+};
+---
+
+<Tag class="vertical" data-vertical={verticalColors[vertical]} lang="en">
+  <Layers size={14} aria-hidden="true" />
+  {vertical}
+</Tag>
+
+<style>
+  .vertical {
+    display: inline-flex;
+    max-inline-size: 100%;
+    align-items: center;
+    gap: 0.35rem;
+    border-radius: 0.25rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--brand-white);
+    background: var(--editorial-grove-ink);
+  }
+  .vertical :global(svg) {
+    flex: none;
+  }
+  .vertical[data-vertical='foundations'] {
+    background: var(--editorial-lilac-ink);
+  }
+  .vertical[data-vertical='software'] {
+    background: var(--success);
+  }
+  .vertical[data-vertical='finance'] {
+    background: var(--editorial-sand-ink);
+  }
+</style>

@@ -1,0 +1,36 @@
+---
+import DirectoryLink from '../site/DirectoryLink.astro';
+
+interface Props {
+  href: string;
+  title: string;
+}
+const { href, title } = Astro.props;
+---
+
+<div class="product-back" data-directory-back>
+  <DirectoryLink {href} {title} back />
+</div>
+
+<script>
+  for (const container of document.querySelectorAll('[data-directory-back]')) {
+    const link = container.querySelector('a')!;
+    const from = new URLSearchParams(location.search).get('from');
+    if (!from) continue;
+    const params = new URLSearchParams(from).toString();
+    if (!params) continue;
+    const back = new URL(link.href);
+    back.search = params;
+    link.href = back.pathname + back.search + back.hash;
+    container
+      .closest('article')
+      ?.querySelectorAll<HTMLAnchorElement>(
+        '[data-related-directory] [data-card-link]',
+      )
+      .forEach((related) => {
+        const url = new URL(related.href);
+        url.searchParams.set('from', params);
+        related.href = url.pathname + url.search;
+      });
+  }
+</script>

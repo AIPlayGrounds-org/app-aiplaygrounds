@@ -1,0 +1,29 @@
+---
+import type { Info } from '@lucide/astro';
+
+interface Props {
+  title: string;
+  icon: typeof Info;
+  fields?: [label: string, value?: string, lang?: string][];
+}
+const { title, icon: Icon, fields = [] } = Astro.props;
+const visible = fields.filter(([, value]) => value);
+---
+
+<section class="detail-panel">
+  <h2>
+    <Icon size={21} aria-hidden="true" /> {title}
+  </h2>
+  <slot name="before" />
+  {visible.length > 0 && (
+    <dl>
+      {visible.map(([label, value, lang]) => (
+        <div>
+          <dt>{label}</dt>
+          <dd {lang}>{value}</dd>
+        </div>
+      ))}
+    </dl>
+  )}
+  <slot />
+</section>

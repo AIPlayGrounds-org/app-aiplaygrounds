@@ -1,11 +1,22 @@
 ---
+import DirectoryCatalog from '../components/directory/DirectoryCatalog.astro';
+import DirectoryResult from '../components/directory/DirectoryResult.astro';
+import ResearchCard from '../components/research/ResearchCard.astro';
 import CompactHero from '../components/site/CompactHero.astro';
-import { getResearch } from '../data/directories';
+import EditorialMotion from '../components/site/EditorialMotion.astro';
+import { sortDirectory, sortOptions } from '../data/directory';
+import { getResearch, researchSection } from '../data/research';
+import { indexResearch, researchFacets } from '../data/research-directory';
 import InteriorLayout from '../layouts/InteriorLayout.astro';
-import DirectoryLink from '../components/site/DirectoryLink.astro';
-import '../styles/directories.css';
 
-const entries = await getResearch();
+const entries = (await getResearch()).map((entry) => ({
+  entry,
+  index: indexResearch(entry),
+}));
+entries.sort((a, b) => sortDirectory(a.index, b.index, 'recent'));
+const { primary, secondary } = researchFacets(
+  entries.map(({ index }) => index),
+);
 ---
 
 <InteriorLayout
@@ -18,103 +29,31 @@ const entries = await getResearch();
     title="Exploramos nuevas preguntas con inteligencia artificial."
     description="Desarrollamos y compartimos trabajos de investigación para comprender la IA, explorar sus aplicaciones y generar conocimiento."
   />
-  <div class="site-container directory">
-    <section id="DI2">
-      <h2 class="directory-section-title">Directorio de investigaciones</h2>
-      {entries.length === 0 ? (
-        <p class="directory-empty">Aún no hay investigaciones publicadas.</p>
-      ) : (
-        <ul class="research-list" role="list">
-          {entries.map((item) => (
-            <li class="research-row" data-card-interactive data-card-hit-area>
-              <div class="research-summary">
-                <h3>{item.title}</h3>
-                <p>{item.question}</p>
-              </div>
-              <div class="research-context">
-                <dl class="research-meta">
-                  <div>
-                    <dt class="sr-only">Tipo</dt>
-                    <dd>{item.type}</dd>
-                  </div>
-                  {item.authors && (
-                    <div>
-                      <dt class="sr-only">Autoría</dt>
-                      <dd>{item.authors}</dd>
-                    </div>
-                  )}
-                  {item.date && (
-                    <div>
-                      <dt class="sr-only">Fecha</dt>
-                      <dd>{item.date}</dd>
-                    </div>
-                  )}
-                  {item.organizationRelation && (
-                    <div>
-                      <dt class="sr-only">Relación con AI PlayGrounds</dt>
-                      <dd>{item.organizationRelation}</dd>
-                    </div>
-                  )}
-                  {item.peerReview && (
-                    <div>
-                      <dt class="sr-only">Revisión por pares</dt>
-                      <dd>{item.peerReview}</dd>
-                    </div>
-                  )}
-                </dl>
-                {item.demo && <span class="directory-demo">Demostración</span>}
-              </div>
-              <div class="research-action">
-                <DirectoryLink
-                  href={`/investigacion/${item.slug}/`}
-                  title={item.title}
-                />
-              </div>
-            </li>
-          ))}
-        </ul>
-      )}
-    </section>
-  </div>
+  <DirectoryCatalog
+    directory="research"
+    sectionId={researchSection}
+    title="Directorio de investigaciones"
+    singular="investigación"
+    plural="investigaciones"
+    emptyMessage="Aún no hay investigaciones publicadas."
+    placeholder="Buscar por título, autoría, tema o método…"
+    total={entries.length}
+    {primary}
+    {secondary}
+    defaultView="list"
+    labels={{
+      ...sortOptions,
+      recent: 'Publicadas recientemente',
+      updated: 'Actualizadas recientemente',
+      az: 'Título A–Z',
+      za: 'Título Z–A',
+    }}
+  >
+    {entries.map(({ entry, index }, position) => (
+      <DirectoryResult {index} reveal>
+        <ResearchCard {entry} eager={position === 0} />
+      </DirectoryResult>
+    ))}
+  </DirectoryCatalog>
+  <EditorialMotion />
 </InteriorLayout>
-
-<style>
-  .research-list {
-    border-block-start: 1px solid var(--outline);
-  }
-  .research-row {
-    display: grid;
-    grid-template-columns: minmax(0, 3fr) minmax(0, 1.3fr) max-content;
-    gap: 0.75rem clamp(1rem, 3vw, 2.5rem);
-    align-items: start;
-    padding-block: clamp(1.25rem, 3vw, 2rem);
-    border-block-end: 1px solid var(--card-edge);
-  }
-  .research-summary h3 {
-    font-size: clamp(1.3rem, 1.12rem + 0.65vw, 1.75rem);
-    text-wrap: pretty;
-  }
-  .research-summary p {
-    margin-block-start: 0.5rem;
-    max-inline-size: 65ch;
-    color: var(--secondary-text);
-  }
-  .research-context {
-    display: grid;
-    justify-items: start;
-    gap: 0.45rem;
-  }
-  .research-meta {
-    font-size: 0.95rem;
-    color: var(--secondary-text);
-  }
-  .research-meta div + div {
-    margin-block-start: 0.2rem;
-  }
-  @media (max-width: 42rem) {
-    .research-row {
-      grid-template-columns: minmax(0, 1fr);
-      gap: 0.65rem;
-    }
-  }
-</style>

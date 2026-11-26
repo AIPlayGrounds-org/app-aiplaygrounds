@@ -1,0 +1,300 @@
+---
+import {
+  ChevronDown,
+  ChevronLeft,
+  ChevronRight,
+  Grid2x2,
+  List,
+  Search,
+  SlidersHorizontal,
+  X,
+} from '@lucide/astro';
+import DirectoryFilter from './DirectoryFilter.astro';
+import {
+  directoryLimits,
+  sortOptions,
+  type DirectoryFacet,
+  type DirectoryView,
+} from '../../data/directory';
+import '../../styles/directory.css';
+
+interface Props {
+  directory: string;
+  sectionId: string;
+  title: string;
+  singular: string;
+  plural: string;
+  emptyMessage: string;
+  placeholder: string;
+  total: number;
+  primary: DirectoryFacet[];
+  secondary: DirectoryFacet[];
+  defaultView: DirectoryView;
+  labels?: typeof sortOptions;
+}
+const {
+  directory,
+  sectionId,
+  title,
+  singular,
+  plural,
+  emptyMessage,
+  placeholder,
+  total,
+  primary,
+  secondary,
+  defaultView,
+  labels = sortOptions,
+} = Astro.props;
+const hasFilters = primary.length + secondary.length > 0;
+---
+
+<section
+  id={sectionId}
+  class="site-container labs-directory"
+  aria-labelledby={`${directory}-title`}
+>
+  <h2 id={`${directory}-title`}>{title}</h2>
+  {total === 0 ? (
+    <p class="labs-empty">{emptyMessage}</p>
+  ) : (
+    <div
+      class="catalog"
+      data-directory={directory}
+      data-section={sectionId}
+      data-singular={singular}
+      data-plural={plural}
+    >
+      <div class="catalog-toolbar">
+        <search class="catalog-search" aria-label={title} data-enhanced>
+          <form data-search>
+            <Search size={20} aria-hidden="true" />
+            <label class="sr-only" for={`${directory}-query`}>
+              Buscar {plural}
+            </label>
+            <input
+              id={`${directory}-query`}
+              data-query
+              type="search"
+              name="q"
+              placeholder={placeholder}
+            />
+            <button
+              type="button"
+              class="search-clear"
+              data-clear-query
+              aria-label="Limpiar búsqueda"
+              hidden
+            >
+              <X size={17} aria-hidden="true" />
+            </button>
+          </form>
+        </search>
+        {hasFilters && (
+          <>
+            <button
+              type="button"
+              class="mobile-filter control"
+              aria-haspopup="dialog"
+              aria-controls={`${directory}-filter-dialog`}
+              data-enhanced
+            >
+              <SlidersHorizontal size={18} aria-hidden="true" />
+              Filtros
+            </button>
+            <div class="filter-home" data-filter-home>
+              <div class="filter-content" data-filter-content>
+                <section
+                  id={`${directory}-filters`}
+                  class="catalog-filters"
+                  aria-label={`Filtros de ${plural}`}
+                  data-enhanced
+                >
+                  {primary.map((group) => (
+                    <DirectoryFilter {group} {directory} {plural} dropdown />
+                  ))}
+                  {secondary.length > 0 && (
+                    <button
+                      type="button"
+                      class="control more-toggle"
+                      aria-expanded="false"
+                      aria-controls={`${directory}-advanced`}
+                      data-more-toggle
+                    >
+                      <SlidersHorizontal size={17} aria-hidden="true" />
+                      Más filtros <span data-advanced-count hidden></span>
+                      <ChevronRight
+                        size={16}
+                        aria-hidden="true"
+                        class="more-chevron"
+                      />
+                    </button>
+                  )}
+                </section>
+                {secondary.length > 0 && (
+                  <div class="advanced-region" data-advanced-region>
+                    <div class="advanced-inner">
+                      <div
+                        class="advanced-panel"
+                        id={`${directory}-advanced`}
+                        data-advanced-panel
+                        inert
+                      >
+                        <div class="advanced-grid">
+                          {secondary.map((group) => (
+                            <DirectoryFilter
+                              {group}
+                              {directory}
+                              {plural}
+                              advanced
+                            />
+                          ))}
+                        </div>
+                        <div class="advanced-actions">
+                          <button
+                            type="button"
+                            class="reset-button"
+                            data-panel-clear
+                          >
+                            Limpiar filtros
+                          </button>
+                          <button
+                            type="button"
+                            class="apply-button"
+                            data-panel-apply
+                          >
+                            Aplicar filtros
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            <dialog
+              class="filter-dialog"
+              id={`${directory}-filter-dialog`}
+              data-filter-dialog
+              aria-labelledby={`${directory}-filter-title`}
+            >
+              <header class="filter-dialog-header">
+                <h2 id={`${directory}-filter-title`}>Filtros</h2>
+                <form method="dialog">
+                  <button type="submit" aria-label="Cerrar filtros" autofocus>
+                    <X size={20} aria-hidden="true" />
+                  </button>
+                </form>
+              </header>
+              <div data-drawer-content></div>
+              <div data-drawer-actions>
+                {secondary.length === 0 && (
+                  <div class="advanced-actions">
+                    <button type="button" class="reset-button" data-panel-clear>
+                      Limpiar filtros
+                    </button>
+                    <button type="button" class="apply-button" data-panel-apply>
+                      Aplicar filtros
+                    </button>
+                  </div>
+                )}
+              </div>
+            </dialog>
+          </>
+        )}
+      </div>
+      <div class="catalog-results">
+        <div class="result-toolbar">
+          <p data-count role="status" tabindex="-1">
+            {total} {total === 1 ? singular : plural}
+          </p>
+          <div class="view-options" data-enhanced>
+            <label for={`${directory}-sort`} class="sr-only">
+              Ordenar {plural}
+            </label>
+            <div class="sort-field">
+              <select
+                id={`${directory}-sort`}
+                name="sort"
+                class="control dropdown-trigger"
+                data-sort
+              >
+                {Object.entries(labels).map(([value, label]) => (
+                  <option {value}>{label}</option>
+                ))}
+              </select>
+              <ChevronDown size={16} aria-hidden="true" />
+            </div>
+            <div
+              class="view-toggle"
+              role="group"
+              aria-label="Vista del directorio"
+            >
+              <button
+                type="button"
+                class="control"
+                data-set-view="grid"
+                aria-label="Cuadrícula"
+                aria-pressed={defaultView === 'grid'}
+              >
+                <Grid2x2 size={18} aria-hidden="true" />
+              </button>
+              <button
+                type="button"
+                class="control"
+                data-set-view="list"
+                aria-label="Listado"
+                aria-pressed={defaultView === 'list'}
+              >
+                <List size={18} aria-hidden="true" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="active-filters" data-active-filters hidden>
+          <ul aria-label="Filtros activos" role="list" data-tags></ul>
+          <button type="button" class="reset-button" data-clear-filters>
+            Limpiar filtros
+          </button>
+        </div>
+        <ul
+          class="catalog-cards"
+          data-cards
+          data-view={defaultView}
+          role="list"
+        >
+          <slot />
+        </ul>
+        <div class="labs-empty" data-no-results hidden>
+          <h3>No encontramos {plural}</h3>
+          <p>Prueba con otra búsqueda o quita algunos filtros.</p>
+          <button type="button" class="reset-button" data-reset>
+            Limpiar búsqueda y filtros
+          </button>
+        </div>
+        {total > directoryLimits.pageSize && (
+          <nav
+            class="catalog-pages"
+            aria-label="Páginas del directorio"
+            data-pages
+            hidden
+          >
+            <a class="control" data-step="-1">
+              <ChevronLeft size={18} aria-hidden="true" />
+              Anterior
+            </a>
+            <span data-page-label></span>
+            <a class="control" data-step="1">
+              Siguiente
+              <ChevronRight size={18} aria-hidden="true" />
+            </a>
+          </nav>
+        )}
+      </div>
+    </div>
+  )}
+</section>
+
+<script>
+  import '../../scripts/directory';
+</script>

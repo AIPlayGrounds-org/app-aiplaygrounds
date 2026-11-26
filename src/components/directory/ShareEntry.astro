@@ -1,0 +1,58 @@
+---
+import { Share2 } from '@lucide/astro';
+---
+
+<div data-directory-share>
+  <button type="button" class="share-button" data-share hidden>
+    <Share2 size={18} aria-hidden="true" /> Compartir
+  </button>
+  <div class="share-result">
+    <p role="status" data-share-status></p>
+    <input
+      aria-label="Enlace a la ficha"
+      type="url"
+      readonly
+      data-share-url
+      hidden
+    />
+  </div>
+</div>
+
+<script>
+  for (const container of document.querySelectorAll('[data-directory-share]')) {
+    const share = container.querySelector<HTMLButtonElement>('[data-share]')!;
+    const status = container.querySelector<HTMLElement>('[data-share-status]')!;
+    const field =
+      container.querySelector<HTMLInputElement>('[data-share-url]')!;
+    share.hidden = false;
+    share.addEventListener('click', async () => {
+      const url = new URL(location.pathname, location.origin).href;
+      if (navigator.share) {
+        try {
+          await navigator.share({ title: document.title, url });
+          return;
+        } catch (error) {
+          if (error instanceof DOMException && error.name === 'AbortError')
+            return;
+        }
+      }
+      try {
+        await navigator.clipboard.writeText(url);
+        status.textContent = 'Enlace copiado.';
+        field.hidden = true;
+      } catch {
+        status.textContent = 'Copia el enlace de esta ficha.';
+        field.hidden = false;
+        field.value = url;
+        field.focus();
+        field.select();
+      }
+    });
+  }
+</script>
+
+<style>
+  [data-directory-share] {
+    display: contents;
+  }
+</style>

@@ -1,0 +1,61 @@
+---
+import { ArrowUpRight, FileText } from '@lucide/astro';
+import ShareEntry from '../directory/ShareEntry.astro';
+import Button from '../starwind/button/Button.astro';
+import type { Research } from '../../data/research';
+
+interface Props {
+  entry: Research;
+}
+const { entry } = Astro.props;
+const links = [
+  {
+    label: entry.doi ? `DOI: ${entry.doi}` : '',
+    url: entry.doi
+      ? `https://doi.org/${entry.doi.split('/').map(encodeURIComponent).join('/')}`
+      : undefined,
+  },
+  {
+    label: 'Publicación original',
+    url:
+      entry.publicationUrl === entry.source ? undefined : entry.publicationUrl,
+  },
+  { label: 'Código fuente', url: entry.code },
+  { label: 'Conjunto de datos', url: entry.dataset },
+  ...entry.resources,
+].filter(({ url }) => url);
+---
+
+<section class="detail-panel access-panel research-resources">
+  <h2>
+    <FileText size={21} aria-hidden="true" /> Recursos originales
+  </h2>
+  {entry.demo && (
+    <p class="access-note">
+      Ficha ficticia para demostración. No corresponde a una publicación
+      científica.
+    </p>
+  )}
+  {entry.access && (
+    <p class="access-mode">
+      {entry.demo ? 'Acceso de ejemplo' : 'Modalidad de acceso'}: {entry.access}
+    </p>
+  )}
+  {entry.source && (
+    <Button href={entry.source} variant="primary">
+      Consultar original <ArrowUpRight size={18} aria-hidden="true" />
+    </Button>
+  )}
+  {links.length > 0 && (
+    <ul class="research-resource-links" role="list">
+      {links.map(({ label, url }) => (
+        <li>
+          <a href={url}>
+            {label} <ArrowUpRight size={15} aria-hidden="true" />
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+  <ShareEntry />
+</section>
