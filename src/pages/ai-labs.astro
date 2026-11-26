@@ -1,11 +1,38 @@
 ---
+import {
+  ChevronLeft,
+  ChevronRight,
+  Grid2x2,
+  List,
+  Search,
+  SlidersHorizontal,
+  X,
+} from '@lucide/astro';
 import CompactHero from '../components/site/CompactHero.astro';
-import { getProducts } from '../data/directories';
+import ProductCard from '../components/labs/ProductCard.astro';
+import ProductFilter from '../components/labs/ProductFilter.astro';
+import { getProducts } from '../data/labs';
+import {
+  buildFacets,
+  directoryLimits,
+  indexProduct,
+  sortOptions,
+  sortProducts,
+} from '../data/labs-directory';
 import InteriorLayout from '../layouts/InteriorLayout.astro';
-import DirectoryLink from '../components/site/DirectoryLink.astro';
-import '../styles/directories.css';
+import '../styles/labs-directory.css';
 
-const entries = await getProducts();
+const entries = (await getProducts()).map((product) => ({
+  product,
+  index: indexProduct(product),
+}));
+entries.sort((a, b) => sortProducts(a.index, b.index, 'recent'));
+const groups = buildFacets(entries.map(({ index }) => index));
+const compact = entries.length <= directoryLimits.compactMax;
+const primary = compact
+  ? groups.slice(0, directoryLimits.primaryGroups)
+  : groups;
+const secondary = compact ? groups.slice(directoryLimits.primaryGroups) : [];
 ---
 
 <InteriorLayout
@@ -15,92 +42,193 @@ const entries = await getProducts();
   <CompactHero
     id="B1"
     variant="construction"
+    label="AI Labs"
     title="Transformamos ideas en soluciones con IA."
     description="Explora las iniciativas y productos que estamos desarrollando para experimentar con nuevas tecnologías y responder a problemas reales."
   />
-  <div class="site-container directory">
-    <section id="B3">
-      <h2 class="directory-section-title">Directorio de productos</h2>
-      {entries.length === 0 ? (
-        <p class="directory-empty">Aún no hay productos publicados.</p>
-      ) : (
-        <ul class="product-grid" role="list">
-          {entries.map((product) => (
-            <li class="product-card" data-card-interactive data-card-hit-area>
-              <h3>{product.name}</h3>
-              <p>{product.utility}</p>
-              <dl class="product-meta">
-                <div>
-                  <dt>Público</dt>
-                  <dd>{product.audience}</dd>
+  <section
+    id="B3"
+    class="site-container labs-directory"
+    aria-labelledby="labs-title"
+  >
+    <h2 id="labs-title">Directorio de productos</h2>
+    {entries.length === 0 ? (
+      <p class="labs-empty">Aún no hay productos publicados.</p>
+    ) : (
+      <div class:list={['catalog', { compact }]} data-labs-directory>
+        <search
+          class="catalog-search"
+          aria-label="Directorio de productos"
+          data-enhanced
+        >
+          <form data-search>
+            <Search size={20} aria-hidden="true" />
+            <label class="sr-only" for="labs-query">
+              Buscar productos
+            </label>
+            <input
+              id="labs-query"
+              type="search"
+              name="q"
+              placeholder="Buscar productos, categorías, tecnologías…"
+            />
+            <button
+              type="button"
+              class="search-clear"
+              data-clear-query
+              aria-label="Limpiar búsqueda"
+              hidden
+            >
+              <X size={17} aria-hidden="true" />
+            </button>
+          </form>
+        </search>
+        {groups.length > 0 && (
+          <>
+            <button
+              type="button"
+              class="mobile-filter control"
+              aria-expanded="false"
+              aria-controls="labs-filters"
+              data-enhanced
+            >
+              <SlidersHorizontal size={18} aria-hidden="true" />
+              Filtros
+            </button>
+            <section
+              id="labs-filters"
+              class="catalog-filters"
+              aria-label="Filtros de productos"
+              data-enhanced
+            >
+              {!compact && (
+                <h3>
+                  <SlidersHorizontal size={18} aria-hidden="true" />
+                  Filtros
+                </h3>
+              )}
+              {primary.map((group) => (
+                <ProductFilter {group} dropdown={compact} />
+              ))}
+              {secondary.length > 0 && (
+                <details class="more-filters" data-dropdown>
+                  <summary class="control">
+                    <SlidersHorizontal size={17} aria-hidden="true" />
+                    Más filtros
+                  </summary>
+                  <div class="more-panel">
+                    {secondary.map((group) => (
+                      <ProductFilter {group} />
+                    ))}
+                  </div>
+                </details>
+              )}
+            </section>
+          </>
+        )}
+        <div class="catalog-results">
+          <div class="result-toolbar">
+            <p data-count role="status" tabindex="-1">
+              {entries.length} {entries.length === 1 ? 'producto' : 'productos'}
+            </p>
+            {!compact && (
+              <div class="view-options" data-enhanced>
+                <label for="labs-sort" class="sr-only">
+                  Ordenar productos
+                </label>
+                <select id="labs-sort" class="control" data-sort>
+                  {Object.entries(sortOptions).map(([value, label]) => (
+                    <option {value}>{label}</option>
+                  ))}
+                </select>
+                <div
+                  class="view-toggle"
+                  role="group"
+                  aria-label="Vista del directorio"
+                >
+                  <button
+                    type="button"
+                    class="control"
+                    data-set-view="grid"
+                    aria-label="Cuadrícula"
+                    aria-pressed="true"
+                  >
+                    <Grid2x2 size={18} aria-hidden="true" />
+                  </button>
+                  <button
+                    type="button"
+                    class="control"
+                    data-set-view="list"
+                    aria-label="Listado"
+                    aria-pressed="false"
+                  >
+                    <List size={18} aria-hidden="true" />
+                  </button>
                 </div>
-                <div>
-                  <dt>Estado</dt>
-                  <dd>{product.status}</dd>
-                </div>
-              </dl>
-              <div class="product-actions">
-                <DirectoryLink
-                  href={`/ai-labs/${product.slug}/`}
-                  title={product.name}
-                />
-                {product.demo && (
-                  <span class="directory-demo">Demostración</span>
-                )}
               </div>
-            </li>
-          ))}
-        </ul>
-      )}
-    </section>
-  </div>
+            )}
+          </div>
+          <div class="active-filters" data-active-filters hidden>
+            <ul aria-label="Filtros activos" role="list" data-tags></ul>
+            <button type="button" class="reset-button" data-clear-filters>
+              Limpiar filtros
+            </button>
+          </div>
+          <ul class="catalog-cards" data-cards data-view="grid" role="list">
+            {entries.map(
+              (
+                {
+                  product,
+                  index: { id, name, publishedAt, updatedAt, text, values },
+                },
+                position,
+              ) => (
+                <li
+                  data-product={JSON.stringify({
+                    id,
+                    name,
+                    publishedAt,
+                    updatedAt,
+                    text,
+                    values,
+                  })}
+                >
+                  <ProductCard {product} eager={position === 0} />
+                </li>
+              ),
+            )}
+          </ul>
+          <div class="labs-empty" data-no-results hidden>
+            <h3>No encontramos productos</h3>
+            <p>Prueba con otra búsqueda o quita algunos filtros.</p>
+            <button type="button" class="reset-button" data-reset>
+              Limpiar búsqueda y filtros
+            </button>
+          </div>
+          {entries.length > directoryLimits.pageSize && (
+            <nav
+              class="catalog-pages"
+              aria-label="Páginas del directorio"
+              data-pages
+              hidden
+            >
+              <a class="control" data-step="-1">
+                <ChevronLeft size={18} aria-hidden="true" />
+                Anterior
+              </a>
+              <span data-page-label></span>
+              <a class="control" data-step="1">
+                Siguiente
+                <ChevronRight size={18} aria-hidden="true" />
+              </a>
+            </nav>
+          )}
+        </div>
+      </div>
+    )}
+  </section>
 </InteriorLayout>
 
-<style>
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 28rem), 1fr));
-    gap: 1rem;
-  }
-  .product-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.65rem;
-    padding: clamp(1rem, 3vw, 2rem);
-    background: var(--home-surface);
-    border: 1px solid var(--card-edge);
-    border-radius: 0.4rem;
-  }
-  .product-card h3 {
-    font-size: clamp(1.35rem, 1.18rem + 0.6vw, 1.75rem);
-    text-wrap: pretty;
-  }
-  .product-card p {
-    color: var(--secondary-text);
-    max-inline-size: 55ch;
-    margin-block-end: 1rem;
-  }
-  .product-meta {
-    display: grid;
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-    gap: 0.75rem;
-    margin-block-start: auto;
-    padding-block-start: 0.9rem;
-    border-block-start: 1px solid var(--border);
-  }
-  .product-meta dt {
-    margin-block-end: 0.2rem;
-    color: var(--secondary-text);
-    font-size: 0.875rem;
-  }
-  .product-meta dd {
-    font-weight: 500;
-  }
-  .product-actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.25rem 1rem;
-  }
-</style>
+<script>
+  import '../scripts/labs-directory';
+</script>

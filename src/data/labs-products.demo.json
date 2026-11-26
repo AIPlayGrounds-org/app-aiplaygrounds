@@ -1,0 +1,117 @@
+[
+  {
+    "id": "demo-codeassist",
+    "slug": "asistente-para-revisar-cambios-de-codigo",
+    "name": "CodeAssist",
+    "summary": "Asistente de IA para escribir, explicar y revisar código en equipos de desarrollo.",
+    "description": "CodeAssist incorpora inteligencia artificial a la escritura, la comprensión y la revisión de código en distintas etapas del desarrollo de software.",
+    "category": "Desarrollo de software",
+    "application": "Ingeniería de software",
+    "type": "Asistente de IA",
+    "keywords": ["revisión", "código", "repositorios"],
+    "technologies": ["TypeScript", "Python", "LLM", "RAG"],
+    "verticals": ["AI for Software"],
+    "maturity": "Beta",
+    "development": "In Development",
+    "scopes": ["Individual", "Team", "Organization"],
+    "authors": [{ "name": "AI PlayGrounds" }],
+    "organizationRelation": "Ejemplo de un producto desarrollado dentro de la vertical AI for Software.",
+    "origin": "Vertical",
+    "problem": "Reduce el trabajo manual que implica comprender repositorios e identificar qué archivos y cambios conviene revisar juntos.",
+    "capabilities": [
+      {
+        "title": "Revisión de código",
+        "description": "Resume cambios y señala fragmentos que conviene revisar.",
+        "icon": "code"
+      },
+      {
+        "title": "Comprensión de repositorios",
+        "description": "Explica la estructura y el propósito de distintos módulos.",
+        "icon": "layers"
+      },
+      {
+        "title": "Asistencia contextual",
+        "description": "Responde consultas sobre el código y su implementación.",
+        "icon": "message"
+      }
+    ],
+    "audienceByScope": {
+      "Individual": "Personas que desarrollan y revisan código en proyectos propios.",
+      "Team": "Equipos que colaboran en repositorios de software.",
+      "Organization": "Organizaciones con equipos internos de desarrollo."
+    },
+    "aiRelationship": "IA integrada",
+    "technicalDetails": "Usa modelos de lenguaje y recuperación de contexto (RAG) para interpretar código y generar sugerencias de revisión.",
+    "limitations": "Las sugerencias requieren revisión humana y no reemplazan los controles de calidad del equipo.",
+    "access": "Por invitación",
+    "accessNote": "Esta ficha es de demostración y no ofrece acceso al producto.",
+    "publishedAt": "2026-11-25",
+    "updatedAt": "2026-11-25",
+    "publication": "published",
+    "related": ["demo-semantic-search"]
+  },
+  {
+    "id": "demo-semantic-search",
+    "slug": "buscador-semantico",
+    "name": "Semantic Search",
+    "summary": "Busca por significado en colecciones de documentos técnicos y de conocimiento.",
+    "description": "Semantic Search recupera pasajes pertinentes cuando la consulta y el documento usan palabras distintas para describir el mismo concepto.",
+    "category": "Gestión de conocimiento",
+    "application": "Documentación técnica",
+    "type": "Buscador",
+    "keywords": ["búsqueda semántica", "documentos"],
+    "technologies": ["Python", "Embeddings"],
+    "verticals": ["AI Foundations"],
+    "maturity": "Prototype",
+    "development": "In Development",
+    "scopes": ["Team", "Organization"],
+    "authors": [{ "name": "AI PlayGrounds" }],
+    "origin": "Vertical",
+    "problem": "La búsqueda literal puede pasar por alto documentos cuando los términos de la consulta no coinciden exactamente.",
+    "capabilities": [
+      {
+        "title": "Búsqueda por significado",
+        "description": "Ordena pasajes por similitud con la consulta.",
+        "icon": "search"
+      }
+    ],
+    "audienceByScope": {
+      "Team": "Equipos que mantienen documentación.",
+      "Organization": "Organizaciones que necesitan consultar colecciones internas."
+    },
+    "aiRelationship": "IA integrada",
+    "technicalDetails": "Compara representaciones vectoriales de la consulta y los pasajes indexados.",
+    "access": "No disponible",
+    "publishedAt": "2026-11-24",
+    "publication": "published",
+    "related": ["demo-codeassist"]
+  },
+  {
+    "id": "demo-flow-studio",
+    "slug": "flow-studio",
+    "name": "Flow Studio",
+    "summary": "Construye flujos de trabajo y automatiza tareas repetitivas desde un editor visual.",
+    "description": "Flow Studio permite encadenar pasos y definir qué ocurre cuando termina una tarea, con una vista de principio a fin del flujo.",
+    "category": "Automatización",
+    "application": "Operaciones",
+    "type": "Editor visual",
+    "keywords": ["flujos", "tareas"],
+    "technologies": ["TypeScript"],
+    "maturity": "Stable",
+    "development": "Maintained",
+    "scopes": ["Individual", "Team"],
+    "authors": [{ "name": "Alex Rivera" }],
+    "organizationRelation": "Ejemplo de un proyecto personal de un integrante de AI PlayGrounds.",
+    "origin": "Proyecto personal",
+    "problem": "Evita repetir manualmente la misma secuencia de tareas en cada ejecución.",
+    "audienceByScope": {
+      "Individual": "Personas que quieren sistematizar tareas recurrentes.",
+      "Team": "Equipos que comparten secuencias de trabajo."
+    },
+    "aiRelationship": "IA utilizada en el desarrollo",
+    "technicalDetails": "La IA se utilizó como apoyo durante la construcción. Los pasos del editor se ejecutan mediante reglas definidas por el usuario.",
+    "access": "No disponible",
+    "publishedAt": "2026-11-23",
+    "publication": "published"
+  }
+]

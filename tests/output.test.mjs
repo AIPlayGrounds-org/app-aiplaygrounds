@@ -4,7 +4,8 @@ import { mkdtempSync, writeFileSync, rmSync, mkdirSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { inspect } from '../scripts/check-output.mjs';
-import { demoProducts, demoResearch } from '../src/data/directories.demo.ts';
+import { demoResearch } from '../src/data/directories.demo.ts';
+import demoProducts from '../src/data/labs-products.demo.json' with { type: 'json' };
 
 test('bundle permitido y rutas o secretos rechazados', () => {
   const dir = mkdtempSync(join(tmpdir(), 'aip-output-'));

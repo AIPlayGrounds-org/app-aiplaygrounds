@@ -7,219 +7,186 @@ interface Props {
 }
 const { id, variant } = Astro.props;
 const {
-  palette: [ink, mid, paper],
+  palette: [ink, mid, light],
   land,
   contours,
+  grid: [gx, gy, gw, gh],
+  dots: [dx, dy, dw, dh],
   routes,
-  nodes,
+  points,
+  terminals = [],
 } = compactHeroArt[variant];
-const grid = `${id}-grid`;
-const dots = `${id}-dots`;
+const artId = (part: string) => `${id}-art-${part}`;
+const paint = (part: string) => `url(#${artId(part)})`;
 const step = (index: number) => ({ '--step': index });
+const landColors = [light, mid, ink];
+const landOpacity = [0.64, 0.48, 0.35];
+const dotSize = 13;
+// Divide the reference pattern into strips on its tile boundaries so that
+// the matrix can enter in rows without moving or cutting any dots.
+const dotRows = Array.from(
+  { length: Math.ceil((dy + dh) / dotSize) - Math.floor(dy / dotSize) },
+  (_, index) => {
+    const tileY = (Math.floor(dy / dotSize) + index) * dotSize;
+    const y = Math.max(dy, tileY);
+    return { y, height: Math.min(dy + dh, tileY + dotSize) - y };
+  },
+);
 ---
 
 <svg
-  viewBox="0 0 640 324"
-  preserveAspectRatio="xMidYMid slice"
+  viewBox="0 0 1440 340"
+  preserveAspectRatio="xMidYMax slice"
   aria-hidden="true"
   focusable="false"
-  style={{ '--art-ink': ink, '--art-mid': mid, '--art-paper': paper }}
+  style={{ color: ink }}
 >
   <defs>
-    <pattern id={grid} width="25" height="25" patternUnits="userSpaceOnUse">
-      <path d="M0 25V0H25" fill="none" stroke="currentColor" stroke-width="1" />
+    <linearGradient id={artId('fade')}>
+      <stop offset=".42" stop-color="white" stop-opacity="0" />
+      <stop offset=".60" stop-color="white" stop-opacity=".4" />
+      <stop offset=".84" stop-color="white" />
+    </linearGradient>
+    <mask
+      id={artId('surface')}
+      maskUnits="userSpaceOnUse"
+      x="0"
+      y="0"
+      width="1440"
+      height="340"
+    >
+      <rect width="1440" height="340" fill={paint('fade')} />
+    </mask>
+    <radialGradient id={artId('grid-fade')}>
+      <stop offset="0" stop-color="white" />
+      <stop offset=".64" stop-color="white" stop-opacity=".64" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </radialGradient>
+    <mask
+      id={artId('grid-mask')}
+      maskUnits="userSpaceOnUse"
+      x={gx}
+      y={gy}
+      width={gw}
+      height={gh}
+    >
+      <rect x={gx} y={gy} width={gw} height={gh} fill={paint('grid-fade')} />
+    </mask>
+    <pattern
+      id={artId('grid')}
+      width="31"
+      height="31"
+      patternUnits="userSpaceOnUse"
+    >
+      <path
+        d="M31 0H0V31"
+        fill="none"
+        stroke="currentColor"
+        stroke-width=".6"
+        opacity=".21"
+      />
     </pattern>
-    <pattern id={dots} width="8" height="8" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="0.9" fill="currentColor" />
+    <pattern
+      id={artId('dots')}
+      width={dotSize}
+      height={dotSize}
+      patternUnits="userSpaceOnUse"
+    >
+      <circle cx="3" cy="3" r="1.15" fill="currentColor" opacity=".56" />
     </pattern>
   </defs>
-
-  <g class="land">
-    {land.map((path, index) => (
-      <path d={path} style={step(index)} />
-    ))}
-  </g>
-
-  <g class="field">
-    <rect
-      class="grid"
-      x="75"
-      y="50"
-      width="500"
-      height="225"
-      fill={`url(#${grid})`}
-    />
-    <rect
-      class="dots"
-      x="453"
-      y="61"
-      width="111"
-      height="64"
-      fill={`url(#${dots})`}
-    />
-    <rect
-      class="dots"
-      x="111"
-      y="198"
-      width="120"
-      height="58"
-      fill={`url(#${dots})`}
-    />
-  </g>
-
-  <g class="contours">
-    {contours.map(({ path, origin: [x, y], scales }, family) =>
-      scales.map((scale, index) => (
-        <path
-          d={path}
-          pathLength="1"
-          transform={`translate(${x} ${y}) scale(${scale}) translate(${-x} ${-y})`}
-          style={step(index + family * 2)}
-          vector-effect="non-scaling-stroke"
-        />
-      )),
-    )}
-  </g>
-
-  <g class="routes">
-    {routes.map((path, index) => (
+  <g mask={paint('surface')}>
+    {land.map((d, i) => (
       <path
-        d={path}
-        pathLength="1"
-        style={step(index)}
-        vector-effect="non-scaling-stroke"
+        class="land"
+        {d}
+        fill={landColors[i]}
+        fill-opacity={landOpacity[i]}
+        style={step(i)}
       />
     ))}
-    <path
-      class="registration"
-      d="M75 69V50H94 M556 50H575V69 M75 256V275H94 M556 275H575V256"
-      pathLength="1"
-      vector-effect="non-scaling-stroke"
-    />
-  </g>
-
-  <g class="nodes">
-    {nodes.map(([x, y], index) => (
-      <g style={step(index)}>
-        <circle cx={x} cy={y} r={index % 3 === 1 ? 6 : 3.25} />
-        {index % 3 === 1 && <circle class="pin" cx={x} cy={y} r="2" />}
-      </g>
+    <g class="grid" mask={paint('grid-mask')}>
+      <rect x={gx} y={gy} width={gw} height={gh} fill={paint('grid')} />
+    </g>
+    <g
+      class="contours"
+      fill="none"
+      stroke="currentColor"
+      stroke-width=".8"
+      opacity=".54"
+    >
+      {contours.map((d, i) => (
+        <path {d} pathLength="1" style={step(i)} />
+      ))}
+    </g>
+    <g
+      class="marks"
+      fill="none"
+      stroke="currentColor"
+      stroke-width=".95"
+      opacity=".63"
+    >
+      {routes.map((d, i) => (
+        <path {d} pathLength="1" style={step(i)} />
+      ))}
+      {terminals.map(([x, y, width, height], i) => (
+        <rect {x} {y} {width} {height} style={step(i)} />
+      ))}
+      {points.map(([cx, cy, r], i) => (
+        <circle {cx} {cy} {r} style={step(terminals.length + i)} />
+      ))}
+    </g>
+    {dotRows.map(({ y, height }, i) => (
+      <rect
+        class="dot-row"
+        x={dx}
+        {y}
+        width={dw}
+        {height}
+        fill={paint('dots')}
+        style={step(i)}
+      />
     ))}
   </g>
 </svg>
 
 <style>
   svg {
-    width: 100%;
-    height: 100%;
     display: block;
-    color: var(--art-ink);
+    inline-size: 100%;
+    block-size: 100%;
   }
-  .land path {
-    fill: var(--art-paper);
-    opacity: 0.82;
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-  .land path:nth-child(2) {
-    fill: var(--art-mid);
-    opacity: 0.52;
-  }
-  .land path:nth-child(3) {
-    fill: var(--art-mid);
-    opacity: 0.75;
-  }
-  .grid {
-    opacity: 0.21;
-  }
-  .dots {
-    opacity: 0.47;
-  }
-  .contours,
-  .routes {
-    fill: none;
-    stroke: currentColor;
-  }
-  .contours {
-    stroke-width: 0.85;
-    opacity: 0.62;
-  }
-  .routes {
-    stroke-width: 1.1;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    opacity: 0.82;
-  }
-  .registration {
-    --step: 3;
-    opacity: 0.45;
-  }
-  .nodes circle {
-    fill: var(--editorial-background);
-    stroke: currentColor;
-    stroke-width: 1.2;
-  }
-  .nodes .pin {
-    fill: currentColor;
-    stroke: none;
-  }
-  @media (max-width: 46rem) {
-    .grid {
-      opacity: 0.14;
-    }
-    .dots,
-    .registration,
-    .contours path:nth-child(even),
-    .nodes > g:nth-child(even) {
-      display: none;
-    }
-    svg {
-      /* Keep the drawing large and crop to its central band, rather than
-         shrinking the entire desktop plate into the space below the copy. */
-      min-inline-size: 24rem;
-      mask-image: linear-gradient(transparent, #000 23% 75%, transparent);
-    }
-  }
-
   @media (prefers-reduced-motion: no-preference) {
-    .land path {
-      animation: land-reveal 1.15s var(--editorial-ease-out) both;
-      animation-delay: calc(105ms * var(--step));
+    .land {
+      transform-box: fill-box;
+      transform-origin: bottom;
+      animation: land-rise 1.15s var(--editorial-entrance-ease) both;
+      animation-delay: calc(160ms * var(--step));
     }
-    .contours path,
-    .routes path {
-      animation: line-draw 1.05s var(--editorial-entrance-ease) both;
-      animation-delay: calc(360ms + 55ms * var(--step));
+    .contours path {
+      animation: line-draw 1.25s ease-out both;
+      animation-delay: calc(350ms + 55ms * var(--step));
     }
-    .routes path {
-      animation-delay: calc(700ms + 95ms * var(--step));
+    .marks path {
+      animation: line-draw 0.72s ease-out both;
+      animation-delay: calc(1000ms + 85ms * var(--step));
     }
-    .field rect,
-    .nodes > g {
-      animation: mark-arrive 400ms ease-out both;
+    .grid {
+      animation: appear 0.65s ease-out 1.05s both;
     }
-    .field rect {
-      animation-delay: 1.25s;
+    .marks :is(circle, rect) {
+      animation: appear 0.5s ease-out both;
+      animation-delay: calc(1380ms + 75ms * var(--step));
     }
-    .field rect:nth-child(2) {
-      animation-delay: 1.44s;
-    }
-    .field rect:nth-child(3) {
-      animation-delay: 1.56s;
-    }
-    .nodes > g {
-      animation-delay: calc(1.25s + 95ms * var(--step));
+    .dot-row {
+      animation: appear 0.65s ease-out both;
+      animation-delay: calc(1450ms + 45ms * var(--step));
     }
   }
-  @keyframes land-reveal {
+  @keyframes land-rise {
     from {
       opacity: 0;
-      clip-path: ellipse(0% 0% at 58% 54%);
-      scale: 0.95;
-    }
-    to {
-      clip-path: ellipse(85% 85% at 58% 54%);
-      scale: 1;
+      transform: translateY(26px) scaleY(0.86);
     }
   }
   @keyframes line-draw {
@@ -232,7 +199,7 @@ const step = (index: number) => ({ '--step': index });
       stroke-dashoffset: 0;
     }
   }
-  @keyframes mark-arrive {
+  @keyframes appear {
     from {
       opacity: 0;
     }

@@ -1,0 +1,145 @@
+---
+import {
+  BuildingComplex,
+  Building,
+  Layers,
+  UserRound,
+  UsersRound,
+} from '@lucide/astro';
+import type { Product } from '../../data/labs';
+
+interface Props {
+  product: Product;
+  kind: 'cover' | 'scopes';
+  overlay?: boolean;
+}
+
+const { product, kind, overlay } = Astro.props;
+const verticalColors = {
+  'AI Foundations': 'foundations',
+  'AI for Software': 'software',
+  'AI for Science': 'science',
+  'AI for Finance': 'finance',
+};
+const scopeIcons = {
+  Individual: UserRound,
+  Team: UsersRound,
+  Organization: Building,
+  Enterprise: BuildingComplex,
+};
+---
+
+{kind === 'cover' ? (
+  <div class:list={['product-tags', { overlay }]}>
+    {product.verticals.length > 0 && (
+      <div class="verticals">
+        {product.verticals.map((vertical) => (
+          <span
+            class="vertical"
+            data-vertical={verticalColors[vertical]}
+            lang="en"
+          >
+            <Layers size={14} aria-hidden="true" />
+            {vertical}
+          </span>
+        ))}
+      </div>
+    )}
+    <span class="maturity" data-maturity={product.maturity} lang="en">
+      {product.maturity}
+    </span>
+  </div>
+) : (
+  <ul class="product-tags" aria-label="Alcance de uso" role="list">
+    {product.scopes.map((scope) => {
+      const Icon = scopeIcons[scope];
+      return (
+        <li class="scope" lang="en">
+          <Icon size={14} aria-hidden="true" />
+          {scope}
+        </li>
+      );
+    })}
+  </ul>
+)}
+
+<style>
+  .product-tags,
+  .verticals {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 0.35rem;
+  }
+  .verticals {
+    min-inline-size: 0;
+  }
+  .overlay {
+    position: absolute;
+    inset: 0.65rem 0.65rem auto;
+    flex-wrap: nowrap;
+    pointer-events: none;
+  }
+  .overlay .maturity {
+    margin-inline-start: auto;
+  }
+  .product-tags :is(.vertical, .maturity, .scope) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    border-radius: 2rem;
+    padding: 0.19rem 0.58rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+  svg {
+    flex: none;
+  }
+  .vertical {
+    color: var(--brand-white);
+    background: var(--editorial-grove-ink);
+    white-space: nowrap;
+  }
+  .vertical[data-vertical='foundations'] {
+    background: var(--editorial-lilac-ink);
+  }
+  .vertical[data-vertical='software'] {
+    background: var(--success);
+  }
+  .vertical[data-vertical='science'] {
+    background: var(--editorial-grove-ink);
+  }
+  .vertical[data-vertical='finance'] {
+    background: var(--editorial-sand-ink);
+  }
+  .maturity {
+    background: var(--home-card);
+    color: var(--success);
+    border: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  .maturity::before {
+    content: '';
+    inline-size: 0.46rem;
+    block-size: 0.46rem;
+    border-radius: 50%;
+    background: currentColor;
+  }
+  .maturity[data-maturity='Prototype'] {
+    color: var(--editorial-lilac-ink);
+  }
+  .maturity[data-maturity='Alpha'] {
+    color: var(--editorial-sand-ink);
+  }
+  .scope {
+    background: var(--surface);
+    color: var(--foreground);
+  }
+  @media (min-width: 45rem) {
+    :global([data-view='list']) .overlay :is(.vertical, .maturity) {
+      padding-inline: 0.42rem;
+      font-size: 0.75rem;
+    }
+  }
+</style>

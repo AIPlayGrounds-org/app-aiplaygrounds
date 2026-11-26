@@ -1,9 +1,14 @@
 import { readFileSync, readdirSync, lstatSync, existsSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { demoProducts, demoResearch } from '../src/data/directories.demo.ts';
-import { products, research } from '../src/data/directories.ts';
+import { demoResearch } from '../src/data/directories.demo.ts';
+import { research } from '../src/data/directories.ts';
+import demoProducts from '../src/data/labs-products.demo.json' with { type: 'json' };
+import productRecords from '../src/data/labs-products.json' with { type: 'json' };
 
+const products = productRecords.filter(
+  ({ publication }) => publication === 'published',
+);
 const approvedDetailPaths = new Set(
   [
     ...products.map(({ slug }) => ['ai-labs', slug]),
@@ -11,6 +16,18 @@ const approvedDetailPaths = new Set(
   ]
     .filter(([, slug]) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))
     .map(([directory, slug]) => `${directory}/${slug}/index.html`),
+);
+const approvedProductImages = new Set(
+  products
+    .flatMap(({ cover, media, authors }) => [
+      cover,
+      ...(media ?? []),
+      ...authors.map(({ avatar }) => avatar),
+    ])
+    .filter((image) =>
+      /^\/images\/labs\/[a-z0-9-]+\.(webp|avif)$/.test(image?.src ?? ''),
+    )
+    .map(({ src }) => src.slice(1)),
 );
 const approvedEventImages = new Set(
   JSON.parse(readFileSync('src/data/community-events.json', 'utf8'))
@@ -25,12 +42,12 @@ const approvedEventImages = new Set(
 
 // Los slugs también detectan enlaces sin el título visible del registro.
 const demoMarkers = [
-  ...demoProducts.flatMap(({ slug, name, utility, problem, aiRelation }) => [
+  ...demoProducts.flatMap(({ id, slug, name, summary, problem }) => [
+    id,
     slug,
     name,
-    utility,
+    summary,
     problem,
-    aiRelation,
   ]),
   ...demoResearch.flatMap(({ slug, title, question, method, limitations }) => [
     slug,
@@ -98,6 +115,7 @@ export function inspect(root, kind = root === 'dist' ? 'site' : 'bundle') {
       kind === 'site'
         ? approvedDetailPaths.has(name) ||
           approvedEventImages.has(name) ||
+          approvedProductImages.has(name) ||
           /^(?:(?:index|(?:empresas|comunidad|formacion|ai-labs|investigacion|equipo)\/index)\.html|verticals\/(?:foundations|software|science|finance)\.svg|_astro\/[a-zA-Z0-9._-]+\.(?:css|js)|_astro\/(?:hero-laguna|inicio-hero-v2|ai-foundations|ai-for-software|ai-for-science|ai-for-finance|cta-plazoleta|footer-lomas|empresa-hero-v5|empresa-colaboracion-puente-v2|empresa-colaboracion-andenes-v2|Patio andino entre flores y piedra|academy-(?:hero-v2|software-with-ai|ai-engineering|team-training|waitlist-cta))\.[a-zA-Z0-9_-]+_[a-zA-Z0-9_-]+\.webp|_astro\/(?:space-grotesk-latin|inter-tight-latin|geist-mono-latin)\.[a-zA-Z0-9_-]+\.woff2)$/.test(
             name,
           )

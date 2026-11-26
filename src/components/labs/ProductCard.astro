@@ -1,0 +1,134 @@
+---
+import { ArrowUpRight } from '@lucide/astro';
+import { productAuthors, productPath, type Product } from '../../data/labs';
+import ProductCover from './ProductCover.astro';
+import ProductTags from './ProductTags.astro';
+
+interface Props {
+  product: Product;
+  eager?: boolean;
+}
+const { product, eager } = Astro.props;
+---
+
+<article class="labs-card" data-card-interactive data-card-hit-area>
+  <div class="card-cover">
+    <ProductCover {product} {eager}>
+      <ProductTags {product} kind="cover" overlay />
+    </ProductCover>
+  </div>
+  <div class="card-body">
+    <p class="card-category">{product.category}</p>
+    <h3>{product.name}</h3>
+    <ProductTags {product} kind="scopes" />
+    <p class="card-summary">{product.summary}</p>
+    <footer>
+      <p>
+        Por <strong>{productAuthors(product)}</strong>
+        {product.demo && <small class="card-demo">Demostración</small>}
+      </p>
+      <a
+        href={productPath(product.slug)}
+        aria-label={`Ver ficha: ${product.name}`}
+        data-card-link
+      >
+        Ver ficha <ArrowUpRight size={18} aria-hidden="true" data-card-arrow />
+      </a>
+    </footer>
+  </div>
+</article>
+
+<style>
+  .labs-card {
+    display: flex;
+    flex-direction: column;
+    block-size: 100%;
+    border: 1px solid var(--card-edge);
+    border-radius: var(--editorial-radius);
+    background: var(--home-card);
+    overflow-wrap: anywhere;
+  }
+  .card-cover {
+    overflow: clip;
+    border-radius: calc(var(--editorial-radius) - 1px)
+      calc(var(--editorial-radius) - 1px) 0 0;
+  }
+  .card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: start;
+    min-inline-size: 0;
+    gap: 0.38rem;
+    padding: 0.7rem clamp(0.75rem, 1.4vw, 1.125rem) 0;
+  }
+  h3 {
+    font-size: clamp(1.35rem, 1.04rem + 0.9vw, 1.8rem);
+    text-wrap: pretty;
+  }
+  .card-category,
+  .card-demo,
+  .card-summary,
+  footer p {
+    color: var(--secondary-text);
+  }
+  .card-category,
+  .card-demo {
+    font-size: 0.82rem;
+  }
+  .card-demo {
+    display: block;
+  }
+  .card-summary {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 0.96rem;
+    margin-block: 0.12rem 0.4rem;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    inline-size: 100%;
+    margin-block-start: auto;
+    border-block-start: 1px solid var(--border);
+    font-size: 0.875rem;
+  }
+  strong {
+    color: var(--foreground);
+  }
+  footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-block-size: 44px;
+    font-weight: 600;
+    color: var(--success);
+    white-space: nowrap;
+  }
+  @media (min-width: 45rem) {
+    :global([data-view='list']) .labs-card {
+      display: grid;
+      grid-template-columns: minmax(14rem, 2fr) minmax(0, 3fr);
+    }
+    :global([data-view='list']) .card-cover {
+      position: relative;
+      border-radius: calc(var(--editorial-radius) - 1px) 0 0
+        calc(var(--editorial-radius) - 1px);
+    }
+    :global([data-view='list']) .card-cover > :global(.product-cover) {
+      position: absolute;
+      inset: 0;
+      block-size: 100%;
+      aspect-ratio: auto;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .labs-card {
+      transition: none;
+    }
+  }
+</style>

@@ -1,93 +1,121 @@
 ---
 import CompactHeroArt from './CompactHeroArt.astro';
-import { type CompactHeroVariant } from './compact-hero-art';
+import { compactHeroArt, type CompactHeroVariant } from './compact-hero-art';
 
 interface Props {
   id: string;
   title: string;
   description: string;
   variant: CompactHeroVariant;
+  label?: string;
 }
-const { id, title, description, variant } = Astro.props;
+const { id, title, description, variant, label } = Astro.props;
+const [ink] = compactHeroArt[variant].palette;
 ---
 
-<section {id} class="compact-hero" data-variant={variant}>
-  <div class="site-container hero-layout">
+<section
+  {id}
+  class="compact-hero site-container"
+  data-variant={variant}
+  style={{ '--hero-ink': ink }}
+>
+  <div class="hero-art" aria-hidden="true">
+    <CompactHeroArt {id} {variant} />
+  </div>
+  <div class="hero-layout">
     <div class="hero-copy">
+      {label && <span class="hero-label">{label}</span>}
       <h1>{title}</h1>
       <p>{description}</p>
-    </div>
-    <div class="hero-art" aria-hidden="true">
-      <CompactHeroArt {id} {variant} />
     </div>
   </div>
 </section>
 
 <style>
   /* The sticky header's negative margin is intentional for immersive pages.
-     Reserve its height only in layouts that use this opening. */
+     Reserve its height and a narrow gutter only for this opening. */
   :global(main#contenido):has(> .compact-hero) {
-    padding-block-start: var(--site-header-height);
+    padding-block-start: calc(
+      var(--site-header-height) + clamp(0.75rem, 1.6vw, 1.5rem)
+    );
   }
   .compact-hero {
+    position: relative;
+    isolation: isolate;
+    overflow: clip;
     background: var(--editorial-background);
-    border-block-end: 1px solid
-      color-mix(in srgb, var(--border) 55%, var(--editorial-background));
+    background: color-mix(
+      in oklab,
+      var(--editorial-background) 95%,
+      var(--hero-ink)
+    );
+    border: 1px solid
+      color-mix(in oklab, var(--border) 70%, var(--editorial-background));
+    border-radius: var(--editorial-radius);
   }
   .hero-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1.13fr) minmax(0, 1fr);
+    display: flex;
     align-items: center;
-    min-block-size: clamp(17.5rem, 24vw, 21.25rem);
+    min-block-size: clamp(17.5rem, 25vw, 21.25rem);
+    padding-inline: clamp(1.125rem, 3.3vw, 3rem);
     position: relative;
   }
   .hero-copy {
-    padding-block: 2rem;
+    inline-size: 64%;
+    padding-block: 2.25rem;
+  }
+  .hero-label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-block-end: 0.4rem;
+    color: var(--hero-ink);
+    font-size: 0.92rem;
+    font-weight: 600;
+  }
+  .hero-label::after {
+    content: '';
+    inline-size: 2rem;
+    border-block-start: 1px solid currentColor;
   }
   h1 {
-    max-inline-size: 24ch;
-    font-size: clamp(2.125rem, 1.2rem + 2.35vw, 3.5rem);
+    max-inline-size: 45.625rem;
+    font-size: clamp(2.125rem, 3.65vw, 3.3125rem);
     overflow-wrap: break-word;
   }
   p {
-    max-inline-size: 49ch;
+    max-inline-size: 40.625rem;
     margin-block-start: 1rem;
     color: var(--secondary-text);
-    font-size: clamp(1.0625rem, 0.96rem + 0.33vw, 1.25rem);
+    font-size: clamp(1.0625rem, 1.55vw, 1.3125rem);
   }
   .hero-art {
     position: absolute;
-    inset-block: 0;
-    inset-inline: 53% 0;
+    inset-block-end: 0;
+    inset-inline: 0;
+    inline-size: 100%;
+    aspect-ratio: 1440 / 340;
+    min-block-size: 12rem;
+    max-block-size: 100%;
     pointer-events: none;
-    overflow: clip;
-    mask-image: linear-gradient(
-      to right,
-      transparent,
-      #000 13%,
-      #000 93%,
-      transparent
-    );
   }
   @media (max-width: 46rem) {
-    .hero-layout {
-      grid-template-columns: minmax(0, 1fr);
-      min-block-size: auto;
-    }
     .hero-copy {
-      padding-block: clamp(1.5rem, 5vw, 2.25rem) 0.45rem;
+      inline-size: 100%;
+      padding-block: 1.625rem clamp(5.375rem, 14vw, 7rem);
+    }
+    h1 {
+      font-size: clamp(1.875rem, 5vw, 2.125rem);
+      text-wrap: pretty;
     }
     .hero-art {
-      position: relative;
-      inset: auto;
-      block-size: clamp(5.75rem, 20vw, 8rem);
-      mask-image: linear-gradient(
-        to right,
-        transparent,
-        #000 32%,
-        #000 93%,
-        transparent
-      );
+      inset-inline-start: -40%;
+      inline-size: 140%;
+      block-size: min(100%, clamp(6.5rem, 33vw, 12rem));
+      min-block-size: 0;
+      aspect-ratio: auto;
+      opacity: 0.72;
+      mask-image: linear-gradient(to bottom, transparent, #000 36%);
     }
   }
 </style>

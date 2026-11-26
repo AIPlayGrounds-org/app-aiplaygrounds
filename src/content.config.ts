@@ -1,6 +1,7 @@
 import { defineCollection } from 'astro:content';
 import { file } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { productSchema } from './data/labs-schema';
 
 const communityEvents = defineCollection({
   loader: file('src/data/community-events.json'),
@@ -28,4 +29,14 @@ const communityEvents = defineCollection({
   }),
 });
 
-export const collections = { communityEvents };
+const labsProducts = defineCollection({
+  loader: file('src/data/labs-products.json'),
+  schema: productSchema,
+});
+
+const labsDemo = defineCollection({
+  loader: file('src/data/labs-products.demo.json'),
+  schema: productSchema,
+});
+
+export const collections = { communityEvents, labsProducts, labsDemo };
