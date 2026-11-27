@@ -31,7 +31,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: var(--layer-hit-area);
 }
 [data-card-hit-area]:focus-within [data-card-link] {
   text-decoration-thickness: 0.14em;
@@ -59,8 +59,10 @@
 
   [data-card-arrow] {
     display: inline-block;
-    translate: calc(var(--surface-motion, 0) * var(--arrow-x, 4px))
-      calc(var(--surface-motion, 0) * var(--arrow-y, -3px));
+    translate: calc(
+        var(--surface-motion, 0) * var(--arrow-x, var(--motion-arrow-x))
+      )
+      calc(var(--surface-motion, 0) * var(--arrow-y, var(--motion-arrow-y)));
     transition: translate var(--editorial-response) var(--editorial-ease-out);
   }
 }

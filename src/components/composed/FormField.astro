@@ -76,7 +76,7 @@ const errorId = `${id}-error`;
       data-required-message={error}
     />
   )}
-  <p id={errorId} data-field-error hidden>
+  <p id={errorId} data-field-error data-feedback-arrive hidden>
     {error}
   </p>
 </div>
@@ -89,17 +89,7 @@ const errorId = `${id}-error`;
     min-width: 0;
   }
   [data-field-error] {
-    font-size: 0.9rem;
+    font-size: var(--type-label);
     color: var(--error);
-  }
-  @media (prefers-reduced-motion: no-preference) {
-    [data-field-error]:not([hidden]) {
-      animation: error-arrive 150ms ease-out;
-    }
-  }
-  @keyframes error-arrive {
-    from {
-      opacity: 0;
-    }
   }
 </style>

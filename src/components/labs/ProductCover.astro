@@ -225,16 +225,19 @@ const artwork =
     opacity: 0.2;
   }
   [data-artwork='search'] {
-    background: #dce8f0;
-    color: #4b7a9d;
+    background: var(--editorial-water);
+    color: var(--editorial-water-ink);
   }
   [data-artwork='workflow'] {
     background: var(--editorial-sand);
   }
   @media (prefers-reduced-motion: no-preference) {
     .cover-art {
-      transform: scale(calc(1 + var(--surface-motion, 0) * 0.035));
-      transition: transform 380ms var(--editorial-ease-out);
+      transform: scale(
+        calc(1 + var(--surface-motion, 0) * var(--motion-media-zoom))
+      );
+      transition: transform var(--duration-media-immersive)
+        var(--editorial-ease-out);
     }
   }
 </style>

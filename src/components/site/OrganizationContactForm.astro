@@ -93,7 +93,7 @@ const enabled =
     Enviar consulta
   </Button>
   <p class="sr-only" role="status" data-validation-status></p>
-  <p role="status" class="submission-status"></p>
+  <p role="status" class="submission-status" data-feedback-arrive></p>
 </form>
 
 <script>
@@ -111,12 +111,12 @@ const enabled =
   .contact-note,
   #contact-privacy {
     color: var(--secondary-text);
-    font-size: 0.9rem;
+    font-size: var(--type-label);
   }
   .contact-fields,
   .contact-pair {
     display: grid;
-    gap: 0.75rem;
+    gap: var(--space-control);
     min-width: 0;
   }
   .contact-note,
@@ -124,7 +124,7 @@ const enabled =
   [data-turnstile]:not(:empty),
   .contact-form > :global(button),
   .submission-status:not(:empty) {
-    margin-top: 1rem;
+    margin-top: var(--space-stack);
   }
   form[data-state='error'] .submission-status {
     color: var(--error);
@@ -132,28 +132,9 @@ const enabled =
   form[data-state='success'] .submission-status {
     color: var(--success);
   }
-  @media (hover: hover) and (pointer: fine) {
-    .contact-form > :global(button:enabled:hover) {
-      background-color: color-mix(
-        in srgb,
-        var(--primary) 85%,
-        var(--background)
-      );
-    }
-  }
   @media (min-width: 60rem) {
     .contact-pair {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  @media (prefers-reduced-motion: no-preference) {
-    .submission-status:not(:empty) {
-      animation: status-arrive 180ms ease-out;
-    }
-  }
-  @keyframes status-arrive {
-    from {
-      opacity: 0;
     }
   }
 </style>

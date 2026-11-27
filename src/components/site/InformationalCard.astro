@@ -42,7 +42,7 @@ const { title, description, layout = 'stacked', tone = 'warm' } = Astro.props;
   .info-card.inline {
     grid-template-columns: auto minmax(0, 1fr);
     align-items: start;
-    gap: 1rem;
+    gap: var(--space-stack);
   }
   .info-card:not(.tone-warm) {
     --card-edge-rest: color-mix(
@@ -63,8 +63,8 @@ const { title, description, layout = 'stacked', tone = 'warm' } = Astro.props;
     --info-ink: var(--editorial-lilac-ink);
   }
   .tone-rose {
-    --info-surface: #ead8d2;
-    --info-ink: #704c43;
+    --info-surface: var(--editorial-rose);
+    --info-ink: var(--editorial-rose-ink);
   }
   .motif {
     color: var(--info-ink);

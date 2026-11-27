@@ -1,13 +1,19 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
+import {
+  fieldAppearances,
+  fieldDensities,
+  type FieldAppearance,
+  type FieldDensity,
+} from './field';
 
 interface Props extends HTMLAttributes<'select'> {
-  appearance?: 'default' | 'editorial' | 'inline';
-  density?: 'compact' | 'comfortable';
+  appearance?: FieldAppearance;
+  density?: FieldDensity;
 }
 const {
-  appearance = 'default',
-  density = 'comfortable',
+  appearance = fieldAppearances[0],
+  density = fieldDensities[0],
   class: className,
   ...rest
 } = Astro.props;

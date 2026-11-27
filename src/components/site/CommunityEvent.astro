@@ -130,8 +130,8 @@ const excerpt =
     align-items: center;
     margin-block-start: clamp(1rem, 2vw, 1.5rem);
     background: var(--home-surface);
-    border: 1px solid var(--card-edge, var(--line));
-    border-radius: 0.75rem;
+    border: var(--stroke-default) solid var(--card-edge, var(--line));
+    border-radius: var(--radius-large);
   }
   .featured.has-cover {
     grid-template-columns: minmax(0, 34%) minmax(0, 1fr);
@@ -145,7 +145,7 @@ const excerpt =
     background: var(--home-card);
   }
   .featured img {
-    border-radius: 0.75rem 0 0 0.75rem;
+    border-radius: var(--radius-large) 0 0 var(--radius-large);
   }
   .featured .event-copy {
     padding-block: clamp(1.5rem, 3.2vw, 2.75rem);
@@ -170,7 +170,7 @@ const excerpt =
     gap: 0.35rem;
     margin-block-start: 0.55rem;
     color: var(--secondary-text);
-    line-height: 1.35;
+    line-height: var(--leading-compact);
   }
   .event-details p {
     display: flex;
@@ -183,7 +183,7 @@ const excerpt =
   }
   .excerpt {
     margin-block-start: 0.9rem;
-    max-width: 65ch;
+    max-width: var(--measure-reading);
     color: var(--secondary-text);
   }
   article :global(.event-link) {
@@ -193,7 +193,7 @@ const excerpt =
     margin-block-start: 0.35rem;
   }
   .event-row {
-    border-block-end: 1px solid var(--card-edge);
+    border-block-end: var(--stroke-default) solid var(--card-edge);
     grid-template-columns: var(--date-size) minmax(0, 1fr) max-content;
     column-gap: clamp(0.8rem, 2.8vw, 2.2rem);
     align-items: center;
@@ -209,8 +209,8 @@ const excerpt =
   .event-row :is(h3, h4) {
     font-family: var(--font-heading);
     font-size: clamp(1.12rem, 1rem + 0.42vw, 1.375rem);
-    font-weight: 600;
-    line-height: 1.2;
+    font-weight: var(--weight-heading);
+    line-height: var(--leading-title);
     letter-spacing: -0.025em;
   }
   .event-row:focus-within :is(h3, h4, .date-stamp) {
@@ -227,20 +227,20 @@ const excerpt =
     }
   }
   .event-row img {
-    border-radius: 0.4rem;
+    border-radius: var(--editorial-radius);
   }
   .date-stamp {
     display: grid;
     justify-items: center;
     padding-block: 0.35rem;
-    border-inline-end: 1px solid var(--line);
+    border-inline-end: var(--stroke-default) solid var(--line);
     font-family: var(--font-heading);
     font-variant-numeric: tabular-nums;
-    line-height: 1.12;
+    line-height: var(--leading-heading);
   }
   .date-stamp span {
     text-transform: uppercase;
-    font-size: 0.75rem;
+    font-size: var(--type-caption);
     letter-spacing: 0.08em;
   }
   .date-stamp strong {
@@ -265,7 +265,7 @@ const excerpt =
       grid-template-columns: minmax(0, 1fr);
     }
     .featured img {
-      border-radius: 0.75rem 0.75rem 0 0;
+      border-radius: var(--radius-large) var(--radius-large) 0 0;
     }
     .event-row.has-cover {
       grid-template-columns: var(--date-size) minmax(0, 1fr);

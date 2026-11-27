@@ -1,20 +1,19 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
+import { cardOptions } from './card';
 
-interface Props extends HTMLAttributes<'div'> {
+type Props = HTMLAttributes<'div'> & {
   as?: 'div' | 'article' | 'section' | 'li';
-  surface?: 'elevated' | 'editorial' | 'inherit';
-  density?: 'sm' | 'md' | 'none';
-  edge?: 'border' | 'outline' | 'none';
-  interaction?: 'static' | 'interactive' | 'single-link';
-}
+} & {
+  [Option in keyof typeof cardOptions]?: (typeof cardOptions)[Option][number];
+};
 
 const {
   as: Tag = 'div',
-  surface = 'elevated',
-  density = 'md',
-  edge = 'border',
-  interaction = 'static',
+  surface = cardOptions.surface[0],
+  density = cardOptions.density[0],
+  edge = cardOptions.edge[0],
+  interaction = cardOptions.interaction[0],
   class: className,
   ...rest
 } = Astro.props;

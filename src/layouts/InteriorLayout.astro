@@ -10,7 +10,12 @@ interface Props {
 const { title, description } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} bodyClass="interior">
+<BaseLayout
+  title={title}
+  description={description}
+  bodyClass="interior"
+  editorial
+>
   <SiteHeader />
   <main id="contenido" tabindex="-1">
     <slot />

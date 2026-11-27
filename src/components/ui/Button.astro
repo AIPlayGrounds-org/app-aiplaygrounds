@@ -86,8 +86,8 @@ if (
       box-shadow: none;
       text-shadow: none;
       font-family: inherit;
-      font-size: 1rem;
-      font-weight: 500;
+      font-size: var(--type-control);
+      font-weight: var(--button-weight);
       gap: var(--button-icon-gap);
       white-space: normal;
       transition-property: color, background-color, border-color;
@@ -97,35 +97,38 @@ if (
       padding-inline: var(--button-padding);
     }
     .ui-button:not(.ds-btn-square, .ds-btn-circle):has(> svg) {
-      padding-inline: var(--button-padding-with-icon, 1rem);
+      padding-inline: var(
+        --button-padding-with-icon,
+        var(--button-icon-padding-md)
+      );
     }
     .ui-button[data-size='xs'] {
       --ds-size: var(--button-height-xs);
       --button-padding: var(--button-padding-xs);
-      --button-padding-with-icon: 0.6rem;
+      --button-padding-with-icon: var(--button-icon-padding-xs);
       --button-icon: var(--icon-sm);
-      font-size: 0.75rem;
+      font-size: var(--type-caption);
     }
     .ui-button[data-size='sm'] {
       --ds-size: var(--button-height-sm);
       --button-padding: var(--button-padding-sm);
-      --button-padding-with-icon: 0.75rem;
+      --button-padding-with-icon: var(--button-icon-padding-sm);
       --button-icon: var(--icon-sm);
-      font-size: 0.875rem;
+      font-size: var(--type-label);
     }
     .ui-button[data-size='lg'] {
       --ds-size: var(--button-height-lg);
       --button-padding: var(--button-padding-lg);
-      --button-padding-with-icon: 1.5rem;
+      --button-padding-with-icon: var(--button-icon-padding-lg);
       --button-icon: var(--icon-lg);
-      font-size: 1.125rem;
+      font-size: var(--type-lead);
     }
     .ui-button[data-size='xl'] {
       --ds-size: var(--button-height-xl);
       --button-padding: var(--button-padding-xl);
-      --button-padding-with-icon: 1.75rem;
+      --button-padding-with-icon: var(--button-icon-padding-xl);
       --button-icon: var(--icon-xl);
-      font-size: 1.25rem;
+      font-size: var(--type-card-title);
     }
     .ui-button :global(svg) {
       pointer-events: none;

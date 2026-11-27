@@ -43,6 +43,7 @@ const fields = [
   title="AI PlayGrounds | Inteligencia artificial en comunidad"
   description="AI PlayGrounds es una organización enfocada en inteligencia artificial e impulsada por su comunidad. Conoce sus verticales de trabajo, actividades e iniciativas."
   bodyClass="home"
+  editorial
 >
   <SiteHeader immersive />
   <main id="contenido" tabindex="-1">
@@ -235,14 +236,8 @@ const fields = [
 </BaseLayout>
 
 <style>
-  :global(body.home) {
-    --home-background: var(--editorial-background);
-    --home-surface: var(--editorial-surface);
-    --home-card: var(--editorial-card);
-    background: var(--home-background);
-  }
   :global(body.home :is(a, summary):focus) {
-    outline: 3px solid var(--focus-ring);
+    outline: var(--stroke-focus) solid var(--focus-ring);
     outline-offset: 4px;
   }
   @media (forced-colors: active) {
@@ -257,7 +252,7 @@ const fields = [
     gap: 0.75rem 1.5rem;
   }
   h3 {
-    font-size: 1.25rem;
+    font-size: var(--type-card-title);
   }
   .community,
   .history-heading {
@@ -270,23 +265,23 @@ const fields = [
     max-width: 18ch;
   }
   .community-copy {
-    border-left: 1px solid var(--line);
+    border-left: var(--stroke-default) solid var(--line);
     padding-left: clamp(2rem, 4vw, 3rem);
   }
   .community-copy p,
   .history-heading p {
-    max-width: 60ch;
+    max-width: var(--measure-intro);
     color: var(--secondary-text);
   }
   .section-intro {
-    max-width: 70ch;
-    margin-top: 0.75rem;
+    max-width: var(--measure-prose);
+    margin-top: var(--space-control);
     color: var(--secondary-text);
   }
   .fields {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
+    gap: var(--space-stack);
     margin-top: 2rem;
   }
   .fields article {
@@ -295,7 +290,7 @@ const fields = [
   .fields :global(.field-card) {
     overflow: hidden;
     height: 100%;
-    border-radius: 0.4rem;
+    border-radius: var(--editorial-radius);
     background: var(--home-surface);
   }
   .field-copy {
@@ -303,7 +298,7 @@ const fields = [
     flex: 1;
   }
   .field-copy p {
-    margin-top: 0.75rem;
+    margin-top: var(--space-control);
     color: var(--secondary-text);
   }
   .fields img {
@@ -321,7 +316,7 @@ const fields = [
   }
   .stat {
     padding: 1rem 2rem;
-    border-right: 1px solid var(--line);
+    border-right: var(--stroke-default) solid var(--line);
   }
   .stat strong {
     display: block;
@@ -343,10 +338,10 @@ const fields = [
   }
   .event.featured {
     grid-column: 1 / -1;
-    border-bottom: 1px solid var(--line);
+    border-bottom: var(--stroke-default) solid var(--line);
   }
   .event:last-child {
-    border-left: 1px solid var(--line);
+    border-left: var(--stroke-default) solid var(--line);
   }
   .event h3 {
     margin-top: 0.6rem;
@@ -356,14 +351,14 @@ const fields = [
     flex-wrap: wrap;
     align-items: baseline;
     gap: 0.25rem 1rem;
-    font-size: 0.875rem;
+    font-size: var(--type-label);
     margin-top: 0.4rem;
   }
   .metrics b {
     font: 600 1.35rem var(--font-heading);
   }
   .event-note {
-    font-size: 0.875rem;
+    font-size: var(--type-label);
     color: var(--secondary-text);
     margin-top: 0.5rem;
   }
@@ -371,10 +366,10 @@ const fields = [
     display: flex;
     flex-wrap: wrap;
     gap: 0.35rem;
-    margin-top: 0.75rem;
+    margin-top: var(--space-control);
   }
   .tags span {
-    border: 1px solid var(--line);
+    border: var(--stroke-default) solid var(--line);
     border-radius: 0.2rem;
     padding: 0.15rem 0.4rem;
     font-size: 0.7rem;
@@ -401,24 +396,24 @@ const fields = [
   @media (prefers-reduced-motion: no-preference) {
     .community-copy,
     .section-intro {
-      --editorial-delay: 95ms;
+      --editorial-delay: var(--motion-delay-editorial-sibling);
     }
     @media (min-width: 52rem) {
       .fields > article:nth-child(2n),
       .event:not(.featured) {
-        --editorial-delay: 110ms;
+        --editorial-delay: var(--motion-stagger-editorial);
       }
       .fields > article:nth-child(3) {
-        --editorial-delay: 195ms;
+        --editorial-delay: var(--motion-delay-editorial-grid);
       }
     }
     @media (min-width: 60rem) {
       .fields > article:nth-child(4) {
-        --editorial-delay: 280ms;
+        --editorial-delay: var(--motion-delay-editorial-last);
       }
     }
     .fields img {
-      transition: scale 180ms ease-out;
+      transition: scale var(--duration-feedback) var(--motion-ease-standard);
       transform-origin: top center;
     }
     :global(body.home .mobile-nav .menu-icon) {
@@ -426,8 +421,8 @@ const fields = [
     }
     @media (hover: hover) and (pointer: fine) {
       .fields article:hover img {
-        scale: 1.04;
-        transition: scale 260ms var(--editorial-ease-out);
+        scale: calc(1 + var(--motion-media-zoom));
+        transition: scale var(--duration-disclosure) var(--editorial-ease-out);
       }
     }
   }
@@ -459,7 +454,7 @@ const fields = [
     }
     .community,
     .history-heading {
-      gap: 1rem;
+      gap: var(--space-stack);
     }
     .fields {
       grid-template-columns: 1fr;
@@ -469,7 +464,7 @@ const fields = [
     }
     .stat {
       border-right: 0;
-      border-bottom: 1px solid var(--line);
+      border-bottom: var(--stroke-default) solid var(--line);
       padding: 1rem 0 2rem;
     }
     .events {
@@ -479,7 +474,7 @@ const fields = [
     .event.featured {
       grid-column: auto;
       padding: 1.5rem 0;
-      border-bottom: 1px solid var(--line);
+      border-bottom: var(--stroke-default) solid var(--line);
     }
     .event:last-child {
       border-left: 0;

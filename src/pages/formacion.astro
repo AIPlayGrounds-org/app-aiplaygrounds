@@ -92,6 +92,7 @@ const metrics = [
   title="AI Academy: formación en IA para desarrollar software | AI PlayGrounds"
   description="Conoce Software with AI y AI Engineering, las dos líneas formativas de AI Academy. No hay convocatorias abiertas."
   bodyClass="academy"
+  editorial
 >
   <SiteHeader immersive />
   <main id="contenido" tabindex="-1">
@@ -303,12 +304,6 @@ const metrics = [
 </BaseLayout>
 
 <style>
-  :global(body.academy) {
-    --home-background: var(--editorial-background);
-    --home-surface: var(--editorial-surface);
-    --home-card: var(--editorial-card);
-    background: var(--home-background);
-  }
   @media (prefers-reduced-motion: no-preference) {
     :global(html:has(body.academy)) {
       scroll-behavior: smooth;
@@ -322,7 +317,7 @@ const metrics = [
   }
   .section-intro p {
     max-width: 63ch;
-    margin-top: 0.75rem;
+    margin-top: var(--space-control);
     color: var(--secondary-text);
   }
   .info-grid,
@@ -333,7 +328,9 @@ const metrics = [
     margin-top: clamp(1.5rem, 3vw, 2rem);
   }
   .line-grid > li {
-    --scene-matte: #a85f39; /* Color del borde inferior de las escenas de madera. */
+    --scene-matte: var(
+      --editorial-wood
+    ); /* Color del borde inferior de las escenas de madera. */
     display: grid;
     min-width: 0;
   }
@@ -367,8 +364,8 @@ const metrics = [
     color: var(--secondary-text);
   }
   .bootcamp-copy .edition {
-    font-size: 0.875rem;
-    font-weight: 600;
+    font-size: var(--type-label);
+    font-weight: var(--weight-heading);
     color: var(--editorial-sand-ink);
   }
   .bootcamp-copy :global(.text-link) {
@@ -383,11 +380,11 @@ const metrics = [
     display: grid;
     align-content: start;
     padding-inline: clamp(0.3rem, 2vw, 1.35rem);
-    border-inline-start: 1px solid var(--line);
+    border-inline-start: var(--stroke-default) solid var(--line);
     text-align: center;
   }
   .metrics li:last-child {
-    border-inline-end: 1px solid var(--line);
+    border-inline-end: var(--stroke-default) solid var(--line);
   }
   .metrics strong {
     color: var(--foreground);
@@ -397,7 +394,7 @@ const metrics = [
   fieldset {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    gap: 1rem;
+    gap: var(--space-stack);
     min-width: 0;
   }
   .line-choices {
@@ -405,14 +402,14 @@ const metrics = [
   }
   .line-choices legend {
     margin-bottom: 0.35rem;
-    font-weight: 500;
+    font-weight: var(--weight-medium);
   }
   .line-choices label {
     display: flex;
     align-items: center;
     gap: 0.65rem;
     padding: 0.5rem 0.75rem;
-    border: 1px solid var(--line);
+    border: var(--stroke-default) solid var(--line);
     border-radius: var(--radius-sm);
     background: var(--editorial-background);
     color: var(--secondary-text);
@@ -426,7 +423,7 @@ const metrics = [
   #waitlist-availability {
     margin-bottom: 1rem;
     color: var(--secondary-text);
-    font-weight: 600;
+    font-weight: var(--weight-heading);
   }
   #academy-form :global(.form-field input:disabled) {
     color: var(--secondary-text);
@@ -456,7 +453,7 @@ const metrics = [
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .line-grid > :nth-child(2) {
-      --editorial-delay: 110ms;
+      --editorial-delay: var(--motion-stagger-editorial);
     }
   }
   @media (min-width: 44rem) {
@@ -464,10 +461,10 @@ const metrics = [
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
     .info-grid > :nth-child(2) {
-      --editorial-delay: 85ms;
+      --editorial-delay: var(--motion-stagger-editorial-short);
     }
     .info-grid > :nth-child(3) {
-      --editorial-delay: 165ms;
+      --editorial-delay: var(--motion-delay-editorial-third);
     }
   }
 </style>

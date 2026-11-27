@@ -71,7 +71,7 @@ const home = id === 'I8' && Astro.url.pathname === '/';
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: var(--space-control);
   }
   .actions :global(a) {
     max-width: 100%;
@@ -82,7 +82,7 @@ const home = id === 'I8' && Astro.url.pathname === '/';
     padding-block: 0.625rem;
   }
   .closing h2 {
-    font-size: clamp(2rem, 1.5rem + 1.5vw, 3rem);
+    font-size: var(--type-section);
   }
   .closing-section {
     padding-top: 1rem;
@@ -90,8 +90,8 @@ const home = id === 'I8' && Astro.url.pathname === '/';
   .closing {
     position: relative;
     overflow: hidden;
-    border: 1px solid var(--line);
-    border-radius: 0.75rem;
+    border: var(--stroke-default) solid var(--line);
+    border-radius: var(--radius-large);
     min-height: 20rem;
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
@@ -106,10 +106,10 @@ const home = id === 'I8' && Astro.url.pathname === '/';
   }
   .closing p {
     color: var(--secondary-text);
-    margin-top: 1rem;
+    margin-top: var(--space-stack);
   }
   .closing .actions {
-    margin-top: 1rem;
+    margin-top: var(--space-stack);
   }
   .closing-image {
     align-self: stretch;
@@ -120,7 +120,7 @@ const home = id === 'I8' && Astro.url.pathname === '/';
     object-position: right bottom;
   }
   .closing-cutout .closing-copy {
-    z-index: 1;
+    z-index: var(--layer-hit-area);
     position: relative;
   }
   .closing-cutout .closing-image {
@@ -141,8 +141,8 @@ const home = id === 'I8' && Astro.url.pathname === '/';
   }
   @media (prefers-reduced-motion: no-preference) {
     [data-surface-motion] .closing-image {
-      scale: calc(1 + var(--surface-motion, 0) * 0.04);
-      transition: scale 260ms var(--editorial-ease-out);
+      scale: calc(1 + var(--surface-motion, 0) * var(--motion-media-zoom));
+      transition: scale var(--duration-disclosure) var(--editorial-ease-out);
       transform-origin: bottom right;
     }
   }
@@ -159,7 +159,7 @@ const home = id === 'I8' && Astro.url.pathname === '/';
     }
     :global(body.home) .closing-copy {
       position: relative;
-      z-index: 1;
+      z-index: var(--layer-hit-area);
       padding-inline-end: clamp(1.5rem, 3vw, 2.5rem);
     }
     :global(body.home) .closing-image {

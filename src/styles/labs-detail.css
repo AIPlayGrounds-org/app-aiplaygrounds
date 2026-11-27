@@ -16,7 +16,7 @@ main#contenido:has(> .labs-detail) {
   justify-items: start;
   gap: 0.7rem;
   padding-block: 0 1.75rem;
-  border-block-end: 1px solid var(--line);
+  border-block-end: var(--stroke-default) solid var(--line);
 }
 .product-intro h1 {
   font-size: clamp(2.125rem, 1.7rem + 1.8vw, 3rem);
@@ -38,12 +38,12 @@ main#contenido:has(> .labs-detail) {
   inline-size: 100%;
   margin-block-start: 0.15rem;
   color: var(--secondary-text);
-  font-size: 0.98rem;
+  font-size: var(--type-control);
 }
 .product-byline small {
   margin-inline-start: 0.7rem;
   padding: 0.15rem 0.5rem;
-  border: 1px solid var(--line);
+  border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
   color: var(--secondary-text);
 }
@@ -66,12 +66,12 @@ main#contenido:has(> .labs-detail) {
 .share-result input {
   max-inline-size: 100%;
   min-block-size: 44px;
-  border: 1px solid var(--line);
+  border: var(--stroke-default) solid var(--line);
   padding-inline: 0.5rem;
 }
 .access-note {
-  line-height: 1.5;
-  font-size: 0.95rem;
+  line-height: var(--leading-body);
+  font-size: var(--type-body-small);
 }
 .access-panel {
   display: grid;
@@ -82,7 +82,7 @@ main#contenido:has(> .labs-detail) {
   padding-block-end: 0;
 }
 .access-mode {
-  font-size: 0.95rem;
+  font-size: var(--type-body-small);
   color: var(--secondary-text);
 }
 .access-panel :is([data-slot='button'], .share-button) {
@@ -101,7 +101,7 @@ main#contenido:has(> .labs-detail) {
 }
 .product-sidebar {
   display: grid;
-  gap: 1rem;
+  gap: var(--space-stack);
 }
 .product-content section:not(.access-panel) {
   display: grid;
@@ -117,7 +117,7 @@ main#contenido:has(> .labs-detail) {
 }
 .product-content h3 {
   font-family: var(--font-sans);
-  font-size: 1rem;
+  font-size: var(--type-control);
   letter-spacing: 0;
   text-wrap: pretty;
 }
@@ -135,10 +135,10 @@ main#contenido:has(> .labs-detail) {
   gap: 0.7rem;
 }
 .capabilities li + li {
-  margin-block-start: 1rem;
+  margin-block-start: var(--space-stack);
 }
 .capabilities .icon-row {
-  gap: 1rem;
+  gap: var(--space-stack);
 }
 .detail-icon {
   display: grid;
@@ -148,7 +148,7 @@ main#contenido:has(> .labs-detail) {
   border-radius: var(--editorial-radius);
   color: var(--editorial-lilac-ink);
   background: var(--home-card);
-  border: 1px solid var(--line);
+  border: var(--stroke-default) solid var(--line);
 }
 .audience-list,
 .product-media {
@@ -160,7 +160,7 @@ main#contenido:has(> .labs-detail) {
   padding: 1rem 0.75rem;
   border-radius: var(--editorial-radius);
   background: var(--home-card);
-  border: 1px solid var(--line);
+  border: var(--stroke-default) solid var(--line);
 }
 .audience-list h3 {
   display: flex;
@@ -184,7 +184,7 @@ main#contenido:has(> .labs-detail) {
 }
 .technology-list li {
   padding: 0.14rem 0.55rem;
-  border: 1px solid var(--line);
+  border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
   font-size: 0.85rem;
@@ -195,7 +195,7 @@ main#contenido:has(> .labs-detail) {
 }
 .detail-panel {
   padding: 1.5rem 1.25rem;
-  border: 1px solid var(--line);
+  border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
   font-size: 0.93rem;
@@ -212,7 +212,7 @@ main#contenido:has(> .labs-detail) {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
   gap: 0.5rem;
-  border-block-start: 1px solid var(--line);
+  border-block-start: var(--stroke-default) solid var(--line);
   padding-block: 0.75rem;
 }
 .detail-panel dt,
@@ -220,10 +220,10 @@ main#contenido:has(> .labs-detail) {
   color: var(--secondary-text);
 }
 .detail-panel dd {
-  font-weight: 400;
+  font-weight: var(--weight-normal);
 }
 .author-list strong {
-  font-weight: 500;
+  font-weight: var(--weight-medium);
 }
 .author-list {
   display: grid;
@@ -237,10 +237,10 @@ main#contenido:has(> .labs-detail) {
   border-radius: var(--editorial-radius);
 }
 .author-context {
-  margin-block-start: 0.75rem;
+  margin-block-start: var(--space-control);
 }
 .related-products {
-  border-block-start: 1px solid var(--line);
+  border-block-start: var(--stroke-default) solid var(--line);
   margin-block-start: 1.75rem;
   padding-block-start: clamp(1.75rem, 3vw, 2.5rem);
 }

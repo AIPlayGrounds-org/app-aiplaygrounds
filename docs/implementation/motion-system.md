@@ -40,6 +40,12 @@ No había bucles de `requestAnimationFrame` propios ni animación pública ligad
 
 ## Añadir o actualizar movimiento
 
+Los controles usan `--duration-feedback` para cambios discretos, `--duration-disclosure` para desplegar regiones, `--duration-sheet` para paneles y `--motion-ease-disclosure` para su interpolación. `--duration-reduced` deja completar los eventos de transición de los controles nativos sin movimiento perceptible. Las imágenes de tarjetas comparten `--duration-media`, `--duration-media-immersive`, `--motion-media-zoom` y `--motion-media-zoom-subtle`; las flechas leen `--motion-arrow-x` y `--motion-arrow-y`. Los respiros editoriales usan `--motion-stagger-editorial-short`, `--motion-stagger-editorial`, `--motion-delay-editorial-early`, `--motion-delay-editorial-sibling`, `--motion-delay-editorial-pair`, `--motion-delay-editorial-third`, `--motion-delay-editorial-grid` y `--motion-delay-editorial-last`.
+
+El H1 de los héroes inmersivos permanece estable y visible desde el primer render. El texto secundario, acciones y paisaje conservan la secuencia existente. Los desplegables y filtros siguen actuando inmediatamente mediante el DOM nativo; sus transiciones solo acompañan la operación.
+
+`data-feedback-arrive` reutiliza una sola entrada CSS para errores de campo y estados de envío. `TextLink` reutiliza `data-card-arrow`, con `--motion-arrow-pressed-x` y `--motion-arrow-pressed-y` para su estado de presión.
+
 1. Consulta los ejemplos en `/design-system/#motion` y la skill. Elige CSS para feedback inmediato; visibilidad puntual con `IntersectionObserver`; sincronización real con `onScroll()`; WAAPI para opacidad y transformaciones; engine JS para morph, física y layout.
 2. Mantén el estado final en el HTML/CSS; comprueba foco, zoom, reduced motion y móvil. Limita objetivos y conserva semántica de teclado. No dividas texto si el efecto es prescindible; cuando se divida, usa `splitText({ accessible: true })` y revierte el DOM. El arrastre requiere un control alternativo.
 3. Conecta el patrón al ciclo de vida, a tokens CSS y a un preview real. Importa solo el módulo que se usa. Para cambiar de versión, usa `npm install --save-exact animejs@4`, revisa la API y el lock, repite `npm run ci:check` y las pruebas de navegador y compara el tamaño servido.

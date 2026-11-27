@@ -1,7 +1,7 @@
 .research-detail-cover {
   overflow: clip;
   margin-block-end: clamp(1.5rem, 3vw, 2.25rem);
-  border: 1px solid var(--line);
+  border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
 }
 .research-detail-cover img {
@@ -13,14 +13,14 @@
 .research-type,
 .research-detail figcaption {
   color: var(--secondary-text);
-  font-size: 0.95rem;
+  font-size: var(--type-body-small);
 }
 .research-layout .research-content:empty {
   display: none;
 }
 .research-objectives {
   display: grid;
-  gap: 1rem;
+  gap: var(--space-stack);
   list-style: disc;
   padding-inline-start: 1.25rem;
   color: var(--secondary-text);
@@ -45,7 +45,7 @@
   padding-block-end: 0.5rem;
 }
 .research-table :is(th, td) {
-  border: 1px solid var(--line);
+  border: var(--stroke-default) solid var(--line);
   padding: 0.55rem 0.75rem;
   text-align: start;
 }
@@ -66,7 +66,7 @@
 @media (min-width: 52rem) {
   .research-layout {
     grid-template-rows: auto 1fr;
-    row-gap: 1rem;
+    row-gap: var(--space-stack);
   }
   .research-layout .research-content {
     grid-area: 1 / 1 / span 2 / 2;

@@ -79,7 +79,7 @@ const {
     align-items: start;
     gap: 1.5rem;
     padding: var(--block-inset) var(--inset);
-    border: 1px solid var(--line);
+    border: var(--stroke-default) solid var(--line);
     border-radius: var(--radius-xl);
     background: var(--editorial-surface);
   }
@@ -90,7 +90,7 @@ const {
     max-width: 20ch;
   }
   .intro p {
-    margin-top: 0.75rem;
+    margin-top: var(--space-control);
     max-width: 40ch;
     color: var(--secondary-text);
   }
@@ -99,7 +99,7 @@ const {
   }
   .form-slot {
     min-width: 0;
-    --editorial-delay: 75ms;
+    --editorial-delay: var(--motion-delay-editorial-early);
   }
   .art {
     pointer-events: none;
@@ -107,7 +107,7 @@ const {
     margin-inline-start: calc(-1 * var(--inset));
     margin-block-end: calc(-1 * var(--block-inset));
     align-self: end;
-    --editorial-delay: 135ms;
+    --editorial-delay: var(--motion-delay-editorial-pair);
   }
   .art-end .art {
     justify-self: end;

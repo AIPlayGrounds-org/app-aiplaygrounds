@@ -51,7 +51,7 @@ const { product, eager } = Astro.props;
     display: flex;
     flex-direction: column;
     block-size: 100%;
-    border: 1px solid var(--card-edge);
+    border: var(--stroke-default) solid var(--card-edge);
     border-radius: var(--editorial-radius);
     background: var(--home-card);
     overflow-wrap: anywhere;
@@ -92,8 +92,8 @@ const { product, eager } = Astro.props;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     line-clamp: 3;
-    font-size: 0.96rem;
-    line-height: 1.5;
+    font-size: var(--type-body-small);
+    line-height: var(--leading-body);
     margin-block: 0.15rem 0.65rem;
   }
   footer {
@@ -103,7 +103,7 @@ const { product, eager } = Astro.props;
     gap: 0.5rem;
     inline-size: 100%;
     margin-block-start: auto;
-    font-size: 0.875rem;
+    font-size: var(--type-label);
     align-items: end;
   }
   footer p {
@@ -115,7 +115,7 @@ const { product, eager } = Astro.props;
     align-items: center;
     gap: 0.35rem;
     min-block-size: 44px;
-    font-weight: 500;
+    font-weight: var(--weight-medium);
     color: var(--foreground);
     white-space: nowrap;
   }

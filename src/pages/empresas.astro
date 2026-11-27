@@ -20,6 +20,7 @@ import FormCTA from '../components/site/FormCTA.astro';
   title="Alianzas y oportunidades de IA para organizaciones | AI PlayGrounds"
   description="Explora alianzas institucionales, proyectos de IA y formación para equipos. Conversemos sobre las necesidades de tu organización."
   bodyClass="organizations"
+  editorial
 >
   <SiteHeader immersive />
   <main id="contenido" tabindex="-1">
@@ -150,12 +151,6 @@ import FormCTA from '../components/site/FormCTA.astro';
 </script>
 
 <style>
-  :global(body.organizations) {
-    --home-background: var(--editorial-background);
-    --home-surface: var(--editorial-surface);
-    --home-card: var(--editorial-card);
-    background: var(--editorial-background);
-  }
   @media (prefers-reduced-motion: no-preference) {
     :global(html:has(body.organizations)) {
       scroll-behavior: smooth;
@@ -165,11 +160,11 @@ import FormCTA from '../components/site/FormCTA.astro';
     scroll-margin-top: 0.5rem;
   }
   .section-intro p {
-    max-width: 60ch;
+    max-width: var(--measure-intro);
     color: var(--secondary-text);
   }
   .section-intro > :global(h2) + p {
-    margin-top: 0.75rem;
+    margin-top: var(--space-control);
   }
   .collaborations {
     display: grid;
@@ -180,7 +175,7 @@ import FormCTA from '../components/site/FormCTA.astro';
     padding-block: clamp(1.5rem, 3vw, 3rem);
     display: grid;
     align-items: start;
-    gap: 1rem;
+    gap: var(--space-stack);
   }
   .trajectory > :global(h2) {
     max-width: 20ch;
@@ -194,7 +189,7 @@ import FormCTA from '../components/site/FormCTA.astro';
       gap: clamp(2rem, 6vw, 6rem);
     }
     .trajectory .section-intro {
-      --editorial-delay: 95ms;
+      --editorial-delay: var(--motion-delay-editorial-sibling);
     }
   }
   @media (min-width: 60rem) {

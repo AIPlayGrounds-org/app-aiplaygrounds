@@ -44,7 +44,7 @@ const { group, directory, plural, dropdown, advanced = false } = Astro.props;
       ) : (
         group.label
       )}
-      <ChevronDown size={16} aria-hidden="true" />
+      <ChevronDown class="size-icon-chevron" aria-hidden="true" />
     </summary>
     <fieldset slot="panel" class="facet-options">
       <legend class="sr-only">{group.label}</legend>

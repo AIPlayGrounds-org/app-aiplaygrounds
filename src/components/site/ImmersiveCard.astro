@@ -70,7 +70,7 @@ const { title, eyebrow, description, image, sizes } = Astro.props;
   }
   .panel {
     padding: clamp(1rem, 2.4vw, 2rem);
-    border: 1px solid var(--line);
+    border: var(--stroke-default) solid var(--line);
     border-radius: var(--editorial-radius);
     background: var(--editorial-card);
   }
@@ -82,8 +82,8 @@ const { title, eyebrow, description, image, sizes } = Astro.props;
   }
   .eyebrow {
     margin-bottom: 0.3rem;
-    font-size: 0.875rem;
-    font-weight: 600;
+    font-size: var(--type-label);
+    font-weight: var(--weight-heading);
     color: var(--editorial-sand-ink);
   }
   h3 + p {
@@ -93,10 +93,11 @@ const { title, eyebrow, description, image, sizes } = Astro.props;
   @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
     .scene {
       transform-origin: center top;
-      transition: scale 360ms var(--editorial-ease-out);
+      transition: scale var(--duration-media-immersive)
+        var(--editorial-ease-out);
     }
     .immersive-card:hover .scene {
-      scale: 1.032;
+      scale: calc(1 + var(--motion-media-zoom-subtle));
     }
   }
 </style>

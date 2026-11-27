@@ -121,7 +121,7 @@ const {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     min-inline-size: 0;
-    border: 1px solid var(--card-edge);
+    border: var(--stroke-default) solid var(--card-edge);
     border-radius: var(--editorial-radius);
     background: var(--editorial-card);
   }
@@ -140,7 +140,7 @@ const {
     overflow: hidden;
     block-size: clamp(8rem, 13vw, 11rem);
     border-radius: 0.35rem 0.35rem 0 0;
-    border-block-end: 1px solid var(--line);
+    border-block-end: var(--stroke-default) solid var(--line);
     background: var(--path-wash);
     color: var(--path-ink);
   }
@@ -175,7 +175,7 @@ const {
     margin-block: 0.65rem 0.75rem;
   }
   .path-card h3 {
-    font-size: 1.25rem;
+    font-size: var(--type-card-title);
   }
   @media (prefers-reduced-motion: no-preference) {
     .path-guide {
@@ -184,10 +184,10 @@ const {
   }
   @media (min-width: 52rem) {
     .path-card:nth-child(2) {
-      --editorial-delay: 110ms;
+      --editorial-delay: var(--motion-stagger-editorial);
     }
     .path-card:nth-child(3) {
-      --editorial-delay: 195ms;
+      --editorial-delay: var(--motion-delay-editorial-grid);
     }
     @supports (grid-template-rows: subgrid) {
       .path-card {

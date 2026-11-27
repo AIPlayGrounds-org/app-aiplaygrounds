@@ -108,7 +108,7 @@ const links = [
     grid-template-columns: minmax(0, 1fr);
     overflow: hidden;
     background: var(--home-card);
-    border: 1px solid var(--card-edge);
+    border: var(--stroke-default) solid var(--card-edge);
     border-radius: var(--editorial-radius);
     container-type: inline-size;
   }
@@ -165,13 +165,13 @@ const links = [
     justify-content: center;
     padding-block: 0.25rem;
     padding-inline: clamp(1rem, 6cqi, 1.5rem) 0.625rem;
-    line-height: 1.2;
+    line-height: var(--leading-title);
   }
   .details :is(h3, h4) {
     margin: 0;
     font: 600 clamp(1.0625rem, 1rem + 0.5cqi, 1.375rem) / 1.15
       var(--font-heading);
-    letter-spacing: -0.03em;
+    letter-spacing: var(--tracking-heading);
     text-wrap: pretty;
     color: var(--brand-black);
   }
@@ -181,13 +181,13 @@ const links = [
   .details .organization-role {
     margin: 0.375rem 0 0;
     color: var(--interaction-accent);
-    font-size: 0.9375rem;
-    font-weight: 500;
+    font-size: var(--type-body-small);
+    font-weight: var(--weight-medium);
   }
   .details .professional-role {
     margin: 0.25rem 0 0;
     color: var(--secondary-text);
-    font-size: 0.875rem;
+    font-size: var(--type-label);
   }
   .links {
     display: flex;
@@ -235,8 +235,8 @@ const links = [
   }
   @media (prefers-reduced-motion: no-preference) {
     .portrait > :is(img, .portrait-placeholder) {
-      scale: calc(1 + var(--surface-motion, 0) * 0.045);
-      transition: scale 260ms var(--editorial-ease-out);
+      scale: calc(1 + var(--surface-motion, 0) * var(--motion-media-zoom));
+      transition: scale var(--duration-disclosure) var(--editorial-ease-out);
     }
     .links svg {
       transition: translate var(--editorial-response) var(--editorial-ease-out);

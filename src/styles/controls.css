@@ -22,8 +22,8 @@
     color: var(--foreground);
     background: var(--editorial-background);
     transition:
-      border-color var(--duration-control) ease-out,
-      background-color var(--duration-control) ease-out;
+      border-color var(--duration-control) var(--motion-ease-standard),
+      background-color var(--duration-control) var(--motion-ease-standard);
   }
   select:is([data-field='editorial'], [data-field='inline'])::-picker(select) {
     appearance: auto;
@@ -35,7 +35,7 @@
   @media (max-width: 22rem) {
     select[data-field='editorial'] {
       padding-inline: 0.375rem;
-      font-size: 1rem;
+      font-size: var(--type-control);
     }
   }
   textarea[data-field='editorial'] {
@@ -61,5 +61,18 @@
   [data-field='inline']:focus:not(:focus-visible) {
     outline: none;
     box-shadow: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-feedback-arrive]:not([hidden], :empty) {
+    animation: feedback-arrive var(--duration-feedback)
+      var(--motion-ease-standard);
+  }
+}
+
+@keyframes feedback-arrive {
+  from {
+    opacity: 0;
   }
 }

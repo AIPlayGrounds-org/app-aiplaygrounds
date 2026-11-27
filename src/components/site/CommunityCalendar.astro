@@ -66,8 +66,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
                 ))}
               </Select>
               <ChevronDown
-                class="filter-chevron"
-                size={16}
+                class="filter-chevron size-icon-chevron"
                 aria-hidden="true"
               />
             </label>
@@ -81,8 +80,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
                   ))}
                 </Select>
                 <ChevronDown
-                  class="filter-chevron"
-                  size={16}
+                  class="filter-chevron size-icon-chevron"
                   aria-hidden="true"
                 />
               </label>
@@ -223,7 +221,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
 <style>
   .calendar {
     --community-accent: var(--interaction-accent);
-    --community-control-edge: #8a7975;
+    --community-control-edge: var(--editorial-rose-edge);
     --community-filter-hover: color-mix(
       in oklab,
       var(--home-surface) 92%,
@@ -238,7 +236,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 0.85rem 2rem;
-    border-bottom: 1px solid var(--line);
+    border-bottom: var(--stroke-default) solid var(--line);
     padding-block-end: 1rem;
   }
   .calendar-heading h2 {
@@ -257,10 +255,10 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
     min-block-size: 2.75rem;
     min-inline-size: 7.5rem;
     padding-inline: 0.95rem;
-    border: 1px solid var(--community-control-edge);
-    border-radius: 0.4rem;
+    border: var(--stroke-default) solid var(--community-control-edge);
+    border-radius: var(--editorial-radius);
     cursor: pointer;
-    transition: border-color 180ms var(--editorial-ease-out);
+    transition: border-color var(--duration-feedback) var(--editorial-ease-out);
   }
   search {
     min-width: 0;
@@ -272,13 +270,13 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
   }
   form :global(:is(input, select)) {
     background: var(--home-surface);
-    border: 1px solid var(--community-control-edge);
-    border-radius: 0.4rem;
+    border: var(--stroke-default) solid var(--community-control-edge);
+    border-radius: var(--editorial-radius);
     min-height: 2.75rem;
     width: 100%;
     font: inherit;
     padding-inline: 0.75rem;
-    transition: border-color 180ms var(--editorial-ease-out);
+    transition: border-color var(--duration-feedback) var(--editorial-ease-out);
   }
   .filter-field {
     position: relative;
@@ -299,8 +297,8 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
     padding-inline-start: 0.95rem;
     padding-inline-end: 2.4rem;
     transition:
-      border-color 160ms var(--editorial-ease-out),
-      background-color 160ms var(--editorial-ease-out);
+      border-color var(--duration-control) var(--editorial-ease-out),
+      background-color var(--duration-control) var(--editorial-ease-out);
   }
   .filter-chevron {
     position: absolute;
@@ -338,18 +336,18 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
       font: inherit;
       color: var(--foreground);
       background: var(--home-surface);
-      border: 1px solid var(--community-control-edge);
-      border-radius: 0.4rem;
-      box-shadow: 0 0.5rem 1.25rem rgb(25 26 24 / 0.12);
+      border: var(--stroke-default) solid var(--community-control-edge);
+      border-radius: var(--editorial-radius);
+      box-shadow: var(--shadow-overlay);
     }
     .filter-field option {
       align-items: center;
       min-block-size: 2.5rem;
       padding: 0.45rem 0.65rem;
-      border-radius: 0.25rem;
+      border-radius: var(--radius-small);
     }
     .filter-field option:checked {
-      font-weight: 600;
+      font-weight: var(--weight-heading);
       background: color-mix(
         in oklab,
         var(--home-surface) 96%,
@@ -364,14 +362,14 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
     }
     @media (prefers-reduced-motion: no-preference) {
       .filter-chevron {
-        transition: rotate 160ms var(--editorial-ease-out);
+        transition: rotate var(--duration-control) var(--editorial-ease-out);
       }
       .filter-field select::picker(select) {
         opacity: 0;
         transition:
-          opacity 160ms var(--editorial-ease-out),
-          display 160ms,
-          overlay 160ms;
+          opacity var(--duration-control) var(--editorial-ease-out),
+          display var(--duration-control),
+          overlay var(--duration-control);
         transition-behavior: allow-discrete;
       }
       .filter-field select:open::picker(select) {
@@ -399,7 +397,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
   }
   form :global(.search-field svg) {
     position: absolute;
-    z-index: 1;
+    z-index: var(--layer-hit-area);
     inset-inline-start: 0.85rem;
     inset-block-start: 50%;
     translate: 0 -50%;
@@ -415,13 +413,13 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
   }
   .more {
     margin-block-start: 1.3rem;
-    font-weight: 600;
+    font-weight: var(--weight-heading);
   }
   .filter-feedback {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    column-gap: 1rem;
+    column-gap: var(--space-stack);
   }
   .text-button {
     min-height: 2.75rem;

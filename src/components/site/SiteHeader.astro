@@ -131,7 +131,7 @@ const cta = organizations
     position: sticky;
     inset-inline: 0;
     inset-block-start: 0;
-    z-index: 5;
+    z-index: var(--layer-sticky);
     margin-block-end: calc(-1 * var(--site-header-height));
     color: var(--brand-black);
     background: var(--editorial-background);
@@ -152,7 +152,8 @@ const cta = organizations
   }
   @media (prefers-reduced-motion: no-preference) {
     .site-header {
-      transition: background-color 180ms ease-out;
+      transition: background-color var(--duration-feedback)
+        var(--motion-ease-standard);
     }
   }
   .header-inner {
@@ -160,7 +161,7 @@ const cta = organizations
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: var(--space-stack);
   }
   .brand {
     display: block;
@@ -182,8 +183,8 @@ const cta = organizations
     gap: 0.35rem 0.9rem;
   }
   .desktop-nav a {
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: var(--type-label);
+    font-weight: var(--weight-medium);
     text-decoration: none;
     padding-block: 0.7rem;
   }
@@ -218,9 +219,9 @@ const cta = organizations
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: var(--space-control);
       min-height: 44px;
-      font-weight: 500;
+      font-weight: var(--weight-medium);
       list-style: none;
     }
     .mobile-nav summary::-webkit-details-marker {
@@ -231,7 +232,7 @@ const cta = organizations
       place-items: center;
       width: 2rem;
       height: 2rem;
-      border: 1px solid var(--foreground);
+      border: var(--stroke-default) solid var(--foreground);
       font-size: 1.35rem;
       line-height: 1;
     }
@@ -245,7 +246,7 @@ const cta = organizations
       display: grid;
       background: var(--home-background, var(--background));
       padding: 1rem clamp(1rem, 4vw, 3rem) 1.5rem;
-      border-bottom: 1px solid var(--input);
+      border-bottom: var(--stroke-default) solid var(--input);
       max-height: calc(100dvh - var(--site-header-height));
       overflow-y: auto;
     }
@@ -259,14 +260,14 @@ const cta = organizations
       min-height: 44px;
       padding: 0.7rem 0.25rem;
       text-decoration: none;
-      border-bottom: 1px solid var(--line);
+      border-bottom: var(--stroke-default) solid var(--line);
     }
     .mobile-nav nav a[aria-current='page']:not([data-slot='button']) {
       text-decoration: underline;
       background: var(--home-surface, var(--surface));
     }
     .mobile-cta {
-      margin-top: 1rem;
+      margin-top: var(--space-stack);
     }
   }
 </style>

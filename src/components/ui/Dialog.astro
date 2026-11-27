@@ -37,7 +37,7 @@ const { layout = 'center', class: className, ...rest } = Astro.props;
   }
   .ui-dialog::backdrop {
     display: block;
-    background: rgb(0 0 0 / 0.4);
+    background: var(--overlay-dialog);
     overflow: hidden;
     overscroll-behavior: contain;
   }

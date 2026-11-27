@@ -10,7 +10,7 @@ export function immersiveEntrance(
   const tokens = motionTokens(root);
   const scope = createScope({ root });
   const content = root.querySelectorAll<HTMLElement>(
-    '.hero-content > :is(h1, p, .actions)',
+    '.hero-content > :is(p, .actions)',
   );
   const image = root.querySelector<HTMLElement>('.hero-image');
   const actions = root.querySelector('.actions');

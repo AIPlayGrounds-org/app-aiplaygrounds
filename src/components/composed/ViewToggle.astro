@@ -19,7 +19,7 @@ const { value, controlClass, ...rest } = Astro.props;
     aria-label="Cuadrícula"
     aria-pressed={value === 'grid'}
   >
-    <Grid2x2 size={18} class="size-[18px]" aria-hidden="true" />
+    <Grid2x2 class="size-icon-md" aria-hidden="true" />
   </Button>
   <Button
     variant={controlClass ? 'plain' : 'outline'}
@@ -29,6 +29,6 @@ const { value, controlClass, ...rest } = Astro.props;
     aria-label="Listado"
     aria-pressed={value === 'list'}
   >
-    <List size={18} class="size-[18px]" aria-hidden="true" />
+    <List class="size-icon-md" aria-hidden="true" />
   </Button>
 </div>
