@@ -69,7 +69,7 @@ const formats = [
     title: 'Full Day',
     description: 'Una jornada intensiva de aprendizaje y construcción.',
     icon: 'day',
-    tone: 'sand',
+    tone: 'rose',
   },
   {
     title: 'Cursos',
@@ -103,8 +103,8 @@ const metrics = [
       title="Amplía lo que eres capaz de construir con IA."
       description="Desarrolla capacidades para crear software con IA e integrarla en tus aplicaciones con criterio y autonomía."
     >
-      <Button href="#F3" variant="primary">
-        Explorar enfoques <ArrowDown size={16} aria-hidden="true" />
+      <Button href="#F3" variant="primary" data-surface-motion style="--arrow-x: 0px; --arrow-y: 4px">
+        Explorar enfoques <ArrowDown size={16} aria-hidden="true" data-card-arrow />
       </Button>
     </ImmersiveHero>
 
@@ -301,10 +301,6 @@ const metrics = [
     --home-surface: var(--editorial-surface);
     --home-card: var(--editorial-card);
     background: var(--home-background);
-  }
-  :global(body.academy .site-header .header-inner) {
-    /* Mantiene los rótulos dentro del vano claro de la ilustración. */
-    width: min(80rem, calc(100% - 2 * clamp(1rem, 4vw, 3rem)), max(72%, 60rem));
   }
   @media (prefers-reduced-motion: no-preference) {
     :global(html:has(body.academy)) {

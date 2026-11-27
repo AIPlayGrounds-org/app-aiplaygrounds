@@ -10,16 +10,22 @@ interface Props {
   paragraphs: string[];
   buttons: { label: string; href: string; variant: 'primary' | 'outline' }[];
   illustration?: ImageMetadata;
+  density?: 'compact';
 }
-const { id, title, paragraphs, buttons, illustration } = Astro.props;
+const { id, title, paragraphs, buttons, illustration, density } = Astro.props;
 const home = id === 'I8' && Astro.url.pathname === '/';
 ---
 
-<section {id} class="site-container section-space closing-section">
+<section
+  {id}
+  class="site-container section-space closing-section"
+  data-density={density}
+>
   <div
     class:list={['closing', { 'closing-cutout': illustration }]}
     data-reveal={home || illustration ? 'card' : undefined}
     data-surface-motion={home || Boolean(illustration) || undefined}
+    data-card-outline
   >
     <div class="closing-copy">
       <h2>{title}</h2>
@@ -28,7 +34,11 @@ const home = id === 'I8' && Astro.url.pathname === '/';
       ))}
       <div class="actions">
         {buttons.map((button) => (
-          <Button href={button.href} variant={button.variant}>
+          <Button
+            href={button.href}
+            variant={button.variant}
+            data-surface-motion={home || Boolean(illustration) || undefined}
+          >
             {button.label}
             {(home || illustration) && (
               <ArrowUpRight aria-hidden="true" size={14} data-card-arrow />
@@ -187,6 +197,30 @@ const home = id === 'I8' && Astro.url.pathname === '/';
     .closing-cutout .closing-image {
       width: min(100%, 34rem);
       margin-inline-start: auto;
+    }
+  }
+  [data-density='compact'] {
+    padding-block: 0 clamp(2rem, 4vw, 3.5rem);
+  }
+  [data-density='compact'] .closing {
+    min-height: 0;
+  }
+  [data-density='compact'] .closing-copy {
+    padding: clamp(1.25rem, 3vw, 2.5rem);
+  }
+  [data-density='compact'] h2 {
+    font-size: clamp(1.75rem, 1.4rem + 1.6vw, 2.5rem);
+  }
+  @media (max-width: 48rem) {
+    [data-density='compact'] .actions {
+      flex-direction: row;
+      align-items: center;
+    }
+    [data-density='compact'] .actions :global(a) {
+      width: auto;
+    }
+    [data-density='compact'] .closing-image {
+      aspect-ratio: 3.5 / 1;
     }
   }
 </style>

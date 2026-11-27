@@ -5,7 +5,7 @@ interface Props {
   title: string;
   description: string;
   layout?: 'stacked' | 'inline';
-  tone?: 'warm' | 'grove' | 'sand' | 'lilac';
+  tone?: 'warm' | 'grove' | 'sand' | 'lilac' | 'rose';
 }
 const { title, description, layout = 'stacked', tone = 'warm' } = Astro.props;
 ---
@@ -59,8 +59,35 @@ const { title, description, layout = 'stacked', tone = 'warm' } = Astro.props;
     --info-surface: var(--editorial-lilac);
     --info-ink: var(--editorial-lilac-ink);
   }
+  .tone-rose {
+    --info-surface: #ead8d2;
+    --info-ink: #704c43;
+  }
   .motif {
     color: var(--info-ink);
+  }
+  @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    .info-card:hover .motif :global(path) {
+      stroke-dasharray: 1 1;
+      animation: draw-motif 1000ms linear backwards;
+    }
+    .info-card:hover .motif :global(path:nth-child(2)) {
+      animation-delay: 120ms;
+    }
+    .info-card:hover .motif :global(path:nth-child(3)) {
+      animation-delay: 240ms;
+    }
+    .info-card:hover .motif :global(path:nth-child(n + 4)) {
+      animation-delay: 360ms;
+    }
+  }
+  @keyframes draw-motif {
+    from {
+      stroke-dashoffset: 1;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
   }
   h3 {
     font-size: clamp(1.2rem, 1.12rem + 0.35vw, 1.45rem);

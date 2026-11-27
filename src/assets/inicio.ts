@@ -1,5 +1,5 @@
 // Las fuentes de Inicio permanecen juntas para facilitar una futura migración.
-import hero from '../../referencias/inicio/inicio-hero-v2.png';
+import hero from '../../referencias/inicio/inicio-hero-lago.png';
 import foundations from '../../referencias/inicio/ai-foundations.png';
 import software from '../../referencias/inicio/ai-for-software.png';
 import science from '../../referencias/inicio/ai-for-science.png';

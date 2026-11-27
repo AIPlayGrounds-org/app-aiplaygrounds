@@ -29,5 +29,5 @@ const { name } = Astro.props;
   stroke-linejoin="round"
   aria-hidden="true"
 >
-  <path d={paths[name]} />
+  {paths[name].match(/M[^M]*/g)?.map((path) => <path d={path} pathLength="1" />)}
 </svg>

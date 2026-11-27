@@ -128,3 +128,11 @@ export const compactHeroArt: Record<
 };
 
 export type CompactHeroVariant = keyof typeof compactHeroArt;
+
+export function compactHeroBackground(
+  variant: CompactHeroVariant,
+  inkPercentage = 5,
+) {
+  const [ink] = compactHeroArt[variant].palette;
+  return `color-mix(in oklab, var(--editorial-background), ${ink} ${inkPercentage}%)`;
+}

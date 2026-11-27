@@ -19,15 +19,12 @@ const enabled =
   action="/api/contact"
   method="post"
   aria-labelledby="contact-title"
-  aria-describedby={enabled ? 'contact-privacy' : 'contact-availability'}
+  aria-describedby={enabled ? 'contact-privacy' : undefined}
   data-cta-origin="direct"
   data-inquiry-field="inquiryType"
   data-sitekey={enabled ? sitekey : undefined}
   data-policy-version={enabled ? policy : undefined}
 >
-  {!enabled && (
-    <p id="contact-availability">El formulario no está disponible por ahora.</p>
-  )}
   <fieldset class="contact-fields">
     <legend class="sr-only">Datos de la consulta</legend>
     <FormField
@@ -111,14 +108,10 @@ const enabled =
     min-width: 0;
     --form-message-min-height: 6rem;
   }
-  #contact-availability,
   .contact-note,
   #contact-privacy {
     color: var(--secondary-text);
     font-size: 0.9rem;
-  }
-  #contact-availability {
-    margin-bottom: 1rem;
   }
   .contact-fields,
   .contact-pair {

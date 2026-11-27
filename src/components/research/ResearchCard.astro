@@ -61,7 +61,7 @@ const { entry, eager } = Astro.props;
     display: grid;
     align-content: start;
     min-block-size: 100%;
-    border: 1px solid var(--border);
+    border: 1px solid var(--card-edge);
     border-radius: var(--editorial-radius);
     background: var(--home-card);
     overflow: clip;
@@ -143,6 +143,10 @@ const { entry, eager } = Astro.props;
     }
     :global([data-view='list']) .research-cover {
       aspect-ratio: auto;
+    }
+    :global([data-view='list']) .research-card-footer {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
     }
   }
   @media (hover: hover) and (prefers-reduced-motion: no-preference) {

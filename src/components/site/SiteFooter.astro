@@ -40,7 +40,12 @@ const groups = [
   >
     <div class="footer-intro">
       <a class="footer-brand" href="/" translate="no">
-        AI PlayGrounds
+        <img
+          src="/logo-ai-playgrounds.svg"
+          alt="AI PlayGrounds"
+          width="545"
+          height="135"
+        />
       </a>
       <p>
         AI PlayGrounds es una organización enfocada en inteligencia artificial,
@@ -89,9 +94,12 @@ const groups = [
     max-width: 24rem;
   }
   .footer-brand {
-    font: 600 clamp(1.5rem, 2.1vw, 1.9rem)/1.15 var(--font-heading);
-    letter-spacing: -0.03em;
-    text-decoration: none !important;
+    display: inline-block;
+    max-inline-size: 100%;
+  }
+  .footer-brand img {
+    inline-size: 13rem;
+    block-size: auto;
   }
   .footer-intro p {
     font-size: 0.875rem;
@@ -109,7 +117,7 @@ const groups = [
     gap: clamp(2rem, 5vw, 6rem);
   }
   nav h2 {
-    font: 600 0.875rem var(--font-sans);
+    font: 500 0.875rem var(--font-sans);
     margin: 0 0 1rem;
   }
   nav a {

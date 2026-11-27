@@ -52,7 +52,7 @@ test('Inicio conserva orden, textos y destinos acordados', () => {
 test('ilustraciones locales, WebP y variantes limitadas', () => {
   const assets = readFileSync('src/assets/inicio.ts', 'utf8');
   for (const name of [
-    'inicio-hero-v2',
+    'inicio-hero-lago',
     'ai-foundations',
     'ai-for-software',
     'ai-for-science',

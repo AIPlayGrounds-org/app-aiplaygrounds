@@ -54,6 +54,9 @@ const approvedEventImages = new Set(
     )
     .map((path) => path.slice(1)),
 );
+// Retratos web autorizados; los originales del formulario quedan fuera del repositorio.
+const approvedTeamPortrait =
+  /^_astro\/(?:appu|david-duran|edhu-nunez|edith-canelo|jheslyn-lagos|jhonatan-morgan|joseph-robles|julio-montreul|kevin-huaman|keyla-serna|max-veramendi|milagros-dimas|pedro-rojas|ricardo-quispe|rocio-laura|soledad-nahui)\.[a-zA-Z0-9_-]+_[a-zA-Z0-9_-]+\.webp$/;
 
 // Los slugs también detectan enlaces sin el título visible del registro.
 const demoMarkers = [
@@ -136,7 +139,10 @@ export function inspect(root, kind = root === 'dist' ? 'site' : 'bundle') {
           approvedEventImages.has(name) ||
           approvedProductImages.has(name) ||
           approvedResearchImages.has(name) ||
-          /^(?:(?:index|(?:empresas|comunidad|formacion|ai-labs|investigacion|equipo)\/index)\.html|verticals\/(?:foundations|software|science|finance)\.svg|_astro\/[a-zA-Z0-9._-]+\.(?:css|js)|_astro\/(?:hero-laguna|inicio-hero-v2|ai-foundations|ai-for-software|ai-for-science|ai-for-finance|cta-plazoleta|footer-lomas|empresa-hero-v5|empresa-colaboracion-puente-v2|empresa-colaboracion-andenes-v2|Patio andino entre flores y piedra|academy-(?:hero-v2|software-with-ai|ai-engineering|team-training|waitlist-cta))\.[a-zA-Z0-9_-]+_[a-zA-Z0-9_-]+\.webp|_astro\/(?:space-grotesk-latin|inter-tight-latin|geist-mono-latin)\.[a-zA-Z0-9_-]+\.woff2)$/.test(
+          approvedTeamPortrait.test(name) ||
+          name === 'favicon.svg' ||
+          name === 'logo-ai-playgrounds.svg' ||
+          /^(?:(?:index|(?:empresas|comunidad|formacion|ai-labs|investigacion|equipo)\/index)\.html|verticals\/(?:foundations|software|science|finance)\.svg|_astro\/[a-zA-Z0-9._-]+\.(?:css|js)|_astro\/(?:hero-laguna|inicio-hero-v2|inicio-hero-lago|ai-foundations|ai-for-software|ai-for-science|ai-for-finance|cta-plazoleta|footer-lomas|empresa-hero-v5|empresa-colaboracion-puente-v2|empresa-colaboracion-andenes-v2|Patio andino entre flores y piedra|academy-(?:hero-v2|software-with-ai|ai-engineering|team-training|waitlist-cta))\.[a-zA-Z0-9_-]+_[a-zA-Z0-9_-]+\.webp|_astro\/(?:space-grotesk-latin|inter-tight-latin|geist-mono-latin)\.[a-zA-Z0-9_-]+\.woff2)$/.test(
             name,
           )
         : /^[a-zA-Z0-9._/-]+\.(?:js|json|txt)$/.test(name);

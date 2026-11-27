@@ -1,6 +1,10 @@
 ---
 import CompactHeroArt from './CompactHeroArt.astro';
-import { compactHeroArt, type CompactHeroVariant } from './compact-hero-art';
+import {
+  compactHeroArt,
+  compactHeroBackground,
+  type CompactHeroVariant,
+} from './compact-hero-art';
 
 interface Props {
   id: string;
@@ -17,7 +21,10 @@ const [ink] = compactHeroArt[variant].palette;
   {id}
   class="compact-hero site-container"
   data-variant={variant}
-  style={{ '--hero-ink': ink }}
+  style={{
+    '--hero-ink': ink,
+    '--hero-surface': compactHeroBackground(variant),
+  }}
 >
   <div class="hero-art" aria-hidden="true">
     <CompactHeroArt {id} {variant} />
@@ -44,14 +51,14 @@ const [ink] = compactHeroArt[variant].palette;
     isolation: isolate;
     overflow: clip;
     background: var(--editorial-background);
-    background: color-mix(
-      in oklab,
-      var(--editorial-background) 95%,
-      var(--hero-ink)
-    );
     border: 1px solid
       color-mix(in oklab, var(--border) 70%, var(--editorial-background));
     border-radius: var(--editorial-radius);
+  }
+  @supports (background: color-mix(in oklab, white, black)) {
+    .compact-hero {
+      background: var(--hero-surface);
+    }
   }
   .hero-layout {
     display: flex;

@@ -1,0 +1,67 @@
+---
+import { team, type TeamMember } from '../../data/team';
+import TeamCard from './TeamCard.astro';
+
+type Props =
+  | { group: 'direction' | 'organization'; vertical?: never }
+  | { group: 'vertical'; vertical: NonNullable<TeamMember['vertical']> };
+
+const { group, vertical } = Astro.props;
+const layout = group === 'direction' ? 'vertical' : 'horizontal';
+const members = team.flatMap((member) => {
+  const role = member.organizationRole[group];
+  return role && (!vertical || member.vertical === vertical)
+    ? [{ member, role }]
+    : [];
+});
+if (group === 'vertical') {
+  members.sort(
+    (a, b) => Number(b.role === 'Líder') - Number(a.role === 'Líder'),
+  );
+}
+---
+
+<div class:list={['team-grid', layout]}>
+  {members.map(({ member, role }, position) => (
+    <TeamCard
+      {member}
+      {role}
+      {layout}
+      {position}
+      heading={group === 'vertical' ? 'h4' : 'h3'}
+    />
+  ))}
+</div>
+
+<style>
+  .team-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(0.75rem, 2vw, 1.25rem);
+  }
+  @media (width < 31rem) {
+    .vertical {
+      max-inline-size: 24rem;
+    }
+  }
+  @media (min-width: 31rem) {
+    .vertical {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 44rem) {
+    .vertical {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 47rem) {
+    .horizontal {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 75rem) {
+    .horizontal {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>
