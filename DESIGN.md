@@ -129,6 +129,11 @@ Botones y campos tienen esquinas pequeñas; las tarjetas interiores repiten un r
 
 ## Components
 
+La [auditoría de cierre](docs/implementation/design-system-closure.md) documenta
+los contratos comprobados, las excepciones de arte y composición, y las reglas
+bloqueantes. El catálogo utiliza las variantes tipadas de los átomos y muestra
+las medidas efectivas de iconos, chips, controles y movimiento.
+
 - **Botones.** [`Button`](src/components/ui/Button.astro) ofrece variantes semánticas y tamaños `xs`–`xl`. El tamaño `md` mide **2.75 rem** de alto y ajusta el relleno con icono. Usa `iconOnly` con nombre accesible y los slots `leading`/`trailing` para los demás iconos. Respeta el foco visible, la semántica de botón/enlace y los estados deshabilitado y cargando.
 - **Tarjetas.** [`Card`](src/components/ui/Card.astro) separa superficie, densidad, borde e interacción. Las composiciones interiores controlan su layout. Usa `interaction="single-link"` solo cuando exista un único destino real y un `data-card-link`.
 - **Etiquetas.** [`Badge`](src/components/ui/Badge.astro) comparte tamaños, contornos y estados entre `VerticalTag` y `ProductTags`; las etiquetas mantienen su texto y significado.

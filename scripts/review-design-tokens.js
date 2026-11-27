@@ -59,7 +59,33 @@ export default async function reviewDesignTokens(page, origin) {
       site: '/empresas/',
       targets: [['#contact-name', 'borderRadius', '13px']],
     },
-    { site: '/ai-labs/', targets: [['main [data-badge]', 'fontSize', '16px']] },
+    {
+      site: '/ai-labs/',
+      targets: [
+        ['main [data-badge]', 'fontSize', '16px'],
+        [
+          '.facet[data-dropdown] > .facet-options',
+          'boxShadow',
+          'rgb(20, 30, 40) 0px 2px 5px 0px',
+        ],
+        ['.facet[data-dropdown] > .facet-options', 'borderTopWidth', '3px'],
+      ],
+    },
+    {
+      site: '/equipo/',
+      targets: [
+        [
+          '.vertical-icon[data-vertical="foundations"]',
+          'backgroundColor',
+          'rgb(230, 191, 212)',
+        ],
+        ['.team-card .links a', 'borderRadius', '13px'],
+      ],
+    },
+    {
+      site: '/formacion/',
+      targets: [['.form-cta .conversion-surface', 'borderRadius', '19px']],
+    },
     {
       site: '/design-system/',
       targets: [
@@ -73,6 +99,12 @@ export default async function reviewDesignTokens(page, origin) {
         ['#textlink svg', 'width', '23px'],
         ['#example-Input', 'borderRadius', '13px'],
         ['#badge .preview-frame [data-badge]', 'fontWeight', '600'],
+        [
+          '#dropdown .ui-dropdown-panel',
+          'boxShadow',
+          'rgb(20, 30, 40) 0px 2px 5px 0px',
+        ],
+        ['#card .preview-frame [data-slot="card"]', 'borderTopWidth', '3px'],
       ],
     },
   ];
@@ -99,6 +131,11 @@ export default async function reviewDesignTokens(page, origin) {
         --weight-medium: 600;
         --icon-chevron: 23px;
         --radius-small: 13px;
+        --radius-large: 19px;
+        --stroke-default: 3px;
+        --shadow-overlay: 0 2px 5px rgb(20 30 40);
+        --shadow-popover: 0 2px 5px rgb(20 30 40);
+        --terrain-connection-light: rgb(230 191 212);
       }
     `,
     });
@@ -126,6 +163,7 @@ export default async function reviewDesignTokens(page, origin) {
     element.style.setProperty('--motion-stagger-group', '133ms');
     element.style.setProperty('--motion-delay-group-max', '150ms');
     element.style.setProperty('--motion-scale-card', '0.92');
+    element.style.setProperty('--motion-distance-card', '37px');
   });
   const demo = page.locator('#motion-entrance-exit');
   await demo.locator('[data-motion-field="mode"]').selectOption('group');
@@ -164,6 +202,20 @@ export default async function reviewDesignTokens(page, origin) {
     throw new Error(
       `Anime.js no leyó los tokens esperados: ${JSON.stringify(keyframes)}`,
     );
+  const travel = await stage
+    .locator('[data-motion-item]')
+    .first()
+    .evaluate((item) =>
+      item
+        .getAnimations()
+        .flatMap(({ effect }) => effect?.getKeyframes() ?? [])
+        .some(
+          (frame) =>
+            frame.translate === '0px 37px' || frame.translate === '0 37px',
+        ),
+    );
+  if (!travel)
+    throw new Error('Anime.js no leyó el desplazamiento del token de tarjeta.');
   await demo.locator('[data-motion-action="reset"]').click();
   await stage.evaluate((element) => {
     for (const token of [
@@ -171,6 +223,7 @@ export default async function reviewDesignTokens(page, origin) {
       '--motion-stagger-group',
       '--motion-delay-group-max',
       '--motion-scale-card',
+      '--motion-distance-card',
     ])
       element.style.removeProperty(token);
   });
@@ -194,5 +247,5 @@ export default async function reviewDesignTokens(page, origin) {
   ) {
     throw new Error('La trazabilidad produce overflow.');
   }
-  return 'Conexión verificada: átomos y compuestos del sitio, galería y tiempos y escala efectivos de Anime.js.';
+  return 'Conexión verificada: átomos, compuestos y dominio, bordes, sombras y tiempos, escala y distancia de Anime.js.';
 }

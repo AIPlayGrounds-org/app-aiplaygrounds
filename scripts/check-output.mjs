@@ -158,7 +158,7 @@ export function inspect(root, kind = root === 'dist' ? 'site' : 'bundle') {
     if (
       kind === 'site' &&
       /\.(?:html|js|css)$/.test(name) &&
-      /(?:\/design-system(?:\/|["'])|data-gallery-(?:component|frame)|\.gallery-shell|data-motion-playground|data-motion-demo|motion-experiments)/.test(
+      /(?:\/design-system(?:\/|["'])|data-gallery-(?:component|frame)|\.gallery-shell|data-motion-playground|data-motion-demo|motion-experiments|entry-usage|usage-index)/.test(
         text,
       )
     )

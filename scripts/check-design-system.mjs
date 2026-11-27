@@ -1,5 +1,10 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
-import { basename, extname, join } from 'node:path';
+import { basename, dirname, extname, join, normalize } from 'node:path';
+import {
+  declarationRule,
+  inspectAstro,
+  inspectScript,
+} from './design-system-rules.mjs';
 import postcss from 'postcss';
 import ts from 'typescript';
 
@@ -15,8 +20,6 @@ const atoms = new Set(
     .map((path) => basename(path).toLowerCase()),
 );
 const errors = [];
-const review = new Set();
-const literalColor = /(?:^|[\s,(])#[\da-f]{3,8}\b|\b(?:rgba?|hsla?|oklch)\(/i;
 const obsolete = /(?:starwind(?:-ui)?|tailwind-variants)/i;
 const manifest = JSON.parse(readFileSync('package.json', 'utf8'));
 const dependencies = { ...manifest.dependencies, ...manifest.devDependencies };
@@ -44,7 +47,9 @@ const files = [
   'package-lock.json',
   'skills-lock.json',
   'astro.config.mjs',
-  ...sourceFiles('src').filter((path) => /\.(astro|css|ts)$/.test(path)),
+  ...sourceFiles('src').filter((path) =>
+    /\.(astro|css|[cm]?[jt]s)$/.test(path),
+  ),
 ];
 const catalog = ts.createSourceFile(
   'catalog.ts',
@@ -73,6 +78,35 @@ function checkCatalog(node) {
 }
 checkCatalog(catalog);
 const examples = readFileSync('src/design-system/Example.astro', 'utf8');
+const optionsFile = 'src/components/ui/options.ts';
+if (existsSync(optionsFile)) {
+  const options = ts.createSourceFile(
+    optionsFile,
+    readFileSync(optionsFile, 'utf8'),
+    ts.ScriptTarget.Latest,
+    true,
+  );
+  for (const statement of options.statements) {
+    if (
+      !ts.isVariableStatement(statement) ||
+      !statement.modifiers?.some(
+        (item) => item.kind === ts.SyntaxKind.ExportKeyword,
+      )
+    )
+      continue;
+    for (const declaration of statement.declarationList.declarations) {
+      const name = declaration.name.getText(options);
+      const represented = new RegExp(`\\b${name}\\b`, 'g');
+      if (
+        [...`${catalog.text}\n${examples}`.matchAll(represented)].length < 2
+      ) {
+        errors.push(
+          `${optionsFile}: el catálogo debe consumir ${name} en un ejemplo o control`,
+        );
+      }
+    }
+  }
+}
 const motionExamples =
   readFileSync('src/design-system/MotionGallery.astro', 'utf8') +
   readFileSync('src/design-system/motion-playground.ts', 'utf8');
@@ -83,16 +117,6 @@ for (const path of sourceFiles(ui).filter((file) => file.endsWith('.astro'))) {
       `${path}: falta una ficha o una instancia del átomo en el catálogo`,
     );
 }
-const styleExceptions = new Map([
-  [
-    'src/styles/atlas-preview.css',
-    'Atlas interno: facsímil de exploraciones editoriales.',
-  ],
-  [
-    'src/pages/inicio-atlas/[...preview].astro',
-    'Atlas interno: facsímil de exploraciones editoriales.',
-  ],
-]);
 const definitions = new Set();
 postcss
   .parse(readFileSync('node_modules/tailwindcss/theme.css', 'utf8'))
@@ -100,58 +124,17 @@ postcss
     definitions.add(declaration.prop);
   });
 const declarations = [];
-const artColorExceptions = new Map([
-  [
-    'src/components/site/compact-hero-art.ts',
-    'Pigmentos de las ilustraciones aprobadas.',
-  ],
-]);
-
-function reviewScript(path, code) {
-  const source = ts.createSourceFile(
-    path,
-    code,
-    ts.ScriptTarget.Latest,
-    true,
-    ts.ScriptKind.TS,
-  );
-  function visit(node) {
-    if (
-      ts.isStringLiteralLike(node) &&
-      literalColor.test(node.text) &&
-      !artColorExceptions.has(path)
-    ) {
-      if (
-        node.parent &&
-        ts.isPropertyAssignment(node.parent) &&
-        /^(?:color|background|border|fill|stroke)/i.test(
-          node.parent.name.getText(source).replace(/^['"]/, ''),
-        )
-      ) {
-        review.add(`${path}: revisar pigmento literal ${node.text}`);
-      }
-    }
-    if (
-      path.startsWith('src/motion/') &&
-      ts.isPropertyAssignment(node) &&
-      /^(?:duration|delay|ease)$/.test(node.name.getText(source)) &&
-      (ts.isNumericLiteral(node.initializer) ||
-        ts.isStringLiteralLike(node.initializer))
-    ) {
-      errors.push(
-        `${path}: ${node.name.getText(source)} debe leer un Motion Token`,
-      );
-    }
-    ts.forEachChild(node, visit);
-  }
-  visit(source);
-}
+const graph = new Map();
+const sources = new Set(files);
 
 for (const path of files) {
   const content = readFileSync(path, 'utf8');
   const publicSource =
     path.startsWith('src/') && !path.startsWith('src/design-system/');
-  if (publicSource && path.endsWith('.ts')) reviewScript(path, content);
+  const astro = path.endsWith('.astro')
+    ? inspectAstro(path, content)
+    : undefined;
+  if (astro) errors.push(...astro.errors);
   if (
     path.startsWith('src/motion/') &&
     /from ['"]animejs\//.test(content) &&
@@ -159,48 +142,75 @@ for (const path of files) {
   ) {
     errors.push(`${path}: falta un demo del patrón de producción`);
   }
-  if (path.endsWith('.astro')) {
-    for (const [, token] of content.matchAll(/['"](--[\w-]+)['"]\s*:/g)) {
+  if (astro) {
+    for (const [, token] of content.matchAll(/['"](--[\w-]+)['"]\s*:/g))
       definitions.add(token);
-    }
-    if (publicSource && !styleExceptions.has(path)) {
-      for (const [, , inline] of content.matchAll(/\bstyle=(["'])(.*?)\1/g)) {
-        if (
-          literalColor.test(inline) ||
-          /(?:font-size|border-radius|padding|gap):\s*\d/.test(inline)
-        )
-          review.add(`${path}: revisar estilo visual inline`);
-      }
-      if (
-        /\b(?:gap|p[xy]?|m[xy]?|text|rounded)-\[(?:\d+(?:\.\d+)?(?:px|rem)|#[\da-f]{3,8})\]/i.test(
-          content,
-        )
-      )
-        review.add(
-          `${path}: revisar utilidades arbitrarias equivalentes a tokens`,
-        );
-    }
   }
-  if (
-    path.startsWith('src/') &&
-    !path.startsWith('src/design-system/') &&
-    /\b(?:from\s+|import\s*\(?\s*)['"][^'"]*\/design-system\//.test(content)
-  ) {
-    errors.push(`${path}: producción no puede depender del catálogo`);
-  }
-  const styles = path.endsWith('.css')
-    ? [content]
-    : path.endsWith('.astro')
-      ? [...content.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style>/g)].map(
-          ([, css]) => css,
-        )
+  const styles = path.endsWith('.css') ? [content] : (astro?.styles ?? []);
+  const scripts = astro
+    ? [
+        content.match(/^---\r?\n([\s\S]*?)^---\s*$/m)?.[1] ?? '',
+        ...astro.scripts,
+      ]
+    : /\.[cm]?[jt]s$/.test(path) && path.startsWith('src/')
+      ? [content]
       : [];
+  const imports = new Set();
+  for (const script of scripts) {
+    const analysis = inspectScript(path, script);
+    if (publicSource) errors.push(...analysis.errors);
+    for (const specifier of analysis.imports) imports.add(specifier);
+  }
   for (const css of styles) {
-    postcss.parse(css, { from: path }).walkDecls((declaration) => {
+    const tree = postcss.parse(css, { from: path });
+    tree.walkAtRules('import', (entry) => {
+      const specifier = entry.params.match(
+        /^(?:url\(\s*)?['"]([^'"]+)['"]/,
+      )?.[1];
+      if (specifier) imports.add(specifier);
+    });
+    tree.walkDecls((declaration) => {
       if (declaration.prop.startsWith('--')) definitions.add(declaration.prop);
       declarations.push({ path, declaration });
     });
   }
+  const targetPaths = [...imports].flatMap((specifier) => {
+    const clean = specifier.split(/[?#]/)[0];
+    const target = normalize(
+      clean.startsWith('.')
+        ? join(dirname(path), clean)
+        : clean.replace(/^\//, ''),
+    );
+    if (
+      publicSource &&
+      (target === 'src/design-system' ||
+        target.startsWith('src/design-system/'))
+    ) {
+      errors.push(
+        `${path}: producción no puede depender del catálogo (${specifier})`,
+      );
+    }
+    if (
+      path.startsWith(`${ui}/`) &&
+      /^src\/(?:(?:pages|layouts|data|motion)\/|components\/(?!ui\/))/.test(
+        target,
+      )
+    )
+      errors.push(`${path}: un átomo no puede depender de ${target}`);
+    if (
+      path.startsWith('src/motion/') &&
+      /^src\/(?:pages|layouts|components|data)\//.test(target)
+    )
+      errors.push(
+        `${path}: el patrón de movimiento no puede depender de ${target}`,
+      );
+    const file = [
+      target,
+      ...['.ts', '.js', '.astro', '.css'].map((ext) => target + ext),
+    ].find((candidate) => sources.has(candidate));
+    return file ? [file] : [];
+  });
+  if (publicSource) graph.set(path, targetPaths);
   if (obsolete.test(content)) errors.push(`${path}: referencia obsoleta`);
   if (
     path.startsWith('src/') &&
@@ -225,37 +235,46 @@ for (const path of files) {
   }
 }
 
-for (const {
-  path,
-  declaration: { prop, value, source },
-} of declarations) {
+const visited = new Set();
+const chain = new Set();
+function inspectDependencies(path) {
+  if (chain.has(path)) {
+    errors.push(`Ciclo de dependencias: ${[...chain, path].join(' → ')}`);
+    return;
+  }
+  if (visited.has(path)) return;
+  visited.add(path);
+  chain.add(path);
+  for (const dependency of graph.get(path) ?? [])
+    inspectDependencies(dependency);
+  chain.delete(path);
+}
+for (const path of graph.keys()) inspectDependencies(path);
+
+for (const { path, declaration } of declarations) {
+  const { prop, value, source } = declaration;
   const location = `${path}:${source.start.line}`;
-  if (path !== 'src/styles/tokens.css' && !styleExceptions.has(path)) {
-    if (literalColor.test(value))
-      errors.push(`${location}: color literal en ${prop}`);
-    if (
-      /^(?:transition|animation)(?:-|$)|^--editorial-delay$/.test(prop) &&
-      /(?:^|[\s,(])(?:\d*\.?\d+(?:ms|s)\b|(?:cubic-bezier|steps)\(|(?:ease(?:-in|-out|-in-out)?|linear)\b)/.test(
-        value,
-      )
-    )
-      errors.push(`${location}: tiempo o curva literal en ${prop}`);
-    if (
-      !path.startsWith('src/design-system/') &&
-      ((/^(?:gap|padding(?:-inline|-block)?|margin-top)$/.test(prop) &&
-        /^0\.(?:35|45|55|65|7)rem\b/.test(value)) ||
-        (/^(?:font-size|line-height|font-weight|border-radius)$/.test(prop) &&
-          /^(?:0\.\d+rem|1\.3|[456]00)$/.test(value)) ||
-        (prop === 'box-shadow' && /^\d/.test(value)))
-    ) {
-      review.add(`${location}: revisar ${prop}: ${value}`);
-    }
+  if (path !== 'src/styles/tokens.css') {
+    const rule = declarationRule(prop, value);
+    const marker = declaration.next();
+    const reason =
+      marker?.type === 'comment' &&
+      marker.source.start.line === declaration.source.end.line
+        ? marker.text.match(/^design-exception: (.{15,})$/)?.[1]
+        : undefined;
+    if (rule && !reason)
+      errors.push(`${location}: ${rule} en ${prop}: ${value}`);
+    if (!rule && reason)
+      errors.push(`${location}: excepción obsoleta en ${prop}`);
   }
   for (const [, token, fallback] of value.matchAll(
     /var\(\s*(--[\w-]+)\s*([,)])/g,
   )) {
     if (
-      fallback === ')' &&
+      (fallback === ')' ||
+        /^--(?:space|type|weight|radius|duration|motion|stroke|icon)-/.test(
+          token,
+        )) &&
       !definitions.has(token) &&
       !/^--(?:tw-|ds-)/.test(token)
     ) {
@@ -272,8 +291,6 @@ for (const path of [
   if (existsSync(path)) errors.push(`${path}: archivo o directorio obsoleto`);
 }
 
-if (review.size)
-  console.warn(`Revisión visual (no bloqueante):\n${[...review].join('\n')}`);
 if (errors.length) {
   console.error(errors.join('\n'));
   process.exitCode = 1;

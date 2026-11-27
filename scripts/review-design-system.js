@@ -241,6 +241,19 @@ export default async function reviewDesignSystem(
           .evaluate((el) => el === document.activeElement),
         'Retorno de foco del ejemplo',
       );
+      const custom = page.getByRole('button', {
+        name: 'Ver panel personalizado',
+      });
+      await custom.press('Enter');
+      const customDialog = page.getByRole('dialog', {
+        name: 'Panel personalizado',
+      });
+      await customDialog.getByRole('button', { name: 'Cerrar panel' }).click();
+      await customDialog.waitFor({ state: 'hidden' });
+      assert(
+        await custom.evaluate((el) => el === document.activeElement),
+        'Retorno de foco del panel personalizado',
+      );
       await page.locator('#dropdown .preview-frame summary').press('Enter');
       await page
         .locator('#dropdown')
