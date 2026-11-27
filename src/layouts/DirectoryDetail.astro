@@ -62,25 +62,25 @@ const { title, description, directory, metadata, demo, source } = Astro.props;
     border-block-end: var(--stroke-default) solid var(--outline);
   }
   .detail-intro .directory-demo {
-    margin-block-start: 0.8rem;
+    margin-block-start: var(--space-control);
   }
   .detail-grid {
     display: grid;
     grid-template-columns: minmax(0, 2fr) minmax(15rem, 1fr);
-    gap: 1.75rem clamp(2rem, 6vw, 6rem);
+    gap: calc(var(--space-unit) * 7) clamp(2rem, 6vw, 6rem);
     align-items: start;
     margin-block-start: clamp(1.5rem, 3vw, 2.25rem);
   }
   .detail-body {
     display: grid;
-    gap: 1.5rem;
+    gap: calc(var(--space-unit) * 6);
   }
   .detail-body :global(h2) {
     font-size: clamp(1.3rem, 1.1rem + 0.65vw, 1.7rem);
   }
   .detail-body :global(p) {
     max-inline-size: 68ch;
-    margin-block-start: 0.45rem;
+    margin-block-start: var(--space-related);
     color: var(--secondary-text);
   }
   .detail-context {
@@ -90,8 +90,8 @@ const { title, description, directory, metadata, demo, source } = Astro.props;
     border-radius: var(--editorial-radius);
   }
   .detail-context h2 {
-    font-size: 1.25rem;
-    margin-block-end: 1rem;
+    font-size: var(--type-card-title);
+    margin-block-end: var(--space-stack);
   }
   .detail-context dl {
     display: grid;

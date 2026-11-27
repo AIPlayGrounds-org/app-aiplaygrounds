@@ -1,8 +1,9 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
+import type { controlSizes } from './options';
 
 interface Props extends Omit<HTMLAttributes<'input'>, 'type' | 'size'> {
-  size?: 'sm' | 'md' | 'lg';
+  size?: (typeof controlSizes)[number];
   native?: boolean;
 }
 const sizes = {

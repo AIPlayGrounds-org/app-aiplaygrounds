@@ -36,7 +36,7 @@ const {
       class:list={[!managed && 'ds-join-item', controlClass]}
       data-step={managed ? '-1' : undefined}
     >
-      <ChevronLeft size={18} aria-hidden="true" /> Anterior
+      <ChevronLeft class="size-icon-md" aria-hidden="true" /> Anterior
     </Button>
     {managed && <span data-page-label></span>}
     <Button
@@ -47,7 +47,7 @@ const {
       class:list={[!managed && 'ds-join-item', controlClass]}
       data-step={managed ? '1' : undefined}
     >
-      Siguiente <ChevronRight size={18} aria-hidden="true" />
+      Siguiente <ChevronRight class="size-icon-md" aria-hidden="true" />
     </Button>
   </div>
   {!managed && label && <span>{label}</span>}

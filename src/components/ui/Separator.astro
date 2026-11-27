@@ -1,8 +1,9 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
+import type { separatorOrientations } from './options';
 
 interface Props extends HTMLAttributes<'div'> {
-  orientation?: 'horizontal' | 'vertical';
+  orientation?: (typeof separatorOrientations)[number];
   decorative?: boolean;
 }
 const {

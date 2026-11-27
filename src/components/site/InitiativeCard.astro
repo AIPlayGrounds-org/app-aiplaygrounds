@@ -139,7 +139,7 @@ const {
     place-items: center;
     overflow: hidden;
     block-size: clamp(8rem, 13vw, 11rem);
-    border-radius: 0.35rem 0.35rem 0 0;
+    border-radius: var(--editorial-radius) var(--editorial-radius) 0 0;
     border-block-end: var(--stroke-default) solid var(--line);
     background: var(--path-wash);
     color: var(--path-ink);
@@ -167,12 +167,12 @@ const {
     text-wrap: pretty;
   }
   .path-card p {
-    margin-block-start: 0.55rem;
+    margin-block-start: var(--space-related);
     color: var(--secondary-text);
   }
   .path-card :global(.text-link) {
     justify-self: start;
-    margin-block: 0.65rem 0.75rem;
+    margin-block: var(--space-control) var(--space-control);
   }
   .path-card h3 {
     font-size: var(--type-card-title);

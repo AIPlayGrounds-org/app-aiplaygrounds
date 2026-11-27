@@ -51,7 +51,7 @@ const [ink] = compactHeroArt[variant].palette;
     isolation: isolate;
     overflow: clip;
     background: var(--editorial-background);
-    border: 1px solid
+    border: var(--stroke-default) solid
       color-mix(in oklab, var(--line) 70%, var(--editorial-background));
     border-radius: var(--editorial-radius);
   }
@@ -69,13 +69,13 @@ const [ink] = compactHeroArt[variant].palette;
   }
   .hero-copy {
     inline-size: 64%;
-    padding-block: 2.25rem;
+    padding-block: calc(var(--space-unit) * 9);
   }
   .hero-label {
     display: flex;
     align-items: center;
     gap: var(--space-control);
-    margin-block-end: 0.4rem;
+    margin-block-end: var(--space-related);
     color: var(--hero-ink);
     font-size: var(--type-body-small);
     font-weight: var(--weight-heading);
@@ -83,7 +83,7 @@ const [ink] = compactHeroArt[variant].palette;
   .hero-label::after {
     content: '';
     inline-size: 2rem;
-    border-block-start: 1px solid currentColor;
+    border-block-start: var(--stroke-default) solid currentColor;
   }
   h1 {
     max-inline-size: 45.625rem;
@@ -109,7 +109,7 @@ const [ink] = compactHeroArt[variant].palette;
   @media (max-width: 46rem) {
     .hero-copy {
       inline-size: 100%;
-      padding-block: 1.625rem clamp(5.375rem, 14vw, 7rem);
+      padding-block: calc(var(--space-unit) * 7) clamp(5.375rem, 14vw, 7rem);
     }
     h1 {
       font-size: clamp(1.875rem, 5vw, 2.125rem);

@@ -1,9 +1,10 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
+import type { dialogLayouts } from './options';
 
 type Props = Omit<HTMLAttributes<'dialog'>, 'open'> & {
   id: string;
-  layout?: 'center' | 'custom';
+  layout?: (typeof dialogLayouts)[number];
 } & ({ 'aria-label': string } | { 'aria-labelledby': string });
 const { layout = 'center', class: className, ...rest } = Astro.props;
 ---

@@ -9,13 +9,13 @@ main#contenido:has(> .labs-detail) {
   color: var(--editorial-lilac-ink);
 }
 .product-back .directory-back {
-  margin-block-end: 0.5rem;
+  margin-block-end: var(--space-related);
 }
 .product-intro {
   display: grid;
   justify-items: start;
   gap: var(--space-control);
-  padding-block: 0 1.75rem;
+  padding-block: 0 calc(var(--space-unit) * 7);
   border-block-end: var(--stroke-default) solid var(--line);
 }
 .product-intro h1 {
@@ -34,15 +34,15 @@ main#contenido:has(> .labs-detail) {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 0.15rem var(--space-stack);
+  gap: var(--space-micro) var(--space-stack);
   inline-size: 100%;
-  margin-block-start: 0.15rem;
+  margin-block-start: var(--space-inline);
   color: var(--secondary-text);
   font-size: var(--type-control);
 }
 .product-byline small {
-  margin-inline-start: 0.7rem;
-  padding: 0.15rem var(--space-related);
+  margin-inline-start: var(--space-control);
+  padding: var(--space-micro) var(--space-related);
   border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
   color: var(--secondary-text);
@@ -86,12 +86,12 @@ main#contenido:has(> .labs-detail) {
   color: var(--secondary-text);
 }
 .access-panel :is([data-slot='button'], .share-button) {
-  margin-block-start: 0.25rem;
+  margin-block-start: var(--space-inline);
 }
 .product-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: 1.5rem clamp(1.5rem, 4vw, 3.5rem);
+  gap: calc(var(--space-unit) * 6) clamp(1.5rem, 4vw, 3.5rem);
   align-items: start;
   margin-block-start: clamp(1.5rem, 3vw, 2.25rem);
 }
@@ -108,7 +108,7 @@ main#contenido:has(> .labs-detail) {
   gap: var(--space-control);
 }
 .product-content section:not(.access-panel) > h2 + * {
-  margin-block-start: 0.35rem;
+  margin-block-start: var(--space-inline);
 }
 .product-content section:not(.access-panel) h2,
 .related-products h2 {
@@ -124,7 +124,7 @@ main#contenido:has(> .labs-detail) {
 .product-content p:not(.access-panel p) {
   color: var(--secondary-text);
   max-inline-size: 72ch;
-  line-height: 1.6;
+  line-height: var(--leading-body);
 }
 .product-prose {
   white-space: pre-line;
@@ -166,7 +166,7 @@ main#contenido:has(> .labs-detail) {
   display: flex;
   align-items: center;
   gap: var(--space-inline);
-  margin-block-end: 0.5rem;
+  margin-block-end: var(--space-related);
 }
 .audience-list svg,
 .detail-panel svg,
@@ -183,7 +183,7 @@ main#contenido:has(> .labs-detail) {
   gap: var(--space-related);
 }
 .technology-list li {
-  padding: 0.14rem var(--space-related);
+  padding: var(--space-micro) var(--space-related);
   border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
@@ -194,7 +194,7 @@ main#contenido:has(> .labs-detail) {
   border-radius: var(--editorial-radius);
 }
 .detail-panel {
-  padding: 1.5rem var(--space-card);
+  padding: calc(var(--space-unit) * 6) var(--space-card);
   border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
@@ -204,8 +204,8 @@ main#contenido:has(> .labs-detail) {
   display: flex;
   align-items: center;
   gap: var(--space-related);
-  padding-block-end: 1rem;
-  font-size: 1.0625rem;
+  padding-block-end: var(--space-stack);
+  font-size: var(--type-control);
   text-wrap: pretty;
 }
 .detail-panel dl > div {
@@ -228,7 +228,7 @@ main#contenido:has(> .labs-detail) {
 .author-list {
   display: grid;
   gap: var(--space-related);
-  margin-block: 0.25rem 0.75rem;
+  margin-block: var(--space-inline) var(--space-control);
 }
 .author-list img {
   inline-size: 2.5rem;
@@ -241,18 +241,18 @@ main#contenido:has(> .labs-detail) {
 }
 .related-products {
   border-block-start: var(--stroke-default) solid var(--line);
-  margin-block-start: 1.75rem;
+  margin-block-start: calc(var(--space-unit) * 7);
   padding-block-start: clamp(1.75rem, 3vw, 2.5rem);
 }
 .related-products h2 {
   display: flex;
   align-items: center;
   gap: var(--space-related);
-  margin-block-end: 1.25rem;
+  margin-block-end: var(--space-card);
 }
 .related-products > ul {
   display: grid;
-  gap: 0.85rem;
+  gap: var(--space-control);
 }
 .related-products li {
   min-inline-size: 0;

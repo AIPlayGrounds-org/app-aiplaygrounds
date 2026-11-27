@@ -46,6 +46,8 @@ El H1 de los héroes inmersivos permanece estable y visible desde el primer rend
 
 `data-feedback-arrive` reutiliza una sola entrada CSS para errores de campo y estados de envío. `TextLink` reutiliza `data-card-arrow`, con `--motion-arrow-pressed-x` y `--motion-arrow-pressed-y` para su estado de presión.
 
+`data-card-arrow="down"` conserva el gesto direccional de Formación con `--motion-arrow-down`; las demás flechas mantienen su trayectoria compartida. Los iconos sociales usan `--motion-icon-nudge` como respuesta óptica breve.
+
 1. Consulta los ejemplos en `/design-system/#motion` y la skill. Elige CSS para feedback inmediato; visibilidad puntual con `IntersectionObserver`; sincronización real con `onScroll()`; WAAPI para opacidad y transformaciones; engine JS para morph, física y layout.
 2. Mantén el estado final en el HTML/CSS; comprueba foco, zoom, reduced motion y móvil. Limita objetivos y conserva semántica de teclado. No dividas texto si el efecto es prescindible; cuando se divida, usa `splitText({ accessible: true })` y revierte el DOM. El arrastre requiere un control alternativo.
 3. Conecta el patrón al ciclo de vida, a tokens CSS y a un preview real. Importa solo el módulo que se usa. Para cambiar de versión, usa `npm install --save-exact animejs@4`, revisa la API y el lock, repite `npm run ci:check` y las pruebas de navegador y compara el tamaño servido.

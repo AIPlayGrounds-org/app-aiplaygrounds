@@ -58,7 +58,7 @@ const { entry, eager } = Astro.props;
         aria-label={`Ver investigación: ${entry.title}`}
       >
         Ver investigación{' '}
-        <ArrowRight size={18} aria-hidden="true" data-card-arrow />
+        <ArrowRight class="size-icon-md" aria-hidden="true" data-card-arrow />
       </a>
     </footer>
   </div>
@@ -105,7 +105,7 @@ const { entry, eager } = Astro.props;
     display: inline-flex;
     align-items: center;
     gap: var(--space-inline);
-    padding: 0.15rem var(--space-related);
+    padding: var(--space-micro) var(--space-related);
     border-radius: var(--editorial-radius);
     color: var(--editorial-lilac-ink);
     border: var(--stroke-default) solid var(--line);
@@ -121,7 +121,7 @@ const { entry, eager } = Astro.props;
     font-size: var(--type-label);
   }
   .research-card-heading h3 {
-    margin-block-start: 0.25rem;
+    margin-block-start: var(--space-inline);
   }
   .research-card-summary {
     max-inline-size: var(--measure-prose);
@@ -131,8 +131,8 @@ const { entry, eager } = Astro.props;
     flex-wrap: wrap;
     align-items: end;
     justify-content: space-between;
-    gap: 0.15rem var(--space-card);
-    margin-block-start: 0.25rem;
+    gap: var(--space-micro) var(--space-card);
+    margin-block-start: var(--space-inline);
   }
   .research-card-footer a {
     display: inline-flex;

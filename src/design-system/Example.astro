@@ -36,6 +36,15 @@ import ProductTags from '../components/labs/ProductTags.astro';
 import MetadataPanel from '../components/directory/MetadataPanel.astro';
 import { getProducts } from '../data/labs';
 import type { DirectoryFacet } from '../data/directory';
+import {
+  accordionIndicators,
+  controlSizes,
+  dialogLayouts,
+  separatorOrientations,
+  spinnerSizes,
+  type tooltipPlacements,
+  type dropdownAlignments,
+} from '../components/ui/options';
 
 interface Props {
   name: string;
@@ -122,7 +131,9 @@ const product = name === 'ProductTags' ? (await getProducts())[0] : undefined;
 {name === 'Badge' && (
   <Badge {...badge}>
     <Fragment slot="icon">
-      {values.icon === 'leading' && <Info size={14} aria-hidden="true" />}
+      {values.icon === 'leading' && (
+        <Info class="size-icon-sm" aria-hidden="true" />
+      )}
     </Fragment>
     Disponible
   </Badge>
@@ -174,9 +185,19 @@ const product = name === 'ProductTags' ? (await getProducts())[0] : undefined;
   </div>
 )}
 {name === 'Checkbox' && (
-  <Label>
-    <Checkbox name="tracking" /> Recibir actualizaciones
-  </Label>
+  <div class="example-row">
+    {controlSizes.map((size) => (
+      <Label>
+        <Checkbox name={`tracking-${size}`} {size} /> {size}
+      </Label>
+    ))}
+    <Label>
+      <Checkbox name="tracking-native" native checked /> Nativo
+    </Label>
+    <Label>
+      <Checkbox name="tracking-disabled" disabled /> Deshabilitado
+    </Label>
+  </div>
 )}
 {name === 'Radio' && (
   <fieldset class="example-stack">
@@ -187,12 +208,32 @@ const product = name === 'ProductTags' ? (await getProducts())[0] : undefined;
     <Label>
       <Radio name="format" value="on-site" /> Presencial
     </Label>
+    <div class="example-row">
+      {controlSizes.map((size) => (
+        <Label>
+          <Radio name="format-size" value={size} {size} /> {size}
+        </Label>
+      ))}
+      <Label>
+        <Radio name="format-size" value="native" native /> Nativo
+      </Label>
+      <Label>
+        <Radio name="format-size" value="disabled" disabled /> Deshabilitado
+      </Label>
+    </div>
   </fieldset>
 )}
 {name === 'Switch' && (
-  <Label>
-    <Switch name="reminders" /> Recordatorios
-  </Label>
+  <div class="example-row">
+    {controlSizes.map((size) => (
+      <Label>
+        <Switch name={`reminders-${size}`} {size} /> {size}
+      </Label>
+    ))}
+    <Label>
+      <Switch name="reminders-disabled" checked disabled /> Deshabilitado
+    </Label>
+  </div>
 )}
 {name === 'Label' && (
   <div class="example-stack">
@@ -202,33 +243,44 @@ const product = name === 'ProductTags' ? (await getProducts())[0] : undefined;
 )}
 {name === 'Avatar' && (
   <div class="example-row">
-    <Avatar initials="AP" size="sm" />
-    <Avatar initials="AP" label="AI PlayGrounds" />
-    <Avatar initials="AP" size="lg" />
+    {controlSizes.map((size) => (
+      <Avatar initials="AP" label={`AI PlayGrounds, tamaño ${size}`} {size} />
+    ))}
   </div>
 )}
 {name === 'Separator' && (
   <div class="example-stack">
     <p>Introducción</p>
-    <Separator decorative />
+    <Separator orientation={separatorOrientations[0]} decorative />
     <p>Contenido</p>
+    <div class="flex min-h-12 items-center gap-4">
+      <span>Anterior</span>
+      <Separator orientation={separatorOrientations[1]} />
+      <span>Siguiente</span>
+    </div>
   </div>
 )}
 {name === 'Spinner' && (
   <div class="example-row">
-    <Spinner size="sm" />
+    {spinnerSizes.map((size) => (
+      <Spinner {size} />
+    ))}
     <span role="status">Cargando resultados…</span>
   </div>
 )}
 {name === 'Alert' && (
   <Alert {...alert}>
-    <Info slot="icon" size={18} aria-hidden="true" />
+    <Info slot="icon" class="size-icon-md" aria-hidden="true" />
     <span>Revisa el estado del proyecto.</span>
   </Alert>
 )}
 {name === 'Tooltip' && (
   <div class="example-tooltip">
-    <Tooltip descriptionId="example-tip" description="Guarda una copia local">
+    <Tooltip
+      descriptionId="example-tip"
+      description="Guarda una copia local"
+      placement={values.placement as (typeof tooltipPlacements)[number]}
+    >
       <Button variant="outline" aria-describedby="example-tip">
         Exportar
       </Button>
@@ -257,11 +309,30 @@ const product = name === 'ProductTags' ? (await getProducts())[0] : undefined;
         <Button type="submit">Confirmar</Button>
       </form>
     </Dialog>
+    <Button data-gallery-dialog="example-custom-dialog" variant="outline">
+      Ver panel personalizado
+    </Button>
+    <Dialog
+      id="example-custom-dialog"
+      layout={dialogLayouts[1]}
+      aria-label="Panel personalizado"
+      class="example-custom-dialog"
+    >
+      <Card>
+        <p>La superficie se compone dentro del diálogo.</p>
+        <form method="dialog">
+          <Button type="submit">Cerrar panel</Button>
+        </form>
+      </Card>
+    </Dialog>
   </>
 )}
 {name === 'Dropdown' && (
   <div class="example-dropdown">
-    <Dropdown label="Opciones">
+    <Dropdown
+      label="Opciones"
+      align={values.align as (typeof dropdownAlignments)[number]}
+    >
       <ul>
         <li>
           <a href="#foundations">Foundations</a>
@@ -288,10 +359,10 @@ const product = name === 'ProductTags' ? (await getProducts())[0] : undefined;
 )}
 {name === 'Accordion' && (
   <div class="example-stack">
-    <Accordion label="¿Cómo funciona?" open>
+    <Accordion label="¿Cómo funciona?" indicator={accordionIndicators[0]} open>
       <p>Cada elemento se puede abrir y consultar por separado.</p>
     </Accordion>
-    <Accordion label="¿Qué incluye?">
+    <Accordion label="¿Qué incluye?" indicator={accordionIndicators[1]}>
       <p>Variantes, tokens y ejemplos reproducibles.</p>
     </Accordion>
   </div>
@@ -401,7 +472,7 @@ const product = name === 'ProductTags' ? (await getProducts())[0] : undefined;
     color: var(--error);
   }
   .example-tooltip {
-    padding: 2rem 0 var(--space-related);
+    padding: calc(var(--space-unit) * 8) 0 var(--space-related);
   }
   .example-filter,
   .example-dropdown {
@@ -410,10 +481,10 @@ const product = name === 'ProductTags' ? (await getProducts())[0] : undefined;
   }
   .example-dialog-title {
     font-size: var(--type-title);
-    margin-block-end: 0.5rem;
+    margin-block-end: var(--space-related);
   }
   .example-dialog-title + p {
-    margin-block-end: 1rem;
+    margin-block-end: var(--space-stack);
   }
   :global(.skeleton-title) {
     inline-size: 60%;

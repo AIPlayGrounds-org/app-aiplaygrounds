@@ -75,7 +75,7 @@ const excerpt =
     <Heading>{event.title}</Heading>
     <div class="event-details">
       <p>
-        <CalendarDays size={17} aria-hidden="true" />
+        <CalendarDays class="size-icon-md" aria-hidden="true" />
         <span>
           <time datetime={event.startAt}>
             {date} · {time}
@@ -87,7 +87,7 @@ const excerpt =
       </p>
       {event.organizers.length > 0 && (
         <p>
-          <Users size={17} aria-hidden="true" />
+          <Users class="size-icon-md" aria-hidden="true" />
           <span>{event.organizers.join(' · ')}</span>
         </p>
       )}
@@ -152,10 +152,11 @@ const excerpt =
     padding-inline: clamp(1.25rem, 3vw, 2.5rem);
   }
   .featured-label {
-    margin-block-end: 0.55rem;
+    margin-block-end: var(--space-related);
     color: var(--community-accent);
-    font: 500 0.8125rem / 1.4 var(--font-mono);
-    letter-spacing: 0.075em;
+    font: var(--weight-medium) var(--type-label) / var(--leading-compact)
+      var(--font-mono);
+    letter-spacing: var(--tracking-caps);
     text-transform: uppercase;
   }
   .featured h3 {
@@ -168,7 +169,7 @@ const excerpt =
   .event-details {
     display: grid;
     gap: var(--space-inline);
-    margin-block-start: 0.55rem;
+    margin-block-start: var(--space-related);
     color: var(--secondary-text);
     line-height: var(--leading-compact);
   }
@@ -182,7 +183,7 @@ const excerpt =
     margin-block-start: 0.1em;
   }
   .excerpt {
-    margin-block-start: 0.9rem;
+    margin-block-start: var(--space-stack);
     max-width: var(--measure-reading);
     color: var(--secondary-text);
   }
@@ -190,7 +191,7 @@ const excerpt =
     justify-self: start;
   }
   .featured :global(.event-link) {
-    margin-block-start: 0.35rem;
+    margin-block-start: var(--space-inline);
   }
   .event-row {
     border-block-end: var(--stroke-default) solid var(--card-edge);
@@ -211,7 +212,7 @@ const excerpt =
     font-size: clamp(1.12rem, 1rem + 0.42vw, 1.375rem);
     font-weight: var(--weight-heading);
     line-height: var(--leading-title);
-    letter-spacing: -0.025em;
+    letter-spacing: var(--tracking-heading);
   }
   .event-row:focus-within :is(h3, h4, .date-stamp) {
     color: var(--interaction-accent);
@@ -241,7 +242,7 @@ const excerpt =
   .date-stamp span {
     text-transform: uppercase;
     font-size: var(--type-caption);
-    letter-spacing: 0.08em;
+    letter-spacing: var(--tracking-caps);
   }
   .date-stamp strong {
     font-size: clamp(1.4rem, 2.7vw, 2rem);
@@ -275,7 +276,7 @@ const excerpt =
       inline-size: min(100%, var(--thumb-size));
       grid-column: 1;
       grid-row: 2 / span 2;
-      margin-block-start: 0.45rem;
+      margin-block-start: var(--space-related);
     }
     .event-row.has-cover .event-copy {
       grid-column: 2;

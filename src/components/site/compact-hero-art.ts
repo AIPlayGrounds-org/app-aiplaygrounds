@@ -18,7 +18,7 @@ export const compactHeroArt: Record<
   Art
 > = {
   convergence: {
-    palette: ['#527A53', '#95AF7C', '#D4DFB6'],
+    palette: ['#527A53', '#95AF7C', 'var(--terrain-convergence-light)'],
     land: [
       'M470 350 C620 328 698 267 823 281 S1002 321 1104 244 S1285 179 1460 119 L1460 360 H0 Z',
       'M590 350 C725 333 794 315 892 301 S1031 234 1152 251 S1304 263 1460 185 L1460 360 H0 Z',
@@ -42,7 +42,7 @@ export const compactHeroArt: Record<
     points: [[1167, 114, 3]],
   },
   construction: {
-    palette: ['#326B7B', '#83A8AD', '#C7D9D9'],
+    palette: ['#326B7B', '#83A8AD', 'var(--terrain-construction-light)'],
     land: [
       'M465 350 L680 312 L810 267 L937 292 L1071 215 L1175 242 L1310 136 L1460 166 L1460 360 H0 Z',
       'M600 350 L788 320 L920 325 L1040 269 L1163 287 L1298 212 L1460 235 L1460 360 H0 Z',
@@ -67,7 +67,7 @@ export const compactHeroArt: Record<
     ],
   },
   exploration: {
-    palette: ['#79629F', '#A89AC6', '#DCD4E5'],
+    palette: ['#79629F', '#A89AC6', 'var(--terrain-exploration-light)'],
     land: [
       'M480 350 C668 327 785 300 898 303 S1051 267 1143 192 S1330 109 1460 179 L1460 360 H0 Z',
       'M665 350 C820 323 926 339 1040 288 S1207 239 1270 262 S1388 232 1460 223 L1460 360 H0 Z',
@@ -97,7 +97,7 @@ export const compactHeroArt: Record<
     ],
   },
   connection: {
-    palette: ['#A63D55', '#D96A72', '#F6D4D8'],
+    palette: ['#A63D55', '#D96A72', 'var(--terrain-connection-light)'],
     land: [
       'M470 350 C637 326 742 273 875 299 S1051 320 1152 240 S1323 153 1460 202 L1460 360 H0 Z',
       'M620 350 C790 333 900 325 1006 273 S1172 285 1252 240 S1400 174 1460 173 L1460 360 H0 Z',

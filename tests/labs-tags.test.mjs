@@ -1,5 +1,7 @@
 import { test } from 'node:test';
 import { strict as assert } from 'node:assert';
+import { readFileSync } from 'node:fs';
+import postcss from 'postcss';
 import { compactHeroArt } from '../src/components/site/compact-hero-art.ts';
 
 function luminance(hex) {
@@ -16,9 +18,26 @@ function luminance(hex) {
 }
 
 test('los cuatro fondos de alcance mantienen contraste con el texto oscuro', () => {
-  const foreground = luminance('#191a18');
+  const colors = new Map();
+  postcss
+    .parse(
+      readFileSync(
+        new URL('../src/styles/tokens.css', import.meta.url),
+        'utf8',
+      ),
+    )
+    .walkDecls((declaration) => {
+      if (declaration.value.startsWith('#'))
+        colors.set(declaration.prop, declaration.value);
+    });
+  const foreground = luminance(colors.get('--web-light-text'));
   for (const [name, { palette }] of Object.entries(compactHeroArt)) {
-    const background = luminance(palette[2]);
+    const token = palette[2].slice(4, -1);
+    assert.ok(
+      colors.has(token),
+      `${name}: el pigmento debe existir en tokens.css`,
+    );
+    const background = luminance(colors.get(token));
     const contrast = (background + 0.05) / (foreground + 0.05);
     assert.ok(contrast >= 4.5, `${name}: contraste ${contrast.toFixed(2)}:1`);
   }

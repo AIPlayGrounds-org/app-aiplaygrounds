@@ -2,7 +2,7 @@
   padding-block: clamp(1.3rem, 2.8vw, 2.25rem) clamp(3rem, 6vw, 5rem);
 }
 .labs-directory h2 {
-  margin-block-end: 1rem;
+  margin-block-end: var(--space-stack);
   font-size: clamp(1.7rem, 2.6vw, 2.35rem);
 }
 .catalog {
@@ -20,7 +20,7 @@
   align-items: center;
   gap: var(--space-control);
   min-block-size: 46px;
-  padding-inline: 0.8rem var(--space-inline);
+  padding-inline: var(--space-control) var(--space-inline);
   border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
@@ -155,14 +155,14 @@
   min-inline-size: 0;
   max-block-size: 19rem;
   overflow: auto;
-  padding: 0 0.22rem var(--space-inline);
+  padding: 0 var(--space-inline) var(--space-inline);
 }
 .facet-options label {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: start;
   gap: var(--space-related);
-  padding: 0.34rem 0.1rem;
+  padding: var(--space-inline) var(--space-inline);
   min-block-size: 32px;
   font-size: var(--type-label);
   line-height: var(--leading-compact);
@@ -170,7 +170,7 @@
   overflow-wrap: anywhere;
 }
 .facet-options input {
-  margin-block-start: 0.2rem;
+  margin-block-start: var(--space-inline);
   accent-color: var(--interaction-accent);
 }
 .option-count {
@@ -194,7 +194,7 @@
 .result-toolbar {
   justify-content: space-between;
   min-block-size: 2rem;
-  margin-block-end: 0.75rem;
+  margin-block-end: var(--space-control);
   color: var(--secondary-text);
   font-size: var(--type-body-small);
   font-weight: var(--weight-normal);
@@ -205,16 +205,16 @@
   background: var(--editorial-lilac);
 }
 .active-filters {
-  margin-block-end: 0.75rem;
+  margin-block-end: var(--space-control);
 }
 .active-filters li button {
   display: inline-flex;
   align-items: center;
   gap: var(--space-related);
   min-block-size: 32px;
-  padding: 0.2rem var(--space-related);
+  padding: var(--space-inline) var(--space-related);
   border: var(--stroke-default) solid var(--line);
-  border-radius: 2rem;
+  border-radius: var(--radius-pill);
   background: var(--home-card);
   font-size: var(--type-label);
   text-align: start;
@@ -238,12 +238,12 @@
   border-radius: var(--editorial-radius);
 }
 .labs-empty p {
-  margin-block-start: 0.35rem;
+  margin-block-start: var(--space-inline);
   color: var(--secondary-text);
 }
 .catalog-pages {
   justify-content: center;
-  margin-block-start: 1.2rem;
+  margin-block-start: var(--space-card);
 }
 .catalog-pages a {
   display: inline-flex;
@@ -297,8 +297,8 @@
   place-items: center;
   min-inline-size: 1.3rem;
   block-size: 1.3rem;
-  padding-inline: 0.2rem;
-  border-radius: 1rem;
+  padding-inline: var(--space-inline);
+  border-radius: var(--radius-pill);
   background: var(--foreground);
   color: var(--home-card);
   font-size: var(--type-caption);
@@ -320,7 +320,7 @@
   overflow: visible;
 }
 .advanced-panel {
-  padding: 1.2rem;
+  padding: var(--space-card);
   border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
@@ -332,7 +332,7 @@
 }
 .facet-label {
   display: block;
-  margin-block-end: 0.4rem;
+  margin-block-end: var(--space-related);
   color: var(--secondary-text);
   font-size: var(--type-label);
 }
@@ -400,11 +400,11 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-stack);
-  margin-block-end: 1rem;
+  margin-block-end: var(--space-stack);
 }
 .filter-dialog-header h2 {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: var(--type-title);
 }
 .filter-dialog-header button {
   display: grid;
@@ -454,7 +454,7 @@
     position: static;
     inline-size: 100%;
     max-block-size: 19rem;
-    margin-block-start: 0.3rem;
+    margin-block-start: var(--space-inline);
   }
   .filter-dialog .more-toggle {
     display: none;

@@ -3,6 +3,7 @@
 @layer theme, base, components, utilities;
 @import 'tailwindcss/utilities.css' layer(utilities) source(none);
 @source '../components/ui';
+@source './Example.astro';
 
 @plugin 'daisyui' {
   themes: false;

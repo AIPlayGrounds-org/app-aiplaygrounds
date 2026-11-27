@@ -51,7 +51,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
               inputClass="event-query"
               id="event-search"
               label="Buscar encuentros"
-              iconSize={17}
+              iconSize="md"
               name="q"
               placeholder="Buscar encuentros..."
               autocomplete="off"
@@ -235,9 +235,9 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 0.85rem 2rem;
+    gap: var(--space-control) calc(var(--space-unit) * 8);
     border-bottom: var(--stroke-default) solid var(--line);
-    padding-block-end: 1rem;
+    padding-block-end: var(--space-stack);
   }
   .calendar-heading h2 {
     font-size: clamp(2rem, 1.45rem + 2vw, 3rem);
@@ -254,7 +254,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
     justify-content: center;
     min-block-size: 2.75rem;
     min-inline-size: 7.5rem;
-    padding-inline: 0.95rem;
+    padding-inline: var(--space-stack);
     border: var(--stroke-default) solid var(--community-control-edge);
     border-radius: var(--editorial-radius);
     cursor: pointer;
@@ -294,8 +294,8 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
     cursor: pointer;
     white-space: normal;
     gap: 0.5em;
-    padding-inline-start: 0.95rem;
-    padding-inline-end: 2.4rem;
+    padding-inline-start: var(--space-stack);
+    padding-inline-end: calc(var(--space-unit) * 10);
     transition:
       border-color var(--duration-control) var(--editorial-ease-out),
       background-color var(--duration-control) var(--editorial-ease-out);
@@ -331,7 +331,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
       rotate: 180deg;
     }
     .filter-field select::picker(select) {
-      margin-block: 0.35rem;
+      margin-block: var(--space-inline);
       padding: var(--space-inline);
       font: inherit;
       color: var(--foreground);
@@ -384,7 +384,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
   }
   form :global(.event-query) {
     height: auto;
-    padding-inline-start: 2.4rem;
+    padding-inline-start: calc(var(--space-unit) * 10);
     min-width: 0;
   }
   form :global(.event-query)::placeholder {
@@ -408,11 +408,11 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
     border-color: var(--community-accent);
   }
   .note {
-    margin-block: 1rem;
+    margin-block: var(--space-stack);
     color: var(--secondary-text);
   }
   .more {
-    margin-block-start: 1.3rem;
+    margin-block-start: var(--space-card);
     font-weight: var(--weight-heading);
   }
   .filter-feedback {

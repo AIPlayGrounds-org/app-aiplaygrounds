@@ -41,7 +41,7 @@ const { title, eyebrow, description, image, sizes } = Astro.props;
     display: grid;
     grid-template: 'scene' 1fr / minmax(0, 1fr);
     min-width: 0;
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-large);
     /* Only the edge below the square artwork is visible if the panel needs more height. */
     background: var(--scene-matte, var(--editorial-sand));
   }
@@ -52,7 +52,7 @@ const { title, eyebrow, description, image, sizes } = Astro.props;
     aspect-ratio: 1;
   }
   .scene {
-    z-index: -1;
+    z-index: -1; /* design-exception: Coloca el paisaje tras el contenido dentro de su contexto aislado. */
     position: absolute;
     inset: 0;
     display: block;
@@ -81,7 +81,7 @@ const { title, eyebrow, description, image, sizes } = Astro.props;
     color: var(--secondary-text);
   }
   .eyebrow {
-    margin-bottom: 0.3rem;
+    margin-bottom: var(--space-inline);
     font-size: var(--type-label);
     font-weight: var(--weight-heading);
     color: var(--editorial-sand-ink);

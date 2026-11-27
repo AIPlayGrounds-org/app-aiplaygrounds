@@ -22,7 +22,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-stack);
-  margin-top: 2rem;
+  margin-top: calc(var(--space-unit) * 8);
 }
 .interior-grid.three {
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -49,12 +49,12 @@
 .stack {
   display: grid;
   gap: clamp(1.5rem, 4vw, 2.5rem);
-  margin-top: 2rem;
+  margin-top: calc(var(--space-unit) * 8);
 }
 .stack article {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-  gap: 1rem clamp(1.5rem, 5vw, 4rem);
+  gap: var(--space-stack) clamp(1.5rem, 5vw, 4rem);
   align-items: start;
 }
 .stack article p {
@@ -71,7 +71,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-stack);
-  margin-top: 1.5rem;
+  margin-top: calc(var(--space-unit) * 6);
 }
 @media (max-width: 48rem) {
   .interior-grid,

@@ -41,7 +41,11 @@ const home = id === 'I8' && Astro.url.pathname === '/';
           >
             {button.label}
             {(home || illustration) && (
-              <ArrowUpRight aria-hidden="true" size={14} data-card-arrow />
+              <ArrowUpRight
+                aria-hidden="true"
+                class="size-icon-sm"
+                data-card-arrow
+              />
             )}
           </Button>
         ))}
@@ -79,13 +83,13 @@ const home = id === 'I8' && Astro.url.pathname === '/';
     min-height: 2.75rem;
     white-space: normal;
     text-align: center;
-    padding-block: 0.625rem;
+    padding-block: var(--space-control);
   }
   .closing h2 {
     font-size: var(--type-section);
   }
   .closing-section {
-    padding-top: 1rem;
+    padding-top: var(--space-stack);
   }
   .closing {
     position: relative;
@@ -172,7 +176,7 @@ const home = id === 'I8' && Astro.url.pathname === '/';
   }
   @media (min-width: 60rem) {
     .closing-section {
-      padding-top: 0.75rem;
+      padding-top: var(--space-control);
     }
   }
   @media (max-width: 48rem) {

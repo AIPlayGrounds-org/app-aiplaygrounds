@@ -1,0 +1,9 @@
+export const controlSizes = ['sm', 'md', 'lg'] as const;
+export const spinnerSizes = ['xs', ...controlSizes, 'xl'] as const;
+export const tooltipPlacements = ['top', 'bottom', 'left', 'right'] as const;
+export const separatorOrientations = ['horizontal', 'vertical'] as const;
+export const accordionIndicators = ['arrow', 'plus'] as const;
+export const dropdownAlignments = ['start', 'end'] as const;
+export const dialogLayouts = ['center', 'custom'] as const;
+export const alertTones = ['info', 'success', 'warning', 'error'] as const;
+export const alertAppearances = ['solid', 'outline', 'soft'] as const;

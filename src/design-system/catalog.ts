@@ -6,6 +6,12 @@ import {
   fieldDensities,
   textareaAppearances,
 } from '../components/ui/field';
+import {
+  alertAppearances,
+  alertTones,
+  dropdownAlignments,
+  tooltipPlacements,
+} from '../components/ui/options';
 
 type Controls = Record<string, readonly string[]>;
 type Entry = {
@@ -222,8 +228,11 @@ export const components: Record<string, Entry> = {
     usage: 'Colócalo cerca de la acción. El contenido puede envolver en móvil.',
     example: '<Alert tone="success">Cambios guardados.</Alert>',
     controls: {
-      tone: ['success', 'info', 'warning', 'error'],
-      appearance: ['soft', 'solid', 'outline'],
+      tone: ['success', ...alertTones.filter((tone) => tone !== 'success')],
+      appearance: [
+        'soft',
+        ...alertAppearances.filter((appearance) => appearance !== 'soft'),
+      ],
     },
   },
   Tooltip: {
@@ -237,6 +246,7 @@ export const components: Record<string, Entry> = {
       'No pongas información necesaria ni acciones dentro del tooltip; puede no estar disponible en pantallas táctiles.',
     example:
       '<Tooltip descriptionId="tip" description="Guarda una copia local"><Button aria-describedby="tip">Exportar</Button></Tooltip>',
+    controls: { placement: tooltipPlacements },
   },
   Skeleton: {
     description:
@@ -270,6 +280,7 @@ export const components: Record<string, Entry> = {
       'El panel estándar se alinea con el disparador. Usa panel propio si el menú necesita ocupar una columna en móvil.',
     example:
       '<Dropdown label="Opciones"><a href="/equipo/">Equipo</a></Dropdown>',
+    controls: { align: dropdownAlignments },
   },
   Tabs: {
     description: 'Alterna paneles locales sin navegación de página.',

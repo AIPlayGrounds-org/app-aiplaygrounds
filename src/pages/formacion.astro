@@ -105,14 +105,13 @@ const metrics = [
       title="Amplía lo que eres capaz de construir con IA."
       description="Desarrolla capacidades para crear software con IA e integrarla en tus aplicaciones con criterio y autonomía."
     >
-      <Button
-        href="#F3"
-        variant="primary"
-        data-surface-motion
-        style="--arrow-x: 0px; --arrow-y: 4px"
-      >
+      <Button href="#F3" variant="primary" data-surface-motion>
         Explorar enfoques{' '}
-        <ArrowDown size={16} aria-hidden="true" data-card-arrow />
+        <ArrowDown
+          class="size-icon-chevron"
+          aria-hidden="true"
+          data-card-arrow="down"
+        />
       </Button>
     </ImmersiveHero>
 
@@ -357,7 +356,7 @@ const metrics = [
     padding-block: clamp(1.25rem, 3vw, 2.25rem);
   }
   .bootcamp h3 {
-    margin-block: 0.45rem;
+    margin-block: var(--space-related);
   }
   .bootcamp-copy p {
     max-width: 46ch;
@@ -388,8 +387,10 @@ const metrics = [
   }
   .metrics strong {
     color: var(--foreground);
-    font: 600 clamp(1.6rem, 0.95rem + 4vw, 4.25rem)/1.1 var(--font-heading);
-    letter-spacing: -0.04em;
+    font: var(--weight-heading)
+      clamp(1.6rem, 0.95rem + 4vw, 4.25rem)/var(--leading-display)
+      var(--font-heading);
+    letter-spacing: -0.04em; /* design-exception: Ajuste óptico del título en la composición de la Academia. */
   }
   fieldset {
     display: grid;
@@ -401,7 +402,7 @@ const metrics = [
     gap: var(--space-inline);
   }
   .line-choices legend {
-    margin-bottom: 0.35rem;
+    margin-bottom: var(--space-inline);
     font-weight: var(--weight-medium);
   }
   .line-choices label {
@@ -410,7 +411,7 @@ const metrics = [
     gap: var(--space-control);
     padding: var(--space-related) var(--space-control);
     border: var(--stroke-default) solid var(--line);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-small);
     background: var(--editorial-background);
     color: var(--secondary-text);
   }
@@ -421,7 +422,7 @@ const metrics = [
     height: 1rem;
   }
   #waitlist-availability {
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-stack);
     color: var(--secondary-text);
     font-weight: var(--weight-heading);
   }
@@ -440,7 +441,7 @@ const metrics = [
     height: auto;
     min-height: 2.75rem;
     white-space: normal;
-    padding-block: 0.625rem;
+    padding-block: var(--space-control);
   }
   #academy-form :global(button:disabled) {
     background: var(--editorial-sand);

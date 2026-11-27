@@ -1,8 +1,8 @@
 .atlas-preview {
-  --atlas-paper: #f4efdf;
-  --atlas-ink: #273827;
-  --atlas-muted: #4e594b;
-  --atlas-rule: #aca58d;
+  --atlas-paper: #f4efdf; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
+  --atlas-ink: #273827; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
+  --atlas-muted: #4e594b; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
+  --atlas-rule: #aca58d; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
   --atlas-serif: 'Source Serif 4', Georgia, serif;
   --home-background: var(--atlas-paper);
   background: var(--atlas-paper);
@@ -10,8 +10,8 @@
 }
 
 .atlas-preview ::selection {
-  color: #1d2e21;
-  background: #dce3bd;
+  color: #1d2e21; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
+  background: #dce3bd; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
 }
 
 .atlas-preview .site-header {
@@ -19,7 +19,7 @@
 }
 
 .atlas-preview .header-inner {
-  border-block-end: 1px solid var(--atlas-rule);
+  border-block-end: var(--stroke-default) solid var(--atlas-rule);
 }
 
 .atlas-preview .site-header .brand {
@@ -31,12 +31,12 @@
   :is(.atlas-lead, .atlas-community, .atlas-history, .atlas-pathways)
   :is(h1, h2, h3) {
   font-family: var(--atlas-serif);
-  font-weight: 500;
+  font-weight: var(--weight-medium);
 }
 
 .atlas-preview :is(.atlas-community, .atlas-history, .atlas-pathways) h2 {
   font-size: clamp(2.15rem, 4vw, 3.85rem);
-  line-height: 1.02;
+  line-height: 1.02; /* design-exception: Composición tipográfica del facsímil del Atlas en desarrollo. */
 }
 
 .atlas-lead {
@@ -46,34 +46,35 @@
 .atlas-lead h1 {
   max-width: 27ch;
   font-size: clamp(2.5rem, 4.8vw, 4.65rem);
-  line-height: 0.99;
-  letter-spacing: -0.037em;
+  line-height: 0.99; /* design-exception: Composición tipográfica del facsímil del Atlas en desarrollo. */
+  letter-spacing: -0.037em; /* design-exception: Composición tipográfica del facsímil del Atlas en desarrollo. */
   text-wrap: pretty;
 }
 
 .atlas-lead p {
   max-width: 53ch;
-  margin-block-start: 1rem;
-  font: 400 clamp(1.15rem, 1.65vw, 1.4rem)/1.35 var(--atlas-serif);
+  margin-block-start: var(--space-stack);
+  font: var(--weight-normal) clamp(1.15rem, 1.65vw, 1.4rem)/1.35
+    var(--atlas-serif);
 }
 
 .atlas-actions {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.35rem 1.4rem;
-  margin-block-start: 1.25rem;
+  gap: var(--space-inline) calc(var(--space-unit) * 6);
+  margin-block-start: var(--space-card);
 }
 
 .atlas-preview :is(.atlas-primary, .atlas-link) {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-related);
   min-height: 44px;
   inline-size: fit-content;
   max-inline-size: 100%;
-  font-size: 0.95rem;
-  font-weight: 500;
+  font-size: var(--type-body-small);
+  font-weight: var(--weight-medium);
 }
 
 .atlas-preview :is(.atlas-link, .atlas-primary, .atlas-legend) svg {
@@ -84,14 +85,14 @@
 
 .atlas-preview .atlas-primary {
   background: var(--atlas-ink);
-  color: #fffdf0;
-  padding: 0.6rem 1rem;
-  border-radius: 0.25rem;
+  color: #fffdf0; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
+  padding: var(--space-related) var(--space-stack);
+  border-radius: var(--radius-small);
   text-decoration: none;
 }
 
 .atlas-primary:hover {
-  background: #42563a;
+  background: #42563a; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
 }
 
 .atlas-preview .atlas-link {
@@ -106,7 +107,7 @@
 .atlas-plate {
   position: relative;
   overflow: hidden;
-  background: #b8b08e;
+  background: #b8b08e; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
 }
 
 .atlas-plate img {
@@ -134,19 +135,19 @@
 }
 
 .atlas-trail-halo {
-  stroke: #273827;
+  stroke: #273827; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
   stroke-width: 4;
   opacity: 0.65;
 }
 
 .atlas-trail-dots {
-  stroke: #fff9e9;
+  stroke: #fff9e9; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
   stroke-width: 2;
 }
 
 .atlas-trail-sweep {
   fill: none;
-  stroke: white;
+  stroke: white; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
   stroke-width: 32;
   stroke-dasharray: 1;
   stroke-dashoffset: 0;
@@ -154,11 +155,11 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .atlas-trail-sweep {
-    animation: atlas-trace 1.9s cubic-bezier(0.25, 0.55, 0.4, 1) 0.2s both;
+    animation: atlas-trace 1.9s cubic-bezier(0.25, 0.55, 0.4, 1) 0.2s both; /* design-exception: Secuencia original del facsímil vectorial; ruta exclusiva de desarrollo. */
   }
 
   .atlas-preview .atlas-link svg {
-    transition: transform 180ms ease-out;
+    transition: transform 180ms ease-out; /* design-exception: Secuencia original del facsímil vectorial; ruta exclusiva de desarrollo. */
   }
 
   .atlas-preview .atlas-link:is(:hover, :focus-visible) svg {
@@ -179,19 +180,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0 1rem;
+  gap: 0 var(--space-stack);
   flex-wrap: wrap;
-  padding-block: 0.15rem;
-  border-block-end: 1px solid var(--atlas-rule);
+  padding-block: var(--space-inline);
+  border-block-end: var(--stroke-default) solid var(--atlas-rule);
 }
 
 .atlas-legend > span {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.45rem;
-  font-size: 0.85rem;
-  padding-block: 0.55rem;
+  gap: var(--space-related);
+  font-size: var(--type-label);
+  padding-block: var(--space-related);
 }
 
 .atlas-caption-detail {
@@ -208,7 +209,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
   align-items: start;
-  gap: 1rem clamp(2rem, 7vw, 7rem);
+  gap: var(--space-stack) clamp(2rem, 7vw, 7rem);
 }
 
 .atlas-community {
@@ -217,14 +218,14 @@
 
 .atlas-community-links {
   display: grid;
-  gap: 0.15rem;
-  border-inline-start: 1px solid var(--atlas-rule);
-  padding-inline-start: 1rem;
+  gap: var(--space-inline);
+  border-inline-start: var(--stroke-default) solid var(--atlas-rule);
+  padding-inline-start: var(--space-stack);
 }
 
 .atlas-incumbent {
-  --home-surface: #fbf3e6;
-  background: #fbf6ec;
+  --home-surface: var(--editorial-surface);
+  background: var(--editorial-background);
   color: var(--foreground);
 }
 
@@ -233,7 +234,7 @@
 }
 
 .atlas-fields-intro {
-  margin-block-start: 0.75rem;
+  margin-block-start: var(--space-control);
   max-width: 70ch;
   color: var(--secondary-text);
 }
@@ -241,30 +242,30 @@
 .atlas-fields {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
-  margin-block-start: 2rem;
+  gap: var(--space-stack);
+  margin-block-start: calc(var(--space-unit) * 8);
 }
 
 .atlas-field {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 0.4rem;
+  border: var(--stroke-default) solid var(--line);
+  border-radius: var(--editorial-radius);
   background: var(--home-surface);
 }
 
 .atlas-field > div {
   flex: 1;
-  padding: 1.5rem 1.25rem 1rem;
+  padding: calc(var(--space-unit) * 6) var(--space-card) var(--space-stack);
 }
 
 .atlas-field h3 {
-  font-size: 1.25rem;
+  font-size: var(--type-card-title);
 }
 
 .atlas-field p {
-  margin-block-start: 0.75rem;
+  margin-block-start: var(--space-control);
   color: var(--secondary-text);
 }
 
@@ -275,68 +276,68 @@
 }
 
 .atlas-history {
-  background: #e7eadb;
+  background: #e7eadb; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
 }
 
 .atlas-register {
   display: grid;
   grid-template-columns: minmax(9rem, 1fr) minmax(0, 3fr);
   margin-block-start: clamp(1.75rem, 4vw, 3rem);
-  border-block: 1px solid var(--atlas-rule);
+  border-block: var(--stroke-default) solid var(--atlas-rule);
 }
 
 .atlas-total {
-  padding: 1.3rem 1rem 1.6rem 0;
+  padding: var(--space-card) var(--space-stack) calc(var(--space-unit) * 6) 0;
 }
 
 .atlas-total strong {
   display: block;
-  font: 400 clamp(4rem, 8vw, 7rem)/0.95 var(--atlas-serif);
+  font: var(--weight-normal) clamp(4rem, 8vw, 7rem)/0.95 var(--atlas-serif);
   font-variant-numeric: tabular-nums;
 }
 
 .atlas-total p {
-  margin-block-start: 0.65rem;
+  margin-block-start: var(--space-control);
   color: var(--atlas-muted);
 }
 
 .atlas-events {
   list-style: none;
-  border-inline-start: 1px solid var(--atlas-rule);
+  border-inline-start: var(--stroke-default) solid var(--atlas-rule);
 }
 
 .atlas-event {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-  gap: 0.6rem 1.75rem;
-  padding: 1.2rem clamp(1rem, 3vw, 2.25rem);
+  gap: var(--space-related) calc(var(--space-unit) * 7);
+  padding: var(--space-card) clamp(1rem, 3vw, 2.25rem);
 }
 
 .atlas-event + .atlas-event {
-  border-block-start: 1px solid var(--atlas-rule);
+  border-block-start: var(--stroke-default) solid var(--atlas-rule);
 }
 
 .atlas-event p,
 .atlas-event-stats {
-  font-size: 0.9rem;
+  font-size: var(--type-label);
   color: var(--atlas-muted);
 }
 
 .atlas-event-role {
-  margin-block-start: 0.25rem;
+  margin-block-start: var(--space-inline);
 }
 
 .atlas-event-stats {
   display: flex;
   flex-wrap: wrap;
   align-content: start;
-  gap: 0.25rem 1rem;
+  gap: var(--space-inline) var(--space-stack);
 }
 
 .atlas-event-stats b {
   color: var(--atlas-ink);
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: var(--type-lead);
+  font-weight: var(--weight-medium);
   font-variant-numeric: tabular-nums;
 }
 
@@ -344,28 +345,28 @@
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   gap: clamp(1rem, 2.5vw, 2.5rem);
-  margin-block: 2rem;
+  margin-block: calc(var(--space-unit) * 8);
 }
 
 .atlas-route {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--atlas-rule);
-  background: #f9f5e9;
+  border: var(--stroke-default) solid var(--atlas-rule);
+  background: #f9f5e9; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
 }
 
 .atlas-route-diagram {
   display: grid;
   place-items: center;
   min-height: 10rem;
-  background: #dce5d1;
-  color: #49684c;
-  border-block-end: 1px solid var(--atlas-rule);
+  background: var(--editorial-grove);
+  color: var(--editorial-grove-ink);
+  border-block-end: var(--stroke-default) solid var(--atlas-rule);
 }
 
 .atlas-route-academy .atlas-route-diagram {
-  background: #eae0c8;
-  color: #685936;
+  background: var(--editorial-sand);
+  color: var(--editorial-sand-ink);
 }
 
 .atlas-route-diagram svg {
@@ -380,7 +381,7 @@
 }
 
 .atlas-route-diagram circle {
-  fill: #f9f5e9;
+  fill: #f9f5e9; /* design-exception: Pigmento del facsímil histórico del Atlas; ruta exclusiva de desarrollo. */
   stroke-width: 1.4;
 }
 
@@ -389,12 +390,12 @@
   flex-direction: column;
   flex: 1;
   align-items: start;
-  gap: 0.6rem;
+  gap: var(--space-related);
   padding: clamp(1rem, 2.5vw, 2rem);
 }
 
 .atlas-route-copy p {
-  margin-block-end: 0.45rem;
+  margin-block-end: var(--space-related);
 }
 
 .atlas-route-copy .atlas-link {
@@ -403,14 +404,14 @@
 
 .atlas-organizations {
   grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.1fr) minmax(0, 0.8fr);
-  gap: 1rem 2rem;
+  gap: var(--space-stack) calc(var(--space-unit) * 8);
   align-items: center;
-  padding-block: 1.25rem;
-  border-block: 1px solid var(--atlas-rule);
+  padding-block: var(--space-card);
+  border-block: var(--stroke-default) solid var(--atlas-rule);
 }
 
 .atlas-closing {
-  padding-block-start: 0.75rem;
+  padding-block-start: var(--space-control);
 }
 
 @media (max-width: 60rem) {
@@ -451,7 +452,7 @@
   }
 
   .atlas-events {
-    border-block-start: 1px solid var(--atlas-rule);
+    border-block-start: var(--stroke-default) solid var(--atlas-rule);
   }
 
   .atlas-event {
@@ -465,6 +466,6 @@
   }
 
   .atlas-field > div {
-    padding-block-start: 2rem;
+    padding-block-start: calc(var(--space-unit) * 8);
   }
 }

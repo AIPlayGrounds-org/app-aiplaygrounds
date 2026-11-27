@@ -85,7 +85,7 @@ const hasFilters = primary.length + secondary.length > 0;
               aria-label="Limpiar búsqueda"
               hidden
             >
-              <X size={17} aria-hidden="true" />
+              <X class="size-icon-md" aria-hidden="true" />
             </Button>
           </SearchField>
         </search>
@@ -99,7 +99,7 @@ const hasFilters = primary.length + secondary.length > 0;
               aria-controls={`${directory}-filter-dialog`}
               data-enhanced
             >
-              <SlidersHorizontal size={18} aria-hidden="true" />
+              <SlidersHorizontal class="size-icon-md" aria-hidden="true" />
               Filtros
             </Button>
             <div class="filter-home" data-filter-home>
@@ -122,10 +122,13 @@ const hasFilters = primary.length + secondary.length > 0;
                       aria-controls={`${directory}-advanced`}
                       data-more-toggle
                     >
-                      <SlidersHorizontal size={17} aria-hidden="true" />
+                      <SlidersHorizontal
+                        class="size-icon-md"
+                        aria-hidden="true"
+                      />
                       Más filtros <span data-advanced-count hidden></span>
                       <ChevronRight
-                        size={16}
+                        class="size-icon-chevron"
                         aria-hidden="true"
                         class="more-chevron"
                       />
@@ -192,7 +195,7 @@ const hasFilters = primary.length + secondary.length > 0;
                     aria-label="Cerrar filtros"
                     autofocus
                   >
-                    <X size={20} aria-hidden="true" />
+                    <X class="size-icon-lg" aria-hidden="true" />
                   </Button>
                 </form>
               </header>
@@ -244,7 +247,7 @@ const hasFilters = primary.length + secondary.length > 0;
                   <option {value}>{label}</option>
                 ))}
               </Select>
-              <ChevronDown size={16} aria-hidden="true" />
+              <ChevronDown class="size-icon-chevron" aria-hidden="true" />
             </div>
             <ViewToggle
               class="view-toggle"

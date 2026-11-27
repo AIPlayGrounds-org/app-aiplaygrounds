@@ -17,12 +17,12 @@ const { href, title, back = false } = Astro.props;
 >
   {back ? (
     <>
-      <ArrowLeft size={18} aria-hidden="true" /> Volver a {title}
+      <ArrowLeft class="size-icon-md" aria-hidden="true" /> Volver a {title}
     </>
   ) : (
     <>
       Ver ficha
-      <ArrowRight size={18} aria-hidden="true" data-card-arrow />
+      <ArrowRight class="size-icon-md" aria-hidden="true" data-card-arrow />
     </>
   )}
 </a>
@@ -40,6 +40,6 @@ const { href, title, back = false } = Astro.props;
     flex: none;
   }
   .directory-back {
-    margin-block-end: 1.25rem;
+    margin-block-end: var(--space-card);
   }
 </style>

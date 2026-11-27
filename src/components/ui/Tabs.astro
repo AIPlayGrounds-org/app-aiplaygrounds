@@ -92,11 +92,11 @@ const current = items.some(({ key }) => key === active)
   .ui-tablist {
     flex-wrap: nowrap;
     overflow-x: auto;
-    padding: 4px;
+    padding: var(--space-inline);
   }
   .ui-tablist button {
     flex: none;
-    border-block-end: 3px solid transparent;
+    border-block-end: var(--stroke-focus) solid transparent;
   }
   .ui-tablist [aria-selected='true'] {
     color: var(--foreground);

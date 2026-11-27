@@ -42,6 +42,7 @@
   --spacing-icon-chevron: var(--icon-chevron);
   --spacing-icon-md: var(--icon-md);
   --spacing-icon-lg: var(--icon-lg);
+  --spacing-icon-xl: var(--icon-xl);
   --font-sans: 'Inter Tight', Arial, sans-serif;
   --font-heading: 'Space Grotesk', Arial, sans-serif;
   --font-mono: 'Geist Mono', monospace;
@@ -112,7 +113,7 @@ h3 {
   line-height: var(--leading-title);
 }
 .directory-card-title {
-  font-size: 1.3rem;
+  font-size: var(--type-card-title);
   text-wrap: pretty;
 }
 a:not([data-slot='button']) {

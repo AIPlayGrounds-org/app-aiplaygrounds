@@ -87,8 +87,8 @@ const groups = [
   .footer-inner {
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
-    padding-block: 3rem var(--space-related);
+    gap: calc(var(--space-unit) * 12);
+    padding-block: calc(var(--space-unit) * 12) var(--space-related);
   }
   .footer-intro {
     max-width: 24rem;
@@ -117,13 +117,13 @@ const groups = [
     gap: clamp(2rem, 5vw, 6rem);
   }
   nav h2 {
-    font: 500 0.875rem var(--font-sans);
-    margin: 0 0 1rem;
+    font: var(--weight-medium) var(--type-label) var(--font-sans);
+    margin: 0 0 var(--space-stack);
   }
   nav a {
     display: block;
     font-size: var(--type-label);
-    margin-block: 0.75rem;
+    margin-block: var(--space-control);
     color: var(--secondary-text);
     text-decoration: none;
   }

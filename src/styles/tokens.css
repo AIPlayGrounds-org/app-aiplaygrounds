@@ -23,7 +23,6 @@
   --web-light-elevated: #faf9f4;
   --web-light-contrast: #e3e2da;
   --web-light-line: #cecec4;
-  --web-light-grid: #dedfd5;
   --web-light-text: #191a18;
   --web-light-secondary-text: #484a43;
   --web-light-muted-text: #62645b;
@@ -43,6 +42,10 @@
   --editorial-water-ink: #4b7a9d;
   --editorial-rose-edge: #8a7975;
   --editorial-wood: #a85f39;
+  --terrain-convergence-light: #d4dfb6;
+  --terrain-construction-light: #c7d9d9;
+  --terrain-exploration-light: #dcd4e5;
+  --terrain-connection-light: #f6d4d8;
 
   /* Escalas primitivas; las excepciones editoriales siguen en su composición. */
   --type-body: clamp(1rem, 0.97rem + 0.15vw, 1.125rem);
@@ -62,13 +65,16 @@
   --leading-display: 1.05;
   --leading-heading: 1.12;
   --leading-title: 1.2;
+  --leading-label: 1.25;
   --leading-compact: 1.35;
   --leading-body: 1.5;
   --tracking-heading: -0.03em;
+  --tracking-caps: 0.08em;
   --space-unit: 0.25rem;
   --space-section: clamp(3.5rem, 7vw, 7rem);
   --space-control: calc(var(--space-unit) * 3);
   --space-inline: var(--space-unit);
+  --space-micro: calc(var(--space-unit) / 2);
   --space-related: calc(var(--space-unit) * 2);
   --space-stack: calc(var(--space-unit) * 4);
   --space-card: calc(var(--space-unit) * 5);
@@ -81,10 +87,11 @@
   --radius-small: 0.25rem;
   --editorial-radius: 0.4rem;
   --radius-large: 0.75rem;
+  --radius-pill: 9999px;
   --stroke-default: 1px;
+  --stroke-emphasis: 2px;
   --stroke-focus: 3px;
   --focus-offset: 4px;
-  --shadow-flat: none;
   --shadow-overlay: 0 0.5rem 1.5rem rgb(0 0 0 / 0.12);
   --shadow-popover: 0 0.4rem 1rem rgb(25 26 24 / 0.08);
   --overlay-dialog: rgb(0 0 0 / 0.4);
@@ -124,6 +131,8 @@
   --motion-media-zoom-subtle: 0.032;
   --motion-arrow-x: 4px;
   --motion-arrow-y: -3px;
+  --motion-arrow-down: 4px;
+  --motion-icon-nudge: -2px;
   --motion-arrow-pressed-x: 1px;
   --motion-arrow-pressed-y: -1px;
   --motion-stagger-editorial: 110ms;

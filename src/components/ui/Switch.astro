@@ -1,11 +1,12 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
+import type { controlSizes } from './options';
 
 interface Props extends Omit<
   HTMLAttributes<'input'>,
   'type' | 'size' | 'role'
 > {
-  size?: 'sm' | 'md' | 'lg';
+  size?: (typeof controlSizes)[number];
 }
 const sizes = { sm: 'ds-toggle-sm', md: 'ds-toggle-md', lg: 'ds-toggle-lg' };
 const { size = 'md', class: className, ...rest } = Astro.props;

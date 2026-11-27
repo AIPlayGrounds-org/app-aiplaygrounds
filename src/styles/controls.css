@@ -34,7 +34,7 @@
   }
   @media (max-width: 22rem) {
     select[data-field='editorial'] {
-      padding-inline: 0.375rem;
+      padding-inline: var(--space-related);
       font-size: var(--type-control);
     }
   }

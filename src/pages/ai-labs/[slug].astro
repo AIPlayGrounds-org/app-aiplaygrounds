@@ -113,7 +113,8 @@ const accessText = {
           <p class="access-mode">{product.access}</p>
           {product.url ? (
             <Button href={product.url} variant="primary">
-              Acceder al producto <ArrowUpRight size={18} aria-hidden="true" />
+              Acceder al producto{' '}
+              <ArrowUpRight class="size-icon-md" aria-hidden="true" />
             </Button>
           ) : (
             <p class="access-note">
@@ -161,7 +162,7 @@ const accessText = {
                 return (
                   <li class="icon-row">
                     <span class="detail-icon">
-                      <Icon size={21} aria-hidden="true" />
+                      <Icon class="size-icon-lg" aria-hidden="true" />
                     </span>
                     <div>
                       <h3>{title}</h3>
@@ -187,7 +188,7 @@ const accessText = {
                   return (
                     <li>
                       <h3 lang="en">
-                        <Icon size={18} aria-hidden="true" />
+                        <Icon class="size-icon-md" aria-hidden="true" />
                         {scope}
                       </h3>
                       {description && <p>{description}</p>}
@@ -222,7 +223,7 @@ const accessText = {
             <h2>Estado y evidencia de uso</h2>
             <div class="icon-row">
               <span class="detail-icon">
-                <TrendingUp size={21} aria-hidden="true" />
+                <TrendingUp class="size-icon-lg" aria-hidden="true" />
               </span>
               <p class="product-prose">{product.evidence}</p>
             </div>
@@ -233,7 +234,7 @@ const accessText = {
             <h2>Consideraciones y limitaciones</h2>
             <div class="icon-row">
               <span class="detail-icon">
-                <Info size={21} aria-hidden="true" />
+                <Info class="size-icon-lg" aria-hidden="true" />
               </span>
               <p class="product-prose">{product.limitations}</p>
             </div>
@@ -253,7 +254,7 @@ const accessText = {
         />
         <section class="detail-panel">
           <h2>
-            <UsersRound size={21} aria-hidden="true" />
+            <UsersRound class="size-icon-lg" aria-hidden="true" />
             Creado por
           </h2>
           <ul class="author-list" role="list">
@@ -297,7 +298,7 @@ const accessText = {
         </section>
         <section class="detail-panel">
           <h2>
-            <CalendarDays size={21} aria-hidden="true" />
+            <CalendarDays class="size-icon-lg" aria-hidden="true" />
             Fechas
           </h2>
           <dl>
@@ -327,7 +328,7 @@ const accessText = {
         data-reveal="fade"
       >
         <h2 id="related-products-title">
-          <Layers size={24} aria-hidden="true" />
+          <Layers class="size-icon-xl" aria-hidden="true" />
           Productos relacionados
         </h2>
         <ul data-view="list" role="list">

@@ -19,7 +19,7 @@ html:has(.design-gallery) {
   align-self: start;
   max-height: 100dvh;
   overflow-y: auto;
-  padding: 1.5rem;
+  padding: calc(var(--space-unit) * 6);
   border-inline-end: var(--stroke-default) solid var(--line);
   background: var(--surface);
   scrollbar-color: var(--line) transparent;
@@ -33,10 +33,10 @@ html:has(.design-gallery) {
 }
 
 .gallery-brand {
-  margin-block-end: 1.65rem;
+  margin-block-end: calc(var(--space-unit) * 7);
   font-family: var(--font-heading);
-  font-size: 1.125rem;
-  font-weight: 600;
+  font-size: var(--type-lead);
+  font-weight: var(--weight-heading);
   text-decoration: none !important;
 }
 
@@ -48,13 +48,13 @@ html:has(.design-gallery) {
 
 .gallery-search {
   position: relative;
-  margin-block-start: 0.3rem;
+  margin-block-start: var(--space-inline);
 }
 
 .gallery-search input {
   width: 100%;
   min-height: 2.25rem;
-  padding-inline-start: 2rem;
+  padding-inline-start: calc(var(--space-unit) * 8);
 }
 
 .gallery-search svg {
@@ -65,20 +65,20 @@ html:has(.design-gallery) {
 }
 
 .gallery-nav-group {
-  margin-block: 1.3rem;
+  margin-block: var(--space-card);
 }
 
 .gallery-nav-group h2 {
-  margin-block-end: 0.35rem;
-  font-size: 0.95rem;
+  margin-block-end: var(--space-inline);
+  font-size: var(--type-body-small);
 }
 
 .gallery-nav-group a {
   display: block;
-  padding: 0.2rem var(--space-inline);
+  padding: var(--space-inline) var(--space-inline);
   min-block-size: 1.65rem;
   color: var(--secondary-text);
-  font-size: 0.9rem;
+  font-size: var(--type-label);
   text-decoration: none !important;
 }
 
@@ -102,7 +102,7 @@ html:has(.design-gallery) {
 .gallery-overview p {
   max-width: 54ch;
   color: var(--secondary-text);
-  margin-block: 0.75rem 1.5rem;
+  margin-block: var(--space-control) calc(var(--space-unit) * 6);
 }
 
 .preview-toolbar,
@@ -111,7 +111,7 @@ html:has(.design-gallery) {
   flex-wrap: wrap;
   align-items: end;
   gap: var(--space-control) var(--space-stack);
-  padding: 0.8rem;
+  padding: var(--space-control);
   background: var(--surface);
   border: var(--stroke-default) solid var(--line);
   border-radius: var(--radius-small);
@@ -120,8 +120,8 @@ html:has(.design-gallery) {
 .preview-toolbar label,
 .play-controls label {
   display: block;
-  margin-block-end: 0.2rem;
-  font-size: 0.875rem;
+  margin-block-end: var(--space-inline);
+  font-size: var(--type-label);
 }
 
 .preview-toolbar select,
@@ -133,7 +133,7 @@ html:has(.design-gallery) {
 .preview-toolbar p {
   align-self: center;
   color: var(--secondary-text);
-  font-size: 0.875rem;
+  font-size: var(--type-label);
 }
 
 .gallery-chapter {
@@ -141,12 +141,12 @@ html:has(.design-gallery) {
 }
 
 .gallery-chapter > h2 {
-  margin-block-end: 0.75rem;
+  margin-block-end: var(--space-control);
 }
 
 .gallery-chapter > section,
 .component-entry {
-  margin-block: 1.85rem;
+  margin-block: calc(var(--space-unit) * 7);
 }
 
 .entry-usage {
@@ -168,7 +168,7 @@ html:has(.design-gallery) {
 
 .gallery-chapter > section > h3,
 .component-entry > h3 {
-  margin-block-end: 0.35rem;
+  margin-block-end: var(--space-inline);
 }
 
 .gallery-chapter :where(p, ol) {
@@ -176,11 +176,11 @@ html:has(.design-gallery) {
 }
 
 .gallery-chapter :where(p + p, li + li) {
-  margin-block-start: 0.3rem;
+  margin-block-start: var(--space-inline);
 }
 
 .gallery-chapter ol {
-  padding-inline-start: 1.4rem;
+  padding-inline-start: calc(var(--space-unit) * 6);
   list-style: decimal;
 }
 
@@ -201,7 +201,7 @@ html:has(.design-gallery) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
   gap: var(--space-control);
-  margin-block: 0.5rem 1.25rem;
+  margin-block: var(--space-related) var(--space-card);
 }
 
 .swatches > li,
@@ -209,7 +209,7 @@ html:has(.design-gallery) {
 .foundation-list > li {
   display: grid;
   align-content: start;
-  gap: 0.15rem;
+  gap: var(--space-inline);
   min-width: 0;
   margin: 0;
   padding: var(--space-related);
@@ -220,7 +220,7 @@ html:has(.design-gallery) {
 
 .swatches li > span {
   height: 2rem;
-  margin-block-end: 0.25rem;
+  margin-block-end: var(--space-inline);
   border: var(--stroke-default) solid var(--line);
 }
 
@@ -253,7 +253,7 @@ html:has(.design-gallery) {
   display: block;
   width: 2.25rem;
   height: 2rem;
-  margin: 0.25rem;
+  margin: var(--space-inline);
   border: var(--stroke-default) solid var(--input);
   background: var(--surface);
 }
@@ -284,13 +284,13 @@ html:has(.design-gallery) {
 }
 
 .play-controls {
-  margin-block: 0.85rem;
+  margin-block: var(--space-control);
 }
 
 .preview-frame {
   width: min(100%, var(--preview-width, 100%));
   min-block-size: 5.25rem;
-  margin-block: 0.85rem;
+  margin-block: var(--space-control);
   container-type: inline-size;
 }
 
@@ -307,18 +307,18 @@ html:has(.design-gallery) {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--space-control);
-  margin-block: 0.55rem;
+  margin-block: var(--space-related);
 }
 
 .entry-notes {
   display: grid;
   gap: var(--space-related);
-  margin-block-start: 1rem;
-  font-size: 0.95rem;
+  margin-block-start: var(--space-stack);
+  font-size: var(--type-body-small);
 }
 
 .entry-notes dt {
-  font-weight: 600;
+  font-weight: var(--weight-heading);
 }
 
 .entry-notes dd {
@@ -341,7 +341,7 @@ html:has(.design-gallery) {
     max-block-size: 14rem;
     overflow: auto;
     padding: var(--space-inline);
-    margin-block: 0.5rem;
+    margin-block: var(--space-related);
   }
 }
 
@@ -349,4 +349,8 @@ html:has(.design-gallery) {
   .preview-frame :is(input, select, textarea) {
     max-inline-size: 100%;
   }
+}
+/* Dialog custom provides behavior; the demo supplies its own surface. */
+.example-custom-dialog {
+  background: transparent;
 }

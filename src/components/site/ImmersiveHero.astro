@@ -81,7 +81,7 @@ const {
   .hero-content {
     position: relative;
     text-align: center;
-    padding-block: 8rem 6rem;
+    padding-block: 8rem 6rem; /* design-exception: Reserva de cielo entre cabecera y horizonte en escritorio. */
   }
   .hero h1 {
     max-width: 34ch;
@@ -91,15 +91,15 @@ const {
   .hero p {
     max-width: 38rem;
     font-size: clamp(1.15rem, 1rem + 0.45vw, 1.4rem);
-    margin: 1.5rem auto 0;
+    margin: calc(var(--space-unit) * 6) auto 0;
   }
   .actions {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: var(--space-control) 1.5rem;
+    gap: var(--space-control) calc(var(--space-unit) * 6);
     justify-content: center;
-    margin-top: 1.5rem;
+    margin-top: calc(var(--space-unit) * 6);
   }
   .align-start .hero-content {
     text-align: start;
@@ -138,14 +138,14 @@ const {
     margin-top: var(--space-stack);
   }
   .open-sky .actions {
-    margin-top: 1.15rem;
+    margin-top: var(--space-card);
   }
   @media (max-width: 60rem) {
     .align-start {
       align-items: start;
     }
     .align-start .hero-content {
-      padding-top: 10rem;
+      padding-top: 10rem; /* design-exception: Reserva de cielo para el encuadre del hero en móvil. */
     }
   }
   @media (max-width: 40rem) {
@@ -153,13 +153,13 @@ const {
       min-height: 37rem;
     }
     .hero-content {
-      padding-block: 6.5rem 4rem;
+      padding-block: 6.5rem 4rem; /* design-exception: Ajuste del bloque de texto a la escena en pantallas estrechas. */
     }
     .hero-image {
       object-position: var(--hero-mobile-position);
     }
     .align-start .hero-content {
-      padding-top: 6rem;
+      padding-top: 6rem; /* design-exception: Reserva de cielo específica de la composición en móvil. */
     }
     .align-start h1 {
       font-size: clamp(2rem, 8.3vw, 2.4rem);
@@ -169,7 +169,7 @@ const {
       font-size: clamp(1.875rem, 1.45rem + 2vw, 2.25rem);
     }
     .open-sky p {
-      font-size: 1.0625rem;
+      font-size: var(--type-control);
     }
   }
   .open-sky .hero-image {

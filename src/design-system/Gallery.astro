@@ -135,7 +135,7 @@ const foundations = [
 ];
 const primitiveColors = variables.filter(
   (token) =>
-    /^--(brand-|web-light-|editorial-)/.test(token) &&
+    /^--(brand-|web-light-|editorial-|terrain-)/.test(token) &&
     new RegExp(`${token}:\\s*#`).test(tokens),
 );
 const semanticColors = [
@@ -193,6 +193,8 @@ const controlLabels: Record<string, string> = {
   edge: 'Borde',
   interaction: 'Interacción',
   tone: 'Color semántico',
+  placement: 'Ubicación',
+  align: 'Alineación',
 };
 const propValue = ([key, val]: [string, unknown]) =>
   val === true ? ` ${key}` : typeof val === 'string' ? ` ${key}="${val}"` : '';
@@ -261,9 +263,13 @@ function snippet(
       .map(propValue)
       .join(
         '',
-      )}>\n  ${values.icon === 'leading' ? '<Info slot="icon" size={14} aria-hidden="true" />\n  ' : ''}Disponible\n</Badge>`;
+      )}>\n  ${values.icon === 'leading' ? '<Info slot="icon" class="size-icon-sm" aria-hidden="true" />\n  ' : ''}Disponible\n</Badge>`;
   if (name === 'Alert')
     return `<Alert tone="${values.tone}" appearance="${appearance}">Revisa el estado del proyecto.</Alert>`;
+  if (name === 'Tooltip')
+    return `<Tooltip descriptionId="tip" description="Guarda una copia local" placement="${values.placement}">\n  <Button aria-describedby="tip">Exportar</Button>\n</Tooltip>`;
+  if (name === 'Dropdown')
+    return `<Dropdown label="Opciones" align="${values.align}">\n  <a href="/equipo/">Equipo</a>\n</Dropdown>`;
   return fallback;
 }
 ---
@@ -282,14 +288,14 @@ function snippet(
     <div class="gallery-shell">
       <aside class="gallery-sidebar">
         <a class="gallery-brand" href="/design-system/">
-          <Layers size={21} aria-hidden="true" />
+          <Layers class="size-icon-lg" aria-hidden="true" />
           <span>
             AI PlayGrounds <small>Design System</small>
           </span>
         </a>
         <Label for="gallery-search">Buscar componentes</Label>
         <div class="gallery-search">
-          <Search size={16} aria-hidden="true" />
+          <Search class="size-icon-chevron" aria-hidden="true" />
           <Input
             id="gallery-search"
             type="search"
@@ -330,7 +336,8 @@ function snippet(
           ))}
         </nav>
         <a class="gallery-back" href="/">
-          Ver el sitio <ArrowRight size={16} aria-hidden="true" />
+          Ver el sitio{' '}
+          <ArrowRight class="size-icon-chevron" aria-hidden="true" />
         </a>
       </aside>
 

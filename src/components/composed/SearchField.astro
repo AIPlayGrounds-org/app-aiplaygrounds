@@ -9,7 +9,7 @@ interface Props extends Omit<HTMLAttributes<'input'>, 'type'> {
   label: string;
   as?: 'div' | 'form';
   searchableForm?: boolean;
-  iconSize?: number;
+  iconSize?: 'md' | 'lg';
   inputClass?: string;
   appearance?: 'default' | 'inline';
 }
@@ -18,7 +18,7 @@ const {
   label,
   as: Tag = 'div',
   searchableForm,
-  iconSize = 20,
+  iconSize = 'lg',
   inputClass,
   appearance = 'default',
   class: className,
@@ -27,7 +27,10 @@ const {
 ---
 
 <Tag data-search={searchableForm || undefined} class={className}>
-  <Search size={iconSize} aria-hidden="true" />
+  <Search
+    class={iconSize === 'md' ? 'size-icon-md' : 'size-icon-lg'}
+    aria-hidden="true"
+  />
   <Label for={id} class="sr-only">
     {label}
   </Label>

@@ -245,7 +245,7 @@ const fields = [
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: var(--space-control) 1.5rem;
+    gap: var(--space-control) calc(var(--space-unit) * 6);
   }
   h3 {
     font-size: var(--type-card-title);
@@ -278,7 +278,7 @@ const fields = [
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: var(--space-stack);
-    margin-top: 2rem;
+    margin-top: calc(var(--space-unit) * 8);
   }
   .fields article {
     min-width: 0;
@@ -290,7 +290,7 @@ const fields = [
     background: var(--home-surface);
   }
   .field-copy {
-    padding: 1.5rem var(--space-card) var(--space-stack);
+    padding: calc(var(--space-unit) * 6) var(--space-card) var(--space-stack);
     flex: 1;
   }
   .field-copy p {
@@ -311,14 +311,14 @@ const fields = [
     margin-top: clamp(2rem, 4vw, 3.5rem);
   }
   .stat {
-    padding: var(--space-stack) 2rem;
+    padding: var(--space-stack) calc(var(--space-unit) * 8);
     border-right: var(--stroke-default) solid var(--line);
   }
   .stat strong {
     display: block;
-    font: 600 clamp(5rem, 8vw, 8rem)/1 var(--font-heading);
-    letter-spacing: -0.06em;
-    margin-block: 1rem;
+    font: var(--weight-heading) clamp(5rem, 8vw, 8rem)/1 var(--font-heading);
+    letter-spacing: -0.06em; /* design-exception: Ajuste óptico singular de la cifra editorial de Inicio. */
+    margin-block: var(--space-stack);
   }
   .eyebrow {
     font-size: var(--type-caption);
@@ -330,7 +330,7 @@ const fields = [
     grid-template-columns: 1fr 1fr;
   }
   .event {
-    padding: var(--space-stack) 2rem;
+    padding: var(--space-stack) calc(var(--space-unit) * 8);
   }
   .event.featured {
     grid-column: 1 / -1;
@@ -351,7 +351,7 @@ const fields = [
     margin-top: var(--space-related);
   }
   .metrics b {
-    font: 600 1.35rem var(--font-heading);
+    font: var(--weight-heading) var(--type-title) var(--font-heading);
   }
   .event-note {
     font-size: var(--type-label);
@@ -367,7 +367,7 @@ const fields = [
   .tags span {
     border: var(--stroke-default) solid var(--line);
     border-radius: var(--radius-small);
-    padding: 0.15rem var(--space-related);
+    padding: var(--space-micro) var(--space-related);
     font-size: var(--type-caption);
     color: var(--secondary-text);
   }
@@ -415,7 +415,7 @@ const fields = [
       padding-block: clamp(2.625rem, 5.25vw, 5.25rem);
     }
     main > .closing-section {
-      padding-top: 0.75rem;
+      padding-top: var(--space-control);
     }
   }
   @media (max-width: 60rem) {
@@ -425,7 +425,7 @@ const fields = [
   }
   @media (max-width: 40rem) {
     .field-copy {
-      padding-top: 2rem;
+      padding-top: calc(var(--space-unit) * 8);
     }
     .community,
     .history-heading,
@@ -444,12 +444,12 @@ const fields = [
       grid-template-columns: 1fr;
     }
     .history-grid {
-      margin-top: 2rem;
+      margin-top: calc(var(--space-unit) * 8);
     }
     .stat {
       border-right: 0;
       border-bottom: var(--stroke-default) solid var(--line);
-      padding: var(--space-stack) 0 2rem;
+      padding: var(--space-stack) 0 calc(var(--space-unit) * 8);
     }
     .events {
       grid-template-columns: 1fr;
@@ -457,7 +457,7 @@ const fields = [
     .event,
     .event.featured {
       grid-column: auto;
-      padding: 1.5rem 0;
+      padding: calc(var(--space-unit) * 6) 0;
       border-bottom: var(--stroke-default) solid var(--line);
     }
     .event:last-child {

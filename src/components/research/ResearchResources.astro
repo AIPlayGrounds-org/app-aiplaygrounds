@@ -28,7 +28,7 @@ const links = [
 
 <section class="detail-panel access-panel research-resources">
   <h2>
-    <FileText size={21} aria-hidden="true" /> Recursos originales
+    <FileText class="size-icon-lg" aria-hidden="true" /> Recursos originales
   </h2>
   {entry.demo && (
     <p class="access-note">
@@ -43,7 +43,8 @@ const links = [
   )}
   {entry.source && (
     <Button href={entry.source} variant="primary">
-      Consultar original <ArrowUpRight size={18} aria-hidden="true" />
+      Consultar original{' '}
+      <ArrowUpRight class="size-icon-md" aria-hidden="true" />
     </Button>
   )}
   {links.length > 0 && (
@@ -51,7 +52,8 @@ const links = [
       {links.map(({ label, url }) => (
         <li>
           <a href={url}>
-            {label} <ArrowUpRight size={15} aria-hidden="true" />
+            {label}{' '}
+            <ArrowUpRight class="size-icon-chevron" aria-hidden="true" />
           </a>
         </li>
       ))}

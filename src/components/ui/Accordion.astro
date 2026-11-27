@@ -1,9 +1,10 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
+import type { accordionIndicators } from './options';
 
 interface Props extends HTMLAttributes<'details'> {
   label: string;
-  indicator?: 'arrow' | 'plus';
+  indicator?: (typeof accordionIndicators)[number];
 }
 const { label, indicator = 'arrow', class: className, ...rest } = Astro.props;
 ---

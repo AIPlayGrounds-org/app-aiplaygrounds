@@ -8,7 +8,6 @@ import {
 import type { Product } from '../../data/labs';
 import VerticalTag from '../directory/VerticalTag.astro';
 import Badge from '../ui/Badge.astro';
-import { compactHeroArt } from '../site/compact-hero-art';
 
 interface Props {
   product: Product;
@@ -24,10 +23,10 @@ const scopeIcons = {
   Enterprise: BuildingComplex,
 };
 const scopeColors = {
-  Individual: compactHeroArt.convergence.palette[2],
-  Team: compactHeroArt.construction.palette[2],
-  Organization: compactHeroArt.exploration.palette[2],
-  Enterprise: compactHeroArt.connection.palette[2],
+  Individual: 'var(--terrain-convergence-light)',
+  Team: 'var(--terrain-construction-light)',
+  Organization: 'var(--terrain-exploration-light)',
+  Enterprise: 'var(--terrain-connection-light)',
 };
 ---
 
@@ -65,7 +64,7 @@ const scopeColors = {
           lang="en"
           style={{ '--badge-surface': scopeColors[scope] }}
         >
-          <Icon slot="icon" size={14} aria-hidden="true" />
+          <Icon slot="icon" class="size-icon-sm" aria-hidden="true" />
           {scope}
         </Badge>
       );
@@ -111,7 +110,7 @@ const scopeColors = {
   @media (min-width: 45rem) {
     :global([data-view='list']) .overlay :global(.vertical),
     :global([data-view='list']) .overlay .maturity {
-      padding-inline: 0.42rem;
+      padding-inline: var(--space-related);
       font-size: var(--type-caption);
     }
   }

@@ -43,6 +43,11 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  [data-card-arrow='down'] {
+    --arrow-x: 0px;
+    --arrow-y: var(--motion-arrow-down);
+  }
+
   :is([data-card-interactive], [data-surface-motion]) {
     --surface-motion: 0;
   }

@@ -1,9 +1,10 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
+import type { controlSizes } from './options';
 
 const sizes = { sm: 'size-8', md: 'size-12', lg: 'size-16' };
 interface Props extends HTMLAttributes<'span'> {
-  size?: keyof typeof sizes;
+  size?: (typeof controlSizes)[number];
   label?: string;
   initials?: string;
 }

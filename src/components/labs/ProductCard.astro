@@ -40,7 +40,8 @@ const { product, eager } = Astro.props;
         aria-label={`Ver ficha: ${product.name}`}
         data-card-link
       >
-        Ver ficha <ArrowUpRight size={18} aria-hidden="true" data-card-arrow />
+        Ver ficha{' '}
+        <ArrowUpRight class="size-icon-md" aria-hidden="true" data-card-arrow />
       </a>
     </footer>
   </div>
@@ -68,10 +69,10 @@ const { product, eager } = Astro.props;
     align-items: start;
     min-inline-size: 0;
     gap: var(--space-related);
-    padding: 1.15rem 1.15rem var(--space-stack);
+    padding: var(--space-card) var(--space-card) var(--space-stack);
   }
   .card-body > :global(.product-tags) {
-    margin-block: 0.1rem;
+    margin-block: var(--space-inline);
   }
   .card-category,
   .card-demo,
@@ -94,7 +95,7 @@ const { product, eager } = Astro.props;
     line-clamp: 3;
     font-size: var(--type-body-small);
     line-height: var(--leading-body);
-    margin-block: 0.15rem 0.65rem;
+    margin-block: var(--space-inline) var(--space-control);
   }
   footer {
     display: flex;

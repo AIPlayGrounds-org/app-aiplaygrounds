@@ -1,9 +1,10 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
+import type { dropdownAlignments } from './options';
 
 interface Props extends HTMLAttributes<'details'> {
   label?: string;
-  align?: 'start' | 'end';
+  align?: (typeof dropdownAlignments)[number];
 }
 const { label, align = 'start', class: className, ...rest } = Astro.props;
 ---
