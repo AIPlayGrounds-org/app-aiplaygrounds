@@ -1,0 +1,41 @@
+---
+import type { usageFor } from './usage';
+
+interface Props {
+  usage: NonNullable<ReturnType<typeof usageFor>>;
+}
+const { usage } = Astro.props;
+const groups = [
+  ['Importadores directos', usage.consumers],
+  ['Páginas: uso directo', usage.directPages],
+  ['Páginas: mediante composición', usage.composedPages],
+  ['Variables leídas en la implementación', usage.tokens],
+] as const;
+---
+
+<details class="entry-usage">
+  <summary>
+    Trazabilidad ·{' '}
+    {usage.directPages.length || usage.composedPages.length
+      ? 'En producción'
+      : 'Disponible'}
+  </summary>
+  <dl class="entry-notes">
+    <div>
+      <dt>Implementación</dt>
+      <dd>
+        <code>{usage.path}</code>
+      </dd>
+    </div>
+    {groups.map(([label, items]) => (
+      <div>
+        <dt>{label}</dt>
+        <dd>
+          {items.length
+            ? items.map((item) => <code class="block break-all">{item}</code>)
+            : '—'}
+        </dd>
+      </div>
+    ))}
+  </dl>
+</details>

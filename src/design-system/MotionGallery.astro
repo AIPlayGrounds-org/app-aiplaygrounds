@@ -9,6 +9,8 @@ import AcademyMotif from '../components/site/AcademyMotif.astro';
 import ImmersiveHero from '../components/site/ImmersiveHero.astro';
 import { inicioImages } from '../assets/inicio';
 import { motionPatterns } from './motion-patterns';
+import UsageDetails from './UsageDetails.astro';
+import { usageFor } from './usage';
 import './motion-gallery.css';
 
 interface Props {
@@ -16,6 +18,17 @@ interface Props {
   viewport: string;
 }
 const { theme, viewport } = Astro.props;
+const productionSources: Record<string, string[]> = {
+  microinteractions: [
+    '/src/styles/card-interactions.css',
+    '/src/styles/controls.css',
+    '/src/components/ui/Button.astro',
+  ],
+  'entrance-exit': ['/src/motion/reveal.ts'],
+  scroll: ['/src/motion/reveal.ts'],
+  sequences: ['/src/components/site/ImmersiveHero.astro'],
+  svg: ['/src/components/site/CompactHeroArt.astro', '/src/motion/draw.ts'],
+};
 const modes: Record<string, string[]> = {
   'entrance-exit': ['rise', 'fade', 'card', 'ink', 'slide', 'exit'],
   scroll: ['reveal', 'progress', 'parallax', 'horizontal'],
@@ -321,6 +334,16 @@ const modes: Record<string, string[]> = {
       )}
       <dl class="entry-notes">
         <div>
+          <dt>Estado</dt>
+          <dd>
+            {id === 'microinteractions'
+              ? 'En producción'
+              : productionSources[id]
+                ? 'Producción y variantes experimentales indicadas'
+                : 'Experimental · solo catálogo'}
+          </dd>
+        </div>
+        <div>
           <dt>Tecnología y API</dt>
           <dd>{api}</dd>
         </div>
@@ -335,6 +358,10 @@ const modes: Record<string, string[]> = {
           <dd>{note}</dd>
         </div>
       </dl>
+      {(productionSources[id] ?? []).map((path) => {
+        const usage = usageFor(path);
+        return usage && <UsageDetails {usage} />;
+      })}
       <div class="example-code">
         <pre tabindex="0"><code id={`motion-code-${id}`}>{code}</code></pre>
         <div class="copy-row">

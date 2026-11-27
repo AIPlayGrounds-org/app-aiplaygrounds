@@ -2,10 +2,11 @@ export const motionPatterns = [
   {
     id: 'microinteractions',
     title: 'Microinteractions',
-    name: 'Button, Card e iconos',
+    name: 'Button, Card, iconos y feedback de formulario',
     api: 'CSS · :hover, :active, :focus-visible, :focus-within',
-    tokens: '--duration-control, --duration-card, --editorial-response',
-    use: 'Feedback inmediato de botón, presión, foco, borde y flecha.',
+    tokens:
+      '--duration-control, --duration-card, --duration-feedback, --editorial-response',
+    use: 'Feedback de botón, presión, foco, borde y flecha. FormField y el formulario de contacto comparten la entrada CSS de sus mensajes.',
     note: 'Sin JS. El foco permanece visible aunque el movimiento esté reducido.',
     code: '<Card interaction="interactive"><TextLink href="#motion">Ver detalles</TextLink></Card>',
   },

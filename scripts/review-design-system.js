@@ -12,7 +12,7 @@ export default async function reviewDesignSystem(
   page.on('pageerror', recordError);
   try {
     await page.emulateMedia({ reducedMotion: 'reduce' });
-    for (const width of [320, 390, 768, 1440]) {
+    for (const width of [320, 390, 768, 1024, 1440]) {
       await page.setViewportSize({ width, height: 950 });
       for (const path of [
         '/',
@@ -241,7 +241,7 @@ export default async function reviewDesignSystem(
           .evaluate((el) => el === document.activeElement),
         'Retorno de foco del ejemplo',
       );
-      await page.locator('#dropdown summary').press('Enter');
+      await page.locator('#dropdown .preview-frame summary').press('Enter');
       await page
         .locator('#dropdown')
         .getByRole('link', { name: 'Guía de uso' })

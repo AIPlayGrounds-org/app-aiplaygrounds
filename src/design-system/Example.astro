@@ -26,6 +26,8 @@ import FormField from '../components/composed/FormField.astro';
 import SearchField from '../components/composed/SearchField.astro';
 import FilterGroup from '../components/composed/FilterGroup.astro';
 import ViewToggle from '../components/composed/ViewToggle.astro';
+import SectionHeading from '../components/site/SectionHeading.astro';
+import TextLink from '../components/site/TextLink.astro';
 import DirectoryFilter from '../components/directory/DirectoryFilter.astro';
 import VerticalTag from '../components/directory/VerticalTag.astro';
 import ProductTags from '../components/labs/ProductTags.astro';
@@ -85,6 +87,11 @@ const group: DirectoryFacet = {
 };
 const product = name === 'ProductTags' ? (await getProducts())[0] : undefined;
 ---
+
+{name === 'SectionHeading' && <SectionHeading>Áreas de trabajo</SectionHeading>}
+{name === 'TextLink' && (
+  <TextLink href="/investigacion/">Explorar investigación</TextLink>
+)}
 
 {name === 'Button' &&
   (values.icon === 'only' ? (

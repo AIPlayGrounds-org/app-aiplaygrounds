@@ -6,6 +6,8 @@ import Label from '../components/ui/Label.astro';
 import Select from '../components/ui/Select.astro';
 import Example from './Example.astro';
 import MotionGallery from './MotionGallery.astro';
+import UsageDetails from './UsageDetails.astro';
+import { componentUsage, unlistedComponents } from './usage';
 import { motionPatterns } from './motion-patterns';
 import { components, selection } from './catalog';
 import tokens from '../styles/tokens.css?raw';
@@ -26,19 +28,24 @@ const viewport = viewportWidths.includes(requestedWidth)
   ? requestedWidth
   : 'auto';
 const groups = [
-  { title: 'General', links: ['Overview', 'Architecture', 'Usage Guidelines'] },
+  {
+    title: 'General',
+    links: ['Overview', 'Architecture', 'Usage Guidelines', 'Usage Index'],
+  },
   {
     title: 'Foundations',
     links: [
       'Colors',
       'Typography',
       'Spacing',
+      'Layout',
       'Radius',
       'Borders',
       'Elevation',
       'Breakpoints',
       'Motion Tokens',
       'Iconography',
+      'Component Tokens',
     ],
   },
   {
@@ -67,12 +74,23 @@ const foundations = [
       '--font-sans',
       '--font-mono',
       ...variables.filter((v) => v.startsWith('--type-')),
+      ...variables.filter((v) => /^--(weight|leading|tracking)-/.test(v)),
     ],
   },
   {
     title: 'Spacing',
+    list: variables.filter((v) => v.startsWith('--space-')),
+  },
+  {
+    title: 'Layout',
     list: variables.filter((v) =>
-      /^--(space-|field-gap|card-padding|button-padding)/.test(v),
+      /^--(container-|layout-|measure-|layer-)/.test(v),
+    ),
+  },
+  {
+    title: 'Component Tokens',
+    list: variables.filter((v) =>
+      /^--(button-|field-|card-|disabled-)/.test(v),
     ),
   },
   {
@@ -492,6 +510,7 @@ function snippet(
               .filter(([, entry]) => Boolean(entry.composite) === composite)
               .map(([name, entry]) => {
                 const id = slug(name);
+                const usage = componentUsage(name);
                 const values = selection(
                   entry,
                   query.get('component') === name
@@ -584,12 +603,26 @@ function snippet(
                         <dd>{entry.usage}</dd>
                       </div>
                     </dl>
+                    {usage && <UsageDetails {usage} />}
                   </article>
                 );
               })}
           </section>
         ))}
         <MotionGallery {theme} {viewport} />
+        <section class="gallery-chapter" id="usage-index">
+          <h2>Usage Index</h2>
+          <p>
+            Implementaciones de dominio y composiciones que no tienen ficha
+            propia. Las rutas dinámicas se muestran por su archivo fuente.
+          </p>
+          {unlistedComponents(Object.keys(components)).map((usage) => (
+            <article class="component-entry">
+              <h3>{usage.path.split('/').at(-1)?.replace('.astro', '')}</h3>
+              <UsageDetails {usage} />
+            </article>
+          ))}
+        </section>
       </main>
     </div>
   </body>

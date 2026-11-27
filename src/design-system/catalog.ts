@@ -1,5 +1,11 @@
 import { buttonSizes, buttonVariants } from '../components/ui/button';
 import { badgeSizes, badgeVariants } from '../components/ui/badge';
+import { cardOptions } from '../components/ui/card';
+import {
+  fieldAppearances,
+  fieldDensities,
+  textareaAppearances,
+} from '../components/ui/field';
 
 type Controls = Record<string, readonly string[]>;
 type Entry = {
@@ -13,6 +19,27 @@ type Entry = {
 };
 
 export const components: Record<string, Entry> = {
+  SectionHeading: {
+    composite: true,
+    description:
+      'Título editorial de sección con una escala fluida compartida.',
+    props: 'Atributos nativos de h2 y slot de texto.',
+    accessibility:
+      'Respeta la jerarquía; reserva el h1 para el título de la página.',
+    usage:
+      'Úsalo en secciones editoriales sin acoplarlo al grid ni al contenido.',
+    example: '<SectionHeading>Áreas de trabajo</SectionHeading>',
+  },
+  TextLink: {
+    composite: true,
+    description: 'Enlace editorial con señal de dirección.',
+    props: 'Atributos nativos del enlace y slot de texto.',
+    accessibility: 'El texto nombra su destino; el icono es decorativo.',
+    usage:
+      'En una tarjeta de destino único, la superficie puede activar el mismo enlace.',
+    example:
+      '<TextLink href="/investigacion/">Explorar investigación</TextLink>',
+  },
   Button: {
     description: 'Acciones y enlaces con aspecto de botón.',
     props:
@@ -67,12 +94,7 @@ export const components: Record<string, Entry> = {
     usage:
       'Deja el layout al contenido. En pantallas estrechas, evita anchuras mínimas y textos cortados.',
     example: '<Card surface="editorial"><p>Estado del proyecto</p></Card>',
-    controls: {
-      surface: ['editorial', 'elevated', 'inherit'],
-      density: ['md', 'sm', 'none'],
-      edge: ['border', 'outline', 'none'],
-      interaction: ['static', 'interactive', 'single-link'],
-    },
+    controls: cardOptions,
   },
   Input: {
     description: 'Campo nativo de una sola línea.',
@@ -84,8 +106,8 @@ export const components: Record<string, Entry> = {
       'Usa inline solo dentro de un control compuesto que aporte borde y foco.',
     example: '<Input id="correo" name="email" type="email" />',
     controls: {
-      appearance: ['default', 'editorial', 'inline'],
-      density: ['comfortable', 'compact'],
+      appearance: fieldAppearances,
+      density: fieldDensities,
       state: ['normal', 'disabled', 'invalid'],
     },
   },
@@ -98,8 +120,8 @@ export const components: Record<string, Entry> = {
       'Deja espacio para el texto; usa editorial junto a los demás campos editoriales.',
     example: '<Textarea id="mensaje" name="message" rows={4} />',
     controls: {
-      appearance: ['default', 'editorial'],
-      density: ['comfortable', 'compact'],
+      appearance: textareaAppearances,
+      density: fieldDensities,
       state: ['normal', 'disabled', 'invalid'],
     },
   },
@@ -112,8 +134,8 @@ export const components: Record<string, Entry> = {
     example:
       '<Select id="tema" name="topic"><option>Formación</option></Select>',
     controls: {
-      appearance: ['default', 'editorial', 'inline'],
-      density: ['comfortable', 'compact'],
+      appearance: fieldAppearances,
+      density: fieldDensities,
       state: ['normal', 'disabled', 'invalid'],
     },
   },
