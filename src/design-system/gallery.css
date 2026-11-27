@@ -1,0 +1,335 @@
+html:has(.design-gallery) {
+  --site-header-height: 0px;
+}
+
+.design-gallery {
+  --home-card: var(--surface-elevated);
+  --home-surface: var(--surface);
+}
+
+.gallery-shell {
+  display: grid;
+  grid-template-columns: minmax(13rem, 18rem) minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.gallery-sidebar {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  max-height: 100dvh;
+  overflow-y: auto;
+  padding: 1.5rem;
+  border-inline-end: var(--stroke-default) solid var(--line);
+  background: var(--surface);
+  scrollbar-color: var(--line) transparent;
+}
+
+.gallery-brand,
+.gallery-back {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.gallery-brand {
+  margin-block-end: 1.65rem;
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.gallery-brand small {
+  display: block;
+  font-family: var(--font-sans);
+  color: var(--muted-foreground);
+}
+
+.gallery-search {
+  position: relative;
+  margin-block-start: 0.3rem;
+}
+
+.gallery-search input {
+  width: 100%;
+  min-height: 2.25rem;
+  padding-inline-start: 2rem;
+}
+
+.gallery-search svg {
+  position: absolute;
+  z-index: 1;
+  inset: 0.625rem auto auto 0.6rem;
+  pointer-events: none;
+}
+
+.gallery-nav-group {
+  margin-block: 1.3rem;
+}
+
+.gallery-nav-group h2 {
+  margin-block-end: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.gallery-nav-group a {
+  display: block;
+  padding: 0.2rem 0.35rem;
+  min-block-size: 1.65rem;
+  color: var(--secondary-text);
+  font-size: 0.9rem;
+  text-decoration: none !important;
+}
+
+.gallery-nav-group a:is(:hover, :focus-visible, [aria-current='location']) {
+  background: var(--surface-contrast);
+  color: var(--foreground);
+  border-radius: var(--radius-small);
+  text-decoration: underline !important;
+}
+
+.gallery-content {
+  min-width: 0;
+  width: min(100%, 92rem);
+  padding: clamp(1.2rem, 4vw, 4rem);
+}
+
+.gallery-overview h1 {
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+}
+
+.gallery-overview p {
+  max-width: 54ch;
+  color: var(--secondary-text);
+  margin-block: 0.75rem 1.5rem;
+}
+
+.preview-toolbar,
+.play-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 0.65rem 1rem;
+  padding: 0.8rem;
+  background: var(--surface);
+  border: var(--stroke-default) solid var(--line);
+  border-radius: var(--radius-small);
+}
+
+.preview-toolbar label,
+.play-controls label {
+  display: block;
+  margin-block-end: 0.2rem;
+  font-size: 0.875rem;
+}
+
+.preview-toolbar select,
+.play-controls select {
+  width: 100%;
+  min-height: 2.25rem;
+}
+
+.preview-toolbar p {
+  align-self: center;
+  color: var(--secondary-text);
+  font-size: 0.875rem;
+}
+
+.gallery-chapter {
+  margin-block: clamp(2.5rem, 5vw, 5rem);
+}
+
+.gallery-chapter > h2 {
+  margin-block-end: 0.75rem;
+}
+
+.gallery-chapter > section,
+.component-entry {
+  margin-block: 1.85rem;
+}
+
+.gallery-chapter > section > h3,
+.component-entry > h3 {
+  margin-block-end: 0.35rem;
+}
+
+.gallery-chapter :where(p, ol) {
+  max-width: 65ch;
+}
+
+.gallery-chapter :where(p + p, li + li) {
+  margin-block-start: 0.3rem;
+}
+
+.gallery-chapter ol {
+  padding-inline-start: 1.4rem;
+  list-style: decimal;
+}
+
+.token-context,
+.preview-frame {
+  --home-card: var(--surface-elevated);
+  --home-surface: var(--surface);
+  background: var(--background);
+  color: var(--foreground);
+  border: var(--stroke-default) solid var(--line);
+  border-radius: var(--radius-small);
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.swatches,
+.contrast-list,
+.foundation-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: 0.6rem;
+  margin-block: 0.5rem 1.25rem;
+}
+
+.swatches > li,
+.contrast-list > li,
+.foundation-list > li {
+  display: grid;
+  align-content: start;
+  gap: 0.15rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0.5rem;
+  border: var(--stroke-default) solid var(--line);
+  background: var(--surface-elevated);
+  border-radius: var(--radius-small);
+}
+
+.swatches li > span {
+  height: 2rem;
+  margin-block-end: 0.25rem;
+  border: var(--stroke-default) solid var(--line);
+}
+
+.foundation-list output,
+.swatches output {
+  color: var(--secondary-text);
+}
+
+.gallery-content code,
+.gallery-content output,
+.gallery-content kbd {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  overflow-wrap: anywhere;
+}
+
+.type-sample {
+  font-family: var(--font-heading);
+  line-height: 1;
+}
+
+.measure-sample {
+  display: block;
+  max-width: 100%;
+  height: var(--space-unit);
+  background: var(--interaction-accent);
+}
+
+.box-sample {
+  display: block;
+  width: 2.25rem;
+  height: 2rem;
+  margin: 0.25rem;
+  border: var(--stroke-default) solid var(--input);
+  background: var(--surface);
+}
+
+.motion-sample {
+  display: block;
+  height: 0.75rem;
+  background: var(--surface-contrast);
+}
+
+.motion-sample::after {
+  content: '';
+  display: block;
+  width: 0.75rem;
+  height: 100%;
+  background: var(--interaction-accent);
+  transition: translate var(--sample-duration, var(--duration-card))
+    var(--sample-ease, var(--editorial-ease-out));
+}
+
+.foundation-list > li:hover .motion-sample::after {
+  translate: 3rem 0;
+}
+
+.component-entry {
+  padding-block: 1.25rem;
+  border-block-start: var(--stroke-default) solid var(--line);
+}
+
+.play-controls {
+  margin-block: 0.85rem;
+}
+
+.preview-frame {
+  width: min(100%, var(--preview-width, 100%));
+  min-block-size: 5.25rem;
+  margin-block: 0.85rem;
+  container-type: inline-size;
+}
+
+.example-code pre {
+  overflow: auto;
+  padding: 0.75rem;
+  background: var(--brand-gray-1);
+  color: var(--brand-white);
+  border-radius: var(--radius-small);
+}
+
+.copy-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-block: 0.55rem;
+}
+
+.entry-notes {
+  display: grid;
+  gap: 0.45rem;
+  margin-block-start: 1rem;
+  font-size: 0.95rem;
+}
+
+.entry-notes dt {
+  font-weight: 600;
+}
+
+.entry-notes dd {
+  color: var(--secondary-text);
+}
+
+@media (width < 48rem) {
+  .gallery-shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .gallery-sidebar {
+    position: static;
+    max-height: none;
+    border-inline-end: 0;
+    border-block-end: var(--stroke-default) solid var(--line);
+  }
+  .gallery-sidebar nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-block-size: 14rem;
+    overflow: auto;
+    padding: 0.35rem;
+    margin-block: 0.5rem;
+  }
+}
+
+@container (width < 20rem) {
+  .preview-frame :is(input, select, textarea) {
+    max-inline-size: 100%;
+  }
+}

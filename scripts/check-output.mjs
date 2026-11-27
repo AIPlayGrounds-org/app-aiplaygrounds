@@ -156,6 +156,14 @@ export function inspect(root, kind = root === 'dist' ? 'site' : 'bundle') {
     const data = readFileSync(file);
     const text = data.toString('utf8');
     if (
+      kind === 'site' &&
+      /\.(?:html|js|css)$/.test(name) &&
+      /(?:\/design-system(?:\/|["'])|data-gallery-(?:component|frame)|\.gallery-shell)/.test(
+        text,
+      )
+    )
+      throw new Error(`Catálogo interno en ${name}`);
+    if (
       demoMarkers.some(
         (marker) => name.includes(marker) || text.includes(marker),
       )

@@ -1,0 +1,407 @@
+---
+import { ArrowRight, Info, Plus } from '@lucide/astro';
+import type { ComponentProps } from 'astro/types';
+import Button from '../components/ui/Button.astro';
+import Badge from '../components/ui/Badge.astro';
+import Card from '../components/ui/Card.astro';
+import Input from '../components/ui/Input.astro';
+import Textarea from '../components/ui/Textarea.astro';
+import Select from '../components/ui/Select.astro';
+import Checkbox from '../components/ui/Checkbox.astro';
+import Radio from '../components/ui/Radio.astro';
+import Switch from '../components/ui/Switch.astro';
+import Label from '../components/ui/Label.astro';
+import Avatar from '../components/ui/Avatar.astro';
+import Separator from '../components/ui/Separator.astro';
+import Spinner from '../components/ui/Spinner.astro';
+import Alert from '../components/ui/Alert.astro';
+import Tooltip from '../components/ui/Tooltip.astro';
+import Skeleton from '../components/ui/Skeleton.astro';
+import Dialog from '../components/ui/Dialog.astro';
+import Dropdown from '../components/ui/Dropdown.astro';
+import Tabs from '../components/ui/Tabs.astro';
+import Accordion from '../components/ui/Accordion.astro';
+import Pagination from '../components/ui/Pagination.astro';
+import FormField from '../components/composed/FormField.astro';
+import SearchField from '../components/composed/SearchField.astro';
+import FilterGroup from '../components/composed/FilterGroup.astro';
+import ViewToggle from '../components/composed/ViewToggle.astro';
+import DirectoryFilter from '../components/directory/DirectoryFilter.astro';
+import VerticalTag from '../components/directory/VerticalTag.astro';
+import ProductTags from '../components/labs/ProductTags.astro';
+import MetadataPanel from '../components/directory/MetadataPanel.astro';
+import { getProducts } from '../data/labs';
+import type { DirectoryFacet } from '../data/directory';
+
+interface Props {
+  name: string;
+  values: Record<string, string>;
+}
+const { name, values } = Astro.props;
+const button = {
+  variant: values.variant as ComponentProps<typeof Button>['variant'],
+  size: values.size as ComponentProps<typeof Button>['size'],
+  shape:
+    values.shape === 'default'
+      ? undefined
+      : (values.shape as ComponentProps<typeof Button>['shape']),
+  fullWidth: values.width === 'full',
+  disabled: values.state === 'disabled',
+  loading: values.state === 'loading',
+  href: values.element === 'link' ? '#overview' : undefined,
+};
+const Icon = values.symbol === 'plus' ? Plus : ArrowRight;
+const badge = {
+  variant: values.variant as ComponentProps<typeof Badge>['variant'],
+  size: values.size as ComponentProps<typeof Badge>['size'],
+  appearance: values.appearance as ComponentProps<typeof Badge>['appearance'],
+  indicator: values.indicator === 'on',
+};
+const card = {
+  surface: values.surface as ComponentProps<typeof Card>['surface'],
+  density: values.density as ComponentProps<typeof Card>['density'],
+  edge: values.edge as ComponentProps<typeof Card>['edge'],
+  interaction: values.interaction as ComponentProps<typeof Card>['interaction'],
+};
+const alert = {
+  tone: values.tone as ComponentProps<typeof Alert>['tone'],
+  appearance: values.appearance as ComponentProps<typeof Alert>['appearance'],
+};
+const field = {
+  density: values.density as ComponentProps<typeof Input>['density'],
+  appearance: values.appearance as ComponentProps<typeof Input>['appearance'],
+  disabled: values.state === 'disabled',
+  'aria-invalid': values.state === 'invalid' ? ('true' as const) : undefined,
+  'aria-describedby':
+    values.state === 'invalid' ? `example-${name}-error` : undefined,
+};
+const group: DirectoryFacet = {
+  key: 'vertical',
+  label: 'Vertical',
+  options: [
+    ['science', 'AI for Science'],
+    ['software', 'AI for Software'],
+  ],
+};
+const product = name === 'ProductTags' ? (await getProducts())[0] : undefined;
+---
+
+{name === 'Button' &&
+  (values.icon === 'only' ? (
+    <Button {...button} iconOnly aria-label="Continuar">
+      <Icon aria-hidden="true" />
+    </Button>
+  ) : (
+    <Button {...button}>
+      <Fragment slot="leading">
+        {values.icon === 'leading' && <Icon aria-hidden="true" />}
+      </Fragment>
+      Continuar
+      <Fragment slot="trailing">
+        {values.icon === 'trailing' && <Icon aria-hidden="true" />}
+      </Fragment>
+    </Button>
+  ))}
+{name === 'Badge' && (
+  <Badge {...badge}>
+    <Fragment slot="icon">
+      {values.icon === 'leading' && <Info size={14} aria-hidden="true" />}
+    </Fragment>
+    Disponible
+  </Badge>
+)}
+{name === 'Card' && (
+  <Card {...card}>
+    <h3>Estado del proyecto</h3>
+    <p>Revisa la información y los recursos relacionados.</p>
+    {values.interaction !== 'static' && (
+      <a href="#usage-guidelines" data-card-link>
+        Ver detalles
+      </a>
+    )}
+  </Card>
+)}
+{['Input', 'Textarea', 'Select'].includes(name) && (
+  <div
+    class:list={[
+      'example-stack',
+      values.appearance === 'inline' && 'inline-field',
+    ]}
+  >
+    <Label for={`example-${name}`}>Tema de interés</Label>
+    {name === 'Input' && (
+      <Input
+        {...field}
+        id="example-Input"
+        placeholder="p. ej., investigación"
+      />
+    )}
+    {name === 'Textarea' && (
+      <Textarea
+        {...field}
+        appearance={field.appearance === 'editorial' ? 'editorial' : 'default'}
+        id="example-Textarea"
+        rows={3}
+        placeholder="Describe el tema"
+      />
+    )}
+    {name === 'Select' && (
+      <Select {...field} id="example-Select">
+        <option>Formación</option>
+        <option>Investigación</option>
+      </Select>
+    )}
+    {values.state === 'invalid' && (
+      <p id={`example-${name}-error`}>Selecciona o ingresa un tema válido.</p>
+    )}
+  </div>
+)}
+{name === 'Checkbox' && (
+  <Label>
+    <Checkbox name="tracking" /> Recibir actualizaciones
+  </Label>
+)}
+{name === 'Radio' && (
+  <fieldset class="example-stack">
+    <legend>Modalidad</legend>
+    <Label>
+      <Radio name="format" value="virtual" checked /> En línea
+    </Label>
+    <Label>
+      <Radio name="format" value="on-site" /> Presencial
+    </Label>
+  </fieldset>
+)}
+{name === 'Switch' && (
+  <Label>
+    <Switch name="reminders" /> Recordatorios
+  </Label>
+)}
+{name === 'Label' && (
+  <div class="example-stack">
+    <Label for="example-label">Correo electrónico</Label>
+    <Input id="example-label" type="email" />
+  </div>
+)}
+{name === 'Avatar' && (
+  <div class="example-row">
+    <Avatar initials="AP" size="sm" />
+    <Avatar initials="AP" label="AI PlayGrounds" />
+    <Avatar initials="AP" size="lg" />
+  </div>
+)}
+{name === 'Separator' && (
+  <div class="example-stack">
+    <p>Introducción</p>
+    <Separator decorative />
+    <p>Contenido</p>
+  </div>
+)}
+{name === 'Spinner' && (
+  <div class="example-row">
+    <Spinner size="sm" />
+    <span role="status">Cargando resultados…</span>
+  </div>
+)}
+{name === 'Alert' && (
+  <Alert {...alert}>
+    <Info slot="icon" size={18} aria-hidden="true" />
+    <span>Revisa el estado del proyecto.</span>
+  </Alert>
+)}
+{name === 'Tooltip' && (
+  <div class="example-tooltip">
+    <Tooltip descriptionId="example-tip" description="Guarda una copia local">
+      <Button variant="outline" aria-describedby="example-tip">
+        Exportar
+      </Button>
+    </Tooltip>
+  </div>
+)}
+{name === 'Skeleton' && (
+  <div class="example-stack" aria-busy="true">
+    <Skeleton class="skeleton-title" />
+    <Skeleton class="skeleton-body" />
+    <span>Cargando contenido…</span>
+  </div>
+)}
+{name === 'Dialog' && (
+  <>
+    <Button data-gallery-dialog="example-dialog">Abrir diálogo</Button>
+    <Dialog id="example-dialog" aria-labelledby="example-dialog-title">
+      <h1 id="example-dialog-title" class="example-dialog-title">
+        Confirmar acción
+      </h1>
+      <p>Confirma para continuar con el ejemplo.</p>
+      <form method="dialog" class="example-row">
+        <Button type="submit" variant="outline" autofocus>
+          Cancelar
+        </Button>
+        <Button type="submit">Confirmar</Button>
+      </form>
+    </Dialog>
+  </>
+)}
+{name === 'Dropdown' && (
+  <div class="example-dropdown">
+    <Dropdown label="Opciones">
+      <ul>
+        <li>
+          <a href="#foundations">Foundations</a>
+        </li>
+        <li>
+          <a href="#usage-guidelines">Guía de uso</a>
+        </li>
+      </ul>
+    </Dropdown>
+  </div>
+)}
+{name === 'Tabs' && (
+  <Tabs
+    id="example-tabs"
+    label="Ficha"
+    items={[
+      { key: 'overview', label: 'Resumen' },
+      { key: 'data', label: 'Datos técnicos' },
+    ]}
+  >
+    <p slot="overview">Resumen del proyecto.</p>
+    <p slot="data">Datos y fuentes del proyecto.</p>
+  </Tabs>
+)}
+{name === 'Accordion' && (
+  <div class="example-stack">
+    <Accordion label="¿Cómo funciona?" open>
+      <p>Cada elemento se puede abrir y consultar por separado.</p>
+    </Accordion>
+    <Accordion label="¿Qué incluye?">
+      <p>Variantes, tokens y ejemplos reproducibles.</p>
+    </Accordion>
+  </div>
+)}
+{name === 'Pagination' && (
+  <Pagination next="#composites" label="Página 1 de 2" />
+)}
+{name === 'FormField' && (
+  <FormField
+    id="example-email"
+    name="email"
+    kind="email"
+    label="Correo"
+    error="Ingresa tu correo."
+  />
+)}
+{name === 'SearchField' && (
+  <div class="catalog-search">
+    <SearchField
+      id="example-search"
+      label="Buscar encuentros"
+      name="q"
+      as="form"
+      appearance="inline"
+      placeholder="Buscar encuentros…"
+    />
+  </div>
+)}
+{name === 'FilterControl' && (
+  <div class="catalog example-filter">
+    <DirectoryFilter
+      {group}
+      directory="example-single"
+      plural="productos"
+      dropdown
+    />
+  </div>
+)}
+{name === 'FilterGroup' && (
+  <div class="catalog example-filter">
+    <FilterGroup aria-label="Filtros de productos" class="catalog-filters">
+      <DirectoryFilter
+        {group}
+        directory="example-group"
+        plural="productos"
+        dropdown
+      />
+      <DirectoryFilter
+        group={{
+          key: 'status',
+          label: 'Estado',
+          options: [['active', 'Activo']],
+        }}
+        directory="example-group"
+        plural="productos"
+        dropdown
+      />
+    </FilterGroup>
+  </div>
+)}
+{name === 'ViewToggle' && (
+  <div class="catalog" data-gallery-view>
+    <ViewToggle value="grid" />
+  </div>
+)}
+{name === 'VerticalTag' && (
+  <div class="example-row">
+    <VerticalTag vertical="AI Foundations" />
+    <VerticalTag vertical="AI for Software" />
+    <VerticalTag vertical="AI for Science" />
+    <VerticalTag vertical="AI for Finance" />
+  </div>
+)}
+{name === 'ProductTags' && product && (
+  <div class="example-stack">
+    <ProductTags {product} kind="cover" />
+    <ProductTags {product} kind="scopes" />
+  </div>
+)}
+{name === 'MetadataPanel' && (
+  <MetadataPanel
+    title="Ficha"
+    icon={Info}
+    fields={[
+      ['Licencia', 'MIT'],
+      ['Modalidad', 'Código abierto'],
+    ]}
+  />
+)}
+
+<style>
+  .example-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .example-stack {
+    display: grid;
+    gap: 0.5rem;
+  }
+  .inline-field {
+    padding: 0.75rem;
+    border: var(--stroke-default) solid var(--line);
+  }
+  .example-stack > p[id$='-error'] {
+    color: var(--error);
+  }
+  .example-tooltip {
+    padding: 2rem 0 0.5rem;
+  }
+  .example-filter,
+  .example-dropdown {
+    min-block-size: 9rem;
+    justify-content: start;
+  }
+  .example-dialog-title {
+    font-size: var(--type-title);
+    margin-block-end: 0.5rem;
+  }
+  .example-dialog-title + p {
+    margin-block-end: 1rem;
+  }
+  :global(.skeleton-title) {
+    inline-size: 60%;
+  }
+  :global(.skeleton-body) {
+    min-block-size: 3rem;
+  }
+</style>

@@ -1,0 +1,12 @@
+/* Extra component families used by the internal catalog. Move a family to
+   styles/theme.css if it gains a production consumer. */
+@layer theme, base, components, utilities;
+@import 'tailwindcss/utilities.css' layer(utilities) source(none);
+@source '../components/ui';
+
+@plugin 'daisyui' {
+  themes: false;
+  prefix: 'ds-';
+  include: toggle, avatar, divider, alert, tooltip, skeleton, tab, collapse;
+  logs: false;
+}

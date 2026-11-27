@@ -1,0 +1,580 @@
+---
+import { ArrowRight, Info, Layers, Search } from '@lucide/astro';
+import Button from '../components/ui/Button.astro';
+import Input from '../components/ui/Input.astro';
+import Label from '../components/ui/Label.astro';
+import Select from '../components/ui/Select.astro';
+import Example from './Example.astro';
+import { components, selection } from './catalog';
+import tokens from '../styles/tokens.css?raw';
+import '../styles/global.css';
+import '../styles/directory.css';
+import '../styles/labs-detail.css';
+import './catalog-ui.css';
+import './gallery.css';
+
+// eslint-disable-next-line astro/no-prerender-export-outside-pages -- injected by Astro only in dev
+export const prerender = false;
+
+const query = Astro.url.searchParams;
+const theme = query.get('theme') === 'dark' ? 'dark' : 'light';
+const viewportWidths = ['auto', '320', '390', '768', '1024'];
+const requestedWidth = query.get('viewport') ?? 'auto';
+const viewport = viewportWidths.includes(requestedWidth)
+  ? requestedWidth
+  : 'auto';
+const groups = [
+  { title: 'General', links: ['Overview', 'Architecture', 'Usage Guidelines'] },
+  {
+    title: 'Foundations',
+    links: [
+      'Colors',
+      'Typography',
+      'Spacing',
+      'Radius',
+      'Borders',
+      'Elevation',
+      'Breakpoints',
+      'Motion',
+      'Iconography',
+    ],
+  },
+  {
+    title: 'Components',
+    links: Object.keys(components).filter(
+      (name) => !components[name].composite,
+    ),
+  },
+  {
+    title: 'Composites',
+    links: Object.keys(components).filter((name) => components[name].composite),
+  },
+];
+const slug = (value: string) => value.toLowerCase().replaceAll(' ', '-');
+const variables = [
+  ...new Set(
+    [...tokens.matchAll(/(--[\w-]+):\s*[^;]+;/g)].map(([, name]) => name),
+  ),
+];
+const foundations = [
+  {
+    title: 'Typography',
+    list: [
+      '--font-heading',
+      '--font-sans',
+      '--font-mono',
+      ...variables.filter((v) => v.startsWith('--type-')),
+    ],
+  },
+  {
+    title: 'Spacing',
+    list: variables.filter((v) =>
+      /^--(space-|field-gap|card-padding|button-padding)/.test(v),
+    ),
+  },
+  {
+    title: 'Radius',
+    list: variables.filter((v) => /^--(radius-|editorial-radius)/.test(v)),
+  },
+  {
+    title: 'Borders',
+    list: [
+      ...variables.filter((v) => v.startsWith('--stroke-')),
+      '--line',
+      '--input',
+      '--focus-ring',
+    ],
+  },
+  {
+    title: 'Elevation',
+    list: variables.filter((v) => /^--(shadow-|layer-)/.test(v)),
+  },
+  {
+    title: 'Breakpoints',
+    list: variables.filter((v) => v.startsWith('--breakpoint-')),
+  },
+  {
+    title: 'Motion',
+    list: variables.filter((v) =>
+      /^--(duration-|editorial-ease|editorial-entrance-ease|editorial-response)/.test(
+        v,
+      ),
+    ),
+  },
+  {
+    title: 'Iconography',
+    list: variables.filter((v) => v.startsWith('--icon-')),
+  },
+];
+const primitiveColors = variables.filter(
+  (token) =>
+    /^--(brand-|web-light-|editorial-)/.test(token) &&
+    new RegExp(`${token}:\\s*#`).test(tokens),
+);
+const semanticColors = [
+  '--background',
+  '--foreground',
+  '--surface',
+  '--surface-elevated',
+  '--surface-contrast',
+  '--primary',
+  '--primary-foreground',
+  '--secondary',
+  '--secondary-foreground',
+  '--accent',
+  '--accent-foreground',
+  '--neutral',
+  '--neutral-foreground',
+  '--muted',
+  '--muted-foreground',
+  '--line',
+  '--input',
+  '--focus-ring',
+  '--interaction-accent',
+  '--success',
+  '--success-foreground',
+  '--warning',
+  '--warning-foreground',
+  '--error',
+  '--error-foreground',
+  '--info',
+  '--info-foreground',
+];
+const contrast = [
+  ['--foreground', '--background'],
+  ['--primary-foreground', '--primary'],
+  ['--secondary-foreground', '--secondary'],
+  ['--accent-foreground', '--accent'],
+  ['--muted-foreground', '--muted'],
+  ['--error-foreground', '--error'],
+  ['--success-foreground', '--success'],
+  ['--warning-foreground', '--warning'],
+];
+const controlLabels: Record<string, string> = {
+  variant: 'Variante',
+  size: 'Tamaño',
+  state: 'Estado',
+  icon: 'Posición del icono',
+  symbol: 'Icono',
+  shape: 'Forma',
+  width: 'Ancho',
+  element: 'Elemento',
+  appearance: 'Aspecto',
+  indicator: 'Indicador',
+  surface: 'Superficie',
+  density: 'Densidad',
+  edge: 'Borde',
+  interaction: 'Interacción',
+  tone: 'Color semántico',
+};
+const propValue = ([key, val]: [string, unknown]) =>
+  val === true ? ` ${key}` : typeof val === 'string' ? ` ${key}="${val}"` : '';
+function snippet(
+  name: string,
+  values: Record<string, string>,
+  fallback: string,
+) {
+  const icon = values.symbol === 'plus' ? 'Plus' : 'ArrowRight';
+  if (name === 'Button') {
+    const attrs = Object.entries({
+      variant: values.variant,
+      size: values.size,
+      shape: values.shape !== 'default' && values.shape,
+      fullWidth: values.width === 'full',
+      href: values.element === 'link' && '#overview',
+      disabled: values.state === 'disabled',
+      loading: values.state === 'loading',
+      iconOnly: values.icon === 'only',
+      'aria-label': values.icon === 'only' && 'Continuar',
+    })
+      .map(propValue)
+      .join('');
+    const svg = (slot?: string) =>
+      `<${icon}${slot ? ` slot="${slot}"` : ''} aria-hidden="true" />`;
+    if (values.icon === 'only')
+      return `<Button${attrs}>\n  ${svg()}\n</Button>`;
+    const content = [
+      values.icon === 'leading' && svg('leading'),
+      'Continuar',
+      values.icon === 'trailing' && svg('trailing'),
+    ].filter(Boolean);
+    return `<Button${attrs}>\n  ${content.join('\n  ')}\n</Button>`;
+  }
+  const { appearance, density, state, ...other } = values;
+  if (['Input', 'Textarea', 'Select'].includes(name)) {
+    const invalid = state === 'invalid';
+    const attrs = Object.entries({
+      appearance,
+      density,
+      disabled: state === 'disabled',
+      'aria-invalid': invalid && 'true',
+      'aria-describedby': invalid && 'tema-error',
+    })
+      .map(propValue)
+      .join('');
+    const tag = `<${name} id="tema" name="topic"${attrs}`;
+    const control =
+      name === 'Select'
+        ? `${tag}>\n  <option>Formación</option>\n  <option>Investigación</option>\n</Select>`
+        : `${tag}${name === 'Textarea' ? ' rows={3}' : ''} />`;
+    const message = invalid
+      ? '\n<p id="tema-error">Selecciona o ingresa un tema válido.</p>'
+      : '';
+    return `<Label for="tema">Tema de interés</Label>\n${control}${message}`;
+  }
+  if (name === 'Card')
+    return `<Card${Object.entries(values).map(propValue).join('')}>\n  <h3>Estado del proyecto</h3>${values.interaction !== 'static' ? '\n  <a href="#usage-guidelines" data-card-link>Ver detalles</a>' : ''}\n</Card>`;
+  if (name === 'Badge')
+    return `<Badge${Object.entries({
+      variant: other.variant,
+      size: other.size,
+      appearance,
+      indicator: other.indicator === 'on',
+    })
+      .map(propValue)
+      .join(
+        '',
+      )}>\n  ${values.icon === 'leading' ? '<Info slot="icon" size={14} aria-hidden="true" />\n  ' : ''}Disponible\n</Badge>`;
+  if (name === 'Alert')
+    return `<Alert tone="${values.tone}" appearance="${appearance}">Revisa el estado del proyecto.</Alert>`;
+  return fallback;
+}
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Design System · AI PlayGrounds</title>
+  </head>
+  <body class="design-gallery">
+    <a class="skip-link" href="#overview">
+      Saltar a la documentación
+    </a>
+    <div class="gallery-shell">
+      <aside class="gallery-sidebar">
+        <a class="gallery-brand" href="/design-system/">
+          <Layers size={21} aria-hidden="true" />
+          <span>
+            AI PlayGrounds <small>Design System</small>
+          </span>
+        </a>
+        <Label for="gallery-search">Buscar componentes</Label>
+        <div class="gallery-search">
+          <Search size={16} aria-hidden="true" />
+          <Input
+            id="gallery-search"
+            type="search"
+            placeholder="p. ej., Badge"
+            density="compact"
+            autocomplete="off"
+          />
+        </div>
+        <nav aria-label="Índice del Design System">
+          {groups.map(({ title, links }) => (
+            <div class="gallery-nav-group">
+              <h2>{title}</h2>
+              <ul>
+                {links.map((label) => (
+                  <li
+                    data-nav-component={components[label] ? label : undefined}
+                  >
+                    <a href={`#${slug(label)}`}>{label}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </nav>
+        <a class="gallery-back" href="/">
+          Ver el sitio <ArrowRight size={16} aria-hidden="true" />
+        </a>
+      </aside>
+
+      <main class="gallery-content">
+        <section
+          id="overview"
+          aria-labelledby="overview-title"
+          class="gallery-overview"
+        >
+          <h1 id="overview-title">Design System</h1>
+          <p>
+            Tokens, componentes Astro y patrones de AI PlayGrounds, con ejemplos
+            que usan el mismo código que el sitio.
+          </p>
+        </section>
+        <div class="preview-toolbar">
+          <div>
+            <Label for="preview-theme">Tema del preview</Label>
+            <Select id="preview-theme" density="compact">
+              <option value="light" selected={theme === 'light'}>
+                Claro
+              </option>
+              <option value="dark" selected={theme === 'dark'}>
+                Oscuro
+              </option>
+            </Select>
+          </div>
+          <div>
+            <Label for="preview-width">Ancho del preview</Label>
+            <Select id="preview-width" density="compact">
+              {viewportWidths.map((width) => (
+                <option value={width} selected={viewport === width}>
+                  {width === 'auto' ? 'Disponible' : `${width} px`}
+                </option>
+              ))}
+            </Select>
+          </div>
+          <p>
+            El ancho ajusta el contenedor. Para media queries, cambia también el
+            viewport del navegador.
+          </p>
+        </div>
+        <p id="catalog-status" role="status"></p>
+
+        <section id="architecture" class="gallery-chapter">
+          <h2>Architecture</h2>
+          <ol>
+            <li>
+              <code>src/styles/tokens.css</code> define valores primitivos,
+              semánticos y medidas de componentes.
+            </li>
+            <li>
+              <code>src/styles/theme.css</code> asigna los roles de color, radio
+              y borde que consume daisyUI.
+            </li>
+            <li>
+              <code>src/components/ui/</code> ofrece los átomos Astro; los
+              compuestos y el dominio conservan su propio layout.
+            </li>
+          </ol>
+        </section>
+        <section id="usage-guidelines" class="gallery-chapter">
+          <h2>Usage Guidelines</h2>
+          <p>
+            Importa el componente Astro del proyecto. Combina sus variantes con
+            utilidades de layout. Para una variante nueva, actualiza el átomo y
+            este catálogo juntos.
+          </p>
+          <p>
+            Prueba <kbd>Tab</kbd>, <kbd>Enter</kbd> y movimiento reducido. Los
+            estados hover y focus de los ejemplos responden a la interacción
+            real.
+          </p>
+        </section>
+
+        <section id="foundations" class="gallery-chapter">
+          <h2>Foundations</h2>
+          <section id="colors">
+            <h3>Colors</h3>
+            <div class="token-context" data-theme={theme} data-gallery-theme>
+              {[
+                ['Primitivos', primitiveColors],
+                ['Semánticos', semanticColors],
+              ].map(([title, names]) => (
+                <>
+                  <h4>{title}</h4>
+                  <ul class="swatches">
+                    {(names as string[]).map((name) => (
+                      <li>
+                        <span style={`background-color:var(${name})`}></span>
+                        <code>{name}</code>
+                        <output data-token={name}></output>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ))}
+              <h4>Contraste de texto</h4>
+              <ul class="contrast-list">
+                {contrast.map(([ink, paper]) => (
+                  <li style={`color:var(${ink});background:var(${paper})`}>
+                    <span>
+                      {ink.slice(2)} / {paper.slice(2)}
+                    </span>
+                    <output data-contrast={`${ink} ${paper}`}></output>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+          {foundations.map(({ title, list }) => (
+            <section id={slug(title)}>
+              <h3>{title}</h3>
+              <ul class="foundation-list">
+                {list.map((name) => (
+                  <li>
+                    {name.startsWith('--type-') && (
+                      <span
+                        class="type-sample"
+                        style={`font-size:var(${name})`}
+                      >
+                        Aa
+                      </span>
+                    )}
+                    {title === 'Spacing' && (
+                      <span
+                        class="measure-sample"
+                        style={`width:var(${name})`}
+                      ></span>
+                    )}
+                    {title === 'Radius' && (
+                      <span
+                        class="box-sample"
+                        style={`border-radius:var(${name})`}
+                      ></span>
+                    )}
+                    {name.startsWith('--stroke-') && (
+                      <span
+                        class="box-sample"
+                        style={`border-width:var(${name})`}
+                      ></span>
+                    )}
+                    {name.startsWith('--shadow-') && (
+                      <span
+                        class="box-sample"
+                        style={`box-shadow:var(${name})`}
+                      ></span>
+                    )}
+                    {title === 'Motion' && (
+                      <span
+                        class="motion-sample"
+                        aria-hidden="true"
+                        style={
+                          name.includes('ease')
+                            ? `--sample-ease:var(${name})`
+                            : `--sample-duration:var(${name})`
+                        }
+                      ></span>
+                    )}
+                    {title === 'Iconography' && (
+                      <Info
+                        aria-hidden="true"
+                        style={`width:var(${name});height:var(${name})`}
+                      />
+                    )}
+                    <code>{name}</code>
+                    <output data-token={name}></output>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </section>
+
+        {[false, true].map((composite) => (
+          <section
+            id={composite ? 'composites' : 'components'}
+            class="gallery-chapter"
+          >
+            <h2>{composite ? 'Composites' : 'Components'}</h2>
+            {Object.entries(components)
+              .filter(([, entry]) => Boolean(entry.composite) === composite)
+              .map(([name, entry]) => {
+                const id = slug(name);
+                const values = selection(
+                  entry,
+                  query.get('component') === name
+                    ? query
+                    : new URLSearchParams(),
+                );
+                return (
+                  <article
+                    class="component-entry"
+                    id={id}
+                    data-gallery-component={name}
+                  >
+                    <h3>{name}</h3>
+                    <p>{entry.description}</p>
+                    {entry.controls && (
+                      <form
+                        class="play-controls"
+                        method="get"
+                        action={`/design-system/#${id}`}
+                      >
+                        <input type="hidden" name="component" value={name} />
+                        <input type="hidden" name="theme" value={theme} />
+                        <input type="hidden" name="viewport" value={viewport} />
+                        {Object.entries(entry.controls).map(
+                          ([key, options]) => (
+                            <div>
+                              <Label for={`${id}-${key}`}>
+                                {controlLabels[key]}
+                              </Label>
+                              <Select
+                                id={`${id}-${key}`}
+                                name={key}
+                                density="compact"
+                              >
+                                {options.map((value) => (
+                                  <option
+                                    {value}
+                                    selected={value === values[key]}
+                                  >
+                                    {value}
+                                  </option>
+                                ))}
+                              </Select>
+                            </div>
+                          ),
+                        )}
+                        <Button type="submit" size="sm" variant="outline">
+                          Actualizar ejemplo
+                        </Button>
+                      </form>
+                    )}
+                    <div
+                      class="preview-frame"
+                      data-gallery-theme
+                      data-gallery-frame
+                      data-theme={theme}
+                      style={
+                        viewport === 'auto'
+                          ? undefined
+                          : `--preview-width:${viewport}px`
+                      }
+                    >
+                      <Example {name} {values} />
+                    </div>
+                    <div class="example-code">
+                      <pre tabindex="0"><code id={`${id}-code`}>{snippet(name, values, entry.example)}</code></pre>
+                      <div class="copy-row">
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          data-copy={`${id}-code`}
+                          aria-label={`Copiar código de ${name}`}
+                        >
+                          Copiar código
+                        </Button>
+                        <span role="status"></span>
+                      </div>
+                    </div>
+                    <dl class="entry-notes">
+                      <div>
+                        <dt>Propiedades</dt>
+                        <dd>{entry.props}</dd>
+                      </div>
+                      <div>
+                        <dt>Accesibilidad</dt>
+                        <dd>{entry.accessibility}</dd>
+                      </div>
+                      <div>
+                        <dt>Uso y responsive</dt>
+                        <dd>{entry.usage}</dd>
+                      </div>
+                    </dl>
+                  </article>
+                );
+              })}
+          </section>
+        ))}
+      </main>
+    </div>
+  </body>
+</html>
+
+<script>
+  import './gallery';
+</script>
