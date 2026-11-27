@@ -107,6 +107,14 @@ Negro y blanco sostienen las acciones principales. Halo, Menta y Lima conservan 
 
 ## Layout
 
+`src/styles/tokens.css` define los valores de referencia; `global.css` y
+`theme.css` los exponen a Tailwind y daisyUI. La escala de Tailwind deriva de
+`--space-unit`, los colores de utilidades se resuelven en el tema efectivo y
+`BaseLayout` activa la superficie editorial compartida. Usa `--measure-reading`
+para lectura general y `--measure-intro` o `--measure-prose` cuando esa sea la
+función del bloque. Los ejemplos del catálogo muestran los valores calculados,
+los contratos tipados de los controles y sus importadores directos e indirectos.
+
 El contenedor compartido llega a **80 rem** con márgenes laterales fluidos. Inicio alterna apertura ilustrada, bloques editoriales, módulos y evidencia. Las interiores combinan una apertura textual, contenido de lectura y rejillas cuando hay unidades comparables. La clase global de medida de lectura limita a **65 ch**; las interiores usan medidas propias según el bloque.
 
 Las rejillas y las secciones partidas de interiores se vuelven una columna a **48 rem**; la navegación global cambia a menú compacto a **67 rem**. Inicio tiene umbrales locales para sus módulos. Son comportamientos observados y no una nueva escala universal.
@@ -146,6 +154,6 @@ El historial funciona como índice editorial: fecha lateral, separadores finos, 
 - **Do** mantener una jerarquía legible también donde no haya ilustración.
 - **Do** usar el token semántico correspondiente y comprobar su contraste bajo la superficie efectiva.
 - **Do** conservar el foco visible y respetar la preferencia de movimiento reducido, como prevén los estilos compartidos.
-- **Do** actualizar la galería al cambiar una variante. Consulta [AGENTS.md](AGENTS.md) y el [registro de migración](docs/implementation/design-system-migration.md).
+- **Do** actualizar la galería al cambiar una variante. Consulta [AGENTS.md](AGENTS.md), la [consolidación del sistema](docs/implementation/design-system-consolidation.md) y el [registro de migración](docs/implementation/design-system-migration.md).
 - **Don't** extender los paisajes de Inicio a todo el catálogo por defecto ni confundir una ilustración con el logotipo.
 - **Don't** convertir ejemplos, capturas históricas o variantes de exploración en reglas del sistema.
