@@ -98,14 +98,14 @@ const { entry, eager } = Astro.props;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.4rem;
-    font-size: 0.82rem;
+    gap: var(--space-related);
+    font-size: var(--type-label);
   }
   .research-tags :is(.research-status, .research-demo) {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
-    padding: 0.15rem 0.5rem;
+    gap: var(--space-inline);
+    padding: 0.15rem var(--space-related);
     border-radius: var(--editorial-radius);
     color: var(--editorial-lilac-ink);
     border: var(--stroke-default) solid var(--line);
@@ -131,13 +131,13 @@ const { entry, eager } = Astro.props;
     flex-wrap: wrap;
     align-items: end;
     justify-content: space-between;
-    gap: 0.15rem 1.25rem;
+    gap: 0.15rem var(--space-card);
     margin-block-start: 0.25rem;
   }
   .research-card-footer a {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--space-related);
     min-block-size: 44px;
     color: var(--foreground);
     font-weight: var(--weight-medium);

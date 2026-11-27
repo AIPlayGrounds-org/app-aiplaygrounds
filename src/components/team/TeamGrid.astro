@@ -21,13 +21,12 @@ if (group === 'vertical') {
 }
 ---
 
-<div class:list={['team-grid', layout]}>
-  {members.map(({ member, role }, position) => (
+<div class:list={['team-grid', layout]} data-reveal-group>
+  {members.map(({ member, role }) => (
     <TeamCard
       {member}
       {role}
       {layout}
-      {position}
       heading={group === 'vertical' ? 'h4' : 'h3'}
     />
   ))}

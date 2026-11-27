@@ -6,8 +6,8 @@ Anime.js **4.5.0** se fija en el lock para movimiento avanzado. La skill `anime.
 
 | Superficie anterior | Decisión |
 | --- | --- |
-| `EditorialMotion`: observador único, `data-entering`, cuatro keyframes CSS | `observeReveals()` + `waapi.animate()`. Los atributos y el umbral de 112 px se mantienen. Observación de una sola entrada al viewport, sin listeners continuos de scroll; el foco finaliza la animación. |
-| `ImmersiveHero`: `hero-arrive`, `sky-settle` | `immersiveEntrance()`: WAAPI y `createScope()`. Conserva opacidad, desplazamiento, orden, curva, duración y escala. |
+| `EditorialMotion`: observador único, `data-entering`, cuatro keyframes CSS | `observeReveals()` + `waapi.animate()`. Se conserva el contrato de atributos; se observa el viewport real y se excluye el contenido visible de partida. Observación de una sola entrada al viewport, sin listeners continuos de scroll; el foco finaliza la animación. |
+| `ImmersiveHero`: `hero-arrive`, `sky-settle` | `immersiveEntrance()`: WAAPI y `createScope()`. La entrada actual utiliza opacidad parcial para el texto secundario y reserva el desplazamiento aparente a la escala del paisaje en Formación. |
 | `CompactHeroArt`: `land-rise`, `line-draw`, `appear`; `CompactHero` reiniciaba `getAnimations()` en bfcache | `compactEntrance()`: seis grupos escalonados dentro de un scope. Los paths ya tienen `pathLength="1"`; WAAPI interpola el trazo sin leer la geometría. `pageshow.persisted` revierte y vuelve a ejecutar una sola vez. |
 | `InitiativeCard`, `InformationalCard`: `draw-illustration` y `draw-motif` duplicaban el dibujo | `drawIllustration()`: un preset SVG modular y cargado bajo demanda. Mantiene stagger por posición, disparadores de puntero y foco según tipo de tarjeta. |
 | `ImmersiveCard`, `ClosingCTA`, `CollaborationCard`, `TeamCard`, `ProductCover`, `ProductCard`, `ResearchCard`, `TextLink`, portada de Inicio y `card-interactions.css` | Mantienen CSS para cambios de borde, color, flechas y escala simple. Las tarjetas y eventos con `data-reveal` reutilizan el preset editorial. |
@@ -28,19 +28,19 @@ No había bucles de `requestAnimationFrame` propios ni animación pública ligad
 | Propósito | Variables y valores |
 | --- | --- |
 | Instantáneo, rápido, normal y lento | `--duration-instant` 0 ms (omitir); `--editorial-response` 140 ms (icono); `--duration-control` 150 ms (control); `--duration-card` 200 ms (borde/superficie); `--duration-points` 500 ms y `--duration-layer` 650 ms (capas). |
-| Entradas | `--duration-entrance` 760 ms (editorial); `--duration-hero` 720 ms (texto); `--duration-land` 1150 ms (terreno); `--duration-contours` 1250 ms (contornos); `--duration-marks` 720 ms (rutas). |
-| Inmersiva y dibujo | `--duration-immersive` 2800 ms (cielo); `--duration-draw` 1000 ms (trazo de tarjeta). |
+| Entradas | `--duration-entrance` 540 ms (editorial); `--duration-hero` 500 ms (texto); `--duration-land` 900 ms (terreno); `--duration-contours` 950 ms (contornos); `--duration-marks` 720 ms (rutas). |
+| Inmersiva y dibujo | `--duration-immersive` 1800 ms (cielo); `--duration-draw` 1000 ms (trazo de tarjeta). |
 | Curvas | `--editorial-ease-out` `cubic-bezier(0.16, 1, 0.3, 1)` para asentamiento y feedback; `--editorial-entrance-ease` `cubic-bezier(0.23, 0.65, 0.25, 1)` para entrada; `--motion-ease-standard` `ease-out` para capas y rutas; `--motion-ease-draw` `linear` para trazos en hover. |
-| Delay | `--editorial-delay` según composición (0 ms en ausencia de valor); `--motion-delay-hero-copy` 170 ms, `--motion-delay-hero-actions` 320 ms; `--motion-delay-contours` 350 ms, `--motion-delay-marks` 1000 ms, `--motion-delay-grid` 1050 ms, `--motion-delay-points` 1380 ms y `--motion-delay-dots` 1450 ms. |
+| Delay | `--editorial-delay` según composición (0 ms en ausencia de valor); `--motion-delay-hero-copy` 0 ms, `--motion-delay-hero-actions` 75 ms; `--motion-delay-contours` 350 ms, `--motion-delay-marks` 1000 ms, `--motion-delay-grid` 1050 ms, `--motion-delay-points` 1380 ms y `--motion-delay-dots` 1450 ms. |
 | Stagger | `--motion-stagger-land` 160 ms, `--motion-stagger-contours` 55 ms, `--motion-stagger-marks` 85 ms, `--motion-stagger-points` 75 ms, `--motion-stagger-dots` 45 ms y `--motion-stagger-draw` 120 ms. |
-| Distancia | `--motion-distance-rise` 34 px, `--motion-distance-card` 40 px, `--motion-distance-ink` 16 px, `--motion-distance-hero` 23 px y `--motion-distance-land` 26 px. |
-| Intensidad/escala | `--motion-scale-card` 0,972; `--motion-scale-sky` 1,018; `--motion-scale-land` 0,86. |
-| Opacidad inicial | `--motion-opacity-rise` 0,16; `--motion-opacity-card` 0,12; `--motion-opacity-ink` 0,14; `--motion-opacity-fade` 0,18. |
+| Distancia | `--motion-distance-rise` 18 px, `--motion-distance-card` 20 px, `--motion-distance-ink` 8 px y `--motion-distance-land` 18 px. |
+| Intensidad/escala | `--motion-scale-card` 0,99; `--motion-scale-sky` 1,018; `--motion-scale-land` 0,86. |
+| Opacidad inicial | `--motion-opacity-rise` 0,6; `--motion-opacity-card` 0,55; `--motion-opacity-ink` 0,75; `--motion-opacity-fade` 0,76; `--motion-opacity-hero` 0,8. |
 | Física experimental | `--motion-spring-stiffness` 120 y `--motion-spring-damping` 15 para spring y salida del arrastre. |
 
 ## Añadir o actualizar movimiento
 
-Los controles usan `--duration-feedback` para cambios discretos, `--duration-disclosure` para desplegar regiones, `--duration-sheet` para paneles y `--motion-ease-disclosure` para su interpolación. `--duration-reduced` deja completar los eventos de transición de los controles nativos sin movimiento perceptible. Las imágenes de tarjetas comparten `--duration-media`, `--duration-media-immersive`, `--motion-media-zoom` y `--motion-media-zoom-subtle`; las flechas leen `--motion-arrow-x` y `--motion-arrow-y`. Los respiros editoriales usan `--motion-stagger-editorial-short`, `--motion-stagger-editorial`, `--motion-delay-editorial-early`, `--motion-delay-editorial-sibling`, `--motion-delay-editorial-pair`, `--motion-delay-editorial-third`, `--motion-delay-editorial-grid` y `--motion-delay-editorial-last`.
+Los controles usan `--duration-feedback` para cambios discretos, `--duration-disclosure` para desplegar regiones, `--duration-sheet` para paneles y `--motion-ease-disclosure` para su interpolación. Las imágenes de tarjetas comparten `--duration-media`, `--duration-media-immersive`, `--motion-media-zoom` y `--motion-media-zoom-subtle`; las flechas leen `--motion-arrow-x` y `--motion-arrow-y`. Los respiros editoriales usan `--motion-stagger-editorial`, `--motion-delay-editorial-early`, `--motion-delay-editorial-sibling` y `--motion-delay-editorial-pair`. Los grupos usan `--motion-stagger-group` (55 ms) con un tope `--motion-delay-group-max` (140 ms); los modos de lectura usan `--duration-reading` (360 ms).
 
 El H1 de los héroes inmersivos permanece estable y visible desde el primer render. El texto secundario, acciones y paisaje conservan la secuencia existente. Los desplegables y filtros siguen actuando inmediatamente mediante el DOM nativo; sus transiciones solo acompañan la operación.
 

@@ -171,6 +171,18 @@ if (
       translate: none;
       scale: none;
     }
+    .ui-button:is(
+        [data-variant='primary'],
+        [data-variant='outline'],
+        [data-variant='secondary']
+      ):active:not(:disabled, .ds-btn-disabled) {
+      background-color: color-mix(
+        in oklab,
+        var(--primary) 16%,
+        var(--secondary)
+      );
+      color: var(--foreground);
+    }
     @media (hover: hover) {
       .ui-button[data-variant='primary']:hover:not(
           :disabled,

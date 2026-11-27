@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import headingFont from '../assets/fonts/space-grotesk-latin.woff2?url';
+import bodyFont from '../assets/fonts/inter-tight-latin.woff2?url';
 
 interface Props {
   title: string;
@@ -16,6 +18,20 @@ const { title, description, bodyClass, editorial } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="preload"
+      href={headingFont}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href={bodyFont}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>

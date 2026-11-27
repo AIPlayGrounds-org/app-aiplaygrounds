@@ -89,7 +89,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
         </search>
       )}
     </div>
-    <div class="filter-feedback" data-feedback hidden>
+    <div class="filter-feedback" data-feedback data-feedback-arrive hidden>
       <p class="note" data-no-results hidden>
         No encontramos encuentros que coincidan con tu búsqueda.
       </p>
@@ -266,7 +266,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
   form {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.55rem;
+    gap: var(--space-related);
   }
   form :global(:is(input, select)) {
     background: var(--home-surface);
@@ -275,7 +275,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
     min-height: 2.75rem;
     width: 100%;
     font: inherit;
-    padding-inline: 0.75rem;
+    padding-inline: var(--space-control);
     transition: border-color var(--duration-feedback) var(--editorial-ease-out);
   }
   .filter-field {
@@ -332,7 +332,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
     }
     .filter-field select::picker(select) {
       margin-block: 0.35rem;
-      padding: 0.25rem;
+      padding: var(--space-inline);
       font: inherit;
       color: var(--foreground);
       background: var(--home-surface);
@@ -343,7 +343,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
     .filter-field option {
       align-items: center;
       min-block-size: 2.5rem;
-      padding: 0.45rem 0.65rem;
+      padding: var(--space-related) var(--space-control);
       border-radius: var(--radius-small);
     }
     .filter-field option:checked {

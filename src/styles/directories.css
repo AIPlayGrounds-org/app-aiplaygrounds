@@ -10,7 +10,7 @@
 
 .directory-demo {
   display: inline-block;
-  padding: 0.1rem 0.5rem;
+  padding: 0.1rem var(--space-related);
   border: var(--stroke-default) solid var(--line);
   border-radius: var(--radius-small);
   background: var(--home-card);

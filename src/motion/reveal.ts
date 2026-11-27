@@ -1,5 +1,5 @@
 import { waapi } from 'animejs/waapi';
-import { allowMotion, motionLifetime } from './preferences';
+import { allowMotion, motionLifetime, motionQuery } from './preferences';
 import { motionTokens } from './tokens';
 
 export const revealPresets = ['rise', 'card', 'ink', 'fade'] as const;
@@ -11,6 +11,7 @@ type RevealOptions = {
   distance?: number;
   scale?: number;
   opacity?: number;
+  intensity?: number;
   autoplay?: boolean;
   loop?: boolean;
   persist?: boolean;
@@ -25,21 +26,42 @@ export function reveal(
   options: RevealOptions = {},
 ) {
   const tokens = motionTokens(target);
-  const { distance, opacity, scale, axis = 'y', ...playback } = options;
-  const offset = `${distance ?? tokens.number(`--motion-distance-${preset}`)}px`;
+  const {
+    distance,
+    opacity,
+    scale,
+    intensity = 1,
+    axis = 'y',
+    ...playback
+  } = options;
+  const offset = `${(distance ?? tokens.number(`--motion-distance-${preset}`)) * intensity}px`;
+  const initialOpacity = opacity ?? tokens.number(`--motion-opacity-${preset}`);
+  const initialScale = scale ?? tokens.number('--motion-scale-card');
+  const duration =
+    preset === 'ink' || preset === 'fade'
+      ? '--duration-reading'
+      : '--duration-entrance';
   return waapi.animate(target, {
-    opacity: [opacity ?? tokens.number(`--motion-opacity-${preset}`), 1],
+    opacity: [1 - (1 - initialOpacity) * intensity, 1],
     ...(preset !== 'fade' && {
       translate: [axis === 'x' ? `${offset} 0` : `0 ${offset}`, '0 0px'],
     }),
     ...(preset === 'card' && {
-      scale: [scale ?? tokens.number('--motion-scale-card'), 1],
+      scale: [1 - (1 - initialScale) * intensity, 1],
     }),
-    duration: tokens.ms('--duration-entrance'),
-    ease: tokens.value('--editorial-entrance-ease'),
+    duration: tokens.ms(duration),
+    ease: tokens.value('--editorial-ease-out'),
     delay: tokens.ms('--editorial-delay'),
     ...playback,
   });
+}
+
+export function groupDelay(target: Element, position: number) {
+  const tokens = motionTokens(target);
+  return Math.min(
+    position * tokens.ms('--motion-stagger-group'),
+    tokens.ms('--motion-delay-group-max'),
+  );
 }
 
 export function observeReveals(
@@ -58,43 +80,78 @@ export function observeReveals(
   const { signal } = lifetime;
   const observer = new IntersectionObserver(
     (entries) => {
-      for (const { target, isIntersecting } of entries) {
-        if (
-          !isIntersecting ||
-          !(target instanceof HTMLElement) ||
-          !pending.has(target)
-        )
+      const batchPositions = new Map<Element, number>();
+      for (const {
+        target,
+        isIntersecting,
+        boundingClientRect,
+        rootBounds,
+      } of entries) {
+        if (!isIntersecting) {
+          active.get(target)?.();
           continue;
+        }
+        if (!(target instanceof HTMLElement) || !pending.has(target)) continue;
         if (!allowMotion()) continue;
         pending.delete(target);
-        observer.unobserve(target);
-        if (target.matches(':focus-within')) continue;
+        // The initial viewport and fast jumps remain readable without a late entrance.
+        if (
+          target.matches(':focus-within') ||
+          (rootBounds && boundingClientRect.top < rootBounds.top)
+        ) {
+          observer.unobserve(target);
+          continue;
+        }
         const value = target.getAttribute('data-reveal');
         const preset = revealPresets.find((name) => name === value);
         const stop = () => {
           animation.revert();
           target.removeAttribute('data-entering');
           active.delete(target);
+          observer.unobserve(target);
           target.removeEventListener('focusin', stop);
         };
-        const animation = reveal(target, preset, { onComplete: stop });
+        const group = target.closest('[data-reveal-group]');
+        const position = group ? (batchPositions.get(group) ?? 0) : 0;
+        if (group) batchPositions.set(group, position + 1);
+        const animation = reveal(target, preset, {
+          ...(group && { delay: groupDelay(target, position) }),
+          onComplete: stop,
+        });
         active.set(target, stop);
         target.setAttribute('data-entering', '');
         target.addEventListener('focusin', stop, { once: true, signal });
       }
-      if (!pending.size) observer.disconnect();
     },
-    { root: viewport, rootMargin: viewport ? '0px' : '0px 0px -112px' },
+    { root: viewport },
   );
-  const observePending = () => {
-    if (allowMotion()) for (const target of pending) observer.observe(target);
+  const observePending = (skipVisible = false) => {
+    if (!allowMotion()) return;
+    for (const target of pending) {
+      if (
+        skipVisible &&
+        target.getBoundingClientRect().top < window.innerHeight &&
+        target.getClientRects().length
+      ) {
+        pending.delete(target);
+      } else observer.observe(target);
+    }
   };
-  observePending();
-  document.addEventListener('visibilitychange', observePending, { signal });
+  observePending(!viewport);
+  matchMedia(motionQuery).addEventListener(
+    'change',
+    ({ matches }) => {
+      if (matches) observePending(true);
+    },
+    { signal },
+  );
+  document.addEventListener('visibilitychange', () => observePending(true), {
+    signal,
+  });
   window.addEventListener(
     'pageshow',
     ({ persisted }) => {
-      if (persisted) observePending();
+      if (persisted) observePending(true);
     },
     { signal },
   );

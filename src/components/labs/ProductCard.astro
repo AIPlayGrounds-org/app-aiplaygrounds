@@ -67,8 +67,8 @@ const { product, eager } = Astro.props;
     flex-direction: column;
     align-items: start;
     min-inline-size: 0;
-    gap: 0.55rem;
-    padding: 1.15rem 1.15rem 1rem;
+    gap: var(--space-related);
+    padding: 1.15rem 1.15rem var(--space-stack);
   }
   .card-body > :global(.product-tags) {
     margin-block: 0.1rem;
@@ -81,7 +81,7 @@ const { product, eager } = Astro.props;
   }
   .card-category,
   .card-demo {
-    font-size: 0.82rem;
+    font-size: var(--type-label);
   }
   .card-demo {
     display: block;
@@ -100,7 +100,7 @@ const { product, eager } = Astro.props;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 0.5rem;
+    gap: var(--space-related);
     inline-size: 100%;
     margin-block-start: auto;
     font-size: var(--type-label);
@@ -113,7 +113,7 @@ const { product, eager } = Astro.props;
   footer a {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
+    gap: var(--space-inline);
     min-block-size: 44px;
     font-weight: var(--weight-medium);
     color: var(--foreground);

@@ -167,7 +167,7 @@ const excerpt =
   }
   .event-details {
     display: grid;
-    gap: 0.35rem;
+    gap: var(--space-inline);
     margin-block-start: 0.55rem;
     color: var(--secondary-text);
     line-height: var(--leading-compact);
@@ -175,7 +175,7 @@ const excerpt =
   .event-details p {
     display: flex;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: var(--space-related);
   }
   .event-details svg {
     flex: none;
@@ -197,7 +197,7 @@ const excerpt =
     grid-template-columns: var(--date-size) minmax(0, 1fr) max-content;
     column-gap: clamp(0.8rem, 2.8vw, 2.2rem);
     align-items: center;
-    padding-block: 0.9rem;
+    padding-block: var(--space-stack);
     --date-size: clamp(3.3rem, 9vw, 6.4rem);
     --thumb-size: clamp(3.6rem, 8vw, 5.75rem);
   }
@@ -232,7 +232,7 @@ const excerpt =
   .date-stamp {
     display: grid;
     justify-items: center;
-    padding-block: 0.35rem;
+    padding-block: var(--space-inline);
     border-inline-end: var(--stroke-default) solid var(--line);
     font-family: var(--font-heading);
     font-variant-numeric: tabular-nums;

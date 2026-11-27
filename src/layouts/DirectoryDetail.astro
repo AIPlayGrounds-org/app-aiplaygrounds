@@ -98,11 +98,11 @@ const { title, description, directory, metadata, demo, source } = Astro.props;
     gap: var(--space-control);
   }
   .detail-context dt {
-    font-size: 0.875rem;
+    font-size: var(--type-label);
     color: var(--secondary-text);
   }
   .detail-context dd {
-    font-weight: 500;
+    font-weight: var(--weight-medium);
   }
   @media (max-width: 42rem) {
     .detail-grid {

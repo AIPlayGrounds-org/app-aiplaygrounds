@@ -272,7 +272,7 @@ const hasFilters = primary.length + secondary.length > 0;
         >
           <slot />
         </ul>
-        <div class="labs-empty" data-no-results hidden>
+        <div class="labs-empty" data-no-results data-feedback-arrive hidden>
           <h3>No encontramos {plural}</h3>
           <p>Prueba con otra búsqueda o quita algunos filtros.</p>
           <Button variant="plain" type="button" class="reset-button" data-reset>

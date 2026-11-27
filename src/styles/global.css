@@ -144,7 +144,7 @@ a:not([data-slot='button']):hover {
   z-index: var(--layer-skip);
   inset-block-start: 0.75rem;
   inset-inline-start: 1rem;
-  padding: 0.75rem 1rem;
+  padding: var(--space-control) var(--space-stack);
   background: var(--primary);
   color: var(--primary-foreground);
   transform: translateY(-200%);
@@ -153,13 +153,8 @@ a:not([data-slot='button']):hover {
   transform: none;
 }
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  html {
     scroll-behavior: auto !important;
-    transition-duration: var(--duration-reduced) !important;
-    animation-duration: var(--duration-reduced) !important;
-    animation-iteration-count: 1 !important;
   }
 }
 @media (forced-colors: active) {

@@ -73,7 +73,7 @@ const { title, description, layout = 'stacked', tone = 'warm' } = Astro.props;
     font-size: clamp(1.2rem, 1.12rem + 0.35vw, 1.45rem);
   }
   p {
-    margin-top: 0.4rem;
+    margin-top: var(--space-related);
     max-width: 42ch;
     color: var(--secondary-text);
   }

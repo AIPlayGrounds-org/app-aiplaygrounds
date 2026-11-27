@@ -14,7 +14,7 @@ main#contenido:has(> .labs-detail) {
 .product-intro {
   display: grid;
   justify-items: start;
-  gap: 0.7rem;
+  gap: var(--space-control);
   padding-block: 0 1.75rem;
   border-block-end: var(--stroke-default) solid var(--line);
 }
@@ -34,7 +34,7 @@ main#contenido:has(> .labs-detail) {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 0.15rem 1rem;
+  gap: 0.15rem var(--space-stack);
   inline-size: 100%;
   margin-block-start: 0.15rem;
   color: var(--secondary-text);
@@ -42,7 +42,7 @@ main#contenido:has(> .labs-detail) {
 }
 .product-byline small {
   margin-inline-start: 0.7rem;
-  padding: 0.15rem 0.5rem;
+  padding: 0.15rem var(--space-related);
   border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
   color: var(--secondary-text);
@@ -50,7 +50,7 @@ main#contenido:has(> .labs-detail) {
 .share-button:not([hidden]) {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: var(--space-related);
   min-block-size: 44px;
   color: var(--foreground);
   cursor: pointer;
@@ -67,7 +67,7 @@ main#contenido:has(> .labs-detail) {
   max-inline-size: 100%;
   min-block-size: 44px;
   border: var(--stroke-default) solid var(--line);
-  padding-inline: 0.5rem;
+  padding-inline: var(--space-related);
 }
 .access-note {
   line-height: var(--leading-body);
@@ -76,7 +76,7 @@ main#contenido:has(> .labs-detail) {
 .access-panel {
   display: grid;
   justify-items: start;
-  gap: 0.55rem;
+  gap: var(--space-related);
 }
 .access-panel h2 {
   padding-block-end: 0;
@@ -105,7 +105,7 @@ main#contenido:has(> .labs-detail) {
 }
 .product-content section:not(.access-panel) {
   display: grid;
-  gap: 0.65rem;
+  gap: var(--space-control);
 }
 .product-content section:not(.access-panel) > h2 + * {
   margin-block-start: 0.35rem;
@@ -132,7 +132,7 @@ main#contenido:has(> .labs-detail) {
 .icon-row {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: var(--space-control);
 }
 .capabilities li + li {
   margin-block-start: var(--space-stack);
@@ -154,10 +154,10 @@ main#contenido:has(> .labs-detail) {
 .product-media {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(10rem, 100%), 1fr));
-  gap: 0.6rem;
+  gap: var(--space-control);
 }
 .audience-list li {
-  padding: 1rem 0.75rem;
+  padding: var(--space-stack) var(--space-control);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
   border: var(--stroke-default) solid var(--line);
@@ -165,7 +165,7 @@ main#contenido:has(> .labs-detail) {
 .audience-list h3 {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: var(--space-inline);
   margin-block-end: 0.5rem;
 }
 .audience-list svg,
@@ -180,30 +180,30 @@ main#contenido:has(> .labs-detail) {
 .technology-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: var(--space-related);
 }
 .technology-list li {
-  padding: 0.14rem 0.55rem;
+  padding: 0.14rem var(--space-related);
   border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
-  font-size: 0.85rem;
+  font-size: var(--type-label);
 }
 .product-media img {
   inline-size: 100%;
   border-radius: var(--editorial-radius);
 }
 .detail-panel {
-  padding: 1.5rem 1.25rem;
+  padding: 1.5rem var(--space-card);
   border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
-  font-size: 0.93rem;
+  font-size: var(--type-body-small);
 }
 .detail-panel h2 {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-related);
   padding-block-end: 1rem;
   font-size: 1.0625rem;
   text-wrap: pretty;
@@ -211,9 +211,9 @@ main#contenido:has(> .labs-detail) {
 .detail-panel dl > div {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
-  gap: 0.5rem;
+  gap: var(--space-related);
   border-block-start: var(--stroke-default) solid var(--line);
-  padding-block: 0.75rem;
+  padding-block: var(--space-control);
 }
 .detail-panel dt,
 .author-context {
@@ -227,7 +227,7 @@ main#contenido:has(> .labs-detail) {
 }
 .author-list {
   display: grid;
-  gap: 0.5rem;
+  gap: var(--space-related);
   margin-block: 0.25rem 0.75rem;
 }
 .author-list img {
@@ -247,7 +247,7 @@ main#contenido:has(> .labs-detail) {
 .related-products h2 {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-related);
   margin-block-end: 1.25rem;
 }
 .related-products > ul {

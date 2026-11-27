@@ -8,7 +8,7 @@
 .catalog {
   display: grid;
   align-items: start;
-  gap: 0.9rem 1.25rem;
+  gap: var(--space-stack) var(--space-card);
   grid-template-columns: minmax(0, 1fr);
 }
 .catalog [hidden],
@@ -18,9 +18,9 @@
 .catalog-search form {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: var(--space-control);
   min-block-size: 46px;
-  padding-inline: 0.8rem 0.35rem;
+  padding-inline: 0.8rem var(--space-inline);
   border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
@@ -73,10 +73,10 @@
 .catalog .control {
   align-items: center;
   justify-content: center;
-  gap: 0.45rem;
+  gap: var(--space-related);
   min-block-size: 44px;
   max-inline-size: 100%;
-  padding: 0.4rem 0.7rem;
+  padding: var(--space-related) var(--space-control);
   border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
@@ -103,7 +103,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-related);
 }
 .catalog-filters .control,
 .catalog .sort-field select {
@@ -118,7 +118,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 0.4rem;
+  gap: var(--space-related);
   min-block-size: 44px;
   cursor: pointer;
   list-style: none;
@@ -155,13 +155,13 @@
   min-inline-size: 0;
   max-block-size: 19rem;
   overflow: auto;
-  padding: 0 0.22rem 0.3rem;
+  padding: 0 0.22rem var(--space-inline);
 }
 .facet-options label {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: start;
-  gap: 0.45rem;
+  gap: var(--space-related);
   padding: 0.34rem 0.1rem;
   min-block-size: 32px;
   font-size: var(--type-label);
@@ -189,7 +189,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-related);
 }
 .result-toolbar {
   justify-content: space-between;
@@ -210,13 +210,13 @@
 .active-filters li button {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: var(--space-related);
   min-block-size: 32px;
-  padding: 0.2rem 0.55rem;
+  padding: 0.2rem var(--space-related);
   border: var(--stroke-default) solid var(--line);
   border-radius: 2rem;
   background: var(--home-card);
-  font-size: 0.86rem;
+  font-size: var(--type-label);
   text-align: start;
   cursor: pointer;
   overflow-wrap: anywhere;
@@ -274,7 +274,7 @@
   inline-size: clamp(13rem, 100%, 20rem);
   max-inline-size: calc(100dvw - 1rem);
   max-block-size: min(19rem, var(--dropdown-room, 19rem));
-  padding: 0.45rem 0.65rem;
+  padding: var(--space-related) var(--space-control);
   border: var(--stroke-default) solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
@@ -352,12 +352,12 @@
   flex-wrap: wrap;
   justify-content: end;
   align-items: center;
-  gap: 0.6rem 1rem;
+  gap: var(--space-control) var(--space-stack);
   margin-block-start: var(--space-stack);
 }
 .apply-button {
   min-block-size: 44px;
-  padding-inline: 1.25rem;
+  padding-inline: var(--space-card);
   border-radius: var(--radius-small);
   color: var(--primary-foreground);
   background: var(--primary);

@@ -28,8 +28,7 @@ export function immersiveEntrance(
             : 0;
       if (node.matches(':focus-within')) continue;
       const effect = waapi.animate(node, {
-        opacity: [0, 1],
-        translate: [`0 ${tokens.value('--motion-distance-hero')}`, '0 0px'],
+        opacity: [tokens.number('--motion-opacity-hero'), 1],
         delay,
         duration: options.duration ?? tokens.ms('--duration-hero'),
         ease: options.ease || tokens.value('--editorial-entrance-ease'),

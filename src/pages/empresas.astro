@@ -52,7 +52,7 @@ import FormCTA from '../components/site/FormCTA.astro';
           maneras de iniciar una colaboración con AI PlayGrounds.
         </p>
       </div>
-      <div class="collaborations">
+      <div class="collaborations" data-reveal-group>
         <CollaborationCard
           title="Alianzas institucionales"
           description="Actividades conjuntas, colaboración entre comunidades, universidades e instituciones e iniciativas vinculadas con IA."
@@ -77,7 +77,7 @@ import FormCTA from '../components/site/FormCTA.astro';
     </Section>
 
     <Section id="EM3" class="trajectory" aria-labelledby="trajectory-title">
-      <SectionHeading id="trajectory-title" data-reveal>
+      <SectionHeading id="trajectory-title">
         Una trayectoria construida en colaboración
       </SectionHeading>
       <div class="section-intro" data-reveal>
@@ -93,7 +93,7 @@ import FormCTA from '../components/site/FormCTA.astro';
     </Section>
 
     <Section id="EM4" aria-labelledby="initiatives-title">
-      <SectionHeading id="initiatives-title" data-reveal>
+      <SectionHeading id="initiatives-title">
         Conoce nuestras iniciativas
       </SectionHeading>
       <InitiativeGrid>
@@ -181,7 +181,7 @@ import FormCTA from '../components/site/FormCTA.astro';
     max-width: 20ch;
   }
   .trajectory :global(.text-link) {
-    margin-top: 0.5rem;
+    margin-top: var(--space-related);
   }
   @media (min-width: 48rem) {
     .trajectory {

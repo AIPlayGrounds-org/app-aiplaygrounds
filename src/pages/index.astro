@@ -63,9 +63,7 @@ const fields = [
     </ImmersiveHero>
 
     <Section id="I2" class="community">
-      <SectionHeading data-reveal>
-        El conocimiento crece cuando se comparte
-      </SectionHeading>
+      <SectionHeading>El conocimiento crece cuando se comparte</SectionHeading>
       <div class="community-copy" data-reveal>
         <p>
           La comunidad comparte conocimiento, hace preguntas y participa en las
@@ -80,14 +78,12 @@ const fields = [
     </Section>
 
     <Section id="I3">
-      <SectionHeading data-reveal>
-        Cuatro verticales, preguntas diferentes
-      </SectionHeading>
+      <SectionHeading>Cuatro verticales, preguntas diferentes</SectionHeading>
       <p class="section-intro" data-reveal>
         Nuestras verticales de trabajo van de los modelos y sus métodos a las
         aplicaciones en software, ciencia y finanzas.
       </p>
-      <div class="fields">
+      <div class="fields" data-reveal-group>
         {fields.map((field) => (
           <article data-reveal="card">
             <Card
@@ -249,7 +245,7 @@ const fields = [
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0.75rem 1.5rem;
+    gap: var(--space-control) 1.5rem;
   }
   h3 {
     font-size: var(--type-card-title);
@@ -294,7 +290,7 @@ const fields = [
     background: var(--home-surface);
   }
   .field-copy {
-    padding: 1.5rem 1.25rem 1rem;
+    padding: 1.5rem var(--space-card) var(--space-stack);
     flex: 1;
   }
   .field-copy p {
@@ -315,7 +311,7 @@ const fields = [
     margin-top: clamp(2rem, 4vw, 3.5rem);
   }
   .stat {
-    padding: 1rem 2rem;
+    padding: var(--space-stack) 2rem;
     border-right: var(--stroke-default) solid var(--line);
   }
   .stat strong {
@@ -325,7 +321,7 @@ const fields = [
     margin-block: 1rem;
   }
   .eyebrow {
-    font-size: 0.7rem;
+    font-size: var(--type-caption);
     text-transform: uppercase;
     color: var(--secondary-text);
   }
@@ -334,7 +330,7 @@ const fields = [
     grid-template-columns: 1fr 1fr;
   }
   .event {
-    padding: 1rem 2rem;
+    padding: var(--space-stack) 2rem;
   }
   .event.featured {
     grid-column: 1 / -1;
@@ -344,15 +340,15 @@ const fields = [
     border-left: var(--stroke-default) solid var(--line);
   }
   .event h3 {
-    margin-top: 0.6rem;
+    margin-top: var(--space-control);
   }
   .metrics {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    gap: 0.25rem 1rem;
+    gap: var(--space-inline) var(--space-stack);
     font-size: var(--type-label);
-    margin-top: 0.4rem;
+    margin-top: var(--space-related);
   }
   .metrics b {
     font: 600 1.35rem var(--font-heading);
@@ -360,19 +356,19 @@ const fields = [
   .event-note {
     font-size: var(--type-label);
     color: var(--secondary-text);
-    margin-top: 0.5rem;
+    margin-top: var(--space-related);
   }
   .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem;
+    gap: var(--space-inline);
     margin-top: var(--space-control);
   }
   .tags span {
     border: var(--stroke-default) solid var(--line);
-    border-radius: 0.2rem;
-    padding: 0.15rem 0.4rem;
-    font-size: 0.7rem;
+    border-radius: var(--radius-small);
+    padding: 0.15rem var(--space-related);
+    font-size: var(--type-caption);
     color: var(--secondary-text);
   }
   :global(body.home a[data-slot='button']:active) {
@@ -399,25 +395,13 @@ const fields = [
       --editorial-delay: var(--motion-delay-editorial-sibling);
     }
     @media (min-width: 52rem) {
-      .fields > article:nth-child(2n),
       .event:not(.featured) {
         --editorial-delay: var(--motion-stagger-editorial);
-      }
-      .fields > article:nth-child(3) {
-        --editorial-delay: var(--motion-delay-editorial-grid);
-      }
-    }
-    @media (min-width: 60rem) {
-      .fields > article:nth-child(4) {
-        --editorial-delay: var(--motion-delay-editorial-last);
       }
     }
     .fields img {
       transition: scale var(--duration-feedback) var(--motion-ease-standard);
       transform-origin: top center;
-    }
-    :global(body.home .mobile-nav .menu-icon) {
-      transition: transform var(--editorial-response) var(--editorial-ease-out);
     }
     @media (hover: hover) and (pointer: fine) {
       .fields article:hover img {
@@ -465,7 +449,7 @@ const fields = [
     .stat {
       border-right: 0;
       border-bottom: var(--stroke-default) solid var(--line);
-      padding: 1rem 0 2rem;
+      padding: var(--space-stack) 0 2rem;
     }
     .events {
       grid-template-columns: 1fr;

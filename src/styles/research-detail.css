@@ -46,7 +46,7 @@
 }
 .research-table :is(th, td) {
   border: var(--stroke-default) solid var(--line);
-  padding: 0.55rem 0.75rem;
+  padding: var(--space-related) var(--space-control);
   text-align: start;
 }
 .research-table th {
@@ -55,7 +55,7 @@
 .research-resource-links a {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: var(--space-related);
   min-block-size: 44px;
   text-decoration: underline;
   text-underline-offset: 0.2em;

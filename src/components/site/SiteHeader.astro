@@ -1,4 +1,5 @@
 ---
+import { Plus } from '@lucide/astro';
 import Dropdown from '../ui/Dropdown.astro';
 import Button from '../ui/Button.astro';
 
@@ -62,7 +63,7 @@ const cta = organizations
       <summary slot="trigger">
         Menú{' '}
         <span aria-hidden="true" class="menu-icon">
-          +
+          <Plus class="size-icon-chevron" />
         </span>
       </summary>
       <nav slot="panel" aria-label="Navegación móvil">
@@ -180,13 +181,13 @@ const cta = organizations
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 0.35rem 0.9rem;
+    gap: var(--space-inline) var(--space-stack);
   }
   .desktop-nav a {
     font-size: var(--type-label);
     font-weight: var(--weight-medium);
     text-decoration: none;
-    padding-block: 0.7rem;
+    padding-block: var(--space-control);
   }
   .desktop-nav a:hover {
     text-decoration: underline;
@@ -236,16 +237,13 @@ const cta = organizations
       font-size: 1.35rem;
       line-height: 1;
     }
-    details[open] .menu-icon {
-      transform: rotate(45deg);
-    }
     .mobile-nav nav {
       position: absolute;
       inset-inline: 0;
       top: 100%;
       display: grid;
       background: var(--home-background, var(--background));
-      padding: 1rem clamp(1rem, 4vw, 3rem) 1.5rem;
+      padding: var(--space-stack) var(--layout-gutter) 1.5rem;
       border-bottom: var(--stroke-default) solid var(--input);
       max-height: calc(100dvh - var(--site-header-height));
       overflow-y: auto;
@@ -258,13 +256,21 @@ const cta = organizations
     .mobile-nav nav a:not([data-slot='button']) {
       display: block;
       min-height: 44px;
-      padding: 0.7rem 0.25rem;
+      padding: var(--space-control) var(--space-inline);
       text-decoration: none;
       border-bottom: var(--stroke-default) solid var(--line);
     }
     .mobile-nav nav a[aria-current='page']:not([data-slot='button']) {
       text-decoration: underline;
       background: var(--home-surface, var(--surface));
+    }
+    .mobile-nav[open] .menu-icon :global(svg) {
+      rotate: 45deg;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .mobile-nav .menu-icon :global(svg) {
+        transition: rotate var(--duration-control) var(--editorial-ease-out);
+      }
     }
     .mobile-cta {
       margin-top: var(--space-stack);

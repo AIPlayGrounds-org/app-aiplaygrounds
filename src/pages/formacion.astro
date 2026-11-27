@@ -127,7 +127,7 @@ const metrics = [
           problemas y tecnologías.
         </p>
       </div>
-      <ul class="info-grid" role="list">
+      <ul class="info-grid" role="list" data-reveal-group>
         {pillars.map(({ title, description, icon }) => (
           <li data-reveal="card">
             <InformationalCard {title} {description}>
@@ -153,7 +153,7 @@ const metrics = [
           desarrollar y las capacidades que quieras adquirir.
         </p>
       </div>
-      <ul class="line-grid" role="list">
+      <ul class="line-grid" role="list" data-reveal-group>
         {lines.map(({ title, eyebrow, description, image }) => (
           <li data-reveal="card">
             <ImmersiveCard
@@ -182,7 +182,7 @@ const metrics = [
           de profundidad.
         </p>
       </div>
-      <ul class="info-grid" role="list">
+      <ul class="info-grid" role="list" data-reveal-group>
         {formats.map(({ title, description, icon, tone }) => (
           <li data-reveal="fade">
             <InformationalCard {title} {description} {tone} layout="inline">
@@ -369,7 +369,7 @@ const metrics = [
     color: var(--editorial-sand-ink);
   }
   .bootcamp-copy :global(.text-link) {
-    margin-top: 0.55rem;
+    margin-top: var(--space-related);
   }
   .metrics {
     display: grid;
@@ -398,7 +398,7 @@ const metrics = [
     min-width: 0;
   }
   .line-choices {
-    gap: 0.35rem;
+    gap: var(--space-inline);
   }
   .line-choices legend {
     margin-bottom: 0.35rem;
@@ -407,8 +407,8 @@ const metrics = [
   .line-choices label {
     display: flex;
     align-items: center;
-    gap: 0.65rem;
-    padding: 0.5rem 0.75rem;
+    gap: var(--space-control);
+    padding: var(--space-related) var(--space-control);
     border: var(--stroke-default) solid var(--line);
     border-radius: var(--radius-sm);
     background: var(--editorial-background);
@@ -452,19 +452,10 @@ const metrics = [
     .bootcamp {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .line-grid > :nth-child(2) {
-      --editorial-delay: var(--motion-stagger-editorial);
-    }
   }
   @media (min-width: 44rem) {
     .info-grid {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-    .info-grid > :nth-child(2) {
-      --editorial-delay: var(--motion-stagger-editorial-short);
-    }
-    .info-grid > :nth-child(3) {
-      --editorial-delay: var(--motion-delay-editorial-third);
     }
   }
 </style>
