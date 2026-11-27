@@ -5,6 +5,8 @@
 
 Documento complementario: [roadmap de ocho etapas y catorce prompts](development-roadmap.md). No reemplaza [Content Handoff](content-handoff.md), E1 ni E2.
 
+**Frontend vigente:** Astro estático, Tailwind 4 y la capa de componentes Astro sobre daisyUI 5.8.3. El [registro de migración](design-system-migration.md) y [DESIGN.md](../../DESIGN.md) gobiernan esa capa; las decisiones de P02/P04 incluidas abajo corresponden a la implementación histórica.
+
 ## 1. Resumen ejecutivo
 
 Recomendación: **Astro estático y un único Worker pequeño de contacto, dentro del mismo despliegue Workers Static Assets**. Ocho páginas institucionales prerenderizadas y dos plantillas condicionales de detalle; cero fichas mientras no existan registros elegibles. HTML/CSS primero, TypeScript estricto y JavaScript localizado, sin React inicialmente. Tailwind v4, Starwind Astro y Lucide sostienen la implementación, no un framework propio de secciones.
@@ -316,13 +318,13 @@ Componentes `.astro` para contenido. JavaScript TypeScript de navegador solo par
 
 React no se instala inicialmente. Requerir un caso concreto que no se resuelva razonablemente con Astro/DOM y documentar coste de bundle/SSR/a11y antes de una isla pequeña, nunca hidratar layout o sitio completo.
 
-Starwind: fuente editable gratuita **Astro-first**, solo componentes necesarios (Button, Field/Input/Textarea, Native Select o control nativo, Checkbox cuando proceda, Alert y navegación/disclosure si aportan comportamiento). Confirmar nombres, disponibilidad y exports contra versión fijada; no asumir props `isLoading`, `asChild` o compatibilidad React. Preservar hooks `data-slot/data-sw-*` y semántica nativa. No instalar Pro ni catálogo entero. Lucide con imports individuales para SVG estáticos, decorativos ocultos, controles con nombre accesible.
+La UI se consume desde `src/components/ui/`; sus átomos usan clases prefijadas de daisyUI y HTML nativo. Los compuestos y el dominio mantienen su presentación editorial y sus contratos `data-*`. El catálogo se registra con `injectRoute` solo en `astro dev` y tiene hojas de estilo propias fuera del build. Lucide se importa por icono para generar SVG estático.
 
 ## 9. Sistema de diseño: principios de implementación
 
 ### 9.1 Capas de tokens y semántica
 
-En `tokens.css` separar tres capas comentadas y trazables: **canónicos de marca → extensión web propuesta → aliases semánticos Starwind/Tailwind**. Los componentes consumen semántica, no HEX sueltos. Tailwind v4 mediante `@tailwindcss/vite`, CSS-first y `@theme inline`; no `@astrojs/tailwind` legado ni config v3. Tokens Starwind activos se mapean a variables de superficie/texto/foco del sitio, no se mantiene un theme paralelo.
+`tokens.css` mantiene tres niveles: **primitivos → roles semánticos → medidas de componentes**. `theme.css` asigna los roles a variables daisyUI sin duplicar valores. Tailwind v4 usa `@tailwindcss/vite`, CSS-first y `@theme inline`. El color de línea `--line` y el grosor `--border` de daisyUI son independientes.
 
 | Capa | Valores y usos |
 | --- | --- |
@@ -332,7 +334,7 @@ En `tokens.css` separar tres capas comentadas y trazables: **canónicos de marca
 | Semántica dark | Fondo negro, superficie Gris1, texto blanco y secundario Gris3; links visibles/subrayados y acentos semánticos; comprobar contraste real sobre Gris1 |
 | Estados | `focus-ring`, `invalid`, `success` con contraste y texto/icono, no solo color; no convertir Lima en éxito o Halo en enlace sobre claro por costumbre |
 
-`data-theme="light|dark"` en límites de sección, CSS `color-scheme` acorde para controles nativos y `.dark`/selector soportado por la fuente Starwind instalado, sincronizados en un solo límite. Probar portales/overlays para que hereden su theme correcto. No toggle global ni flash de auto-dark: no se ha solicitado preferencia de usuario. ~75/25 se evalúa por ritmo/superficie del sitio en A2, no con contadores CSS ni número de secciones.
+`data-theme="light|dark"` delimita los temas propios y ajusta `color-scheme` para los controles nativos. Los overlays conservan el tema de su árbol. El selector de tema vive en los previews del catálogo. ~75/25 se evalúa por ritmo/superficie del sitio en A2, no con contadores CSS ni número de secciones.
 
 ### 9.2 Tipografía, espacios y contenedores
 

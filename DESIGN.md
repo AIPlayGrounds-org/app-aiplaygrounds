@@ -60,7 +60,7 @@ components:
     rounded: "{rounded.sm}"
     height: "2.75rem"
     padding: "0 1.25rem"
-  starwind-card:
+  elevated-card:
     backgroundColor: "{colors.web-elevated}"
     textColor: "{colors.web-text}"
     rounded: "{rounded.xl}"
@@ -91,13 +91,13 @@ El sitio se lee como una publicación clara, cálida y modular. En Inicio, el pa
 - Composición editorial; módulos donde el contenido se puede comparar o agrupar.
 - Componentes sobrios y legibles; la ilustración expresa el carácter donde ya forma parte del sitio.
 
-Esta es una fotografía de la implementación actual, no una aprobación de las exploraciones previas ni una especificación para la futura galería.
+El catálogo de desarrollo `/design-system/` documenta los componentes y muestra los tokens efectivos. Los ejemplos usan los mismos componentes Astro que el sitio. Las exploraciones históricas permanecen como referencias de composición.
 
 ## Colors
 
 Negro y blanco sostienen las acciones principales. Halo, Menta y Lima conservan sus nombres de marca. Los tokens web definen el papel cálido, superficies, texto y bordes; Inicio y las interiores observadas añaden superficies editoriales locales más cálidas. No son dos paletas intercambiables: comprobar qué capa gobierna la superficie que se está documentando.
 
-[`tokens.css`](src/styles/tokens.css) es la fuente de colores de marca, roles semánticos y superficies editoriales compartidas. El alcance oscuro invierte las acciones principales y adapta borde, texto y estados. No implica un selector de tema del sitio.
+[`tokens.css`](src/styles/tokens.css) es la fuente de los valores primitivos (marca, extensión web, escalas), sus roles semánticos y las medidas compartidas de controles y tarjetas. [`theme.css`](src/styles/theme.css) solo asigna estos roles al contrato de daisyUI; `--line` es el color de borde y `--border` es el grosor que espera la librería. Los alcances `data-theme="light|dark"` siguen siendo propios de AI PlayGrounds. Solo el catálogo permite alternarlos.
 
 **The Contextual Contrast Rule.** Evaluar el contraste sobre el fondo real; no usar Halo, Menta o Lima como texto pequeño sobre superficies claras ni depender solo del color para indicar estados.
 
@@ -113,16 +113,17 @@ Las rejillas y las secciones partidas de interiores se vuelven una columna a **4
 
 ## Elevation & Depth
 
-La profundidad viene de capas discretas: papel, superficies, fondos de tarjeta y bordes finos. Los componentes representativos no usan una escalera de sombras; el anillo de la tarjeta Starwind es un contorno, no elevación. La perspectiva de las escenas ilustradas añade profundidad sin alterar esa regla de los controles.
+La profundidad viene de papel, superficies, fondos de tarjeta y bordes finos. `--shadow-overlay` se usa en cajas flotantes, no en las tarjetas editoriales. La perspectiva de las escenas ilustradas añade profundidad sin alterar esa regla.
 
 ## Shapes
 
-Botones y campos tienen esquinas pequeñas; las tarjetas interiores repiten un radio discreto. Las tarjetas Starwind y el cierre ilustrado tienen contornos más suaves. La modularidad no exige encerrar toda la prosa en tarjetas.
+Botones y campos tienen esquinas pequeñas; las tarjetas interiores repiten un radio discreto. La tarjeta elevada y el cierre ilustrado tienen contornos más suaves. La modularidad no exige encerrar toda la prosa en tarjetas.
 
 ## Components
 
-- **Botones.** [`Button`](src/components/starwind/button/variants.ts) ofrece variantes semánticas. La acción primaria es sólida; el contorno sirve como alternativa. El tamaño `md` mide **2.75 rem** de alto, y ajusta relleno con icono. El cambio de estado es cromático, con contorno de foco visible y tratamiento deshabilitado separado.
-- **Tarjetas.** [`Card`](src/components/starwind/card/variants.ts) aporta superficie y contorno, con tamaños `sm` y `md`. Las tarjetas interiores tienen estilo propio sobre la superficie local. Úsalas para unidades con información propia, como los campos de trabajo, no para enmarcar cada párrafo.
+- **Botones.** [`Button`](src/components/ui/Button.astro) ofrece variantes semánticas y tamaños `xs`–`xl`. El tamaño `md` mide **2.75 rem** de alto y ajusta el relleno con icono. Usa `iconOnly` con nombre accesible y los slots `leading`/`trailing` para los demás iconos. Respeta el foco visible, la semántica de botón/enlace y los estados deshabilitado y cargando.
+- **Tarjetas.** [`Card`](src/components/ui/Card.astro) separa superficie, densidad, borde e interacción. Las composiciones interiores controlan su layout. Usa `interaction="single-link"` solo cuando exista un único destino real y un `data-card-link`.
+- **Etiquetas.** [`Badge`](src/components/ui/Badge.astro) comparte tamaños, contornos y estados entre `VerticalTag` y `ProductTags`; las etiquetas mantienen su texto y significado.
 - **Campos.** En Empresas, etiquetas encima, borde visible, fondo cálido y foco por contorno. El aspecto deshabilitado es un estado visual; esta documentación no habilita captación.
 - **Navegación.** [`SiteHeader`](src/components/site/SiteHeader.astro) muestra marca y enlaces, señala la página actual y expone un menú compacto en pantallas estrechas. El patrón observado no aprueba cambios en los destinos ni agrupaciones editoriales.
 - **Cierre ilustrado.** [`ClosingCTA`](src/components/site/ClosingCTA.astro) combina texto, una o dos acciones y paisaje de apoyo. Su presencia en varias rutas no lo convierte en el acabado obligatorio para todos los cierres.
@@ -145,5 +146,6 @@ El historial funciona como índice editorial: fecha lateral, separadores finos, 
 - **Do** mantener una jerarquía legible también donde no haya ilustración.
 - **Do** usar el token semántico correspondiente y comprobar su contraste bajo la superficie efectiva.
 - **Do** conservar el foco visible y respetar la preferencia de movimiento reducido, como prevén los estilos compartidos.
+- **Do** actualizar la galería al cambiar una variante. Consulta [AGENTS.md](AGENTS.md) y el [registro de migración](docs/implementation/design-system-migration.md).
 - **Don't** extender los paisajes de Inicio a todo el catálogo por defecto ni confundir una ilustración con el logotipo.
 - **Don't** convertir ejemplos, capturas históricas o variantes de exploración en reglas del sistema.
