@@ -1,6 +1,13 @@
 {
   "version": 2,
   "skills": {
+    "anime.js Best Practices": {
+      "source": "davidosemwegie/animejs-best-practices",
+      "commit": "47f4b7ea494a3c0bc54ba228b4008a5da6891458",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "afe1660108b04d6c49c5e2d9dd9c77c7bf709d729b9134928c010281586a7493"
+    },
     "astro-best-practices": {
       "source": "incluud/astro-agent-skills",
       "sourceType": "github",

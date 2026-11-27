@@ -1,44 +1,11 @@
----
-import '../../styles/editorial-motion.css';
----
-
 <script>
-  const motion = matchMedia('(prefers-reduced-motion: no-preference)');
-  if ('IntersectionObserver' in window && motion.matches) {
-    const targets = document.querySelectorAll<HTMLElement>('[data-reveal]');
-    let remaining = targets.length;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const { target, isIntersecting } of entries) {
-          if (!isIntersecting) continue;
-          observer.unobserve(target);
-          remaining -= 1;
-          if (motion.matches && !target.matches(':focus-within')) {
-            target.setAttribute('data-entering', '');
-          }
-        }
-        if (remaining === 0) observer.disconnect();
-      },
-      { rootMargin: '0px 0px -112px' },
-    );
-    targets.forEach((target) => {
-      observer.observe(target);
-      const clear = () => target.removeAttribute('data-entering');
-      const finish = (event: AnimationEvent) => {
-        if (
-          event.target === target &&
-          event.animationName.startsWith('editorial-reveal')
-        )
-          clear();
-      };
-      target.addEventListener('animationend', finish);
-      target.addEventListener('animationcancel', finish);
-      target.addEventListener('focusin', clear);
-    });
-    motion.addEventListener('change', () => {
-      if (motion.matches) return;
-      observer.disconnect();
-      targets.forEach((target) => target.removeAttribute('data-entering'));
-    });
+  import { allowMotion } from '../../motion/preferences';
+
+  if (allowMotion()) {
+    void import('../../motion/reveal')
+      .then(({ observeReveals }) => observeReveals(document))
+      .catch(() => {
+        /* The editorial content is already visible. */
+      });
   }
 </script>

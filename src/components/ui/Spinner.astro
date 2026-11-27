@@ -30,3 +30,11 @@ const { size = 'md', label, class: className, ...rest } = Astro.props;
   ></span>
   {label && <span class="sr-only">{label}</span>}
 </span>
+
+<style>
+  @media (prefers-reduced-motion: reduce) {
+    .ds-loading {
+      animation: none;
+    }
+  }
+</style>

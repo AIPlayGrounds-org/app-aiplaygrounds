@@ -23,5 +23,10 @@ export default defineConfig({
       },
     },
   ],
-  vite: { plugins: [tailwindcss()] },
+  vite: {
+    plugins: [tailwindcss()],
+    // Lazy demos use additional ESM subpaths; avoid dev-only re-optimization
+    // invalidating earlier imports while a preview is open.
+    optimizeDeps: { exclude: ['animejs'] },
+  },
 });

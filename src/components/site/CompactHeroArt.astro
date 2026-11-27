@@ -18,7 +18,6 @@ const {
 } = compactHeroArt[variant];
 const artId = (part: string) => `${id}-art-${part}`;
 const paint = (part: string) => `url(#${artId(part)})`;
-const step = (index: number) => ({ '--step': index });
 const landColors = [light, mid, ink];
 const landOpacity = [0.64, 0.48, 0.35];
 const dotSize = 13;
@@ -35,6 +34,7 @@ const dotRows = Array.from(
 ---
 
 <svg
+  data-compact-motion
   viewBox="0 0 1440 340"
   preserveAspectRatio="xMidYMax slice"
   aria-hidden="true"
@@ -102,7 +102,6 @@ const dotRows = Array.from(
         {d}
         fill={landColors[i]}
         fill-opacity={landOpacity[i]}
-        style={step(i)}
       />
     ))}
     <g class="grid" mask={paint('grid-mask')}>
@@ -115,8 +114,8 @@ const dotRows = Array.from(
       stroke-width=".8"
       opacity=".54"
     >
-      {contours.map((d, i) => (
-        <path {d} pathLength="1" style={step(i)} />
+      {contours.map((d) => (
+        <path {d} pathLength="1" />
       ))}
     </g>
     <g
@@ -126,17 +125,17 @@ const dotRows = Array.from(
       stroke-width=".95"
       opacity=".63"
     >
-      {routes.map((d, i) => (
-        <path {d} pathLength="1" style={step(i)} />
+      {routes.map((d) => (
+        <path {d} pathLength="1" />
       ))}
-      {terminals.map(([x, y, width, height], i) => (
-        <rect {x} {y} {width} {height} style={step(i)} />
+      {terminals.map(([x, y, width, height]) => (
+        <rect {x} {y} {width} {height} />
       ))}
-      {points.map(([cx, cy, r], i) => (
-        <circle {cx} {cy} {r} style={step(terminals.length + i)} />
+      {points.map(([cx, cy, r]) => (
+        <circle {cx} {cy} {r} />
       ))}
     </g>
-    {dotRows.map(({ y, height }, i) => (
+    {dotRows.map(({ y, height }) => (
       <rect
         class="dot-row"
         x={dx}
@@ -144,7 +143,6 @@ const dotRows = Array.from(
         width={dw}
         {height}
         fill={paint('dots')}
-        style={step(i)}
       />
     ))}
   </g>
@@ -156,52 +154,8 @@ const dotRows = Array.from(
     inline-size: 100%;
     block-size: 100%;
   }
-  @media (prefers-reduced-motion: no-preference) {
-    .land {
-      transform-box: fill-box;
-      transform-origin: bottom;
-      animation: land-rise 1.15s var(--editorial-entrance-ease) both;
-      animation-delay: calc(160ms * var(--step));
-    }
-    .contours path {
-      animation: line-draw 1.25s ease-out both;
-      animation-delay: calc(350ms + 55ms * var(--step));
-    }
-    .marks path {
-      animation: line-draw 0.72s ease-out both;
-      animation-delay: calc(1000ms + 85ms * var(--step));
-    }
-    .grid {
-      animation: appear 0.65s ease-out 1.05s both;
-    }
-    .marks :is(circle, rect) {
-      animation: appear 0.5s ease-out both;
-      animation-delay: calc(1380ms + 75ms * var(--step));
-    }
-    .dot-row {
-      animation: appear 0.65s ease-out both;
-      animation-delay: calc(1450ms + 45ms * var(--step));
-    }
-  }
-  @keyframes land-rise {
-    from {
-      opacity: 0;
-      transform: translateY(26px) scaleY(0.86);
-    }
-  }
-  @keyframes line-draw {
-    from {
-      stroke-dasharray: 1 1;
-      stroke-dashoffset: 1;
-    }
-    to {
-      stroke-dasharray: 1 1;
-      stroke-dashoffset: 0;
-    }
-  }
-  @keyframes appear {
-    from {
-      opacity: 0;
-    }
+  .land {
+    transform-box: fill-box;
+    transform-origin: bottom;
   }
 </style>

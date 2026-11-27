@@ -9,3 +9,11 @@
 - Mantén sincronizados `DESIGN.md`, el catálogo interno y el código. Si un átomo pasa del catálogo a producción, mueve su familia a `src/styles/theme.css`.
 - Mantén Astro estático y TypeScript strict. No introduzcas frameworks JavaScript adicionales sin justificación y aprobación. Usa la skill oficial `daisyui` para consultar el contrato de CSS; prevalecen estas convenciones del proyecto.
 - Antes de entregar, ejecuta `npm run ci:check`. Para cambios visuales, verifica el sitio y el catálogo con Playwright en desktop, tablet y móvil.
+
+## Animations and Interactions
+
+- Ante cualquier solicitud de animación o interacción, consulta la skill `anime.js-best-practices`, `src/motion/` y `/design-system/#motion` antes de crear un patrón. Impeccable orienta la intención visual; conserva la composición aprobada.
+- Anime.js v4 es el motor de movimiento avanzado: entradas coordinadas, scroll, timelines, stagger, SVG, tipografía, layout, físicas e interacciones complejas. Prioriza `waapi.animate()` cuando baste; utiliza el motor JS cuando haga falta. No uses APIs v3, motores propios ni otras librerías sin aprobación explícita.
+- Mantén hover, foco, presión, deshabilitado, color, bordes, iconos y cargas simples en CSS, Tailwind o daisyUI. Parte de los Motion Tokens; no dupliques presets.
+- Carga los módulos por componente en el navegador, limita sus objetivos y revierte efectos, listeners y observadores al desmontar. Comprueba reduced motion, foco, estado estático sin JS y rendimiento móvil.
+- Documenta los patrones reutilizables y sus demos en el catálogo. Una composición singular puede definir su movimiento local sin duplicar el ciclo de vida compartido; las demos experimentales no se publican.

@@ -172,34 +172,25 @@ const {
       font-size: 1.0625rem;
     }
   }
-  @media (prefers-reduced-motion: no-preference) {
-    [data-hero-entrance] .hero-content > :is(h1, p, .actions) {
-      animation: hero-arrive 720ms var(--editorial-entrance-ease)
-        var(--hero-delay, 0ms) backwards;
-    }
-    .open-sky[data-hero-entrance] .hero-image {
-      transform-origin: center bottom;
-      animation: sky-settle 2.8s var(--editorial-ease-out) both;
-    }
-    .hero-content > p {
-      --hero-delay: 170ms;
-    }
-    .hero-content > .actions {
-      --hero-delay: 320ms;
-    }
-    [data-hero-entrance] .actions:focus-within {
-      animation: none;
-    }
-  }
-  @keyframes sky-settle {
-    from {
-      scale: 1.018;
-    }
-  }
-  @keyframes hero-arrive {
-    from {
-      opacity: 0;
-      translate: 0 23px;
-    }
+  .open-sky .hero-image {
+    transform-origin: center bottom;
   }
 </style>
+
+<script>
+  import { allowMotion } from '../../motion/preferences';
+  if (allowMotion() && document.querySelector('[data-hero-entrance]')) {
+    void import('../../motion/hero')
+      .then(({ immersiveEntrance }) => {
+        if (!allowMotion()) return;
+        for (const hero of document.querySelectorAll<HTMLElement>(
+          '[data-hero-entrance]',
+        )) {
+          if (hero.getBoundingClientRect().bottom > 0) immersiveEntrance(hero);
+        }
+      })
+      .catch(() => {
+        /* The hero is already visible. */
+      });
+  }
+</script>

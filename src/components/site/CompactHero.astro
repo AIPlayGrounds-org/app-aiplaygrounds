@@ -128,16 +128,12 @@ const [ink] = compactHeroArt[variant].palette;
 </style>
 
 <script>
-  // A normal visit creates new CSS animations. A back/forward cache restore
-  // keeps the same document, including already finished animations.
-  window.addEventListener('pageshow', ({ persisted }) => {
-    if (!persisted) return;
-
-    for (const art of document.querySelectorAll('.compact-hero .hero-art')) {
-      for (const animation of art.getAnimations({ subtree: true })) {
-        animation.currentTime = 0;
-        animation.play();
-      }
-    }
-  });
+  import { allowMotion } from '../../motion/preferences';
+  if (allowMotion()) {
+    void import('../../motion/hero')
+      .then(({ mountCompactArt }) => mountCompactArt(document))
+      .catch(() => {
+        /* The artwork is already in its final state. */
+      });
+  }
 </script>

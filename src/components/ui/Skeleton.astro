@@ -10,3 +10,11 @@ const { class: className, ...rest } = Astro.props;
   aria-hidden="true"
   class:list={['ds-skeleton min-h-4', className]}
 ></div>
+
+<style>
+  @media (prefers-reduced-motion: reduce) {
+    .ds-skeleton {
+      animation: none;
+    }
+  }
+</style>

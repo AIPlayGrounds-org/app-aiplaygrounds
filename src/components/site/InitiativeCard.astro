@@ -25,6 +25,7 @@ const {
 ---
 
 <Card
+  data-motion-draw="initiative"
   as="article"
   surface="inherit"
   density="none"
@@ -180,30 +181,6 @@ const {
     .path-guide {
       stroke-width: calc(1.25 + var(--surface-motion, 0) * 0.6);
     }
-    .path-card:is(:hover, :focus-within)
-      .path-illustration
-      :is(path, circle)[pathLength] {
-      stroke-dasharray: 1 1;
-      animation: draw-illustration 1000ms linear backwards;
-    }
-    .path-card:is(:hover, :focus-within)
-      .path-illustration
-      path[pathLength]:nth-child(2) {
-      animation-delay: 120ms;
-    }
-    .path-card:is(:hover, :focus-within)
-      .path-illustration
-      path[pathLength]:nth-child(n + 3) {
-      animation-delay: 240ms;
-    }
-  }
-  @keyframes draw-illustration {
-    from {
-      stroke-dashoffset: 1;
-    }
-    to {
-      stroke-dashoffset: 0;
-    }
   }
   @media (min-width: 52rem) {
     .path-card:nth-child(2) {
@@ -220,3 +197,7 @@ const {
     }
   }
 </style>
+
+<script>
+  import '../../motion/draw-trigger';
+</script>
