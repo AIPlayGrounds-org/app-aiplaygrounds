@@ -160,6 +160,6 @@ a:not([data-slot='button']):hover {
 }
 @media (forced-colors: active) {
   :focus-visible {
-    outline: 3px solid Highlight;
+    outline-color: Highlight;
   }
 }

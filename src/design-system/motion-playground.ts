@@ -119,7 +119,14 @@ for (const demo of demos) {
       mode,
       duration:
         read('duration', tokens.ms('--duration-entrance')) / read('speed', 1),
-      stagger: read('stagger', tokens.ms('--motion-stagger-contours')),
+      stagger: read(
+        'stagger',
+        tokens.ms(
+          pattern === 'sequences'
+            ? '--motion-stagger-group'
+            : '--motion-stagger-contours',
+        ),
+      ),
       delay: read('delay', 0),
       distance: read('distance', tokens.number('--motion-distance-rise')),
       ease: field('ease')?.value || tokens.value('--editorial-entrance-ease'),

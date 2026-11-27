@@ -36,10 +36,11 @@ export const motionPatterns = [
     title: 'Sequences',
     name: 'Hero, timeline y stagger de rejilla',
     api: 'Anime.js · createTimeline(), stagger()',
-    tokens: '--duration-card, --motion-stagger-contours',
+    tokens:
+      '--duration-entrance, --duration-card, --motion-stagger-group, --motion-opacity-rise, --motion-distance-rise, --motion-scale-card',
     use: 'Entrada del hero real y timeline experimental de múltiples elementos.',
     note: 'Limita los objetivos en cada secuencia y evita loops automáticos.',
-    code: 'import { createTimeline } from "animejs/timeline";\nimport { stagger } from "animejs/utils";\nimport { motionTokens } from "../../motion/tokens";\nconst tokens = motionTokens(stage);\ncreateTimeline().add(items, {\n  opacity: [tokens.number("--motion-opacity-rise"), 1],\n  y: [tokens.number("--motion-distance-rise"), 0],\n  duration: tokens.ms("--duration-entrance"),\n  delay: stagger(tokens.ms("--motion-stagger-group")),\n});',
+    code: 'import { createTimeline } from "animejs/timeline";\nimport { stagger } from "animejs/utils";\nimport { motionTokens } from "../../motion/tokens";\nconst tokens = motionTokens(stage);\nconst interval = tokens.ms("--motion-stagger-group");\ncreateTimeline({ defaults: { ease: tokens.value("--editorial-entrance-ease") } })\n  .add(items, {\n    opacity: [tokens.number("--motion-opacity-rise"), 1],\n    y: [tokens.number("--motion-distance-rise"), 0],\n    duration: tokens.ms("--duration-entrance"),\n    delay: stagger(interval),\n  })\n  .add(items, {\n    scale: [tokens.number("--motion-scale-card"), 1],\n    duration: tokens.ms("--duration-card"),\n    delay: stagger(interval, { from: "center" }),\n  });',
   },
   {
     id: 'svg',

@@ -18,7 +18,7 @@
     min-height: var(--field-height);
     padding: var(--field-padding);
     font: inherit;
-    font-size: max(1rem, 1em);
+    font-size: max(var(--type-control), 1em);
     color: var(--foreground);
     background: var(--editorial-background);
     transition:

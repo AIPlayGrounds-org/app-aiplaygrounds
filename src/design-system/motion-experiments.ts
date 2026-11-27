@@ -49,13 +49,13 @@ export function experiment(
         effects.push(
           createTimeline({ loop, defaults: { ease } })
             .add(items, {
-              opacity: [0.16, 1],
+              opacity: [tokens.number('--motion-opacity-rise'), 1],
               y: [distance, 0],
               delay: stagger(interval, { start: delay }),
               duration,
             })
             .add(items, {
-              scale: [0.94, 1],
+              scale: [tokens.number('--motion-scale-card'), 1],
               duration: tokens.ms('--duration-card'),
               delay: stagger(interval, { from: 'center' }),
             }),
