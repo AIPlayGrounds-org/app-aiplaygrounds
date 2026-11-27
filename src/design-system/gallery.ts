@@ -6,6 +6,14 @@ const articles = [
   ...document.querySelectorAll<HTMLElement>('[data-gallery-component]'),
 ];
 const nav = [...document.querySelectorAll<HTMLElement>('[data-nav-component]')];
+const motionExamples = [
+  ...document.querySelectorAll<HTMLElement>('[data-motion-search]'),
+];
+const motionNav = new Map(
+  [...document.querySelectorAll<HTMLElement>('[data-motion-nav]')].map(
+    (item) => [item.dataset.motionNav, item],
+  ),
+);
 
 search?.addEventListener('input', () => {
   const query = search.value.trim().toLowerCase();
@@ -22,8 +30,19 @@ search?.addEventListener('input', () => {
     nav[index].hidden = !visible;
     if (visible) count++;
   }
+  let patterns = 0;
+  for (const example of motionExamples) {
+    const visible =
+      example.dataset.motionSearch?.toLowerCase().includes(query) ?? false;
+    example.hidden = !visible;
+    const navItem = motionNav.get(example.dataset.motionDemo);
+    if (navItem) navItem.hidden = !visible;
+    if (visible) patterns++;
+  }
   if (status)
-    status.textContent = query ? `${count} componentes encontrados.` : '';
+    status.textContent = query
+      ? `${count} componentes y ${patterns} patrones de movimiento.`
+      : '';
 });
 
 function markLocation() {

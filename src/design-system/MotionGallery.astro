@@ -1,0 +1,353 @@
+---
+import { ArrowRight } from '@lucide/astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import TextLink from '../components/site/TextLink.astro';
+import CompactHeroArt from '../components/site/CompactHeroArt.astro';
+import InformationalCard from '../components/site/InformationalCard.astro';
+import AcademyMotif from '../components/site/AcademyMotif.astro';
+import ImmersiveHero from '../components/site/ImmersiveHero.astro';
+import { inicioImages } from '../assets/inicio';
+import { motionPatterns } from './motion-patterns';
+import './motion-gallery.css';
+
+interface Props {
+  theme: 'light' | 'dark';
+  viewport: string;
+}
+const { theme, viewport } = Astro.props;
+const modes: Record<string, string[]> = {
+  'entrance-exit': ['rise', 'fade', 'card', 'ink', 'slide', 'exit'],
+  scroll: ['reveal', 'progress', 'parallax', 'horizontal'],
+  sequences: ['timeline', 'hero'],
+  svg: ['layers', 'draw', 'morph', 'path'],
+  typography: ['chars', 'words', 'lines'],
+  'physics-interactions': ['spring', 'drag'],
+  layout: ['reorder', 'grid', 'enter', 'exit'],
+};
+---
+
+<section id="motion" class="gallery-chapter" data-motion-playground>
+  <h2>Motion</h2>
+  <p>
+    Patrones del sitio y experimentos aislados. Los previews parten estáticos,
+    respetan el tema y el ancho de la barra superior.
+  </p>
+  <label class="motion-reduce">
+    <input type="checkbox" data-motion-reduce /> Simular movimiento reducido
+  </label>
+  {motionPatterns.map(({ id, title, name, api, tokens, use, note, code }) => (
+    <article
+      class="component-entry"
+      id={`motion-${id}`}
+      data-motion-demo={id}
+      data-motion-search={`${title} ${name}`}
+    >
+      <h3>{title}</h3>
+      <p>
+        <strong>{name}.</strong> {use}
+      </p>
+      <div
+        class="preview-frame motion-preview"
+        data-motion-stage
+        data-motion-manual
+        data-gallery-frame
+        data-gallery-theme
+        data-theme={theme}
+        style={
+          viewport === 'auto' ? undefined : `--preview-width:${viewport}px`
+        }
+      >
+        {id === 'microinteractions' ? (
+          <Card interaction="interactive" class="motion-feedback-card">
+            <Button variant="primary">
+              Probar feedback <ArrowRight slot="trailing" aria-hidden="true" />
+            </Button>
+            <TextLink href="#motion">Probar flecha</TextLink>
+          </Card>
+        ) : id === 'svg' ? (
+          <>
+            <div data-svg-mode="layers">
+              <CompactHeroArt id="motion-preview" variant="exploration" />
+            </div>
+            <div data-svg-mode="draw" hidden>
+              <InformationalCard
+                title="Dibujo de trazos"
+                description="El mismo motivo de Formación."
+              >
+                <AcademyMotif slot="icon" name="workshop" />
+              </InformationalCard>
+            </div>
+            <div data-svg-mode="morph" hidden>
+              <svg viewBox="0 0 240 80" aria-hidden="true">
+                <path
+                  data-motion-morph
+                  d="M75 15 L115 15 L115 65 L75 65 Z"
+                  fill="var(--accent)"
+                />
+                <path
+                  data-motion-shape
+                  d="M95 5 L133 40 L95 75 L57 40 Z"
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <div data-svg-mode="path" hidden>
+              <svg viewBox="0 0 240 80" aria-hidden="true">
+                <path
+                  data-motion-path
+                  d="M15 45 Q65 0 120 45 T220 42"
+                  fill="none"
+                  stroke="var(--interaction-accent)"
+                />
+                <circle
+                  data-motion-traveler
+                  cx="0"
+                  cy="0"
+                  r="6"
+                  fill="var(--accent)"
+                />
+              </svg>
+            </div>
+          </>
+        ) : id === 'sequences' ? (
+          <>
+            <div class="motion-tiles" data-sequence-mode="timeline">
+              {[1, 2, 3, 4, 5, 6].map((index) => (
+                <div class="motion-tile" data-motion-item>
+                  0{index}
+                </div>
+              ))}
+            </div>
+            <div data-sequence-mode="hero" hidden>
+              <ImmersiveHero
+                id="motion-hero-sample"
+                image={inicioImages.hero}
+                title="Aprendemos, investigamos y construimos"
+                description="La apertura usa la misma composición que el sitio."
+                composition="open-sky"
+                animate={false}
+              >
+                <Button href="#motion-sequences">Ver la secuencia</Button>
+              </ImmersiveHero>
+            </div>
+          </>
+        ) : id === 'typography' ? (
+          <p data-motion-text>
+            Aprendemos y construimos con IA.
+            <br />
+            El movimiento acompaña la lectura.
+          </p>
+        ) : id === 'scroll' ? (
+          <>
+            <div
+              class="motion-scroll"
+              data-motion-scroll
+              tabindex="0"
+              role="region"
+              aria-label="Área desplazable del ejemplo"
+            >
+              <p>Desplázate para recorrer la secuencia.</p>
+              <div data-motion-scroll-target>
+                <div class="motion-tile" data-motion-item>
+                  01
+                </div>
+                <div class="motion-tile" data-motion-item>
+                  02
+                </div>
+                <div class="motion-tile" data-motion-item>
+                  03
+                </div>
+              </div>
+              <p>Fin del recorrido.</p>
+            </div>
+            <progress
+              data-motion-scroll-progress
+              aria-label="Progreso de desplazamiento"
+              max="1"
+              value="0"
+            ></progress>
+          </>
+        ) : id === 'physics-interactions' ? (
+          <div class="motion-track">
+            <div class="motion-tile" data-motion-item aria-hidden="true">
+              ↔
+            </div>
+          </div>
+        ) : (
+          <div class="motion-tiles" data-motion-tiles>
+            {[1, 2, 3].map((index) => (
+              <div
+                class="motion-tile"
+                data-motion-item
+                data-layout-id={`item-${index}`}
+              >
+                0{index}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+      {id !== 'microinteractions' && (
+        <div class="play-controls motion-controls">
+          {modes[id] && (
+            <label>
+              Patrón{' '}
+              <select data-motion-field="mode">
+                {modes[id].map((mode) => (
+                  <option value={mode}>{mode}</option>
+                ))}
+              </select>
+            </label>
+          )}
+          {id === 'svg' ? (
+            <label>
+              Velocidad{' '}
+              <input
+                data-motion-field="speed"
+                type="number"
+                min="0.25"
+                max="3"
+                step="0.25"
+                value="1"
+              />
+            </label>
+          ) : (
+            <label>
+              Duración (ms){' '}
+              <input
+                data-motion-field="duration"
+                type="number"
+                min="100"
+                max="2500"
+                step="10"
+                placeholder="Token"
+              />
+            </label>
+          )}
+          {['entrance-exit', 'sequences', 'typography', 'svg'].includes(id) && (
+            <label>
+              Stagger (ms){' '}
+              <input
+                data-motion-field="stagger"
+                type="number"
+                min="0"
+                max="320"
+                step="5"
+                placeholder="Token"
+              />
+            </label>
+          )}
+          {['entrance-exit', 'sequences', 'typography'].includes(id) && (
+            <label>
+              Delay (ms){' '}
+              <input
+                data-motion-field="delay"
+                type="number"
+                min="0"
+                max="1000"
+                step="10"
+                value="0"
+              />
+            </label>
+          )}
+          {['entrance-exit', 'scroll', 'typography'].includes(id) && (
+            <label>
+              Distancia (px){' '}
+              <input
+                data-motion-field="distance"
+                type="number"
+                min="0"
+                max="64"
+                step="1"
+                placeholder="Token"
+              />
+            </label>
+          )}
+          {id === 'entrance-exit' && (
+            <label>
+              Escala inicial{' '}
+              <input
+                data-motion-field="scale"
+                type="number"
+                min="0.75"
+                max="1"
+                step="0.01"
+                placeholder="Token"
+              />
+            </label>
+          )}
+          {['entrance-exit', 'svg', 'sequences', 'typography'].includes(id) && (
+            <label>
+              Curva{' '}
+              <select data-motion-field="ease">
+                <option value="">Token</option>
+                <option>linear</option>
+                <option>ease-out</option>
+                <option>ease-in-out</option>
+              </select>
+            </label>
+          )}
+          {['entrance-exit', 'sequences', 'typography'].includes(id) && (
+            <label>
+              <input data-motion-field="loop" type="checkbox" /> Loop
+            </label>
+          )}
+          {id !== 'scroll' && (
+            <label>
+              Progreso{' '}
+              <input
+                data-motion-field="progress"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+              />
+            </label>
+          )}
+          <div class="motion-actions">
+            <Button size="sm" data-motion-action="play">
+              Ejecutar
+            </Button>
+            <Button size="sm" variant="outline" data-motion-action="pause">
+              Pausar
+            </Button>
+            <Button size="sm" variant="ghost" data-motion-action="reset">
+              Reiniciar
+            </Button>
+          </div>
+          <p role="status" data-motion-status></p>
+        </div>
+      )}
+      <dl class="entry-notes">
+        <div>
+          <dt>Tecnología y API</dt>
+          <dd>{api}</dd>
+        </div>
+        <div>
+          <dt>Tokens</dt>
+          <dd>
+            <code>{tokens}</code>
+          </dd>
+        </div>
+        <div>
+          <dt>Accesibilidad y rendimiento</dt>
+          <dd>{note}</dd>
+        </div>
+      </dl>
+      <div class="example-code">
+        <pre tabindex="0"><code id={`motion-code-${id}`}>{code}</code></pre>
+        <div class="copy-row">
+          <Button variant="outline" size="sm" data-copy={`motion-code-${id}`}>
+            Copiar código
+          </Button>
+          <span role="status"></span>
+        </div>
+      </div>
+    </article>
+  ))}
+</section>
+
+<script>
+  import './motion-playground';
+</script>

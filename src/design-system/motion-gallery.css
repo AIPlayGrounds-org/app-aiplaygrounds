@@ -1,0 +1,109 @@
+.motion-feedback-card {
+  align-items: start;
+  gap: 0.75rem;
+}
+.motion-reduce {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block-start: 0.75rem;
+}
+.motion-preview {
+  min-height: 8rem;
+  overflow: clip;
+}
+.motion-tiles,
+[data-motion-scroll-target] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.motion-tiles[data-grid] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(4rem, 100%), 1fr));
+}
+.motion-tile {
+  display: grid;
+  min-height: 3.5rem;
+  min-width: 3.5rem;
+  place-items: center;
+  background: var(--surface-contrast);
+  color: var(--foreground);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  font-family: var(--font-mono);
+}
+.motion-track {
+  display: flex;
+  align-items: center;
+  min-height: 6rem;
+  border-block-end: 1px solid var(--line);
+}
+.motion-track .motion-tile {
+  touch-action: pan-y;
+}
+.motion-scroll {
+  max-height: 12rem;
+  overflow: auto;
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+}
+.motion-scroll > p {
+  min-height: 8rem;
+}
+.motion-scroll > p:last-child {
+  padding-block-start: 2rem;
+}
+[data-motion-scroll-target] {
+  min-height: 9rem;
+}
+.motion-scroll[data-horizontal] {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.motion-scroll[data-horizontal] > p,
+.motion-scroll[data-horizontal] > [data-motion-scroll-target] {
+  min-width: 85%;
+  flex: none;
+}
+[data-motion-scroll-progress] {
+  width: 100%;
+  margin-block-start: 0.5rem;
+}
+[data-svg-mode] {
+  min-height: 5rem;
+}
+[data-svg-mode] > svg {
+  max-height: 15rem;
+}
+.motion-controls input:not([type='checkbox']),
+.motion-controls select {
+  display: block;
+  width: 8rem;
+  max-width: 100%;
+  min-height: 2.25rem;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-small);
+  padding-inline: 0.4rem;
+  background: var(--background);
+}
+.motion-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.motion-controls label[hidden] {
+  display: none;
+}
+.motion-controls [data-motion-status]:empty {
+  display: none;
+}
+[data-motion-playground][data-simulate-reduce] *,
+[data-motion-playground][data-simulate-reduce] *::before,
+[data-motion-playground][data-simulate-reduce] *::after {
+  animation: none !important;
+  transition: none !important;
+  translate: none !important;
+  scale: none !important;
+}

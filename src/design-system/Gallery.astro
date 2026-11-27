@@ -5,6 +5,8 @@ import Input from '../components/ui/Input.astro';
 import Label from '../components/ui/Label.astro';
 import Select from '../components/ui/Select.astro';
 import Example from './Example.astro';
+import MotionGallery from './MotionGallery.astro';
+import { motionPatterns } from './motion-patterns';
 import { components, selection } from './catalog';
 import tokens from '../styles/tokens.css?raw';
 import '../styles/global.css';
@@ -35,7 +37,7 @@ const groups = [
       'Borders',
       'Elevation',
       'Breakpoints',
-      'Motion',
+      'Motion Tokens',
       'Iconography',
     ],
   },
@@ -49,6 +51,7 @@ const groups = [
     title: 'Composites',
     links: Object.keys(components).filter((name) => components[name].composite),
   },
+  { title: 'Motion', links: motionPatterns.map(({ title }) => title) },
 ];
 const slug = (value: string) => value.toLowerCase().replaceAll(' ', '-');
 const variables = [
@@ -94,9 +97,9 @@ const foundations = [
     list: variables.filter((v) => v.startsWith('--breakpoint-')),
   },
   {
-    title: 'Motion',
+    title: 'Motion Tokens',
     list: variables.filter((v) =>
-      /^--(duration-|editorial-ease|editorial-entrance-ease|editorial-response)/.test(
+      /^--(duration-|motion-|editorial-ease|editorial-entrance-ease|editorial-response)/.test(
         v,
       ),
     ),
@@ -279,8 +282,23 @@ function snippet(
                 {links.map((label) => (
                   <li
                     data-nav-component={components[label] ? label : undefined}
+                    data-motion-nav={
+                      title === 'Motion'
+                        ? motionPatterns.find(
+                            (pattern) => pattern.title === label,
+                          )?.id
+                        : undefined
+                    }
                   >
-                    <a href={`#${slug(label)}`}>{label}</a>
+                    <a
+                      href={
+                        title === 'Motion'
+                          ? `#motion-${motionPatterns.find((pattern) => pattern.title === label)?.id}`
+                          : `#${slug(label)}`
+                      }
+                    >
+                      {label}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -437,17 +455,18 @@ function snippet(
                         style={`box-shadow:var(${name})`}
                       ></span>
                     )}
-                    {title === 'Motion' && (
-                      <span
-                        class="motion-sample"
-                        aria-hidden="true"
-                        style={
-                          name.includes('ease')
-                            ? `--sample-ease:var(${name})`
-                            : `--sample-duration:var(${name})`
-                        }
-                      ></span>
-                    )}
+                    {title === 'Motion Tokens' &&
+                      /ease|duration|response/.test(name) && (
+                        <span
+                          class="motion-sample"
+                          aria-hidden="true"
+                          style={
+                            name.includes('ease')
+                              ? `--sample-ease:var(${name})`
+                              : `--sample-duration:var(${name})`
+                          }
+                        ></span>
+                      )}
                     {title === 'Iconography' && (
                       <Info
                         aria-hidden="true"
@@ -570,6 +589,7 @@ function snippet(
               })}
           </section>
         ))}
+        <MotionGallery {theme} {viewport} />
       </main>
     </div>
   </body>
