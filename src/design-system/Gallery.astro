@@ -7,7 +7,12 @@ import Select from '../components/ui/Select.astro';
 import Example from './Example.astro';
 import MotionGallery from './MotionGallery.astro';
 import UsageDetails from './UsageDetails.astro';
-import { componentUsage, unlistedComponents } from './usage';
+import {
+  componentUsage,
+  containerLayouts,
+  unlistedComponents,
+  unreferencedTokens,
+} from './usage';
 import { motionPatterns } from './motion-patterns';
 import { components, selection } from './catalog';
 import tokens from '../styles/tokens.css?raw';
@@ -43,6 +48,7 @@ const groups = [
       'Borders',
       'Elevation',
       'Breakpoints',
+      'Container Queries',
       'Motion Tokens',
       'Iconography',
       'Component Tokens',
@@ -498,6 +504,23 @@ function snippet(
               </ul>
             </section>
           ))}
+          <section id="container-queries">
+            <h3>Container Queries</h3>
+            <p>
+              Tamaño relativo al espacio del componente. La tarjeta de Equipo
+              usa unidades <code>cqi</code> dentro de un contenedor de ancho; no
+              necesita un umbral por viewport.
+            </p>
+            <ul class="foundation-list">
+              {containerLayouts.map(({ path, query }) => (
+                <li>
+                  <code>{query}</code>
+                  <span>{path}</span>
+                </li>
+              ))}
+            </ul>
+            <a href="#teamcard">Ver la tarjeta de Equipo</a>
+          </section>
         </section>
 
         {[false, true].map((composite) => (
@@ -616,6 +639,20 @@ function snippet(
             Implementaciones de dominio y composiciones que no tienen ficha
             propia. Las rutas dinámicas se muestran por su archivo fuente.
           </p>
+          <details class="entry-usage">
+            <summary>Tokens sin referencia estática detectada</summary>
+            <p>
+              Revisa variantes, utilidades e interpolación antes de retirar un
+              token.
+            </p>
+            <ul>
+              {unreferencedTokens(variables).map((token) => (
+                <li>
+                  <code>{token}</code>
+                </li>
+              ))}
+            </ul>
+          </details>
           {unlistedComponents(Object.keys(components)).map((usage) => (
             <article class="component-entry">
               <h3>{usage.path.split('/').at(-1)?.replace('.astro', '')}</h3>

@@ -15,6 +15,8 @@ const atoms = new Set(
     .map((path) => basename(path).toLowerCase()),
 );
 const errors = [];
+const review = new Set();
+const literalColor = /(?:^|[\s,(])#[\da-f]{3,8}\b|\b(?:rgba?|hsla?|oklch)\(/i;
 const obsolete = /(?:starwind(?:-ui)?|tailwind-variants)/i;
 const manifest = JSON.parse(readFileSync('package.json', 'utf8'));
 const dependencies = { ...manifest.dependencies, ...manifest.devDependencies };
@@ -71,6 +73,9 @@ function checkCatalog(node) {
 }
 checkCatalog(catalog);
 const examples = readFileSync('src/design-system/Example.astro', 'utf8');
+const motionExamples =
+  readFileSync('src/design-system/MotionGallery.astro', 'utf8') +
+  readFileSync('src/design-system/motion-playground.ts', 'utf8');
 for (const path of sourceFiles(ui).filter((file) => file.endsWith('.astro'))) {
   const name = basename(path, '.astro');
   if (!registry.has(name) || !new RegExp(`<${name}[\\s/>]`).test(examples))
@@ -95,12 +100,85 @@ postcss
     definitions.add(declaration.prop);
   });
 const declarations = [];
+const artColorExceptions = new Map([
+  [
+    'src/components/site/compact-hero-art.ts',
+    'Pigmentos de las ilustraciones aprobadas.',
+  ],
+]);
+
+function reviewScript(path, code) {
+  const source = ts.createSourceFile(
+    path,
+    code,
+    ts.ScriptTarget.Latest,
+    true,
+    ts.ScriptKind.TS,
+  );
+  function visit(node) {
+    if (
+      ts.isStringLiteralLike(node) &&
+      literalColor.test(node.text) &&
+      !artColorExceptions.has(path)
+    ) {
+      if (
+        node.parent &&
+        ts.isPropertyAssignment(node.parent) &&
+        /^(?:color|background|border|fill|stroke)/i.test(
+          node.parent.name.getText(source).replace(/^['"]/, ''),
+        )
+      ) {
+        review.add(`${path}: revisar pigmento literal ${node.text}`);
+      }
+    }
+    if (
+      path.startsWith('src/motion/') &&
+      ts.isPropertyAssignment(node) &&
+      /^(?:duration|delay|ease)$/.test(node.name.getText(source)) &&
+      (ts.isNumericLiteral(node.initializer) ||
+        ts.isStringLiteralLike(node.initializer))
+    ) {
+      errors.push(
+        `${path}: ${node.name.getText(source)} debe leer un Motion Token`,
+      );
+    }
+    ts.forEachChild(node, visit);
+  }
+  visit(source);
+}
 
 for (const path of files) {
   const content = readFileSync(path, 'utf8');
+  const publicSource =
+    path.startsWith('src/') && !path.startsWith('src/design-system/');
+  if (publicSource && path.endsWith('.ts')) reviewScript(path, content);
+  if (
+    path.startsWith('src/motion/') &&
+    /from ['"]animejs\//.test(content) &&
+    !motionExamples.includes(`/motion/${basename(path, '.ts')}`)
+  ) {
+    errors.push(`${path}: falta un demo del patrón de producción`);
+  }
   if (path.endsWith('.astro')) {
     for (const [, token] of content.matchAll(/['"](--[\w-]+)['"]\s*:/g)) {
       definitions.add(token);
+    }
+    if (publicSource && !styleExceptions.has(path)) {
+      for (const [, , inline] of content.matchAll(/\bstyle=(["'])(.*?)\1/g)) {
+        if (
+          literalColor.test(inline) ||
+          /(?:font-size|border-radius|padding|gap):\s*\d/.test(inline)
+        )
+          review.add(`${path}: revisar estilo visual inline`);
+      }
+      if (
+        /\b(?:gap|p[xy]?|m[xy]?|text|rounded)-\[(?:\d+(?:\.\d+)?(?:px|rem)|#[\da-f]{3,8})\]/i.test(
+          content,
+        )
+      )
+        review.add(
+          `${path}: revisar utilidades arbitrarias equivalentes a tokens`,
+        );
     }
   }
   if (
@@ -153,7 +231,7 @@ for (const {
 } of declarations) {
   const location = `${path}:${source.start.line}`;
   if (path !== 'src/styles/tokens.css' && !styleExceptions.has(path)) {
-    if (/(?:^|[\s,(])#[\da-f]{3,8}\b|\b(?:rgba?|hsla?|oklch)\(/i.test(value))
+    if (literalColor.test(value))
       errors.push(`${location}: color literal en ${prop}`);
     if (
       /^(?:transition|animation)(?:-|$)|^--editorial-delay$/.test(prop) &&
@@ -162,6 +240,16 @@ for (const {
       )
     )
       errors.push(`${location}: tiempo o curva literal en ${prop}`);
+    if (
+      !path.startsWith('src/design-system/') &&
+      ((/^(?:gap|padding(?:-inline|-block)?|margin-top)$/.test(prop) &&
+        /^0\.(?:35|45|55|65|7)rem\b/.test(value)) ||
+        (/^(?:font-size|line-height|font-weight|border-radius)$/.test(prop) &&
+          /^(?:0\.\d+rem|1\.3|[456]00)$/.test(value)) ||
+        (prop === 'box-shadow' && /^\d/.test(value)))
+    ) {
+      review.add(`${location}: revisar ${prop}: ${value}`);
+    }
   }
   for (const [, token, fallback] of value.matchAll(
     /var\(\s*(--[\w-]+)\s*([,)])/g,
@@ -184,6 +272,8 @@ for (const path of [
   if (existsSync(path)) errors.push(`${path}: archivo o directorio obsoleto`);
 }
 
+if (review.size)
+  console.warn(`Revisión visual (no bloqueante):\n${[...review].join('\n')}`);
 if (errors.length) {
   console.error(errors.join('\n'));
   process.exitCode = 1;

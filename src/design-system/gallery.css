@@ -29,7 +29,7 @@ html:has(.design-gallery) {
 .gallery-back {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: var(--space-control);
 }
 
 .gallery-brand {
@@ -75,7 +75,7 @@ html:has(.design-gallery) {
 
 .gallery-nav-group a {
   display: block;
-  padding: 0.2rem 0.35rem;
+  padding: 0.2rem var(--space-inline);
   min-block-size: 1.65rem;
   color: var(--secondary-text);
   font-size: 0.9rem;
@@ -110,7 +110,7 @@ html:has(.design-gallery) {
   display: flex;
   flex-wrap: wrap;
   align-items: end;
-  gap: 0.65rem 1rem;
+  gap: var(--space-control) var(--space-stack);
   padding: 0.8rem;
   background: var(--surface);
   border: var(--stroke-default) solid var(--line);
@@ -200,7 +200,7 @@ html:has(.design-gallery) {
 .foundation-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
-  gap: 0.6rem;
+  gap: var(--space-control);
   margin-block: 0.5rem 1.25rem;
 }
 
@@ -212,7 +212,7 @@ html:has(.design-gallery) {
   gap: 0.15rem;
   min-width: 0;
   margin: 0;
-  padding: 0.5rem;
+  padding: var(--space-related);
   border: var(--stroke-default) solid var(--line);
   background: var(--surface-elevated);
   border-radius: var(--radius-small);
@@ -233,7 +233,7 @@ html:has(.design-gallery) {
 .gallery-content output,
 .gallery-content kbd {
   font-family: var(--font-mono);
-  font-size: 0.82rem;
+  font-size: var(--type-label);
   overflow-wrap: anywhere;
 }
 
@@ -279,7 +279,7 @@ html:has(.design-gallery) {
 }
 
 .component-entry {
-  padding-block: 1.25rem;
+  padding-block: var(--space-card);
   border-block-start: var(--stroke-default) solid var(--line);
 }
 
@@ -296,7 +296,7 @@ html:has(.design-gallery) {
 
 .example-code pre {
   overflow: auto;
-  padding: 0.75rem;
+  padding: var(--space-control);
   background: var(--brand-gray-1);
   color: var(--brand-white);
   border-radius: var(--radius-small);
@@ -306,13 +306,13 @@ html:has(.design-gallery) {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.6rem;
+  gap: var(--space-control);
   margin-block: 0.55rem;
 }
 
 .entry-notes {
   display: grid;
-  gap: 0.45rem;
+  gap: var(--space-related);
   margin-block-start: 1rem;
   font-size: 0.95rem;
 }
@@ -340,7 +340,7 @@ html:has(.design-gallery) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     max-block-size: 14rem;
     overflow: auto;
-    padding: 0.35rem;
+    padding: var(--space-inline);
     margin-block: 0.5rem;
   }
 }

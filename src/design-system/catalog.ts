@@ -19,6 +19,17 @@ type Entry = {
 };
 
 export const components: Record<string, Entry> = {
+  TeamCard: {
+    composite: true,
+    description:
+      'Perfil de Equipo con tamaños relativos al ancho de su contenedor.',
+    props: 'member, role, layout, heading.',
+    accessibility:
+      'Los enlaces sociales tienen nombre propio; el retrato acompaña el nombre sin repetirlo.',
+    usage:
+      'Cambia el ancho del preview para comprobar cómo responde la tipografía con cqi.',
+    example: '<TeamCard {member} {role} layout="vertical" heading="h3" />',
+  },
   SectionHeading: {
     composite: true,
     description:

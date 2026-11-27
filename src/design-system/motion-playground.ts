@@ -61,7 +61,7 @@ for (const demo of demos) {
     }
     const unavailable: Record<string, string[]> = {
       'entrance-exit':
-        mode === 'card'
+        mode === 'card' || mode === 'group'
           ? []
           : mode === 'fade'
             ? ['distance', 'scale']
@@ -130,7 +130,8 @@ for (const demo of demos) {
         pattern === 'entrance-exit' ||
         (pattern === 'scroll' && mode === 'reveal')
       ) {
-        const { observeReveals, reveal } = await import('../motion/reveal');
+        const { groupDelay, observeReveals, reveal } =
+          await import('../motion/reveal');
         if (!valid()) return;
         if (pattern === 'scroll') {
           const container = stage.querySelector<HTMLElement>(
@@ -154,16 +155,23 @@ for (const demo of demos) {
           };
         } else {
           const preset =
-            mode === 'card' || mode === 'fade' || mode === 'ink'
-              ? mode
-              : 'rise';
+            mode === 'group'
+              ? 'card'
+              : mode === 'card' || mode === 'fade' || mode === 'ink'
+                ? mode
+                : 'rise';
           const items =
             stage.querySelectorAll<HTMLElement>('[data-motion-item]');
           const effects = [...items].map((node, index) =>
             reveal(node, preset, {
-              duration: settings.duration,
-              ease: settings.ease,
-              delay: settings.delay + index * settings.stagger,
+              ...(field('duration')?.value && { duration: settings.duration }),
+              ...(field('ease')?.value && { ease: settings.ease }),
+              delay:
+                settings.delay +
+                (mode === 'group' && !field('stagger')?.value
+                  ? groupDelay(node, index)
+                  : index * read('stagger', 0)),
+              intensity: read('intensity', 1),
               ...(field('distance')?.value && { distance: settings.distance }),
               scale: read('scale', tokens.number('--motion-scale-card')),
               loop: settings.loop,
@@ -173,10 +181,7 @@ for (const demo of demos) {
             }),
           );
           current = {
-            duration:
-              settings.duration +
-              settings.delay +
-              Math.max(0, items.length - 1) * settings.stagger,
+            duration: Math.max(0, ...effects.map((effect) => effect.duration)),
             pause: () => effects.forEach((effect) => effect.pause()),
             resume: () => effects.forEach((effect) => effect.resume()),
             seek: (time) =>

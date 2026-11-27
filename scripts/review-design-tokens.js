@@ -46,6 +46,134 @@ export default async function reviewDesignTokens(page, origin) {
       throw new Error(`${path}: el botón no volvió al estado original.`);
     }
   }
+  const consumers = [
+    {
+      site: '/',
+      targets: [
+        ['#I3 [data-slot="card"]', 'backgroundColor', 'rgb(224, 222, 212)'],
+        ['#I2 h2', 'fontSize', '31px'],
+        ['#I2 .text-link svg', 'width', '23px'],
+      ],
+    },
+    {
+      site: '/empresas/',
+      targets: [['#contact-name', 'borderRadius', '13px']],
+    },
+    { site: '/ai-labs/', targets: [['main [data-badge]', 'fontSize', '16px']] },
+    {
+      site: '/design-system/',
+      targets: [
+        [
+          '#card .preview-frame [data-slot="card"]',
+          'backgroundColor',
+          'rgb(224, 222, 212)',
+        ],
+        ['#card .preview-frame [data-slot="card"]', 'paddingTop', '29px'],
+        ['#sectionheading h2', 'fontSize', '31px'],
+        ['#textlink svg', 'width', '23px'],
+        ['#example-Input', 'borderRadius', '13px'],
+        ['#badge .preview-frame [data-badge]', 'fontWeight', '600'],
+      ],
+    },
+  ];
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  for (const { site, targets } of consumers) {
+    await page.goto(`${origin}${site}`);
+    const read = ([selector, property]) =>
+      page
+        .locator(selector)
+        .first()
+        .evaluate(
+          (element, property) => getComputedStyle(element)[property],
+          property,
+        );
+    const before = await Promise.all(targets.map(read));
+    const change = await page.addStyleTag({
+      content: `
+      :root, [data-theme='light'] {
+        --surface-elevated: rgb(224 222 212);
+        --editorial-surface: rgb(224 222 212);
+        --card-padding-md: 29px;
+        --type-section: 31px;
+        --type-label: 16px;
+        --weight-medium: 600;
+        --icon-chevron: 23px;
+        --radius-small: 13px;
+      }
+    `,
+    });
+    try {
+      for (const target of targets) {
+        const actual = await read(target);
+        if (actual !== target[2])
+          throw new Error(
+            `${site} ${target[0]}: ${target[1]} calculado ${actual}; se esperaba ${target[2]}.`,
+          );
+      }
+    } finally {
+      await change.evaluate((style) => style.remove());
+    }
+    if (
+      JSON.stringify(await Promise.all(targets.map(read))) !==
+      JSON.stringify(before)
+    )
+      throw new Error(`${site}: los valores originales no se restauraron.`);
+  }
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  const stage = page.locator('#motion-entrance-exit [data-motion-stage]');
+  await stage.evaluate((element) => {
+    element.style.setProperty('--duration-entrance', '999ms');
+    element.style.setProperty('--motion-stagger-group', '133ms');
+    element.style.setProperty('--motion-delay-group-max', '150ms');
+    element.style.setProperty('--motion-scale-card', '0.92');
+  });
+  const demo = page.locator('#motion-entrance-exit');
+  await demo.locator('[data-motion-field="mode"]').selectOption('group');
+  await demo.locator('[data-motion-action="play"]').click();
+  await demo
+    .locator('[data-motion-status]')
+    .getByText('En reproducción.')
+    .waitFor();
+  const keyframes = await stage
+    .locator('[data-motion-item]')
+    .evaluateAll((items) =>
+      items.map(
+        (item) =>
+          item.getAnimations().flatMap(({ effect }) => {
+            const frame = effect?.getKeyframes()[0];
+            return frame?.scale || frame?.['--scale']
+              ? [
+                  [
+                    effect.getTiming().duration,
+                    effect.getTiming().delay,
+                    Number(frame.scale ?? frame['--scale']),
+                  ],
+                ]
+              : [];
+          })[0],
+      ),
+    );
+  if (
+    JSON.stringify(keyframes) !==
+    JSON.stringify([
+      [999, 0, 0.92],
+      [999, 133, 0.92],
+      [999, 150, 0.92],
+    ])
+  )
+    throw new Error(
+      `Anime.js no leyó los tokens esperados: ${JSON.stringify(keyframes)}`,
+    );
+  await demo.locator('[data-motion-action="reset"]').click();
+  await stage.evaluate((element) => {
+    for (const token of [
+      '--duration-entrance',
+      '--motion-stagger-group',
+      '--motion-delay-group-max',
+      '--motion-scale-card',
+    ])
+      element.style.removeProperty(token);
+  });
   const trace = page.locator('#button .entry-usage');
   await trace.locator('summary').click();
   const text = await trace.innerText();
@@ -66,5 +194,5 @@ export default async function reviewDesignTokens(page, origin) {
   ) {
     throw new Error('La trazabilidad produce overflow.');
   }
-  return 'Conexión verificada: color, radio, separación y movimiento en sitio y galería.';
+  return 'Conexión verificada: átomos y compuestos del sitio, galería y tiempos y escala efectivos de Anime.js.';
 }

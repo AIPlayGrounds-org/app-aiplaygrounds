@@ -6,6 +6,29 @@ export default async function reviewMotion(page, origin) {
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   try {
     await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto(`${origin}/`);
+    const verticals = page.locator('#I3 [data-reveal-group]');
+    await verticals.scrollIntoViewIfNeeded();
+    await page.waitForFunction(() => {
+      const cards = [
+        ...document.querySelectorAll(
+          '#I3 [data-reveal-group] > [data-entering]',
+        ),
+      ];
+      const delays = new Set(
+        cards.flatMap((card) =>
+          card.getAnimations().map(({ effect }) => effect.getTiming().delay),
+        ),
+      );
+      return delays.size > 1;
+    });
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await page.waitForFunction(
+      () => !document.querySelector('#I3 [data-entering]'),
+    );
+    await verticals.scrollIntoViewIfNeeded();
+    if (await verticals.locator('[data-entering]').count())
+      throw new Error('El grupo editorial se repitió al invertir el scroll.');
     await page.goto(`${origin}/ai-labs/`);
     await page.waitForFunction(() =>
       Boolean(
@@ -55,7 +78,10 @@ export default async function reviewMotion(page, origin) {
 
     await page.goto(`${origin}/design-system/#motion`);
     for (const [id, modes] of [
-      ['entrance-exit', ['rise', 'fade', 'card', 'ink', 'slide', 'exit']],
+      [
+        'entrance-exit',
+        ['rise', 'fade', 'card', 'ink', 'group', 'slide', 'exit'],
+      ],
       ['scroll', ['reveal', 'progress', 'parallax', 'horizontal']],
       ['sequences', ['timeline', 'hero']],
       ['svg', ['layers', 'draw', 'morph', 'path']],

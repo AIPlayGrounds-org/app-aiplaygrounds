@@ -35,3 +35,5 @@ creatividad, accesibilidad y rendimiento.
 - Mantén hover, foco, presión, deshabilitado, color, bordes, iconos y cargas simples en CSS, Tailwind o daisyUI. Parte de los Motion Tokens; no dupliques presets.
 - Carga los módulos por componente en el navegador, limita sus objetivos y revierte efectos, listeners y observadores al desmontar. Comprueba reduced motion, foco, estado estático sin JS y rendimiento móvil.
 - Documenta los patrones reutilizables y sus demos en el catálogo. Una composición singular puede definir su movimiento local sin duplicar el ciclo de vida compartido; las demos experimentales no se publican.
+- Mantén estable el contenido que ya está en pantalla. Usa una secuencia por grupo relacionado, limita el escalonado y finaliza el efecto si el usuario pasa de largo o le da foco. Valida el progreso del efecto y su interrupción, además de comparar capturas finales.
+- Revisa las advertencias visuales de `scripts/check-design-system.mjs`. Resuelve los valores recurrentes en su capa; documenta las excepciones en lugar de generalizarlas.

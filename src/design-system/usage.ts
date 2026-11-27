@@ -6,7 +6,10 @@ const sources = import.meta.glob<string>(
   ],
   { eager: true, query: '?raw', import: 'default' },
 );
-const imports = /\b(?:from\s+|import\s*(?:\(\s*)?)['"](\.[^'"]+)['"]/g;
+const imports =
+  /(?:\bfrom\s+|\bimport\s*(?:\(\s*)?|@import\s+(?:url\(\s*)?)['"](\.[^'"]+)['"]/g;
+const tokenReferences =
+  /var\(\s*(--[\w-]+)|\.(?:ms|number|value)\(\s*['"](--[\w-]+)|['"](--duration-[\w-]+)['"]|getPropertyValue\(\s*['"](--[\w-]+)/g;
 const dependencies = new Map(
   Object.entries(sources).map(([path, source]) => {
     const targets = [...source.matchAll(imports)].flatMap(([, specifier]) => {
@@ -50,7 +53,10 @@ export function usageFor(path: string) {
   );
   const tokens = [
     ...new Set(
-      [...sources[path].matchAll(/var\((--[\w-]+)/g)].map(([, name]) => name),
+      [...sources[path].matchAll(tokenReferences)].map(
+        ([, css, api, duration, property]) =>
+          css ?? api ?? duration ?? property,
+      ),
     ),
   ].sort();
   return {
@@ -90,3 +96,33 @@ export function unlistedComponents(listed: readonly string[]) {
       return usage ? [usage] : [];
     });
 }
+
+// A token can be read through inheritance or an interpolated name; absence here
+// means no static reference was detected, not that removal is safe.
+export function unreferencedTokens(tokens: readonly string[]) {
+  const references = new Set(
+    Object.values(sources).flatMap((source) =>
+      [...source.matchAll(tokenReferences)].map(
+        ([, css, api, duration, property]) =>
+          css ?? api ?? duration ?? property,
+      ),
+    ),
+  );
+  return tokens.filter(
+    (token) =>
+      !references.has(token) &&
+      !/^--(?:breakpoint-|motion-(?:opacity|distance)-)/.test(token),
+  );
+}
+
+export const containerLayouts = Object.entries(sources).flatMap(
+  ([path, source]) =>
+    [
+      ...source.matchAll(
+        /(?:@container\s+([^{\n]+)\s*\{|(container-type:\s*[^;]+);)/g,
+      ),
+    ].map(([, query, type]) => ({
+      path: path.slice(1),
+      query: (query ?? type).trim(),
+    })),
+);

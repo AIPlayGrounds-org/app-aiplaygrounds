@@ -28,6 +28,8 @@ import FilterGroup from '../components/composed/FilterGroup.astro';
 import ViewToggle from '../components/composed/ViewToggle.astro';
 import SectionHeading from '../components/site/SectionHeading.astro';
 import TextLink from '../components/site/TextLink.astro';
+import TeamCard from '../components/team/TeamCard.astro';
+import { team } from '../data/team';
 import DirectoryFilter from '../components/directory/DirectoryFilter.astro';
 import VerticalTag from '../components/directory/VerticalTag.astro';
 import ProductTags from '../components/labs/ProductTags.astro';
@@ -89,6 +91,14 @@ const product = name === 'ProductTags' ? (await getProducts())[0] : undefined;
 ---
 
 {name === 'SectionHeading' && <SectionHeading>Áreas de trabajo</SectionHeading>}
+{name === 'TeamCard' && team[0] && (
+  <TeamCard
+    member={team[0]}
+    role={team[0].organizationRole.direction ?? 'Integrante'}
+    layout="vertical"
+    heading="h3"
+  />
+)}
 {name === 'TextLink' && (
   <TextLink href="/investigacion/">Explorar investigación</TextLink>
 )}
@@ -377,21 +387,21 @@ const product = name === 'ProductTags' ? (await getProducts())[0] : undefined;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.75rem;
+    gap: var(--space-control);
   }
   .example-stack {
     display: grid;
-    gap: 0.5rem;
+    gap: var(--space-related);
   }
   .inline-field {
-    padding: 0.75rem;
+    padding: var(--space-control);
     border: var(--stroke-default) solid var(--line);
   }
   .example-stack > p[id$='-error'] {
     color: var(--error);
   }
   .example-tooltip {
-    padding: 2rem 0 0.5rem;
+    padding: 2rem 0 var(--space-related);
   }
   .example-filter,
   .example-dropdown {

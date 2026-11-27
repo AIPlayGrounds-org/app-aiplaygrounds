@@ -6,7 +6,7 @@ interface Props {
 }
 const { usage } = Astro.props;
 const groups = [
-  ['Importadores directos', usage.consumers],
+  ['Dependencia estática: importadores directos', usage.consumers],
   ['Páginas: uso directo', usage.directPages],
   ['Páginas: mediante composición', usage.composedPages],
   ['Variables leídas en la implementación', usage.tokens],

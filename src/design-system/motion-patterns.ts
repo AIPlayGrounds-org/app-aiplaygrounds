@@ -13,12 +13,13 @@ export const motionPatterns = [
   {
     id: 'entrance-exit',
     title: 'Entrance & Exit',
-    name: 'Fade, Rise, Scale y Slide',
+    name: 'Fade, Rise, Scale, Group y Slide',
     api: 'Anime.js · waapi.animate()',
-    tokens: '--duration-entrance, --motion-distance-*, --motion-opacity-*',
-    use: 'Entrada editorial. El modo Salida invierte la muestra; es experimental.',
+    tokens:
+      '--duration-entrance, --duration-reading, --motion-distance-*, --motion-opacity-*, --motion-stagger-group, --motion-delay-group-max',
+    use: 'Entrada editorial y escalonado de hermanos visibles. Slide y Salida son experimentales.',
     note: 'Transformaciones y opacidad; evita ocultar controles que reciben foco.',
-    code: 'import { reveal } from "../../motion/reveal";\nconst effect = reveal(element, "card");\n// Al desmontar: effect.revert();',
+    code: '<div data-reveal-group>\n  <article data-reveal="card">Primera tarjeta</article>\n  <article data-reveal="card">Segunda tarjeta</article>\n</div>\n<EditorialMotion />',
   },
   {
     id: 'scroll',
@@ -38,7 +39,7 @@ export const motionPatterns = [
     tokens: '--duration-card, --motion-stagger-contours',
     use: 'Entrada del hero real y timeline experimental de múltiples elementos.',
     note: 'Limita los objetivos en cada secuencia y evita loops automáticos.',
-    code: 'import { createTimeline } from "animejs/timeline";\nimport { stagger } from "animejs/utils";\ncreateTimeline().add(items, { opacity: [0.16, 1], y: [34, 0], delay: stagger(55) }).add(items, { scale: [0.972, 1] });',
+    code: 'import { createTimeline } from "animejs/timeline";\nimport { stagger } from "animejs/utils";\nimport { motionTokens } from "../../motion/tokens";\nconst tokens = motionTokens(stage);\ncreateTimeline().add(items, {\n  opacity: [tokens.number("--motion-opacity-rise"), 1],\n  y: [tokens.number("--motion-distance-rise"), 0],\n  duration: tokens.ms("--duration-entrance"),\n  delay: stagger(tokens.ms("--motion-stagger-group")),\n});',
   },
   {
     id: 'svg',
