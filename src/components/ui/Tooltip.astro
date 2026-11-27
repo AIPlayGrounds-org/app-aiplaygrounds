@@ -21,9 +21,69 @@ const {
 } = Astro.props;
 ---
 
-<span {...rest} class:list={['ds-tooltip', placements[placement], className]}>
+<span
+  {...rest}
+  data-ui-tooltip
+  class:list={['ds-tooltip ui-tooltip', placements[placement], className]}
+>
   <span id={descriptionId} class="ds-tooltip-content" role="tooltip">
     {description}
   </span>
   <slot />
 </span>
+
+<script>
+  const tooltips = document.querySelectorAll<HTMLElement>('[data-ui-tooltip]');
+  for (const tooltip of tooltips) {
+    tooltip.addEventListener('pointerleave', () => {
+      if (!tooltip.matches(':focus-within'))
+        tooltip.removeAttribute('data-dismissed');
+    });
+    tooltip.addEventListener('focusout', (event) => {
+      const next = event.relatedTarget;
+      if (
+        !tooltip.matches(':hover') &&
+        !(next instanceof Node && tooltip.contains(next))
+      ) {
+        tooltip.removeAttribute('data-dismissed');
+      }
+    });
+  }
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape' || event.defaultPrevented) return;
+    for (const tooltip of tooltips) {
+      if (
+        !tooltip.matches(
+          ':not([data-dismissed]):is(:hover, :has(:focus-visible))',
+        )
+      )
+        continue;
+      tooltip.setAttribute('data-dismissed', '');
+      event.preventDefault();
+    }
+  });
+</script>
+
+<style>
+  .ui-tooltip {
+    /* Let magnifier users move the pointer from the control into the hint. */
+    --ds-tt-off: 100%;
+  }
+  .ui-tooltip > .ds-tooltip-content {
+    visibility: hidden;
+  }
+  .ui-tooltip:is(:hover, :has(:focus-visible)):not([data-dismissed])
+    > .ds-tooltip-content {
+    --ds-tt-pos: 0rem;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .ui-tooltip:is(:hover, :has(:focus-visible)):not([data-dismissed])::after {
+    --ds-tt-pos: 0rem;
+    opacity: 1;
+  }
+  .ui-tooltip[data-dismissed]::after {
+    opacity: 0;
+  }
+</style>

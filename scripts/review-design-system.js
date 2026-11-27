@@ -246,6 +246,22 @@ export default async function reviewDesignSystem(
         .locator('#dropdown')
         .getByRole('link', { name: 'Guía de uso' })
         .waitFor();
+      const tooltipTrigger = page
+        .locator('#tooltip')
+        .getByRole('button', { name: 'Exportar' });
+      await tooltipTrigger.press('Tab');
+      await page.keyboard.press('Shift+Tab');
+      const hint = page.locator('#example-tip');
+      await page.waitForFunction(() => {
+        const element = document.querySelector('#example-tip');
+        return element && getComputedStyle(element).opacity === '1';
+      });
+      await page.keyboard.press('Escape');
+      await hint.waitFor({ state: 'hidden' });
+      assert(
+        await tooltipTrigger.evaluate((el) => el === document.activeElement),
+        'Escape cierra Tooltip sin mover el foco',
+      );
       await page.getByRole('tab', { name: 'Resumen' }).press('ArrowRight');
       assert(
         (await page

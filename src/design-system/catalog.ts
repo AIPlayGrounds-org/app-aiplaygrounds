@@ -199,7 +199,7 @@ export const components: Record<string, Entry> = {
     props:
       'descriptionId, description, placement (top, bottom, left, right); slot para el disparador.',
     accessibility:
-      'El disparador debe tener su propio nombre y aria-describedby apuntando a descriptionId.',
+      'El disparador debe tener su propio nombre y aria-describedby apuntando a descriptionId. Escape oculta la ayuda sin mover el foco.',
     usage:
       'No pongas información necesaria ni acciones dentro del tooltip; puede no estar disponible en pantallas táctiles.',
     example:
