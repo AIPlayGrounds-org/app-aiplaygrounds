@@ -1,0 +1,21 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = HTMLAttributes<'label'>;
+const { class: className, ...rest } = Astro.props;
+---
+
+<label {...rest} class:list={['ds-label ui-label', className]}>
+  <slot />
+</label>
+
+<style>
+  @layer theme, base, components, utilities;
+  @layer utilities {
+    .ui-label {
+      color: inherit;
+      white-space: normal;
+      font-weight: 500;
+    }
+  }
+</style>

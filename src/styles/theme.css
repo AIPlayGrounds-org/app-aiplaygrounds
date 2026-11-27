@@ -1,0 +1,41 @@
+@plugin 'daisyui' {
+  themes: false;
+  prefix: 'ds-';
+  include:
+    button, card, badge, input, textarea, select, checkbox, radio, label,
+    loading, modal, dropdown, join;
+  exclude: themecontroller;
+  logs: false;
+}
+
+/* Resolve aliases again at every theme boundary (including nested previews). */
+:where(:root, [data-theme='light'], [data-theme='dark']) {
+  --color-base-100: var(--background);
+  --color-base-200: var(--surface);
+  --color-base-300: var(--surface-contrast);
+  --color-base-content: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-content: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-content: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-content: var(--accent-foreground);
+  --color-neutral: var(--neutral);
+  --color-neutral-content: var(--neutral-foreground);
+  --color-info: var(--info);
+  --color-info-content: var(--info-foreground);
+  --color-success: var(--success);
+  --color-success-content: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-content: var(--warning-foreground);
+  --color-error: var(--error);
+  --color-error-content: var(--error-foreground);
+  --radius-selector: var(--radius-small);
+  --radius-field: var(--radius-small);
+  --radius-box: var(--radius-large);
+  --size-selector: var(--space-unit);
+  --size-field: var(--space-unit);
+  --border: var(--stroke-default);
+  --depth: 0;
+  --noise: 0;
+}

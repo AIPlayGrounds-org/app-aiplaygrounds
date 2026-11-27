@@ -1,0 +1,29 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+const placements = {
+  top: 'ds-tooltip-top',
+  bottom: 'ds-tooltip-bottom',
+  left: 'ds-tooltip-left',
+  right: 'ds-tooltip-right',
+};
+interface Props extends HTMLAttributes<'span'> {
+  descriptionId: string;
+  description: string;
+  placement?: keyof typeof placements;
+}
+const {
+  descriptionId,
+  description,
+  placement = 'top',
+  class: className,
+  ...rest
+} = Astro.props;
+---
+
+<span {...rest} class:list={['ds-tooltip', placements[placement], className]}>
+  <span id={descriptionId} class="ds-tooltip-content" role="tooltip">
+    {description}
+  </span>
+  <slot />
+</span>

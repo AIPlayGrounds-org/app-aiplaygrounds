@@ -1,7 +1,8 @@
 @media (prefers-reduced-motion: no-preference) {
   [data-entering]:not(:focus-within) {
-    animation: var(--editorial-entry, editorial-reveal-rise) 760ms
-      var(--editorial-entrance-ease) var(--editorial-delay, 0ms) backwards;
+    animation: var(--editorial-entry, editorial-reveal-rise)
+      var(--duration-entrance) var(--editorial-entrance-ease)
+      var(--editorial-delay, 0ms) backwards;
   }
 }
 

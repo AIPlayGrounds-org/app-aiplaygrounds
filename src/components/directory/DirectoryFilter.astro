@@ -1,5 +1,7 @@
 ---
 import { ChevronDown } from '@lucide/astro';
+import Checkbox from '../ui/Checkbox.astro';
+import Dropdown from '../ui/Dropdown.astro';
 import type { DirectoryFacet } from '../../data/directory';
 
 interface Props {
@@ -21,12 +23,13 @@ const { group, directory, plural, dropdown, advanced = false } = Astro.props;
       {group.label}
     </span>
   )}
-  <details
+  <Dropdown
     class="facet"
     name={`${directory}-facets`}
     data-dropdown={dropdown || advanced || undefined}
   >
     <summary
+      slot="trigger"
       class:list={[{ 'control dropdown-trigger': dropdown || advanced }]}
       aria-labelledby={
         advanced
@@ -43,12 +46,12 @@ const { group, directory, plural, dropdown, advanced = false } = Astro.props;
       )}
       <ChevronDown size={16} aria-hidden="true" />
     </summary>
-    <fieldset class="facet-options">
+    <fieldset slot="panel" class="facet-options">
       <legend class="sr-only">{group.label}</legend>
       {group.options.map(([value, label]) => (
         <label>
-          <input
-            type="checkbox"
+          <Checkbox
+            native
             name={group.key}
             {value}
             data-facet
@@ -62,5 +65,5 @@ const { group, directory, plural, dropdown, advanced = false } = Astro.props;
         </label>
       ))}
     </fieldset>
-  </details>
+  </Dropdown>
 </div>

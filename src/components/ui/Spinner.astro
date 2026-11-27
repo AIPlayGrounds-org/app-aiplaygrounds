@@ -1,0 +1,32 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+const sizes = {
+  xs: 'ds-loading-xs',
+  sm: 'ds-loading-sm',
+  md: 'ds-loading-md',
+  lg: 'ds-loading-lg',
+  xl: 'ds-loading-xl',
+};
+interface Props extends HTMLAttributes<'span'> {
+  size?: keyof typeof sizes;
+  label?: string;
+}
+const { size = 'md', label, class: className, ...rest } = Astro.props;
+---
+
+<span
+  {...rest}
+  role={label ? 'status' : undefined}
+  aria-hidden={label ? undefined : 'true'}
+>
+  <span
+    class:list={[
+      'ds-loading ds-loading-spinner align-middle',
+      sizes[size],
+      className,
+    ]}
+    aria-hidden="true"
+  ></span>
+  {label && <span class="sr-only">{label}</span>}
+</span>

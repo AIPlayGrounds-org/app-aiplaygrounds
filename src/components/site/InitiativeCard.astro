@@ -1,4 +1,5 @@
 ---
+import Card from '../ui/Card.astro';
 import TextLink from './TextLink.astro';
 
 interface Props {
@@ -23,18 +24,25 @@ const {
 } = Astro.props;
 ---
 
-<article
+<Card
+  as="article"
+  surface="inherit"
+  density="none"
+  edge="none"
+  interaction="single-link"
   {id}
   class={`path-card path-${illustration}`}
   data-reveal="card"
-  data-card-interactive
-  data-card-hit-area
   tabindex={id ? -1 : undefined}
 >
   <div class="path-illustration" aria-hidden="true">
     {illustration === 'labs' && (
       <svg viewBox="0 0 310 140" fill="none">
-        {'M16 102C70 33 114 31 155 72s75 67 142 10M18 118C75 68 118 58 155 82s82 51 132 15M23 128c64-34 101-37 132-35s77 35 119 16M57 58c38-45 82-38 110-13s64 70 112 22M88 27c27-23 62-16 88 8s59 60 84 20'.match(/M[^M]*/g)?.map((d) => <path {d} pathLength="1" />)}
+        {'M16 102C70 33 114 31 155 72s75 67 142 10M18 118C75 68 118 58 155 82s82 51 132 15M23 128c64-34 101-37 132-35s77 35 119 16M57 58c38-45 82-38 110-13s64 70 112 22M88 27c27-23 62-16 88 8s59 60 84 20'
+          .match(/M[^M]*/g)
+          ?.map((d) => (
+            <path {d} pathLength="1" />
+          ))}
         <path class="path-guide" d="M28 108 84 65 148 73 206 50 273 74" />
         <circle cx="28" cy="108" r="4" />
         <circle cx="84" cy="65" r="4" />
@@ -45,7 +53,11 @@ const {
     )}
     {illustration === 'academy' && (
       <svg viewBox="0 0 310 140" fill="none">
-        {'M155 119V41M155 48C127 22 86 18 47 26v71c38-5 72-4 108 22 36-26 70-27 108-22V26c-39-8-80-4-108 22ZM47 40l-15 5v71c44-9 84-5 123 10 39-15 79-19 123-10V45l-15-5'.match(/M[^M]*/g)?.map((d) => <path {d} pathLength="1" />)}
+        {'M155 119V41M155 48C127 22 86 18 47 26v71c38-5 72-4 108 22 36-26 70-27 108-22V26c-39-8-80-4-108 22ZM47 40l-15 5v71c44-9 84-5 123 10 39-15 79-19 123-10V45l-15-5'
+          .match(/M[^M]*/g)
+          ?.map((d) => (
+            <path {d} pathLength="1" />
+          ))}
         <path
           class="path-guide"
           d="M64 49c29-5 53 1 74 13M64 65c28-4 52 2 74 13M64 81c23-3 44 1 62 9M172 63c21-12 45-18 74-13M172 79c22-11 46-17 74-13M184 91c18-8 39-12 62-9"
@@ -54,7 +66,11 @@ const {
     )}
     {illustration === 'organizations' && (
       <svg viewBox="0 0 310 140" fill="none">
-        {'M27 103h256M42 103V89h53v14m120 0V89h53v14M74 89c15-48 48-72 81-72s66 24 81 72M95 89c14-34 35-52 60-52s46 18 60 52M112 62v41m43-66v66m43-41v41M54 118h202'.match(/M[^M]*/g)?.map((d) => <path {d} pathLength="1" />)}
+        {'M27 103h256M42 103V89h53v14m120 0V89h53v14M74 89c15-48 48-72 81-72s66 24 81 72M95 89c14-34 35-52 60-52s46 18 60 52M112 62v41m43-66v66m43-41v41M54 118h202'
+          .match(/M[^M]*/g)
+          ?.map((d) => (
+            <path {d} pathLength="1" />
+          ))}
         <path class="path-guide" d="M45 72h220" />
         <circle cx="74" cy="89" r="4" />
         <circle cx="155" cy="37" r="4" />
@@ -63,13 +79,21 @@ const {
     )}
     {illustration === 'research' && (
       <svg viewBox="0 0 310 140" fill="none">
-        {'M52 25h124v93H52zM68 43h47M68 55h32M68 102h73M173 77l-32 13-30-20-40 21'.match(/M[^M]*/g)?.map((d) => <path {d} pathLength="1" />)}
+        {'M52 25h124v93H52zM68 43h47M68 55h32M68 102h73M173 77l-32 13-30-20-40 21'
+          .match(/M[^M]*/g)
+          ?.map((d) => (
+            <path {d} pathLength="1" />
+          ))}
         <path
           class="path-guide"
           d="M115 41h35m-82 39h88M126 68v29m21-29v29m-42-29v29"
         />
         <circle cx="184" cy="65" r="33" pathLength="1" />
-        {'M162 76l13-12 14 5 17-17m3 35 35 35 9-9-35-35M170 47h14'.match(/M[^M]*/g)?.map((d) => <path {d} pathLength="1" />)}
+        {'M162 76l13-12 14 5 17-17m3 35 35 35 9-9-35-35M170 47h14'
+          .match(/M[^M]*/g)
+          ?.map((d) => (
+            <path {d} pathLength="1" />
+          ))}
         <circle cx="162" cy="76" r="3" />
         <circle cx="189" cy="69" r="3" />
         <circle cx="206" cy="52" r="3" />
@@ -86,7 +110,7 @@ const {
   >
     {label}
   </TextLink>
-</article>
+</Card>
 
 <style>
   .path-card {
@@ -115,7 +139,7 @@ const {
     overflow: hidden;
     block-size: clamp(8rem, 13vw, 11rem);
     border-radius: 0.35rem 0.35rem 0 0;
-    border-block-end: 1px solid var(--border);
+    border-block-end: 1px solid var(--line);
     background: var(--path-wash);
     color: var(--path-ink);
   }
@@ -156,20 +180,30 @@ const {
     .path-guide {
       stroke-width: calc(1.25 + var(--surface-motion, 0) * 0.6);
     }
-    .path-card:is(:hover, :focus-within) .path-illustration :is(path, circle)[pathLength] {
+    .path-card:is(:hover, :focus-within)
+      .path-illustration
+      :is(path, circle)[pathLength] {
       stroke-dasharray: 1 1;
       animation: draw-illustration 1000ms linear backwards;
     }
-    .path-card:is(:hover, :focus-within) .path-illustration path[pathLength]:nth-child(2) {
+    .path-card:is(:hover, :focus-within)
+      .path-illustration
+      path[pathLength]:nth-child(2) {
       animation-delay: 120ms;
     }
-    .path-card:is(:hover, :focus-within) .path-illustration path[pathLength]:nth-child(n + 3) {
+    .path-card:is(:hover, :focus-within)
+      .path-illustration
+      path[pathLength]:nth-child(n + 3) {
       animation-delay: 240ms;
     }
   }
   @keyframes draw-illustration {
-    from { stroke-dashoffset: 1; }
-    to { stroke-dashoffset: 0; }
+    from {
+      stroke-dashoffset: 1;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
   }
   @media (min-width: 52rem) {
     .path-card:nth-child(2) {

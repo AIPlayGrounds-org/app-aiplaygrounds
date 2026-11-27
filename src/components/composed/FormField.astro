@@ -1,0 +1,104 @@
+---
+import Input from '../ui/Input.astro';
+import Label from '../ui/Label.astro';
+import Select from '../ui/Select.astro';
+import Textarea from '../ui/Textarea.astro';
+
+interface Props {
+  id: string;
+  name: string;
+  label: string;
+  kind?: 'text' | 'email' | 'textarea' | 'select';
+  autocomplete?: 'name' | 'organization' | 'email';
+  maxLength?: number;
+  placeholder?: string;
+  rows?: number;
+  error: string;
+  class?: string;
+}
+const {
+  id,
+  name,
+  label,
+  kind = 'text',
+  autocomplete,
+  maxLength,
+  placeholder,
+  rows = 4,
+  error,
+  class: className,
+} = Astro.props;
+const errorId = `${id}-error`;
+---
+
+<div class:list={['form-field', className]}>
+  <Label for={id} class="block">
+    {label} <span aria-hidden="true">*</span>
+  </Label>
+  {kind === 'select' ? (
+    <Select
+      appearance="editorial"
+      {id}
+      {name}
+      required
+      aria-invalid="false"
+      data-error={errorId}
+      data-required-message={error}
+    >
+      <slot />
+    </Select>
+  ) : kind === 'textarea' ? (
+    <Textarea
+      appearance="editorial"
+      {id}
+      {name}
+      {placeholder}
+      maxlength={maxLength}
+      {rows}
+      required
+      aria-invalid="false"
+      data-error={errorId}
+      data-required-message={error}
+    />
+  ) : (
+    <Input
+      appearance="editorial"
+      {id}
+      {name}
+      {autocomplete}
+      {placeholder}
+      type={kind}
+      maxlength={maxLength}
+      required
+      aria-invalid="false"
+      data-error={errorId}
+      data-required-message={error}
+    />
+  )}
+  <p id={errorId} data-field-error hidden>
+    {error}
+  </p>
+</div>
+
+<style>
+  .form-field {
+    display: grid;
+    align-content: start;
+    gap: var(--field-gap);
+    min-width: 0;
+  }
+  [data-field-error] {
+    font-size: 0.9rem;
+    color: var(--error);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    [data-field-error]:not([hidden]) {
+      animation: error-arrive 150ms ease-out;
+    }
+  }
+  @keyframes error-arrive {
+    from {
+      opacity: 0;
+    }
+  }
+</style>

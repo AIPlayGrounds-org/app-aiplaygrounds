@@ -1,0 +1,21 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends Omit<HTMLAttributes<'input'>, 'type' | 'size'> {
+  size?: 'sm' | 'md' | 'lg';
+  native?: boolean;
+}
+const sizes = {
+  sm: 'ds-checkbox-sm',
+  md: 'ds-checkbox-md',
+  lg: 'ds-checkbox-lg',
+};
+const { size = 'md', native, class: className, ...rest } = Astro.props;
+---
+
+<input
+  {...rest}
+  type="checkbox"
+  data-native-choice={native || undefined}
+  class:list={['ds-checkbox', sizes[size], className]}
+/>

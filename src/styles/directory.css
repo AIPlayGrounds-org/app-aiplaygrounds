@@ -21,7 +21,7 @@
   gap: 0.65rem;
   min-block-size: 46px;
   padding-inline: 0.8rem 0.35rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
   color: var(--secondary-text);
@@ -77,7 +77,7 @@
   min-block-size: 44px;
   max-inline-size: 100%;
   padding: 0.4rem 0.7rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
   color: var(--foreground);
@@ -213,7 +213,7 @@
   gap: 0.4rem;
   min-block-size: 32px;
   padding: 0.2rem 0.55rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--line);
   border-radius: 2rem;
   background: var(--home-card);
   font-size: 0.86rem;
@@ -233,7 +233,7 @@
 }
 .labs-empty {
   padding: clamp(1rem, 3vw, 2rem);
-  border: 1px solid var(--border);
+  border: 1px solid var(--line);
   background: var(--home-card);
   border-radius: var(--editorial-radius);
 }
@@ -275,7 +275,7 @@
   max-inline-size: calc(100dvw - 1rem);
   max-block-size: min(19rem, var(--dropdown-room, 19rem));
   padding: 0.45rem 0.65rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
   box-shadow: 0 0.4rem 1rem #191a1814;
@@ -321,7 +321,7 @@
 }
 .advanced-panel {
   padding: 1.2rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
 }
@@ -383,13 +383,14 @@
 }
 .filter-dialog[open] {
   display: grid;
+  place-items: stretch;
   grid-template-rows: auto minmax(0, 1fr) auto;
 }
 .filter-dialog [data-drawer-content] {
   overflow: auto;
   overscroll-behavior: contain;
 }
-.filter-dialog::backdrop {
+.filter-dialog.ui-dialog::backdrop {
   background: #0008;
   overflow: hidden;
   overscroll-behavior: contain;

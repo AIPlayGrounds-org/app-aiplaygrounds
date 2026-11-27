@@ -1,0 +1,34 @@
+---
+import { Grid2x2, List } from '@lucide/astro';
+import type { HTMLAttributes } from 'astro/types';
+import Button from '../ui/Button.astro';
+
+interface Props extends HTMLAttributes<'div'> {
+  value: 'grid' | 'list';
+  controlClass?: string;
+}
+const { value, controlClass, ...rest } = Astro.props;
+---
+
+<div role="group" aria-label="Vista del directorio" {...rest}>
+  <Button
+    variant={controlClass ? 'plain' : 'outline'}
+    class={controlClass}
+    iconOnly
+    data-set-view="grid"
+    aria-label="Cuadrícula"
+    aria-pressed={value === 'grid'}
+  >
+    <Grid2x2 size={18} class="size-[18px]" aria-hidden="true" />
+  </Button>
+  <Button
+    variant={controlClass ? 'plain' : 'outline'}
+    class={controlClass}
+    iconOnly
+    data-set-view="list"
+    aria-label="Listado"
+    aria-pressed={value === 'list'}
+  >
+    <List size={18} class="size-[18px]" aria-hidden="true" />
+  </Button>
+</div>

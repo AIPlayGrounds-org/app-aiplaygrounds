@@ -1,15 +1,16 @@
 /* Share the edge state without making informational surfaces interactive. */
 :is([data-card-interactive], [data-card-outline]) {
-  --card-edge: var(--card-edge-rest, var(--border));
+  --card-edge: var(--card-edge-rest, var(--line));
 }
 
 [data-card-interactive] {
-  transition: border-color 200ms var(--editorial-ease-out);
+  transition: border-color var(--duration-card) var(--editorial-ease-out);
 }
 
 [data-card-outline] {
-  outline: 1px solid var(--card-edge);
-  transition: outline-color 200ms var(--editorial-ease-out);
+  outline: var(--stroke-default) solid var(--card-edge);
+  outline-offset: 0;
+  transition: outline-color var(--duration-card) var(--editorial-ease-out);
 }
 
 [data-card-interactive]:is(:focus-visible, :has(:focus-visible)) {

@@ -1,0 +1,26 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'select'> {
+  appearance?: 'default' | 'editorial' | 'inline';
+  density?: 'compact' | 'comfortable';
+}
+const {
+  appearance = 'default',
+  density = 'comfortable',
+  class: className,
+  ...rest
+} = Astro.props;
+---
+
+<select
+  {...rest}
+  data-field={appearance}
+  class:list={[
+    'ds-select',
+    density === 'compact' ? 'ds-select-sm' : 'ds-select-md',
+    className,
+  ]}
+>
+  <slot />
+</select>

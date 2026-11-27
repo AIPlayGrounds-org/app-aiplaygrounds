@@ -5,7 +5,8 @@ import AcademyMotif from '../components/site/AcademyMotif.astro';
 import ClosingCTA from '../components/site/ClosingCTA.astro';
 import EditorialMotion from '../components/site/EditorialMotion.astro';
 import FormCTA from '../components/site/FormCTA.astro';
-import FormField from '../components/site/FormField.astro';
+import FormField from '../components/composed/FormField.astro';
+import Radio from '../components/ui/Radio.astro';
 import ImmersiveCard from '../components/site/ImmersiveCard.astro';
 import ImmersiveHero from '../components/site/ImmersiveHero.astro';
 import InformationalCard from '../components/site/InformationalCard.astro';
@@ -14,7 +15,7 @@ import SectionHeading from '../components/site/SectionHeading.astro';
 import SiteFooter from '../components/site/SiteFooter.astro';
 import SiteHeader from '../components/site/SiteHeader.astro';
 import TextLink from '../components/site/TextLink.astro';
-import Button from '../components/starwind/button/Button.astro';
+import Button from '../components/ui/Button.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pillars = [
@@ -103,8 +104,14 @@ const metrics = [
       title="Amplía lo que eres capaz de construir con IA."
       description="Desarrolla capacidades para crear software con IA e integrarla en tus aplicaciones con criterio y autonomía."
     >
-      <Button href="#F3" variant="primary" data-surface-motion style="--arrow-x: 0px; --arrow-y: 4px">
-        Explorar enfoques <ArrowDown size={16} aria-hidden="true" data-card-arrow />
+      <Button
+        href="#F3"
+        variant="primary"
+        data-surface-motion
+        style="--arrow-x: 0px; --arrow-y: 4px"
+      >
+        Explorar enfoques{' '}
+        <ArrowDown size={16} aria-hidden="true" data-card-arrow />
       </Button>
     </ImmersiveHero>
 
@@ -279,7 +286,7 @@ const metrics = [
             </legend>
             {lines.map(({ value, title }) => (
               <label>
-                <input type="radio" name="line" {value} required />
+                <Radio native name="line" {value} required />
                 {title}
               </label>
             ))}
@@ -376,11 +383,11 @@ const metrics = [
     display: grid;
     align-content: start;
     padding-inline: clamp(0.3rem, 2vw, 1.35rem);
-    border-inline-start: 1px solid var(--border);
+    border-inline-start: 1px solid var(--line);
     text-align: center;
   }
   .metrics li:last-child {
-    border-inline-end: 1px solid var(--border);
+    border-inline-end: 1px solid var(--line);
   }
   .metrics strong {
     color: var(--foreground);
@@ -405,7 +412,7 @@ const metrics = [
     align-items: center;
     gap: 0.65rem;
     padding: 0.5rem 0.75rem;
-    border: 1px solid var(--border);
+    border: 1px solid var(--line);
     border-radius: var(--radius-sm);
     background: var(--editorial-background);
     color: var(--secondary-text);
@@ -423,7 +430,7 @@ const metrics = [
   }
   #academy-form :global(.form-field input:disabled) {
     color: var(--secondary-text);
-    border-color: var(--border);
+    border-color: var(--line);
     opacity: 1;
   }
   #academy-form :global(.form-field input:disabled::placeholder) {

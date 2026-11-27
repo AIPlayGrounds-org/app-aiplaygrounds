@@ -1,0 +1,77 @@
+@layer theme, base, components, utilities;
+@layer utilities {
+  [data-field] {
+    --ds-input-color: var(--input);
+    font-family: inherit;
+    box-shadow: none;
+  }
+  [data-field]::placeholder {
+    color: var(--muted-foreground);
+    opacity: 1;
+  }
+  [data-field][aria-invalid='true'] {
+    --ds-input-color: var(--error);
+  }
+  [data-field='editorial'] {
+    width: 100%;
+    height: auto;
+    min-height: var(--field-height);
+    padding: var(--field-padding);
+    font: inherit;
+    font-size: max(1rem, 1em);
+    color: var(--foreground);
+    background: var(--editorial-background);
+    transition:
+      border-color var(--duration-control) ease-out,
+      background-color var(--duration-control) ease-out;
+  }
+  select:is([data-field='editorial'], [data-field='inline'])::-picker(select) {
+    appearance: auto;
+  }
+  select[data-field='editorial'] {
+    appearance: auto;
+    display: block;
+  }
+  @media (max-width: 22rem) {
+    select[data-field='editorial'] {
+      padding-inline: 0.375rem;
+      font-size: 1rem;
+    }
+  }
+  textarea[data-field='editorial'] {
+    min-height: var(--form-message-min-height, var(--field-message-height));
+    resize: vertical;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    [data-field='editorial']:enabled:hover {
+      background-color: var(--editorial-card);
+    }
+  }
+  [data-field='inline'] {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    background: transparent;
+    font: inherit;
+    box-shadow: none;
+  }
+  [data-field='inline']:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+  }
+  [data-native-choice] {
+    appearance: auto;
+    width: auto;
+    height: auto;
+    border: initial;
+    background: initial;
+    color: inherit;
+    box-shadow: none;
+  }
+  [data-native-choice]::before {
+    display: none;
+  }
+}

@@ -1,0 +1,36 @@
+---
+import { Search } from '@lucide/astro';
+import type { HTMLAttributes } from 'astro/types';
+import Input from '../ui/Input.astro';
+import Label from '../ui/Label.astro';
+
+interface Props extends Omit<HTMLAttributes<'input'>, 'type'> {
+  id: string;
+  label: string;
+  as?: 'div' | 'form';
+  searchableForm?: boolean;
+  iconSize?: number;
+  inputClass?: string;
+  appearance?: 'default' | 'inline';
+}
+const {
+  id,
+  label,
+  as: Tag = 'div',
+  searchableForm,
+  iconSize = 20,
+  inputClass,
+  appearance = 'default',
+  class: className,
+  ...input
+} = Astro.props;
+---
+
+<Tag data-search={searchableForm || undefined} class={className}>
+  <Search size={iconSize} aria-hidden="true" />
+  <Label for={id} class="sr-only">
+    {label}
+  </Label>
+  <Input {...input} {id} {appearance} type="search" class={inputClass} />
+  <slot />
+</Tag>

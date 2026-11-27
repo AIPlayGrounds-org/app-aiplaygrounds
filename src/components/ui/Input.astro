@@ -1,0 +1,24 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'input'> {
+  appearance?: 'default' | 'editorial' | 'inline';
+  density?: 'compact' | 'comfortable';
+}
+const {
+  appearance = 'default',
+  density = 'comfortable',
+  class: className,
+  ...rest
+} = Astro.props;
+---
+
+<input
+  {...rest}
+  data-field={appearance}
+  class:list={[
+    'ds-input',
+    density === 'compact' ? 'ds-input-sm' : 'ds-input-md',
+    className,
+  ]}
+/>

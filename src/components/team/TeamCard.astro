@@ -1,4 +1,5 @@
 ---
+import Card from '../ui/Card.astro';
 import { Image } from 'astro:assets';
 import { Globe, UserRound } from '@lucide/astro';
 import type { TeamMember } from '../../data/team';
@@ -23,10 +24,14 @@ const links = [
 ].filter(({ href }) => href);
 ---
 
-<article
+<Card
+  as="article"
+  surface="inherit"
+  density="none"
+  edge="none"
+  interaction="interactive"
   class:list={['team-card', layout]}
   data-member={id}
-  data-card-interactive
   data-reveal="card"
   style={{ '--editorial-delay': `${Math.min(position, 3) * 85}ms` }}
 >
@@ -95,7 +100,7 @@ const links = [
       </div>
     )}
   </div>
-</article>
+</Card>
 
 <style>
   .team-card {

@@ -1,6 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
-import { ChevronDown, Search } from '@lucide/astro';
+import { ChevronDown } from '@lucide/astro';
+import Button from '../ui/Button.astro';
+import Select from '../ui/Select.astro';
+import SearchField from '../composed/SearchField.astro';
 import CommunityEvent from './CommunityEvent.astro';
 
 const now = Date.now();
@@ -43,28 +46,25 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
       {previous.length > 0 && (
         <search data-filter-controls hidden>
           <form aria-label="Filtrar encuentros anteriores">
-            <div class="search-field">
-              <label class="sr-only" for="event-search">
-                Buscar encuentros
-              </label>
-              <Search size={17} aria-hidden="true" />
-              <input
-                id="event-search"
-                type="search"
-                name="q"
-                placeholder="Buscar encuentros..."
-                autocomplete="off"
-                spellcheck="false"
-              />
-            </div>
+            <SearchField
+              class="search-field"
+              inputClass="event-query"
+              id="event-search"
+              label="Buscar encuentros"
+              iconSize={17}
+              name="q"
+              placeholder="Buscar encuentros..."
+              autocomplete="off"
+              spellcheck="false"
+            />
             <label class="filter-field filter-year">
               <span class="sr-only">Año</span>
-              <select name="year">
+              <Select name="year">
                 <option value="">Todos los años</option>
                 {years.map((year) => (
                   <option value={year}>{year}</option>
                 ))}
-              </select>
+              </Select>
               <ChevronDown
                 class="filter-chevron"
                 size={16}
@@ -74,12 +74,12 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
             {modalities.length > 0 && (
               <label class="filter-field filter-modality">
                 <span class="sr-only">Modalidad</span>
-                <select name="modality">
+                <Select name="modality">
                   <option value="">Todas las modalidades</option>
                   {modalities.map((mode) => (
                     <option value={mode}>{mode}</option>
                   ))}
-                </select>
+                </Select>
                 <ChevronDown
                   class="filter-chevron"
                   size={16}
@@ -95,9 +95,9 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
       <p class="note" data-no-results hidden>
         No encontramos encuentros que coincidan con tu búsqueda.
       </p>
-      <button type="button" class="text-button" data-clear>
+      <Button variant="plain" type="button" class="text-button" data-clear>
         Limpiar filtros
-      </button>
+      </Button>
     </div>
     <p class="sr-only" role="status" data-results-status></p>
     {previous.length > 0 ? (
@@ -126,9 +126,9 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
     ) : (
       <p class="note">Aún no hay encuentros anteriores en el calendario.</p>
     )}
-    <button type="button" class="more" data-more hidden>
+    <Button variant="plain" type="button" class="more" data-more hidden>
       Ver más encuentros
-    </button>
+    </Button>
   </section>
 </section>
 
@@ -238,7 +238,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 0.85rem 2rem;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--line);
     padding-block-end: 1rem;
   }
   .calendar-heading h2 {
@@ -270,7 +270,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
     flex-wrap: wrap;
     gap: 0.55rem;
   }
-  form :is(input, select) {
+  form :global(:is(input, select)) {
     background: var(--home-surface);
     border: 1px solid var(--community-control-edge);
     border-radius: 0.4rem;
@@ -291,7 +291,11 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
   }
   .filter-field select {
     appearance: none;
+    height: auto;
+    background-image: none;
     cursor: pointer;
+    white-space: normal;
+    gap: 0.5em;
     padding-inline-start: 0.95rem;
     padding-inline-end: 2.4rem;
     transition:
@@ -380,26 +384,28 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
       }
     }
   }
-  form input {
+  form :global(.event-query) {
+    height: auto;
     padding-inline-start: 2.4rem;
     min-width: 0;
   }
-  form input::placeholder {
+  form :global(.event-query)::placeholder {
     color: var(--secondary-text);
   }
-  .search-field {
+  form :global(.search-field) {
     position: relative;
     flex: 1 1 13.5rem;
     min-inline-size: 0;
   }
-  .search-field svg {
+  form :global(.search-field svg) {
     position: absolute;
+    z-index: 1;
     inset-inline-start: 0.85rem;
     inset-block-start: 50%;
     translate: 0 -50%;
     pointer-events: none;
   }
-  form :is(input, select):hover,
+  form :global(:is(input, select)):hover,
   .more:hover {
     border-color: var(--community-accent);
   }
@@ -435,7 +441,7 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
       display: grid;
       grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
     }
-    .search-field {
+    form :global(.search-field) {
       grid-column: 1 / -1;
     }
     .filter-field {
@@ -449,13 +455,13 @@ const modalities = ['Presencial', 'Virtual', 'Híbrida'].filter((mode) =>
   }
   @media (pointer: coarse) {
     .more,
-    form :is(input, select) {
+    form :global(:is(input, select)) {
       min-block-size: 3rem;
     }
   }
   @media (prefers-reduced-motion: reduce) {
     .filter-field select,
-    form :is(input, select),
+    form :global(:is(input, select)),
     .more {
       transition: none;
     }

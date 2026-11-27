@@ -13,6 +13,13 @@
       "skillPath": "skills/content-collection/SKILL.md",
       "computedHash": "487695b59504ec046f3ff3b48992ae079b8b5fa3a8d4c8afb831a3a395eefd3b"
     },
+    "daisyui": {
+      "source": "saadeghi/daisyui",
+      "commit": "42c76795161d81b723988e5b7848c07697abbce0",
+      "sourceType": "github",
+      "skillPath": "skills/daisyui/SKILL.md",
+      "computedHash": "1585d0a690f9507ed11b0e744b56b6fdbccd8e11ae192e0b1f71814cc312c687"
+    },
     "frontend-design": {
       "source": "anthropics/skills",
       "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
@@ -39,12 +46,6 @@
       "sourceType": "github",
       "skillPath": "skills/playwright-cli/SKILL.md",
       "computedHash": "d3c50339092b670cdda1ba2bed0bdee1c34247cdf70df475e8b7d83983a39e79"
-    },
-    "starwind-ui": {
-      "source": "starwind-ui/skills",
-      "sourceType": "github",
-      "skillPath": "skills/starwind-ui/SKILL.md",
-      "computedHash": "eeea04198489e5d7a8f4f35c86acfa5c98bc593822d65a20279b18bb31ef11ce"
     },
     "turnstile-spin": {
       "source": "cloudflare/skills",

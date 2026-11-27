@@ -1,4 +1,5 @@
 ---
+import Card from '../ui/Card.astro';
 import { ArrowRight } from '@lucide/astro';
 import DirectoryImage from '../directory/DirectoryImage.astro';
 import VerticalTag from '../directory/VerticalTag.astro';
@@ -16,7 +17,14 @@ interface Props {
 const { entry, eager } = Astro.props;
 ---
 
-<article class="research-card" data-card-interactive data-card-hit-area>
+<Card
+  as="article"
+  surface="inherit"
+  density="none"
+  edge="none"
+  interaction="single-link"
+  class="research-card"
+>
   {entry.cover && (
     <div class="research-cover">
       <DirectoryImage image={entry.cover} decorative {eager} />
@@ -54,7 +62,7 @@ const { entry, eager } = Astro.props;
       </a>
     </footer>
   </div>
-</article>
+</Card>
 
 <style>
   .research-card {
@@ -100,7 +108,7 @@ const { entry, eager } = Astro.props;
     padding: 0.15rem 0.5rem;
     border-radius: var(--editorial-radius);
     color: var(--editorial-lilac-ink);
-    border: 1px solid var(--border);
+    border: 1px solid var(--line);
   }
   .research-tags .research-demo,
   .research-card-heading p,

@@ -1,0 +1,12 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = HTMLAttributes<'div'>;
+const { class: className, ...rest } = Astro.props;
+---
+
+<div
+  {...rest}
+  aria-hidden="true"
+  class:list={['ds-skeleton min-h-4', className]}
+></div>

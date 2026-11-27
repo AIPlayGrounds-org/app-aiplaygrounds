@@ -1,0 +1,24 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'textarea'> {
+  appearance?: 'default' | 'editorial';
+  density?: 'compact' | 'comfortable';
+}
+const {
+  appearance = 'default',
+  density = 'comfortable',
+  class: className,
+  ...rest
+} = Astro.props;
+---
+
+<textarea
+  {...rest}
+  data-field={appearance}
+  class:list={[
+    'ds-textarea',
+    density === 'compact' ? 'ds-textarea-sm' : 'ds-textarea-md',
+    className,
+  ]}
+><slot /></textarea>

@@ -1,4 +1,5 @@
 ---
+import Card from '../ui/Card.astro';
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import TextLink from './TextLink.astro';
@@ -17,11 +18,14 @@ const { title, description, image, tone, href, label, ctaId, inquiryType } =
   Astro.props;
 ---
 
-<article
+<Card
+  as="article"
+  surface="inherit"
+  density="none"
+  edge="none"
+  interaction="single-link"
   class:list={['collaboration', tone]}
   data-reveal="card"
-  data-card-interactive
-  data-card-hit-area
 >
   <Image
     src={image}
@@ -45,7 +49,7 @@ const { title, description, image, tone, href, label, ctaId, inquiryType } =
       {label}
     </TextLink>
   </div>
-</article>
+</Card>
 
 <style>
   .collaboration {

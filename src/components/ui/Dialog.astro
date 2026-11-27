@@ -1,0 +1,52 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = Omit<HTMLAttributes<'dialog'>, 'open'> & {
+  id: string;
+  layout?: 'center' | 'custom';
+} & ({ 'aria-label': string } | { 'aria-labelledby': string });
+const { layout = 'center', class: className, ...rest } = Astro.props;
+---
+
+<dialog
+  {...rest}
+  data-dialog-layout={layout}
+  class:list={['ds-modal ui-dialog', className]}
+>
+  {layout === 'custom' ? (
+    <slot />
+  ) : (
+    <div class="ds-modal-box ui-dialog-box">
+      <slot />
+    </div>
+  )}
+</dialog>
+
+<style>
+  .ui-dialog:modal {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+    overscroll-behavior: contain;
+  }
+  .ui-dialog:not([open]) {
+    display: none;
+  }
+  .ui-dialog[data-dialog-layout='center']:modal {
+    background: transparent;
+  }
+  .ui-dialog::backdrop {
+    display: block;
+    background: rgb(0 0 0 / 0.4);
+    overflow: hidden;
+    overscroll-behavior: contain;
+  }
+  .ui-dialog-box {
+    box-shadow: var(--shadow-overlay);
+  }
+  .ui-dialog:modal > .ui-dialog-box {
+    opacity: 1;
+    translate: none;
+    scale: 1;
+  }
+</style>

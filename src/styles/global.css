@@ -1,6 +1,14 @@
-@import 'tailwindcss';
+@layer theme, base, components, utilities;
+@import 'tailwindcss' source(none);
 @import './tokens.css';
+@import './theme.css';
 @import './card-interactions.css';
+@import './controls.css';
+
+@source '../components';
+@source '../layouts';
+@source '../pages';
+@source '../scripts';
 
 @font-face {
   font-family: 'Space Grotesk';
@@ -36,7 +44,7 @@
   --color-surface-elevated: var(--surface-elevated);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-  --color-border: var(--border);
+  --color-border: var(--line);
   --color-input: var(--input);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
@@ -65,7 +73,7 @@ html {
 body {
   margin: 0;
   font-family: var(--font-sans);
-  font-size: clamp(1rem, 0.97rem + 0.15vw, 1.125rem);
+  font-size: var(--type-body);
   line-height: 1.5;
 }
 h1,
@@ -77,15 +85,15 @@ h3 {
   text-wrap: balance;
 }
 h1 {
-  font-size: clamp(2.5rem, 1.5rem + 4vw, 5.5rem);
+  font-size: var(--type-display);
   line-height: 1.05;
 }
 h2 {
-  font-size: clamp(1.75rem, 1.4rem + 1.6vw, 3rem);
+  font-size: var(--type-headline);
   line-height: 1.12;
 }
 h3 {
-  font-size: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  font-size: var(--type-title);
   line-height: 1.2;
 }
 .directory-card-title {
@@ -100,7 +108,7 @@ a:not([data-slot='button']):hover {
   text-decoration-thickness: 0.14em;
 }
 :focus-visible {
-  outline: 3px solid var(--focus-ring);
+  outline: var(--stroke-focus) solid var(--focus-ring);
   outline-offset: 4px;
 }
 [id] {
@@ -111,14 +119,14 @@ a:not([data-slot='button']):hover {
   margin-inline: auto;
 }
 .section-space {
-  padding-block: clamp(3.5rem, 7vw, 7rem);
+  padding-block: var(--space-section);
 }
 .text-measure {
   max-width: 65ch;
 }
 .skip-link {
   position: absolute;
-  z-index: 10;
+  z-index: var(--layer-skip);
   inset-block-start: 0.75rem;
   inset-inline-start: 1rem;
   padding: 0.75rem 1rem;

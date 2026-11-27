@@ -1,0 +1,201 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import Spinner from './Spinner.astro';
+import { buttonVariants, buttonSizes } from './button';
+
+type AccessibleName =
+  | { iconOnly?: false }
+  | { iconOnly: true; 'aria-label': string }
+  | { iconOnly: true; 'aria-labelledby': string };
+type Props = HTMLAttributes<'button'> &
+  Omit<HTMLAttributes<'a'>, 'type'> &
+  AccessibleName & {
+    as?: 'button' | 'a';
+    variant?: keyof typeof buttonVariants;
+    size?: keyof typeof buttonSizes;
+    shape?: 'square' | 'circle';
+    fullWidth?: boolean;
+    loading?: boolean;
+  };
+
+const {
+  as,
+  href,
+  type = 'button',
+  variant = 'primary',
+  size = 'md',
+  shape,
+  fullWidth,
+  loading,
+  disabled,
+  iconOnly,
+  tabindex,
+  class: className,
+  ...rest
+} = Astro.props;
+const link = as === 'a' || href !== undefined;
+const Tag = link ? 'a' : 'button';
+const unavailable = disabled || loading;
+if (
+  iconOnly &&
+  !rest['aria-label']?.trim() &&
+  !rest['aria-labelledby']?.trim()
+) {
+  throw new Error('Button iconOnly requiere aria-label o aria-labelledby.');
+}
+---
+
+<Tag
+  {...rest}
+  class:list={[
+    'ds-btn ui-button',
+    buttonVariants[variant],
+    buttonSizes[size],
+    shape === 'circle'
+      ? 'ds-btn-circle'
+      : (shape === 'square' || iconOnly) && 'ds-btn-square',
+    fullWidth && 'ds-btn-block',
+    link && unavailable && 'ds-btn-disabled',
+    className,
+  ]}
+  data-slot="button"
+  data-size={size}
+  data-variant={variant}
+  data-icon-only={iconOnly || undefined}
+  href={link && !unavailable ? href : undefined}
+  type={link ? undefined : type}
+  disabled={!link && unavailable ? true : undefined}
+  aria-disabled={link && unavailable ? 'true' : rest['aria-disabled']}
+  aria-busy={loading ? 'true' : rest['aria-busy']}
+  role={link && unavailable ? 'link' : rest.role}
+  tabindex={link && unavailable ? -1 : tabindex}
+>
+  {loading && <Spinner size="xs" />}
+  <slot name="leading" />
+  <slot />
+  <slot name="trailing" />
+</Tag>
+
+<style>
+  @layer theme, base, components, utilities;
+  @layer utilities {
+    .ui-button {
+      --button-padding: var(--button-padding-md);
+      --button-icon: var(--icon-md);
+      --ds-size: var(--button-height-md);
+      box-shadow: none;
+      text-shadow: none;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 500;
+      gap: var(--button-icon-gap);
+      white-space: normal;
+      transition-property: color, background-color, border-color;
+      transition-duration: var(--duration-control);
+    }
+    .ui-button:not(.ds-btn-square, .ds-btn-circle) {
+      padding-inline: var(--button-padding);
+    }
+    .ui-button:not(.ds-btn-square, .ds-btn-circle):has(> svg) {
+      padding-inline: var(--button-padding-with-icon, 1rem);
+    }
+    .ui-button[data-size='xs'] {
+      --ds-size: var(--button-height-xs);
+      --button-padding: var(--button-padding-xs);
+      --button-padding-with-icon: 0.6rem;
+      --button-icon: var(--icon-sm);
+      font-size: 0.75rem;
+    }
+    .ui-button[data-size='sm'] {
+      --ds-size: var(--button-height-sm);
+      --button-padding: var(--button-padding-sm);
+      --button-padding-with-icon: 0.75rem;
+      --button-icon: var(--icon-sm);
+      font-size: 0.875rem;
+    }
+    .ui-button[data-size='lg'] {
+      --ds-size: var(--button-height-lg);
+      --button-padding: var(--button-padding-lg);
+      --button-padding-with-icon: 1.5rem;
+      --button-icon: var(--icon-lg);
+      font-size: 1.125rem;
+    }
+    .ui-button[data-size='xl'] {
+      --ds-size: var(--button-height-xl);
+      --button-padding: var(--button-padding-xl);
+      --button-padding-with-icon: 1.75rem;
+      --button-icon: var(--icon-xl);
+      font-size: 1.25rem;
+    }
+    .ui-button :global(svg) {
+      pointer-events: none;
+      flex: none;
+    }
+    .ui-button :global(svg:not([class*='size-'])) {
+      width: var(--button-icon);
+      height: var(--button-icon);
+    }
+    .ui-button:is([data-variant='outline'], [data-variant='secondary']) {
+      border-color: var(--input);
+    }
+    .ui-button:not([data-variant='outline'], [data-variant='secondary']) {
+      --border: 0px;
+    }
+    .ui-button[data-variant='outline']:not(:disabled, .ds-btn-disabled) {
+      background-color: var(--background);
+      color: var(--foreground);
+    }
+    .ui-button[data-variant='link'] {
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+    .ui-button[data-variant='plain'] {
+      height: auto;
+      min-height: 0;
+      width: auto;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      font: inherit;
+      color: inherit;
+    }
+    .ui-button[data-variant='plain'] :global(svg:not([class*='size-'])) {
+      width: revert-layer;
+      height: revert-layer;
+    }
+    .ui-button:active:not(:disabled, .ds-btn-disabled) {
+      translate: none;
+      scale: none;
+    }
+    @media (hover: hover) {
+      .ui-button[data-variant='primary']:hover:not(
+          :disabled,
+          .ds-btn-disabled
+        ) {
+        --ds-btn-bg: color-mix(in oklab, var(--primary) 90%, transparent);
+      }
+      .ui-button[data-variant='outline']:hover:not(
+          :disabled,
+          .ds-btn-disabled
+        ) {
+        background-color: var(--muted);
+      }
+      .ui-button[data-variant='secondary']:hover:not(
+          :disabled,
+          .ds-btn-disabled
+        ) {
+        --ds-btn-bg: var(--background);
+      }
+    }
+    .ui-button:is(:disabled, .ds-btn-disabled) {
+      opacity: var(--disabled-opacity);
+      color: var(--ds-btn-fg, var(--foreground));
+      background-color: var(--ds-btn-color, transparent);
+    }
+    .ui-button[aria-invalid='true'] {
+      border-color: var(--error);
+      outline-color: var(--error);
+    }
+  }
+</style>

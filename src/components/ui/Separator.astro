@@ -1,0 +1,28 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'div'> {
+  orientation?: 'horizontal' | 'vertical';
+  decorative?: boolean;
+}
+const {
+  orientation = 'horizontal',
+  decorative,
+  class: className,
+  ...rest
+} = Astro.props;
+---
+
+<div
+  {...rest}
+  class:list={[
+    'ds-divider',
+    orientation === 'vertical' && 'ds-divider-horizontal',
+    className,
+  ]}
+  role={decorative ? undefined : 'separator'}
+  aria-hidden={decorative || undefined}
+  aria-orientation={decorative ? undefined : orientation}
+>
+  <slot />
+</div>

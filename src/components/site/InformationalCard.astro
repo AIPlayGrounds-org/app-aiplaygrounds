@@ -1,5 +1,5 @@
 ---
-import Card from '../starwind/card/Card.astro';
+import Card from '../ui/Card.astro';
 
 interface Props {
   title: string;
@@ -11,8 +11,10 @@ const { title, description, layout = 'stacked', tone = 'warm' } = Astro.props;
 ---
 
 <Card
-  class:list={['info-card gap-0 p-0 ring-0', layout, `tone-${tone}`]}
-  data-card-outline
+  class:list={['info-card', layout, `tone-${tone}`]}
+  surface="inherit"
+  density="none"
+  edge="outline"
 >
   <div class="motif">
     <slot name="icon" />

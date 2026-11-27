@@ -16,7 +16,7 @@ main#contenido:has(> .labs-detail) {
   justify-items: start;
   gap: 0.7rem;
   padding-block: 0 1.75rem;
-  border-block-end: 1px solid var(--border);
+  border-block-end: 1px solid var(--line);
 }
 .product-intro h1 {
   font-size: clamp(2.125rem, 1.7rem + 1.8vw, 3rem);
@@ -43,7 +43,7 @@ main#contenido:has(> .labs-detail) {
 .product-byline small {
   margin-inline-start: 0.7rem;
   padding: 0.15rem 0.5rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--line);
   border-radius: var(--editorial-radius);
   color: var(--secondary-text);
 }
@@ -66,7 +66,7 @@ main#contenido:has(> .labs-detail) {
 .share-result input {
   max-inline-size: 100%;
   min-block-size: 44px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--line);
   padding-inline: 0.5rem;
 }
 .access-note {
@@ -148,7 +148,7 @@ main#contenido:has(> .labs-detail) {
   border-radius: var(--editorial-radius);
   color: var(--editorial-lilac-ink);
   background: var(--home-card);
-  border: 1px solid var(--border);
+  border: 1px solid var(--line);
 }
 .audience-list,
 .product-media {
@@ -160,7 +160,7 @@ main#contenido:has(> .labs-detail) {
   padding: 1rem 0.75rem;
   border-radius: var(--editorial-radius);
   background: var(--home-card);
-  border: 1px solid var(--border);
+  border: 1px solid var(--line);
 }
 .audience-list h3 {
   display: flex;
@@ -184,7 +184,7 @@ main#contenido:has(> .labs-detail) {
 }
 .technology-list li {
   padding: 0.14rem 0.55rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
   font-size: 0.85rem;
@@ -195,7 +195,7 @@ main#contenido:has(> .labs-detail) {
 }
 .detail-panel {
   padding: 1.5rem 1.25rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--line);
   border-radius: var(--editorial-radius);
   background: var(--home-card);
   font-size: 0.93rem;
@@ -212,7 +212,7 @@ main#contenido:has(> .labs-detail) {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
   gap: 0.5rem;
-  border-block-start: 1px solid var(--border);
+  border-block-start: 1px solid var(--line);
   padding-block: 0.75rem;
 }
 .detail-panel dt,
@@ -240,7 +240,7 @@ main#contenido:has(> .labs-detail) {
   margin-block-start: 0.75rem;
 }
 .related-products {
-  border-block-start: 1px solid var(--border);
+  border-block-start: 1px solid var(--line);
   margin-block-start: 1.75rem;
   padding-block-start: clamp(1.75rem, 3vw, 2.5rem);
 }

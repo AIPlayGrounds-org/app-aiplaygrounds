@@ -1,4 +1,12 @@
 /* A. Marca canónica: manual de marca, páginas 9–10. */
+@theme static {
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem;
+}
+
 :root {
   --brand-black: #000000;
   --brand-white: #ffffff;
@@ -29,13 +37,56 @@
   --editorial-grove-ink: #49684c;
   --editorial-sand-ink: #685936;
   --editorial-lilac-ink: #54536d;
+
+  /* Escalas primitivas; las excepciones editoriales siguen en su composición. */
+  --type-body: clamp(1rem, 0.97rem + 0.15vw, 1.125rem);
+  --type-display: clamp(2.5rem, 1.5rem + 4vw, 5.5rem);
+  --type-headline: clamp(1.75rem, 1.4rem + 1.6vw, 3rem);
+  --type-title: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --space-unit: 0.25rem;
+  --space-section: clamp(3.5rem, 7vw, 7rem);
+  --radius-small: 0.25rem;
   --editorial-radius: 0.4rem;
+  --radius-large: 0.75rem;
+  --stroke-default: 1px;
+  --stroke-focus: 3px;
+  --shadow-flat: none;
+  --shadow-overlay: 0 0.5rem 1.5rem rgb(0 0 0 / 0.12);
+  --icon-sm: 0.875rem;
+  --icon-md: 1.125rem;
+  --icon-lg: 1.25rem;
+  --icon-xl: 1.5rem;
+  --layer-skip: 10;
+  --layer-overlay: 100;
   --editorial-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --editorial-entrance-ease: cubic-bezier(0.23, 0.65, 0.25, 1);
   --editorial-response: 140ms;
+  --duration-control: 150ms;
+  --duration-card: 200ms;
+  --duration-entrance: 760ms;
+
+  /* Componentes. */
+  --button-height-xs: 1.75rem;
+  --button-height-sm: 2.25rem;
+  --button-height-md: 2.75rem;
+  --button-height-lg: 3rem;
+  --button-height-xl: 3.5rem;
+  --button-padding-xs: 0.65rem;
+  --button-padding-sm: 1rem;
+  --button-padding-md: 1.25rem;
+  --button-padding-lg: 2rem;
+  --button-padding-xl: 2.25rem;
+  --button-icon-gap: 0.375rem;
+  --field-height: 3rem;
+  --field-padding: 0.65rem 0.75rem;
+  --field-gap: 0.35rem;
+  --field-message-height: 8rem;
+  --card-padding-sm: 1rem;
+  --card-padding-md: 1.25rem;
+  --disabled-opacity: 0.5;
 }
 
-/* C. Un único tema semántico compartido por Starwind y Tailwind. */
+/* Semántica compartida por Tailwind y daisyUI. */
 :root,
 [data-theme='light'] {
   color-scheme: light;
@@ -47,13 +98,16 @@
   --muted: var(--web-light-secondary);
   --muted-foreground: var(--web-light-muted-text);
   --secondary-text: var(--web-light-secondary-text);
-  --border: var(--web-light-line);
+  --line: var(--web-light-line);
   --input: var(--web-light-secondary-text);
   --primary: var(--brand-black);
   --primary-foreground: var(--brand-white);
   --secondary: var(--web-light-secondary);
   --secondary-foreground: var(--web-light-text);
   --accent: var(--brand-halo);
+  --accent-foreground: var(--brand-black);
+  --neutral: var(--brand-gray-1);
+  --neutral-foreground: var(--brand-white);
   --interaction-accent: #79629f;
   --outline: var(--brand-black);
   --focus-ring: var(--outline);
@@ -78,13 +132,16 @@
   --muted: var(--brand-gray-1);
   --muted-foreground: var(--brand-gray-3);
   --secondary-text: var(--brand-gray-3);
-  --border: var(--brand-gray-2);
+  --line: var(--brand-gray-2);
   --input: var(--brand-gray-3);
   --primary: var(--brand-white);
   --primary-foreground: var(--brand-black);
   --secondary: var(--brand-gray-1);
   --secondary-foreground: var(--brand-white);
   --accent: var(--brand-halo);
+  --accent-foreground: var(--brand-black);
+  --neutral: var(--brand-gray-3);
+  --neutral-foreground: var(--brand-black);
   --interaction-accent: var(--brand-halo);
   --outline: var(--brand-white);
   --focus-ring: var(--outline);

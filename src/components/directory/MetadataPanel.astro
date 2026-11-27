@@ -1,5 +1,6 @@
 ---
 import type { Info } from '@lucide/astro';
+import Card from '../ui/Card.astro';
 
 interface Props {
   title: string;
@@ -10,7 +11,13 @@ const { title, icon: Icon, fields = [] } = Astro.props;
 const visible = fields.filter(([, value]) => value);
 ---
 
-<section class="detail-panel">
+<Card
+  as="section"
+  class="detail-panel block"
+  surface="inherit"
+  density="none"
+  edge="none"
+>
   <h2>
     <Icon size={21} aria-hidden="true" /> {title}
   </h2>
@@ -26,4 +33,4 @@ const visible = fields.filter(([, value]) => value);
     </dl>
   )}
   <slot />
-</section>
+</Card>

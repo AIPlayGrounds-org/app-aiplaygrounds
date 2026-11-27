@@ -1,0 +1,105 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'div'> {
+  id: string;
+  label: string;
+  items: { key: string; label: string }[];
+  active?: string;
+}
+const { id, label, items, active, ...rest } = Astro.props;
+const current = items.some(({ key }) => key === active)
+  ? active
+  : items[0]?.key;
+---
+
+<div {...rest} {id} data-ui-tabs>
+  <div
+    class="ds-tabs ds-tabs-border ui-tablist"
+    role="tablist"
+    aria-label={label}
+  >
+    {items.map((item) => (
+      <button
+        type="button"
+        id={`${id}-${item.key}-tab`}
+        role="tab"
+        class="ds-tab"
+        aria-selected={item.key === current ? 'true' : 'false'}
+        tabindex={item.key === current ? 0 : -1}
+      >
+        {item.label}
+      </button>
+    ))}
+  </div>
+  {items.map((item) => (
+    <div
+      role="tabpanel"
+      aria-labelledby={`${id}-${item.key}-tab`}
+      hidden={item.key !== current}
+      tabindex="0"
+    >
+      <slot name={item.key} />
+    </div>
+  ))}
+</div>
+
+<script>
+  for (const tabs of document.querySelectorAll('[data-ui-tabs]')) {
+    const list = tabs.querySelector(':scope > [role="tablist"]');
+    const buttons = [
+      ...(list?.querySelectorAll<HTMLButtonElement>('[role="tab"]') ?? []),
+    ];
+    const panels = [
+      ...tabs.querySelectorAll<HTMLElement>(':scope > [role="tabpanel"]'),
+    ];
+
+    const activate = (button: HTMLButtonElement) => {
+      for (const tab of buttons) {
+        tab.setAttribute('aria-selected', String(tab === button));
+        tab.tabIndex = tab === button ? 0 : -1;
+      }
+      for (const panel of panels)
+        panel.hidden = panel.getAttribute('aria-labelledby') !== button.id;
+    };
+
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => activate(button));
+      button.addEventListener('keydown', (event) => {
+        const last = buttons.length - 1;
+        const rtl = getComputedStyle(button).direction === 'rtl';
+        const move = {
+          ArrowLeft: index + (rtl ? 1 : -1),
+          ArrowRight: index + (rtl ? -1 : 1),
+          Home: 0,
+          End: last,
+        };
+        if (!Object.hasOwn(move, event.key)) return;
+        event.preventDefault();
+        const target =
+          buttons[
+            (move[event.key as keyof typeof move] + buttons.length) %
+              buttons.length
+          ];
+        activate(target);
+        target.focus();
+      });
+    });
+  }
+</script>
+
+<style>
+  .ui-tablist {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 4px;
+  }
+  .ui-tablist button {
+    flex: none;
+    border-block-end: 3px solid transparent;
+  }
+  .ui-tablist [aria-selected='true'] {
+    color: var(--foreground);
+    border-block-end-color: currentColor;
+  }
+</style>

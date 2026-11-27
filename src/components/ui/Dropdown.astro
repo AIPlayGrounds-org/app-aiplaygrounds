@@ -1,0 +1,42 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'details'> {
+  label?: string;
+  align?: 'start' | 'end';
+}
+const { label, align = 'start', class: className, ...rest } = Astro.props;
+---
+
+<details
+  {...rest}
+  class:list={['ds-dropdown', align === 'end' && 'ds-dropdown-end', className]}
+>
+  {Astro.slots.has('trigger') ? (
+    <slot name="trigger" />
+  ) : (
+    <summary class="ds-btn ds-btn-outline ds-btn-primary">{label}</summary>
+  )}
+  {Astro.slots.has('panel') ? (
+    <slot name="panel" />
+  ) : (
+    <div class="ds-dropdown-content ui-dropdown-panel">
+      <slot />
+    </div>
+  )}
+</details>
+
+<style>
+  .ui-dropdown-panel {
+    z-index: var(--layer-overlay);
+    min-inline-size: 10rem;
+    max-inline-size: min(17rem, 80vw);
+    margin-block-start: var(--space-unit);
+    padding: 0.75rem;
+    border-radius: var(--radius-field);
+    border: var(--stroke-default) solid var(--line);
+    background: var(--surface-elevated);
+    color: var(--foreground);
+    box-shadow: var(--shadow-overlay);
+  }
+</style>

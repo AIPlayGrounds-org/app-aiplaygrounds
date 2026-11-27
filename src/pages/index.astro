@@ -8,8 +8,8 @@ import InitiativeCard from '../components/site/InitiativeCard.astro';
 import InitiativeGrid from '../components/site/InitiativeGrid.astro';
 import EditorialMotion from '../components/site/EditorialMotion.astro';
 import { inicioImages } from '../assets/inicio';
-import Button from '../components/starwind/button/Button.astro';
-import Card from '../components/starwind/card/Card.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
 import ClosingCTA from '../components/site/ClosingCTA.astro';
 import SiteHeader from '../components/site/SiteHeader.astro';
 import SiteFooter from '../components/site/SiteFooter.astro';
@@ -89,7 +89,12 @@ const fields = [
       <div class="fields">
         {fields.map((field) => (
           <article data-reveal="card">
-            <Card class="field-card gap-0 p-0 ring-0" data-card-outline>
+            <Card
+              class="field-card"
+              surface="elevated"
+              density="none"
+              edge="outline"
+            >
               <div class="field-copy">
                 <h3>{field.title}</h3>
                 <p>{field.text}</p>
@@ -265,7 +270,7 @@ const fields = [
     max-width: 18ch;
   }
   .community-copy {
-    border-left: 1px solid var(--border);
+    border-left: 1px solid var(--line);
     padding-left: clamp(2rem, 4vw, 3rem);
   }
   .community-copy p,
@@ -314,7 +319,7 @@ const fields = [
   }
   .stat {
     padding: 1rem 2rem;
-    border-right: 1px solid var(--border);
+    border-right: 1px solid var(--line);
   }
   .stat strong {
     display: block;
@@ -336,10 +341,10 @@ const fields = [
   }
   .event.featured {
     grid-column: 1 / -1;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--line);
   }
   .event:last-child {
-    border-left: 1px solid var(--border);
+    border-left: 1px solid var(--line);
   }
   .event h3 {
     margin-top: 0.6rem;
@@ -367,7 +372,7 @@ const fields = [
     margin-top: 0.75rem;
   }
   .tags span {
-    border: 1px solid var(--border);
+    border: 1px solid var(--line);
     border-radius: 0.2rem;
     padding: 0.15rem 0.4rem;
     font-size: 0.7rem;
@@ -462,7 +467,7 @@ const fields = [
     }
     .stat {
       border-right: 0;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--line);
       padding: 1rem 0 2rem;
     }
     .events {
@@ -472,7 +477,7 @@ const fields = [
     .event.featured {
       grid-column: auto;
       padding: 1.5rem 0;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--line);
     }
     .event:last-child {
       border-left: 0;

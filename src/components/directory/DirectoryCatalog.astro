@@ -1,14 +1,13 @@
 ---
-import {
-  ChevronDown,
-  ChevronLeft,
-  ChevronRight,
-  Grid2x2,
-  List,
-  Search,
-  SlidersHorizontal,
-  X,
-} from '@lucide/astro';
+import { ChevronDown, ChevronRight, SlidersHorizontal, X } from '@lucide/astro';
+import Button from '../ui/Button.astro';
+import Dialog from '../ui/Dialog.astro';
+import Select from '../ui/Select.astro';
+import Label from '../ui/Label.astro';
+import Pagination from '../ui/Pagination.astro';
+import SearchField from '../composed/SearchField.astro';
+import ViewToggle from '../composed/ViewToggle.astro';
+import FilterGroup from '../composed/FilterGroup.astro';
 import DirectoryFilter from './DirectoryFilter.astro';
 import {
   directoryLimits,
@@ -67,19 +66,19 @@ const hasFilters = primary.length + secondary.length > 0;
     >
       <div class="catalog-toolbar">
         <search class="catalog-search" aria-label={title} data-enhanced>
-          <form data-search>
-            <Search size={20} aria-hidden="true" />
-            <label class="sr-only" for={`${directory}-query`}>
-              Buscar {plural}
-            </label>
-            <input
-              id={`${directory}-query`}
-              data-query
-              type="search"
-              name="q"
-              placeholder={placeholder}
-            />
-            <button
+          <SearchField
+            as="form"
+            searchableForm
+            appearance="inline"
+            id={`${directory}-query`}
+            label={`Buscar ${plural}`}
+            data-query
+            name="q"
+            {placeholder}
+          >
+            <Button
+              variant="plain"
+              iconOnly
               type="button"
               class="search-clear"
               data-clear-query
@@ -87,12 +86,13 @@ const hasFilters = primary.length + secondary.length > 0;
               hidden
             >
               <X size={17} aria-hidden="true" />
-            </button>
-          </form>
+            </Button>
+          </SearchField>
         </search>
         {hasFilters && (
           <>
-            <button
+            <Button
+              variant="plain"
               type="button"
               class="mobile-filter control"
               aria-haspopup="dialog"
@@ -101,10 +101,10 @@ const hasFilters = primary.length + secondary.length > 0;
             >
               <SlidersHorizontal size={18} aria-hidden="true" />
               Filtros
-            </button>
+            </Button>
             <div class="filter-home" data-filter-home>
               <div class="filter-content" data-filter-content>
-                <section
+                <FilterGroup
                   id={`${directory}-filters`}
                   class="catalog-filters"
                   aria-label={`Filtros de ${plural}`}
@@ -114,7 +114,8 @@ const hasFilters = primary.length + secondary.length > 0;
                     <DirectoryFilter {group} {directory} {plural} dropdown />
                   ))}
                   {secondary.length > 0 && (
-                    <button
+                    <Button
+                      variant="plain"
                       type="button"
                       class="control more-toggle"
                       aria-expanded="false"
@@ -128,9 +129,9 @@ const hasFilters = primary.length + secondary.length > 0;
                         aria-hidden="true"
                         class="more-chevron"
                       />
-                    </button>
+                    </Button>
                   )}
-                </section>
+                </FilterGroup>
                 {secondary.length > 0 && (
                   <div class="advanced-region" data-advanced-region>
                     <div class="advanced-inner">
@@ -151,20 +152,22 @@ const hasFilters = primary.length + secondary.length > 0;
                           ))}
                         </div>
                         <div class="advanced-actions">
-                          <button
+                          <Button
+                            variant="plain"
                             type="button"
                             class="reset-button"
                             data-panel-clear
                           >
                             Limpiar filtros
-                          </button>
-                          <button
+                          </Button>
+                          <Button
+                            variant="primary"
                             type="button"
                             class="apply-button"
                             data-panel-apply
                           >
                             Aplicar filtros
-                          </button>
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -172,7 +175,8 @@ const hasFilters = primary.length + secondary.length > 0;
                 )}
               </div>
             </div>
-            <dialog
+            <Dialog
+              layout="custom"
               class="filter-dialog"
               id={`${directory}-filter-dialog`}
               data-filter-dialog
@@ -181,25 +185,41 @@ const hasFilters = primary.length + secondary.length > 0;
               <header class="filter-dialog-header">
                 <h2 id={`${directory}-filter-title`}>Filtros</h2>
                 <form method="dialog">
-                  <button type="submit" aria-label="Cerrar filtros" autofocus>
+                  <Button
+                    variant="plain"
+                    iconOnly
+                    type="submit"
+                    aria-label="Cerrar filtros"
+                    autofocus
+                  >
                     <X size={20} aria-hidden="true" />
-                  </button>
+                  </Button>
                 </form>
               </header>
               <div data-drawer-content></div>
               <div data-drawer-actions>
                 {secondary.length === 0 && (
                   <div class="advanced-actions">
-                    <button type="button" class="reset-button" data-panel-clear>
+                    <Button
+                      variant="plain"
+                      type="button"
+                      class="reset-button"
+                      data-panel-clear
+                    >
                       Limpiar filtros
-                    </button>
-                    <button type="button" class="apply-button" data-panel-apply>
+                    </Button>
+                    <Button
+                      variant="primary"
+                      type="button"
+                      class="apply-button"
+                      data-panel-apply
+                    >
                       Aplicar filtros
-                    </button>
+                    </Button>
                   </div>
                 )}
               </div>
-            </dialog>
+            </Dialog>
           </>
         )}
       </div>
@@ -209,11 +229,12 @@ const hasFilters = primary.length + secondary.length > 0;
             {total} {total === 1 ? singular : plural}
           </p>
           <div class="view-options" data-enhanced>
-            <label for={`${directory}-sort`} class="sr-only">
+            <Label for={`${directory}-sort`} class="sr-only">
               Ordenar {plural}
-            </label>
+            </Label>
             <div class="sort-field">
-              <select
+              <Select
+                appearance="inline"
                 id={`${directory}-sort`}
                 name="sort"
                 class="control dropdown-trigger"
@@ -222,40 +243,26 @@ const hasFilters = primary.length + secondary.length > 0;
                 {Object.entries(labels).map(([value, label]) => (
                   <option {value}>{label}</option>
                 ))}
-              </select>
+              </Select>
               <ChevronDown size={16} aria-hidden="true" />
             </div>
-            <div
+            <ViewToggle
               class="view-toggle"
-              role="group"
-              aria-label="Vista del directorio"
-            >
-              <button
-                type="button"
-                class="control"
-                data-set-view="grid"
-                aria-label="Cuadrícula"
-                aria-pressed={defaultView === 'grid'}
-              >
-                <Grid2x2 size={18} aria-hidden="true" />
-              </button>
-              <button
-                type="button"
-                class="control"
-                data-set-view="list"
-                aria-label="Listado"
-                aria-pressed={defaultView === 'list'}
-              >
-                <List size={18} aria-hidden="true" />
-              </button>
-            </div>
+              value={defaultView}
+              controlClass="control"
+            />
           </div>
         </div>
         <div class="active-filters" data-active-filters hidden>
           <ul aria-label="Filtros activos" role="list" data-tags></ul>
-          <button type="button" class="reset-button" data-clear-filters>
+          <Button
+            variant="plain"
+            type="button"
+            class="reset-button"
+            data-clear-filters
+          >
             Limpiar filtros
-          </button>
+          </Button>
         </div>
         <ul
           class="catalog-cards"
@@ -268,27 +275,17 @@ const hasFilters = primary.length + secondary.length > 0;
         <div class="labs-empty" data-no-results hidden>
           <h3>No encontramos {plural}</h3>
           <p>Prueba con otra búsqueda o quita algunos filtros.</p>
-          <button type="button" class="reset-button" data-reset>
+          <Button variant="plain" type="button" class="reset-button" data-reset>
             Limpiar búsqueda y filtros
-          </button>
+          </Button>
         </div>
         {total > directoryLimits.pageSize && (
-          <nav
+          <Pagination
             class="catalog-pages"
-            aria-label="Páginas del directorio"
-            data-pages
+            managed
             hidden
-          >
-            <a class="control" data-step="-1">
-              <ChevronLeft size={18} aria-hidden="true" />
-              Anterior
-            </a>
-            <span data-page-label></span>
-            <a class="control" data-step="1">
-              Siguiente
-              <ChevronRight size={18} aria-hidden="true" />
-            </a>
-          </nav>
+            controlClass="control"
+          />
         )}
       </div>
     </div>

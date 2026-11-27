@@ -1,5 +1,6 @@
 ---
-import Button from '../starwind/button/Button.astro';
+import Dropdown from '../ui/Dropdown.astro';
+import Button from '../ui/Button.astro';
 
 interface Props {
   immersive?: boolean;
@@ -57,14 +58,14 @@ const cta = organizations
         {cta.label}
       </Button>
     </div>
-    <details class="mobile-nav">
-      <summary>
+    <Dropdown class="mobile-nav">
+      <summary slot="trigger">
         Menú{' '}
         <span aria-hidden="true" class="menu-icon">
           +
         </span>
       </summary>
-      <nav aria-label="Navegación móvil">
+      <nav slot="panel" aria-label="Navegación móvil">
         <div class="mobile-audience">
           {audience.map(([label, href]) => (
             <a
@@ -90,7 +91,7 @@ const cta = organizations
           </Button>
         </div>
       </nav>
-    </details>
+    </Dropdown>
   </div>
 </header>
 <script>
@@ -139,7 +140,7 @@ const cta = organizations
     background: transparent;
   }
   .site-header[data-scrolled] {
-    box-shadow: inset 0 -1px var(--border);
+    box-shadow: inset 0 -1px var(--line);
   }
   .header-sentinel {
     position: absolute;
@@ -200,6 +201,7 @@ const cta = organizations
   }
   .mobile-nav {
     display: none;
+    position: static;
   }
   .mobile-nav:not([open]) nav {
     display: none;
@@ -257,7 +259,7 @@ const cta = organizations
       min-height: 44px;
       padding: 0.7rem 0.25rem;
       text-decoration: none;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--line);
     }
     .mobile-nav nav a[aria-current='page']:not([data-slot='button']) {
       text-decoration: underline;

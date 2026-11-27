@@ -7,6 +7,7 @@ import {
 } from '@lucide/astro';
 import type { Product } from '../../data/labs';
 import VerticalTag from '../directory/VerticalTag.astro';
+import Badge from '../ui/Badge.astro';
 import { compactHeroArt } from '../site/compact-hero-art';
 
 interface Props {
@@ -39,23 +40,34 @@ const scopeColors = {
         ))}
       </div>
     )}
-    <span class="maturity" data-maturity={product.maturity} lang="en">
+    <Badge
+      class="maturity"
+      variant="success"
+      size="editorial"
+      appearance="outline"
+      indicator
+      data-maturity={product.maturity}
+      lang="en"
+    >
       {product.maturity}
-    </span>
+    </Badge>
   </div>
 ) : (
   <ul class="product-tags" aria-label="Alcance de uso" role="list">
     {product.scopes.map((scope) => {
       const Icon = scopeIcons[scope];
       return (
-        <li
+        <Badge
+          as="li"
+          variant="surface"
+          size="editorial"
           class="scope"
           lang="en"
-          style={{ '--scope-background': scopeColors[scope] }}
+          style={{ '--badge-surface': scopeColors[scope] }}
         >
-          <Icon size={14} aria-hidden="true" />
+          <Icon slot="icon" size={14} aria-hidden="true" />
           {scope}
-        </li>
+        </Badge>
       );
     })}
   </ul>
@@ -81,43 +93,20 @@ const scopeColors = {
   .overlay .maturity {
     margin-inline-start: auto;
   }
-  .product-tags :is(.maturity, .scope) {
-    display: inline-flex;
-    max-inline-size: 100%;
-    align-items: center;
-    gap: 0.35rem;
-    border-radius: 0.25rem;
-    padding: 0.2rem 0.5rem;
-    font-size: 0.8125rem;
-    font-weight: 500;
-    line-height: 1.25;
-  }
-  svg {
-    flex: none;
-  }
   .maturity {
-    background: var(--home-card);
-    color: var(--success);
-    border: 1px solid var(--border);
+    --badge-outline-surface: var(--home-card);
+    --badge-ink: var(--success);
+    --badge-line: var(--line);
     white-space: nowrap;
   }
-  .maturity::before {
-    content: '';
-    inline-size: 0.46rem;
-    block-size: 0.46rem;
-    border-radius: 50%;
-    background: currentColor;
-  }
   .maturity[data-maturity='Prototype'] {
-    color: var(--editorial-lilac-ink);
+    --badge-ink: var(--editorial-lilac-ink);
   }
   .maturity[data-maturity='Alpha'] {
-    color: var(--editorial-sand-ink);
+    --badge-ink: var(--editorial-sand-ink);
   }
   .scope {
-    padding-block: 0.3rem;
-    background: var(--scope-background);
-    color: var(--web-light-text);
+    --badge-ink: var(--web-light-text);
   }
   @media (min-width: 45rem) {
     :global([data-view='list']) .overlay :global(.vertical),

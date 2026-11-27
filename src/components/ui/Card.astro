@@ -1,0 +1,65 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'div'> {
+  as?: 'div' | 'article' | 'section' | 'li';
+  surface?: 'elevated' | 'editorial' | 'inherit';
+  density?: 'sm' | 'md' | 'none';
+  edge?: 'border' | 'outline' | 'none';
+  interaction?: 'static' | 'interactive' | 'single-link';
+}
+
+const {
+  as: Tag = 'div',
+  surface = 'elevated',
+  density = 'md',
+  edge = 'border',
+  interaction = 'static',
+  class: className,
+  ...rest
+} = Astro.props;
+---
+
+<Tag
+  data-card-outline={edge === 'outline' || undefined}
+  data-card-interactive={interaction !== 'static' || undefined}
+  data-card-hit-area={interaction === 'single-link' || undefined}
+  {...rest}
+  data-slot="card"
+  data-surface={surface}
+  data-density={density}
+  class:list={[
+    'ds-card ui-card',
+    edge === 'border' && 'ds-card-border',
+    className,
+  ]}
+>
+  <slot />
+</Tag>
+
+<style>
+  @layer theme, base, components, utilities;
+  @layer utilities {
+    .ui-card {
+      min-inline-size: 0;
+    }
+    .ui-card[data-surface='elevated'] {
+      background: var(--surface-elevated);
+      color: var(--foreground);
+    }
+    .ui-card[data-surface='editorial'] {
+      background: var(--editorial-surface);
+      border-radius: var(--editorial-radius);
+      color: var(--foreground);
+    }
+    .ui-card.ds-card-border {
+      border-color: var(--card-edge, var(--line));
+    }
+    .ui-card[data-density='md'] {
+      padding: var(--card-padding-md);
+    }
+    .ui-card[data-density='sm'] {
+      padding: var(--card-padding-sm);
+    }
+  }
+</style>

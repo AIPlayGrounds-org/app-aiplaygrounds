@@ -1,4 +1,5 @@
 ---
+import Card from '../ui/Card.astro';
 import { ArrowUpRight } from '@lucide/astro';
 import { productAuthors, productPath, type Product } from '../../data/labs';
 import ProductCover from './ProductCover.astro';
@@ -11,7 +12,14 @@ interface Props {
 const { product, eager } = Astro.props;
 ---
 
-<article class="labs-card" data-card-interactive data-card-hit-area>
+<Card
+  as="article"
+  surface="inherit"
+  density="none"
+  edge="none"
+  interaction="single-link"
+  class="labs-card"
+>
   <div class="card-cover">
     <ProductCover {product} {eager}>
       <ProductTags {product} kind="cover" overlay />
@@ -36,7 +44,7 @@ const { product, eager } = Astro.props;
       </a>
     </footer>
   </div>
-</article>
+</Card>
 
 <style>
   .labs-card {

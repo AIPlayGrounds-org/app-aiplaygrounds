@@ -1,0 +1,38 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+const sizes = { sm: 'size-8', md: 'size-12', lg: 'size-16' };
+interface Props extends HTMLAttributes<'span'> {
+  size?: keyof typeof sizes;
+  label?: string;
+  initials?: string;
+}
+const { size = 'md', label, initials, class: className, ...rest } = Astro.props;
+---
+
+<span
+  {...rest}
+  role={label ? 'img' : undefined}
+  aria-label={label}
+  aria-hidden={!label ? 'true' : undefined}
+  class:list={['ds-avatar', initials && 'ds-avatar-placeholder', className]}
+>
+  <span class:list={['ui-avatar rounded-full', sizes[size]]}>
+    <slot>{initials}</slot>
+  </span>
+</span>
+
+<style>
+  .ui-avatar {
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: var(--neutral);
+    color: var(--neutral-foreground);
+  }
+  .ui-avatar :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>

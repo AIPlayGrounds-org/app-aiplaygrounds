@@ -20,14 +20,14 @@
     "sync:events": "node scripts/sync-luma-events.mjs",
     "test:unit": "node --test tests/*.test.mjs",
     "check:output": "node scripts/check-output.mjs",
-    "ci:check": "npm run lint && npm run format:check && npm run check && npm run check:worker && npm run validate:content && npm run test:unit && npm run build && npm run build:worker && npm run check:output"
+    "check:design-system": "node scripts/check-design-system.mjs",
+    "ci:check": "npm run lint && npm run format:check && npm run check && npm run check:worker && npm run validate:content && npm run check:design-system && npm run test:unit && npm run build && npm run build:worker && npm run check:output"
   },
   "dependencies": {
     "@lucide/astro": "1.69.0",
-    "@starwind-ui/astro": "1.4.0",
     "@tailwindcss/vite": "4.3.4",
     "astro": "7.4.7",
-    "tailwind-variants": "3.3.1",
+    "daisyui": "5.8.3",
     "tailwindcss": "4.3.4"
   },
   "devDependencies": {
@@ -37,7 +37,6 @@
     "eslint-plugin-astro": "3.2.1",
     "prettier": "3.9.10",
     "prettier-plugin-astro": "1.1.2",
-    "starwind": "3.5.0",
     "typescript": "6.0.3",
     "typescript-eslint": "8.72.1",
     "wrangler": "4.158.0"

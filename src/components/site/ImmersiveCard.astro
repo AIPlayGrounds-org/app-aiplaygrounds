@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
-import Card from '../starwind/card/Card.astro';
+import Card from '../ui/Card.astro';
 
 interface Props {
   title: string;
@@ -13,7 +13,7 @@ interface Props {
 const { title, eyebrow, description, image, sizes } = Astro.props;
 ---
 
-<Card class="immersive-card gap-0 p-0 ring-0" data-card-outline>
+<Card class="immersive-card" surface="inherit" density="none" edge="outline">
   <Image
     src={image}
     alt=""
@@ -70,7 +70,7 @@ const { title, eyebrow, description, image, sizes } = Astro.props;
   }
   .panel {
     padding: clamp(1rem, 2.4vw, 2rem);
-    border: 1px solid var(--border);
+    border: 1px solid var(--line);
     border-radius: var(--editorial-radius);
     background: var(--editorial-card);
   }

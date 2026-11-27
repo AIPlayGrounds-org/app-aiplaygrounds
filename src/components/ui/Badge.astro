@@ -1,0 +1,100 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import { badgeVariants, badgeSizes } from './badge';
+
+interface Props extends HTMLAttributes<'span'> {
+  as?: 'span' | 'li';
+  variant?: keyof typeof badgeVariants;
+  size?: keyof typeof badgeSizes;
+  appearance?: 'solid' | 'outline';
+  indicator?: boolean;
+}
+const {
+  as: Tag = 'span',
+  variant = 'neutral',
+  size = 'md',
+  appearance = 'solid',
+  indicator,
+  class: className,
+  ...rest
+} = Astro.props;
+---
+
+<Tag
+  {...rest}
+  data-badge={variant}
+  data-badge-size={size}
+  class:list={[
+    'ds-badge ui-badge',
+    badgeVariants[variant],
+    badgeSizes[size],
+    appearance === 'outline' && 'ds-badge-outline',
+    className,
+  ]}
+>
+  {indicator && <span class="badge-indicator" aria-hidden="true"></span>}
+  <slot name="icon" />
+  <slot />
+</Tag>
+
+<style>
+  @layer theme, base, components, utilities;
+  @layer utilities {
+    .ui-badge {
+      max-inline-size: 100%;
+      height: auto;
+      font-weight: 500;
+    }
+    .ui-badge :global(svg) {
+      flex: none;
+    }
+    .ui-badge[data-badge-size='editorial'] {
+      gap: var(--field-gap);
+      padding: 0.2rem 0.5rem;
+      border-radius: var(--radius-small);
+      font-size: 0.8125rem;
+      line-height: 1.25;
+    }
+    .ui-badge:is(
+        [data-badge='foundations'],
+        [data-badge='software'],
+        [data-badge='science'],
+        [data-badge='finance'],
+        [data-badge='surface']
+      ):not(.ds-badge-outline) {
+      background: var(--badge-surface);
+      color: var(--badge-ink, var(--brand-white));
+      border-color: transparent;
+      border-width: 0;
+    }
+    .ui-badge.ds-badge-outline {
+      color: var(--badge-ink, var(--badge-surface, var(--ds-badge-color)));
+      border-color: var(--badge-line, currentColor);
+      background: var(--badge-outline-surface, transparent);
+    }
+    [data-badge='foundations'] {
+      --badge-surface: var(--editorial-lilac-ink);
+    }
+    [data-badge='software'] {
+      --badge-surface: var(--success);
+      --badge-ink: var(--success-foreground);
+    }
+    [data-badge='science'] {
+      --badge-surface: var(--editorial-grove-ink);
+    }
+    [data-badge='finance'] {
+      --badge-surface: var(--editorial-sand-ink);
+    }
+    [data-badge='surface'] {
+      --badge-surface: var(--surface-elevated);
+      --badge-ink: var(--foreground);
+    }
+    .badge-indicator {
+      inline-size: 0.46rem;
+      block-size: 0.46rem;
+      border-radius: 50%;
+      background: currentColor;
+      flex: none;
+    }
+  }
+</style>

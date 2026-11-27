@@ -1,0 +1,63 @@
+---
+import { ChevronLeft, ChevronRight } from '@lucide/astro';
+import type { HTMLAttributes } from 'astro/types';
+import Button from './Button.astro';
+
+interface Props extends HTMLAttributes<'nav'> {
+  previous?: string;
+  next?: string;
+  label?: string;
+  managed?: boolean;
+  controlClass?: string;
+}
+const {
+  previous,
+  next,
+  label,
+  managed,
+  controlClass,
+  class: className,
+  ...rest
+} = Astro.props;
+---
+
+<nav
+  aria-label="Páginas del directorio"
+  {...rest}
+  data-pages={managed || undefined}
+  class:list={[!managed && 'ui-pagination', className]}
+>
+  <div class:list={[!managed && 'ds-join', managed && 'contents']}>
+    <Button
+      as="a"
+      href={previous}
+      disabled={!managed && !previous}
+      variant={managed ? 'plain' : 'outline'}
+      class:list={[!managed && 'ds-join-item', controlClass]}
+      data-step={managed ? '-1' : undefined}
+    >
+      <ChevronLeft size={18} aria-hidden="true" /> Anterior
+    </Button>
+    {managed && <span data-page-label></span>}
+    <Button
+      as="a"
+      href={next}
+      disabled={!managed && !next}
+      variant={managed ? 'plain' : 'outline'}
+      class:list={[!managed && 'ds-join-item', controlClass]}
+      data-step={managed ? '1' : undefined}
+    >
+      Siguiente <ChevronRight size={18} aria-hidden="true" />
+    </Button>
+  </div>
+  {!managed && label && <span>{label}</span>}
+</nav>
+
+<style>
+  .ui-pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+</style>

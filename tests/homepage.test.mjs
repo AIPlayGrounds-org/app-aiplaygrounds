@@ -88,7 +88,11 @@ test('menú nativo conserva seis destinos y cierre con Escape', () => {
     '/equipo/',
   ])
     assert.ok(header.includes(route));
-  assert.match(header, /<details class="mobile-nav">/);
+  assert.match(header, /<Dropdown class="mobile-nav">/);
+  assert.match(
+    readFileSync('src/components/ui/Dropdown.astro', 'utf8'),
+    /<details\b/,
+  );
   assert.match(header, /event\.key === 'Escape'/);
   assert.match(header, /querySelector\('summary'\)\?\.focus/);
   const footer = readFileSync('src/components/site/SiteFooter.astro', 'utf8');
