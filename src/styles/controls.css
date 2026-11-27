@@ -62,16 +62,4 @@
     outline: none;
     box-shadow: none;
   }
-  [data-native-choice] {
-    appearance: auto;
-    width: auto;
-    height: auto;
-    border: initial;
-    background: initial;
-    color: inherit;
-    box-shadow: none;
-  }
-  [data-native-choice]::before {
-    display: none;
-  }
 }

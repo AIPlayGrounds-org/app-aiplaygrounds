@@ -2,8 +2,8 @@
   themes: false;
   prefix: 'ds-';
   include:
-    button, card, badge, input, textarea, select, checkbox, radio, label,
-    loading, modal, dropdown, join;
+    button, card, badge, input, textarea, select, label, loading, modal,
+    dropdown, join;
   exclude: themecontroller;
   logs: false;
 }

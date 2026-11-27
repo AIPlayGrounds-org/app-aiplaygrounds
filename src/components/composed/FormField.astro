@@ -33,7 +33,8 @@ const errorId = `${id}-error`;
 
 <div class:list={['form-field', className]}>
   <Label for={id} class="block">
-    {label} <span aria-hidden="true">*</span>
+    {label}
+    <span aria-hidden="true">{' *'}</span>
   </Label>
   {kind === 'select' ? (
     <Select

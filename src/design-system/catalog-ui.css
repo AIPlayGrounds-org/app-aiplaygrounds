@@ -7,6 +7,8 @@
 @plugin 'daisyui' {
   themes: false;
   prefix: 'ds-';
-  include: toggle, avatar, divider, alert, tooltip, skeleton, tab, collapse;
+  include:
+    checkbox, radio, toggle, avatar, divider, alert, tooltip, skeleton, tab,
+    collapse;
   logs: false;
 }

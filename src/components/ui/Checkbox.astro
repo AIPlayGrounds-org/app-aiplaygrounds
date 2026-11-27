@@ -16,6 +16,5 @@ const { size = 'md', native, class: className, ...rest } = Astro.props;
 <input
   {...rest}
   type="checkbox"
-  data-native-choice={native || undefined}
-  class:list={['ds-checkbox', sizes[size], className]}
+  class:list={[!native && ['ds-checkbox', sizes[size]], className]}
 />
