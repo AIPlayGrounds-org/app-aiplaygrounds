@@ -11,10 +11,7 @@ export function drawIllustration(
     ease?: string;
   } = {},
 ) {
-  const motif = root.getAttribute('data-motion-draw') === 'motif';
-  const nodes = root.querySelectorAll<SVGElement>(
-    motif ? '.motif path' : '.path-illustration :is(path, circle)[pathLength]',
-  );
+  const nodes = root.querySelectorAll<SVGElement>('.motif path');
   const tokens = motionTokens(root);
   return waapi.animate(nodes, {
     strokeDasharray: ['1 1', '1 1'],
@@ -22,12 +19,11 @@ export function drawIllustration(
     duration: options.duration ?? tokens.ms('--duration-draw'),
     ease: options.ease || tokens.value('--motion-ease-draw'),
     delay: (node) => {
-      if (!motif && node.tagName === 'circle') return 0;
       const index = node.parentElement
         ? [...node.parentElement.children].indexOf(node)
         : 0;
       return (
-        Math.min(index, motif ? 3 : 2) *
+        Math.min(index, 3) *
         (options.stagger ?? tokens.ms('--motion-stagger-draw'))
       );
     },

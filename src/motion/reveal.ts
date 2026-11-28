@@ -1,6 +1,7 @@
 import { waapi } from 'animejs/waapi';
 import { allowMotion, motionLifetime, motionQuery } from './preferences';
-import { motionTokens } from './tokens';
+import { groupDelay, motionTokens } from './tokens';
+export { groupDelay } from './tokens';
 
 export const revealPresets = ['rise', 'card', 'ink', 'fade'] as const;
 export type RevealPreset = (typeof revealPresets)[number];
@@ -54,14 +55,6 @@ export function reveal(
     delay: tokens.ms('--editorial-delay'),
     ...playback,
   });
-}
-
-export function groupDelay(target: Element, position: number) {
-  const tokens = motionTokens(target);
-  return Math.min(
-    position * tokens.ms('--motion-stagger-group'),
-    tokens.ms('--motion-delay-group-max'),
-  );
 }
 
 export function observeReveals(

@@ -1,0 +1,183 @@
+---
+import Button from '../components/ui/Button.astro';
+import ClosingCTA from '../components/site/ClosingCTA.astro';
+import CollaborationCard from '../components/site/CollaborationCard.astro';
+import FormCTA from '../components/site/FormCTA.astro';
+import ImmersiveHero from '../components/site/ImmersiveHero.astro';
+import InitiativeCard from '../components/site/InitiativeCard.astro';
+import InitiativeGrid from '../components/site/InitiativeGrid.astro';
+import OrganizationContactForm from '../components/site/OrganizationContactForm.astro';
+import RollingValue from '../components/site/RollingValue.astro';
+import SceneMotion from '../components/site/SceneMotion.astro';
+import SectionHeading from '../components/site/SectionHeading.astro';
+import TextLink from '../components/site/TextLink.astro';
+import VerticalCard from '../components/site/VerticalCard.astro';
+import { inicioImages } from '../assets/inicio';
+import { empresasImages } from '../assets/empresas';
+import type { SequenceName } from '../motion/sequence';
+
+interface Props {
+  pattern: SequenceName;
+}
+const { pattern } = Astro.props;
+const initiatives = [
+  ['labs', 'AI Labs', 'Ensayos y prototipos en una matriz en experimentación.'],
+  [
+    'academy',
+    'AI Academy',
+    'Capas de conocimiento conectadas por un recorrido ascendente.',
+  ],
+  [
+    'research',
+    'Investigación',
+    'Marco conceptual de observación, barras y tendencia.',
+  ],
+  [
+    'organizations',
+    'Organizaciones',
+    'Módulos periféricos y una infraestructura central compartida.',
+  ],
+] as const;
+---
+
+{pattern === 'kinetic' && (
+  <ImmersiveHero
+    id="approved-hero"
+    image={inicioImages.hero}
+    title="Aprendemos, investigamos y construimos"
+    description="El paisaje permanece estable mientras las palabras marcan el ritmo."
+    composition="open-sky"
+  >
+    <Button href="#motion-kinetic">Ver la secuencia</Button>
+  </ImmersiveHero>
+)}
+{pattern === 'assembly' && (
+  <div class="example-pair" data-scene-group>
+    <VerticalCard
+      title="AI Foundations"
+      text="Fundamentos técnicos de la IA."
+      image={inicioImages.foundations}
+    />
+    <VerticalCard
+      title="AI for Software"
+      text="Desarrollo de software asistido por IA."
+      image={inicioImages.software}
+    />
+  </div>
+)}
+{pattern === 'metrics' && (
+  <ul class="example-metrics" role="list" data-scene="metrics">
+    {['+30', '1,200+', '800+', '+150', '300+', '56', '16', '6', '36 h'].map(
+      (value) => (
+        <li data-motion-rule>
+          <strong>
+            <RollingValue {value} density="display" />
+          </strong>
+        </li>
+      ),
+    )}
+  </ul>
+)}
+{pattern === 'narrative' && (
+  <div class="example-pair" data-scene="narrative">
+    <SectionHeading data-scene-title>
+      El conocimiento crece cuando se comparte
+    </SectionHeading>
+    <div class="example-copy" data-motion-rule>
+      <p data-scene-copy>
+        La comunidad comparte conocimiento, hace preguntas y participa en las
+        actividades que impulsan nuestro trabajo.
+      </p>
+      <TextLink href="#motion-narrative" data-scene-actions>
+        Actividades de la comunidad
+      </TextLink>
+    </div>
+  </div>
+)}
+{pattern === 'organic' && (
+  <ClosingCTA
+    id="approved-organic"
+    title="La próxima conversación puede empezar contigo"
+    paragraphs={['Acércate a las actividades de la comunidad.']}
+    buttons={[
+      {
+        href: '#motion-organic',
+        label: 'Ir a la comunidad',
+        variant: 'primary',
+      },
+    ]}
+  />
+)}
+{pattern === 'convergence' && (
+  <FormCTA
+    id="approved-convergence"
+    headingId="contact-title"
+    title="Conversemos sobre tu organización"
+    description="Puedes probar el foco y escribir mientras se reproduce la composición."
+    illustration={empresasImages.patio}
+    density="compact"
+  >
+    <OrganizationContactForm />
+  </FormCTA>
+)}
+{pattern === 'landscape' && (
+  <div class="example-pair" data-scene-group>
+    <CollaborationCard
+      title="Alianzas institucionales"
+      description="Actividades conjuntas entre comunidades e instituciones."
+      image={empresasImages.bridge}
+      tone="grove"
+      href="#motion-landscape"
+      label="Proponer una alianza"
+      ctaId="demo-alliance"
+      inquiryType="institutional"
+    />
+    <CollaborationCard
+      title="Oportunidades comerciales"
+      description="Explora formación y proyectos de IA para equipos."
+      image={empresasImages.terraces}
+      tone="sand"
+      href="#motion-landscape"
+      label="Plantear una necesidad"
+      ctaId="demo-commercial"
+      inquiryType="commercial"
+    />
+  </div>
+)}
+{(pattern === 'signal' || pattern === 'trace') && (
+  <InitiativeGrid>
+    {initiatives.map(([illustration, title, description]) => (
+      <InitiativeCard
+        illustrationId={`gallery-${pattern}-${illustration}`}
+        {illustration}
+        {title}
+        {description}
+        href={`#motion-${pattern}`}
+        label="Ver el patrón"
+      />
+    ))}
+  </InitiativeGrid>
+)}
+<SceneMotion />
+
+<style>
+  .example-pair {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+    gap: var(--space-card);
+  }
+  .example-copy {
+    padding-inline-start: var(--space-stack);
+    border-inline-start: var(--stroke-default) solid var(--line);
+  }
+  .example-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(6rem, 100%), 1fr));
+    gap: var(--space-related);
+  }
+  .example-metrics li {
+    padding-inline: var(--space-related);
+    border-inline-start: var(--stroke-default) solid var(--line);
+    font: var(--weight-heading) var(--type-card-title) var(--font-heading);
+  }
+</style>

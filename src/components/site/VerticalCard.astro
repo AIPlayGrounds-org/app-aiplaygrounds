@@ -1,0 +1,87 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import Card from '../ui/Card.astro';
+import SceneMotion from './SceneMotion.astro';
+
+interface Props {
+  title: string;
+  image: ImageMetadata;
+  text: string;
+}
+const { title, image, text } = Astro.props;
+---
+
+<article data-scene="assembly">
+  <Card class="field-card" surface="elevated" density="none" edge="outline">
+    <div class="field-copy">
+      <h3 data-scene-title>{title}</h3>
+      <p data-scene-copy>{text}</p>
+    </div>
+    <div class="field-art">
+      <div data-scene-art>
+        <Image
+          src={image}
+          alt=""
+          format="webp"
+          width={960}
+          widths={[320, 480, 640, 800, 960]}
+          sizes="(min-width: 80rem) 308px, (min-width: 60rem) calc((92vw - 3rem) / 4), (min-width: 40rem) calc((92vw - 1rem) / 2), calc(100vw - 2rem)"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </Card>
+</article>
+<SceneMotion />
+
+<style>
+  article {
+    min-width: 0;
+  }
+  .field-card {
+    overflow: hidden;
+    height: 100%;
+    border-radius: var(--editorial-radius);
+    background: var(--home-surface);
+  }
+  .field-copy {
+    padding: calc(var(--space-unit) * 6) var(--space-card) var(--space-stack);
+    flex: 1;
+  }
+  h3 {
+    font-size: var(--type-card-title);
+  }
+  p {
+    margin-top: var(--space-control);
+    color: var(--secondary-text);
+  }
+  .field-art {
+    margin-top: auto;
+    overflow: clip;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-end-start-radius: var(--radius-large);
+    border-end-end-radius: var(--radius-large);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    img {
+      transition: scale var(--duration-feedback) var(--motion-ease-standard);
+      transform-origin: top center;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      article:hover img {
+        scale: calc(1 + var(--motion-media-zoom));
+        transition: scale var(--duration-disclosure) var(--editorial-ease-out);
+      }
+    }
+  }
+  @media (max-width: 40rem) {
+    .field-copy {
+      padding-top: calc(var(--space-unit) * 8);
+    }
+  }
+</style>

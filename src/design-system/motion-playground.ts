@@ -1,5 +1,12 @@
 import { allowMotion, motionLifetime } from '../motion/preferences';
 import { motionTokens } from '../motion/tokens';
+import { groupDelay } from '../motion/tokens';
+import {
+  bindSceneInterruption,
+  bindTraceTriggers,
+} from '../motion/interactions';
+import { patterns } from '../motion/patterns';
+import { approvedMotion } from './approved-motion';
 import type { Playback, Settings } from './motion-experiments';
 
 const playground = document.querySelector<HTMLElement>(
@@ -37,6 +44,7 @@ for (const demo of demos) {
   const status = demo.querySelector<HTMLElement>('[data-motion-status]');
   if (!status) continue;
   const pattern = demo.dataset.motionDemo!;
+  const approved = approvedMotion.find(({ id }) => id === pattern);
   const field = (name: string) =>
     demo.querySelector<HTMLInputElement>(`[data-motion-field="${name}"]`);
   const tokens = motionTokens(stage);
@@ -96,12 +104,12 @@ for (const demo of demos) {
     field('progress')?.setAttribute('value', '0');
     if (field('progress')) field('progress')!.value = '0';
   };
-  const play = async () => {
+  const play = async (trigger?: HTMLElement) => {
     if (reduced.checked || !allowMotion()) {
       status.textContent = 'Movimiento reducido: se muestra el estado final.';
       return;
     }
-    if (current && paused) {
+    if (current && paused && !trigger) {
       current.resume();
       paused = false;
       status.textContent = 'En reproducción.';
@@ -133,7 +141,43 @@ for (const demo of demos) {
       loop: field('loop')?.checked ?? false,
     };
     try {
-      if (
+      if (approved) {
+        const run = await patterns[approved.id]();
+        if (!valid()) return;
+        const roots = trigger
+          ? [trigger]
+          : [...stage.querySelectorAll<HTMLElement>('[data-scene]')];
+        const progress = field('progress');
+        const effects = roots.map((root, index) =>
+          run(root, {
+            manual: true,
+            ...(field('duration')?.value && { duration: read('duration', 0) }),
+            ...(field('stagger')?.value && { stagger: settings.stagger }),
+            speed: read('speed', 1),
+            intensity: read('intensity', 1),
+            ease: field('ease')?.value,
+            delay: field('stagger')?.value
+              ? Math.min(
+                  index * settings.stagger,
+                  tokens.ms('--motion-delay-group-max'),
+                )
+              : groupDelay(root, index),
+            ...(index === roots.length - 1 && {
+              onProgress: (value: number) => {
+                if (progress && !paused)
+                  progress.value = String(Math.round(value * 100));
+              },
+            }),
+          }),
+        );
+        current = {
+          duration: Math.max(...effects.map((effect) => effect.duration)),
+          pause: () => effects.forEach((effect) => effect.pause()),
+          resume: () => effects.forEach((effect) => effect.resume()),
+          seek: (time) => effects.forEach((effect) => effect.seek(time)),
+          revert: () => effects.forEach((effect) => effect.revert()),
+        };
+      } else if (
         pattern === 'entrance-exit' ||
         (pattern === 'scroll' && mode === 'reveal')
       ) {
@@ -197,7 +241,7 @@ for (const demo of demos) {
           };
         }
       } else if (pattern === 'sequences' && mode === 'hero') {
-        const { immersiveEntrance } = await import('../motion/hero');
+        const { immersiveEntrance } = await import('../motion/kinetic');
         if (!valid()) return;
         current = immersiveEntrance(
           stage.querySelector<HTMLElement>('#motion-hero-sample')!,
@@ -281,12 +325,17 @@ for (const demo of demos) {
     (event) => {
       if (!current || !(event.target instanceof HTMLInputElement)) return;
       current.pause();
-      current.seek((current.duration * event.target.valueAsNumber) / 100);
       paused = true;
+      current.seek((current.duration * event.target.valueAsNumber) / 100);
       status.textContent = 'En pausa.';
     },
     { signal },
   );
+  for (const root of stage.querySelectorAll<HTMLElement>('[data-scene]')) {
+    bindSceneInterruption(root, reset, signal);
+    if (pattern === 'trace')
+      bindTraceTriggers(root, () => void play(root), signal);
+  }
   resets.set(demo, reset);
   offscreen.observe(demo);
   showMode();

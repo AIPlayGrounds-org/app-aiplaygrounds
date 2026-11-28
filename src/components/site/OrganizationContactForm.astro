@@ -33,12 +33,13 @@ const enabled =
       kind="select"
       label="Tipo de consulta"
       error="Selecciona el tipo de consulta."
+      data-scene-row
     >
       <option value="">Selecciona el tipo de consulta</option>
       <option value="institutional">Alianza institucional</option>
       <option value="commercial">Oportunidad comercial</option>
     </FormField>
-    <div class="contact-pair">
+    <div class="contact-pair" data-scene-row>
       <FormField
         id="contact-name"
         name="name"
@@ -64,6 +65,7 @@ const enabled =
       autocomplete="email"
       maxLength={contactLimits.email}
       error="Escribe tu correo electrónico."
+      data-scene-row
     />
     <FormField
       id="contact-message"
@@ -74,6 +76,7 @@ const enabled =
       maxLength={contactLimits.message}
       rows={3}
       error="Cuéntanos brevemente qué tienes en mente."
+      data-scene-row
     />
   </fieldset>
   <p class="contact-note">* Campos obligatorios.</p>
@@ -89,7 +92,7 @@ const enabled =
       </noscript>
     </>
   )}
-  <Button type="submit" variant="primary" disabled>
+  <Button type="submit" variant="primary" disabled data-scene-row>
     Enviar consulta
   </Button>
   <p class="sr-only" role="status" data-validation-status></p>

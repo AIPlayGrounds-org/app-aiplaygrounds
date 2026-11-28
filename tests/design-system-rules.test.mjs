@@ -140,6 +140,11 @@ test('el CLI bloquea regresiones y admite solo la declaración exceptuada', () =
     write('src/design-system/Example.astro', '<Sample />');
     write('src/design-system/MotionGallery.astro', '<div />');
     write('src/design-system/motion-playground.ts');
+    write('src/design-system/approved-motion.ts');
+    write(
+      'src/motion/sequence.ts',
+      "export const sequenceDurations = { kinetic: '--duration-hero' } as const;",
+    );
     write('docs/implementation/motion-system.md');
     const run = () =>
       spawnSync(process.execPath, [validator], {
@@ -149,6 +154,11 @@ test('el CLI bloquea regresiones y admite solo la declaración exceptuada', () =
     const justified =
       '.art { padding-top: 8rem; /* design-exception: Espacio reservado para el horizonte de la ilustración. */ }';
     write('src/pages/index.astro', `<style>${justified}</style>`);
+    assert.match(run().stderr, /kinetic: falta una ficha de la secuencia/);
+    write(
+      'src/design-system/approved-motion.ts',
+      "export const approvedMotion = [{ id: 'kinetic' }];",
+    );
     assert.equal(run().status, 0);
     write(
       'src/pages/index.astro',

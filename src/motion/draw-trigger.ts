@@ -10,16 +10,14 @@ const { signal } = motionLifetime(() => {
 });
 
 for (const card of document.querySelectorAll<HTMLElement>(
-  '[data-motion-draw]',
+  '[data-motion-draw="motif"]',
 )) {
   if (card.closest('[data-motion-manual]')) continue;
-  const interactive = card.dataset.motionDraw === 'initiative';
   let hovered = false;
-  let focused = false;
   let pending = false;
   let generation = 0;
   const update = async () => {
-    if (!allowMotion() || !(hovered || focused)) {
+    if (!allowMotion() || !hovered) {
       generation++;
       pending = false;
       running.get(card)?.();
@@ -50,8 +48,7 @@ for (const card of document.querySelectorAll<HTMLElement>(
   card.addEventListener(
     'pointerenter',
     (event) => {
-      hovered =
-        event.pointerType !== 'touch' && (interactive || finePointer.matches);
+      hovered = event.pointerType !== 'touch' && finePointer.matches;
       void update();
     },
     { signal },
@@ -60,28 +57,6 @@ for (const card of document.querySelectorAll<HTMLElement>(
     'pointerleave',
     () => {
       hovered = false;
-      void update();
-    },
-    { signal },
-  );
-  if (!interactive) continue;
-  card.addEventListener(
-    'focusin',
-    () => {
-      focused = true;
-      void update();
-    },
-    { signal },
-  );
-  card.addEventListener(
-    'focusout',
-    (event) => {
-      if (
-        event.relatedTarget instanceof Node &&
-        card.contains(event.relatedTarget)
-      )
-        return;
-      focused = false;
       void update();
     },
     { signal },

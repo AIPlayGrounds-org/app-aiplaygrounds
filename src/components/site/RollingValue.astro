@@ -1,0 +1,43 @@
+---
+import type { MetricDensity } from '../../motion/metrics';
+
+interface Props {
+  value: string;
+  density?: MetricDensity;
+}
+const { value, density = 'compact' } = Astro.props;
+---
+
+<span class="sr-only">{value}</span>
+<span aria-hidden="true" data-rolling-value={density}>
+  {Array.from(value, (character) =>
+    /^[0-9]$/.test(character) ? (
+      <span data-rolling-digit>
+        <span data-digit-face>{character}</span>
+      </span>
+    ) : (
+      character
+    ),
+  )}
+</span>
+
+<style>
+  [data-rolling-value] {
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  [data-rolling-digit] {
+    display: inline-block;
+    position: relative;
+    overflow: clip;
+  }
+  [data-rolling-digit]:has(> :global(.motion-reel)) [data-digit-face] {
+    visibility: hidden;
+  }
+  [data-rolling-digit] > :global(.motion-reel) {
+    position: absolute;
+    inset: 0 auto auto 0;
+    display: grid;
+    inline-size: 100%;
+  }
+</style>

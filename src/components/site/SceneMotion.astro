@@ -1,0 +1,20 @@
+<script>
+  import '../../motion/mount';
+</script>
+
+<style is:global>
+  .motion-heading-line {
+    display: block;
+  }
+  [data-motion-rule] {
+    --motion-rule-progress: 100%;
+  }
+  [data-motion-rule][style*='--motion-rule-progress'] {
+    border-image: linear-gradient(
+        var(--motion-rule-direction, to bottom),
+        var(--line) var(--motion-rule-progress),
+        transparent var(--motion-rule-progress)
+      )
+      1;
+  }
+</style>

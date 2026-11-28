@@ -3,6 +3,7 @@ import Card from '../ui/Card.astro';
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import TextLink from './TextLink.astro';
+import SceneMotion from './SceneMotion.astro';
 
 interface Props {
   title: string;
@@ -25,7 +26,7 @@ const { title, description, image, tone, href, label, ctaId, inquiryType } =
   edge="none"
   interaction="single-link"
   class:list={['collaboration', tone]}
-  data-reveal="card"
+  data-scene="landscape"
 >
   <Image
     src={image}
@@ -36,20 +37,23 @@ const { title, description, image, tone, href, label, ctaId, inquiryType } =
     sizes="(min-width: 80rem) 550px, (min-width: 60rem) 42vw, (min-width: 48rem) 65vw, 95vw"
     loading="lazy"
     class="art"
+    data-scene-art
   />
   <div class="copy">
-    <h3>{title}</h3>
-    <p>{description}</p>
+    <h3 data-scene-title>{title}</h3>
+    <p data-scene-copy>{description}</p>
     <TextLink
       {href}
       data-cta={ctaId}
       data-inquiry-type={inquiryType}
       data-card-link
+      data-scene-actions
     >
       {label}
     </TextLink>
   </div>
 </Card>
+<SceneMotion />
 
 <style>
   .collaboration {

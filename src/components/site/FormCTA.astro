@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import Section from './Section.astro';
 import SectionHeading from './SectionHeading.astro';
+import SceneMotion from './SceneMotion.astro';
 
 interface Props {
   id: string;
@@ -36,16 +37,28 @@ const {
       `art-${illustrationSide}`,
       { compact: density === 'compact' },
     ]}
+    data-scene={animate && illustration ? 'convergence' : undefined}
+    data-art-side={illustrationSide}
   >
-    <div class="intro" data-reveal={animate ? 'ink' : undefined}>
-      <SectionHeading id={headingId}>{title}</SectionHeading>
-      <p>{description}</p>
+    <div class="surface-fill" data-scene-surface aria-hidden="true"></div>
+    <div
+      class="intro"
+      data-reveal={animate && !illustration ? 'ink' : undefined}
+    >
+      <SectionHeading id={headingId} data-scene-title>
+        {title}
+      </SectionHeading>
+      <p data-scene-copy>{description}</p>
     </div>
-    <div class="form-slot" data-reveal={animate ? 'fade' : undefined}>
+    <div
+      class="form-slot"
+      data-scene-form
+      data-reveal={animate && !illustration ? 'fade' : undefined}
+    >
       <slot />
     </div>
     {illustration && (
-      <div class="art" data-reveal={animate ? 'fade' : undefined}>
+      <div class="art" data-scene-art>
         <Image
           src={illustration}
           alt=""
@@ -64,6 +77,7 @@ const {
     )}
   </div>
 </Section>
+<SceneMotion />
 
 <style>
   .form-cta {
@@ -73,6 +87,7 @@ const {
     --inset: clamp(1.125rem, 4vw, 3.5rem);
     --block-inset: var(--inset);
     position: relative;
+    isolation: isolate;
     overflow: hidden;
     display: grid;
     grid-template-columns: minmax(0, 1fr);
@@ -81,7 +96,13 @@ const {
     padding: var(--block-inset) var(--inset);
     border: var(--stroke-default) solid var(--line);
     border-radius: var(--radius-large);
+  }
+  .surface-fill {
+    position: absolute;
+    inset: 0;
+    z-index: -1; /* design-exception: Capa de relleno detrás del contenido dentro del contexto aislado de este formulario. */
     background: var(--editorial-surface);
+    pointer-events: none;
   }
   .compact {
     --block-inset: clamp(1.125rem, 3vw, 2.5rem);
@@ -94,9 +115,6 @@ const {
     max-width: 40ch;
     color: var(--secondary-text);
   }
-  .conversion-surface:focus-within .intro[data-entering] {
-    animation: none;
-  }
   .form-slot {
     min-width: 0;
     --editorial-delay: var(--motion-delay-editorial-early);
@@ -107,7 +125,6 @@ const {
     margin-inline-start: calc(-1 * var(--inset));
     margin-block-end: calc(-1 * var(--block-inset));
     align-self: end;
-    --editorial-delay: var(--motion-delay-editorial-pair);
   }
   .art-end .art {
     justify-self: end;
@@ -120,6 +137,7 @@ const {
   }
   @media (min-width: 48rem) {
     .conversion-surface {
+      --motion-convergence-axis: inline;
       grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
       gap: clamp(2rem, 5vw, 5rem);
     }

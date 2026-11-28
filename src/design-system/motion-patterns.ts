@@ -1,4 +1,7 @@
+import { approvedMotion } from './approved-motion';
+
 export const motionPatterns = [
+  ...approvedMotion,
   {
     id: 'microinteractions',
     title: 'Microinteractions',

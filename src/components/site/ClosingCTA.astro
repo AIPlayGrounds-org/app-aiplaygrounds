@@ -4,6 +4,7 @@ import type { ImageMetadata } from 'astro';
 import { ArrowUpRight } from '@lucide/astro';
 import { inicioImages } from '../../assets/inicio';
 import Button from '../ui/Button.astro';
+import SceneMotion from './SceneMotion.astro';
 interface Props {
   id: string;
   title: string;
@@ -11,8 +12,17 @@ interface Props {
   buttons: { label: string; href: string; variant: 'primary' | 'outline' }[];
   illustration?: ImageMetadata;
   density?: 'compact';
+  animate?: boolean;
 }
-const { id, title, paragraphs, buttons, illustration, density } = Astro.props;
+const {
+  id,
+  title,
+  paragraphs,
+  buttons,
+  illustration,
+  density,
+  animate = true,
+} = Astro.props;
 const home = id === 'I8' && Astro.url.pathname === '/';
 ---
 
@@ -23,14 +33,14 @@ const home = id === 'I8' && Astro.url.pathname === '/';
 >
   <div
     class:list={['closing', { 'closing-cutout': illustration }]}
-    data-reveal={home || illustration ? 'card' : undefined}
+    data-scene={animate ? 'organic' : undefined}
     data-surface-motion={home || Boolean(illustration) || undefined}
     data-card-outline
   >
     <div class="closing-copy">
-      <h2>{title}</h2>
+      <h2 data-scene-title>{title}</h2>
       {paragraphs.map((paragraph) => (
-        <p>{paragraph}</p>
+        <p data-scene-copy>{paragraph}</p>
       ))}
       <div class="actions">
         {buttons.map((button) => (
@@ -38,6 +48,7 @@ const home = id === 'I8' && Astro.url.pathname === '/';
             href={button.href}
             variant={button.variant}
             data-surface-motion={home || Boolean(illustration) || undefined}
+            data-scene-actions
           >
             {button.label}
             {(home || illustration) && (
@@ -67,9 +78,11 @@ const home = id === 'I8' && Astro.url.pathname === '/';
       }
       loading="lazy"
       class="closing-image"
+      data-scene-art
     />
   </div>
 </section>
+<SceneMotion />
 <style>
   .actions {
     display: flex;
@@ -122,6 +135,8 @@ const home = id === 'I8' && Astro.url.pathname === '/';
     min-height: 0;
     object-fit: cover;
     object-position: right bottom;
+    /* La elipse parte del anclaje del paisaje en dos columnas. */
+    --motion-mask-origin: right bottom;
   }
   .closing-cutout .closing-copy {
     z-index: var(--layer-hit-area);
@@ -134,6 +149,12 @@ const home = id === 'I8' && Astro.url.pathname === '/';
     aspect-ratio: auto;
     object-fit: contain;
     pointer-events: none;
+  }
+  @media (max-width: 48rem) {
+    .closing-image {
+      /* En la composición apilada el paisaje queda bajo las acciones. */
+      --motion-mask-origin: center bottom;
+    }
   }
   @media (min-width: 60rem) {
     .closing-cutout .closing-image {

@@ -6,6 +6,7 @@ import ClosingCTA from '../components/site/ClosingCTA.astro';
 import EditorialMotion from '../components/site/EditorialMotion.astro';
 import FormCTA from '../components/site/FormCTA.astro';
 import FormField from '../components/composed/FormField.astro';
+import RollingValue from '../components/site/RollingValue.astro';
 import Radio from '../components/ui/Radio.astro';
 import ImmersiveCard from '../components/site/ImmersiveCard.astro';
 import ImmersiveHero from '../components/site/ImmersiveHero.astro';
@@ -206,7 +207,7 @@ const metrics = [
           punto de partida de AI Academy.
         </p>
       </div>
-      <article class="bootcamp" data-reveal="fade">
+      <article class="bootcamp">
         <div class="bootcamp-copy">
           <p class="edition">Edición finalizada</p>
           <h3>Bootcamp Gen AI Fundamentals</h3>
@@ -216,10 +217,13 @@ const metrics = [
           </p>
           <TextLink href="/comunidad/#C3">Conoce nuestra trayectoria</TextLink>
         </div>
-        <ul class="metrics" role="list">
+        <ul class="metrics" role="list" data-scene="metrics">
           {metrics.map(([value, label]) => (
-            <li>
-              <strong>{value}</strong> {label}
+            <li data-motion-rule>
+              <strong>
+                <RollingValue {value} density="display" />
+              </strong>{' '}
+              {label}
             </li>
           ))}
         </ul>
@@ -269,6 +273,7 @@ const metrics = [
             maxLength={120}
             placeholder="Tu nombre"
             error="Escribe tu nombre."
+            data-scene-row
           />
           <FormField
             id="academy-email"
@@ -279,8 +284,9 @@ const metrics = [
             maxLength={254}
             placeholder="Tu correo electrónico"
             error="Escribe tu correo electrónico."
+            data-scene-row
           />
-          <fieldset class="line-choices">
+          <fieldset class="line-choices" data-scene-row>
             <legend>
               ¿Qué línea te interesa? <span aria-hidden="true">*</span>
             </legend>
@@ -291,7 +297,7 @@ const metrics = [
               </label>
             ))}
           </fieldset>
-          <Button type="submit" variant="primary" disabled>
+          <Button type="submit" variant="primary" disabled data-scene-row>
             Avisarme de próximas convocatorias
           </Button>
         </fieldset>

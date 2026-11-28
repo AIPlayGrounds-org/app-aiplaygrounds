@@ -109,7 +109,16 @@ if (existsSync(optionsFile)) {
 }
 const motionExamples =
   readFileSync('src/design-system/MotionGallery.astro', 'utf8') +
-  readFileSync('src/design-system/motion-playground.ts', 'utf8');
+  readFileSync('src/design-system/motion-playground.ts', 'utf8') +
+  readFileSync('src/design-system/approved-motion.ts', 'utf8');
+
+const sceneRegistry = readFileSync('src/motion/sequence.ts', 'utf8')
+  .split('export const sequenceDurations = {')[1]
+  ?.split('} as const')[0];
+for (const [, scene] of sceneRegistry?.matchAll(/(\w+): '--duration-/g) ?? []) {
+  if (!motionExamples.includes(`id: '${scene}'`))
+    errors.push(`${scene}: falta una ficha de la secuencia en el catálogo`);
+}
 for (const path of sourceFiles(ui).filter((file) => file.endsWith('.astro'))) {
   const name = basename(path, '.astro');
   if (!registry.has(name) || !new RegExp(`<${name}[\\s/>]`).test(examples))

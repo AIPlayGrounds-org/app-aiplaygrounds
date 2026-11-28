@@ -65,15 +65,23 @@ test('ilustraciones locales, WebP y variantes limitadas', () => {
   }
   assert.doesNotMatch(assets, /inicio-referencia/);
   assert.match(page, /image=\{inicioImages\.hero\}/);
-  assert.match(page, /format="webp"/);
-  assert.match(page, /width=\{960\}/);
+  assert.match(page, /<VerticalCard \{\.\.\.field\} \/>/);
+  const vertical = readFileSync(
+    'src/components/site/VerticalCard.astro',
+    'utf8',
+  );
+  assert.match(vertical, /format="webp"/);
+  assert.match(vertical, /width=\{960\}/);
   const initiative = readFileSync(
     'src/components/site/InitiativeCard.astro',
     'utf8',
   );
-  for (const illustration of ['labs', 'academy', 'organizations']) {
-    assert.ok(page.includes(`illustration="${illustration}"`));
-    assert.ok(initiative.includes(`illustration === '${illustration}'`));
+  const art = readFileSync('src/components/site/InitiativeArt.astro', 'utf8');
+  assert.match(initiative, /<InitiativeArt\b/);
+  for (const illustration of ['labs', 'academy', 'organizations', 'research']) {
+    if (illustration !== 'research')
+      assert.ok(page.includes(`illustration="${illustration}"`));
+    assert.ok(art.includes(`variant === '${illustration}'`));
   }
 });
 

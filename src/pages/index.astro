@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import ImmersiveHero from '../components/site/ImmersiveHero.astro';
 import Section from '../components/site/Section.astro';
 import SectionHeading from '../components/site/SectionHeading.astro';
@@ -9,7 +8,8 @@ import InitiativeGrid from '../components/site/InitiativeGrid.astro';
 import EditorialMotion from '../components/site/EditorialMotion.astro';
 import { inicioImages } from '../assets/inicio';
 import Button from '../components/ui/Button.astro';
-import Card from '../components/ui/Card.astro';
+import VerticalCard from '../components/site/VerticalCard.astro';
+import RollingValue from '../components/site/RollingValue.astro';
 import ClosingCTA from '../components/site/ClosingCTA.astro';
 import SiteHeader from '../components/site/SiteHeader.astro';
 import SiteFooter from '../components/site/SiteFooter.astro';
@@ -62,17 +62,23 @@ const fields = [
       </Button>
     </ImmersiveHero>
 
-    <Section id="I2" class="community">
-      <SectionHeading>El conocimiento crece cuando se comparte</SectionHeading>
-      <div class="community-copy" data-reveal>
-        <p>
+    <Section id="I2" class="community" data-scene="narrative">
+      <SectionHeading data-scene-title>
+        El conocimiento crece cuando se comparte
+      </SectionHeading>
+      <div class="community-copy" data-motion-rule>
+        <p data-scene-copy>
           La comunidad comparte conocimiento, hace preguntas y participa en las
           actividades que impulsan nuestro trabajo. El equipo sostiene la
           organización y sus cuatro verticales de trabajo.
         </p>
         <div class="links">
-          <TextLink href="/comunidad/#C3">Actividades de la comunidad</TextLink>
-          <TextLink href="/equipo/">Nuestro equipo</TextLink>
+          <TextLink href="/comunidad/#C3" data-scene-actions>
+            Actividades de la comunidad
+          </TextLink>
+          <TextLink href="/equipo/" data-scene-actions>
+            Nuestro equipo
+          </TextLink>
         </div>
       </div>
     </Section>
@@ -83,62 +89,53 @@ const fields = [
         Nuestras verticales de trabajo van de los modelos y sus métodos a las
         aplicaciones en software, ciencia y finanzas.
       </p>
-      <div class="fields" data-reveal-group>
+      <div class="fields" data-scene-group>
         {fields.map((field) => (
-          <article data-reveal="card">
-            <Card
-              class="field-card"
-              surface="elevated"
-              density="none"
-              edge="outline"
-            >
-              <div class="field-copy">
-                <h3>{field.title}</h3>
-                <p>{field.text}</p>
-              </div>
-              <Image
-                src={field.image}
-                alt=""
-                format="webp"
-                width={960}
-                widths={[320, 480, 640, 800, 960]}
-                sizes="(min-width: 80rem) 308px, (min-width: 60rem) calc((92vw - 3rem) / 4), (min-width: 40rem) calc((92vw - 1rem) / 2), calc(100vw - 2rem)"
-                loading="lazy"
-              />
-            </Card>
-          </article>
+          <VerticalCard {...field} />
         ))}
       </div>
     </Section>
 
     <Section id="I4" class="history">
-      <div class="history-heading" data-reveal>
-        <SectionHeading>De los encuentros a la práctica</SectionHeading>
-        <p>
+      <div class="history-heading" data-scene="narrative">
+        <SectionHeading data-scene-title>
+          De los encuentros a la práctica
+        </SectionHeading>
+        <p data-scene-copy>
           Desde 2025 hemos organizado más de 30 eventos de comunidad. Esa
           trayectoria incluye workshops de desarrollo asistido por IA, un
           bootcamp y la coorganización de encuentros y hackathons.
         </p>
       </div>
-      <div class="history-grid">
-        <div class="stat" data-reveal="ink">
+      <div class="history-grid" data-scene-group>
+        <div class="stat" data-scene="metrics" data-motion-rule>
           <p class="eyebrow">Eventos organizados desde 2025</p>
-          <strong>+30</strong>
+          <strong>
+            <RollingValue value="+30" density="display" />
+          </strong>
           <p>eventos de comunidad</p>
         </div>
         <div class="events">
-          <article class="event featured" data-reveal>
+          <article class="event featured" data-scene="metrics" data-motion-rule>
             <p class="eyebrow">Coorganizado</p>
             <h3>hack@latam</h3>
             <p class="metrics">
               <span>
-                <b>1,200+</b> postulantes
+                <b>
+                  <RollingValue value="1,200+" />
+                </b>{' '}
+                postulantes
               </span>{' '}
               <span>
-                <b>56</b> equipos
+                <b>
+                  <RollingValue value="56" />
+                </b>{' '}
+                equipos
               </span>{' '}
               <span>
-                <b>36 h</b>
+                <b>
+                  <RollingValue value="36 h" />
+                </b>
               </span>
             </p>
             <p class="event-note">From Hack to Pilot: Perú Demo Day</p>
@@ -146,15 +143,21 @@ const fields = [
               <span>UTEC</span>
             </p>
           </article>
-          <article class="event" data-reveal>
+          <article class="event" data-scene="metrics" data-motion-rule>
             <p class="eyebrow">Coorganizado</p>
             <h3>IA Hackathon</h3>
             <p class="metrics">
               <span>
-                <b>800+</b> postulantes
+                <b>
+                  <RollingValue value="800+" />
+                </b>{' '}
+                postulantes
               </span>{' '}
               <span>
-                <b>22</b> equipos y proyectos
+                <b>
+                  <RollingValue value="22" />
+                </b>{' '}
+                equipos y proyectos
               </span>
             </p>
             <p class="tags">
@@ -162,15 +165,21 @@ const fields = [
               <span>kebo</span>
             </p>
           </article>
-          <article class="event" data-reveal>
+          <article class="event" data-scene="metrics" data-motion-rule>
             <p class="eyebrow">Coorganizado</p>
             <h3>The Real AI</h3>
             <p class="metrics">
               <span>
-                <b>+150</b> participantes
+                <b>
+                  <RollingValue value="+150" />
+                </b>{' '}
+                participantes
               </span>{' '}
               <span>
-                <b>7</b> speakers
+                <b>
+                  <RollingValue value="7" />
+                </b>{' '}
+                speakers
               </span>
             </p>
             <p class="tags">
@@ -187,6 +196,7 @@ const fields = [
       </SectionHeading>
       <InitiativeGrid>
         <InitiativeCard
+          illustrationId="inicio-art-labs"
           illustration="labs"
           title="AI Labs · experimentación e iniciativas tempranas"
           description="Conoce nuestros experimentos y prototipos, quiénes los impulsan y en qué etapa están."
@@ -194,6 +204,7 @@ const fields = [
           label="Explorar AI Labs"
         />
         <InitiativeCard
+          illustrationId="inicio-art-academy"
           illustration="academy"
           title="AI Academy · aprendizaje con dos enfoques"
           description="Amplía lo que puedes construir: usa IA para desarrollar software (Software with AI) o incorpórala en tus aplicaciones y comprueba cómo funciona (AI Engineering)."
@@ -201,6 +212,7 @@ const fields = [
           label="Ver las líneas de AI Academy"
         />
         <InitiativeCard
+          illustrationId="inicio-art-organizations"
           illustration="organizations"
           title="Para organizaciones"
           description="Alianzas institucionales, oportunidades comerciales y formación personalizada para equipos. Una conversación permite situar cada posibilidad en el contexto de tu organización."
@@ -280,31 +292,6 @@ const fields = [
     gap: var(--space-stack);
     margin-top: calc(var(--space-unit) * 8);
   }
-  .fields article {
-    min-width: 0;
-  }
-  .fields :global(.field-card) {
-    overflow: hidden;
-    height: 100%;
-    border-radius: var(--editorial-radius);
-    background: var(--home-surface);
-  }
-  .field-copy {
-    padding: calc(var(--space-unit) * 6) var(--space-card) var(--space-stack);
-    flex: 1;
-  }
-  .field-copy p {
-    margin-top: var(--space-control);
-    color: var(--secondary-text);
-  }
-  .fields img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-top: auto;
-    border-end-start-radius: var(--radius-large);
-    border-end-end-radius: var(--radius-large);
-  }
   .history-grid {
     display: grid;
     grid-template-columns: 1fr 2.5fr;
@@ -333,6 +320,7 @@ const fields = [
     padding: var(--space-stack) calc(var(--space-unit) * 8);
   }
   .event.featured {
+    --motion-rule-direction: to right;
     grid-column: 1 / -1;
     border-bottom: var(--stroke-default) solid var(--line);
   }
@@ -390,24 +378,8 @@ const fields = [
     text-decoration-thickness: 0.14em;
   }
   @media (prefers-reduced-motion: no-preference) {
-    .community-copy,
     .section-intro {
       --editorial-delay: var(--motion-delay-editorial-sibling);
-    }
-    @media (min-width: 52rem) {
-      .event:not(.featured) {
-        --editorial-delay: var(--motion-stagger-editorial);
-      }
-    }
-    .fields img {
-      transition: scale var(--duration-feedback) var(--motion-ease-standard);
-      transform-origin: top center;
-    }
-    @media (hover: hover) and (pointer: fine) {
-      .fields article:hover img {
-        scale: calc(1 + var(--motion-media-zoom));
-        transition: scale var(--duration-disclosure) var(--editorial-ease-out);
-      }
     }
   }
   @media (min-width: 60rem) {
@@ -424,9 +396,6 @@ const fields = [
     }
   }
   @media (max-width: 40rem) {
-    .field-copy {
-      padding-top: calc(var(--space-unit) * 8);
-    }
     .community,
     .history-heading,
     .history-grid {
@@ -447,6 +416,7 @@ const fields = [
       margin-top: calc(var(--space-unit) * 8);
     }
     .stat {
+      --motion-rule-direction: to right;
       border-right: 0;
       border-bottom: var(--stroke-default) solid var(--line);
       padding: var(--space-stack) 0 calc(var(--space-unit) * 8);
@@ -456,6 +426,7 @@ const fields = [
     }
     .event,
     .event.featured {
+      --motion-rule-direction: to right;
       grid-column: auto;
       padding: calc(var(--space-unit) * 6) 0;
       border-bottom: var(--stroke-default) solid var(--line);

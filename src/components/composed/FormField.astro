@@ -15,6 +15,7 @@ interface Props {
   rows?: number;
   error: string;
   class?: string;
+  'data-scene-row'?: boolean;
 }
 const {
   id,
@@ -27,11 +28,12 @@ const {
   rows = 4,
   error,
   class: className,
+  'data-scene-row': sceneRow,
 } = Astro.props;
 const errorId = `${id}-error`;
 ---
 
-<div class:list={['form-field', className]}>
+<div class:list={['form-field', className]} data-scene-row={sceneRow}>
   <Label for={id} class="block">
     {label}
     <span aria-hidden="true">{' *'}</span>

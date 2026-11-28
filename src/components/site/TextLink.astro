@@ -7,7 +7,14 @@ const { class: className, ...attributes } = Astro.props;
 ---
 
 <a class:list={['text-link', className]} {...attributes}>
-  <slot /> <ArrowUpRight aria-hidden="true" data-card-arrow />
+  {attributes['data-scene-actions'] ? (
+    <span data-scene-link-text>
+      <slot />
+    </span>
+  ) : (
+    <slot />
+  )}
+  <ArrowUpRight aria-hidden="true" data-card-arrow />
 </a>
 
 <style>

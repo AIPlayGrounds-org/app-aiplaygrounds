@@ -14,3 +14,11 @@ export function motionTokens(element: Element) {
   };
   return { value, number, ms };
 }
+
+export function groupDelay(target: Element, position: number) {
+  const tokens = motionTokens(target);
+  return Math.min(
+    position * tokens.ms('--motion-stagger-group'),
+    tokens.ms('--motion-delay-group-max'),
+  );
+}

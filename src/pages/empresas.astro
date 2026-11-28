@@ -52,7 +52,7 @@ import FormCTA from '../components/site/FormCTA.astro';
           maneras de iniciar una colaboración con AI PlayGrounds.
         </p>
       </div>
-      <div class="collaborations" data-reveal-group>
+      <div class="collaborations" data-scene-group>
         <CollaborationCard
           title="Alianzas institucionales"
           description="Actividades conjuntas, colaboración entre comunidades, universidades e instituciones e iniciativas vinculadas con IA."
@@ -76,17 +76,22 @@ import FormCTA from '../components/site/FormCTA.astro';
       </div>
     </Section>
 
-    <Section id="EM3" class="trajectory" aria-labelledby="trajectory-title">
-      <SectionHeading id="trajectory-title">
+    <Section
+      id="EM3"
+      class="trajectory"
+      aria-labelledby="trajectory-title"
+      data-scene="narrative"
+    >
+      <SectionHeading id="trajectory-title" data-scene-title>
         Una trayectoria construida en colaboración
       </SectionHeading>
-      <div class="section-intro" data-reveal>
-        <p>
+      <div class="section-intro">
+        <p data-scene-copy>
           Hemos coorganizado hackathons y encuentros junto a organizaciones del
           ecosistema tecnológico, además de impulsar experiencias formativas que
           reúnen a personas alrededor de la IA.
         </p>
-        <TextLink href="/#I4" data-cta="view_trajectory">
+        <TextLink href="/#I4" data-cta="view_trajectory" data-scene-actions>
           Conoce nuestra trayectoria
         </TextLink>
       </div>
@@ -98,6 +103,7 @@ import FormCTA from '../components/site/FormCTA.astro';
       </SectionHeading>
       <InitiativeGrid>
         <InitiativeCard
+          illustrationId="empresas-art-labs"
           illustration="labs"
           title="AI Labs"
           description="Iniciativas y productos tempranos que exploran ideas y aplicaciones de inteligencia artificial."
@@ -107,6 +113,7 @@ import FormCTA from '../components/site/FormCTA.astro';
         />
         <InitiativeCard
           id="EM5"
+          illustrationId="empresas-art-academy"
           illustration="academy"
           title="AI Academy"
           description="Aprendizaje en IA y posibilidad de explorar propuestas formativas para equipos."
@@ -116,6 +123,7 @@ import FormCTA from '../components/site/FormCTA.astro';
           inquiryType="commercial"
         />
         <InitiativeCard
+          illustrationId="empresas-art-research"
           illustration="research"
           title="Investigación"
           description="Preguntas, líneas y trabajos de investigación relacionados con inteligencia artificial y sus aplicaciones."
@@ -187,9 +195,6 @@ import FormCTA from '../components/site/FormCTA.astro';
     .trajectory {
       grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
       gap: clamp(2rem, 6vw, 6rem);
-    }
-    .trajectory .section-intro {
-      --editorial-delay: var(--motion-delay-editorial-sibling);
     }
   }
   @media (min-width: 60rem) {

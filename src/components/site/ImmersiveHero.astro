@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
+import SceneMotion from './SceneMotion.astro';
 
 interface Props {
   id: string;
@@ -35,7 +36,7 @@ const {
     `align-${align}`,
     { 'open-sky': composition === 'open-sky' },
   ]}
-  data-hero-entrance={animate || undefined}
+  data-scene={animate ? 'kinetic' : undefined}
   style={{
     '--hero-position': position,
     '--hero-mobile-position': mobilePosition,
@@ -53,14 +54,15 @@ const {
   />
   <div class="site-container hero-content">
     <h1>{title}</h1>
-    <p>{description}</p>
+    <p data-scene-copy>{description}</p>
     {Astro.slots.has('default') && (
-      <div class="actions">
+      <div class="actions" data-scene-actions>
         <slot />
       </div>
     )}
   </div>
 </section>
+<SceneMotion />
 
 <style>
   .hero {
@@ -172,25 +174,4 @@ const {
       font-size: var(--type-control);
     }
   }
-  .open-sky .hero-image {
-    transform-origin: center bottom;
-  }
 </style>
-
-<script>
-  import { allowMotion } from '../../motion/preferences';
-  if (allowMotion() && document.querySelector('[data-hero-entrance]')) {
-    void import('../../motion/hero')
-      .then(({ immersiveEntrance }) => {
-        if (!allowMotion()) return;
-        for (const hero of document.querySelectorAll<HTMLElement>(
-          '[data-hero-entrance]',
-        )) {
-          if (hero.getBoundingClientRect().bottom > 0) immersiveEntrance(hero);
-        }
-      })
-      .catch(() => {
-        /* The hero is already visible. */
-      });
-  }
-</script>

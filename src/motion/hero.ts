@@ -3,64 +3,9 @@ import { createScope } from 'animejs/scope';
 import { allowMotion, motionLifetime } from './preferences';
 import { motionTokens } from './tokens';
 
-export function immersiveEntrance(
-  root: HTMLElement,
-  options: { manual?: boolean; duration?: number; ease?: string } = {},
-) {
-  const tokens = motionTokens(root);
-  const scope = createScope({ root });
-  const content = root.querySelectorAll<HTMLElement>(
-    '.hero-content > :is(p, .actions)',
-  );
-  const image = root.querySelector<HTMLElement>('.hero-image');
-  const actions = root.querySelector('.actions');
-  const lifetime = options.manual
-    ? new AbortController()
-    : motionLifetime(() => scope.revert());
-  const effects: ReturnType<typeof waapi.animate>[] = [];
-  scope.add(() => {
-    for (const node of content) {
-      const delay =
-        node.tagName === 'P'
-          ? tokens.ms('--motion-delay-hero-copy')
-          : node === actions
-            ? tokens.ms('--motion-delay-hero-actions')
-            : 0;
-      if (node.matches(':focus-within')) continue;
-      const effect = waapi.animate(node, {
-        opacity: [tokens.number('--motion-opacity-hero'), 1],
-        delay,
-        duration: options.duration ?? tokens.ms('--duration-hero'),
-        ease: options.ease || tokens.value('--editorial-entrance-ease'),
-        persist: options.manual ?? false,
-        onComplete: (animation) => animation.revert(),
-      });
-      effects.push(effect);
-      if (node === actions)
-        node.addEventListener('focusin', () => effect.revert(), {
-          once: true,
-          signal: lifetime.signal,
-        });
-    }
-    if (image && root.classList.contains('open-sky')) {
-      effects.push(
-        waapi.animate(image, {
-          scale: [tokens.number('--motion-scale-sky'), 1],
-          duration: tokens.ms('--duration-immersive'),
-          ease: tokens.value('--editorial-ease-out'),
-          persist: options.manual ?? false,
-          onComplete: (animation) => animation.revert(),
-        }),
-      );
-    }
-  });
-  return scene(scope, effects, () => lifetime.abort());
-}
-
 function scene(
   scope: ReturnType<typeof createScope>,
   effects: ReturnType<typeof waapi.animate>[],
-  cleanup?: () => void,
 ) {
   return {
     duration: Math.max(0, ...effects.map(({ duration }) => duration)),
@@ -70,10 +15,7 @@ function scene(
       effects.forEach((effect) =>
         effect.seek(Math.min(time, effect.duration), true),
       ),
-    revert: () => {
-      cleanup?.();
-      scope.revert();
-    },
+    revert: () => scope.revert(),
   };
 }
 export function compactEntrance(

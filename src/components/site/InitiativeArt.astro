@@ -1,0 +1,177 @@
+---
+type Point = readonly [number, number];
+type Initiative = keyof typeof diagrams;
+
+// Artistic coordinates share a 310 × 140 viewBox. Routes use module centers,
+// so their stops are exact vertices rather than hand-timed approximations.
+const diagrams = {
+  labs: {
+    modules: [
+      [92, 30],
+      [155, 30],
+      [218, 30],
+      [92, 70],
+      [155, 70],
+      [218, 70],
+      [92, 110],
+      [155, 110],
+      [218, 110],
+    ],
+    route: [0, 1, 2, 5, 4, 3, 6, 7, 8],
+    branches: 'M92 30V70M155 30V110M218 70V110',
+  },
+  academy: {
+    modules: [
+      [103, 104],
+      [155, 70],
+      [207, 36],
+    ],
+    route: [0, 1, 2],
+    branches: 'M103 104H83M155 70H135M207 36H187',
+  },
+  research: {
+    modules: [
+      [86, 93],
+      [121, 74],
+      [156, 83],
+      [191, 48],
+      [226, 35],
+    ],
+    route: [0, 1, 2, 3, 4],
+    branches: 'M64 74H246M64 48H246',
+  },
+  organizations: {
+    modules: [
+      [75, 40],
+      [155, 40],
+      [235, 40],
+      [155, 77],
+      [75, 111],
+      [235, 111],
+    ],
+    route: [0, 1, 3, 4, 3, 2, 5],
+    branches: 'M75 40V111M155 77 235 111',
+  },
+} as const satisfies Record<
+  string,
+  { modules: readonly Point[]; route: readonly number[]; branches: string }
+>;
+
+interface Props {
+  id: string;
+  variant: Initiative;
+}
+
+const { id, variant } = Astro.props;
+const diagram = diagrams[variant];
+const points: readonly Point[] = diagram.modules;
+const route: readonly number[] = diagram.route;
+const path = route
+  .map((index, hop) => `${hop ? 'L' : 'M'}${points[index].join(' ')}`)
+  .join('');
+let length = 0;
+const stops = route.map((index, hop) => {
+  if (hop) {
+    const [x, y] = points[index];
+    const [px, py] = points[route[hop - 1]];
+    length += Math.hypot(x - px, y - py);
+  }
+  return length;
+});
+---
+
+<svg
+  {id}
+  data-initiative-art
+  viewBox="0 0 310 140"
+  fill="none"
+  aria-hidden="true"
+>
+  <g class="structure">
+    {variant === 'research' && (
+      <>
+        <rect x="57" y="16" width="196" height="109" rx="6" />
+        <path d="M64 112h182M72 23v89m14 4v3m35-3v3m35-3v3m35-3v3m35-3v3" />
+      </>
+    )}
+    <path d={diagram.branches} />
+  </g>
+  <g class="connections">
+    <path d={path} data-signal-path />
+    <path d={path} data-signal-trace opacity="0" />
+  </g>
+  <g class="modules">
+    {points.map(([x, y], index) => (
+      <g data-signal-stop={stops[route.indexOf(index)] / length}>
+        {variant === 'labs' && (
+          <>
+            {index % 2 === 0 ? (
+              <rect x={x - 13} y={y - 13} width="26" height="26" rx="5" />
+            ) : (
+              <circle cx={x} cy={y} r="13" />
+            )}
+            {index % 2 === 0 && <path d={`M${x - 8} ${y - 7}h4m-4 0v4`} />}
+          </>
+        )}
+        {variant === 'academy' && (
+          <>
+            <rect x={x - 33} y={y - 13} width="66" height="26" rx="5" />
+            <path d={`M${x - 24} ${y - 4}h13m-13 8h13m22-8h13m-13 8h13`} />
+          </>
+        )}
+        {variant === 'research' && (
+          <rect x={x - 7} y={y + 6} width="14" height={106 - y} rx="3" />
+        )}
+        {variant === 'organizations' && (
+          <>
+            <rect x={x - 23} y={y - 12} width="46" height="24" rx="5" />
+            <path d={`M${x - 15} ${y - 3}v6m30-6v6`} />
+          </>
+        )}
+        <circle class="node" cx={x} cy={y} r="3" />
+        <circle
+          class="pulse"
+          cx={x}
+          cy={y}
+          r="7"
+          opacity="0"
+          data-signal-pulse
+        />
+      </g>
+    ))}
+  </g>
+  <g data-signal-traveler opacity="0">
+    <circle class="traveler" r="4" />
+  </g>
+</svg>
+
+<style>
+  svg {
+    inline-size: min(80%, 17rem);
+    block-size: 86%;
+    stroke: currentColor;
+    /* Optical strokes and radii are shared SVG geometry in viewBox units. */
+    stroke-width: 1.25;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .structure {
+    stroke-opacity: 0.36;
+  }
+  .connections {
+    stroke-opacity: 0.72;
+  }
+  [data-signal-trace] {
+    stroke-width: 2.25;
+  }
+  .modules :is(rect, circle) {
+    fill: var(--path-wash);
+  }
+  .modules .node,
+  .traveler {
+    fill: currentColor;
+  }
+  .modules .pulse {
+    fill: none;
+  }
+</style>

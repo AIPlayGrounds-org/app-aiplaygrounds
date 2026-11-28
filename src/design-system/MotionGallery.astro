@@ -9,6 +9,9 @@ import AcademyMotif from '../components/site/AcademyMotif.astro';
 import ImmersiveHero from '../components/site/ImmersiveHero.astro';
 import { inicioImages } from '../assets/inicio';
 import { motionPatterns } from './motion-patterns';
+import { approvedMotion, sequenceSources } from './approved-motion';
+import ApprovedMotionExample from './ApprovedMotionExample.astro';
+import type { SequenceName } from '../motion/sequence';
 import UsageDetails from './UsageDetails.astro';
 import { usageFor } from './usage';
 import './motion-gallery.css';
@@ -18,7 +21,10 @@ interface Props {
   viewport: string;
 }
 const { theme, viewport } = Astro.props;
+const isApproved = (id: string): id is SequenceName =>
+  approvedMotion.some((entry) => entry.id === id);
 const productionSources: Record<string, string[]> = {
+  ...Object.fromEntries(approvedMotion.map(({ id, source }) => [id, [source]])),
   microinteractions: [
     '/src/styles/card-interactions.css',
     '/src/styles/controls.css',
@@ -49,6 +55,10 @@ const modes: Record<string, string[]> = {
   <label class="motion-reduce">
     <input type="checkbox" data-motion-reduce /> Simular movimiento reducido
   </label>
+  {sequenceSources.map((path) => {
+    const usage = usageFor(path);
+    return usage && <UsageDetails {usage} />;
+  })}
   {motionPatterns.map(({ id, title, name, api, tokens, use, note, code }) => (
     <article
       class="component-entry"
@@ -71,7 +81,9 @@ const modes: Record<string, string[]> = {
           viewport === 'auto' ? undefined : `--preview-width:${viewport}px`
         }
       >
-        {id === 'microinteractions' ? (
+        {isApproved(id) ? (
+          <ApprovedMotionExample pattern={id} />
+        ) : id === 'microinteractions' ? (
           <Card interaction="interactive" class="motion-feedback-card">
             <Button variant="primary">
               Probar feedback <ArrowRight slot="trailing" aria-hidden="true" />
@@ -213,7 +225,7 @@ const modes: Record<string, string[]> = {
               </select>
             </label>
           )}
-          {id === 'svg' ? (
+          {(id === 'svg' || isApproved(id)) && (
             <label>
               Velocidad{' '}
               <input
@@ -225,7 +237,8 @@ const modes: Record<string, string[]> = {
                 value="1"
               />
             </label>
-          ) : (
+          )}
+          {id !== 'svg' && (
             <label>
               Duración (ms){' '}
               <input
@@ -238,7 +251,8 @@ const modes: Record<string, string[]> = {
               />
             </label>
           )}
-          {['entrance-exit', 'sequences', 'typography', 'svg'].includes(id) && (
+          {(['entrance-exit', 'sequences', 'typography', 'svg'].includes(id) ||
+            (isApproved(id) && id !== 'trace')) && (
             <label>
               Stagger (ms){' '}
               <input
@@ -277,7 +291,8 @@ const modes: Record<string, string[]> = {
               />
             </label>
           )}
-          {id === 'entrance-exit' && (
+          {(id === 'entrance-exit' ||
+            (isApproved(id) && id !== 'narrative')) && (
             <label>
               Intensidad{' '}
               <input
@@ -303,7 +318,8 @@ const modes: Record<string, string[]> = {
               />
             </label>
           )}
-          {['entrance-exit', 'svg', 'sequences', 'typography'].includes(id) && (
+          {(['entrance-exit', 'svg', 'sequences', 'typography'].includes(id) ||
+            isApproved(id)) && (
             <label>
               Curva{' '}
               <select data-motion-field="ease">
@@ -349,7 +365,7 @@ const modes: Record<string, string[]> = {
         <div>
           <dt>Estado</dt>
           <dd>
-            {id === 'microinteractions'
+            {id === 'microinteractions' || isApproved(id)
               ? 'En producción'
               : productionSources[id]
                 ? 'Producción y variantes experimentales indicadas'
