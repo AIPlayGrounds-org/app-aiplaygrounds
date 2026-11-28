@@ -7,27 +7,31 @@ export default async function reviewMotion(page, origin) {
   try {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto(`${origin}/`);
-    const verticals = page.locator('#I3 [data-reveal-group]');
-    await verticals.scrollIntoViewIfNeeded();
+    const verticals = page.locator('#I3 [data-scene-group]');
+    await verticals.evaluate((group) => {
+      window.scrollBy({
+        top: group.getBoundingClientRect().top - 350,
+        behavior: 'instant',
+      });
+    });
     await page.waitForFunction(() => {
       const cards = [
         ...document.querySelectorAll(
-          '#I3 [data-reveal-group] > [data-entering]',
+          '#I3 [data-scene="assembly"] [data-scene-title]',
         ),
       ];
-      const delays = new Set(
-        cards.flatMap((card) =>
-          card.getAnimations().map(({ effect }) => effect.getTiming().delay),
-        ),
-      );
-      return delays.size > 1;
+      const masks = new Set(cards.map((card) => card.style.clipPath));
+      return cards.every((card) => card.style.clipPath) && masks.size > 1;
     });
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.waitForFunction(
-      () => !document.querySelector('#I3 [data-entering]'),
+      () =>
+        !document.querySelector('#I3 [data-scene-title][style*="clip-path"]'),
     );
     await verticals.scrollIntoViewIfNeeded();
-    if (await verticals.locator('[data-entering]').count())
+    if (
+      await verticals.locator('[data-scene-title][style*="clip-path"]').count()
+    )
       throw new Error('El grupo editorial se repitió al invertir el scroll.');
     await page.goto(`${origin}/ai-labs/`);
     await page.waitForFunction(() =>

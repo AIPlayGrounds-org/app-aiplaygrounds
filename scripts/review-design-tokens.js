@@ -247,5 +247,30 @@ export default async function reviewDesignTokens(page, origin) {
   ) {
     throw new Error('La trazabilidad produce overflow.');
   }
-  return 'Conexión verificada: átomos, compuestos y dominio, bordes, sombras y tiempos, escala y distancia de Anime.js.';
+  const metricStage = page.locator('#motion-metrics [data-motion-stage]');
+  const observed = await metricStage.evaluate(async (element, modulePath) => {
+    const { patterns } = await import(modulePath);
+    const animate = await patterns.metrics();
+    element.style.setProperty('--duration-metrics', '2000ms');
+    element.style.setProperty('--motion-reel-steps', '5');
+    const effect = animate(element.querySelector('[data-scene]'), {
+      manual: true,
+      stagger: 0,
+    });
+    effect.pause();
+    const frames = element.querySelector('.motion-reel').childElementCount;
+    effect.revert();
+    element.style.removeProperty('--duration-metrics');
+    element.style.removeProperty('--motion-reel-steps');
+    return [
+      effect.duration,
+      frames,
+      element.querySelectorAll('.motion-reel').length,
+    ];
+  }, '/src/motion/patterns.ts');
+  if (JSON.stringify(observed) !== JSON.stringify([1780, 6, 0]))
+    throw new Error(
+      `La secuencia de métricas no propagó los tokens: ${observed}.`,
+    );
+  return 'Conexión verificada: átomos, dominio y Motion System, incluidos duración y carretes de Rolling Digits.';
 }

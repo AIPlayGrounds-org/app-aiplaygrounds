@@ -1,12 +1,16 @@
 /* global window, document, innerWidth, getComputedStyle, Event */
 // See docs/implementation/empresas.md for the three local fixtures.
-export default async function reviewCompanies(page) {
+export default async function reviewCompanies(
+  page,
+  {
+    base = 'http://127.0.0.1:4370',
+    baseline = 'http://127.0.0.1:4371',
+    enabled = 'http://127.0.0.1:4372',
+  } = {},
+) {
   const check = (condition, message) => {
     if (!condition) throw new Error(message);
   };
-  const base = 'http://127.0.0.1:4370';
-  const baseline = 'http://127.0.0.1:4371';
-  const enabled = 'http://127.0.0.1:4372';
   const dir = '/tmp/opencode/empresas';
   const errors = [];
   await page
@@ -164,21 +168,22 @@ export default async function reviewCompanies(page) {
     )) === 'smooth',
     'Scroll normal',
   );
-  check(
-    (
-      await page
-        .locator('#EM1 h1')
-        .evaluate((node) => getComputedStyle(node).animationName)
-    ).includes('hero-arrive'),
-    'Entrada del hero',
-  );
-  await page.locator('#EM4').scrollIntoViewIfNeeded();
+  await page.locator('#EM1 [data-word]').first().waitFor({ state: 'attached' });
+  await page.locator('#EM4').evaluate((section) => {
+    window.scrollBy({
+      top: section.getBoundingClientRect().top - 140,
+      behavior: 'instant',
+    });
+  });
   await page
-    .locator('#EM4 article[data-entering]')
+    .locator('#EM4 [data-signal-path][draw]')
     .first()
     .waitFor({ state: 'attached' });
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.locator('[data-entering]').first().waitFor({ state: 'detached' });
+  await page
+    .locator('#EM4 [data-signal-path][draw]')
+    .first()
+    .waitFor({ state: 'detached' });
   const noJS = await page
     .context()
     .browser()
