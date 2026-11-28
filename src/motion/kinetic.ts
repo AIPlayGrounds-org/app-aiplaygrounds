@@ -1,45 +1,70 @@
-import { sequence, type SequenceOptions } from './sequence';
+import { nativeSequence } from './native-sequence';
+import type { SequenceOptions } from './scene';
 import { splitHeading } from './typography';
 
 export function immersiveEntrance(
   root: HTMLElement,
   options: SequenceOptions = {},
 ) {
-  const run = sequence(root, 'kinetic', options);
-  const { all, at, timeline, scale, distance, spread, reveal } = run;
-  const [heading] = all('h1');
-  if (heading) {
-    const words = splitHeading(run, heading, 'words');
-    if (words.length)
-      timeline.add(
+  return nativeSequence(root, 'kinetic', options, (run) => {
+    const {
+      all,
+      keyframes,
+      scale,
+      distance,
+      spread,
+      reveal,
+      add,
+      ease,
+      travelEase,
+    } = run;
+    const [heading] = all('h1');
+    if (heading) {
+      const words = splitHeading(run, heading, 'words');
+      const delay = spread('--motion-stagger-word', 0.22);
+      keyframes(
         words,
-        {
-          keyframes: {
-            '0%': {
-              y: distance('--motion-shift-word'),
-              scaleY: scale('--motion-scale-word'),
-            },
-            '66%': { y: '0em', scaleY: scale('--motion-scale-word-settle') },
-            '100%': { y: '0em', scaleY: 1 },
+        [
+          {
+            scale: `1 ${scale('--motion-scale-word')}`,
+            offset: 0,
+            easing: ease,
           },
-          duration: at(0.68),
-          delay: spread('--motion-stagger-word', 0.22),
-        },
+          {
+            scale: `1 ${scale('--motion-scale-word-settle')}`,
+            offset: 0.66,
+            easing: ease,
+          },
+          { scale: '1 1', offset: 1 },
+        ],
         0,
+        0.68,
+        delay,
+        'forwards',
       );
-  }
-  // The H1 is never masked, including when the script arrives after paint.
-  reveal(all('[data-scene-copy]'), 'left', 0.18, 0.62);
-  const actions = all('[data-scene-actions] > *');
-  if (actions.length)
-    timeline.add(
-      actions,
-      {
-        scale: [scale('--motion-scale-action'), 1],
-        duration: at(0.36),
-        delay: spread('--motion-stagger-group', 0.08),
-      },
-      at(0.56),
+      keyframes(
+        words,
+        [
+          {
+            translate: `0 ${distance('--motion-shift-word')}`,
+            easing: travelEase(),
+          },
+          { translate: '0 0em' },
+        ],
+        0,
+        0.68 * 0.66,
+        delay,
+        'forwards',
+      );
+    }
+    // The H1 is never masked, including when the script arrives after paint.
+    reveal(all('[data-scene-copy]'), 'left', 0.18, 0.62);
+    add(
+      all('[data-scene-actions] > *'),
+      { scale: [scale('--motion-scale-action'), 1] },
+      0.56,
+      0.36,
+      spread('--motion-stagger-group', 0.08),
     );
-  return run.start();
+  });
 }

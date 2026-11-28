@@ -258,7 +258,9 @@ export default async function reviewDesignTokens(page, origin) {
       stagger: 0,
     });
     effect.pause();
-    const frames = element.querySelector('.motion-reel').childElementCount;
+    const frames = element
+      .querySelector('.motion-reel')
+      .textContent.split('\n').length;
     effect.revert();
     element.style.removeProperty('--duration-metrics');
     element.style.removeProperty('--motion-reel-steps');
@@ -272,5 +274,54 @@ export default async function reviewDesignTokens(page, origin) {
     throw new Error(
       `La secuencia de métricas no propagó los tokens: ${observed}.`,
     );
+  await metricStage.evaluate(
+    async (element, modules) => {
+      const { motionTokens } = await import(modules.tokens);
+      const { patterns } = await import(modules.patterns);
+      const animate = await patterns.metrics();
+      const target = element.querySelector('[data-scene]');
+      try {
+        for (const [value, expected] of [
+          ['0ms', 0],
+          ['1.5s', 1500],
+          ['250ms', 250],
+        ]) {
+          element.style.setProperty('--duration-metrics', value);
+          if (motionTokens(target).ms('--duration-metrics') !== expected)
+            throw new Error(`Duración ${value} no válida`);
+        }
+        for (const value of ['2px', '180', '1.2.3s', '-1ms', 'initial']) {
+          element.style.setProperty('--duration-metrics', value);
+          let rejected = false;
+          try {
+            animate(target);
+          } catch (error) {
+            rejected = String(error).includes('--duration-metrics');
+          }
+          if (!rejected)
+            throw new Error(`Se abrazó la duración inválida ${value}`);
+        }
+        element.style.removeProperty('--duration-metrics');
+        // Fail after temporary reels and native tracks have already been created.
+        element.style.setProperty('--motion-stagger-group', '2px');
+        let rejected = false;
+        try {
+          animate(target);
+        } catch (error) {
+          rejected = String(error).includes('--motion-stagger-group');
+        }
+        if (
+          !rejected ||
+          target.querySelector('.motion-reel, [data-motion-rule-active]') ||
+          target.getAnimations({ subtree: true }).length
+        )
+          throw new Error('El fallo de construcción dejó una escena parcial');
+      } finally {
+        element.style.removeProperty('--duration-metrics');
+        element.style.removeProperty('--motion-stagger-group');
+      }
+    },
+    { tokens: '/src/motion/tokens.ts', patterns: '/src/motion/patterns.ts' },
+  );
   return 'Conexión verificada: átomos, dominio y Motion System, incluidos duración y carretes de Rolling Digits.';
 }

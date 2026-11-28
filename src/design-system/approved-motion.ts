@@ -1,7 +1,9 @@
-import type { SequenceName } from '../motion/sequence';
+import type { SequenceName } from '../motion/scene';
 
 export const sequenceSources = [
   '/src/motion/sequence.ts',
+  '/src/motion/native-sequence.ts',
+  '/src/motion/easing.ts',
   '/src/motion/typography.ts',
 ] as const;
 
@@ -10,7 +12,7 @@ export const approvedMotion = [
     id: 'kinetic',
     title: 'Kinetic Typography',
     name: 'Typography · apertura inmersiva',
-    api: 'splitText(), createTimeline(), stagger(), keyframes',
+    api: 'WAAPI · fotogramas con offset y pistas escalonadas',
     tokens:
       '--duration-hero, --motion-stagger-word, --motion-shift-word, --motion-scale-word*, --motion-scale-action',
     use: 'Inicio, Empresas y Formación. El ritmo comienza en las palabras y continúa hacia la descripción y las acciones. Admite alineación centrada, lateral y cielo abierto.',
@@ -22,7 +24,7 @@ export const approvedMotion = [
     id: 'assembly',
     title: 'Layered Assembly',
     name: 'Sequences · tarjetas por capas',
-    api: 'createTimeline(), inset(), translate, scale',
+    api: 'Anime.js WAAPI · inset(), translate, scale',
     tokens:
       '--duration-assembly, --motion-stagger-group, --motion-delay-group-max, --motion-distance-assembly, --motion-scale-landscape-entry',
     use: 'Inicio, verticales. Agrupa las tarjetas que llegan juntas; en la columna móvil cada tarjeta entra a su paso.',
@@ -34,7 +36,7 @@ export const approvedMotion = [
     id: 'metrics',
     title: 'Rolling Digits',
     name: 'Typography / Metrics · odómetro',
-    api: 'createTimeline(), stagger(), translateY',
+    api: 'Anime.js WAAPI · translateY(), separado por dígito',
     tokens:
       '--duration-metrics, --motion-reel-steps*, --motion-stagger-digit, --motion-stagger-group',
     use: 'Inicio y Formación. Usa compact en cifras junto a texto; display en cifras principales. Admite separadores, signos y unidades como «36 h».',
@@ -46,7 +48,7 @@ export const approvedMotion = [
     id: 'narrative',
     title: 'Narrative Flow',
     name: 'Entrance & Exit · lectura editorial',
-    api: 'createTimeline(), splitText(), stagger(), inset()',
+    api: 'Anime.js WAAPI · máscaras por línea, inset()',
     tokens:
       '--duration-narrative, --motion-stagger-line, --motion-stagger-group, --motion-arrow-x, --motion-arrow-y',
     use: 'Inicio y Empresas. Encadena título, texto y enlaces según el orden de lectura. Marca el borde existente con data-motion-rule si lo hay.',
@@ -58,7 +60,7 @@ export const approvedMotion = [
     id: 'organic',
     title: 'Organic Reveal',
     name: 'Entrance & Exit · llamada ilustrada',
-    api: 'createTimeline(), ellipse(), splitText(), stagger()',
+    api: 'Anime.js WAAPI · ellipse(), transform, máscaras por línea',
     tokens:
       '--duration-organic, --motion-mask-origin, --motion-ease-mask, --motion-scale-landscape-entry, --motion-stagger-line, --motion-scale-action',
     use: 'Inicio, Formación, Equipo y Comunidad. Admite paisaje encuadrado o recorte transparente; el origen sigue el anclaje de la imagen.',
@@ -70,7 +72,7 @@ export const approvedMotion = [
     id: 'convergence',
     title: 'Compositional Convergence',
     name: 'Sequences · conversión ilustrada',
-    api: 'createTimeline(), inset(), translate, stagger()',
+    api: 'Anime.js WAAPI · inset(), transform, opacity',
     tokens:
       '--duration-convergence, --motion-distance-card, --motion-distance-ink, --motion-stagger-line, --motion-stagger-group',
     use: 'Empresas y Formación. Admite arte al inicio o al final de las columnas; en móvil converge en el eje de lectura. Marca cada fila, incluido el botón.',

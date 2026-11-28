@@ -102,7 +102,13 @@ const stops = route.map((index, hop) => {
   </g>
   <g class="modules">
     {points.map(([x, y], index) => (
-      <g data-signal-stop={stops[route.indexOf(index)] / length}>
+      <g
+        data-signal-stop={route
+          .flatMap((entry, hop) =>
+            entry === index ? [stops[hop] / length] : [],
+          )
+          .join(' ')}
+      >
         {variant === 'labs' && (
           <>
             {index % 2 === 0 ? (

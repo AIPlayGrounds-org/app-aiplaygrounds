@@ -47,7 +47,6 @@ for (const demo of demos) {
   const approved = approvedMotion.find(({ id }) => id === pattern);
   const field = (name: string) =>
     demo.querySelector<HTMLInputElement>(`[data-motion-field="${name}"]`);
-  const tokens = motionTokens(stage);
   const read = (name: string, fallback: number) => {
     const input = field(name);
     if (!input?.value) return fallback;
@@ -105,6 +104,7 @@ for (const demo of demos) {
     if (field('progress')) field('progress')!.value = '0';
   };
   const play = async (trigger?: HTMLElement) => {
+    const tokens = motionTokens(stage);
     if (reduced.checked || !allowMotion()) {
       status.textContent = 'Movimiento reducido: se muestra el estado final.';
       return;
@@ -136,7 +136,10 @@ for (const demo of demos) {
         ),
       ),
       delay: read('delay', 0),
-      distance: read('distance', tokens.number('--motion-distance-rise')),
+      distance: read(
+        'distance',
+        Number.parseFloat(tokens.length('--motion-distance-rise')),
+      ),
       ease: field('ease')?.value || tokens.value('--editorial-entrance-ease'),
       loop: field('loop')?.checked ?? false,
     };

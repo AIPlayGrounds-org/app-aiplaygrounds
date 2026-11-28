@@ -1,10 +1,6 @@
-import type {
-  SequenceName,
-  SequenceOptions,
-  SequencePlayback,
-} from './sequence';
+import type { SequenceName, SequenceOptions, SequencePlayback } from './scene';
 
-type Pattern = (
+export type Pattern = (
   root: HTMLElement,
   options?: SequenceOptions,
 ) => SequencePlayback;

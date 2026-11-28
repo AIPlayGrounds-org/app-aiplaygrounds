@@ -3,13 +3,18 @@
 </script>
 
 <style is:global>
+  [data-scene] [data-word] {
+    display: inline-block;
+  }
   .motion-heading-line {
     display: block;
   }
-  [data-motion-rule] {
-    --motion-rule-progress: 100%;
+  @property --motion-rule-progress {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 100%;
   }
-  [data-motion-rule][style*='--motion-rule-progress'] {
+  [data-motion-rule-active] {
     border-image: linear-gradient(
         var(--motion-rule-direction, to bottom),
         var(--line) var(--motion-rule-progress),

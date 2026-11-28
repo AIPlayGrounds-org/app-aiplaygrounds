@@ -35,7 +35,13 @@ export function reveal(
     axis = 'y',
     ...playback
   } = options;
-  const offset = `${(distance ?? tokens.number(`--motion-distance-${preset}`)) * intensity}px`;
+  const length =
+    preset === 'fade'
+      ? '0px'
+      : distance === undefined
+        ? tokens.length(`--motion-distance-${preset}`)
+        : `${distance}px`;
+  const offset = intensity === 1 ? length : `calc(${length} * ${intensity})`;
   const initialOpacity = opacity ?? tokens.number(`--motion-opacity-${preset}`);
   const initialScale = scale ?? tokens.number('--motion-scale-card');
   const duration =
@@ -97,6 +103,7 @@ export function observeReveals(
         }
         const value = target.getAttribute('data-reveal');
         const preset = revealPresets.find((name) => name === value);
+        let animation: ReturnType<typeof reveal>;
         const stop = () => {
           animation.revert();
           target.removeAttribute('data-entering');
@@ -107,13 +114,17 @@ export function observeReveals(
         const group = target.closest('[data-reveal-group]');
         const position = group ? (batchPositions.get(group) ?? 0) : 0;
         if (group) batchPositions.set(group, position + 1);
-        const animation = reveal(target, preset, {
-          ...(group && { delay: groupDelay(target, position) }),
-          onComplete: stop,
-        });
-        active.set(target, stop);
-        target.setAttribute('data-entering', '');
-        target.addEventListener('focusin', stop, { once: true, signal });
+        try {
+          animation = reveal(target, preset, {
+            ...(group && { delay: groupDelay(target, position) }),
+            onComplete: stop,
+          });
+          active.set(target, stop);
+          target.setAttribute('data-entering', '');
+          target.addEventListener('focusin', stop, { once: true, signal });
+        } catch {
+          observer.unobserve(target);
+        }
       }
     },
     { root: viewport },

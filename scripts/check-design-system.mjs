@@ -112,7 +112,7 @@ const motionExamples =
   readFileSync('src/design-system/motion-playground.ts', 'utf8') +
   readFileSync('src/design-system/approved-motion.ts', 'utf8');
 
-const sceneRegistry = readFileSync('src/motion/sequence.ts', 'utf8')
+const sceneRegistry = readFileSync('src/motion/scene.ts', 'utf8')
   .split('export const sequenceDurations = {')[1]
   ?.split('} as const')[0];
 for (const [, scene] of sceneRegistry?.matchAll(/(\w+): '--duration-/g) ?? []) {
@@ -172,6 +172,9 @@ for (const path of files) {
   }
   for (const css of styles) {
     const tree = postcss.parse(css, { from: path });
+    tree.walkAtRules('property', (entry) => {
+      if (/^--[\w-]+$/.test(entry.params)) definitions.add(entry.params);
+    });
     tree.walkAtRules('import', (entry) => {
       const specifier = entry.params.match(
         /^(?:url\(\s*)?['"]([^'"]+)['"]/,

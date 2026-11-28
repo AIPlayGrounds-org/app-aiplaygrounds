@@ -113,6 +113,7 @@
   --duration-entrance: 540ms;
   --duration-reading: 360ms;
   --duration-instant: 0ms;
+  --editorial-delay: var(--duration-instant);
   --duration-hero: 1250ms;
   --duration-assembly: 1350ms;
   --duration-metrics: 1400ms;
@@ -162,6 +163,8 @@
   --motion-reel-steps-compact: 3;
   --motion-stagger-group: 55ms;
   --motion-delay-group-max: 140ms;
+  --motion-delay-entry-load-max: 90ms;
+  --motion-delay-opening-max: 220ms;
   --motion-delay-contours: 350ms;
   --motion-delay-marks: 1000ms;
   --motion-delay-grid: 1050ms;

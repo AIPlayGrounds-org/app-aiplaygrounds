@@ -30,13 +30,13 @@ export default async function reviewMotionStage(
     '/comunidad/': { organic: 'main [data-scene="organic"]' },
   };
   const motion = {
-    kinetic: '[data-word][style*="transform"]',
-    narrative: '.motion-heading-line[style*="clip-path"]',
-    assembly: '[data-scene-art][style*="transform"]',
+    kinetic: '[data-word]',
+    narrative: '.motion-heading-line',
+    assembly: '[data-scene-art]',
     metrics: '.motion-reel',
-    organic: '[data-scene-art][style*="ellipse"]',
-    landscape: '[data-scene-art][style*="ellipse"]',
-    convergence: '[data-scene-surface][style*="clip-path"]',
+    organic: '[data-scene-art]',
+    landscape: '[data-scene-art]',
+    convergence: '[data-scene-surface]',
     signal: '[data-signal-path][draw]',
   };
   const assert = (condition, message) => {
@@ -65,6 +65,32 @@ export default async function reviewMotionStage(
     );
   const wait = (locator, state = 'attached') =>
     locator.waitFor({ state, timeout: 4500 });
+  const native = ['assembly', 'organic', 'landscape', 'convergence'];
+  const waitForTrack = (root, selector, running = true) =>
+    page.waitForFunction(
+      ({ selector, running, root }) => {
+        const target = root.querySelector(selector);
+        const hasTrack = target
+          ?.getAnimations()
+          .some(
+            (effect) =>
+              effect.constructor === window.Animation &&
+              effect.effect
+                .getKeyframes()
+                .some((frame) => frame.clipPath || frame.translate),
+          );
+        return Boolean(hasTrack) === running;
+      },
+      { root, selector, running },
+      { timeout: 4500 },
+    );
+  const waitForScene = async (root, name, running = true) =>
+    native.includes(name)
+      ? waitForTrack(await root.elementHandle(), motion[name], running)
+      : wait(
+          root.locator(motion[name]).first(),
+          running ? 'attached' : 'detached',
+        );
   const hoverTitle = async (card) => {
     const box = await card.locator('h3').boundingBox();
     await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
@@ -79,9 +105,8 @@ export default async function reviewMotionStage(
           const response = await page.goto(`${origin}${path}`);
           assert(response?.ok(), `HTTP ${path}`);
           const root = page.locator(selector).first();
-          const effect = root.locator(motion[name]).first();
           if (name !== 'kinetic') await enter(root);
-          await wait(effect).catch(() => {
+          await waitForScene(root, name).catch(() => {
             throw new Error(`Sin entrada ${name}: ${path} a ${width}px`);
           });
           if (name === 'kinetic') {
@@ -99,7 +124,11 @@ export default async function reviewMotionStage(
             ),
             `Overflow durante ${name}: ${path} ${width}`,
           );
-          await wait(effect, 'detached');
+          await waitForScene(root, name, false).catch((error) => {
+            throw new Error(`No se limpió ${name}: ${path} a ${width}px`, {
+              cause: error,
+            });
+          });
         }
       }
     }
@@ -138,8 +167,7 @@ export default async function reviewMotionStage(
 
     const form = page.locator('#EM6 [data-scene]');
     await enter(form);
-    const fill = form.locator(motion.convergence);
-    await wait(fill);
+    await waitForScene(form, 'convergence');
     const name = form.locator('#contact-name');
     await name.click();
     await name.pressSequentially('Prueba de movimiento');
@@ -151,7 +179,7 @@ export default async function reviewMotionStage(
       await name.evaluate((input) => document.activeElement === input),
       'Se perdió el foco del formulario',
     );
-    await wait(fill, 'detached');
+    await waitForScene(form, 'convergence', false);
     await page.setViewportSize({ width: 390, height: 900 });
     assert(
       (await name.inputValue()) === 'Prueba de movimiento',
@@ -161,23 +189,16 @@ export default async function reviewMotionStage(
     await page.goto(`${origin}/`);
     const assembly = page.locator('#I3 [data-scene]').first();
     await enter(assembly);
-    const assemblyEffect = assembly.locator(motion.assembly);
-    await wait(assemblyEffect);
+    await waitForScene(assembly, 'assembly');
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
-    await wait(assemblyEffect, 'detached');
+    await waitForScene(assembly, 'assembly', false);
     await enter(assembly);
     await twoFrames();
-    assert(
-      !(await assemblyEffect.count()),
-      'El scroll inverso reinició las tarjetas',
-    );
+    await waitForScene(assembly, 'assembly', false);
     await page.goto(`${origin}/formacion/`);
     await page.goBack();
     await twoFrames();
-    assert(
-      !(await assemblyEffect.count()),
-      'Atrás reinició una entrada visible',
-    );
+    await waitForScene(assembly, 'assembly', false);
     await page.goForward();
     assert(
       await page.getByRole('heading', { level: 1 }).isVisible(),
@@ -208,6 +229,29 @@ export default async function reviewMotionStage(
       .locator('[data-initiative-art]')
       .evaluateAll((art) => art.map((svg) => svg.id));
     assert(new Set(ids).size === ids.length, 'IDs de SVG repetidos');
+    await page
+      .locator('#motion-trace [data-scene]')
+      .last()
+      .evaluate(async (card, modulePath) => {
+        const { patterns } = await import(modulePath);
+        const animate = await patterns.trace();
+        const node = [...card.querySelectorAll('[data-signal-stop]')].find(
+          (stop) => stop.dataset.signalStop.includes(' '),
+        );
+        if (!node) throw new Error('Faltan los regresos al nodo central');
+        const pulse = node.querySelector('[data-signal-pulse]');
+        const effect = animate(card, { manual: true, duration: 1000 });
+        effect.pause();
+        try {
+          for (const visit of node.dataset.signalStop.split(' ').map(Number)) {
+            effect.seek(visit * 790 + 38);
+            if (Number(getComputedStyle(pulse).opacity) < 0.5)
+              throw new Error('La señal no activó el nodo al regresar');
+          }
+        } finally {
+          effect.revert();
+        }
+      }, '/src/motion/patterns.ts');
     for (const width of [320, 390, 768, 1024, 1440]) {
       await page.setViewportSize({ width, height: 900 });
       assert(
@@ -218,6 +262,47 @@ export default async function reviewMotionStage(
       );
     }
     await page.emulateMedia({ reducedMotion: 'no-preference' });
+    // A delayed module must not cover a section the visitor has already read.
+    const delayed = '**/src/motion/assembly.ts*';
+    let releaseAssembly;
+    const gate = new Promise((resolve) => {
+      releaseAssembly = resolve;
+    });
+    let requestAssembly;
+    const requested = new Promise((resolve) => {
+      requestAssembly = resolve;
+    });
+    await page.route(delayed, async (route) => {
+      requestAssembly();
+      await gate;
+      await route.continue();
+    });
+    try {
+      await page.goto(`${origin}/`);
+      const card = page.locator('#I3 [data-scene]').first();
+      await enter(card);
+      await requested;
+      const title = card.locator('[data-scene-title]');
+      assert(
+        await title.evaluate((el) => getComputedStyle(el).clipPath === 'none'),
+        'Se ocultó texto mientras cargaba el módulo',
+      );
+      await page.waitForTimeout(240);
+      const received = page.waitForResponse((response) =>
+        response.url().includes('/src/motion/assembly.ts'),
+      );
+      releaseAssembly();
+      await received;
+      await twoFrames();
+      assert(
+        await title.evaluate((el) => getComputedStyle(el).clipPath === 'none'),
+        'El módulo tardío volvió a ocultar texto visible',
+      );
+    } finally {
+      releaseAssembly();
+      await page.unroute(delayed);
+    }
+    await page.goto(`${origin}/design-system/`);
     for (const id of [...Object.keys(motion), 'trace']) {
       const demo = page.locator(`#motion-${id}`);
       await demo.locator('[data-motion-action="play"]').click();
@@ -225,11 +310,16 @@ export default async function reviewMotionStage(
       await status.getByText('En reproducción.').waitFor();
       await demo.locator('[data-motion-field="progress"]').fill('45');
       await status.getByText('En pausa.').waitFor();
-      const selector =
-        id === 'trace' ? '[data-signal-trace][draw]' : motion[id];
-      await wait(demo.locator(selector).first());
+      if (id === 'trace')
+        await wait(demo.locator('[data-signal-trace][draw]').first());
+      else await waitForScene(demo, id);
       await demo.locator('[data-motion-action="reset"]').click();
-      await wait(demo.locator(selector).first(), 'detached');
+      if (id === 'trace')
+        await wait(
+          demo.locator('[data-signal-trace][draw]').first(),
+          'detached',
+        );
+      else await waitForScene(demo, id, false);
     }
     assert(!errors.length, errors.join('\n'));
     return 'Motion: 25 vistas, nueve demos, interrupción, foco, tacto y movimiento reducido.';

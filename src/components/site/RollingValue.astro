@@ -37,7 +37,8 @@ const { value, density = 'compact' } = Astro.props;
   [data-rolling-digit] > :global(.motion-reel) {
     position: absolute;
     inset: 0 auto auto 0;
-    display: grid;
+    display: block;
+    white-space: pre;
     inline-size: 100%;
   }
 </style>

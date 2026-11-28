@@ -1,4 +1,4 @@
-/* global document, window */
+/* global document, window, getComputedStyle */
 export default async function reviewMotion(page, origin) {
   const errors = [];
   const onError = (error) => errors.push(error.message);
@@ -20,17 +20,24 @@ export default async function reviewMotion(page, origin) {
           '#I3 [data-scene="assembly"] [data-scene-title]',
         ),
       ];
-      const masks = new Set(cards.map((card) => card.style.clipPath));
-      return cards.every((card) => card.style.clipPath) && masks.size > 1;
+      const masks = new Set(
+        cards.map((card) => getComputedStyle(card).clipPath),
+      );
+      return !masks.has('none') && masks.size > 1;
     });
     await page.evaluate(() => window.scrollTo(0, 0));
-    await page.waitForFunction(
-      () =>
-        !document.querySelector('#I3 [data-scene-title][style*="clip-path"]'),
+    await page.waitForFunction(() =>
+      [...document.querySelectorAll('#I3 [data-scene-title]')].every(
+        (title) => getComputedStyle(title).clipPath === 'none',
+      ),
     );
     await verticals.scrollIntoViewIfNeeded();
     if (
-      await verticals.locator('[data-scene-title][style*="clip-path"]').count()
+      await verticals
+        .locator('[data-scene-title]')
+        .evaluateAll((titles) =>
+          titles.some((title) => getComputedStyle(title).clipPath !== 'none'),
+        )
     )
       throw new Error('El grupo editorial se repitió al invertir el scroll.');
     await page.goto(`${origin}/ai-labs/`);

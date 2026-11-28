@@ -142,7 +142,7 @@ test('el CLI bloquea regresiones y admite solo la declaración exceptuada', () =
     write('src/design-system/motion-playground.ts');
     write('src/design-system/approved-motion.ts');
     write(
-      'src/motion/sequence.ts',
+      'src/motion/scene.ts',
       "export const sequenceDurations = { kinetic: '--duration-hero' } as const;",
     );
     write('docs/implementation/motion-system.md');
